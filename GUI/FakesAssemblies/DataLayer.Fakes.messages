@@ -1,0 +1,11 @@
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować klasy zastępczej dla DataLayer.ServiceManager: typ jest zapieczętowany.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować klasy zastępczej dla DataLayer.Properties.Settings: typ jest zapieczętowany.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować klasy zastępczej dla DataLayer.Implementation.ProcessManagerGateway: typ nie jest widoczny dla exported or assembly(DataLayer.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Properties.Settings: typ nie jest widoczny dla exported or assembly(DataLayer.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.HPDataService.IDataService4HP: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.HPDataService.IDataService4HPChannel: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Interface.IProcessManagerGateway: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Interface.IGatewayDaoWFS: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Interface.INotesManager: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Interface.IUsersHelios: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\DataLayer.fakes : warning : Nie można wygenerować podkładki dla DataLayer.Implementation.ProcessManagerGateway: typ nie jest widoczny dla exported or assembly(DataLayer.Fakes).

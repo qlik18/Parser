@@ -1,0 +1,50 @@
+środa, 29 marca 2017 13:36:56
+
+--- Main exception: Message ---
+Database 'Support_Addons_abi' cannot be opened. It is in the middle of a restore.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   w System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 120
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.<GetAllIssuesFromJira>b__123_0() w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\MainForm.cs:wiersz 4383
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 29 marca 2017 13:37:27
+
+--- Main exception: Message ---
+Server was unable to process request. ---> Cannot open database "Support_BPM_abi" requested by the login. The login failed.
+Login failed for user 'sa'.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.LogIn2(String login, String pass)
+   w DataLayer.Implementation.GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 254
+   w LogicLayer.Implementation.ParserEngineWFS.loginToWFSWithUserInfo(String username, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\Implementation\ParserEngineWFS.cs:wiersz 46
+   w GUI.Login.<button1_Click>b__20_0() w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\LoginForm.cs:wiersz 89
+
+--- Main exception: Source ---
+mscorlib
+

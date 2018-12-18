@@ -1,0 +1,1235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Logic.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Logic.Implementation.Fakes.ShimExchangeClient">
+            <summary>Typ podkładki dla Logic.Implementation.ExchangeClient</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimExchangeClient.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimExchangeClient.#ctor(Logic.Implementation.ExchangeClient)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimExchangeClient.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.AllInstances.LoadTemplateString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.LoadTemplate(String template)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.AllInstances.SendEMailStringHtmlContentString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, HtmlContent content, String address)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.AllInstances.SendEMailStringStringRichTextBox">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, String address, RichTextBox body)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.AllInstances.SendEMailStringStringString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, String body, String address)</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimExchangeClient.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimExchangeClient.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.ConstructorUser">
+            <summary>Ustawia element podkładka dla: ExchangeClient.ExchangeClient(User user)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.LoadTemplateString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.LoadTemplate(String template)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.SendEMailStringHtmlContentString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, HtmlContent content, String address)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.SendEMailStringStringRichTextBox">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, String address, RichTextBox body)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimExchangeClient.SendEMailStringStringString">
+            <summary>Ustawia element podkładka dla: ExchangeClient.SendEMail(String subject, String body, String address)</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlColumn">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlColumn</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlColumn.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlColumn.#ctor(Logic.Implementation.HtmlColumn)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlColumn.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.AllInstances.HeaderGet">
+            <summary>Ustawia element podkładka dla: HtmlColumn.get_Header()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.AllInstances.HeaderSetString">
+            <summary>Ustawia element podkładka dla: HtmlColumn.set_Header(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlColumn.ToHtml()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlColumn.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlColumn.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlColumn.HtmlColumn()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.HeaderGet">
+            <summary>Ustawia element podkładka dla: HtmlColumn.get_Header()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.HeaderSetString">
+            <summary>Ustawia element podkładka dla: HtmlColumn.set_Header(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlColumn.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlColumn.ToHtml()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlContent">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlContent</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlContent.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlContent.#ctor(Logic.Implementation.HtmlContent)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.HeaderGet">
+            <summary>Ustawia element podkładka dla: HtmlContent.get_Header()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.HeaderSetHtmlHeader">
+            <summary>Ustawia element podkładka dla: HtmlContent.set_Header(HtmlHeader value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.TableGet">
+            <summary>Ustawia element podkładka dla: HtmlContent.get_Table()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.TableSetHtmlTable">
+            <summary>Ustawia element podkładka dla: HtmlContent.set_Table(HtmlTable value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlContent.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.AllInstances.ToString01">
+            <summary>Ustawia element podkładka dla: HtmlContent.ToString()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlContent.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlContent.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlContent.HtmlContent()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.ConstructorHtmlHeader">
+            <summary>Ustawia element podkładka dla: HtmlContent.HtmlContent(HtmlHeader header)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.ConstructorHtmlHeaderHtmlTable">
+            <summary>Ustawia element podkładka dla: HtmlContent.HtmlContent(HtmlHeader header, HtmlTable table)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.ConstructorHtmlTable">
+            <summary>Ustawia element podkładka dla: HtmlContent.HtmlContent(HtmlTable table)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.HeaderGet">
+            <summary>Ustawia element podkładka dla: HtmlContent.get_Header()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.HeaderSetHtmlHeader">
+            <summary>Ustawia element podkładka dla: HtmlContent.set_Header(HtmlHeader value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.TableGet">
+            <summary>Ustawia element podkładka dla: HtmlContent.get_Table()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.TableSetHtmlTable">
+            <summary>Ustawia element podkładka dla: HtmlContent.set_Table(HtmlTable value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlContent.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlContent.ToString">
+            <summary>Ustawia element podkładka dla: HtmlContent.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlHeader">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlHeader</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHeader.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHeader.#ctor(Logic.Implementation.HtmlHeader)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlHeader.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.AllInstances.HeaderTextGet">
+            <summary>Ustawia element podkładka dla: HtmlHeader.get_HeaderText()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.AllInstances.HeaderTextSetString">
+            <summary>Ustawia element podkładka dla: HtmlHeader.set_HeaderText(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlHeader.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.AllInstances.ToString01">
+            <summary>Ustawia element podkładka dla: HtmlHeader.ToString()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHeader.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHeader.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlHeader.HtmlHeader()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.ConstructorString">
+            <summary>Ustawia element podkładka dla: HtmlHeader.HtmlHeader(String headerText)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.HeaderTextGet">
+            <summary>Ustawia element podkładka dla: HtmlHeader.get_HeaderText()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.HeaderTextSetString">
+            <summary>Ustawia element podkładka dla: HtmlHeader.set_HeaderText(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlHeader.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHeader.ToString">
+            <summary>Ustawia element podkładka dla: HtmlHeader.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlHyperlink">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlHyperlink</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHyperlink.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHyperlink.#ctor(Logic.Implementation.HtmlHyperlink)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.DisplayGet">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.get_Display()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.DisplaySetString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.set_Display(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.LinkGet">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.get_Link()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.LinkSetString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.set_Link(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.AllInstances.ToString01">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.ToString()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHyperlink.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlHyperlink.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.HtmlHyperlink()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.ConstructorString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.HtmlHyperlink(String link)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.ConstructorStringString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.HtmlHyperlink(String link, String display)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.DisplayGet">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.get_Display()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.DisplaySetString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.set_Display(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.LinkGet">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.get_Link()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.LinkSetString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.set_Link(String value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlHyperlink.ToString">
+            <summary>Ustawia element podkładka dla: HtmlHyperlink.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlRow">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlRow</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlRow.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlRow.#ctor(Logic.Implementation.HtmlRow)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlRow.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.AllInstances.CellsGet">
+            <summary>Ustawia element podkładka dla: HtmlRow.get_Cells()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.AllInstances.CellsSetListOfString">
+            <summary>Ustawia element podkładka dla: HtmlRow.set_Cells(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlRow.ToHtml()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlRow.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlRow.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.CellsGet">
+            <summary>Ustawia element podkładka dla: HtmlRow.get_Cells()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.CellsSetListOfString">
+            <summary>Ustawia element podkładka dla: HtmlRow.set_Cells(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlRow.HtmlRow()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.ConstructorStringArray">
+            <summary>Ustawia element podkładka dla: HtmlRow.HtmlRow(String[] cells)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlRow.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlRow.ToHtml()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlTable">
+            <summary>Typ podkładki dla Logic.Implementation.HtmlTable</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlTable.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlTable.#ctor(Logic.Implementation.HtmlTable)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AddColumnHtmlColumn">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddColumn(HtmlColumn column)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AddColumnString">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddColumn(String columnHeader)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AddRowHtmlRow">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddRow(HtmlRow row)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AddRowStringArray">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddRow(String[] cells)</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.AddColumnHtmlColumn">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddColumn(HtmlColumn column)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.AddColumnString">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddColumn(String columnHeader)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.AddRowHtmlRow">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddRow(HtmlRow row)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.AddRowStringArray">
+            <summary>Ustawia element podkładka dla: HtmlTable.AddRow(String[] cells)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.ColumnsGet">
+            <summary>Ustawia element podkładka dla: HtmlTable.get_Columns()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.ColumnsSetListOfHtmlColumn">
+            <summary>Ustawia element podkładka dla: HtmlTable.set_Columns(List`1&lt;HtmlColumn&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.RowsGet">
+            <summary>Ustawia element podkładka dla: HtmlTable.get_Rows()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.RowsSetListOfHtmlRow">
+            <summary>Ustawia element podkładka dla: HtmlTable.set_Rows(List`1&lt;HtmlRow&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlTable.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.AllInstances.ToString01">
+            <summary>Ustawia element podkładka dla: HtmlTable.ToString()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlTable.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimHtmlTable.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.ColumnsGet">
+            <summary>Ustawia element podkładka dla: HtmlTable.get_Columns()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.ColumnsSetListOfHtmlColumn">
+            <summary>Ustawia element podkładka dla: HtmlTable.set_Columns(List`1&lt;HtmlColumn&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.Constructor">
+            <summary>Ustawia element podkładka dla: HtmlTable.HtmlTable()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.RowsGet">
+            <summary>Ustawia element podkładka dla: HtmlTable.get_Rows()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.RowsSetListOfHtmlRow">
+            <summary>Ustawia element podkładka dla: HtmlTable.set_Rows(List`1&lt;HtmlRow&gt; value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.ToHtml">
+            <summary>Ustawia element podkładka dla: HtmlTable.ToHtml()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimHtmlTable.ToString">
+            <summary>Ustawia element podkładka dla: HtmlTable.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimJiraIssues">
+            <summary>Typ podkładki dla Logic.Implementation.JiraIssues</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimJiraIssues.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimJiraIssues.#ctor(Logic.Implementation.JiraIssues)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.ChangeDataModelIEnumerableOfIssueListOfBillingIssueDtoHeliosOutListOfJiraUserRef">
+            <summary>Ustawia element podkładka dla: JiraIssues.ChangeDataModel(IEnumerable`1&lt;Issue&gt; issues, List`1&lt;BillingIssueDtoHelios&gt;&amp; newModel, List`1&lt;JiraUser&gt;&amp; jiraUsers)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetAllIssuesJiraProjectStringString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetAllIssues(JiraProject project, String assignedFilterName, String unassignedFilterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetCustomFields">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetCustomFields()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetFiltersAsync">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetFiltersAsync()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetIssuesByNumberAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesByNumberAsync(String issueId)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetIssuesCountFromFilterAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesCountFromFilterAsync(String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetIssuesFromFilterAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesFromFilterAsync(String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetIssuesJiraProjectBooleanString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssues(JiraProject project, Boolean przydzielone, String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetJiraIssuesStatuses">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraIssuesStatuses()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetJiraIssuesTypes">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraIssuesTypes()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.GetJiraProjects">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraProjects()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.AllInstances.LoginJira">
+            <summary>Ustawia element podkładka dla: JiraIssues.LoginJira()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimJiraIssues.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimJiraIssues.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.Constructor">
+            <summary>Ustawia element podkładka dla: JiraIssues.JiraIssues()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.ConstructorStringStringString">
+            <summary>Ustawia element podkładka dla: JiraIssues.JiraIssues(String login, String password, String uri)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetAllIssuesJiraProjectStringString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetAllIssues(JiraProject project, String assignedFilterName, String unassignedFilterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetCustomFields">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetCustomFields()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetFiltersAsync">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetFiltersAsync()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetIssuesByNumberAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesByNumberAsync(String issueId)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetIssuesCountFromFilterAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesCountFromFilterAsync(String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetIssuesFromFilterAsyncString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssuesFromFilterAsync(String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetIssuesJiraProjectBooleanString">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetIssues(JiraProject project, Boolean przydzielone, String filterName)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetJiraIssuesStatuses">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraIssuesStatuses()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetJiraIssuesTypes">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraIssuesTypes()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.GetJiraProjects">
+            <summary>Ustawia element podkładka dla: JiraIssues.GetJiraProjects()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimJiraIssues.LoginJira">
+            <summary>Ustawia element podkładka dla: JiraIssues.LoginJira()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimWorkload">
+            <summary>Typ podkładki dla Logic.Implementation.Workload</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimWorkload.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimWorkload.#ctor(Logic.Implementation.Workload)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimWorkload.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.CheckIfUserLoggingRunning">
+            <summary>Ustawia element podkładka dla: Workload.CheckIfUserLoggingRunning()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.GetLoggingTime">
+            <summary>Ustawia element podkładka dla: Workload.GetLoggingTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.GetOpenIssues">
+            <summary>Ustawia element podkładka dla: Workload.GetOpenIssues()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.GetPausedIssues">
+            <summary>Ustawia element podkładka dla: Workload.GetPausedIssues()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.IsLoggingGet">
+            <summary>Ustawia element podkładka dla: Workload.get_IsLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.IsLoggingSetBoolean">
+            <summary>Ustawia element podkładka dla: Workload.set_IsLogging(Boolean value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.IssueGet">
+            <summary>Ustawia element podkładka dla: Workload.get_Issue()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.IssueSetBillingIssueDto">
+            <summary>Ustawia element podkładka dla: Workload.set_Issue(BillingIssueDto value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.LastTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_LastTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.LoggedTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_LoggedTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.PauseLogging">
+            <summary>Ustawia element podkładka dla: Workload.PauseLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.StartLogging">
+            <summary>Ustawia element podkładka dla: Workload.StartLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.StartTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_StartTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.StatusGet">
+            <summary>Ustawia element podkładka dla: Workload.get_Status()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.StopLogging">
+            <summary>Ustawia element podkładka dla: Workload.StopLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.AllInstances.TotalTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_TotalTime()</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimWorkload.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimWorkload.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.CheckIfUserLoggingRunning">
+            <summary>Ustawia element podkładka dla: Workload.CheckIfUserLoggingRunning()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.Constructor">
+            <summary>Ustawia element podkładka dla: Workload.Workload()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.ConstructorIParserEngineWFS">
+            <summary>Ustawia element podkładka dla: Workload.Workload(IParserEngineWFS gujacz)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.GetLoggingTime">
+            <summary>Ustawia element podkładka dla: Workload.GetLoggingTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.GetOpenIssues">
+            <summary>Ustawia element podkładka dla: Workload.GetOpenIssues()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.GetPausedIssues">
+            <summary>Ustawia element podkładka dla: Workload.GetPausedIssues()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.InstanceGet">
+            <summary>Ustawia element podkładka dla: Workload.get_Instance()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.IsLoggingGet">
+            <summary>Ustawia element podkładka dla: Workload.get_IsLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.IsLoggingSetBoolean">
+            <summary>Ustawia element podkładka dla: Workload.set_IsLogging(Boolean value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.IssueGet">
+            <summary>Ustawia element podkładka dla: Workload.get_Issue()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.IssueSetBillingIssueDto">
+            <summary>Ustawia element podkładka dla: Workload.set_Issue(BillingIssueDto value)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.LastTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_LastTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.LoggedTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_LoggedTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.PauseLogging">
+            <summary>Ustawia element podkładka dla: Workload.PauseLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.StartLogging">
+            <summary>Ustawia element podkładka dla: Workload.StartLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.StartTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_StartTime()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.StaticConstructor">
+            <summary>Ustawia element podkładka dla: Workload.Workload()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.StatusGet">
+            <summary>Ustawia element podkładka dla: Workload.get_Status()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.StopLogging">
+            <summary>Ustawia element podkładka dla: Workload.StopLogging()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimWorkload.TotalTimeGet">
+            <summary>Ustawia element podkładka dla: Workload.get_TotalTime()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimXmlParser">
+            <summary>Typ podkładki dla Logic.Implementation.XmlParser</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimXmlParser.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimXmlParser.#ctor(Logic.Implementation.XmlParser)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.ShimXmlParser.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimXmlParser.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.ShimXmlParser.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.CRMPodsumowanieFromXMLString">
+            <summary>Ustawia element podkładka dla: XmlParser.CRMPodsumowanieFromXML(String xmlString)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.Constructor">
+            <summary>Ustawia element podkładka dla: XmlParser.XmlParser()</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.InsertProcessLogXMLListOfnProcess">
+            <summary>Ustawia element podkładka dla: XmlParser.InsertProcessLogXML(List`1&lt;nProcess&gt; processes)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.IssuesSlaListOfString">
+            <summary>Ustawia element podkładka dla: XmlParser.IssuesSla(List`1&lt;String&gt; issues)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.IssuesToSlaRaportXMLListOfIssue">
+            <summary>Ustawia element podkładka dla: XmlParser.IssuesToSlaRaportXML(List`1&lt;Issue&gt; issues)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.IssuesXMLListOfBillingIssueDto">
+            <summary>Ustawia element podkładka dla: XmlParser.IssuesXML(List`1&lt;BillingIssueDto&gt; issues)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.ProjectsXMLListOfString">
+            <summary>Ustawia element podkładka dla: XmlParser.ProjectsXML(List`1&lt;String&gt; projects)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.ReadNotesXMLString">
+            <summary>Ustawia element podkładka dla: XmlParser.ReadNotesXML(String xmlString)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.ZCCRaportDziennyFromXMLString">
+            <summary>Ustawia element podkładka dla: XmlParser.ZCCRaportDziennyFromXML(String xmlString)</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.ShimXmlParser.ZCCRaportFromXMLString">
+            <summary>Ustawia element podkładka dla: XmlParser.ZCCRaportFromXML(String xmlString)</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubExchangeClient">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.ExchangeClient</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubExchangeClient.#ctor(Entities.User)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubExchangeClient.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubExchangeClient.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubExchangeClient</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubExchangeClient.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubExchangeClient.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlColumn">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlColumn</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlColumn.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlColumn.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlColumn.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlColumn</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlColumn.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlColumn.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlContent">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlContent</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.#ctor(Logic.Implementation.HtmlHeader)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.#ctor(Logic.Implementation.HtmlTable)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.#ctor(Logic.Implementation.HtmlHeader,Logic.Implementation.HtmlTable)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlContent.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlContent</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlContent.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlContent.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlContent.ToString">
+            <summary>Ustawia element klasa zastępcza dla: HtmlContent.ToString()</summary>
+        </member>
+        <member name="F:Logic.Implementation.Fakes.StubHtmlContent.ToString01">
+            <summary>Ustawia element stub dla: HtmlContent.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlHeader">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlHeader</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHeader.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHeader.#ctor(System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHeader.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHeader.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlHeader</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHeader.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHeader.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHeader.ToString">
+            <summary>Ustawia element klasa zastępcza dla: HtmlHeader.ToString()</summary>
+        </member>
+        <member name="F:Logic.Implementation.Fakes.StubHtmlHeader.ToString01">
+            <summary>Ustawia element stub dla: HtmlHeader.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlHyperlink">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlHyperlink</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHyperlink.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHyperlink.#ctor(System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHyperlink.#ctor(System.String,System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHyperlink.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHyperlink.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlHyperlink</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHyperlink.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlHyperlink.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlHyperlink.ToString">
+            <summary>Ustawia element klasa zastępcza dla: HtmlHyperlink.ToString()</summary>
+        </member>
+        <member name="F:Logic.Implementation.Fakes.StubHtmlHyperlink.ToString01">
+            <summary>Ustawia element stub dla: HtmlHyperlink.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlRow">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlRow</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlRow.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlRow.#ctor(System.String[])">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlRow.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlRow.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlRow</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlRow.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlRow.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubHtmlTable">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.HtmlTable</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlTable.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlTable.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlTable.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubHtmlTable</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlTable.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubHtmlTable.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubHtmlTable.ToString">
+            <summary>Ustawia element klasa zastępcza dla: HtmlTable.ToString()</summary>
+        </member>
+        <member name="F:Logic.Implementation.Fakes.StubHtmlTable.ToString01">
+            <summary>Ustawia element stub dla: HtmlTable.ToString()</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubWorkload">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.Workload</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubWorkload.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubWorkload.#ctor(LogicLayer.Interface.IParserEngineWFS)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubWorkload.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubWorkload.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubWorkload</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubWorkload.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubWorkload.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:Logic.Implementation.Fakes.StubXmlParser">
+            <summary>Typ klasy zastępczej dla Logic.Implementation.XmlParser</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubXmlParser.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubXmlParser.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logic.Implementation.Fakes.StubXmlParser.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubXmlParser</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubXmlParser.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logic.Implementation.Fakes.StubXmlParser.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:Logic.Interface.Fakes.StubIJiraIssues">
+            <summary>Typ klasy zastępczej dla Logic.Interface.IJiraIssues</summary>
+        </member>
+        <member name="M:Logic.Interface.Fakes.StubIJiraIssues.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIJiraIssues</summary>
+        </member>
+        <member name="T:LogicLayer.Implementation.Fakes.ShimNotes">
+            <summary>Typ podkładki dla LogicLayer.Implementation.Notes</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.ShimNotes.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.ShimNotes.#ctor(LogicLayer.Implementation.Notes)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.AddNoteToDBNote">
+            <summary>Ustawia element podkładka dla: Notes.AddNoteToDB(Note note)</summary>
+        </member>
+        <member name="T:LogicLayer.Implementation.Fakes.ShimNotes.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.AllInstances.AddNoteToDBNote">
+            <summary>Ustawia element podkładka dla: Notes.AddNoteToDB(Note note)</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.AllInstances.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: Notes.SearchIssueNote(String issueNumber)</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.AllInstances.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: Notes.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.AllInstances.setNotesManagerINotesManager">
+            <summary>Ustawia element podkładka dla: Notes.setNotesManager(INotesManager manager)</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.ShimNotes.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.ShimNotes.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.ShimNotes.Bind(LogicLayer.Interface.INotes)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.Constructor">
+            <summary>Ustawia element podkładka dla: Notes.Notes()</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: Notes.SearchIssueNote(String issueNumber)</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: Notes.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.ShimNotes.setNotesManagerINotesManager">
+            <summary>Ustawia element podkładka dla: Notes.setNotesManager(INotesManager manager)</summary>
+        </member>
+        <member name="T:LogicLayer.Implementation.Fakes.StubNotes">
+            <summary>Typ klasy zastępczej dla LogicLayer.Implementation.Notes</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.StubNotes.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.StubNotes.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:LogicLayer.Implementation.Fakes.StubNotes.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubNotes</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.StubNotes.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:LogicLayer.Implementation.Fakes.StubNotes.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:LogicLayer.Interface.Fakes.StubINotes">
+            <summary>Typ klasy zastępczej dla LogicLayer.Interface.INotes</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubINotes.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubINotes</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubINotes.AddNoteToDBNote">
+            <summary>Ustawia element stub dla: INotes.AddNoteToDB(Note note)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubINotes.LogicLayer#Interface#INotes#AddNoteToDB(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: INotes.AddNoteToDB(Note note)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubINotes.LogicLayer#Interface#INotes#SearchIssueNote(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: INotes.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubINotes.LogicLayer#Interface#INotes#SearchNotes(System.Collections.Generic.List{System.String})">
+            <summary>Ustawia element klasa zastępcza dla: INotes.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubINotes.SearchIssueNoteString">
+            <summary>Ustawia element stub dla: INotes.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubINotes.SearchNotesListOfString">
+            <summary>Ustawia element stub dla: INotes.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="T:LogicLayer.Interface.Fakes.StubIParserEngineWFS">
+            <summary>Typ klasy zastępczej dla LogicLayer.Interface.IParserEngineWFS</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIParserEngineWFS</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.AddBillingIssueToWFSBillingIssueDtoHeliosInt32Out">
+            <summary>Ustawia element stub dla: IParserEngineWFS.addBillingIssueToWFS(BillingIssueDtoHelios issue, Int32&amp; WFSIssueId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.BoundErrorWithProcessProcessListOfErrorBoolean">
+            <summary>Ustawia element stub dla: IParserEngineWFS.BoundErrorWithProcess(Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.CompareBillingWithWFSListOfBillingIssueDtoHelios">
+            <summary>Ustawia element stub dla: IParserEngineWFS.compareBillingWithWFS(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.CreateNewErrorError">
+            <summary>Ustawia element stub dla: IParserEngineWFS.CreateNewError(Error error)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.CreateNewProcessProcess">
+            <summary>Ustawia element stub dla: IParserEngineWFS.CreateNewProcess(Process process)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.CreateNewSolutionSolution">
+            <summary>Ustawia element stub dla: IParserEngineWFS.CreateNewSolution(Solution solution)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.DoActionInIssueNullableOfInt32Int32ListOfEventParam">
+            <summary>Ustawia element stub dla: IParserEngineWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.ExecuteStoredProcedureStringStringArrayDatabaseName">
+            <summary>Ustawia element stub dla: IParserEngineWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetActionForIssueInt32Int32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetBillingBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetBillingComponentsInt32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.getBillingComponents(Int32 id)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetErrorTypes">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetErrorTypes()</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetErrorsInt32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetErrors(Int32 processId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetEventParamForFormByEventMoveInt32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetIssuesFromBPMInt32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetIssuesFromBPM(Int32 userId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetProcesses">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetProcesses()</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetSolutions">
+            <summary>Ustawia element stub dla: IParserEngineWFS.GetSolutions()</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.GetUser">
+            <summary>Ustawia element stub dla: IParserEngineWFS.getUser()</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.InsertNewProcessLogStringBuilder">
+            <summary>Ustawia element stub dla: IParserEngineWFS.InsertNewProcessLog(StringBuilder inXml)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.IsInWFSIssueDtoHelios">
+            <summary>Ustawia element stub dla: IParserEngineWFS.isInWFS(IssueDtoHelios issue)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.IsIssueInArchiveInt32">
+            <summary>Ustawia element stub dla: IParserEngineWFS.IsIssueInArchive(Int32 issueId)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogOutFromHPService">
+            <summary>Ustawia element stub dla: IParserEngineWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#BoundErrorWithProcess(Entities.Process,System.Collections.Generic.List{Entities.Error},System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.BoundErrorWithProcess(Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#CreateNewError(Entities.Error)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.CreateNewError(Error error)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#CreateNewProcess(Entities.Process)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.CreateNewProcess(Process process)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#CreateNewSolution(Entities.Solution)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.CreateNewSolution(Solution solution)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#DoActionInIssue(System.Nullable{System.Int32},System.Int32,System.Collections.Generic.List{Entities.EventParam})">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#ExecuteStoredProcedure(System.String,System.String[],Entities.Enums.DatabaseName)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetActionForIssue(System.Int32,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetBillingBoundEventParamForIssue(System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetBoundEventParamForIssue(System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetErrorTypes">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetErrorTypes()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetErrors(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetErrors(Int32 processId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetEventParamForFormByEventMove(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetIssuesFromBPM(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetIssuesFromBPM(Int32 userId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetProcesses">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetProcesses()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#GetSolutions">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.GetSolutions()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#InsertNewProcessLog(System.Text.StringBuilder)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.InsertNewProcessLog(StringBuilder inXml)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#IsIssueInArchive(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.IsIssueInArchive(Int32 issueId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#LogOutFromHPService">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#UpdateIssue(Entities.BillingIssueDtoHelios)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#UpdateJiraInfo(Entities.BillingIssueDtoHelios)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.UpdateJiraInfo(BillingIssueDtoHelios issue)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#UpdateJiraInfo(Entities.BillingIssueDtoHelios,Atlassian.Jira.Issue)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.UpdateJiraInfo(BillingIssueDtoHelios updatedIssue, Issue issue)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#addBillingIssueToWFS(Entities.BillingIssueDtoHelios,System.Int32@)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.addBillingIssueToWFS(BillingIssueDtoHelios issue, Int32&amp; WFSIssueId)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#compareBillingWithWFS(System.Collections.Generic.List{Entities.BillingIssueDtoHelios})">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.compareBillingWithWFS(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#getBillingComponents(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.getBillingComponents(Int32 id)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#getUser">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.getUser()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#isInWFS(Entities.IssueDtoHelios)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.isInWFS(IssueDtoHelios issue)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#loginToWFSWithUserInfo(System.String,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.loginToWFSWithUserInfo(String username, String password)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#notifyWebService">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.notifyWebService()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LogicLayer#Interface#IParserEngineWFS#setWFSDao(DataLayer.Interface.IGatewayDaoWFS)">
+            <summary>Ustawia element klasa zastępcza dla: IParserEngineWFS.setWFSDao(IGatewayDaoWFS dao)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.LoginToWFSWithUserInfoStringString">
+            <summary>Ustawia element stub dla: IParserEngineWFS.loginToWFSWithUserInfo(String username, String password)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.NotifyWebService">
+            <summary>Ustawia element stub dla: IParserEngineWFS.notifyWebService()</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.SetWFSDaoIGatewayDaoWFS">
+            <summary>Ustawia element stub dla: IParserEngineWFS.setWFSDao(IGatewayDaoWFS dao)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.UpdateIssueBillingIssueDtoHelios">
+            <summary>Ustawia element stub dla: IParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.UpdateJiraInfoBillingIssueDtoHelios">
+            <summary>Ustawia element stub dla: IParserEngineWFS.UpdateJiraInfo(BillingIssueDtoHelios issue)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIParserEngineWFS.UpdateJiraInfoBillingIssueDtoHeliosIssue">
+            <summary>Ustawia element stub dla: IParserEngineWFS.UpdateJiraInfo(BillingIssueDtoHelios updatedIssue, Issue issue)</summary>
+        </member>
+        <member name="T:LogicLayer.Interface.Fakes.StubIUsers">
+            <summary>Typ klasy zastępczej dla LogicLayer.Interface.IUsers</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIUsers</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.FilterUsersStringStringListOfHeliosUser">
+            <summary>Ustawia element stub dla: IUsers.FilterUsers(String surname, String email, List`1&lt;HeliosUser&gt; list)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.GetAllUsers">
+            <summary>Ustawia element stub dla: IUsers.GetAllUsers()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#FilterUsers(System.String,System.String,System.Collections.Generic.List{Entities.HeliosUser})">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.FilterUsers(String surname, String email, List`1&lt;HeliosUser&gt; list)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#GetAllUsers">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.GetAllUsers()</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#SaveUserData(Entities.HeliosUser,System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.SaveUserData(HeliosUser user, Boolean isNew)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#SearchUserByEmail(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#setUserDao(DataLayer.Interface.IUsersHelios)">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.setUserDao(IUsersHelios daoImpl)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#updateBillingInfoInHeliosIssues(System.Collections.Generic.List{Entities.BillingIssueDtoHelios},System.Collections.Generic.List{Entities.HeliosUser})">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.updateBillingInfoInHeliosIssues(List`1&lt;BillingIssueDtoHelios&gt; list, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#updateInfoInHeliosIssue(Entities.IssueHelios,System.Collections.Generic.List{Entities.HeliosUser})">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.updateInfoInHeliosIssue(IssueHelios iHelios, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="M:LogicLayer.Interface.Fakes.StubIUsers.LogicLayer#Interface#IUsers#updateInfoInHeliosIssues(System.Collections.Generic.List{Entities.IssueDtoHelios},System.Collections.Generic.List{Entities.HeliosUser})">
+            <summary>Ustawia element klasa zastępcza dla: IUsers.updateInfoInHeliosIssues(List`1&lt;IssueDtoHelios&gt; list, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.SaveUserDataHeliosUserBoolean">
+            <summary>Ustawia element stub dla: IUsers.SaveUserData(HeliosUser user, Boolean isNew)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.SearchUserByEmailString">
+            <summary>Ustawia element stub dla: IUsers.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.SetUserDaoIUsersHelios">
+            <summary>Ustawia element stub dla: IUsers.setUserDao(IUsersHelios daoImpl)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.UpdateBillingInfoInHeliosIssuesListOfBillingIssueDtoHeliosListOfHeliosUser">
+            <summary>Ustawia element stub dla: IUsers.updateBillingInfoInHeliosIssues(List`1&lt;BillingIssueDtoHelios&gt; list, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.UpdateInfoInHeliosIssueIssueHeliosListOfHeliosUser">
+            <summary>Ustawia element stub dla: IUsers.updateInfoInHeliosIssue(IssueHelios iHelios, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="F:LogicLayer.Interface.Fakes.StubIUsers.UpdateInfoInHeliosIssuesListOfIssueDtoHeliosListOfHeliosUser">
+            <summary>Ustawia element stub dla: IUsers.updateInfoInHeliosIssues(List`1&lt;IssueDtoHelios&gt; list, List`1&lt;HeliosUser&gt; PolsatUsers)</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.LogicDelegates">
+            <summary>Zawiera niestandardowych delegatów używanych na potrzeby klas zastępczych i podkładek: Logic</summary>
+        </member>
+    </members>
+</doc>

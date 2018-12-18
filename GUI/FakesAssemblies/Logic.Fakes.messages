@@ -1,0 +1,16 @@
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla LogicLayer.Implementation.ParserEngineWFS: typ nie jest widoczny dla exported or assembly(Logic.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla LogicLayer.Implementation.Users: typ nie jest widoczny dla exported or assembly(Logic.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla Logic.Implementation.JiraIssues: typ ma przestarzałe elementy członkowskie, co może spowodować błąd kompilacji.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla Logic.Implementation.JiraProject: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla Logic.Implementation.WorkloadStatus: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować klasy zastępczej dla <PrivateImplementationDetails>: typ jest zapieczętowany.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla LogicLayer.Interface.INotes: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla LogicLayer.Interface.IParserEngineWFS: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla LogicLayer.Interface.IUsers: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla LogicLayer.Implementation.ParserEngineWFS: typ nie jest widoczny dla exported or assembly(Logic.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla LogicLayer.Implementation.Users: typ nie jest widoczny dla exported or assembly(Logic.Fakes).
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla Logic.Interface.IJiraIssues: typ jest interfejsem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla Logic.Implementation.JiraProject: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla Logic.Implementation.WorkloadStatus: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : Nie można wygenerować podkładki dla <PrivateImplementationDetails>: typ nie jest obsługiwany z powodu ograniczeń wewnętrznych.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Logic.fakes : warning : kompilacja nie powiodła się, ponawianie próby bez kontraktów kodu

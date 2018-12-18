@@ -1,0 +1,18 @@
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.XML
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.csprojResolveAssemblyReference.cache
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.XML
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.XML
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Debug\CPHeliosParserNotes.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Debug\CPHeliosParserNotes.pdb

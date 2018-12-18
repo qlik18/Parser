@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Logging.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Logging.Fakes.ShimLogger">
+            <summary>Typ podkładki dla Logging.Logger</summary>
+        </member>
+        <member name="M:Logging.Fakes.ShimLogger.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:Logging.Fakes.ShimLogger.#ctor(Logging.Logger)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:Logging.Fakes.ShimLogger.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.CreateCombinedInnerExceptionsMessageException">
+            <summary>Ustawia element podkładka dla: Logger.CreateCombinedInnerExceptionsMessage(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.CreateLogContentException">
+            <summary>Ustawia element podkładka dla: Logger.CreateLogContent(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.EventLogSourceGet">
+            <summary>Ustawia element podkładka dla: Logger.get_EventLogSource()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.EventLogSourceSetString">
+            <summary>Ustawia element podkładka dla: Logger.set_EventLogSource(String value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.GroupsFilesGet">
+            <summary>Ustawia element podkładka dla: Logger.get_GroupsFiles()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.GroupsFilesSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_GroupsFiles(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.InitializeEventLogLoggerString">
+            <summary>Ustawia element podkładka dla: Logger.InitializeEventLogLogger(String eventSourceName)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.InitializeFileLoggerString">
+            <summary>Ustawia element podkładka dla: Logger.InitializeFileLogger(String logsDirectoryPath)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogExceptionException">
+            <summary>Ustawia element podkładka dla: Logger.LogException(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogExceptionExceptionStringOut">
+            <summary>Ustawia element podkładka dla: Logger.LogException(Exception exception, String&amp; combinedInnerExceptionsMessage)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogInformationString">
+            <summary>Ustawia element podkładka dla: Logger.LogInformation(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogWarningAndExceptionsOnlyGet">
+            <summary>Ustawia element podkładka dla: Logger.get_LogWarningAndExceptionsOnly()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogWarningAndExceptionsOnlySetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_LogWarningAndExceptionsOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogWarningString">
+            <summary>Ustawia element podkładka dla: Logger.LogWarning(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogsDirectoryPathGet">
+            <summary>Ustawia element podkładka dla: Logger.get_LogsDirectoryPath()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.LogsDirectoryPathSetString">
+            <summary>Ustawia element podkładka dla: Logger.set_LogsDirectoryPath(String value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WriteEventLogEventLogEntryTypeString">
+            <summary>Ustawia element podkładka dla: Logger.WriteEventLog(EventLogEntryType entryType, String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WriteFileString">
+            <summary>Ustawia element podkładka dla: Logger.WriteFile(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WritesToEventLogGet">
+            <summary>Ustawia element podkładka dla: Logger.get_WritesToEventLog()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WritesToEventLogSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_WritesToEventLog(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WritesToFileGet">
+            <summary>Ustawia element podkładka dla: Logger.get_WritesToFile()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.AllInstances.WritesToFileSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_WritesToFile(Boolean value)</summary>
+        </member>
+        <member name="M:Logging.Fakes.ShimLogger.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:Logging.Fakes.ShimLogger.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.ConstructorStringString">
+            <summary>Ustawia element podkładka dla: Logger.Logger(String logsDirectoryPath, String eventSourceName)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.ConstructorStringStringBoolean">
+            <summary>Ustawia element podkładka dla: Logger.Logger(String logsDirectoryPath, String eventSourceName, Boolean groupFilesInDirectories)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.CreateCombinedInnerExceptionsMessageException">
+            <summary>Ustawia element podkładka dla: Logger.CreateCombinedInnerExceptionsMessage(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.CreateLogContentException">
+            <summary>Ustawia element podkładka dla: Logger.CreateLogContent(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.EventLogSourceGet">
+            <summary>Ustawia element podkładka dla: Logger.get_EventLogSource()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.EventLogSourceSetString">
+            <summary>Ustawia element podkładka dla: Logger.set_EventLogSource(String value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.GroupsFilesGet">
+            <summary>Ustawia element podkładka dla: Logger.get_GroupsFiles()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.GroupsFilesSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_GroupsFiles(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.InitializeEventLogLoggerString">
+            <summary>Ustawia element podkładka dla: Logger.InitializeEventLogLogger(String eventSourceName)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.InitializeFileLoggerString">
+            <summary>Ustawia element podkładka dla: Logger.InitializeFileLogger(String logsDirectoryPath)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.InstanceGet">
+            <summary>Ustawia element podkładka dla: Logger.get_Instance()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.InstanceSetLogger">
+            <summary>Ustawia element podkładka dla: Logger.set_Instance(Logger value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogExceptionException">
+            <summary>Ustawia element podkładka dla: Logger.LogException(Exception exception)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogExceptionExceptionStringOut">
+            <summary>Ustawia element podkładka dla: Logger.LogException(Exception exception, String&amp; combinedInnerExceptionsMessage)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogInformationString">
+            <summary>Ustawia element podkładka dla: Logger.LogInformation(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogWarningAndExceptionsOnlyGet">
+            <summary>Ustawia element podkładka dla: Logger.get_LogWarningAndExceptionsOnly()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogWarningAndExceptionsOnlySetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_LogWarningAndExceptionsOnly(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogWarningString">
+            <summary>Ustawia element podkładka dla: Logger.LogWarning(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogsDirectoryPathGet">
+            <summary>Ustawia element podkładka dla: Logger.get_LogsDirectoryPath()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.LogsDirectoryPathSetString">
+            <summary>Ustawia element podkładka dla: Logger.set_LogsDirectoryPath(String value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WriteEventLogEventLogEntryTypeString">
+            <summary>Ustawia element podkładka dla: Logger.WriteEventLog(EventLogEntryType entryType, String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WriteFileString">
+            <summary>Ustawia element podkładka dla: Logger.WriteFile(String message)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WritesToEventLogGet">
+            <summary>Ustawia element podkładka dla: Logger.get_WritesToEventLog()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WritesToEventLogSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_WritesToEventLog(Boolean value)</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WritesToFileGet">
+            <summary>Ustawia element podkładka dla: Logger.get_WritesToFile()</summary>
+        </member>
+        <member name="P:Logging.Fakes.ShimLogger.WritesToFileSetBoolean">
+            <summary>Ustawia element podkładka dla: Logger.set_WritesToFile(Boolean value)</summary>
+        </member>
+        <member name="T:Logging.Fakes.StubLogger">
+            <summary>Typ klasy zastępczej dla Logging.Logger</summary>
+        </member>
+        <member name="M:Logging.Fakes.StubLogger.#ctor(System.String,System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:Logging.Fakes.StubLogger.#ctor(System.String,System.String,System.Boolean)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:Logging.Fakes.StubLogger.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:Logging.Fakes.StubLogger.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubLogger</summary>
+        </member>
+        <member name="P:Logging.Fakes.StubLogger.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:Logging.Fakes.StubLogger.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+    </members>
+</doc>

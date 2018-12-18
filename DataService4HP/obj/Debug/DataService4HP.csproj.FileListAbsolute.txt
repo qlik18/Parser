@@ -1,0 +1,32 @@
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll.config
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.pdb
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.pdb
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.csprojResolveAssemblyReference.cache
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll.config
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.csprojResolveAssemblyReference.cache
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll.config
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll.config
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\DataService4HP.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\bin\Entities.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\DataService4HP\obj\Debug\DataService4HP.pdb

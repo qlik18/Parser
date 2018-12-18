@@ -1,0 +1,5 @@
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Release\Logging.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Release\Logging.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Release\Logging.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Release\Logging.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Release\Logging.pdb

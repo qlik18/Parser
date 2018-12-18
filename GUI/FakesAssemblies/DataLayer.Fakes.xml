@@ -1,0 +1,1574 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataLayer.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DataLayer.Fakes.ShimServiceManager">
+            <summary>Typ podkładki dla DataLayer.ServiceManager</summary>
+        </member>
+        <member name="M:DataLayer.Fakes.ShimServiceManager.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:DataLayer.Fakes.ShimServiceManager.#ctor(DataLayer.ServiceManager)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="T:DataLayer.Fakes.ShimServiceManager.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.AllInstances.Channel_FaultObjectEventArgs">
+            <summary>Ustawia element podkładka dla: ServiceManager.Channel_Fault(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.AllInstances.HPServiceGet">
+            <summary>Ustawia element podkładka dla: ServiceManager.get_HPService()</summary>
+        </member>
+        <member name="M:DataLayer.Fakes.ShimServiceManager.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Fakes.ShimServiceManager.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.Channel_FaultObjectEventArgs">
+            <summary>Ustawia element podkładka dla: ServiceManager.Channel_Fault(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.ConstructorEventHandler">
+            <summary>Ustawia element podkładka dla: ServiceManager.ServiceManager(EventHandler onFaultEvent)</summary>
+        </member>
+        <member name="P:DataLayer.Fakes.ShimServiceManager.HPServiceGet">
+            <summary>Ustawia element podkładka dla: ServiceManager.get_HPService()</summary>
+        </member>
+        <member name="T:DataLayer.HPDataService.Fakes.ShimDataService4HPClient">
+            <summary>Typ podkładki dla DataLayer.HPDataService.DataService4HPClient</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.#ctor(DataLayer.HPDataService.DataService4HPClient)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AddNoteNote">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.AddNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.AddNoteNote">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.AddNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.BoundErrorWithProcessUserProcessErrorArrayBoolean">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.CheckBillingIssuesPresenceOnWFSUserStringArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.CheckIssuesPresenceOnBpmUserBillingDTHIssueWFSArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.CreateNewErrorUserError">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.CreateNewProcessUserProcess">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.CreateNewSolutionUserSolution">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.DoActionInIssueNullableOfInt32Int32EventParamArrayUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.ExecuteStoredProcedureUserStringStringArrayDatabaseName">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetActionForIssueUserInt32Int32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetAllUsers">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetBillingBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetBillingComponentsUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetErrorTypesUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetErrorsUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetEventParamForFormByEventMoveUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetProcessesUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetProcesses(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.GetSolutionsUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetSolutions(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.InsertNewProcessLogUserString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.LogIn2StringString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.LogOut">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.LogOut()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.NewBillingIssueBillingDTHIssueWFSUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.Notify">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.Notify()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.SearchIssueNotesStringArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.UpdateNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.AllInstances.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Bind(DataLayer.HPDataService.IDataService4HP)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Bind(System.ServiceModel.ICommunicationObject)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Bind(System.IDisposable)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.BoundErrorWithProcessUserProcessErrorArrayBoolean">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.CheckBillingIssuesPresenceOnWFSUserStringArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.CheckIssuesPresenceOnBpmUserBillingDTHIssueWFSArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Constructor">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DataService4HPClient()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.ConstructorBindingEndpointAddress">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DataService4HPClient(Binding binding, EndpointAddress remoteAddress)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.ConstructorString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DataService4HPClient(String endpointConfigurationName)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.ConstructorStringEndpointAddress">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DataService4HPClient(String endpointConfigurationName, EndpointAddress remoteAddress)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.ConstructorStringString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DataService4HPClient(String endpointConfigurationName, String remoteAddress)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.CreateNewErrorUserError">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.CreateNewProcessUserProcess">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.CreateNewSolutionUserSolution">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.DoActionInIssueNullableOfInt32Int32EventParamArrayUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.ExecuteStoredProcedureUserStringStringArrayDatabaseName">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetActionForIssueUserInt32Int32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetAllUsers">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetBillingBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetBillingComponentsUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetErrorTypesUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetErrorsUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetEventParamForFormByEventMoveUserInt32">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetProcessesUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetProcesses(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.GetSolutionsUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.GetSolutions(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.InsertNewProcessLogUserString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.LogIn2StringString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.LogOut">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.LogOut()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.NewBillingIssueBillingDTHIssueWFSUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.Notify">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.Notify()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.SearchIssueNotesStringArray">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.UpdateNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.ShimDataService4HPClient.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DataService4HPClient.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.HPDataService.Fakes.StubDataService4HPClient">
+            <summary>Typ klasy zastępczej dla DataLayer.HPDataService.DataService4HPClient</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.#ctor(System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.#ctor(System.String,System.ServiceModel.EndpointAddress)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.#ctor(System.String,System.String)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubDataService4HPClient.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.CreateChannel">
+            <summary>Ustawia element klasa zastępcza dla: ClientBase`1.CreateChannel()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubDataService4HPClient.CreateChannel01">
+            <summary>Ustawia element stub dla: ClientBase`1.CreateChannel()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubDataService4HPClient.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubDataService4HPClient</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubDataService4HPClient.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubDataService4HPClient.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:DataLayer.HPDataService.Fakes.StubIDataService4HP">
+            <summary>Typ klasy zastępczej dla DataLayer.HPDataService.IDataService4HP</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIDataService4HP</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.AddNoteNote">
+            <summary>Ustawia element stub dla: IDataService4HP.AddNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.AddUserHeliosUser">
+            <summary>Ustawia element stub dla: IDataService4HP.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.BoundErrorWithProcessUserProcessErrorArrayBoolean">
+            <summary>Ustawia element stub dla: IDataService4HP.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.CheckBillingIssuesPresenceOnWFSUserStringArray">
+            <summary>Ustawia element stub dla: IDataService4HP.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.CheckIssuesPresenceOnBpmUserBillingDTHIssueWFSArray">
+            <summary>Ustawia element stub dla: IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.CreateNewErrorUserError">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.CreateNewProcessUserProcess">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.CreateNewSolutionUserSolution">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#AddNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.AddNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#AddUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#BoundErrorWithProcess(Entities.User,Entities.Process,Entities.Error[],System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#CheckBillingIssuesPresenceOnWFS(Entities.User,System.String[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#CheckIssuesPresenceOnBpm(Entities.User,Entities.BillingDTHIssueWFS[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#CreateNewError(Entities.User,Entities.Error)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#CreateNewProcess(Entities.User,Entities.Process)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#CreateNewSolution(Entities.User,Entities.Solution)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#DoActionInIssue(System.Nullable{System.Int32},System.Int32,Entities.EventParam[],Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#ExecuteStoredProcedure(Entities.User,System.String,System.String[],Entities.Enums.DatabaseName)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetActionForIssue(Entities.User,System.Int32,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetAllUsers">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetAllUsers()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetBillingBoundEventParamForIssue(Entities.User,System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetBillingComponents(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetBoundEventParamForIssue(Entities.User,System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetErrorTypes(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetErrors(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetEventParamForFormByEventMove(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetProcesses(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetProcesses(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#GetSolutions(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetSolutions(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#InsertNewProcessLog(Entities.User,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#LogIn2(System.String,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#LogOut">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.LogOut()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#NewBillingIssue(Entities.BillingDTHIssueWFS,Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#Notify">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.Notify()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#SearchIssueNote(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#SearchIssueNotes(System.String[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#SearchUserByEmail(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#UpdateNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.UpdateNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HP.DataLayer#HPDataService#IDataService4HP#UpdateUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.DoActionInIssueNullableOfInt32Int32EventParamArrayUser">
+            <summary>Ustawia element stub dla: IDataService4HP.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.ExecuteStoredProcedureUserStringStringArrayDatabaseName">
+            <summary>Ustawia element stub dla: IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetActionForIssueUserInt32Int32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetAllUsers">
+            <summary>Ustawia element stub dla: IDataService4HP.GetAllUsers()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetBillingBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetBillingComponentsUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetErrorTypesUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetErrorsUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetEventParamForFormByEventMoveUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetProcessesUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetProcesses(User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.GetSolutionsUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetSolutions(User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.InsertNewProcessLogUserString">
+            <summary>Ustawia element stub dla: IDataService4HP.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.LogIn2StringString">
+            <summary>Ustawia element stub dla: IDataService4HP.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.LogOut">
+            <summary>Ustawia element stub dla: IDataService4HP.LogOut()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.NewBillingIssueBillingDTHIssueWFSUser">
+            <summary>Ustawia element stub dla: IDataService4HP.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.Notify">
+            <summary>Ustawia element stub dla: IDataService4HP.Notify()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.SearchIssueNoteString">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.SearchIssueNotesStringArray">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.SearchUserByEmailString">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.UpdateNoteNote">
+            <summary>Ustawia element stub dla: IDataService4HP.UpdateNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HP.UpdateUserHeliosUser">
+            <summary>Ustawia element stub dla: IDataService4HP.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel">
+            <summary>Typ klasy zastępczej dla DataLayer.HPDataService.IDataService4HPChannel</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIDataService4HPChannel</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.Abort">
+            <summary>Ustawia element stub dla: ICommunicationObject.Abort()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AddNoteNote">
+            <summary>Ustawia element stub dla: IDataService4HP.AddNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AddUserHeliosUser">
+            <summary>Ustawia element stub dla: IDataService4HP.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#AllowInitializationUI">
+            <summary>Ustawia element stub dla: IClientChannel.get_AllowInitializationUI()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AllowInitializationUIGet">
+            <summary>Ustawia element stub dla: IClientChannel.get_AllowInitializationUI()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AllowInitializationUISetBoolean">
+            <summary>Ustawia element stub dla: IClientChannel.set_AllowInitializationUI(Boolean value)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#AllowOutputBatching">
+            <summary>Ustawia element stub dla: IContextChannel.get_AllowOutputBatching()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AllowOutputBatchingGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_AllowOutputBatching()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AllowOutputBatchingSetBoolean">
+            <summary>Ustawia element stub dla: IContextChannel.set_AllowOutputBatching(Boolean value)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AttachBackingFieldToAllowInitializationUI">
+            <summary>Dołącza delegatów, aby emulować „StubIDataService4HPChannel.AllowInitializationUI” jako właściwość z polem zapasowym.</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AttachBackingFieldToAllowOutputBatching">
+            <summary>Dołącza delegatów, aby emulować „StubIDataService4HPChannel.AllowOutputBatching” jako właściwość z polem zapasowym.</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.AttachBackingFieldToOperationTimeout">
+            <summary>Dołącza delegatów, aby emulować „StubIDataService4HPChannel.OperationTimeout” jako właściwość z polem zapasowym.</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BeginCloseAsyncCallbackObject">
+            <summary>Ustawia element stub dla: ICommunicationObject.BeginClose(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BeginCloseTimeSpanAsyncCallbackObject">
+            <summary>Ustawia element stub dla: ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BeginDisplayInitializationUIAsyncCallbackObject">
+            <summary>Ustawia element stub dla: IClientChannel.BeginDisplayInitializationUI(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BeginOpenAsyncCallbackObject">
+            <summary>Ustawia element stub dla: ICommunicationObject.BeginOpen(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BeginOpenTimeSpanAsyncCallbackObject">
+            <summary>Ustawia element stub dla: ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.BoundErrorWithProcessUserProcessErrorArrayBoolean">
+            <summary>Ustawia element stub dla: IDataService4HP.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CheckBillingIssuesPresenceOnWFSUserStringArray">
+            <summary>Ustawia element stub dla: IDataService4HP.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CheckIssuesPresenceOnBpmUserBillingDTHIssueWFSArray">
+            <summary>Ustawia element stub dla: IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.Close">
+            <summary>Ustawia element stub dla: ICommunicationObject.Close()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CloseTimeSpan">
+            <summary>Ustawia element stub dla: ICommunicationObject.Close(TimeSpan timeout)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CreateNewErrorUserError">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CreateNewProcessUserProcess">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.CreateNewSolutionUserSolution">
+            <summary>Ustawia element stub dla: IDataService4HP.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#AddNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.AddNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#AddUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#BoundErrorWithProcess(Entities.User,Entities.Process,Entities.Error[],System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.BoundErrorWithProcess(User user, Process process, Error[] errors, Boolean delete)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#CheckBillingIssuesPresenceOnWFS(Entities.User,System.String[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CheckBillingIssuesPresenceOnWFS(User user, String[] issues)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#CheckIssuesPresenceOnBpm(Entities.User,Entities.BillingDTHIssueWFS[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#CreateNewError(Entities.User,Entities.Error)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#CreateNewProcess(Entities.User,Entities.Process)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#CreateNewSolution(Entities.User,Entities.Solution)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#DoActionInIssue(System.Nullable{System.Int32},System.Int32,Entities.EventParam[],Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#ExecuteStoredProcedure(Entities.User,System.String,System.String[],Entities.Enums.DatabaseName)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetActionForIssue(Entities.User,System.Int32,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetAllUsers">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetAllUsers()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetBillingBoundEventParamForIssue(Entities.User,System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetBillingComponents(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetBoundEventParamForIssue(Entities.User,System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetErrorTypes(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetErrors(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetEventParamForFormByEventMove(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetProcesses(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetProcesses(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#GetSolutions(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.GetSolutions(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#InsertNewProcessLog(Entities.User,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#LogIn2(System.String,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#LogOut">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.LogOut()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#NewBillingIssue(Entities.BillingDTHIssueWFS,Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#Notify">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.Notify()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#SearchIssueNote(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#SearchIssueNotes(System.String[])">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#SearchUserByEmail(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#UpdateNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.UpdateNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DataLayer#HPDataService#IDataService4HP#UpdateUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IDataService4HP.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#DidInteractiveInitialization">
+            <summary>Ustawia element stub dla: IClientChannel.get_DidInteractiveInitialization()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DidInteractiveInitializationGet">
+            <summary>Ustawia element stub dla: IClientChannel.get_DidInteractiveInitialization()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DisplayInitializationUI">
+            <summary>Ustawia element stub dla: IClientChannel.DisplayInitializationUI()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.Dispose">
+            <summary>Ustawia element stub dla: IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.DoActionInIssueNullableOfInt32Int32EventParamArrayUser">
+            <summary>Ustawia element stub dla: IDataService4HP.DoActionInIssue(Nullable`1&lt;Int32&gt; idIssue, Int32 eventMoveId, EventParam[] paramz, User u)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.EndCloseIAsyncResult">
+            <summary>Ustawia element stub dla: ICommunicationObject.EndClose(IAsyncResult result)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.EndDisplayInitializationUIIAsyncResult">
+            <summary>Ustawia element stub dla: IClientChannel.EndDisplayInitializationUI(IAsyncResult result)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.EndOpenIAsyncResult">
+            <summary>Ustawia element stub dla: ICommunicationObject.EndOpen(IAsyncResult result)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.ExecuteStoredProcedureUserStringStringArrayDatabaseName">
+            <summary>Ustawia element stub dla: IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IExtensibleObject{System#ServiceModel#IContextChannel}#Extensions">
+            <summary>Ustawia element stub dla: IExtensibleObject`1.get_Extensions()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.ExtensionsGet">
+            <summary>Ustawia element stub dla: IExtensibleObject`1.get_Extensions()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetActionForIssueUserInt32Int32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetAllUsers">
+            <summary>Ustawia element stub dla: IDataService4HP.GetAllUsers()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetBillingBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetBillingComponentsUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetBoundEventParamForIssueUserInt32Int32Array">
+            <summary>Ustawia element stub dla: IDataService4HP.GetBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetErrorTypesUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetErrorsUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetEventParamForFormByEventMoveUserInt32">
+            <summary>Ustawia element stub dla: IDataService4HP.GetEventParamForFormByEventMove(User user, Int32 eventMoveId)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetProcessesUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetProcesses(User user)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetPropertyOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0})">
+            <summary>Ustawia klasy zastępcze dla GetProperty()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.GetSolutionsUser">
+            <summary>Ustawia element stub dla: IDataService4HP.GetSolutions(User user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#InputSession">
+            <summary>Ustawia element stub dla: IContextChannel.get_InputSession()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.InputSessionGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_InputSession()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.InsertNewProcessLogUserString">
+            <summary>Ustawia element stub dla: IDataService4HP.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#LocalAddress">
+            <summary>Ustawia element stub dla: IContextChannel.get_LocalAddress()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.LocalAddressGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_LocalAddress()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.LogIn2StringString">
+            <summary>Ustawia element stub dla: IDataService4HP.LogIn2(String login, String pass)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.LogOut">
+            <summary>Ustawia element stub dla: IDataService4HP.LogOut()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.NewBillingIssueBillingDTHIssueWFSUser">
+            <summary>Ustawia element stub dla: IDataService4HP.NewBillingIssue(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.Notify">
+            <summary>Ustawia element stub dla: IDataService4HP.Notify()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.Open">
+            <summary>Ustawia element stub dla: ICommunicationObject.Open()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.OpenTimeSpan">
+            <summary>Ustawia element stub dla: ICommunicationObject.Open(TimeSpan timeout)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#OperationTimeout">
+            <summary>Ustawia element stub dla: IContextChannel.get_OperationTimeout()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.OperationTimeoutGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_OperationTimeout()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.OperationTimeoutSetTimeSpan">
+            <summary>Ustawia element stub dla: IContextChannel.set_OperationTimeout(TimeSpan value)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#OutputSession">
+            <summary>Ustawia element stub dla: IContextChannel.get_OutputSession()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.OutputSessionGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_OutputSession()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#RemoteAddress">
+            <summary>Ustawia element stub dla: IContextChannel.get_RemoteAddress()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.RemoteAddressGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_RemoteAddress()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.SearchIssueNoteString">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.SearchIssueNotesStringArray">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchIssueNotes(String[] issueNumbers)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.SearchUserByEmailString">
+            <summary>Ustawia element stub dla: IDataService4HP.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IContextChannel#SessionId">
+            <summary>Ustawia element stub dla: IContextChannel.get_SessionId()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.SessionIdGet">
+            <summary>Ustawia element stub dla: IContextChannel.get_SessionId()</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#State">
+            <summary>Ustawia element stub dla: ICommunicationObject.get_State()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.StateGet">
+            <summary>Ustawia element stub dla: ICommunicationObject.get_State()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#IDisposable#Dispose">
+            <summary>Ustawia element klasa zastępcza dla: IDisposable.Dispose()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#Channels#IChannel#GetProperty``1">
+            <summary>Ustawia element klasa zastępcza dla: IChannel.GetProperty()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#BeginDisplayInitializationUI(System.AsyncCallback,System.Object)">
+            <summary>Ustawia element klasa zastępcza dla: IClientChannel.BeginDisplayInitializationUI(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#DisplayInitializationUI">
+            <summary>Ustawia element klasa zastępcza dla: IClientChannel.DisplayInitializationUI()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#EndDisplayInitializationUI(System.IAsyncResult)">
+            <summary>Ustawia element klasa zastępcza dla: IClientChannel.EndDisplayInitializationUI(IAsyncResult result)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#Abort">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.Abort()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.BeginClose(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.BeginOpen(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#Close">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.Close()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.Close(TimeSpan timeout)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.EndClose(IAsyncResult result)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.EndOpen(IAsyncResult result)</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#Open">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.Open()</summary>
+        </member>
+        <member name="M:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)">
+            <summary>Ustawia element klasa zastępcza dla: ICommunicationObject.Open(TimeSpan timeout)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.UpdateNoteNote">
+            <summary>Ustawia element stub dla: IDataService4HP.UpdateNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.UpdateUserHeliosUser">
+            <summary>Ustawia element stub dla: IDataService4HP.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.System#ServiceModel#IClientChannel#Via">
+            <summary>Ustawia element stub dla: IClientChannel.get_Via()</summary>
+        </member>
+        <member name="F:DataLayer.HPDataService.Fakes.StubIDataService4HPChannel.ViaGet">
+            <summary>Ustawia element stub dla: IClientChannel.get_Via()</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimDBNotesManager">
+            <summary>Typ podkładki dla DataLayer.Implementation.DBNotesManager</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBNotesManager.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBNotesManager.#ctor(DataLayer.Implementation.DBNotesManager)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.AddNoteNote">
+            <summary>Ustawia element podkładka dla: DBNotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimDBNotesManager.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.AllInstances.AddNoteNote">
+            <summary>Ustawia element podkładka dla: DBNotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.AllInstances.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: DBNotesManager.SearchIssueNote(String issueNumber)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.AllInstances.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: DBNotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.AllInstances.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: DBNotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBNotesManager.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBNotesManager.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBNotesManager.Bind(DataLayer.Interface.INotesManager)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.ConstructorServiceManager">
+            <summary>Ustawia element podkładka dla: DBNotesManager.DBNotesManager(ServiceManager manager)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.GetNoteDBManagerServiceManager">
+            <summary>Ustawia element podkładka dla: DBNotesManager.GetNoteDBManager(ServiceManager manager)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: DBNotesManager.SearchIssueNote(String issueNumber)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: DBNotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBNotesManager.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: DBNotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimDBUsersHelios">
+            <summary>Typ podkładki dla DataLayer.Implementation.DBUsersHelios</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBUsersHelios.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBUsersHelios.#ctor(DataLayer.Implementation.DBUsersHelios)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AllInstances.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AllInstances.GetAllUsers">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AllInstances.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.AllInstances.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBUsersHelios.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBUsersHelios.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimDBUsersHelios.Bind(DataLayer.Interface.IUsersHelios)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.ConstructorServiceManager">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.DBUsersHelios(ServiceManager manager)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.GetAllUsers">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimDBUsersHelios.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: DBUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS">
+            <summary>Typ podkładki dla DataLayer.Implementation.GatewayDaoWFS</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.#ctor">
+            <summary>Inicjuje nowe wystąpienie podkładki</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.#ctor(DataLayer.Implementation.GatewayDaoWFS)">
+            <summary>Inicjuje nową podkładkę dla danego wystąpienia</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AddBillingIssueToWFSBillingDTHIssueWFSUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddBillingIssueToWFS(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AddNoteNote">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances">
+            <summary>Definiowanie podkładek dla wszystkich elementów członkowskich wystąpień</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.AddBillingIssueToWFSBillingDTHIssueWFSUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddBillingIssueToWFS(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.AddNoteNote">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.AddUserHeliosUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.BoundErrorWithProcessUserProcessListOfErrorBoolean">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.Channel_FaultedObjectEventArgs">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.Channel_Faulted(Object obj, EventArgs arg)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CheckBillingIssuesPresenceOnWFSStringArray">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CheckBillingIssuesPresenceOnWFS(String[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CheckIssuesPresenceOnBpmListOfBillingIssueDtoHelios">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CreateNewErrorUserError">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CreateNewIssueBillingDTHIssueWFS">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewIssue(BillingDTHIssueWFS issue)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CreateNewProcessUserProcess">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.CreateNewSolutionUserSolution">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.DoActionInIssueNullableOfInt32Int32ListOfEventParamUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz, User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.ExecuteStoredProcedureStringStringArrayDatabaseName">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetActionForIssueInt32Int32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetAllUsers">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetBillingBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetBillingComponentsUserInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetErrorTypesUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetErrorsUserInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetEventParamForFormByEventMoveInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetProcessesUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetProcesses(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.GetSolutionsUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetSolutions(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.InsertNewProcessLogUserString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.LogOutFromHPService">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.UpdateNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.loginToWFSWithUserInfoStringString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.notifyWebService">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.notifyWebService()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.AllInstances.setLoggedUserUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.setLoggedUser(User u)</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.BehaveAsCurrent">
+            <summary>Przypisuje zachowanie „Current” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.BehaveAsNotImplemented">
+            <summary>Przypisuje zachowanie „NotImplemented” dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Behavior">
+            <summary>Przypisuje zachowanie dla wszystkich metod z typem zastąpionym podkładką</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Bind(DataLayer.Interface.IGatewayDaoWFS)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Bind(DataLayer.Interface.INotesManager)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Bind(DataLayer.Interface.IProcessManagerGateway)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Bind(DataLayer.Interface.IUsersHelios)">
+            <summary>Powiązuje elementy członkowskie interfejsu z podkładką.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.BoundErrorWithProcessUserProcessListOfErrorBoolean">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Channel_FaultedObjectEventArgs">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.Channel_Faulted(Object obj, EventArgs arg)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CheckBillingIssuesPresenceOnWFSStringArray">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CheckBillingIssuesPresenceOnWFS(String[] issues)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CheckIssuesPresenceOnBpmListOfBillingIssueDtoHelios">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.Constructor">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GatewayDaoWFS()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CreateNewErrorUserError">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CreateNewIssueBillingDTHIssueWFS">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewIssue(BillingDTHIssueWFS issue)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CreateNewProcessUserProcess">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.CreateNewSolutionUserSolution">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.DoActionInIssueNullableOfInt32Int32ListOfEventParamUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz, User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.ExecuteStoredProcedureStringStringArrayDatabaseName">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetActionForIssueInt32Int32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetAllUsers">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetAllUsers()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetBillingBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetBillingComponentsUserInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetErrorTypesUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetErrorsUserInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetEventParamForFormByEventMoveInt32">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetProcessesUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetProcesses(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.GetSolutionsUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.GetSolutions(User user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.InsertNewProcessLogUserString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.LogOutFromHPService">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.SearchIssueNoteString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.SearchNotesListOfString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.SearchUserByEmailString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.UpdateNoteNote">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.UpdateNote(Note note)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.UpdateUserHeliosUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.loginToWFSWithUserInfoStringString">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password)</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.notifyWebService">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.notifyWebService()</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.ShimGatewayDaoWFS.setLoggedUserUser">
+            <summary>Ustawia element podkładka dla: GatewayDaoWFS.setLoggedUser(User u)</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.StubDBNotesManager">
+            <summary>Typ klasy zastępczej dla DataLayer.Implementation.DBNotesManager</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubDBNotesManager.#ctor(DataLayer.ServiceManager)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBNotesManager.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubDBNotesManager.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubDBNotesManager</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBNotesManager.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBNotesManager.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.StubDBUsersHelios">
+            <summary>Typ klasy zastępczej dla DataLayer.Implementation.DBUsersHelios</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubDBUsersHelios.#ctor(DataLayer.ServiceManager)">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBUsersHelios.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubDBUsersHelios.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubDBUsersHelios</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBUsersHelios.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubDBUsersHelios.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:DataLayer.Implementation.Fakes.StubGatewayDaoWFS">
+            <summary>Typ klasy zastępczej dla DataLayer.Implementation.GatewayDaoWFS</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubGatewayDaoWFS.#ctor">
+            <summary>Inicjuje nowe wystąpienie</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubGatewayDaoWFS.CallBase">
+            <summary>Pobiera lub ustawia wartość określającą, czy zamiast zachowania alternatywnego należy wywołać metodę bazową</summary>
+        </member>
+        <member name="M:DataLayer.Implementation.Fakes.StubGatewayDaoWFS.InitializeStub">
+            <summary>Inicjuje nowe wystąpienie elementu type StubGatewayDaoWFS</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubGatewayDaoWFS.InstanceBehavior">
+            <summary>Pobiera lub ustawia zachowanie wystąpienia.</summary>
+        </member>
+        <member name="P:DataLayer.Implementation.Fakes.StubGatewayDaoWFS.InstanceObserver">
+            <summary>Pobiera lub ustawia obserwatora wystąpienia.</summary>
+        </member>
+        <member name="T:DataLayer.Interface.Fakes.StubIGatewayDaoWFS">
+            <summary>Typ klasy zastępczej dla DataLayer.Interface.IGatewayDaoWFS</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIGatewayDaoWFS</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.AddBillingIssueToWFSBillingDTHIssueWFSUser">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.AddBillingIssueToWFS(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.AddNoteNote">
+            <summary>Ustawia element stub dla: INotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.AddUserHeliosUser">
+            <summary>Ustawia element stub dla: IUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.BoundErrorWithProcessUserProcessListOfErrorBoolean">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CheckBillingIssuesPresenceOnWFSStringArray">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.CheckBillingIssuesPresenceOnWFS(String[] issues)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CheckIssuesPresenceOnBpmListOfBillingIssueDtoHelios">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CreateNewErrorUserError">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CreateNewIssueBillingDTHIssueWFS">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.CreateNewIssue(BillingDTHIssueWFS issue)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CreateNewProcessUserProcess">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.CreateNewSolutionUserSolution">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#AddBillingIssueToWFS(Entities.BillingDTHIssueWFS,Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.AddBillingIssueToWFS(BillingDTHIssueWFS issue, User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#CheckBillingIssuesPresenceOnWFS(System.String[])">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.CheckBillingIssuesPresenceOnWFS(String[] issues)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#CheckIssuesPresenceOnBpm(System.Collections.Generic.List{Entities.BillingIssueDtoHelios})">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1&lt;BillingIssueDtoHelios&gt; issues)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#CreateNewIssue(Entities.BillingDTHIssueWFS)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.CreateNewIssue(BillingDTHIssueWFS issue)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#DoActionInIssue(System.Nullable{System.Int32},System.Int32,System.Collections.Generic.List{Entities.EventParam},Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz, User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#ExecuteStoredProcedure(System.String,System.String[],Entities.Enums.DatabaseName)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#GetActionForIssue(System.Int32,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#GetBillingBoundEventParamForIssue(System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#GetBillingComponents(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#GetBoundEventParamForIssue(System.Int32,System.Int32[])">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#GetEventParamForFormByEventMove(System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#LogOutFromHPService">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#loginToWFSWithUserInfo(System.String,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.loginToWFSWithUserInfo(String user, String password)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#notifyWebService">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.notifyWebService()</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IGatewayDaoWFS#setLoggedUser(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IGatewayDaoWFS.setLoggedUser(User u)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#INotesManager#AddNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#INotesManager#SearchIssueNote(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#INotesManager#SearchNotes(System.Collections.Generic.List{System.String})">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#INotesManager#UpdateNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#BoundErrorWithProcess(Entities.User,Entities.Process,System.Collections.Generic.List{Entities.Error},System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#CreateNewError(Entities.User,Entities.Error)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#CreateNewProcess(Entities.User,Entities.Process)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#CreateNewSolution(Entities.User,Entities.Solution)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#GetErrorTypes(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#GetErrors(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#GetProcesses(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetProcesses(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#GetSolutions(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetSolutions(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IProcessManagerGateway#InsertNewProcessLog(Entities.User,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IUsersHelios#AddUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IUsersHelios#GetAllUsers">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IUsersHelios#SearchUserByEmail(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DataLayer#Interface#IUsersHelios#UpdateUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.DoActionInIssueNullableOfInt32Int32ListOfEventParamUser">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.DoActionInIssue(Nullable`1&lt;Int32&gt; IssueId, Int32 EventMove, List`1&lt;EventParam&gt; paramz, User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.ExecuteStoredProcedureStringStringArrayDatabaseName">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetActionForIssueInt32Int32">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetAllUsers">
+            <summary>Ustawia element stub dla: IUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetBillingBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetBillingComponentsUserInt32">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.GetBillingComponents(User user, Int32 id)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetBoundEventParamForIssueInt32Int32Array">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.GetBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetErrorTypesUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetErrorsUserInt32">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetEventParamForFormByEventMoveInt32">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.GetEventParamForFormByEventMove(Int32 eventMoveId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetProcessesUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetProcesses(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.GetSolutionsUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetSolutions(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.InsertNewProcessLogUserString">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.LogOutFromHPService">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.LogOutFromHPService()</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.LoginToWFSWithUserInfoStringString">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.loginToWFSWithUserInfo(String user, String password)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.NotifyWebService">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.notifyWebService()</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.SearchIssueNoteString">
+            <summary>Ustawia element stub dla: INotesManager.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.SearchNotesListOfString">
+            <summary>Ustawia element stub dla: INotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.SearchUserByEmailString">
+            <summary>Ustawia element stub dla: IUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.SetLoggedUserUser">
+            <summary>Ustawia element stub dla: IGatewayDaoWFS.setLoggedUser(User u)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.UpdateNoteNote">
+            <summary>Ustawia element stub dla: INotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIGatewayDaoWFS.UpdateUserHeliosUser">
+            <summary>Ustawia element stub dla: IUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="T:DataLayer.Interface.Fakes.StubINotesManager">
+            <summary>Typ klasy zastępczej dla DataLayer.Interface.INotesManager</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubINotesManager.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubINotesManager</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubINotesManager.AddNoteNote">
+            <summary>Ustawia element stub dla: INotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubINotesManager.DataLayer#Interface#INotesManager#AddNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.AddNote(Note note)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubINotesManager.DataLayer#Interface#INotesManager#SearchIssueNote(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubINotesManager.DataLayer#Interface#INotesManager#SearchNotes(System.Collections.Generic.List{System.String})">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubINotesManager.DataLayer#Interface#INotesManager#UpdateNote(Entities.Note)">
+            <summary>Ustawia element klasa zastępcza dla: INotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubINotesManager.SearchIssueNoteString">
+            <summary>Ustawia element stub dla: INotesManager.SearchIssueNote(String issuenumber)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubINotesManager.SearchNotesListOfString">
+            <summary>Ustawia element stub dla: INotesManager.SearchNotes(List`1&lt;String&gt; issuenumbers)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubINotesManager.UpdateNoteNote">
+            <summary>Ustawia element stub dla: INotesManager.UpdateNote(Note note)</summary>
+        </member>
+        <member name="T:DataLayer.Interface.Fakes.StubIProcessManagerGateway">
+            <summary>Typ klasy zastępczej dla DataLayer.Interface.IProcessManagerGateway</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIProcessManagerGateway</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.BoundErrorWithProcessUserProcessListOfErrorBoolean">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.CreateNewErrorUserError">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.CreateNewProcessUserProcess">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.CreateNewSolutionUserSolution">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#BoundErrorWithProcess(Entities.User,Entities.Process,System.Collections.Generic.List{Entities.Error},System.Boolean)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.BoundErrorWithProcess(User user, Process process, List`1&lt;Error&gt; errors, Boolean delete)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#CreateNewError(Entities.User,Entities.Error)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewError(User user, Error error)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#CreateNewProcess(Entities.User,Entities.Process)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewProcess(User user, Process process)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#CreateNewSolution(Entities.User,Entities.Solution)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.CreateNewSolution(User user, Solution solution)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#GetErrorTypes(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#GetErrors(Entities.User,System.Int32)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#GetProcesses(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetProcesses(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#GetSolutions(Entities.User)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.GetSolutions(User user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIProcessManagerGateway.DataLayer#Interface#IProcessManagerGateway#InsertNewProcessLog(Entities.User,System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IProcessManagerGateway.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.GetErrorTypesUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetErrorTypes(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.GetErrorsUserInt32">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetErrors(User user, Int32 processId)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.GetProcessesUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetProcesses(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.GetSolutionsUser">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.GetSolutions(User user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIProcessManagerGateway.InsertNewProcessLogUserString">
+            <summary>Ustawia element stub dla: IProcessManagerGateway.InsertNewProcessLog(User user, String inXml)</summary>
+        </member>
+        <member name="T:DataLayer.Interface.Fakes.StubIUsersHelios">
+            <summary>Typ klasy zastępczej dla DataLayer.Interface.IUsersHelios</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIUsersHelios.#ctor">
+            <summary>Inicjuje nowe wystąpienie elementu type StubIUsersHelios</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIUsersHelios.AddUserHeliosUser">
+            <summary>Ustawia element stub dla: IUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIUsersHelios.DataLayer#Interface#IUsersHelios#AddUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.AddUser(HeliosUser user)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIUsersHelios.DataLayer#Interface#IUsersHelios#GetAllUsers">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIUsersHelios.DataLayer#Interface#IUsersHelios#SearchUserByEmail(System.String)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="M:DataLayer.Interface.Fakes.StubIUsersHelios.DataLayer#Interface#IUsersHelios#UpdateUser(Entities.HeliosUser)">
+            <summary>Ustawia element klasa zastępcza dla: IUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIUsersHelios.GetAllUsers">
+            <summary>Ustawia element stub dla: IUsersHelios.GetAllUsers()</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIUsersHelios.SearchUserByEmailString">
+            <summary>Ustawia element stub dla: IUsersHelios.SearchUserByEmail(String email)</summary>
+        </member>
+        <member name="F:DataLayer.Interface.Fakes.StubIUsersHelios.UpdateUserHeliosUser">
+            <summary>Ustawia element stub dla: IUsersHelios.UpdateUser(HeliosUser user)</summary>
+        </member>
+    </members>
+</doc>

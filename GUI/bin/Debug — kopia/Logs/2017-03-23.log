@@ -1,0 +1,140 @@
+czwartek, 23 marca 2017 14:43:48
+
+--- Main exception: Message ---
+Server was unable to process request. ---> A local error occurred.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.LogIn2(String login, String pass)
+   w DataLayer.Implementation.GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 254
+   w LogicLayer.Implementation.ParserEngineWFS.loginToWFSWithUserInfo(String username, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\Implementation\ParserEngineWFS.cs:wiersz 46
+   w GUI.Login.<button1_Click>b__20_0() w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\LoginForm.cs:wiersz 89
+
+--- Main exception: Source ---
+mscorlib
+
+czwartek, 23 marca 2017 15:45:16
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.WFSModelerForm.tbDataUtrzorzeniaProblemuAutoComplete(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\WFSModelerForm.cs:wiersz 1145
+   w System.Windows.Forms.Control.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.TextBoxBase.WmReflectCommand(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   w System.Windows.Forms.Control.WmCommand(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.GroupBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\MainForm.cs:wiersz 3378
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 marca 2017 15:46:43
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.WFSModelerForm.tbDataUtrzorzeniaProblemuAutoComplete(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\WFSModelerForm.cs:wiersz 1145
+   w System.Windows.Forms.Control.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.TextBoxBase.WmReflectCommand(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   w System.Windows.Forms.Control.WmCommand(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.GroupBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\MainForm.cs:wiersz 3378
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 marca 2017 15:58:31
+
+--- Main exception: Message ---
+Could not find custom field with name 'customfield_19350' on the JIRA server. Make sure this field is available when editing this issue. For more information see JRA-6857
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.CustomFieldValueCollection.<ForEdit>b__6(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 151
+   w Atlassian.Jira.CustomFieldValueCollection.get_Item(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 133
+   w GUI.WFSModelerForm.tbDataUtrzorzeniaProblemuAutoComplete(Object sender, EventArgs e)
+   w System.Windows.Forms.Control.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.TextBoxBase.WmReflectCommand(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   w System.Windows.Forms.Control.WmCommand(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.GroupBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e)
+
+--- Main exception: Source ---
+Atlassian.Jira
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entities.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entities.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="DatabaseName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="SupportBPM" />
+      <xs:enumeration value="SupportADDONS" />
+      <xs:enumeration value="SupportDSDB" />
+      <xs:enumeration value="SupportCP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DatabaseName" nillable="true" type="tns:DatabaseName" />
+</xs:schema>

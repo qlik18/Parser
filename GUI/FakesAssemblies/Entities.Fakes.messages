@@ -1,0 +1,10 @@
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować klasy zastępczej dla Entities.Enums.DatabaseName: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować klasy zastępczej dla Entities.Enums.EventParamNames: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować klasy zastępczej dla Entities.Enums.IssueState: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować klasy zastępczej dla Entities.Enums.IssueType: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować klasy zastępczej dla Entities.Enums.LoginParamType: typ jest typem wartości.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować podkładki dla Entities.Enums.DatabaseName: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować podkładki dla Entities.Enums.EventParamNames: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować podkładki dla Entities.Enums.IssueState: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować podkładki dla Entities.Enums.IssueType: typ jest wyliczeniem.
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\Fakes\Entities.fakes : warning : Nie można wygenerować podkładki dla Entities.Enums.LoginParamType: typ jest wyliczeniem.

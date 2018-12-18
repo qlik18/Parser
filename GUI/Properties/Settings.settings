@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Project" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CRM" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CRM&lt;/string&gt;
+  &lt;string&gt;INFOLINIA&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Billing" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;NDTH&lt;/string&gt;
+  &lt;string&gt;SR&lt;/string&gt;
+  &lt;string&gt;CP&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="loginWFS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="hasloWFS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="loginJira" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="hasloJira" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="czyDzwiek" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dzwiekSciezka" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sounds/BikeHorn.wav</Value>
+    </Setting>
+    <Setting Name="assignedFilterName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DoRealizacji2liniaBill</Value>
+    </Setting>
+    <Setting Name="unassignedFilterName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DoPobrania2liniaBill</Value>
+    </Setting>
+    <Setting Name="Zamowienia" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string /&gt;
+  &lt;string&gt;SOS&lt;/string&gt;
+  &lt;string&gt;PLK&lt;/string&gt;
+  &lt;string&gt;SBL&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="czyObaDrzewa" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="czyPowiadomienie" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IssuesCheckTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="KomentarzDoJira" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Zgłoszenie zostało przyjęte</Value>
+    </Setting>
+    <Setting Name="hasloBillennium" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Users" Type="System.Xml.XmlDocument" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Users&gt;
+  &lt;User&gt;
+    &lt;login&gt;prekawek&lt;/login&gt;
+    &lt;loginJira&gt;prekawek&lt;/loginJira&gt;
+    &lt;sendMail&gt;1&lt;/sendMail&gt;
+  &lt;/User&gt;
+  &lt;User&gt;
+    &lt;login&gt;plachowicz&lt;/login&gt;
+    &lt;loginJira&gt;plachowicz&lt;/loginJira&gt;
+    &lt;sendMail&gt;1&lt;/sendMail&gt;
+  &lt;/User&gt;
+&lt;/Users&gt;</Value>
+    </Setting>
+    <Setting Name="AppVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Parser 3.0.23.10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

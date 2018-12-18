@@ -1,0 +1,19 @@
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.pdb
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Logging.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.pdb

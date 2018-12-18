@@ -1,0 +1,20 @@
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.pdb
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.dll
+C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.pdb
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.dll
+C:\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.pdb
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.dll
+C:\CP\BillGIT — kopia\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Entities.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.pdb

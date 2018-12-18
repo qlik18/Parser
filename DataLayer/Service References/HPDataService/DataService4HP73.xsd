@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="surname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ResultValueOfArrayOfKeyValueOfintstringuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfKeyValueOf{0}{1}{#}" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+            <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q1:Exception" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Result" nillable="true" type="q2:ArrayOfKeyValueOfintstring" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfKeyValueOfintstringuHEDJ7Dj" nillable="true" type="tns:ResultValueOfArrayOfKeyValueOfintstringuHEDJ7Dj" />
+  <xs:complexType name="ResultValueOfArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScDuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfKeyValueOf{0}{1}{#}" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <GenericParameter Name="KeyValuePairOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+              <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+              <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+            </GenericParameter>
+            <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q3:Exception" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Result" nillable="true" type="q4:ArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScD" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScDuHEDJ7Dj" nillable="true" type="tns:ResultValueOfArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScDuHEDJ7Dj" />
+  <xs:complexType name="ArrayOfBillingDTHIssueWFS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BillingDTHIssueWFS" nillable="true" type="tns:BillingDTHIssueWFS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBillingDTHIssueWFS" nillable="true" type="tns:ArrayOfBillingDTHIssueWFS" />
+  <xs:complexType name="BillingDTHIssueWFS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataIGodzinaOstatniegoKomentarza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataIGodzinaUtworzeniaZgloszenia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataWystapieniaBledu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdKontraktu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdZamowienia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Imie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JiraId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Kategoria" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="Nazwisko" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumerZgloszenia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priorytet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rodzaj" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="System" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="TrescZgloszenia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Typ" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="TytulZgloszenia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WFSIssueId" type="xs:int" />
+      <xs:element minOccurs="0" name="WFSState" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BillingDTHIssueWFS" nillable="true" type="tns:BillingDTHIssueWFS" />
+  <xs:complexType name="Component">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Component" nillable="true" type="tns:Component" />
+  <xs:complexType name="ResultValueOfArrayOfArrayOfstringuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfArrayOfstring" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q5:Exception" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Result" nillable="true" type="q6:ArrayOfArrayOfstring" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfArrayOfstringuHEDJ7Dj" nillable="true" type="tns:ResultValueOfArrayOfArrayOfstringuHEDJ7Dj" />
+  <xs:complexType name="ResultValueOfArrayOfEventParamModeler2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfEventParamModeler" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q7:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfEventParamModeler" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfEventParamModeler2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfEventParamModeler2e3ESk9D" />
+  <xs:complexType name="ArrayOfEventParamModeler">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventParamModeler" nillable="true" type="tns:EventParamModeler" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventParamModeler" nillable="true" type="tns:ArrayOfEventParamModeler" />
+  <xs:complexType name="EventParamModeler">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BoundEventParam" nillable="true" type="tns:EventParam" />
+      <xs:element minOccurs="0" name="BoundEventParamId" type="xs:int" />
+      <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DBTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DSName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventId" type="xs:int" />
+      <xs:element minOccurs="0" name="EventParamId" type="xs:int" />
+      <xs:element minOccurs="0" name="FriendlyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Height" type="xs:int" />
+      <xs:element minOccurs="0" name="LabelLeft" type="xs:int" />
+      <xs:element minOccurs="0" name="LabelTop" type="xs:int" />
+      <xs:element minOccurs="0" name="Left" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParamGroupId" type="xs:int" />
+      <xs:element minOccurs="0" name="SoudceId" type="xs:int" />
+      <xs:element minOccurs="0" name="TechName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Top" type="xs:int" />
+      <xs:element minOccurs="0" name="Width" type="xs:int" />
+      <xs:element minOccurs="0" name="isRequired" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventParamModeler" nillable="true" type="tns:EventParamModeler" />
+  <xs:complexType name="EventParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DBExtValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DBValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EventParamId" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventParam" nillable="true" type="tns:EventParam" />
+  <xs:complexType name="ResultValueOfArrayOfEventParam2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfEventParam" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q8:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfEventParam" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfEventParam2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfEventParam2e3ESk9D" />
+  <xs:complexType name="ArrayOfEventParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventParam" nillable="true" type="tns:EventParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventParam" nillable="true" type="tns:ArrayOfEventParam" />
+  <xs:complexType name="ResultValueOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q9:Exception" />
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfboolean" nillable="true" type="tns:ResultValueOfboolean" />
+  <xs:complexType name="HeliosUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="imie" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nazwisko" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="telefon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeliosUser" nillable="true" type="tns:HeliosUser" />
+  <xs:complexType name="ResultValueOfArrayOfHeliosUser2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfHeliosUser" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q10:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfHeliosUser" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfHeliosUser2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfHeliosUser2e3ESk9D" />
+  <xs:complexType name="ArrayOfHeliosUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HeliosUser" nillable="true" type="tns:HeliosUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHeliosUser" nillable="true" type="tns:ArrayOfHeliosUser" />
+  <xs:complexType name="ResultValueOfHeliosUser2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HeliosUser" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q11:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:HeliosUser" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfHeliosUser2e3ESk9D" nillable="true" type="tns:ResultValueOfHeliosUser2e3ESk9D" />
+  <xs:complexType name="Note">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="author" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isChanged" type="xs:boolean" />
+      <xs:element minOccurs="0" name="issueNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noteNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Note" nillable="true" type="tns:Note" />
+  <xs:complexType name="ResultValueOfNote2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Note" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q12:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:Note" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfNote2e3ESk9D" nillable="true" type="tns:ResultValueOfNote2e3ESk9D" />
+  <xs:complexType name="ResultValueOfArrayOfNote2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfNote" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q13:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfNote" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfNote2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfNote2e3ESk9D" />
+  <xs:complexType name="ArrayOfNote">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Note" nillable="true" type="tns:Note" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNote" nillable="true" type="tns:ArrayOfNote" />
+  <xs:complexType name="ResultValueOfArrayOfErrorType2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfErrorType" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q14:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfErrorType" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfErrorType2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfErrorType2e3ESk9D" />
+  <xs:complexType name="ArrayOfErrorType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ErrorType" nillable="true" type="tns:ErrorType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfErrorType" nillable="true" type="tns:ArrayOfErrorType" />
+  <xs:complexType name="ErrorType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorType" nillable="true" type="tns:ErrorType" />
+  <xs:complexType name="ResultValueOfArrayOfProcess2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfProcess" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q15:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfProcess" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfProcess2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfProcess2e3ESk9D" />
+  <xs:complexType name="ArrayOfProcess">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Process" nillable="true" type="tns:Process" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProcess" nillable="true" type="tns:ArrayOfProcess" />
+  <xs:complexType name="Process">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PokazWGui" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Process" nillable="true" type="tns:Process" />
+  <xs:complexType name="ResultValueOfArrayOfError2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfError" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q16:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfError" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfError2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfError2e3ESk9D" />
+  <xs:complexType name="ArrayOfError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="tns:Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfError" nillable="true" type="tns:ArrayOfError" />
+  <xs:complexType name="Error">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescriptionFull" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Error" nillable="true" type="tns:Error" />
+  <xs:complexType name="ResultValueOfArrayOfSolution2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfSolution" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q17:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfSolution" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfArrayOfSolution2e3ESk9D" nillable="true" type="tns:ResultValueOfArrayOfSolution2e3ESk9D" />
+  <xs:complexType name="ArrayOfSolution">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Solution" nillable="true" type="tns:Solution" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSolution" nillable="true" type="tns:ArrayOfSolution" />
+  <xs:complexType name="Solution">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="NameBussiness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameCP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Solution" nillable="true" type="tns:Solution" />
+  <xs:complexType name="ResultValueOfProcess2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Process" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q18:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:Process" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfProcess2e3ESk9D" nillable="true" type="tns:ResultValueOfProcess2e3ESk9D" />
+  <xs:complexType name="ResultValueOfError2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Error" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q19:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:Error" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfError2e3ESk9D" nillable="true" type="tns:ResultValueOfError2e3ESk9D" />
+  <xs:complexType name="ResultValueOfSolution2e3ESk9D">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultValueOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Solution" Namespace="http://schemas.datacontract.org/2004/07/Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Ex" nillable="true" type="q20:Exception" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:Solution" />
+      <xs:element minOccurs="0" name="isAuthenticated" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultValueOfSolution2e3ESk9D" nillable="true" type="tns:ResultValueOfSolution2e3ESk9D" />
+</xs:schema>

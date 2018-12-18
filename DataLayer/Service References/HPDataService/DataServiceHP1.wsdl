@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DataServiceHP" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CustomBinding_IDataService4HP_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entities" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Entities.Enums" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataService4HP_GetActionForIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionForIssue" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetActionForIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionForIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CheckBillingIssuesPresenceOnWFS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBillingIssuesPresenceOnWFS" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CheckBillingIssuesPresenceOnWFS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBillingIssuesPresenceOnWFSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CheckIssuesPresenceOnBpm_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckIssuesPresenceOnBpm" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CheckIssuesPresenceOnBpm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckIssuesPresenceOnBpmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_ExecuteStoredProcedure_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_ExecuteStoredProcedure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBillingComponents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingComponents" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBillingComponents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingComponentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetEventParamForFormByEventMove_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventParamForFormByEventMove" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetEventParamForFormByEventMove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventParamForFormByEventMoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBoundEventParamForIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBoundEventParamForIssue" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBoundEventParamForIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBoundEventParamForIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBillingBoundEventParamForIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingBoundEventParamForIssue" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetBillingBoundEventParamForIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillingBoundEventParamForIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_DoActionInIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoActionInIssue" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_DoActionInIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoActionInIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_NewBillingIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewBillingIssue" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_NewBillingIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewBillingIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_LogIn2_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogIn2" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_LogIn2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogIn2Response" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_LogOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogOut" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_LogOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_Notify_InputMessage">
+    <wsdl:part name="parameters" element="tns:Notify" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_Notify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NotifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchUserByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchUserByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_AddNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNote" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_AddNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_UpdateNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNote" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_UpdateNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchIssueNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssueNote" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchIssueNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssueNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchIssueNotes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssueNotes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_SearchIssueNotes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssueNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetErrorTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetErrorTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetErrorTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetErrorTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetProcesses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcesses" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetProcesses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProcessesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetErrors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetErrors" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetErrors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetErrorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetSolutions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolutions" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_GetSolutions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolutionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewProcess_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewProcess" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewProcess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewError_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewError" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewSolution_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewSolution" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_CreateNewSolution_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewSolutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_BoundErrorWithProcess_InputMessage">
+    <wsdl:part name="parameters" element="tns:BoundErrorWithProcess" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_BoundErrorWithProcess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BoundErrorWithProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_InsertNewProcessLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewProcessLog" />
+  </wsdl:message>
+  <wsdl:message name="IDataService4HP_InsertNewProcessLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewProcessLogResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IDataService4HP">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetActionForIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetActionForIssue" message="tns:IDataService4HP_GetActionForIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetActionForIssueResponse" message="tns:IDataService4HP_GetActionForIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CheckBillingIssuesPresenceOnWFS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/CheckBillingIssuesPresenceOnWFS" message="tns:IDataService4HP_CheckBillingIssuesPresenceOnWFS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/CheckBillingIssuesPresenceOnWFSResponse" message="tns:IDataService4HP_CheckBillingIssuesPresenceOnWFS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CheckIssuesPresenceOnBpm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/CheckIssuesPresenceOnBpm" message="tns:IDataService4HP_CheckIssuesPresenceOnBpm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/CheckIssuesPresenceOnBpmResponse" message="tns:IDataService4HP_CheckIssuesPresenceOnBpm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ExecuteStoredProcedure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/ExecuteStoredProcedure" message="tns:IDataService4HP_ExecuteStoredProcedure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/ExecuteStoredProcedureResponse" message="tns:IDataService4HP_ExecuteStoredProcedure_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetBillingComponents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetBillingComponents" message="tns:IDataService4HP_GetBillingComponents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetBillingComponentsResponse" message="tns:IDataService4HP_GetBillingComponents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetEventParamForFormByEventMove">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetEventParamForFormByEventMove" message="tns:IDataService4HP_GetEventParamForFormByEventMove_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetEventParamForFormByEventMoveResponse" message="tns:IDataService4HP_GetEventParamForFormByEventMove_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetBoundEventParamForIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetBoundEventParamForIssue" message="tns:IDataService4HP_GetBoundEventParamForIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetBoundEventParamForIssueResponse" message="tns:IDataService4HP_GetBoundEventParamForIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetBillingBoundEventParamForIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetBillingBoundEventParamForIssue" message="tns:IDataService4HP_GetBillingBoundEventParamForIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetBillingBoundEventParamForIssueResponse" message="tns:IDataService4HP_GetBillingBoundEventParamForIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DoActionInIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/DoActionInIssue" message="tns:IDataService4HP_DoActionInIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/DoActionInIssueResponse" message="tns:IDataService4HP_DoActionInIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="NewBillingIssue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/NewBillingIssue" message="tns:IDataService4HP_NewBillingIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/NewBillingIssueResponse" message="tns:IDataService4HP_NewBillingIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="LogIn2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/LogIn2" message="tns:IDataService4HP_LogIn2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/LogIn2Response" message="tns:IDataService4HP_LogIn2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="true" name="LogOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/LogOut" message="tns:IDataService4HP_LogOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/LogOutResponse" message="tns:IDataService4HP_LogOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Notify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/Notify" message="tns:IDataService4HP_Notify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/NotifyResponse" message="tns:IDataService4HP_Notify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/AddUser" message="tns:IDataService4HP_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/AddUserResponse" message="tns:IDataService4HP_AddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetAllUsers" message="tns:IDataService4HP_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetAllUsersResponse" message="tns:IDataService4HP_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SearchUserByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/SearchUserByEmail" message="tns:IDataService4HP_SearchUserByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/SearchUserByEmailResponse" message="tns:IDataService4HP_SearchUserByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/UpdateUser" message="tns:IDataService4HP_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/UpdateUserResponse" message="tns:IDataService4HP_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/AddNote" message="tns:IDataService4HP_AddNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/AddNoteResponse" message="tns:IDataService4HP_AddNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/UpdateNote" message="tns:IDataService4HP_UpdateNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/UpdateNoteResponse" message="tns:IDataService4HP_UpdateNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SearchIssueNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/SearchIssueNote" message="tns:IDataService4HP_SearchIssueNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/SearchIssueNoteResponse" message="tns:IDataService4HP_SearchIssueNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SearchIssueNotes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/SearchIssueNotes" message="tns:IDataService4HP_SearchIssueNotes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/SearchIssueNotesResponse" message="tns:IDataService4HP_SearchIssueNotes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetErrorTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetErrorTypes" message="tns:IDataService4HP_GetErrorTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetErrorTypesResponse" message="tns:IDataService4HP_GetErrorTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetProcesses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetProcesses" message="tns:IDataService4HP_GetProcesses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetProcessesResponse" message="tns:IDataService4HP_GetProcesses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetErrors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetErrors" message="tns:IDataService4HP_GetErrors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetErrorsResponse" message="tns:IDataService4HP_GetErrors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetSolutions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/GetSolutions" message="tns:IDataService4HP_GetSolutions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/GetSolutionsResponse" message="tns:IDataService4HP_GetSolutions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewProcess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewProcess" message="tns:IDataService4HP_CreateNewProcess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewProcessResponse" message="tns:IDataService4HP_CreateNewProcess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewError">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewError" message="tns:IDataService4HP_CreateNewError_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewErrorResponse" message="tns:IDataService4HP_CreateNewError_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewSolution">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewSolution" message="tns:IDataService4HP_CreateNewSolution_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/CreateNewSolutionResponse" message="tns:IDataService4HP_CreateNewSolution_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="BoundErrorWithProcess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/BoundErrorWithProcess" message="tns:IDataService4HP_BoundErrorWithProcess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/BoundErrorWithProcessResponse" message="tns:IDataService4HP_BoundErrorWithProcess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="InsertNewProcessLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService4HP/InsertNewProcessLog" message="tns:IDataService4HP_InsertNewProcessLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService4HP/InsertNewProcessLogResponse" message="tns:IDataService4HP_InsertNewProcessLog_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomBinding_IDataService4HP" type="tns:IDataService4HP">
+    <wsp:PolicyReference URI="#CustomBinding_IDataService4HP_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActionForIssue">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetActionForIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBillingIssuesPresenceOnWFS">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/CheckBillingIssuesPresenceOnWFS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIssuesPresenceOnBpm">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/CheckIssuesPresenceOnBpm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/ExecuteStoredProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillingComponents">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetBillingComponents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventParamForFormByEventMove">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetEventParamForFormByEventMove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBoundEventParamForIssue">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetBoundEventParamForIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBillingBoundEventParamForIssue">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetBillingBoundEventParamForIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoActionInIssue">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/DoActionInIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewBillingIssue">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/NewBillingIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogIn2">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/LogIn2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOut">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/LogOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Notify">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/Notify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/AddUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserByEmail">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/SearchUserByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNote">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/AddNote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNote">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/UpdateNote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchIssueNote">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/SearchIssueNote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchIssueNotes">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/SearchIssueNotes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetErrorTypes">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetErrorTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcesses">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetProcesses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetErrors">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetErrors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSolutions">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/GetSolutions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewProcess">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/CreateNewProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewError">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/CreateNewError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewSolution">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/CreateNewSolution" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BoundErrorWithProcess">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/BoundErrorWithProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewProcessLog">
+      <soap12:operation soapAction="http://tempuri.org/IDataService4HP/InsertNewProcessLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataServiceHP">
+    <wsdl:port name="CustomBinding_IDataService4HP" binding="tns:CustomBinding_IDataService4HP">
+      <soap12:address location="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

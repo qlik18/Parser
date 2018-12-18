@@ -1,0 +1,5 @@
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Release\CPHeliosParserNotes.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\bin\Release\CPHeliosParserNotes.pdb
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Release\CPHeliosParserNotes.csprojResolveAssemblyReference.cache
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Release\CPHeliosParserNotes.dll
+C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\CPHeliosParserNotes\obj\Release\CPHeliosParserNotes.pdb

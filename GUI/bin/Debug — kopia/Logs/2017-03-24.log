@@ -1,0 +1,160 @@
+piątek, 24 marca 2017 12:56:38
+
+--- Main exception: Message ---
+Could not find custom field with name 'customfield_19350-val' on the JIRA server. Make sure this field is available when editing this issue. For more information see JRA-6857
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.CustomFieldValueCollection.<ForEdit>b__6(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 151
+   w Atlassian.Jira.CustomFieldValueCollection.get_Item(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 133
+   w GUI.WFSModelerForm.tbDataUtrzorzeniaProblemuAutoComplete(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\WFSModelerForm.cs:wiersz 1163
+   w System.Windows.Forms.Control.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.TextBoxBase.WmReflectCommand(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   w System.Windows.Forms.Control.WmCommand(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.GroupBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\MainForm.cs:wiersz 3378
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 24 marca 2017 12:58:22
+
+--- Main exception: Message ---
+Could not find custom field with name 'customfield_19350-val' on the JIRA server. Make sure this field is available when editing this issue. For more information see JRA-6857
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.CustomFieldValueCollection.<ForEdit>b__6(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 151
+   w Atlassian.Jira.CustomFieldValueCollection.get_Item(String fieldName) w c:\projects\atlassian-net-sdk\Atlassian.Jira\CustomFieldValueCollection.cs:wiersz 133
+   w GUI.WFSModelerForm.tbDataUtrzorzeniaProblemuAutoComplete(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\WFSModelerForm.cs:wiersz 1163
+   w System.Windows.Forms.Control.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.TextBoxBase.WmReflectCommand(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   w System.Windows.Forms.Control.WmCommand(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.GroupBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   w System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.TextBox.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\MainForm.cs:wiersz 3378
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 24 marca 2017 13:22:53
+
+--- Main exception: Message ---
+Wywołanie zwrotne użytkownika zgłosiło wyjątek. Sprawdź stos wyjątków i wewnętrzny wyjątek w celu określenia wywołania zwrotnego, które zakończyło się niepowodzeniem.
+
+--- Inner exception 1: Message ---
+Usługa HPWEBService zerwała połączenie. Nie ma możliwości powtórnego zalogowania się. Zrestartuj aplikację
+
+--- Inner exception 1: StackTrace ---
+   w DataLayer.Implementation.GatewayDaoWFS.Channel_Faulted(Object obj, EventArgs arg) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 266
+   w DataLayer.ServiceManager.Channel_Fault(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\ServiceManager.cs:wiersz 27
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+
+--- Inner exception 1: Source ---
+DataLayer
+
+--- Main exception: StackTrace ---
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+   w System.ServiceModel.Channels.CommunicationObject.Fault()
+   w System.ServiceModel.Channels.ServiceChannel.OnInnerChannelFaulted(Object sender, EventArgs e)
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+   w System.ServiceModel.Channels.CommunicationObject.Fault()
+   w System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   w System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   w System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.LogIn2(String login, String pass)
+   w DataLayer.Implementation.GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 254
+   w LogicLayer.Implementation.ParserEngineWFS.loginToWFSWithUserInfo(String username, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\Implementation\ParserEngineWFS.cs:wiersz 46
+   w GUI.Login.<button1_Click>b__20_0() w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\LoginForm.cs:wiersz 89
+
+--- Main exception: Source ---
+System.ServiceModel
+
+piątek, 24 marca 2017 15:04:03
+
+--- Main exception: Message ---
+Wywołanie zwrotne użytkownika zgłosiło wyjątek. Sprawdź stos wyjątków i wewnętrzny wyjątek w celu określenia wywołania zwrotnego, które zakończyło się niepowodzeniem.
+
+--- Inner exception 1: Message ---
+Usługa HPWEBService zerwała połączenie. Nie ma możliwości powtórnego zalogowania się. Zrestartuj aplikację
+
+--- Inner exception 1: StackTrace ---
+   w DataLayer.Implementation.GatewayDaoWFS.Channel_Faulted(Object obj, EventArgs arg) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 266
+   w DataLayer.ServiceManager.Channel_Fault(Object sender, EventArgs e) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\ServiceManager.cs:wiersz 27
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+
+--- Inner exception 1: Source ---
+DataLayer
+
+--- Main exception: StackTrace ---
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+   w System.ServiceModel.Channels.CommunicationObject.Fault()
+   w System.ServiceModel.Channels.ServiceChannel.OnInnerChannelFaulted(Object sender, EventArgs e)
+   w System.ServiceModel.Channels.CommunicationObject.OnFaulted()
+   w System.ServiceModel.Channels.CommunicationObject.Fault()
+   w System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   w System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   w System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.LogIn2(String login, String pass)
+   w DataLayer.Implementation.GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 254
+   w LogicLayer.Implementation.ParserEngineWFS.loginToWFSWithUserInfo(String username, String password) w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\Implementation\ParserEngineWFS.cs:wiersz 46
+   w GUI.Login.<button1_Click>b__20_0() w C:\Git\CustomItems\Billennium.WFS.CPHeliosParser2\GUI\LoginForm.cs:wiersz 89
+
+--- Main exception: Source ---
+System.ServiceModel
+

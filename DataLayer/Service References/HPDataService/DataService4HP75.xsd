@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entities" />
+  <xs:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://supportbpm-preprod.billennium.pl/HPWEBSERIVCE/DataService4HP.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Entities.Enums" />
+  <xs:element name="GetActionForIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q1:User" />
+        <xs:element minOccurs="0" name="issueId" type="xs:int" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionForIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetActionForIssueResult" nillable="true" type="q2:ResultValueOfArrayOfKeyValueOfintstringuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBillingIssuesPresenceOnWFS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q3:User" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="issues" nillable="true" type="q4:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBillingIssuesPresenceOnWFSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="CheckBillingIssuesPresenceOnWFSResult" nillable="true" type="q5:ResultValueOfArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScDuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckIssuesPresenceOnBpm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q6:User" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="issues" nillable="true" type="q7:ArrayOfBillingDTHIssueWFS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckIssuesPresenceOnBpmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="CheckIssuesPresenceOnBpmResult" nillable="true" type="q8:ResultValueOfArrayOfKeyValueOfKeyValuePairOfintstringstringU22W3_ScDuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteStoredProcedure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q9:User" />
+        <xs:element minOccurs="0" name="procedureName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parameters" nillable="true" type="q10:ArrayOfstring" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Entities.Enums" minOccurs="0" name="database" type="q11:DatabaseName" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecuteStoredProcedureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="ExecuteStoredProcedureResult" nillable="true" type="q12:ResultValueOfArrayOfArrayOfstringuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillingComponents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q13:User" />
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillingComponentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetBillingComponentsResult" nillable="true" type="q14:ResultValueOfArrayOfKeyValueOfintstringuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventParamForFormByEventMove">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q15:User" />
+        <xs:element minOccurs="0" name="eventMoveId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventParamForFormByEventMoveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetEventParamForFormByEventMoveResult" nillable="true" type="q16:ResultValueOfArrayOfEventParamModeler2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBoundEventParamForIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q17:User" />
+        <xs:element minOccurs="0" name="issueId" type="xs:int" />
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="eventParamId" nillable="true" type="q18:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBoundEventParamForIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetBoundEventParamForIssueResult" nillable="true" type="q19:ResultValueOfArrayOfEventParam2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillingBoundEventParamForIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q20:User" />
+        <xs:element minOccurs="0" name="issueId" type="xs:int" />
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="eventParamId" nillable="true" type="q21:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillingBoundEventParamForIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetBillingBoundEventParamForIssueResult" nillable="true" type="q22:ResultValueOfArrayOfEventParam2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoActionInIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idIssue" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="eventMoveId" type="xs:int" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="paramz" nillable="true" type="q23:ArrayOfEventParam" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="u" nillable="true" type="q24:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoActionInIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DoActionInIssueResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewBillingIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="issue" nillable="true" type="q25:BillingDTHIssueWFS" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q26:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewBillingIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NewBillingIssueResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogIn2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pass" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogIn2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="LogIn2Result" nillable="true" type="q27:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogOut">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogOutResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Notify">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="NotifyResult" nillable="true" type="q28:ResultValueOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q29:HeliosUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="AddUserResult" nillable="true" type="q30:ResultValueOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUsers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetAllUsersResult" nillable="true" type="q31:ResultValueOfArrayOfHeliosUser2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchUserByEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchUserByEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="SearchUserByEmailResult" nillable="true" type="q32:ResultValueOfHeliosUser2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q33:HeliosUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="UpdateUserResult" nillable="true" type="q34:ResultValueOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="note" nillable="true" type="q35:Note" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="AddNoteResult" nillable="true" type="q36:ResultValueOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="note" nillable="true" type="q37:Note" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="UpdateNoteResult" nillable="true" type="q38:ResultValueOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchIssueNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="issuenumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchIssueNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="SearchIssueNoteResult" nillable="true" type="q39:ResultValueOfNote2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchIssueNotes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="issueNumbers" nillable="true" type="q40:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchIssueNotesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="SearchIssueNotesResult" nillable="true" type="q41:ResultValueOfArrayOfNote2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetErrorTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q42:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetErrorTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetErrorTypesResult" nillable="true" type="q43:ResultValueOfArrayOfErrorType2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProcesses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q44:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProcessesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetProcessesResult" nillable="true" type="q45:ResultValueOfArrayOfProcess2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetErrors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q46:User" />
+        <xs:element minOccurs="0" name="processId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetErrorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetErrorsResult" nillable="true" type="q47:ResultValueOfArrayOfError2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSolutions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q48:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSolutionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetSolutionsResult" nillable="true" type="q49:ResultValueOfArrayOfSolution2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q50:User" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="process" nillable="true" type="q51:Process" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="CreateNewProcessResult" nillable="true" type="q52:ResultValueOfProcess2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewError">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q53:User" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="error" nillable="true" type="q54:Error" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewErrorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="CreateNewErrorResult" nillable="true" type="q55:ResultValueOfError2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewSolution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q56:User" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="solution" nillable="true" type="q57:Solution" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewSolutionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="CreateNewSolutionResult" nillable="true" type="q58:ResultValueOfSolution2e3ESk9D" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BoundErrorWithProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q59:User" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="process" nillable="true" type="q60:Process" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="errors" nillable="true" type="q61:ArrayOfError" />
+        <xs:element minOccurs="0" name="delete" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BoundErrorWithProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BoundErrorWithProcessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertNewProcessLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="user" nillable="true" type="q62:User" />
+        <xs:element minOccurs="0" name="inXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertNewProcessLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertNewProcessLogResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
