@@ -1,0 +1,144 @@
+czwartek, 3 stycznia 2019 12:34:35
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+
+czwartek, 3 stycznia 2019 13:02:13
+
+--- Main exception: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId)
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 50
+   w GUI.MainForm.<timer2_Tick>b__84_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2435
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 3 stycznia 2019 13:07:13
+
+--- Main exception: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId)
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 50
+   w GUI.MainForm.<timer2_Tick>b__84_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2435
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 3 stycznia 2019 13:12:13
+
+--- Main exception: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId)
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 50
+   w GUI.MainForm.<timer2_Tick>b__84_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2435
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 3 stycznia 2019 13:17:13
+
+--- Main exception: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId)
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 50
+   w GUI.MainForm.<timer2_Tick>b__84_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2435
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 3 stycznia 2019 13:18:41
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Inner exception 1: Message ---
+Nie można załadować pliku lub zestawu 'Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' lub jednej z jego zależności. Zlokalizowana definicja manifestu zestawu nie odpowiada odwołaniu do zestawu. (Wyjątek od HRESULT: 0x80131040)
+
+--- Inner exception 1: StackTrace ---
+
+
+--- Inner exception 1: Source ---
+
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+

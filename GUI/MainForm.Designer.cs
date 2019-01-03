@@ -2365,6 +2365,7 @@ namespace GUI
             // 
             this.toolStripProgressBar3.Name = "toolStripProgressBar3";
             resources.ApplyResources(this.toolStripProgressBar3, "toolStripProgressBar3");
+            this.toolStripProgressBar3.MouseHover += new System.EventHandler(this.toolStripProgressBar3_MouseHover);
             // 
             // toolStripStatusLabel7
             // 

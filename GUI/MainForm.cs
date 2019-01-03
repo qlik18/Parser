@@ -108,6 +108,10 @@ namespace GUI
         private bool __quickStep = false;
         // Czy quickSptep
         private bool WorkingSla = false;
+        /// <summary>
+        /// Zmienna do przechowywania pozostałego czasu do obsługi automatycznych kroków
+        /// </summary>
+        private int autoAssigneSecond = 0;
         #endregion
 
         #region STAŁE
@@ -235,6 +239,10 @@ namespace GUI
             assignedFilterNameToolTip.SetToolTip(tb_AssignedFilterName, "Wprowadź nazwę filtru w Jira lub pozostaw puste by skorystać z filtru zdefiniowanego w aplikacji.");
             ToolTip unassignedFilterNameToolTip = new ToolTip();
             unassignedFilterNameToolTip.SetToolTip(tb_UnassignedFilterName, "Wprowadź nazwę filtru w Jira lub pozostaw puste by skorystać z filtru zdefiniowanego w aplikacji.");
+
+            //ToolTip ttTimeToEnd = new ToolTip();
+            //ttTimeToEnd.SetToolTip(this.toolStripProgressBar3, autoAssigneSecond.ToString());
+
 
             if (Properties.Settings.Default.czyPowiadomienie)
             {
@@ -7250,7 +7258,6 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         }
 
 
-        private int autoAssigneSecond = 0;
 
         private void tm_AutoAssigne_Tick(object sender, EventArgs e)
         {
@@ -7450,6 +7457,17 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         private void bt_dayReportSend_Click(object sender, EventArgs e)
         {
             SendEmail(rtb_dayReportMessage);
+        }
+
+        private void toolStripProgressBar3_MouseHover(object sender, EventArgs e)
+        {
+            toolStripProgressBar3.Visible = true;
+            toolStripProgressBar3.ToolTipText = toolStripProgressBar3.Value.ToString();
+
+            //ToolTip ttTimeToEnd = new ToolTip();
+            //ttTimeToEnd.SetToolTip(toolStripProgressBar3.GetCurrentParent(), toolStripProgressBar3.Value.ToString());
+
+
         }
     }
 }
