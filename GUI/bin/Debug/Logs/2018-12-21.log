@@ -1,0 +1,1027 @@
+piątek, 21 grudnia 2018 07:51:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 07:51:04 
+
+piątek, 21 grudnia 2018 07:57:05
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 07:57:05 
+
+piątek, 21 grudnia 2018 07:57:06
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'issueTab' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w GUI.MainForm.DisableIssuesButtons() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3899
+   w GUI.MainForm.ZapiszZgloszenia(List`1 doZapisu, TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7349
+   w GUI.MainForm.<newIssueAutoAddToBPMZapiszZgloszenia>b__208_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7302
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 08:04:54
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:04:54 
+
+piątek, 21 grudnia 2018 08:05:09
+
+Zgłoszenie ZCC-17732 dodano automatycznie o godzinie 2018-12-21 08:05:09!
+piątek, 21 grudnia 2018 08:11:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:11:00 
+
+piątek, 21 grudnia 2018 08:24:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:24:06 
+
+piątek, 21 grudnia 2018 08:30:26
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:30:26 
+
+piątek, 21 grudnia 2018 08:30:37
+
+Zgłoszenie ZCC-17733 dodano automatycznie o godzinie 2018-12-21 08:30:37!
+piątek, 21 grudnia 2018 08:36:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:36:28 
+
+piątek, 21 grudnia 2018 08:42:33
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:42:33 
+
+piątek, 21 grudnia 2018 08:49:57
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:49:57 
+
+piątek, 21 grudnia 2018 08:56:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 08:56:03 
+
+piątek, 21 grudnia 2018 09:02:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:02:33 
+
+piątek, 21 grudnia 2018 09:08:51
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:08:38 
+
+piątek, 21 grudnia 2018 09:14:57
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:14:54 
+
+piątek, 21 grudnia 2018 09:15:00
+
+Zgłoszenie CRM-74736 dodano automatycznie o godzinie 2018-12-21 09:15:00!
+piątek, 21 grudnia 2018 09:26:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:20:59 
+
+piątek, 21 grudnia 2018 09:32:47
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:32:45 
+
+piątek, 21 grudnia 2018 09:32:50
+
+Zgłoszenie CRM-74737 dodano automatycznie o godzinie 2018-12-21 09:32:50!
+piątek, 21 grudnia 2018 09:41:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:38:49 
+
+piątek, 21 grudnia 2018 09:47:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:47:32 
+
+piątek, 21 grudnia 2018 09:53:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:53:35 
+
+piątek, 21 grudnia 2018 09:59:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 09:59:37 
+
+piątek, 21 grudnia 2018 10:05:39
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:05:39 
+
+piątek, 21 grudnia 2018 10:11:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:11:41 
+
+piątek, 21 grudnia 2018 10:17:42
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:17:42 
+
+piątek, 21 grudnia 2018 10:23:44
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:23:44 
+
+piątek, 21 grudnia 2018 10:29:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:29:46 
+
+piątek, 21 grudnia 2018 10:35:48
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:35:48 
+
+piątek, 21 grudnia 2018 10:41:49
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:41:49 
+
+piątek, 21 grudnia 2018 10:47:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:47:52 
+
+piątek, 21 grudnia 2018 10:53:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:53:55 
+
+piątek, 21 grudnia 2018 10:59:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 10:59:58 
+
+piątek, 21 grudnia 2018 11:06:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:06:01 
+
+piątek, 21 grudnia 2018 11:12:03
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:12:03 
+
+piątek, 21 grudnia 2018 11:18:05
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:18:05 
+
+piątek, 21 grudnia 2018 11:35:20
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:35:20 
+
+piątek, 21 grudnia 2018 11:35:20
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'lb_SlaRaport' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.set_WindowText(String value)
+   w System.Windows.Forms.Control.set_Text(String value)
+   w GUI.MainForm.btn_slaRaport_Load_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5587
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 11:42:42
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:42:42 
+
+piątek, 21 grudnia 2018 11:42:57
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'lb_SlaRaport' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.set_WindowText(String value)
+   w System.Windows.Forms.Control.set_Text(String value)
+   w GUI.MainForm.btn_slaRaport_Load_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5587
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 11:54:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 11:54:01 
+
+piątek, 21 grudnia 2018 12:03:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:03:55 
+
+piątek, 21 grudnia 2018 12:03:55
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'lb_SlaRaport' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.set_WindowText(String value)
+   w System.Windows.Forms.Control.set_Text(String value)
+   w GUI.MainForm.btn_slaRaport_Load_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5587
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 12:12:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:12:06 
+
+piątek, 21 grudnia 2018 12:15:05
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:15:05 
+
+piątek, 21 grudnia 2018 12:17:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:17:50 
+
+piątek, 21 grudnia 2018 12:20:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:20:36 
+
+piątek, 21 grudnia 2018 12:20:36
+
+Zgłoszenie ZCC-17734 dodano automatycznie o godzinie 2018-12-21 12:20:36!
+piątek, 21 grudnia 2018 12:23:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:23:21 
+
+piątek, 21 grudnia 2018 12:23:22
+
+Zgłoszenie CRM-74738 dodano automatycznie o godzinie 2018-12-21 12:23:22!
+piątek, 21 grudnia 2018 12:23:25
+
+Zgłoszenie CRM-74739 dodano automatycznie o godzinie 2018-12-21 12:23:25!
+piątek, 21 grudnia 2018 12:26:07
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:26:07 
+
+piątek, 21 grudnia 2018 12:28:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:28:52 
+
+piątek, 21 grudnia 2018 12:28:53
+
+Zgłoszenie CRM-74740 dodano automatycznie o godzinie 2018-12-21 12:28:53!
+piątek, 21 grudnia 2018 12:31:38
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:31:38 
+
+piątek, 21 grudnia 2018 12:34:23
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 12:34:23 
+
+piątek, 21 grudnia 2018 13:26:34
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:26:34 
+
+piątek, 21 grudnia 2018 13:26:35
+
+Zgłoszenie CRM-74742 dodano automatycznie o godzinie 2018-12-21 13:26:35!
+piątek, 21 grudnia 2018 13:26:39
+
+Zgłoszenie INFOLINIA-6425 dodano automatycznie o godzinie 2018-12-21 13:26:39!
+piątek, 21 grudnia 2018 13:26:42
+
+Zgłoszenie KKK-3827 dodano automatycznie o godzinie 2018-12-21 13:26:42!
+piątek, 21 grudnia 2018 13:29:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:29:28 
+
+piątek, 21 grudnia 2018 13:32:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:32:14 
+
+piątek, 21 grudnia 2018 13:35:00
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:35:00 
+
+piątek, 21 grudnia 2018 13:37:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:37:56 
+
+piątek, 21 grudnia 2018 13:40:45
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:40:45 
+
+piątek, 21 grudnia 2018 13:43:31
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:43:31 
+
+piątek, 21 grudnia 2018 13:46:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:46:25 
+
+piątek, 21 grudnia 2018 13:49:19
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:49:19 
+
+piątek, 21 grudnia 2018 13:52:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:52:04 
+
+piątek, 21 grudnia 2018 13:54:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:54:50 
+
+piątek, 21 grudnia 2018 13:57:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 13:57:35 
+
+piątek, 21 grudnia 2018 13:57:51
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 21 grudnia 2018 13:58:06
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 21 grudnia 2018 14:00:39
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:00:39 
+
+piątek, 21 grudnia 2018 14:03:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:03:25 
+
+piątek, 21 grudnia 2018 14:06:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:06:10 
+
+piątek, 21 grudnia 2018 14:08:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:08:56 
+
+piątek, 21 grudnia 2018 14:11:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:11:58 
+
+piątek, 21 grudnia 2018 14:14:51
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:14:51 
+
+piątek, 21 grudnia 2018 14:17:44
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:17:44 
+
+piątek, 21 grudnia 2018 14:20:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:20:37 
+
+piątek, 21 grudnia 2018 14:23:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:23:30 
+
+piątek, 21 grudnia 2018 14:26:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:26:42 
+
+piątek, 21 grudnia 2018 14:29:57
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:29:57 
+
+piątek, 21 grudnia 2018 14:33:02
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:33:02 
+
+piątek, 21 grudnia 2018 14:35:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:35:56 
+
+piątek, 21 grudnia 2018 14:38:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:38:50 
+
+piątek, 21 grudnia 2018 14:40:49
+
+Zgłoszenie CRM-74743 dodano automatycznie o godzinie 2018-12-21 14:40:49!
+piątek, 21 grudnia 2018 14:43:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:43:42 
+
+piątek, 21 grudnia 2018 14:45:16
+
+Zgłoszenie CRM-74744 dodano automatycznie o godzinie 2018-12-21 14:45:16!
+piątek, 21 grudnia 2018 14:47:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:47:32 
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:04
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:05
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:06
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:07
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:07
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass135_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:48:21
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+piątek, 21 grudnia 2018 14:48:37
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+piątek, 21 grudnia 2018 14:50:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:50:33 
+
+piątek, 21 grudnia 2018 14:50:39
+
+Zgłoszenie CRM-74746 dodano automatycznie o godzinie 2018-12-21 14:50:39!
+piątek, 21 grudnia 2018 14:50:50
+
+Zgłoszenie CRM-74746 dodano automatycznie o godzinie 2018-12-21 14:50:50!
+piątek, 21 grudnia 2018 14:50:52
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto)
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__209_0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 grudnia 2018 14:53:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 14:53:35 
+
+piątek, 21 grudnia 2018 14:54:00
+
+Zgłoszenie CRM-74745 dodano automatycznie o godzinie 2018-12-21 14:54:00!
+piątek, 21 grudnia 2018 15:06:24
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 15:06:15 
+
+piątek, 21 grudnia 2018 15:06:39
+
+Zgłoszenie CRM-74745 dodano automatycznie o godzinie 2018-12-21 15:06:39!
+piątek, 21 grudnia 2018 15:18:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 15:18:41 
+
+piątek, 21 grudnia 2018 15:22:09
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 15:22:08 
+
+piątek, 21 grudnia 2018 15:25:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-21 15:25:04 
+
+piątek, 21 grudnia 2018 15:25:17
+
+Zgłoszenie CRM-74747 dodano automatycznie o godzinie 2018-12-21 15:25:17!
+piątek, 21 grudnia 2018 19:01:49
+
+--- Main exception: Message ---
+Nie można usunąć nieprzekazanego nowego wiersza.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.btn_slaRaport_Load_Click(Object sender, EventArgs e)
+
+--- Main exception: Source ---
+System.Windows.Forms
+

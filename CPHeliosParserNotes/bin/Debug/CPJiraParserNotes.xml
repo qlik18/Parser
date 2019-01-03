@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CPJiraParserNotes</name>
+    </assembly>
+    <members>
+        <member name="T:CPJiraParserNotes.Note">
+            <summary>
+            Klasa umożliwiająca tworzenie, zapis, edycję i odczyt notatek skojarzonych ze zgłoszeniami  Heliosa.</summary>
+            <remarks>
+            Notatki przypisane do zgłoszenia o numerze 0 mogą pełnić rolę np. newsów czy swobodnych zapisków.
+            Notatki są przechowywane we wskazanym pliku xml. Ponadto jest tworzony dodatkowy plik z rozszerzeniem .bu pełniący rolę backupu</remarks>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String,System.String)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+            <param name="content">Treść notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+            <param name="content">Treść notatki</param>
+            <param name="author">Autor notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+            <param name="content">Treść notatki</param>
+            <param name="author">Autor notatki</param>
+            <param name="published">Data dodania notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String,System.String,System.String,System.DateTime,System.Int32)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+            <param name="content">Treść notatki</param>
+            <param name="author">Autor notatki</param>
+            <param name="published">Data dodania notatki</param>
+            <param name="no">Numer zgłoszenia, do którego odnosi się notatka</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.#ctor(System.String,System.String,System.String,System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            Konstruktor </summary>
+            <param name="path">Ścieżka zapisu plików notatek</param>
+            <param name="content">Treść notatki</param>
+            <param name="author">Autor notatki</param>
+            <param name="published">Data dodania notatki</param>
+            <param name="no">Numer zgłoszenia, do którego odnosi się notatka</param>
+            <param name="id">Indywidualny identyfikator notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetId(System.Int32)">
+            <summary>
+            Ustawia identyfikator notatki </summary>
+            <param name="id">Nowy identyfikator</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetId">
+            <summary>
+            Zwraca identyfikator notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetPath(System.String)">
+            <summary>
+            Ustawia ścieżkę pliku notatki notatki </summary>
+            <param name="path">Nowa ścieżka</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetPath">
+            <summary>
+            Zwraca ścieżkę pliku xml notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetNo(System.Int32)">
+            <summary>
+            Ustawia numer zgłoszenia, do którego jest przypisana notatka </summary>
+            <param name="no">Nowy numer zgłoszenia</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetNo">
+            <summary>
+            Zwraca numer zgłoszenia, do którego jest przypisana notatka </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetAuthor(System.String)">
+            <summary>
+            Ustawia autora notatki </summary>
+            <param name="author">Nowy autor</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetAuthor">
+            <summary>
+            Zwraca autora notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetPublished(System.DateTime)">
+            <summary>
+            Ustawia datę publikacji notatki </summary>
+            <param name="published">Nowa data</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetPublished">
+            <summary>
+            Zwraca datę publikacji notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.SetContent(System.String)">
+            <summary>
+            Ustawia treść notatki </summary>
+            <param name="content">Nowa treść</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetContent">
+            <summary>
+            Zwraca treść notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.Save">
+            <summary>
+            Zapisuje notatkę. Jeśli jej status jest równy 1, to edytuje istniejącą, jeśli 2 to tworzy nową </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetByNo(System.Int32)">
+            <summary>
+            Pobiera notatki przypisane do danego zgłoszenia </summary>
+            <param name="no">Numer zgłoszenia</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetByAuthor(System.String)">
+            <summary>
+            Pobiera notatki stworzone przez danego autora </summary>
+            <param name="author">Autor notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetSince(System.DateTime)">
+            <summary>
+            Pobiera notatki napisane później niż podana data </summary>
+            <param name="published">Data od której są pobierane notatki</param>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.GetAll">
+            <summary>
+            Pobiera wszystkie notatki </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.Delete">
+            <summary>
+            Usuwa notatkę </summary>
+        </member>
+        <member name="M:CPJiraParserNotes.Note.Undo">
+            <summary>
+            Cofa ostatnią akcję zapisu, edycji lub usunięcia.
+            Ponowne użycia ponawia cofniętą akcję</summary>
+        </member>
+    </members>
+</doc>

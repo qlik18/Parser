@@ -1,0 +1,282 @@
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:58
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:41:59
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass136_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4874
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 25 grudnia 2018 01:42:08
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4947
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 25 grudnia 2018 01:42:48
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4947
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 25 grudnia 2018 01:44:27
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-25 01:44:27 
+
+wtorek, 25 grudnia 2018 01:45:31
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2018-12-25 01:45:31] 
+
+wtorek, 25 grudnia 2018 01:45:47
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2018-12-25 01:45:47] 
+
+wtorek, 25 grudnia 2018 01:45:47
+
+Modyfikacja treeItemwtorek, 25 grudnia 2018 01:45:47
+
+Status Auto: False 
+
+wtorek, 25 grudnia 2018 01:45:47
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2018-12-25 01:45:47] 
+
+wtorek, 25 grudnia 2018 01:45:50
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2018-12-25 01:45:50] 
+
+wtorek, 25 grudnia 2018 01:45:50
+
+Modyfikacja treeItemwtorek, 25 grudnia 2018 01:45:50
+
+Status Auto: False 
+
+wtorek, 25 grudnia 2018 01:47:12
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-25 01:47:12 
+
+wtorek, 25 grudnia 2018 01:49:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-25 01:49:58 
+
+wtorek, 25 grudnia 2018 01:52:47
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-25 01:52:47 
+
+wtorek, 25 grudnia 2018 01:55:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2018-12-25 01:55:32 
+
