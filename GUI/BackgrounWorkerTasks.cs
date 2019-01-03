@@ -13,37 +13,37 @@ namespace GUI
 {
     public partial class MainForm
     {
-        private void doSearchPolsatUsers(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                this.pb_SetMaxProgressBar(100);
-                this.pb_SetVisibilityPanel(true);
-                this.pb_UpdateProgressBar("Pobieranie użytkowników z bazy danych");
-               // PolsatUsers = usersHelios.GetAllUsers();
-                this.pb_UpdateProgressBar("Pobieranie użytkowników z bazy danych");
-                foreach (Entities.HeliosUser item in PolsatUsers)
-                {
-                    ListViewItem it = new ListViewItem(item.email);
-                    it.SubItems.Add(item.imie);
-                    it.SubItems.Add(item.nazwisko);
-                    it.SubItems.Add(item.telefon);
-                    lv_Users.Invoke((MethodInvoker)delegate
-                    {
-                        lv_Users.Items.Add(it);
-                    });
-                }
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
-            }
-        }
+        //private void doSearchPolsatUsers(object sender, DoWorkEventArgs e)
+        //{
+        //    //try
+        //    //{
+        //    //    this.pb_SetMaxProgressBar(100);
+        //    //    this.pb_SetVisibilityPanel(true);
+        //    //    this.pb_UpdateProgressBar("Pobieranie użytkowników z bazy danych");
+        //    //   // PolsatUsers = usersHelios.GetAllUsers();
+        //    //    this.pb_UpdateProgressBar("Pobieranie użytkowników z bazy danych");
+        //    //    foreach (Entities.HeliosUser item in PolsatUsers)
+        //    //    {
+        //    //        ListViewItem it = new ListViewItem(item.email);
+        //    //        it.SubItems.Add(item.imie);
+        //    //        it.SubItems.Add(item.nazwisko);
+        //    //        it.SubItems.Add(item.telefon);
+        //    //        lv_Users.Invoke((MethodInvoker)delegate
+        //    //        {
+        //    //            lv_Users.Items.Add(it);
+        //    //        });
+        //    //    }
+        //    //}
+        //    //catch (Exception ex)
+        //    //{
+        //    //    ExceptionManager.LogError(ex, Logger.Instance, true);
+        //    //}
+        //}
         
-        private void doSearchPolsatUsersCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            this.pb_SetVisibilityPanel(false);
-        }
+        //private void doSearchPolsatUsersCompleted(object sender, RunWorkerCompletedEventArgs e)
+        //{
+        //    this.pb_SetVisibilityPanel(false);
+        //}
 
         private void doGetComponents(object sender, DoWorkEventArgs e)
         {
@@ -87,6 +87,23 @@ namespace GUI
             this.setBusy(false);
 
         }
+
+        /*
+         * Po pobraniu raportu SLA   
+         */
+        private void SlaReportCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            WorkingSla = false;
+        }
+
+
+        /*
+         * Po pobraniu raportu SLA   
+         */
+        //private void SlaReportJiraIssuCompleted(object sender, RunWorkerCompletedEventArgs e)
+        //{
+        //    WorkingSla = true;
+        //}
 
     }
 }

@@ -18,3 +18,7 @@ C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\bin\Debug\Enti
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.dll
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Entities\obj\Debug\Entities.pdb
+C:\CP\ParserGit\JiraParser\Entities\bin\Debug\Entities.dll
+C:\CP\ParserGit\JiraParser\Entities\bin\Debug\Entities.pdb
+C:\CP\ParserGit\JiraParser\Entities\obj\Debug\Entities.dll
+C:\CP\ParserGit\JiraParser\Entities\obj\Debug\Entities.pdb

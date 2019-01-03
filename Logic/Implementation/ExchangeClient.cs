@@ -6,6 +6,9 @@ using System.Net;
 using System.Net.Mail;
 using Entities;
 using System.IO;
+using RtfPipe;
+using SautinSoft;
+
 
 namespace Logic.Implementation
 {
@@ -78,16 +81,24 @@ namespace Logic.Implementation
             }
         }
 
+
         public void SendEMail(string subject, string address, System.Windows.Forms.RichTextBox body)
         {
             try
             {
                 using (MailMessage mail = new MailMessage())
                 {
-                    //string b = LoadTemplate("slaNotification");
-                    //b = b.Replace("{{DATE}}", DateTime.Now.ToString());
-                    //b = b.Replace("{{CONTENT}}", "<center>" + body + "</center>");
 
+                    var html = Rtf.ToHtml(body.Rtf);
+
+                    RtfPipe.Document doc = new Document();
+
+
+                    //string b = LoadTemplate("availabilityReport");
+                    ////b = b.Replace("{{DATE}}", DateTime.Now.ToString());
+                    ////b = b.Replace("{{CONTENT}}", "<center>" + body + "</center>");
+
+                    //b = b.Replace("{{SummaryBlock}}", body.Text);
                     mail.From = new MailAddress(user.login + "@billennium.pl");
 
                     List<string> recipants = new List<string>();
@@ -101,9 +112,11 @@ namespace Logic.Implementation
                     {
                         mail.To.Add(item);
                     }
+                    mail.To.Add("lpachuta@billennium.pl");
+                    mail.CC.Add("prekawek@billennium.pl");
                     mail.Subject = subject;
-                    mail.Body = body.Text;
-                    mail.IsBodyHtml = false;
+                    mail.Body = html;//body.Rtf;
+                    mail.IsBodyHtml = true;
                     // Can set to false, if you are sending pure text.
 
 

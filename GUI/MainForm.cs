@@ -25,11 +25,11 @@ using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using System.Media;
 using Logic.Implementation;
-using Microsoft.Reporting.WinForms;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Data.SqlClient;
 using LogicLayer;
+
 namespace GUI
 {
 
@@ -68,18 +68,18 @@ namespace GUI
         private string nieprzydzielone = "0";
         // Ilość zgłoszeń przydzielonych
         private string przydzielone = "0";
-        // Użytkownicy CP
-        private List<HeliosUser> PolsatUsers;
         // Zalogowany użytkonik (parsera)
         private HeliosLoggedInUser helLIU = new HeliosLoggedInUser();
         // Użytkownik Jira
         private JiraLoggedUser jiraUser = new JiraLoggedUser();
         // Jira
         private Jira jira;
+        // JiraIssues
+        private JiraIssues jIssue;
         // Czas do kiedy będzie wyświetlana chmurka
         private DateTime alertShowUntil;
         // Projekt zespołu
-        private Logic.Implementation.JiraProject usersProject;
+        //private Logic.Implementation.JiraProject usersProject;
         // Czy zgłoszenia przydzielone: jeśli wybrana zakładka Moje - true; w przeciwnym wypadku - false;
         private bool assignedIssues = false;
         // Instancja formatki WFSModelerForm
@@ -151,15 +151,13 @@ namespace GUI
         #region METODY FORMATKI
         public MainForm()
         {
-
             InitializeComponent();
 
             //tp_tmp = TabAppearance.FlatButtons;
-            tp_tmp.Size = new Size(0, 1);
+            tp_tmp.Size = new System.Drawing.Size(0, 1);
             //tp_tmp.ImeMode = ImeMode. TabSizeMode.Fixed;
             tp_tmp.Text = "";
-
-
+            
             Logger.Instance = new Logger(ConfigurationManager.AppSettings["DirectoryLogs"].ToString(), null);
             //exManager = new ExceptionManager();
             //exManager.log = new ExceptionManager.Loguj(log);
@@ -189,7 +187,7 @@ namespace GUI
         private void MainForm_Load(object sender, EventArgs e)
         {
             t_EmailNotification.Interval = int.Parse(ConfigurationManager.AppSettings["SlaTimeout"]);
-            textBox4.Text = DateTime.Now.ToString("yyyy/MM/dd").Replace('-','/');
+            textBox4.Text = DateTime.Now.ToString("yyyy/MM/dd").Replace('-', '/');
 
             tab_Raporty.Controls.Add(tp_Sla);
             tab_Raporty.Controls.Add(tp_DayReport);
@@ -336,6 +334,25 @@ namespace GUI
 
 
             jira = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password);
+            jIssue = new JiraIssues("http://jira", jiraUser.Login, jiraUser.Password);
+            dgv_SlaRaport.Columns.Add("dgvIssueId", "IssueId");
+            dgv_SlaRaport.Columns.Add("dgvJiraNr", "Numer Jira");
+            dgv_SlaRaport.Columns.Add("dgvAkcjaBPM", "Ostatnia akcja w BPM");
+
+            dgv_SlaRaport.Columns.Add("dgvOdpowiedzialny", "Odpowiedzialny");
+            dgv_SlaRaport.Columns.Add("dgvTypZgloszenia", "Typ zgłoszenia");
+            dgv_SlaRaport.Columns.Add("dgvPriorytet", "Priorytet");
+            dgv_SlaRaport.Columns.Add("dgvPauza", "Pauza");
+            dgv_SlaRaport.Columns.Add("dgvAktCzasRealizacji", "Wypalony czas");
+            dgv_SlaRaport.Columns.Add("dgvCzasRozwiazania", "Deklarowany czas");
+            dgv_SlaRaport.Columns.Add("dgvPozostaloMin", "Pozostało minut");
+
+            dgv_SlaRaport.Columns.Add("dgvAktualnyStan", "Aktualny stan");
+            dgv_SlaRaport.Columns.Add("dgvAktualniePrzydzielony", "Przydzielony");
+            dgv_SlaRaport.Columns.Add("dgvAktualnyPriorytet", "Act. Priorytet");
+            dgv_SlaRaport.Columns.Add("dgvOstatniaAkcja", "ost. Aktualizacja");
+        
+           
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -803,7 +820,8 @@ namespace GUI
                 issues.Add(item.Key);
             }
 
-            wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
+            //wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
+            wmf = new WFSModelerForm(null, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
 
             try
             {
@@ -840,21 +858,21 @@ namespace GUI
         /// <param name="e"></param>
         private void btn_saveUser_Click(object sender, EventArgs e)
         {
-            HeliosUser tmpUser = new HeliosUser()
-            {
-                email = tbx_userEmail.Text,
-                nazwisko = tbx_userSurname.Text,
-                imie = tbx_userFirstname.Text,
-                telefon = tbx_userPhone.Text
-            };
-            if (tmpUser.email != string.Empty && tmpUser.imie != string.Empty && tmpUser.nazwisko != string.Empty)
-            {
-                bool isNew = !PolsatUsers.Any(x => x.email.ToLower() == tbx_userEmail.Text.ToLower());
-                usersHelios.SaveUserData(tmpUser, isNew);
-                GetUsers();
-            }
-            else
-                NoticeForm.ShowNotice("Brak odpowienich danych użytkownika jak email, nazwisko czy imię.", "Brak danych");
+            //HeliosUser tmpUser = new HeliosUser()
+            //{
+            //    email = tbx_userEmail.Text,
+            //    nazwisko = tbx_userSurname.Text,
+            //    imie = tbx_userFirstname.Text,
+            //    telefon = tbx_userPhone.Text
+            //};
+            //if (tmpUser.email != string.Empty && tmpUser.imie != string.Empty && tmpUser.nazwisko != string.Empty)
+            //{
+            //    bool isNew = !PolsatUsers.Any(x => x.email.ToLower() == tbx_userEmail.Text.ToLower());
+            //    usersHelios.SaveUserData(tmpUser, isNew);
+            //    GetUsers();
+            //}
+            //else
+            //    NoticeForm.ShowNotice("Brak odpowienich danych użytkownika jak email, nazwisko czy imię.", "Brak danych");
         }
 
         /// <summary>
@@ -862,30 +880,30 @@ namespace GUI
         /// </summary>
         private void GetUsers()
         {
-            lv_Users.Items.Clear();
-            try
-            {
-                WaitingForm.InvokeWithWaitingForm("Trwa wczytywanie danych", () =>
-                {
-                    PolsatUsers = usersHelios.GetAllUsers();
-                    foreach (Entities.HeliosUser item in PolsatUsers)
-                    {
-                        ListViewItem it = new ListViewItem(item.email);
-                        it.SubItems.Add(item.imie);
-                        it.SubItems.Add(item.nazwisko);
-                        it.SubItems.Add(item.telefon);
-                        lv_Users.Invoke((MethodInvoker)delegate
-                        {
-                            lv_Users.Items.Add(it);
-                        });
-                    }
-                });
+            //lv_Users.Items.Clear();
+            //try
+            //{
+            //    WaitingForm.InvokeWithWaitingForm("Trwa wczytywanie danych", () =>
+            //    {
+            //        PolsatUsers = usersHelios.GetAllUsers();
+            //        foreach (Entities.HeliosUser item in PolsatUsers)
+            //        {
+            //            ListViewItem it = new ListViewItem(item.email);
+            //            it.SubItems.Add(item.imie);
+            //            it.SubItems.Add(item.nazwisko);
+            //            it.SubItems.Add(item.telefon);
+            //            lv_Users.Invoke((MethodInvoker)delegate
+            //            {
+            //                lv_Users.Items.Add(it);
+            //            });
+            //        }
+            //    });
 
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    ExceptionManager.LogError(ex, Logger.Instance, true);
+            //}
         }
 
         /// <summary>
@@ -895,16 +913,16 @@ namespace GUI
         /// <param name="e"></param>
         private void tb_SearchChanged(object sender, EventArgs e)
         {
-            List<HeliosUser> tmp = usersHelios.FilterUsers(tb_surnameSearch.Text, tb_emailSearch.Text, PolsatUsers);
-            lv_Users.Items.Clear();
-            foreach (Entities.HeliosUser item in tmp)
-            {
-                ListViewItem it = new ListViewItem(item.email);
-                it.SubItems.Add(item.imie);
-                it.SubItems.Add(item.nazwisko);
-                it.SubItems.Add(item.telefon);
-                lv_Users.Items.Add(it);
-            }
+            //List<HeliosUser> tmp = usersHelios.FilterUsers(tb_surnameSearch.Text, tb_emailSearch.Text, PolsatUsers);
+            //lv_Users.Items.Clear();
+            //foreach (Entities.HeliosUser item in tmp)
+            //{
+            //    ListViewItem it = new ListViewItem(item.email);
+            //    it.SubItems.Add(item.imie);
+            //    it.SubItems.Add(item.nazwisko);
+            //    it.SubItems.Add(item.telefon);
+            //    lv_Users.Items.Add(it);
+            //}
 
         }
 
@@ -913,18 +931,7 @@ namespace GUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void lv_Users_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lv_Users.SelectedItems.Count == 1)
-            {
-                string email = lv_Users.SelectedItems[0].Text;
-                //XMLUser tmpUser = users.Where(x => x.email == email).FirstOrDefault();
-                tbx_userEmail.Text = lv_Users.SelectedItems[0].SubItems[0].Text;
-                tbx_userFirstname.Text = lv_Users.SelectedItems[0].SubItems[1].Text;
-                tbx_userPhone.Text = lv_Users.SelectedItems[0].SubItems[3].Text;
-                tbx_userSurname.Text = lv_Users.SelectedItems[0].SubItems[2].Text;
-            }
-        }
+
         #endregion
 
         #region BILLING
@@ -1480,26 +1487,77 @@ namespace GUI
             generateServiceReport(crm_rtb);
         }
 
+        /*
+        Private Shared Function InsertTableInRichTextBox(rows As Integer, cols As Integer, width As Integer) As[String]
+	'Create StringBuilder Instance
+	Dim sringTableRtf As New StringBuilder()
+
+	'beginning of rich text format
+	sringTableRtf.Append("{\rtf1 ")
+
+	'Variable for cell width
+	Dim cellWidth As Integer
+
+	'Start row
+	'sringTableRtf.Append(@"\trowd");
+
+	'Loop to create table string
+
+    Dim i As Integer = 1
+
+    While i <= rows
+        sringTableRtf.Append("\trowd\trqc")
+		'trqc is center table
+		Dim j As Integer = 1
+
+        While j <= cols
+			'Calculate cell end point for each cell
+			cellWidth = (j) * width
+
+			'A cell with width 1000 in each iteration.
+
+            sringTableRtf.Append("\cellx" + cellWidth.ToString())
+			j += 1
+		End While
+
+		'Append the row in StringBuilder
+
+        sringTableRtf.Append("\intbl \cell \row")
+		i += 1
+	End While
+
+    sringTableRtf.Append("\pard")
+	sringTableRtf.Append("}")
+
+	Return sringTableRtf.ToString()
+End Function*/
+
         private void generateServiceReport(RichTextBox destyny)
         {
+
+            ExchangeClient ex = new ExchangeClient(gujaczWFS.getUser());
+            string mailBody = ex.LoadTemplate("availabilityReport");
+            string SummaryBlock = "";
+            StringBuilder AllBlock = new StringBuilder();
+
             toolStripStatusLabel6.Text = "Generowanie raportu dziennego";
             setBusy(true);
             try
             {
-
-                //DateTime now = dtp_dayReportDateTo.Value;
-                //DateTime yesterday = dtp_dayReportDateFrom.Value;
+                DateTime now = dtp_dayReportDateTo.Value;
+                DateTime yesterday = dtp_dayReportDateFrom.Value;
 
                 string dateFrom = dtp_dayReportDateFrom.Value.ToShortDateString();
                 string dateTo = dtp_dayReportDateTo.Value.ToShortDateString();
 
-                string timeFrom = tb_CRMRapGodzinaOd.Text;
-                string timeTo = tb_CRMRapGodzinaDo.Text;
+                string timeFrom = tb_dayReportTimeFrom.Text;
+                string timeTo = tb_dayReportTimeTo.Text;
 
-                string tab = "\t";
+                string tab = "         ";
                 string enter = "\n";
+                string newLine = "\r\n";
 
-
+                
                 DateTime dtFrom;
                 DateTime dtTo;
 
@@ -1510,7 +1568,7 @@ namespace GUI
                     dtFrom = DateTime.Parse(dateFrom + " " + timeFrom);
                     dtTo = DateTime.Parse(dateTo + " " + timeTo);
                 }
-                catch (Exception ex)
+                catch (Exception error)
                 {
                     NoticeForm.ShowNotice("Błędnie uzupełnione dane formularza!");
                     //MessageBox.Show("Błędnie uzupełnione dane formularza!");
@@ -1521,6 +1579,10 @@ namespace GUI
 
                 try
                 {
+                    //GemBox 
+                    //    ;.Document dd = new GemBox.Document();
+                    
+
                     string header = "Witam, " +
                     enter + enter + "W dniach " + formatDate(dtp_dayReportDateFrom.Value) + " " + dtFrom.ToShortTimeString() + " - " + formatDate(dtp_dayReportDateTo.Value) + " " + dtTo.ToShortTimeString();
 
@@ -1528,6 +1590,12 @@ namespace GUI
                     string actObszar = "ALL";
                     //dane z bazy:
                     List<List<string>> resultss = gujaczWFS.ExecuteStoredProcedure("spRaportDostepnosciSrodowisk_v6", new string[] { dtFrom.ToString(), dtTo.ToString() }, DatabaseName.SupportCP);
+
+                    HtmlTable awTable = new HtmlTable();
+                    awTable.AddColumn("Nr awarii");
+                    awTable.AddColumn("Data początkowa");
+                    awTable.AddColumn("Data zakończenia");
+                    awTable.AddColumn("Uwagi");
 
                     if (resultss[0].Where(x => x == "AWARIA!!!").Count() > 0)
                     {
@@ -1537,7 +1605,9 @@ namespace GUI
                         {
                             if (item[0] == "AWARIA!!!")
                             {
+                                
                                 header += "Sprawdź zgłoszenie: " + item[1] + enter;
+                                awTable.AddRow(new string[] { item[1], string.Empty, string.Empty, string.Empty });
                             }
                         }
                     }
@@ -1546,10 +1616,32 @@ namespace GUI
                         header += " nie wystąpiły żadne problemy z dostępnością wspieranych środowisk. ";
                     }
 
-                    destyny.Text =
+                    SautinSoft.HtmlToRtf h = new SautinSoft.HtmlToRtf();
+                    string htmlString;
+                    string rtfString;
+                    string rtftable = InsertTableInRichtextbox(destyny);
+                    //if (awTable.Rows.Count > 0)
+                    //{
+
+                    //    //SautinSoft.HtmlToRtf h = new SautinSoft.HtmlToRtf();
+                    //    htmlString = awTable.ToHtml();
+                    //    rtfString = h.ConvertString(htmlString);
+
+
+                    //    //HtmlToRtf(awTable.ToHtml(), rtb_dayReportMessage);
+                    //    rtb_dayReportMessage.Rtf += rtfString;
+                    //}
+
+                    rtfString = //"<html><p>" +
                                 header +
                                 enter +
-                                enter + "Dane o zgłoszeniach od dnia " + dtFrom.ToShortTimeString() + " " + formatDate(dtp_dayReportDateFrom.Value) + " do dnia " + dtTo.ToShortTimeString() + " " + formatDate(dtp_dayReportDateTo.Value);
+                                enter + "Dane o zgłoszeniach od dnia " + dtFrom.ToShortTimeString() + " " + formatDate(dtp_dayReportDateFrom.Value) + " do dnia " + dtTo.ToShortTimeString() + " " + formatDate(dtp_dayReportDateTo.Value)
+                                ;// + "</p></html>";
+
+                    //destyny.Rtf += h.ToRtf(rtfString);
+                    //destyny.Rtf += rtftable;
+                    destyny.Text = rtfString;
+
 
 
                     foreach (var st in resultss)
@@ -1561,7 +1653,7 @@ namespace GUI
                             {
 
                                 //zmana obszaru
-                                destyny.AppendText(enter);
+                                destyny.AppendText(newLine);
                                 destyny.AppendText(enter + "OBSZAR " + st[0] + ": " + enter);
                                 obszaryB.Add("OBSZAR " + st[0] + ": ");
 
@@ -1574,10 +1666,11 @@ namespace GUI
                                 destyny.AppendText(st[2]);
                                 destyny.AppendText(": ");
                                 destyny.AppendText(st[3]);
+                                
                             }
                             else
                             {
-                                destyny.AppendText(enter);
+                                destyny.AppendText(newLine);
                                 for (int i = 0; i < Convert.ToInt32(st[1]); i++)
                                 {
                                     destyny.AppendText(tab);
@@ -1585,6 +1678,7 @@ namespace GUI
                                 destyny.AppendText(st[2]);
                                 destyny.AppendText(": ");
                                 destyny.AppendText(st[3]);
+                                
                             }
 
                             actObszar = st[0];
@@ -1609,22 +1703,75 @@ namespace GUI
                         }
                     }
                     destyny.DeselectAll();
-
+                    
+                    //mailBody.Replace("{{AllBlock}}", AllBlock.ToString());
+                    //destyny.Text = mailBody;
                 }
                 catch (Exception ep)
                 {
                     NoticeForm.ShowNotice(ep.Message);
                 }
+                
 
             }
-            catch (Exception ex)
+            catch (Exception ep)
             {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
+                ExceptionManager.LogError(ep, Logger.Instance, true);
             }
             setBusy(false);
             toolStripStatusLabel6.Text = string.Empty;
         }
+        private string InsertTableInRichtextbox(RichTextBox destyny)
+        {
+            //CreateStringBuilder object
+            StringBuilder strTable = new StringBuilder();
 
+            //Beginning of rich text format,don’t alter this line
+            strTable.Append(@"{\rtf1 ");
+
+            //Create 5 rows with 4 columns
+            for (int i = 0; i < 5; i++)
+            {
+                //Start the row
+                strTable.Append(@"\trowd");
+
+                //First cell with width 1000.
+                strTable.Append(@"\cellx1000");
+
+                //Second cell with width 1000.Ending point is 2000, which is 1000+1000.
+                strTable.Append(@"\cellx2000");
+
+                //Third cell with width 1000.Endingat3000,which is 2000+1000.
+                strTable.Append(@"\cellx3000");
+
+                //Last cell with width 1000.Ending at 4000 (which is 3000+1000)
+                strTable.Append(@"\cellx4000");
+
+                //Append the row in StringBuilder
+                strTable.Append(@"\intbl \cell \row"); //create the row
+            }
+
+            strTable.Append(@"\pard");
+
+            strTable.Append(@"}");
+
+            return strTable.ToString();
+        }
+
+
+        public void HtmlToRtf(string htmlText, RichTextBox destynation)
+        {
+            
+            var webBrowser = new WebBrowser();
+            webBrowser.CreateControl(); // only if needed
+            webBrowser.DocumentText = htmlText;
+            while (webBrowser.DocumentText != htmlText)
+                Application.DoEvents();
+            webBrowser.Document.ExecCommand("SelectAll", false, null);
+            webBrowser.Document.ExecCommand("Copy", false, null);
+            destynation.Paste();
+            //*yourRichTextControl *.Paste();
+        }
         /*//poprzednia wersja raportu  
         private void btn_CRMRaport18_Click(object sender, EventArgs e)
                 {
@@ -3358,6 +3505,35 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         }
 
+        private void addCommentJira(object sender, DoWorkEventArgs e)
+        {
+            string jiraKey = e.Argument.ToString();
+            try
+            {
+
+
+                //komentarz przyjęcia z konta Billennium
+                Jira jComment;
+                jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
+
+
+                //jComment.GetIssue(jiraKey).AddComment(
+                jComment.GetIssue(jiraKey).AddComment(
+                                    Properties.Settings.Default.KomentarzDoJira
+                                    );
+
+                //MessageBox.Show("Dodano zgłoszenie test" + item.Key.Idnumber.ToString());
+
+            }
+            catch
+            {
+                jira.GetIssue(jiraKey).AddComment(
+                Properties.Settings.Default.KomentarzDoJira
+                );
+            }
+
+        }
+
         /// <summary>
         /// btn_WyszukajWJira_Click
         /// </summary>
@@ -3513,6 +3689,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                         wfs.Visible = false;
                         wfs.callback = new WFSform.calbackDelegate(ReturnIssue);
+                        doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
+                        //addCommentJira(tmp.Key.Idnumber.ToString());
                         wfs.ShowDialog();
 
                     }
@@ -3598,15 +3776,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             //wmf = new WFSModelerForm(eventParamForFormByEventMove, sender.ToString(), selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerFormActionFinish));
 
 
-            wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, sender.ToString(), selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerFormActionFinish), tr);
+            wmf = new WFSModelerForm(eventParamForFormByEventMove, sender.ToString(), selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerFormActionFinish), tr);
 
             try
             {
                 if (!wmf.IsDisposed)
                     wmf.ShowDialog();
-
-                if(eventMoveId == 614 && jira.GetIssue(selectIssue.Idnumber).Assignee == string.Empty )
-                    jira.GetIssue(selectIssue.issueWFS.JiraId).Assignee = "prekawek";
 
             }
             catch (Exception ex)
@@ -3698,7 +3873,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
 
             List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(608);
-            WFSModelerForm wfsmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, "Ponowne otwarcie zgłoszenia", selectIssue, gujaczWFS, 608, new WFSModelerForm.calbackDelegate(ModelerFormActionFinish), tr);
+            WFSModelerForm wfsmf = new WFSModelerForm(eventParamForFormByEventMove, "Ponowne otwarcie zgłoszenia", selectIssue, gujaczWFS, 608, new WFSModelerForm.calbackDelegate(ModelerFormActionFinish), tr);
 
 
             try
@@ -4114,7 +4289,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             try
             {
-                jira = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password);
+                jira = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password );
                 //new Jira("http://jira", jiraUser.Login, jiraUser.Password); // http://jira01-t2 http://jira
                 //var typy = jira.GetIssueTypes();
                 var priorities = jira.GetIssuePriorities();
@@ -4307,7 +4482,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             else
                                 filterName = Properties.Settings.Default.unassignedFilterName;
 
-                            IEnumerable<Issue> issuesJira = jIssues.GetIssues(usersProject, assignedIssues, filterName);
+                            IEnumerable<Issue> issuesJira = jIssues.GetIssues(assignedIssues, filterName);
 
                             List<BillingIssueDtoHelios> BillingissDtoHel = new List<BillingIssueDtoHelios>();
 
@@ -4408,12 +4583,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                             // NIEPRZYDZIELONE
                             string unassignedFilterName = Properties.Settings.Default.unassignedFilterName;
-                            issuesJira = jIssues.GetIssues(usersProject, false, unassignedFilterName);
-                            jIssues.ChangeDataModel(issuesJira, out unassignedIssues, ref JiraUsers);
+                            issuesJira = jIssues.GetIssues(false, unassignedFilterName);
+                            jIssues.ChangeDataModel(issuesJira, out unassignedIssues    , ref JiraUsers);
 
                             // PRZYDZIELONE
                             string assignedFilterName = Properties.Settings.Default.assignedFilterName;
-                            issuesJira = jIssues.GetIssues(usersProject, true, assignedFilterName);
+                            issuesJira = jIssues.GetIssues(true, assignedFilterName);
                             jIssues.ChangeDataModel(issuesJira, out assignedIssues, ref JiraUsers);
 
                             /* //zawieszone
@@ -4899,7 +5074,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 }
                 catch (Exception ex)
                 {
-                    ExceptionManager.LogError(ex, Logger.Instance, true);
+                    ExceptionManager.LogError(ex, Logger.Instance, false);
                     issueMove[tr.Name].Clear();
                 }
             }
@@ -5208,7 +5383,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 List<List<string>> output = gujaczWFS.ExecuteStoredProcedure("CPGetNotes", new string[] { issuesXml, projectsXml }, DatabaseName.SupportADDONS);
 
-                List<Note> notes = Logic.Implementation.XmlParser.ReadNotesXML(output[0][0]);
+                List<Entities.Note> notes = Logic.Implementation.XmlParser.ReadNotesXML(output[0][0]);
                 if (notes == null)
                     return;
 
@@ -5344,7 +5519,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             List<List<string>> output = gujaczWFS.ExecuteStoredProcedure("CPGetNotes", new string[] { issuesXml, projectsXml }, DatabaseName.SupportADDONS);
 
-            List<Note> notes = Logic.Implementation.XmlParser.ReadNotesXML(output[0][0]);
+            List<Entities.Note> notes = Logic.Implementation.XmlParser.ReadNotesXML(output[0][0]);
 
             if (notes != null && notes.Count > 0)
             {
@@ -5393,16 +5568,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void searchTab_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((sender as TabControl).SelectedIndex == 3)
-            {
-                tc.SelectedIndex = 2;
-            }
-            //workloadwylaczony
-            //if ((sender as TabControl).SelectedIndex == 1)
-            //{
-            //    // Ładowanie aktualnych zgłoszeń do zakładki Workload
-            //    //UpdateWorkloadLists();
-            //}
+
         }
 
 
@@ -5564,11 +5730,11 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             bool returnValue = false;
 
-            if(_object == null)
+            if (_object == null)
             {
                 returnValue = true;
             }
-            else if((_object as string) == string.Empty)
+            else if ((_object as string) == string.Empty)
             {
                 returnValue = true;
             }
@@ -5577,330 +5743,6 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             return returnValue;
         }
 
-        private void btn_slaRaport_Load_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                lb_SlaRaport.Text = "Wczytywanie danych...";
-                Thread thr = new Thread((ThreadStart)delegate
-                {
-                    WorkingSla = true;
-
-                    pb_SetVisibilityPanel(true);
-                    toolStripStatusLabel6.Text = "Trwa odświeżanie raportu SLA...";
-
-                    List<List<string>> lista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
-
-                    this.Invoke((MethodInvoker)delegate
-                    {
-                        if (lista.Count > 0)
-                        {
-                            Issue tmpIssue = null;
-                            tb_sla_ileWstrzymane.Text = lista.Count(x => x[5] == "1").ToString();
-                            tb_sla_ileRealizacja.Text = lista.Count(x => x[5] == "0").ToString();
-
-                            lista.RemoveAll(x => x[8] == string.Empty);
-                            if (cb_SLApauza.Checked)
-                            {
-                                lista.RemoveAll(x => x[5] == "1");
-                            }
-                            if (cb_SLAWstrzymane.Checked)
-                            {
-                                lista.RemoveAll(x => x[5] == "0");
-                            }
-
-                            ///Synchro z JIRY
-                            IEnumerable<Issue> zgloszeniaWjira = null;
-                            bool doSynchro = tryLogginToJira(jiraUser.Login, jiraUser.Password);
-                            //if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                            //{
-                            //    //Jira jiraSlaSynch;
-                            //    //jiraSlaSynch = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password);
-                            //    string numerki = "";
-
-                            //    for (int i = 0; i < lista.Count(); i++)
-                            //    {
-                            //        numerki += (lista[i][1].ToString() == null ||
-                            //                    lista[i][1].ToString() == ""
-                            //                    ? "" : lista[i][1].ToString() + ",");
-                            //        //numerki += dgv_SlaRaport.Rows[i].Cells[1].Value.ToString() +"," ; 
-                            //    }
-
-                            //    numerki = "issue in (" + numerki.Remove(numerki.Length - 1) + ")";
-                            //    zgloszeniaWjira = jira.GetIssuesFromJql(numerki, lista.Count());
-
-
-                            //}
-                            ///
-
-
-                            dgv_SlaRaport.Columns.Clear();
-                            dgv_SlaRaport.Columns.Add("dgvIssueId", "IssueId");
-                            dgv_SlaRaport.Columns.Add("dgvJiraNr", "Numer Jira");
-                            dgv_SlaRaport.Columns.Add("dgvAkcjaBPM", "Ostatnia akcja w BPM");
-
-                            dgv_SlaRaport.Columns.Add("dgvOdpowiedzialny", "Odpowiedzialny");
-                            dgv_SlaRaport.Columns.Add("dgvTypZgloszenia", "Typ zgłoszenia");
-                            dgv_SlaRaport.Columns.Add("dgvPriorytet", "Priorytet");
-                            dgv_SlaRaport.Columns.Add("dgvPauza", "Pauza");
-                            dgv_SlaRaport.Columns.Add("dgvAktCzasRealizacji", "Wypalony czas");
-                            dgv_SlaRaport.Columns.Add("dgvCzasRozwiazania", "Deklarowany czas");
-                            dgv_SlaRaport.Columns.Add("dgvPozostaloMin", "Pozostało minut");
-
-                            if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                            {
-                                dgv_SlaRaport.Columns.Add("dgvAktualnyStan", "Aktualny stan");
-                                dgv_SlaRaport.Columns.Add("dgvAktualniePrzydzielony", "Przydzielony");
-                                dgv_SlaRaport.Columns.Add("dgvAktualnyPriorytet", "Act. Priorytet");
-                                dgv_SlaRaport.Columns.Add("dgvOstatniaAkcja", "ost. Aktualizacja");
-                            }
-
-                            List<string> wartosciUpdatowane = new List<string>();
-
-                            lista = lista.OrderByDescending(x => Int32.Parse(x[8])).ToList();
-                            foreach (var row in lista)
-                            {
-                                dgv_SlaRaport.Rows.Insert(0, new DataGridViewRow());
-                                dgv_SlaRaport.Rows[0].Cells["dgvIssueId"].Value = row[0];  //dgvIssueId
-                                dgv_SlaRaport.Rows[0].Cells["dgvJiraNr"].Value = row[1];  //dgvJiraNr
-                                dgv_SlaRaport.Rows[0].Cells["dgvOdpowiedzialny"].Value = row[2];  //dgvOdpowiedzialny
-                                dgv_SlaRaport.Rows[0].Cells["dgvTypZgloszenia"].Value = row[3];  //dgvTypZgloszenia
-                                dgv_SlaRaport.Rows[0].Cells["dgvPriorytet"].Value = row[4];  //dgvPriorytet
-                                dgv_SlaRaport.Rows[0].Cells["dgvPauza"].Value = row[5];  //dgvPauza
-                                dgv_SlaRaport.Rows[0].Cells["dgvAktCzasRealizacji"].Value = row[6];  //dgvAktCzasRealizacji
-                                dgv_SlaRaport.Rows[0].Cells["dgvCzasRozwiazania"].Value = row[7];  //dgvCzasRozwiazania 
-                                dgv_SlaRaport.Rows[0].Cells["dgvPozostaloMin"].Value = row[8];  //dgvPozostaloMin  
-
-                                dgv_SlaRaport.Rows[0].Cells["dgvAkcjaBPM"].Value = row[9];  //dgvOstatniaAkcja  
-
-                                if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                                {
-
-                                    this.Invoke((MethodInvoker)delegate
-                                        {
-                                            tmpIssue = jira.GetIssue(row[1]);  //dgvJiraNr
-
-                                            dgv_SlaRaport.Rows[0].Cells["dgvAktualnyStan"].Value = tmpIssue.Status.Name;
-                                            dgv_SlaRaport.Rows[0].Cells["dgvAktualniePrzydzielony"].Value = (row[1] != tmpIssue.Key.Value ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
-                                            dgv_SlaRaport.Rows[0].Cells["dgvAktualniePrzydzielony"].Tag = tmpIssue.Key.Value.ToString();
-                                            dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = tmpIssue.Priority.Name;
-                                            dgv_SlaRaport.Rows[0].Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated;
-
-                                            dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
-
-                                            //zgloszeniaWjira.
-                                        });
-                                //if (isNullObjectOrEmptyString(dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value))
-                                //dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value == string.Empty
-                                //|| dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value == null)
-                                //{
-
-                                //}
-
-
-
-
-
-                                //dgv_SlaRaport.Rows[0].Cells["dgvAktualnyStan"].Value = tmpIssue.Status;//dgvAktualnyStan
-
-                                //dgv_SlaRaport.Rows[0].Cells["dgvAktualniePrzydzielony"].Value = (item.Assignee == null ? " " : item.Assignee.ToString());//dgvAktualniePrzydzielony   
-
-                                //switch (item.Priority.Id.ToString())
-                                //{
-                                //    case "1":
-                                //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Blokujacy";
-                                //        break;
-                                //    case "2":
-                                //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Krytyczny";
-                                //        break;
-                                //    case "3":
-                                //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Wazny";
-                                //        break;
-                                //    case "4":
-                                //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Sredni";
-                                //        break;
-                                //    case "5":
-                                //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Niski";
-                                //        break;
-                                //    default:
-                                //        break;
-                                //}
-
-                                foreach (var customFild in tmpIssue.CustomFields)
-                                    {
-                                        if (customFild.Id == "customfield_20350")
-                                        {
-                                            foreach (var opcje in customFild.Values)
-                                            {
-                                                string str = " (" + opcje + ")";
-                                                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value += str;
-                                                /**/
-                                                List<List<string>> cf_opcje = gujaczWFS.ExecuteStoredProcedure("sp_aktualizujOpcje", new string[] { row[0], opcje }, DatabaseName.SupportCP);
-                                                if (cf_opcje[0][0] == "UPDATE")
-                                                {
-                                                    wartosciUpdatowane.Add("Aktualizowano " + row[1] + " (" + row[0] + ") na wartość: " + opcje);
-                                                }
-                                            }
-                                        }
-                                    }
-                                    dgv_SlaRaport.Rows[0].Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated.Value.ToLocalTime().ToString();//dgvOstatniaAkcja
-
-                                    /**/
-
-                                    //foreach (var item in zgloszeniaWjira)
-                                    //{
-                                    //    if (row[1] == item.Key.Value)
-                                    //    {
-
-                                    //        dgv_SlaRaport.Rows[0].Cells["dgvAktualnyStan"].Value = item.Status.Name.ToString();//dgvAktualnyStan
-
-                                    //        dgv_SlaRaport.Rows[0].Cells["dgvAktualniePrzydzielony"].Value = (item.Assignee == null ? " " : item.Assignee.ToString());//dgvAktualniePrzydzielony   
-
-                                    //        switch (item.Priority.Id.ToString())
-                                    //        {
-                                    //            case "1":
-                                    //                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Blokujacy";
-                                    //                break;
-                                    //            case "2":
-                                    //                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Krytyczny";
-                                    //                break;
-                                    //            case "3":
-                                    //                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Wazny";
-                                    //                break;
-                                    //            case "4":
-                                    //                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Sredni";
-                                    //                break;
-                                    //            case "5":
-                                    //                dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value = "Niski";
-                                    //                break;
-                                    //            default:
-                                    //                break;
-                                    //        }
-
-                                    //        foreach (var customFild in item.CustomFields)
-                                    //        {
-                                    //            if (customFild.Id == "customfield_20350")
-                                    //            {
-                                    //                foreach (var opcje in customFild.Values)
-                                    //                {
-                                    //                    string str = " (" + opcje + ")";
-                                    //                    dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value += str;
-                                    //                    /**/
-                                    //                    List<List<string>> cf_opcje = gujaczWFS.ExecuteStoredProcedure("sp_aktualizujOpcje", new string[] { row[0], opcje }, DatabaseName.SupportCP);
-                                    //                    if (cf_opcje[0][0] == "UPDATE")
-                                    //                    {
-                                    //                        wartosciUpdatowane.Add("Aktualizowano " + row[1] + " (" + row[0] + ") na wartość: " + opcje);
-                                    //                    }
-                                    //                }
-                                    //            }
-                                    //        }
-                                    //        dgv_SlaRaport.Rows[0].Cells["dgvOstatniaAkcja"].Value = item.Updated.Value.ToLocalTime().ToString();//dgvOstatniaAkcja
-
-                                    //    }
-
-
-
-                                }
-
-
-                                int totalTime, timeLeft;
-                                string bpmPriority, jiraPriority;
-
-                                if (row[7] != string.Empty && row[8] != string.Empty)
-                                {
-                                    totalTime = Int32.Parse(row[7]);
-                                    timeLeft = Int32.Parse(row[8]);
-
-                                    if (timeLeft <= totalTime / 4)
-                                        dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 98, 118);
-                                    else if (timeLeft <= totalTime / 2)
-                                        dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 222, 89);
-                                    else if (!isNullObjectOrEmptyString(tmpIssue) 
-                                            && row[1] != tmpIssue.Key.Value)
-                                        dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
-                                    else
-                                        dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 198, 239, 206);
-
-                                    dgv_SlaRaport.Rows[0].Tag = dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor;
-
-
-                                }
-
-                            }
-                        dgv_SlaRaport.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-
-                        //if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                        //{
-                        //    for (int i = 0; i < dgv_SlaRaport.RowCount - 1; i++)
-                        //    {
-                        //        if (dgv_SlaRaport.Rows[i].Cells["dgvAktualnyPriorytet"].Value != null && dgv_SlaRaport.Rows[i].Cells["dgvPriorytet"].Value.ToString() != dgv_SlaRaport.Rows[i].Cells["dgvAktualnyPriorytet"].Value.ToString())
-                        //        {
-                        //            dgv_SlaRaport.Rows[i].DefaultCellStyle.BackColor = Color.Cyan;
-                        //            dgv_SlaRaport.Rows[i].Tag = dgv_SlaRaport.Rows[i].DefaultCellStyle.BackColor;
-                        //        }
-
-                        //        if(isNullObjectOrEmptyString(dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value))
-                        //        //dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value == string.Empty
-                        //        //|| dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value == null)
-                        //        {
-                        //            Issue tmpIssue = jira.GetIssue(dgv_SlaRaport.Rows[i].Cells["dgvJiraNr"].Value.ToString());
-
-                        //            dgv_SlaRaport.Rows[i].Cells["dgvAktualnyStan"].Value = tmpIssue.Status.Name;
-                        //            dgv_SlaRaport.Rows[i].Cells["dgvAktualniePrzydzielony"].Value = string.Format("{0} -> {1}",tmpIssue.Key, tmpIssue.Assignee);
-                        //            dgv_SlaRaport.Rows[i].Cells["dgvAktualnyPriorytet"].Value = tmpIssue.Priority.Name;
-                        //            dgv_SlaRaport.Rows[i].Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated;
-
-                        //            dgv_SlaRaport.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
-
-                        //        }
-                        //    }
-                        //}
-
-                        dgv_SlaRaport.ReadOnly = true;
-
-                        lb_SlaRaport.Text = string.Empty;
-
-
-                        dgv_SlaRaport.Columns["dgvCzasRozwiazania"].Visible = false;
-
-                        ////
-                        //if (wartosciUpdatowane.Count > 0)
-                        //{
-                        //    string komunikat = "";
-                        //    foreach (var item in wartosciUpdatowane)
-                        //    {
-                        //        komunikat += item + "\n";
-
-                        //    }
-                        //    MessageBox.Show(komunikat, "Automatycznie poprawiono dane!");
-
-                        //}
-
-                        toolStripStatusLabel6.Text = string.Empty;
-                        pb_SetVisibilityPanel(false);
-
-                        WorkingSla = false;
-                        if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                        {
-                            //slaAutoAssigneTakenIssue(lista, zgloszeniaWjira);
-                        }
-                    }
-                        
-
-                    });
-
-                });
-
-                thr.IsBackground = true;
-                thr.Start();
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
-                NoticeForm.ShowNotice(ex.Message);
-            }
-        }
 
         public bool checkBillUser(string loginJira, LoginParamType paramType)
         {
@@ -5955,140 +5797,15 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             return returnValue;
         }
 
-        private bool slaAutoAssigneTakenIssue(List<List<string>> IssueBPM, IEnumerable<Issue> IssueJira)
+
+        private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue, string treeViewName = "treeView4")
         {
+            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
+            List<Entities.BillingIssueDtoHelios> IssueHelios;
 
-
-            //foreach (var iJira in IssueJira)
-            //{
-            for (int i = 0; i < dgv_SlaRaport.Rows.Count; i++)
-            {       
-                string s = dgv_SlaRaport["dgvOdpowiedzialny", i].Value == null ? string.Empty : dgv_SlaRaport["dgvOdpowiedzialny", i].Value.ToString();
-                string a = dgv_SlaRaport["dgvAkcjaBPM", i].Value == null ? string.Empty : dgv_SlaRaport["dgvAkcjaBPM", i].Value.ToString();
-
-                string issueNumber = dgv_SlaRaport["dgvJiraNr", i].Value == null ? string.Empty : dgv_SlaRaport["dgvJiraNr", i].Value.ToString();
-                Issue itmp = IssueJira.FirstOrDefault(x => x.Key == issueNumber);
-
-
-                if (
-//iJira.Key == issueNumber &&
-                    itmp != null &&
-                    s.Contains(string.Empty) &&
-                    checkBillUser(itmp.Assignee, LoginParamType.Login) &&
-                    a.Contains("Utworzenie zgłoszenia") )
-                {
-                    dgv_SlaRaport.Rows[i].Selected = true;
-
-                    MouseEventArgs mea = new MouseEventArgs(MouseButtons.Right, 1, 0, 0, 0);
-                    DataGridViewCellMouseEventArgs e = new DataGridViewCellMouseEventArgs(1, i, 0, 0, mea);
-
-                    cms_IssuePopup.Items.Clear();
-
-                    this.Tag = (bool)true;
-
-                    List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                    addIssueToTreeNode(issueNumber, issue);
-                    getActionToIssue(issue, issueNumber, getUserBpmJira(itmp.Assignee));
-
-
-                    dgv_SlaRaport.Rows[i].Selected = false;
-                    this.Tag = null;
-                }
-                //break;
-            }
-            //}
-
-
-            return true;
-        }
-
-        private void dgv_SlaRaportCellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.ColumnIndex == 1)
-                {
-
-                    numerZgl.Text = dgv_SlaRaport.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                    System.Diagnostics.Process.Start("https://jira/browse/" + numerZgl.Text);
-                }
-                else if (e.ColumnIndex == 0)
-                {
-
-                    numerZgl.Text = dgv_SlaRaport.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                    // System.Diagnostics.Process.Start("https://support.billennium.pl/Bpm/UserPanel/IssueDetails.aspx?issueId=" + numerZgl.Text);
-                    System.Diagnostics.Process.Start("https://support.billennium.pl/Bpm/UserPanel/IssueHistory.aspx?issueId=" + numerZgl.Text);
-                }
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
-                NoticeForm.ShowNotice(ex.Message);
-            }
-        }
-        private void dgv_SlaRaport_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            dgv_SlaRaport.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.FromArgb(51, 153, 255);
-
-        }
-        private void dgv_SlaRaport_CellLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgv_SlaRaport.Rows[e.RowIndex].Tag != null)
-            {
-                dgv_SlaRaport.Rows[e.RowIndex].DefaultCellStyle.BackColor = (Color)dgv_SlaRaport.Rows[e.RowIndex].Tag;
-            }
-        }
-
-
-        private void cb_SLApauza_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox tmp = (CheckBox)sender;
-            if(tmp.Name.Equals("cb_SLApauza") && tmp.Checked)
-            {
-                cb_SLAWstrzymane.CheckState = CheckState.Unchecked;
-            }
-            else if (tmp.Name.Equals("cb_SLAWstrzymane") && tmp.Checked)
-            {
-                cb_SLApauza.CheckState = CheckState.Unchecked;
-            }
-
-            if(!WorkingSla)
-                btn_slaRaport_Load_Click(this, null);
-        }
-
-
-        /// <summary>
-        /// Dodanie menu kontekstowego do raportu SLA
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void dgv_SlaRaport_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                for (int i = 0; i < dgv_SlaRaport.RowCount - 1; i++)
-                {
-                    dgv_SlaRaport.Rows[i].Selected = false;
-                    dgv_SlaRaport.Rows[i].DefaultCellStyle.BackColor = (Color)dgv_SlaRaport.Rows[i].Tag;
-                }
-
-                dgv_SlaRaport.Rows[e.RowIndex].Selected = true;
-
-                string issueNumber = dgv_SlaRaport.Rows[e.RowIndex].Cells["dgvJiraNr"].Value.ToString();
-                cms_IssuePopup.Items.Clear();
-
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueNumber, issue);
-                getActionToIssue(issue, issueNumber);
-
-            }
-        }
-
-        private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue)
-        {
             treeView4.Nodes.Clear();
-            issues["treeView4"].Clear();
+            issues[treeViewName].Clear();
+
 
             //List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
 
@@ -6101,15 +5818,15 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
             );
 
-            if (!wfsList.ContainsKey(treeView4.Name))
+            if (!wfsList.ContainsKey(treeViewName))
             {
-                wfsList[treeView4.Name] = new List<BillingIssueDtoHelios>();
+                wfsList[treeViewName] = new List<BillingIssueDtoHelios>();
             }
 
-            wfsList[treeView4.Name] = gujaczWFS.compareBillingWithWFS(issue);
+            wfsList[treeViewName] = gujaczWFS.compareBillingWithWFS(issue);
 
 
-            foreach (BillingIssueDtoHelios item in wfsList[treeView4.Name])
+            foreach (BillingIssueDtoHelios item in wfsList[treeViewName])
             {
                 BillingIssueDtoHelios updatedIssue = gujaczWFS.UpdateIssue(item);
                 IssueState state = (updatedIssue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
@@ -6117,19 +5834,24 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 
 
                 BillingIssueDtoHelios tmp2 = gujaczWFS.UpdateJiraInfo(updatedIssue);
-                issues[treeView4.Name].Add(tmp2, state);
+                issues[treeViewName].Add(tmp2, state);
             }
 
-            for (int i = 0; i < wfsList[treeView4.Name].Count; i++)
+            for (int i = 0; i < wfsList[treeViewName].Count; i++)
             {
-                wfsList[treeView4.Name][i] = gujaczWFS.UpdateJiraInfo(wfsList[treeView4.Name][i]);
+                
+                wfsList[treeViewName][i] = gujaczWFS.UpdateJiraInfo(wfsList[treeViewName][i]);
 
             }
+            
 
-            GetActionForIssues(treeView4);
-            AddToTree(treeView4);
+            //jIssues.ChangeDataModel(issues[treeViewName], out IssueHelios, ref JiraUsers);
 
-            KeyValuePair<BillingIssueDto, IssueState> tmp = issues["treeView4"].Where(x =>
+            object treeByName = Controls.Find(treeViewName, true)[0];
+            GetActionForIssues((TreeView)treeByName);
+            AddToTree((TreeView)treeByName);
+
+            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[treeViewName].Where(x =>
             {
                 if (x.Key.Idnumber == issueNumber)
                     return true;
@@ -6141,17 +5863,18 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         }
 
 
-        private void getActionToIssue(List<BillingIssueDtoHelios> issue, string issueNumber, UserBpmJira ubj = null)
+        private void getActionToIssue(List<BillingIssueDtoHelios> issue, string issueNumber, string treeViewName = "treeView4", UserBpmJira ubj = null)
         {
             ToolStripMenuItem m1 = new ToolStripMenuItem();
             ToolStripMenuItem m2 = new ToolStripMenuItem();
 
-            if (issueMove["treeView4"] != null && issueMove["treeView4"].ContainsKey(issueNumber) && selectIssue != null)
+            if (issueMove[treeViewName] != null && issueMove[treeViewName].ContainsKey(issueNumber) && selectIssue != null)
             {
+
                 cms_IssuePopup.Items.Clear();
 
                 Dictionary<int, string> actions = new Dictionary<int, string>();
-                bool success = issueMove["treeView4"].TryGetValue(issueNumber, out actions);
+                bool success = issueMove[treeViewName].TryGetValue(issueNumber, out actions);
                 if (success)
                 {
                     var actionsList = actions.ToList();
@@ -6169,6 +5892,16 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                     foreach (KeyValuePair<int, string> item in actionsList)
                     {
+
+                        List<object> tagList = new List<object>();
+
+                        KeyValuePair<int, string> s = new KeyValuePair<int, string>();
+                        //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
+                        tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
+                        tagList.Add(item);          //2. KeyValuePair<int, string>  item
+                        tagList.Add(s);             //3. KeyValuePair<int, string>  s
+
+
                         m1 = new ToolStripMenuItem(item.Value + " (" + item.Key.ToString() + ")");
                         m1.Tag = item.Key.ToString();
 
@@ -6179,41 +5912,21 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 || item.Value.ToString().Equals("Weryfikacja po wdrożeniu")
                             )
                         {
-                            List<object> tagList = new List<object>();
-
-                            KeyValuePair<int, string> s = new KeyValuePair<int, string>();
-                            //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
-                            tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
-                            tagList.Add(item);          //2. KeyValuePair<int, string>  item
-                            tagList.Add(s);             //3. KeyValuePair<int, string>  s
-
                             m1.Tag = tagList;
                             m1.Click += new EventHandler(btn_tmpQuickStep_Click);
                         }
                         else if (item.Value.ToString().Equals("Rozpoczęcie diagnozy")
                             )
                         {
-                            List<object> tagList = new List<object>();
-
-                            KeyValuePair<int, string> s;
-                            if (ubj == null)
-                            {
-                                s = new KeyValuePair<int, string>();
-                            }
-                            else
-                            {
-                                s = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
-                            }//BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
-                            tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
-                            tagList.Add(item);          //2. KeyValuePair<int, string>  item
-                            tagList.Add(s);             //3. KeyValuePair<int, string>  s
-
+                            if(!isNullObjectOrEmptyString(ubj))
+                                tagList[2] = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
                             m1.Tag = tagList;
                             m1.Click += new EventHandler(btn_tmpQuickStep_Click);
                         }
 
                         else
                         {
+                            m1.Tag = tagList;
                             m1.Click += new EventHandler(m2_Click);
                         }
 
@@ -6221,17 +5934,17 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         {
                             Dictionary<int, string> propRozw = gujaczWFS.getBillingComponents(-2);
 
-                            foreach (KeyValuePair<int, string> s in propRozw)
+                            foreach (KeyValuePair<int, string> st in propRozw)
                             {
-                                m2 = new ToolStripMenuItem(s.Value);
+                                m2 = new ToolStripMenuItem(st.Value);
 
                                 m2.Click += new EventHandler(btn_tmpQuickStep_Click);
-                                List<object> tagList = new List<object>();
+                                tagList.Clear();
 
                                 //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
                                 tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
                                 tagList.Add(item);          //2. KeyValuePair<int, string>  item
-                                tagList.Add(s);             //3. KeyValuePair<int, string>  s
+                                tagList.Add(st);             //3. KeyValuePair<int, string>  s
 
                                 m2.Tag = tagList;
 
@@ -6290,8 +6003,25 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// <param name="e"></param>
         private void m2_Click(object sender, EventArgs e)
         {
-            string p = sender.ToString();
-            int eventMoveId = int.Parse((sender as ToolStripDropDownItem).Tag.ToString());
+            ToolStripMenuItem tmp = (ToolStripMenuItem)sender; //losowy komponet do przechowywania Tag
+
+            List<object> tagTmp = new List<object>();
+            if (tmp.Tag != null && tmp.Tag.GetType() == typeof(List<object>))
+            {
+                tagTmp = (List<object>)tmp.Tag;
+            }
+
+            //1. BillingIssueDto            selectIssue
+            //2. Dictionary<int, string>    item
+            //3. KeyValuePair<int, string>  s
+
+            BillingIssueDto selectIssue = (BillingIssueDto)tagTmp[0];
+            KeyValuePair<int, string> item = (KeyValuePair<int, string>)tagTmp[1];
+            KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)tagTmp[2];
+
+
+            string p = item.Value;
+            int eventMoveId = item.Key;
 
             TreeView tr = null;
 
@@ -6308,7 +6038,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             //Pobranie Rozmieszczenia parametrów zdarzenia
             List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-            wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, sender.ToString(), selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4);
+            wmf = new WFSModelerForm(eventParamForFormByEventMove, sender.ToString(), selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4);
 
             try
             {
@@ -6372,7 +6102,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             
             List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(item.Key);
 
-            WFSModelerForm wmfw = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
 
         }
         /// <summary>
@@ -6530,6 +6260,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     ExchangeClient exClient = new ExchangeClient(gujaczWFS.getUser());
                     string recipants = ConfigurationManager.AppSettings["SlaRecipants"];
                     exClient.SendEMail("Podsumowanie zmiany", content, recipants);
+
+                    HtmlDocument html; //= new HtmlDocument();
+                   
                     //}
                     //}
                 });
@@ -6594,7 +6327,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void cb_SLA_JiraSynchro_CheckedChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void bt_KontoBillenniumSave_Click(object sender, EventArgs e)
@@ -6622,7 +6355,10 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             try
             {
-                jira.GetIssuePriorities();
+                Jira jbill;
+                jbill = Jira.CreateRestClient(adress, Login, Password);
+
+                jbill.GetIssuePriorities();
                 return true;
             }
             catch (Exception ex)
@@ -6632,33 +6368,6 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         }
 
-        private void bt_SLA_synchronizacja_Click(object sender, EventArgs e)
-        {
-            if (dgv_SlaRaport.Rows.Count > 0)
-            {
-                for (int i = 0; i < dgv_SlaRaport.Rows.Count - 1; i++)
-                {
-                    dgv_SlaRaport.Rows[i].Visible = false;
-
-                    //obsługa różnego priorytetu  
-                    if (dgv_SlaRaport.Rows[i].Cells["dgvAktualnyPriorytet"].Value != null
-                        && dgv_SlaRaport.Rows[i].Cells["dgvPriorytet"].Value.ToString() != dgv_SlaRaport.Rows[i].Cells["dgvAktualnyPriorytet"].Value.ToString()
-                        )
-                    {
-                        dgv_SlaRaport.Rows[i].Visible = true;
-                    }
-
-                    //Spradzenie Konsultacji  
-                    if (dgv_SlaRaport.Rows[i].Cells["dgvAkcjaBPM"].Value != null
-                        && dgv_SlaRaport.Rows[i].Cells["dgvAkcjaBPM"].Value.ToString() == ""
-                        )
-                    {
-                        dgv_SlaRaport.Rows[i].Visible = true;
-                    }
-
-                }
-            }
-        }
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -6932,24 +6641,8 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //reportViewer2.
 
-            this.reportViewer2.RefreshReport();
 
-            Warning[] warnings;
-            string[] streamids;
-            string mimeType;
-            string encoding;
-            string filenameExtension;
-
-            byte[] bytes = reportViewer2.ServerReport.Render(
-            "XML", null, out mimeType, out encoding, out filenameExtension,
-            out streamids, out warnings);
-
-            using (FileStream fs = new FileStream("output.xml", FileMode.Create))
-            { 
-                fs.Write(bytes, 0, bytes.Length);
-            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -6962,6 +6655,21 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
             j.MaxIssuesPerRequest = 20000;
 
             List<string> logins = new List<string>();
+
+            DateTime dStart;
+            DateTime dStop = DateTime.Now;
+
+            if (DateTime.TryParse(textBox4.Text, out dStart))
+            {
+                DateTime tmpDay = dStart.AddMonths(1); 
+                dStart = new DateTime(dStart.Year, dStart.Month, 1);
+                dStop = new DateTime(tmpDay.Year, tmpDay.Month, 1);
+            }
+            else
+            {
+                return;
+            }
+
 
             var eOm = textBox4.Text.Split('/');
             string dateEnd = eOm[0] + '/' + Convert.ToString(int.Parse(eOm[1]) + 1) + '/' + eOm[2];
@@ -6987,7 +6695,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
             IEnumerable<Issue> IssueList;
             if (!checkBox1.Checked)
             {
-                textBox3.Text = "worklogAuthor in (" + textBox3.Text + ") AND worklogDate >= '" + textBox4.Text + "' AND worklogDate <= '" + dateEnd + "'";
+                textBox3.Text = "worklogAuthor in (" + textBox3.Text + ") AND worklogDate >= '" + dStart.ToShortDateString() + "' AND worklogDate < '" + dStop.ToShortDateString() + "'";
                 IssueList = j.GetIssuesFromJql(textBox3.Text);
 
             }
@@ -7149,6 +6857,12 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
             bt_AutoAssigne.Enabled = false;
         }
 
+        private void doSavingCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            //MessageBox.Show("Zgłoszenie zostało poprawnie zapisane pod numerem: " + Convert.ToString(e.Result));
+            this.Dispose();
+        }
+
 
         private void tm_autoFrsh_Tick(object sender, EventArgs e)
         {
@@ -7158,8 +6872,13 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                 bt_AutoAssigne.Text = "";
                 newIssueAutoAddToBPM();
                 bt_AutoAssigne.Text = "Do pobrania";
-                tm_autoFrsh.Interval = 60000;
+                tm_autoFrsh.Interval = 15000;
                 czyPrzyjacAuto = false;
+                //btn_slaRaport_Load_Click(this, null);
+                if (!WorkingSla)
+                {
+                    doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
+                }
                 EnableIssuesButtons();
 
             }
@@ -7168,13 +6887,13 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                 DisableIssuesButtons();
                 treeView1.Nodes.Clear();
                 treeView2.Nodes.Clear();
-                SLAlista.Clear();
-                SLAlista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
+                //SLAlista.Clear();
+                //SLAlista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
 
                 GetAllIssuesFromJira();
 
                 bt_AutoAssigne.Text = "Do przyjęcia";
-                tm_autoFrsh.Interval = 300000;
+                tm_autoFrsh.Interval = 150000;
                 czyPrzyjacAuto = true;
                 EnableIssuesButtons();
             }
@@ -7451,5 +7170,92 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         {
             SendEmail(rtb_dayReportMessage);
         }
+
+        private void bt_LogSearchPatch_Click(object sender, EventArgs e)
+        {
+            fb_logSearch.ShowDialog();
+
+            tb_LogSearchPath.Text = fb_logSearch.SelectedPath;
+        }
+
+        private void bt_LogSearchRun_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!isNullObjectOrEmptyString(tb_LogSearchPath.Text))
+                {
+                    System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+                    pProcess.StartInfo.FileName = tb_LogSearchPath.Text + @"\LogSearch.bat";
+                    //pProcess.StartInfo.Arguments = "olaa"; //argument
+                    pProcess.StartInfo.UseShellExecute = false;
+                    //pProcess.StartInfo.RedirectStandardOutput = true;
+                    pProcess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+
+                    //pProcess.StartInfo.CreateNoWindow = true; //not diplay a windows
+                    pProcess.Start();
+                    //string output = pProcess.StandardOutput.ReadToEnd(); //The output result
+                    pProcess.WaitForExit();
+
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+
+
+
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+             var url = "configuration.json";
+            startInfo.CreateNoWindow = false;
+            startInfo.UseShellExecute = false; // This must be false to use env variable
+            startInfo.FileName = tb_LogSearchPath.Text + @"\LogSearch.jar";
+            startInfo.WindowStyle = ProcessWindowStyle.Normal;
+
+            startInfo.Arguments =  url;
+
+            try
+            {
+                using (System.Diagnostics.Process exeProcess = System.Diagnostics.Process.Start(startInfo))
+                {
+                    exeProcess.WaitForExit();
+                }
+            }
+            catch
+            {
+                // Log error.
+            }
+
+            try
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(@"C:\Program Files (x86)\Common Files\Oracle\Java\javapath");
+                process.StartInfo.FileName = (@"C:\Program Files (x86)\Common Files\Oracle\Java\javapath") + @"\Java.exe";
+                string aArgument = string.Format("{0} {1}", @"C:\CP\usefull\LogSearch\LogSearch.jar", @"C:\CP\usefull\LogSearch\configuration.json");
+                process.StartInfo.Arguments = string.Format(aArgument);
+                process.StartInfo.UseShellExecute = false;
+                process.Start();
+                process.WaitForExit();
+
+                int holdStatus = process.ExitCode;
+
+                if (holdStatus > 0)
+                {
+                    validJavaAppRun = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Exception Occurred :{0},{1}", ex.Message, ex.StackTrace.ToString());
+                MessageBox.Show("Exception Occurred : " + ex.Message + " " + ex.StackTrace.ToString());
+                validJavaAppRun = false;
+            }
+
+        }
+        Boolean validJavaAppRun = true;
+
+       
     }
 }

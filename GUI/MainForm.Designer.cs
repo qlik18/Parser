@@ -4,7 +4,6 @@ using Entities;
 using System.Collections.Generic;
 using System.Threading;
 using Utility;
-using Microsoft.Reporting.WinForms;
 
 namespace GUI
 {
@@ -166,6 +165,10 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.bt_LogSearchRun = new System.Windows.Forms.Button();
+            this.bt_LogSearchPatch = new System.Windows.Forms.Button();
+            this.tb_LogSearchPath = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cb_KontoBillennium = new System.Windows.Forms.CheckBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -188,27 +191,6 @@ namespace GUI
             this.cb_SoundNotification = new System.Windows.Forms.CheckBox();
             this.ckb_isNotifyEnabled = new System.Windows.Forms.CheckBox();
             this.cb_EmailNotification = new System.Windows.Forms.CheckBox();
-            this.tp_Uzytkownicy = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tbx_userEmail = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tbx_userFirstname = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.tbx_userSurname = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.tbx_userPhone = new System.Windows.Forms.TextBox();
-            this.btn_UzytkownicyZapisz = new System.Windows.Forms.Button();
-            this.lv_Users = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tb_surnameSearch = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tb_emailSearch = new System.Windows.Forms.TextBox();
             this.tp_billing = new System.Windows.Forms.TabPage();
             this.btn_BillingZapiszDoXls = new System.Windows.Forms.Button();
             this.zglDgv = new System.Windows.Forms.DataGridView();
@@ -269,7 +251,6 @@ namespace GUI
             this.bt_SLA_synchronizacja = new System.Windows.Forms.Button();
             this.cb_SLA_JiraSynchro = new System.Windows.Forms.CheckBox();
             this.cb_SLApauza = new System.Windows.Forms.CheckBox();
-            this.lb_SlaRaport = new System.Windows.Forms.Label();
             this.btn_slaRaport_Load = new System.Windows.Forms.Button();
             this.dgv_SlaRaport = new System.Windows.Forms.DataGridView();
             this.tp_Multi = new System.Windows.Forms.TabPage();
@@ -292,9 +273,6 @@ namespace GUI
             this.lb_WorkloadTotalTime = new System.Windows.Forms.Label();
             this.lb_WorkloadLoggedTime = new System.Windows.Forms.Label();
             this.lb_workloadTitle = new System.Windows.Forms.Label();
-            this.tp_Podsumowanie = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tp_awaria_nowa = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_awaria_niezakonczona = new System.Windows.Forms.CheckBox();
@@ -389,6 +367,8 @@ namespace GUI
             this.t_EmailNotification = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tm_autoFrsh = new System.Windows.Forms.Timer(this.components);
+            this.pn_FolderSearch = new System.Windows.Forms.FolderBrowserDialog();
+            this.fb_logSearch = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -402,12 +382,10 @@ namespace GUI
             this.tabPage1.SuspendLayout();
             this.tp_Raporty.SuspendLayout();
             this.tp_Settings.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tp_Uzytkownicy.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.tp_billing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zglDgv)).BeginInit();
             this.tp_crm.SuspendLayout();
@@ -426,7 +404,6 @@ namespace GUI
             this.tp_Workload.SuspendLayout();
             this.gBox_WorkloadRaports.SuspendLayout();
             this.gBox_WorkloadCurrent.SuspendLayout();
-            this.tp_Podsumowanie.SuspendLayout();
             this.tp_awaria_nowa.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gb_awaria_bloker.SuspendLayout();
@@ -718,7 +695,6 @@ namespace GUI
             this.tc.Controls.Add(this.tabPage1);
             this.tc.Controls.Add(this.tp_Raporty);
             this.tc.Controls.Add(this.tp_Settings);
-            this.tc.Controls.Add(this.tp_Uzytkownicy);
             this.tc.Controls.Add(this.tp_billing);
             this.tc.Controls.Add(this.tp_crm);
             this.tc.Controls.Add(this.tp_zcc);
@@ -728,7 +704,6 @@ namespace GUI
             this.tc.Controls.Add(this.tp_Sla);
             this.tc.Controls.Add(this.tp_Multi);
             this.tc.Controls.Add(this.tp_Workload);
-            this.tc.Controls.Add(this.tp_Podsumowanie);
             this.tc.Controls.Add(this.tp_awaria_nowa);
             this.tc.Controls.Add(this.tp_awarie);
             this.tc.Controls.Add(this.tp_awaria_lista);
@@ -736,7 +711,6 @@ namespace GUI
             this.tc.Controls.Add(this.tp_DayReport);
             this.tc.Name = "tc";
             this.tc.SelectedIndex = 0;
-            this.tc.SelectedIndexChanged += new System.EventHandler(this.searchTab_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -803,6 +777,7 @@ namespace GUI
             // 
             // tp_Settings
             // 
+            this.tp_Settings.Controls.Add(this.groupBox4);
             this.tp_Settings.Controls.Add(this.groupBox3);
             this.tp_Settings.Controls.Add(this.groupBox2);
             this.tp_Settings.Controls.Add(this.cbox_RefreshBoth);
@@ -810,6 +785,34 @@ namespace GUI
             resources.ApplyResources(this.tp_Settings, "tp_Settings");
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.bt_LogSearchRun);
+            this.groupBox4.Controls.Add(this.bt_LogSearchPatch);
+            this.groupBox4.Controls.Add(this.tb_LogSearchPath);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // bt_LogSearchRun
+            // 
+            resources.ApplyResources(this.bt_LogSearchRun, "bt_LogSearchRun");
+            this.bt_LogSearchRun.Name = "bt_LogSearchRun";
+            this.bt_LogSearchRun.UseVisualStyleBackColor = true;
+            this.bt_LogSearchRun.Click += new System.EventHandler(this.bt_LogSearchRun_Click);
+            // 
+            // bt_LogSearchPatch
+            // 
+            resources.ApplyResources(this.bt_LogSearchPatch, "bt_LogSearchPatch");
+            this.bt_LogSearchPatch.Name = "bt_LogSearchPatch";
+            this.bt_LogSearchPatch.UseVisualStyleBackColor = true;
+            this.bt_LogSearchPatch.Click += new System.EventHandler(this.bt_LogSearchPatch_Click);
+            // 
+            // tb_LogSearchPath
+            // 
+            resources.ApplyResources(this.tb_LogSearchPath, "tb_LogSearchPath");
+            this.tb_LogSearchPath.Name = "tb_LogSearchPath";
             // 
             // groupBox3
             // 
@@ -960,139 +963,6 @@ namespace GUI
             this.cb_EmailNotification.Name = "cb_EmailNotification";
             this.cb_EmailNotification.UseVisualStyleBackColor = true;
             this.cb_EmailNotification.CheckedChanged += new System.EventHandler(this.cb_EmailNotification_CheckedChanged);
-            // 
-            // tp_Uzytkownicy
-            // 
-            this.tp_Uzytkownicy.Controls.Add(this.flowLayoutPanel2);
-            this.tp_Uzytkownicy.Controls.Add(this.lv_Users);
-            this.tp_Uzytkownicy.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.tp_Uzytkownicy, "tp_Uzytkownicy");
-            this.tp_Uzytkownicy.Name = "tp_Uzytkownicy";
-            this.tp_Uzytkownicy.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel2
-            // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Controls.Add(this.label17);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userEmail);
-            this.flowLayoutPanel2.Controls.Add(this.label18);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userFirstname);
-            this.flowLayoutPanel2.Controls.Add(this.label19);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userSurname);
-            this.flowLayoutPanel2.Controls.Add(this.label20);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userPhone);
-            this.flowLayoutPanel2.Controls.Add(this.btn_UzytkownicyZapisz);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // tbx_userEmail
-            // 
-            resources.ApplyResources(this.tbx_userEmail, "tbx_userEmail");
-            this.tbx_userEmail.Name = "tbx_userEmail";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // tbx_userFirstname
-            // 
-            resources.ApplyResources(this.tbx_userFirstname, "tbx_userFirstname");
-            this.tbx_userFirstname.Name = "tbx_userFirstname";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            // 
-            // tbx_userSurname
-            // 
-            resources.ApplyResources(this.tbx_userSurname, "tbx_userSurname");
-            this.tbx_userSurname.Name = "tbx_userSurname";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
-            // tbx_userPhone
-            // 
-            resources.ApplyResources(this.tbx_userPhone, "tbx_userPhone");
-            this.tbx_userPhone.Name = "tbx_userPhone";
-            // 
-            // btn_UzytkownicyZapisz
-            // 
-            resources.ApplyResources(this.btn_UzytkownicyZapisz, "btn_UzytkownicyZapisz");
-            this.btn_UzytkownicyZapisz.Name = "btn_UzytkownicyZapisz";
-            this.btn_UzytkownicyZapisz.UseVisualStyleBackColor = true;
-            this.btn_UzytkownicyZapisz.Click += new System.EventHandler(this.btn_saveUser_Click);
-            // 
-            // lv_Users
-            // 
-            resources.ApplyResources(this.lv_Users, "lv_Users");
-            this.lv_Users.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lv_Users.FullRowSelect = true;
-            this.lv_Users.GridLines = true;
-            this.lv_Users.MultiSelect = false;
-            this.lv_Users.Name = "lv_Users";
-            this.lv_Users.UseCompatibleStateImageBehavior = false;
-            this.lv_Users.View = System.Windows.Forms.View.Details;
-            this.lv_Users.SelectedIndexChanged += new System.EventHandler(this.lv_Users_SelectedIndexChanged);
-            // 
-            // columnHeader4
-            // 
-            resources.ApplyResources(this.columnHeader4, "columnHeader4");
-            // 
-            // columnHeader1
-            // 
-            resources.ApplyResources(this.columnHeader1, "columnHeader1");
-            // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
-            // columnHeader3
-            // 
-            resources.ApplyResources(this.columnHeader3, "columnHeader3");
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label15);
-            this.flowLayoutPanel1.Controls.Add(this.tb_surnameSearch);
-            this.flowLayoutPanel1.Controls.Add(this.label16);
-            this.flowLayoutPanel1.Controls.Add(this.tb_emailSearch);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // tb_surnameSearch
-            // 
-            resources.ApplyResources(this.tb_surnameSearch, "tb_surnameSearch");
-            this.tb_surnameSearch.Name = "tb_surnameSearch";
-            this.tb_surnameSearch.TextChanged += new System.EventHandler(this.tb_SearchChanged);
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            // 
-            // tb_emailSearch
-            // 
-            resources.ApplyResources(this.tb_emailSearch, "tb_emailSearch");
-            this.tb_emailSearch.Name = "tb_emailSearch";
-            this.tb_emailSearch.TextChanged += new System.EventHandler(this.tb_SearchChanged);
             // 
             // tp_billing
             // 
@@ -1551,7 +1421,6 @@ namespace GUI
             this.tp_Sla.Controls.Add(this.bt_SLA_synchronizacja);
             this.tp_Sla.Controls.Add(this.cb_SLA_JiraSynchro);
             this.tp_Sla.Controls.Add(this.cb_SLApauza);
-            this.tp_Sla.Controls.Add(this.lb_SlaRaport);
             this.tp_Sla.Controls.Add(this.btn_slaRaport_Load);
             this.tp_Sla.Controls.Add(this.dgv_SlaRaport);
             resources.ApplyResources(this.tp_Sla, "tp_Sla");
@@ -1618,11 +1487,6 @@ namespace GUI
             this.cb_SLApauza.Name = "cb_SLApauza";
             this.cb_SLApauza.UseVisualStyleBackColor = true;
             this.cb_SLApauza.CheckedChanged += new System.EventHandler(this.cb_SLApauza_CheckedChanged);
-            // 
-            // lb_SlaRaport
-            // 
-            resources.ApplyResources(this.lb_SlaRaport, "lb_SlaRaport");
-            this.lb_SlaRaport.Name = "lb_SlaRaport";
             // 
             // btn_slaRaport_Load
             // 
@@ -1796,29 +1660,6 @@ namespace GUI
             // 
             resources.ApplyResources(this.lb_workloadTitle, "lb_workloadTitle");
             this.lb_workloadTitle.Name = "lb_workloadTitle";
-            // 
-            // tp_Podsumowanie
-            // 
-            this.tp_Podsumowanie.Controls.Add(this.button4);
-            this.tp_Podsumowanie.Controls.Add(this.reportViewer2);
-            resources.ApplyResources(this.tp_Podsumowanie, "tp_Podsumowanie");
-            this.tp_Podsumowanie.Name = "tp_Podsumowanie";
-            this.tp_Podsumowanie.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // reportViewer2
-            // 
-            resources.ApplyResources(this.reportViewer2, "reportViewer2");
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
-            this.reportViewer2.ServerReport.ReportPath = "/Support/CP/RaportDzienny";
-            this.reportViewer2.ServerReport.ReportServerUrl = new System.Uri("http://10.255.250.9/ReportServer_SQL2012/", System.UriKind.Absolute);
             // 
             // tp_awaria_nowa
             // 
@@ -2495,17 +2336,14 @@ namespace GUI
             this.tp_Raporty.ResumeLayout(false);
             this.tp_Settings.ResumeLayout(false);
             this.tp_Settings.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tp_Uzytkownicy.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.tp_billing.ResumeLayout(false);
             this.tp_billing.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zglDgv)).EndInit();
@@ -2534,8 +2372,6 @@ namespace GUI
             this.gBox_WorkloadRaports.PerformLayout();
             this.gBox_WorkloadCurrent.ResumeLayout(false);
             this.gBox_WorkloadCurrent.PerformLayout();
-            this.tp_Podsumowanie.ResumeLayout(false);
-            this.tp_Podsumowanie.PerformLayout();
             this.tp_awaria_nowa.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -2594,30 +2430,9 @@ namespace GUI
         private TabPage tabPage1;
         private Button btn_DodajNotatke;
         private Button btn_Procesy;
-        private RichTextBox richTextBox1;
-        private TabPage tp_Uzytkownicy;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Label label17;
-        private TextBox tbx_userEmail;
-        private Label label18;
-        private TextBox tbx_userFirstname;
-        private Label label19;
-        private TextBox tbx_userSurname;
-        private Label label20;
-        private TextBox tbx_userPhone;
-        private Button btn_UzytkownicyZapisz;
-        private ListView lv_Users;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Label label15;
-        private TextBox tb_surnameSearch;
-        private Label label16;
-        private TextBox tb_emailSearch;
+        private System.Windows.Forms.RichTextBox richTextBox1;
         private TabPage tp_billing;
-        private RichTextBox richTextBoxStats;
+        private System.Windows.Forms.RichTextBox richTextBoxStats;
         private Button btn_BillingZgloszeniaZDzisiaj;
         private TabControl issueTab;
         private TabPage tabPage3;
@@ -2653,7 +2468,7 @@ namespace GUI
         private Button btn_HistoriaSzukaj;
         private TextBox textBox2;
         private TabPage tp_crm;
-        private RichTextBox crm_rtb;
+        private System.Windows.Forms.RichTextBox crm_rtb;
         private Button btn_CRMRaport18;
         private TextBox tb_CRMRapGodzinaDo;
         private TextBox tb_CRMRapGodzinaOd;
@@ -2692,7 +2507,7 @@ namespace GUI
         private DateTimePicker dtp_ZCCDataDo;
         private DateTimePicker dtp_ZCCDataOd;
         private Button btn_ZccLoadNotes;
-        private RichTextBox zcc_rtb;
+        private System.Windows.Forms.RichTextBox zcc_rtb;
         private Label label6;
         private Label label5;
         private Button btn_ZCCRaport;
@@ -2740,12 +2555,10 @@ namespace GUI
         private Button btn_slaRaport_Load;
         private DataGridView dgv_SlaRaport;
         private System.Windows.Forms.Timer t_EmailNotification;
-        private Label lb_SlaRaport;
         private Button tbn_CRMpodsumowanieWyslij;
         private CheckBox cb_SLApauza;
         private Button button1;
         private CheckBox cb_SLA_JiraSynchro;
-        private TabPage tp_Podsumowanie;
         private TabPage tp_tmp;
         private TreeView treeView4;
         private GroupBox groupBox3;
@@ -2788,8 +2601,6 @@ namespace GUI
         private DateTimePicker dtp_LA_startDate;
         private Button bt_LA_szukaj;
         private DataGridView dgv_Awarie;
-        private ReportViewer reportViewer2;
-        private Button button4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer tm_autoFrsh;
         private TabPage tabPage2;
@@ -2831,8 +2642,14 @@ namespace GUI
         private Label label31;
         private DateTimePicker dtp_dayReportDateTo;
         private DateTimePicker dtp_dayReportDateFrom;
-        private RichTextBox rtb_dayReportMessage;
+        private System.Windows.Forms.RichTextBox rtb_dayReportMessage;
         private Button bt_dayReportGenerate;
+        private GroupBox groupBox4;
+        private Button bt_LogSearchRun;
+        private Button bt_LogSearchPatch;
+        private TextBox tb_LogSearchPath;
+        private FolderBrowserDialog pn_FolderSearch;
+        private FolderBrowserDialog fb_logSearch;
     }
 }
 
