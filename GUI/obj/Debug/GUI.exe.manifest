@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w9U66ZzwkJawNt2fIEct8ur10KcVU0P6hvxSG+YFeq4=</dsig:DigestValue>
+        <dsig:DigestValue>0kcBGIJk9CcaiQ50vKpzvEx66Bz/kxGS+ChMcQ6odJo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,19 +74,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hmPqpYXEcSoXH3oe/mQxsYrHtEUXn7Ya7DyV5XuvAx4=</dsig:DigestValue>
+        <dsig:DigestValue>vxN7AOXkiG4gFxvWBhY+NszcqZtBZPJUemQybwV8ZuY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2705920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2707456">
       <assemblyIdentity name="GUI" version="3.0.20.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SUUQ/O/8beH1TZbhTN0IP7vcdxTmc2/WQxxF3ZnkP6I=</dsig:DigestValue>
+        <dsig:DigestValue>ZTtpjKeYWdKCJIKQnaxnirh1ibCoTXeMrzkKmBDN+U8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BHgwFFbmxafV5lEWdFGyoevwQ7ewMLj2Af+FZXXrvTM=</dsig:DigestValue>
+        <dsig:DigestValue>zZvNDglR1Zc5hCdGfO0iBS9eYpvxa32NVXgh44X0x/4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Xb3B3smjjJei31OgrNLlzt81A0pJMOEgYkg4RGgwRiw=</dsig:DigestValue>
+        <dsig:DigestValue>SkdIH8Ap+cywh6JoxnFheqAIISqdDo+m20i1Ak2TuLk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -175,6 +175,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nrtftree-library.dll" size="48640">
+      <assemblyIdentity name="nrtftree-library" version="0.4.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aNtqFrpSGtkdsNduZeRyf/5gldo0OxoGEfctDyCJ+Tg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="168960">
       <assemblyIdentity name="RestSharp" version="105.2.3.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -218,7 +230,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jKww4KzYQRcEcsT3CqzpX7taDv6xGXOSnN6wqmFnO+Q=</dsig:DigestValue>
+        <dsig:DigestValue>gzjSkO3u0faEljiUm23NYwDlD3Cbb5P3q7oBI03NQt4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

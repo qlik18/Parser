@@ -165,6 +165,7 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
+            this.bt_OtworzLog = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.bt_LogSearchRun = new System.Windows.Forms.Button();
             this.bt_LogSearchPatch = new System.Windows.Forms.Button();
@@ -777,6 +778,7 @@ namespace GUI
             // 
             // tp_Settings
             // 
+            this.tp_Settings.Controls.Add(this.bt_OtworzLog);
             this.tp_Settings.Controls.Add(this.groupBox4);
             this.tp_Settings.Controls.Add(this.groupBox3);
             this.tp_Settings.Controls.Add(this.groupBox2);
@@ -785,6 +787,13 @@ namespace GUI
             resources.ApplyResources(this.tp_Settings, "tp_Settings");
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
+            // 
+            // bt_OtworzLog
+            // 
+            resources.ApplyResources(this.bt_OtworzLog, "bt_OtworzLog");
+            this.bt_OtworzLog.Name = "bt_OtworzLog";
+            this.bt_OtworzLog.UseVisualStyleBackColor = true;
+            this.bt_OtworzLog.Click += new System.EventHandler(this.bt_OtworzLog_Click);
             // 
             // groupBox4
             // 
@@ -2650,6 +2659,7 @@ namespace GUI
         private TextBox tb_LogSearchPath;
         private FolderBrowserDialog pn_FolderSearch;
         private FolderBrowserDialog fb_logSearch;
+        private Button bt_OtworzLog;
     }
 }
 

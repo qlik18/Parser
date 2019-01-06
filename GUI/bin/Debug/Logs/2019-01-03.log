@@ -530,3 +530,224 @@ czwartek, 3 stycznia 2019 12:10:18
 
 Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 12:10:18 
 
+czwartek, 3 stycznia 2019 13:25:23
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:25:23 
+
+czwartek, 3 stycznia 2019 13:25:27
+
+Zgłoszenie ZCC-17776 dodano automatycznie o godzinie 2019-01-03 13:25:27!
+czwartek, 3 stycznia 2019 13:25:31
+
+Zgłoszenie ZCC-17777 dodano automatycznie o godzinie 2019-01-03 13:25:31!
+czwartek, 3 stycznia 2019 13:28:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:28:35 
+
+czwartek, 3 stycznia 2019 13:31:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:31:21 
+
+czwartek, 3 stycznia 2019 13:34:09
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:34:09 
+
+czwartek, 3 stycznia 2019 13:36:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:36:58 
+
+czwartek, 3 stycznia 2019 13:39:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:39:43 
+
+czwartek, 3 stycznia 2019 13:42:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:42:28 
+
+czwartek, 3 stycznia 2019 13:45:17
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:45:17 
+
+czwartek, 3 stycznia 2019 13:48:02
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:48:02 
+
+czwartek, 3 stycznia 2019 13:48:03
+
+Zgłoszenie ZU-118 dodano automatycznie o godzinie 2019-01-03 13:48:03!
+czwartek, 3 stycznia 2019 13:50:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:50:50 
+
+czwartek, 3 stycznia 2019 13:51:24
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripControlHost.OnBoundsChanged()
+   w System.Windows.Forms.ToolStripItem.SetBounds(Rectangle bounds)
+   w System.Windows.Forms.ToolStripItem.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.Layout.TableLayout.SetElementBounds(ContainerInfo containerInfo, RectangleF displayRectF)
+   w System.Windows.Forms.Layout.TableLayout.LayoutCore(IArrangedElement container, LayoutEventArgs args)
+   w System.Windows.Forms.Layout.LayoutEngine.Layout(Object container, LayoutEventArgs layoutEventArgs)
+   w System.Windows.Forms.Control.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.ToolStrip.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.StatusStrip.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripItem.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.set_Text(String value)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 27
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+czwartek, 3 stycznia 2019 13:53:54
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:53:54 
+
+czwartek, 3 stycznia 2019 13:56:40
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:56:40 
+
+czwartek, 3 stycznia 2019 13:59:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 13:59:25 
+
+czwartek, 3 stycznia 2019 14:02:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:02:10 
+
+czwartek, 3 stycznia 2019 14:04:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:04:56 
+
+czwartek, 3 stycznia 2019 14:07:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:07:41 
+
+czwartek, 3 stycznia 2019 14:07:54
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5068
+
+--- Main exception: Source ---
+mscorlib
+
+czwartek, 3 stycznia 2019 14:10:27
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:10:27 
+
+czwartek, 3 stycznia 2019 14:13:12
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:13:12 
+
+czwartek, 3 stycznia 2019 14:15:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:15:58 
+
+czwartek, 3 stycznia 2019 14:18:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:18:43 
+
+czwartek, 3 stycznia 2019 14:21:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:21:28 
+
+czwartek, 3 stycznia 2019 14:24:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:24:14 
+
+czwartek, 3 stycznia 2019 14:26:59
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:26:59 
+
+czwartek, 3 stycznia 2019 14:29:45
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:29:45 
+
+czwartek, 3 stycznia 2019 14:32:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:32:30 
+
+czwartek, 3 stycznia 2019 14:35:15
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:35:15 
+
+czwartek, 3 stycznia 2019 14:38:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:38:01 
+
+czwartek, 3 stycznia 2019 14:40:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:40:46 
+
+czwartek, 3 stycznia 2019 14:43:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:43:32 
+
+czwartek, 3 stycznia 2019 14:46:17
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:46:17 
+
+czwartek, 3 stycznia 2019 14:49:03
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:49:03 
+
+czwartek, 3 stycznia 2019 14:51:48
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:51:48 
+
+czwartek, 3 stycznia 2019 14:54:34
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:54:34 
+
+czwartek, 3 stycznia 2019 14:57:19
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 14:57:19 
+
+czwartek, 3 stycznia 2019 15:00:05
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:00:05 
+
+czwartek, 3 stycznia 2019 15:02:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:02:50 
+
+czwartek, 3 stycznia 2019 15:05:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:05:36 
+
+czwartek, 3 stycznia 2019 15:08:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:08:21 
+
+czwartek, 3 stycznia 2019 15:11:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:11:06 
+
+czwartek, 3 stycznia 2019 15:13:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:13:52 
+
+czwartek, 3 stycznia 2019 15:16:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:16:37 
+
+czwartek, 3 stycznia 2019 15:19:23
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:19:23 
+
+czwartek, 3 stycznia 2019 15:22:08
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-03 15:22:08 
+

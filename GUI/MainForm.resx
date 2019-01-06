@@ -290,7 +290,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAegBGgHoARoBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAATABGwEwARsBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2900,6 +2900,30 @@ komentarz</value>
   <data name="&gt;&gt;tp_Raporty.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="bt_OtworzLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 493</value>
+  </data>
+  <data name="bt_OtworzLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 34</value>
+  </data>
+  <data name="bt_OtworzLog.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="bt_OtworzLog.Text" xml:space="preserve">
+    <value>Otwórz katalog logów</value>
+  </data>
+  <data name="&gt;&gt;bt_OtworzLog.Name" xml:space="preserve">
+    <value>bt_OtworzLog</value>
+  </data>
+  <data name="&gt;&gt;bt_OtworzLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_OtworzLog.Parent" xml:space="preserve">
+    <value>tp_Settings</value>
+  </data>
+  <data name="&gt;&gt;bt_OtworzLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="bt_LogSearchRun.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 65</value>
   </data>
@@ -2981,6 +3005,9 @@ komentarz</value>
   <data name="groupBox4.Text" xml:space="preserve">
     <value>LogSearch</value>
   </data>
+  <data name="groupBox4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
   </data>
@@ -2991,7 +3018,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cb_KontoBillennium.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3156,7 +3183,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_SaveFilters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3309,7 +3336,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cbox_RefreshBoth.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3339,7 +3366,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;cbox_RefreshBoth.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3582,7 +3609,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tp_Settings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>

@@ -30,6 +30,9 @@ using System.Xml;
 using System.Data.SqlClient;
 using LogicLayer;
 
+using Net.Sgoliver.NRtfTree.Core;
+using Net.Sgoliver.NRtfTree.Util;
+
 namespace GUI
 {
 
@@ -157,7 +160,8 @@ namespace GUI
             tp_tmp.Size = new System.Drawing.Size(0, 1);
             //tp_tmp.ImeMode = ImeMode. TabSizeMode.Fixed;
             tp_tmp.Text = "";
-            
+            InitializeTempDirectory();
+
             Logger.Instance = new Logger(ConfigurationManager.AppSettings["DirectoryLogs"].ToString(), null);
             //exManager = new ExceptionManager();
             //exManager.log = new ExceptionManager.Loguj(log);
@@ -366,6 +370,31 @@ namespace GUI
         ~MainForm()
         {
             gujaczWFS.LogOutFromHPService();
+        }
+
+        private void InitializeTempDirectory()
+        {
+            var localAppDataDir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var localTempDir = Path.Combine(localAppDataDir, @"Parser\Temp");
+
+
+            try
+            {
+                if (Directory.Exists(localTempDir))
+                    Directory.Delete(localTempDir, true);
+
+                Directory.CreateDirectory(localTempDir);
+
+                Environment.SetEnvironmentVariable("TMP", localTempDir);
+                Environment.SetEnvironmentVariable("TEMP", localTempDir);
+            }
+            catch (Exception ex)
+            {
+                //NOTE: wystapi tylko jeśli
+                // - inny proces Infolinii jest uruchomiony
+                // - inny porces grzebie nie po swoim tempie
+            }
+
         }
         #endregion
 
@@ -1596,6 +1625,7 @@ End Function*/
                     awTable.AddColumn("Data początkowa");
                     awTable.AddColumn("Data zakończenia");
                     awTable.AddColumn("Uwagi");
+
 
                     if (resultss[0].Where(x => x == "AWARIA!!!").Count() > 0)
                     {
@@ -3459,6 +3489,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                         Properties.Settings.Default.KomentarzDoJira
                                         );
 
+
                     //MessageBox.Show("Dodano zgłoszenie test" + item.Key.Idnumber.ToString());
 
                 }
@@ -3471,6 +3502,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     czyPoprawneHaslo = false;
 
                 }
+                Logger.Instance.LogInformation(string.Format("addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> {0} {1}", item.Key.Idnumber.ToString(), czyPoprawneHaslo.ToString()));
             }
 
             if(!czyPoprawneHaslo)
@@ -3503,6 +3535,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 );
             }
 
+            Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0}", jiraKey.ToString()));
+
         }
 
         private void addCommentJira(object sender, DoWorkEventArgs e)
@@ -3532,6 +3566,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 );
             }
 
+
+            Logger.Instance.LogInformation(string.Format("addCommentJira object sender, DoWorkEventArgs e {0}", jiraKey.ToString()));
         }
 
         /// <summary>
@@ -7256,6 +7292,28 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         }
         Boolean validJavaAppRun = true;
 
-       
+        private void bt_OtworzLog_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if ((e as MouseEventArgs).Button == MouseButtons.Left)
+                {
+                    System.Diagnostics.Process proc = new System.Diagnostics.Process();
+                    proc.StartInfo.FileName = Logger.Instance.LogsDirectoryPath;
+                    proc.StartInfo.UseShellExecute = true;
+                    proc.Start();
+                }
+                else if ((e as MouseEventArgs).Button == MouseButtons.Right)
+                {
+                    System.Diagnostics.Process proc = new System.Diagnostics.Process();
+                    proc.StartInfo.FileName = Logger.Instance.LogsDirectoryPath + @"\\" + DateTime.Now.ToShortDateString() + @".txt";
+                    proc.StartInfo.UseShellExecute = true;
+                    proc.Start();
+                }
+            }
+            catch(Exception)
+            { }
+
+        }
     }
 }

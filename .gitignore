@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GUI/bin/Debug/Logs/2019-01-04.log
+/GUI/bin/Debug/Logs/2019-01-04.log
+/.vs/BillenniumJiraParser/v15/Server/sqlite3/db.lock
+/.vs/BillenniumJiraParser/v15/Server/sqlite3/storage.ide
+/.vs/BillenniumJiraParser/v15/Server/sqlite3/storage.ide-shm
+/.vs/BillenniumJiraParser/v15/Server/sqlite3/storage.ide-wal
