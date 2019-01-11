@@ -238,6 +238,14 @@ namespace GUI
             ToolTip unassignedFilterNameToolTip = new ToolTip();
             unassignedFilterNameToolTip.SetToolTip(tb_UnassignedFilterName, "Wprowadź nazwę filtru w Jira lub pozostaw puste by skorystać z filtru zdefiniowanego w aplikacji.");
 
+            //tb_filter1name.Text = tp_filter1name.Text = lb_filter1name.Text = Properties.Settings.Default.filter1name;
+            //tb_filter2name.Text = tp_filter2name.Text = lb_filter2name.Text = Properties.Settings.Default.filter2name;
+
+            filterNameUpdate("filter1name");
+            filterNameUpdate("filter2name");
+
+            //tp_filter2name.Text = lb_filter2name.Text;
+
             if (Properties.Settings.Default.czyPowiadomienie)
             {
                 btn_PowiadomienieWlacz_Click(this, EventArgs.Empty);
@@ -330,6 +338,8 @@ namespace GUI
                     userBpmJira.Add(ubj);
                 }
 
+                
+
             }
             else
             {
@@ -355,8 +365,27 @@ namespace GUI
             dgv_SlaRaport.Columns.Add("dgvAktualniePrzydzielony", "Przydzielony");
             dgv_SlaRaport.Columns.Add("dgvAktualnyPriorytet", "Act. Priorytet");
             dgv_SlaRaport.Columns.Add("dgvOstatniaAkcja", "ost. Aktualizacja");
-        
-           
+
+            try
+            {
+                foreach (var item in jira.GetFilters())
+                {
+                    cbFilter1name.Items.Add(item);
+                    cbFilter2name.Items.Add(item);
+                    if (item.Name.Equals(Properties.Settings.Default.assignedFilterName))
+                    {
+                        cbFilter1name.SelectedItem = cbFilter1name.Items[cbFilter1name.Items.Count - 1];
+                    }
+                    if (item.Name.Equals(Properties.Settings.Default.unassignedFilterName))
+                    {
+                        cbFilter2name.SelectedItem = cbFilter2name.Items[cbFilter2name.Items.Count - 1];
+                    }
+                }
+            }
+            catch(Exception ex)
+            { }
+
+
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -3725,7 +3754,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                         wfs.Visible = false;
                         wfs.callback = new WFSform.calbackDelegate(ReturnIssue);
-                        doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
+                        //doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
                         //addCommentJira(tmp.Key.Idnumber.ToString());
                         wfs.ShowDialog();
 
@@ -4580,7 +4609,178 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
 
         }
+        private void GetAllIssuesFromJira(object sener, EventArgs e)
+        {
+            // POBIERAM DO MOICH I NIEPRZYDZIELONYCH!
 
+            if (LoginJira())
+            {
+                //new Jira("http://jira", jiraUser.Login, jiraUser.Password);
+                //DisableIssuesButtons();
+                pb_SetVisibilityPanel(true);
+                //Thread thr = new Thread((ThreadStart)delegate ()
+                //{
+                    issues["treeView1"].Clear();
+                    issues["treeView2"].Clear();
+                    issues["treeView3"].Clear();
+                    //issues["treeView4"].Clear();
+                    try
+                    {
+                        pb_SetMaxProgressBar(3);
+                        pb_UpdateProgressBar("Rozpoczynanie pracy");
+
+                        pb_UpdateProgressBar("Wczytywanie danych z Jira");
+
+                        // POBIERANIE ZGŁOSZEŃ Z OBU KATEGORII
+                        List<BillingIssueDtoHelios> assignedIssues;
+                        List<BillingIssueDtoHelios> unassignedIssues;
+
+
+
+                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
+                        //List<string> types = jIssues.GetJiraIssuesTypes();
+                        //List<string> stat = jIssues.GetJiraIssuesStatuses();
+                        //List<string> pro = jIssues.GetJiraProjects();
+
+                        IEnumerable<Issue> issuesJira;
+
+                        // NIEPRZYDZIELONE
+                        string unassignedFilterName = Properties.Settings.Default.unassignedFilterName;
+                        issuesJira = jIssues.GetIssues(false, unassignedFilterName);
+                        jIssues.ChangeDataModel(issuesJira, out unassignedIssues, ref JiraUsers);
+
+                        // PRZYDZIELONE
+                        string assignedFilterName = Properties.Settings.Default.assignedFilterName;
+                        issuesJira = jIssues.GetIssues(true, assignedFilterName);
+                        jIssues.ChangeDataModel(issuesJira, out assignedIssues, ref JiraUsers);
+
+                        /* //zawieszone
+                        // PROBLEMY
+
+                        List<BillingIssueDtoHelios> ProblemIssues;
+
+                        string problemFilterName = "SOS&ZCC TODO v1";
+                        issuesJira = jIssues.GetIssues(usersProject, true, problemFilterName);
+                        jIssues.ChangeDataModel(issuesJira, out ProblemIssues);
+                        */
+                        pb_SetMaxProgressBar(unassignedIssues.Count + assignedIssues.Count + 3);
+                        pb_UpdateProgressBar("Wczytywanie danych z Jira");
+
+                        // ROZPOCZYNAM ANALIZĘ ZGŁOSZEŃ
+
+                        if (!wfsList.ContainsKey("treeView1"))
+                        {
+                            wfsList["treeView1"] = new List<BillingIssueDtoHelios>();
+                        }
+
+                        wfsList["treeView1"] = gujaczWFS.compareBillingWithWFS(unassignedIssues);
+
+                        if (!wfsList.ContainsKey("treeView2"))
+                        {
+                            wfsList["treeView2"] = new List<BillingIssueDtoHelios>();
+                        }
+
+                        wfsList["treeView2"] = gujaczWFS.compareBillingWithWFS(assignedIssues);
+
+                        /*///zakładka problem zawieszona
+                        if (!wfsList.ContainsKey("treeView4"))
+                        {
+                            wfsList["treeView4"] = new List<BillingIssueDtoHelios>();
+                        }
+
+                        wfsList["treeView4"] = gujaczWFS.compareBillingWithWFS(ProblemIssues);
+                        */
+                        pb_UpdateProgressBar("Porównanie z BPM");
+
+                        // NIEPRZYDZIELONE
+                        foreach (BillingIssueDtoHelios item in wfsList["treeView1"])
+                        {
+                            BillingIssueDtoHelios issue = gujaczWFS.UpdateIssue(item);
+
+                            IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
+                            issues["treeView1"].Add(issue, state);
+
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+
+                        }
+
+                        // PRZYDZIELONE
+                        foreach (BillingIssueDtoHelios item in wfsList["treeView2"])
+                        {
+                            BillingIssueDtoHelios issue = gujaczWFS.UpdateIssue(item);
+
+                            IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
+                            issues["treeView2"].Add(issue, state);
+
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+
+                        }
+                        /*
+                        // PROBLEMY zawieszona
+                        foreach (BillingIssueDtoHelios item in wfsList["treeView4"])
+                        {
+                            BillingIssueDtoHelios issue = gujaczWFS.UpdateIssue(item);
+                            IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
+                            issues["treeView4"].Add(issue, state);
+
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                        }
+                        */
+                        t_UpdateLiczbaZgloszen(issues["treeView1"].Count, issues["treeView2"].Count);
+
+                        GetActionForIssues(treeView1);
+                        AddToTree(treeView1);
+                        GetActionForIssues(treeView2);
+                        AddToTree(treeView2);
+                        /* ///Zakładka problem zawieszona
+                            GetActionForIssues(treeView4);
+                            AddToTree(treeView4);
+                        */
+                        pb_SetVisibilityPanel(false);
+
+
+
+                        //Włączenie przycisków do pobierania zgłoszeń --> przeniesione do finally
+                        //this.Invoke((MethodInvoker)delegate
+                        //{
+                        //    EnableIssuesButtons();
+                        //    if (pauza && checkIssues)
+                        //    {
+                        //        timer2.Start();
+                        //        pauza = false;
+                        //    }
+                        //});
+                    }
+                    catch (Exception ex)
+                    {
+                        ExceptionManager.LogError(ex, Logger.Instance, true);
+
+                    }
+                    finally
+                    {
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            EnableIssuesButtons();
+                            if (pauza && checkIssues)
+                            {
+                                timer2.Start();
+                                pauza = false;
+                            }
+                        });
+                    }
+                //});
+                //thr.IsBackground = true;
+                //thr.Start();
+
+                btn_MojeZapiszDoWFS.Enabled = true;
+                btn_NieprzydzieloneZapiszDoWFS.Enabled = true;
+                btn_BillenniumZapisz.Enabled = true;
+            }
+            else
+            {
+                //NoticeForm.ShowNotice("Błędne hasło do Jira!");
+            }
+        }
 
         private void GetAllIssuesFromJira()
         {
@@ -6127,19 +6327,22 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             {
                 tagTmp = (List<object>)tmp.Tag;
             }
+            try
+            {
+                //1. BillingIssueDto            selectIssue
+                //2. Dictionary<int, string>    item
+                //3. KeyValuePair<int, string>  s
 
-            //1. BillingIssueDto            selectIssue
-            //2. Dictionary<int, string>    item
-            //3. KeyValuePair<int, string>  s
+                BillingIssueDto selectIssue = (BillingIssueDto)tagTmp[0];
+                KeyValuePair<int, string> item = (KeyValuePair<int, string>)tagTmp[1];
+                KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)tagTmp[2];
 
-            BillingIssueDto selectIssue = (BillingIssueDto)tagTmp[0];
-            KeyValuePair<int, string> item = (KeyValuePair< int, string >)tagTmp[1];
-            KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)tagTmp[2];
-            
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(item.Key);
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(item.Key);
 
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
-
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+            }
+            catch(Exception ex)
+            { }
         }
         /// <summary>
         /// Callback z WFSModelerForm
@@ -6899,43 +7102,63 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
             this.Dispose();
         }
 
+        private void autoCheckAndAssigne()
+        {
+            //DisableIssuesButtons();
+            doByWorker(new DoWorkEventHandler(GetAllIssuesFromJira), null, new RunWorkerCompletedEventHandler(newIssueAutoAddToBPM));
+
+
+//            EnableIssuesButtons();
+        }
+
 
         private void tm_autoFrsh_Tick(object sender, EventArgs e)
         {
-            if (czyPrzyjacAuto)
-            {
-                DisableIssuesButtons();
-                bt_AutoAssigne.Text = "";
-                newIssueAutoAddToBPM();
-                bt_AutoAssigne.Text = "Do pobrania";
-                tm_autoFrsh.Interval = 15000;
-                czyPrzyjacAuto = false;
-                //btn_slaRaport_Load_Click(this, null);
-                if (!WorkingSla)
-                {
-                    doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
-                }
-                EnableIssuesButtons();
+            tm_autoFrsh.Interval = 300000 / 2;
+            //if (!WorkingSla)
+            //{
+            //    treeView1.Nodes.Clear();
+            //    treeView2.Nodes.Clear();
 
-            }
-            else
-            {
-                DisableIssuesButtons();
-                treeView1.Nodes.Clear();
-                treeView2.Nodes.Clear();
-                //SLAlista.Clear();
-                //SLAlista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
+            //    doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
+            //}
 
-                GetAllIssuesFromJira();
+            autoCheckAndAssigne();
+            //if (czyPrzyjacAuto)
+            //{
+            //    DisableIssuesButtons();
+            //    bt_AutoAssigne.Text = "";
+            //    newIssueAutoAddToBPM();
+            //    bt_AutoAssigne.Text = "Do pobrania";
+            //    tm_autoFrsh.Interval = 15000;
+            //    czyPrzyjacAuto = false;
+            //    //btn_slaRaport_Load_Click(this, null);
+            //    if (!WorkingSla)
+            //    {
+            //        doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
+            //    }
+            //    EnableIssuesButtons();
 
-                bt_AutoAssigne.Text = "Do przyjęcia";
-                tm_autoFrsh.Interval = 150000;
-                czyPrzyjacAuto = true;
-                EnableIssuesButtons();
-            }
+            //}
+            //else
+            //{
+            //    DisableIssuesButtons();
+            //    treeView1.Nodes.Clear();
+            //    treeView2.Nodes.Clear();
+            //    //SLAlista.Clear();
+            //    //SLAlista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
+
+            //    GetAllIssuesFromJira();
+
+            //    bt_AutoAssigne.Text = "Do przyjęcia";
+            //    tm_autoFrsh.Interval = 150000;
+            //    czyPrzyjacAuto = true;
+            //    EnableIssuesButtons();
+            //}
 
             autoAssigneSecond = 0;
             toolStripStatusLabel8.Text = bt_AutoAssigne.Text;
+            //autoCheckAndAssigne();
             toolStripProgressBar3.Maximum = tm_autoFrsh.Interval / 1000;
             toolStripProgressBar3.Minimum = 0;
             tm_AutoAssigne.Enabled = true;
@@ -6945,12 +7168,25 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         public void newIssueAutoAddToBPM()
         {
+       
             newIssueAutoAddToBPMUzupelnijDane();
             newIssueAutoAddToBPMZapiszZgloszenia();
-            Logger.Instance.LogInformation(string.Format("Automatyczne sprawdzanie zgłoszeń zakończono o: {0} \n\n", DateTime.Now));
+            //Logger.Instance.LogInformation(string.Format("Automatyczne sprawdzanie zgłoszeń zakończono o: {0} \n\n", DateTime.Now));
 
 
         }
+
+        public void newIssueAutoAddToBPM(object sender, EventArgs e)
+        {
+
+            newIssueAutoAddToBPMUzupelnijDane();
+            newIssueAutoAddToBPMZapiszZgloszenia();
+            //Logger.Instance.LogInformation(string.Format("Automatyczne sprawdzanie zgłoszeń zakończono o: {0} \n\n", DateTime.Now));
+            doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
+
+        }
+
+
 
         public void newIssueAutoAddToBPMUzupelnijDane()
         {
@@ -7292,7 +7528,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         }
         Boolean validJavaAppRun = true;
 
-        private void bt_OtworzLog_Click(object sender, EventArgs e)
+        private void bt_OtworzLog_Click(object sender, MouseEventArgs e)
         {
             try
             {
@@ -7306,7 +7542,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                 else if ((e as MouseEventArgs).Button == MouseButtons.Right)
                 {
                     System.Diagnostics.Process proc = new System.Diagnostics.Process();
-                    proc.StartInfo.FileName = Logger.Instance.LogsDirectoryPath + @"\\" + DateTime.Now.ToShortDateString() + @".txt";
+                    proc.StartInfo.FileName = Logger.Instance.LogsDirectoryPath + @"\" + DateTime.Now.ToShortDateString() + @".log";
                     proc.StartInfo.UseShellExecute = true;
                     proc.Start();
                 }
@@ -7314,6 +7550,64 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
             catch(Exception)
             { }
 
+        }
+
+        private void tb_filter1name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                if ((sender as TextBox).Name.Contains("tb_filter1name"))
+                {
+                    filterNameUpdateValue("filter1name",(sender as TextBox).Text);
+                    filterNameUpdate("filter1name");
+                    filterNameVisibleMode(lb_filter1name, tb_filter1name, true);
+                }
+                else
+                {
+                    filterNameUpdateValue("filter2name", (sender as TextBox).Text);
+                    filterNameUpdate("filter2name");
+                    filterNameVisibleMode(lb_filter2name, tb_filter2name, true);
+                }
+            }
+        }
+
+        private void lb_filter1name_Click(object sender, EventArgs e)
+        {
+            if ((sender as Label).Name.Contains("lb_filter1name"))
+            {
+                filterNameVisibleMode(lb_filter1name, tb_filter1name, false);
+            }
+            else
+            {
+                filterNameVisibleMode(lb_filter2name, tb_filter2name, false);
+            }
+        }
+
+        private void filterNameVisibleMode(Label lb, TextBox tb, bool stateLb)
+        {
+            lb.Visible = stateLb;
+            tb.Visible = !lb.Visible;
+        }
+        private void filterNameUpdateValue(string filterName, string newLabelValue)
+        {
+            Properties.Settings.Default[filterName] = newLabelValue;
+            Properties.Settings.Default.Save();
+        }
+
+        private void filterNameUpdate(string filterName)
+        {
+            if (filterName.Contains("filter1name"))
+            {
+                tb_filter1name.Text = Properties.Settings.Default[filterName].ToString();
+                tp_filter1name.Text = Properties.Settings.Default[filterName].ToString();
+                lb_filter1name.Text = Properties.Settings.Default[filterName].ToString();
+            }
+            else if (filterName.Contains("filter2name"))
+            {
+                tb_filter2name.Text = Properties.Settings.Default[filterName].ToString();
+                tp_filter2name.Text = Properties.Settings.Default[filterName].ToString();
+                lb_filter2name.Text = Properties.Settings.Default[filterName].ToString();
+            }
         }
     }
 }

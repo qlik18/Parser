@@ -217,7 +217,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneZapiszDoWFS.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tp_filter1name</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneZapiszDoWFS.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -244,7 +244,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneUzupelnijDane.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tp_filter1name</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneUzupelnijDane.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -271,7 +271,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneOdswiez.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tp_filter1name</value>
   </data>
   <data name="&gt;&gt;btn_NieprzydzieloneOdswiez.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -290,7 +290,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAATABGwEwARsBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAfABGwHwARsBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2159,36 +2159,36 @@
     <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tp_filter1name</value>
   </data>
   <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tp_filter1name.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tp_filter1name.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tp_filter1name.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 469</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+  <data name="tp_filter1name.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
+  <data name="tp_filter1name.Text" xml:space="preserve">
     <value>Niepobrane</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tp_filter1name.Name" xml:space="preserve">
+    <value>tp_filter1name</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter1name.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter1name.Parent" xml:space="preserve">
     <value>issueTab</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter1name.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btn_MojeZapiszDoWFS.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -2213,7 +2213,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_MojeZapiszDoWFS.Parent" xml:space="preserve">
-    <value>tabPage11</value>
+    <value>tp_filter2name</value>
   </data>
   <data name="&gt;&gt;btn_MojeZapiszDoWFS.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2240,7 +2240,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_MojeUzupelnijDane.Parent" xml:space="preserve">
-    <value>tabPage11</value>
+    <value>tp_filter2name</value>
   </data>
   <data name="&gt;&gt;btn_MojeUzupelnijDane.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2267,7 +2267,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_MojeOdswiez.Parent" xml:space="preserve">
-    <value>tabPage11</value>
+    <value>tp_filter2name</value>
   </data>
   <data name="&gt;&gt;btn_MojeOdswiez.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -2297,36 +2297,36 @@
     <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;treeView2.Parent" xml:space="preserve">
-    <value>tabPage11</value>
+    <value>tp_filter2name</value>
   </data>
   <data name="&gt;&gt;treeView2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tp_filter2name.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="tabPage11.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tp_filter2name.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tp_filter2name.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 469</value>
   </data>
-  <data name="tabPage11.TabIndex" type="System.Int32, mscorlib">
+  <data name="tp_filter2name.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPage11.Text" xml:space="preserve">
+  <data name="tp_filter2name.Text" xml:space="preserve">
     <value>Pobrane</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Name" xml:space="preserve">
-    <value>tabPage11</value>
+  <data name="&gt;&gt;tp_filter2name.Name" xml:space="preserve">
+    <value>tp_filter2name</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Type" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter2name.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter2name.Parent" xml:space="preserve">
     <value>issueTab</value>
   </data>
-  <data name="&gt;&gt;tabPage11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tp_filter2name.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btn_BillenniumZapisz.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -2900,17 +2900,60 @@ komentarz</value>
   <data name="&gt;&gt;tp_Raporty.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cbFilter2name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 265</value>
+  </data>
+  <data name="cbFilter2name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 21</value>
+  </data>
+  <data name="cbFilter2name.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Name" xml:space="preserve">
+    <value>cbFilter2name</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Parent" xml:space="preserve">
+    <value>tp_Settings</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbFilter1name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 238</value>
+  </data>
+  <data name="cbFilter1name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 21</value>
+  </data>
+  <data name="cbFilter1name.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Name" xml:space="preserve">
+    <value>cbFilter1name</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Parent" xml:space="preserve">
+    <value>tp_Settings</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="bt_OtworzLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 493</value>
   </data>
   <data name="bt_OtworzLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 34</value>
+    <value>159, 34</value>
   </data>
   <data name="bt_OtworzLog.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="bt_OtworzLog.Text" xml:space="preserve">
-    <value>Otwórz katalog logów</value>
+    <value>Otwórz katalog logów (LPM)
+Aktualny log (RPM)</value>
   </data>
   <data name="&gt;&gt;bt_OtworzLog.Name" xml:space="preserve">
     <value>bt_OtworzLog</value>
@@ -2922,7 +2965,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;bt_OtworzLog.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="bt_LogSearchRun.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 65</value>
@@ -3018,7 +3061,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="cb_KontoBillennium.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3183,7 +3226,55 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
+  </data>
+  <data name="tb_filter2name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 57</value>
+  </data>
+  <data name="tb_filter2name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="tb_filter2name.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tb_filter2name.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tb_filter2name.Name" xml:space="preserve">
+    <value>tb_filter2name</value>
+  </data>
+  <data name="&gt;&gt;tb_filter2name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_filter2name.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;tb_filter2name.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tb_filter1name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 32</value>
+  </data>
+  <data name="tb_filter1name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="tb_filter1name.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tb_filter1name.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tb_filter1name.Name" xml:space="preserve">
+    <value>tb_filter1name</value>
+  </data>
+  <data name="&gt;&gt;tb_filter1name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_filter1name.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;tb_filter1name.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btn_SaveFilters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3210,67 +3301,67 @@ komentarz</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btn_SaveFilters.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lb_filter2name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_filter2name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lb_filter2name.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 60</value>
   </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 13</value>
+  <data name="lb_filter2name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
   </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+  <data name="lb_filter2name.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Nieprzydzielone:</value>
+  <data name="lb_filter2name.Text" xml:space="preserve">
+    <value>filter2name:</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
+  <data name="&gt;&gt;lb_filter2name.Name" xml:space="preserve">
+    <value>lb_filter2name</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_filter2name.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_filter2name.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;lb_filter2name.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lb_filter1name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_filter1name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lb_filter1name.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 34</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
+  <data name="lb_filter1name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+  <data name="lb_filter1name.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Przydzielone:</value>
+  <data name="lb_filter1name.Text" xml:space="preserve">
+    <value>filter1name</value>
   </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
+  <data name="&gt;&gt;lb_filter1name.Name" xml:space="preserve">
+    <value>lb_filter1name</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_filter1name.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_filter1name.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;lb_filter1name.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tb_UnassignedFilterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 57</value>
@@ -3291,7 +3382,7 @@ komentarz</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_UnassignedFilterName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="tb_AssignedFilterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 31</value>
@@ -3312,7 +3403,7 @@ komentarz</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_AssignedFilterName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 207</value>
@@ -3336,7 +3427,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="cbox_RefreshBoth.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3366,7 +3457,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;cbox_RefreshBoth.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3609,7 +3700,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="tp_Settings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>

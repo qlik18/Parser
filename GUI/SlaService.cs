@@ -107,17 +107,20 @@ namespace GUI
                             {
                                 try
                                 {
-                                    string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
-                                    string _jiraKeyValue = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Key.Value).First().ToString();
-                                    string _jiraAssige = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Assignee).First().ToString();
-                                    string _jiraPriority = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Priority.Name).First().ToString();
-                                    string _jiraUpdated = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Updated).First().ToString();
+                                    if (!isNullObjectOrEmptyString(zgloszeniaWjira.FirstOrDefault(x => x.Key.Value == row[1])))
+                                    {
+                                        string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
+                                        string _jiraKeyValue = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Key.Value).First().ToString();
+                                        string _jiraAssige = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Assignee).First().ToString();
+                                        string _jiraPriority = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Priority.Name).First().ToString();
+                                        string _jiraUpdated = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Updated).First().ToString();
 
-                                    dgv_SlaRaport["dgvAktualnyStan", 0].Value = _jiraStatusName;
-                                    dgv_SlaRaport["dgvAktualniePrzydzielony", 0].Value = (dgv_SlaRaport["dgvJiraNr", 0].Value.ToString() != _jiraKeyValue ? string.Format("{0} -> {1}", _jiraKeyValue, _jiraAssige) : _jiraAssige);
-                                    dgv_SlaRaport["dgvAktualniePrzydzielony", 0].Tag = _jiraKeyValue;
-                                    dgv_SlaRaport["dgvAktualnyPriorytet", 0].Value = _jiraPriority;
-                                    dgv_SlaRaport["dgvOstatniaAkcja", 0].Value = _jiraUpdated;
+                                        dgv_SlaRaport["dgvAktualnyStan", 0].Value = _jiraStatusName;
+                                        dgv_SlaRaport["dgvAktualniePrzydzielony", 0].Value = (dgv_SlaRaport["dgvJiraNr", 0].Value.ToString() != _jiraKeyValue ? string.Format("{0} -> {1}", _jiraKeyValue, _jiraAssige) : _jiraAssige);
+                                        dgv_SlaRaport["dgvAktualniePrzydzielony", 0].Tag = _jiraKeyValue;
+                                        dgv_SlaRaport["dgvAktualnyPriorytet", 0].Value = _jiraPriority;
+                                        dgv_SlaRaport["dgvOstatniaAkcja", 0].Value = _jiraUpdated;
+                                    }
                                 }
                                 catch
                                 {
@@ -298,7 +301,7 @@ namespace GUI
                         toolStripStatusLabel6.Text = string.Empty;
                         pb_SetVisibilityPanel(false);
 
-                        WorkingSla = false;
+                        //WorkingSla = false;
                         //if (cb_SLA_JiraSynchro.Checked && doSynchro)
                         //{
                         //    slaAutoAssigneTakenIssue(lista, zgloszeniaWjira);
@@ -318,13 +321,18 @@ namespace GUI
 
         }
 
+        [STAThreadAttribute]
         private void btn_slaRaport_Load_Click(object sender, EventArgs e)
         {
             try
             {
-                WorkingSla = true;
-                doByWorker(new DoWorkEventHandler(slaReportLoad), null, new RunWorkerCompletedEventHandler(slaReportLoadJiraInfo));
+                if (!WorkingSla)
+                {
 
+
+                    WorkingSla = true;
+                    doByWorker(new DoWorkEventHandler(slaReportLoad), null, new RunWorkerCompletedEventHandler(slaReportLoadJiraInfo));
+                }
                 //slaReportLoad();
 
 
@@ -383,6 +391,7 @@ namespace GUI
 
         private void slaUpdateRowInfo(object sender, DoWorkEventArgs e)//(DataGridViewRow row)
         {
+
             DataGridViewRow tmpRow = e.Argument as DataGridViewRow;
 
             //Thread thrJ = new Thread((ThreadStart)delegate
@@ -594,6 +603,7 @@ namespace GUI
         }
 
 
+        
         private void cb_SLApauza_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox tmp = (CheckBox)sender;

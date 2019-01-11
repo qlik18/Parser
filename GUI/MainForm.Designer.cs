@@ -133,13 +133,13 @@ namespace GUI
             this.btn_NewIssue = new System.Windows.Forms.Button();
             this.btn_WyszukajWWFS = new System.Windows.Forms.Button();
             this.issueTab = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tp_filter1name = new System.Windows.Forms.TabPage();
             this.btn_NieprzydzieloneZapiszDoWFS = new System.Windows.Forms.Button();
             this.btn_NieprzydzieloneUzupelnijDane = new System.Windows.Forms.Button();
             this.btn_NieprzydzieloneOdswiez = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tp_filter2name = new System.Windows.Forms.TabPage();
             this.btn_MojeZapiszDoWFS = new System.Windows.Forms.Button();
             this.btn_MojeUzupelnijDane = new System.Windows.Forms.Button();
             this.btn_MojeOdswiez = new System.Windows.Forms.Button();
@@ -165,6 +165,8 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
+            this.cbFilter2name = new System.Windows.Forms.ComboBox();
+            this.cbFilter1name = new System.Windows.Forms.ComboBox();
             this.bt_OtworzLog = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.bt_LogSearchRun = new System.Windows.Forms.Button();
@@ -177,9 +179,11 @@ namespace GUI
             this.mtb_BillenniumPass = new System.Windows.Forms.MaskedTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tb_filter2name = new System.Windows.Forms.TextBox();
+            this.tb_filter1name = new System.Windows.Forms.TextBox();
             this.btn_SaveFilters = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lb_filter2name = new System.Windows.Forms.Label();
+            this.lb_filter1name = new System.Windows.Forms.Label();
             this.tb_UnassignedFilterName = new System.Windows.Forms.TextBox();
             this.tb_AssignedFilterName = new System.Windows.Forms.TextBox();
             this.cbox_RefreshBoth = new System.Windows.Forms.CheckBox();
@@ -375,8 +379,8 @@ namespace GUI
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.issueTab.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage11.SuspendLayout();
+            this.tp_filter1name.SuspendLayout();
+            this.tp_filter2name.SuspendLayout();
             this.tp_Billennium.SuspendLayout();
             this.tp_tmp.SuspendLayout();
             this.tc.SuspendLayout();
@@ -464,23 +468,23 @@ namespace GUI
             // issueTab
             // 
             resources.ApplyResources(this.issueTab, "issueTab");
-            this.issueTab.Controls.Add(this.tabPage3);
-            this.issueTab.Controls.Add(this.tabPage11);
+            this.issueTab.Controls.Add(this.tp_filter1name);
+            this.issueTab.Controls.Add(this.tp_filter2name);
             this.issueTab.Controls.Add(this.tp_Billennium);
             this.issueTab.Controls.Add(this.tp_tmp);
             this.issueTab.Name = "issueTab";
             this.issueTab.SelectedIndex = 0;
             this.issueTab.SelectedIndexChanged += new System.EventHandler(this.issueTab_SelectedIndexChanged);
             // 
-            // tabPage3
+            // tp_filter1name
             // 
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneZapiszDoWFS);
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneUzupelnijDane);
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneOdswiez);
-            this.tabPage3.Controls.Add(this.treeView1);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneZapiszDoWFS);
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneUzupelnijDane);
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneOdswiez);
+            this.tp_filter1name.Controls.Add(this.treeView1);
+            resources.ApplyResources(this.tp_filter1name, "tp_filter1name");
+            this.tp_filter1name.Name = "tp_filter1name";
+            this.tp_filter1name.UseVisualStyleBackColor = true;
             // 
             // btn_NieprzydzieloneZapiszDoWFS
             // 
@@ -572,15 +576,15 @@ namespace GUI
             this.imageList1.Images.SetKeyName(51, "PNMinor.png");
             this.imageList1.Images.SetKeyName(52, "PNTrivial.png");
             // 
-            // tabPage11
+            // tp_filter2name
             // 
-            this.tabPage11.Controls.Add(this.btn_MojeZapiszDoWFS);
-            this.tabPage11.Controls.Add(this.btn_MojeUzupelnijDane);
-            this.tabPage11.Controls.Add(this.btn_MojeOdswiez);
-            this.tabPage11.Controls.Add(this.treeView2);
-            resources.ApplyResources(this.tabPage11, "tabPage11");
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
+            this.tp_filter2name.Controls.Add(this.btn_MojeZapiszDoWFS);
+            this.tp_filter2name.Controls.Add(this.btn_MojeUzupelnijDane);
+            this.tp_filter2name.Controls.Add(this.btn_MojeOdswiez);
+            this.tp_filter2name.Controls.Add(this.treeView2);
+            resources.ApplyResources(this.tp_filter2name, "tp_filter2name");
+            this.tp_filter2name.Name = "tp_filter2name";
+            this.tp_filter2name.UseVisualStyleBackColor = true;
             // 
             // btn_MojeZapiszDoWFS
             // 
@@ -778,6 +782,8 @@ namespace GUI
             // 
             // tp_Settings
             // 
+            this.tp_Settings.Controls.Add(this.cbFilter2name);
+            this.tp_Settings.Controls.Add(this.cbFilter1name);
             this.tp_Settings.Controls.Add(this.bt_OtworzLog);
             this.tp_Settings.Controls.Add(this.groupBox4);
             this.tp_Settings.Controls.Add(this.groupBox3);
@@ -788,12 +794,24 @@ namespace GUI
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
             // 
+            // cbFilter2name
+            // 
+            this.cbFilter2name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter2name, "cbFilter2name");
+            this.cbFilter2name.Name = "cbFilter2name";
+            // 
+            // cbFilter1name
+            // 
+            this.cbFilter1name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter1name, "cbFilter1name");
+            this.cbFilter1name.Name = "cbFilter1name";
+            // 
             // bt_OtworzLog
             // 
             resources.ApplyResources(this.bt_OtworzLog, "bt_OtworzLog");
             this.bt_OtworzLog.Name = "bt_OtworzLog";
             this.bt_OtworzLog.UseVisualStyleBackColor = true;
-            this.bt_OtworzLog.Click += new System.EventHandler(this.bt_OtworzLog_Click);
+            this.bt_OtworzLog.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_OtworzLog_Click);
             // 
             // groupBox4
             // 
@@ -865,14 +883,28 @@ namespace GUI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tb_filter2name);
+            this.groupBox2.Controls.Add(this.tb_filter1name);
             this.groupBox2.Controls.Add(this.btn_SaveFilters);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.lb_filter2name);
+            this.groupBox2.Controls.Add(this.lb_filter1name);
             this.groupBox2.Controls.Add(this.tb_UnassignedFilterName);
             this.groupBox2.Controls.Add(this.tb_AssignedFilterName);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // tb_filter2name
+            // 
+            resources.ApplyResources(this.tb_filter2name, "tb_filter2name");
+            this.tb_filter2name.Name = "tb_filter2name";
+            this.tb_filter2name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_filter1name_KeyDown);
+            // 
+            // tb_filter1name
+            // 
+            resources.ApplyResources(this.tb_filter1name, "tb_filter1name");
+            this.tb_filter1name.Name = "tb_filter1name";
+            this.tb_filter1name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_filter1name_KeyDown);
             // 
             // btn_SaveFilters
             // 
@@ -881,15 +913,17 @@ namespace GUI
             this.btn_SaveFilters.UseVisualStyleBackColor = true;
             this.btn_SaveFilters.Click += new System.EventHandler(this.btn_SaveFilters_Click);
             // 
-            // label14
+            // lb_filter2name
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
+            resources.ApplyResources(this.lb_filter2name, "lb_filter2name");
+            this.lb_filter2name.Name = "lb_filter2name";
+            this.lb_filter2name.DoubleClick += new System.EventHandler(this.lb_filter1name_Click);
             // 
-            // label13
+            // lb_filter1name
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
+            resources.ApplyResources(this.lb_filter1name, "lb_filter1name");
+            this.lb_filter1name.Name = "lb_filter1name";
+            this.lb_filter1name.DoubleClick += new System.EventHandler(this.lb_filter1name_Click);
             // 
             // tb_UnassignedFilterName
             // 
@@ -1493,6 +1527,8 @@ namespace GUI
             // cb_SLApauza
             // 
             resources.ApplyResources(this.cb_SLApauza, "cb_SLApauza");
+            this.cb_SLApauza.Checked = true;
+            this.cb_SLApauza.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_SLApauza.Name = "cb_SLApauza";
             this.cb_SLApauza.UseVisualStyleBackColor = true;
             this.cb_SLApauza.CheckedChanged += new System.EventHandler(this.cb_SLApauza_CheckedChanged);
@@ -2336,8 +2372,8 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.issueTab.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage11.ResumeLayout(false);
+            this.tp_filter1name.ResumeLayout(false);
+            this.tp_filter2name.ResumeLayout(false);
             this.tp_Billennium.ResumeLayout(false);
             this.tp_tmp.ResumeLayout(false);
             this.tc.ResumeLayout(false);
@@ -2444,11 +2480,11 @@ namespace GUI
         private System.Windows.Forms.RichTextBox richTextBoxStats;
         private Button btn_BillingZgloszeniaZDzisiaj;
         private TabControl issueTab;
-        private TabPage tabPage3;
+        private TabPage tp_filter1name;
         private Button btn_NieprzydzieloneUzupelnijDane;
         private Button btn_NieprzydzieloneOdswiez;
         private TreeView treeView1;
-        private TabPage tabPage11;
+        private TabPage tp_filter2name;
         private Button btn_MojeUzupelnijDane;
         private Button btn_MojeOdswiez;
         private TreeView treeView2;
@@ -2555,11 +2591,11 @@ namespace GUI
         private ColumnHeader columnHeader7;
         private CheckBox cbox_RefreshBoth;
         private GroupBox groupBox2;
-        private Label label13;
+        private Label lb_filter1name;
         private TextBox tb_UnassignedFilterName;
         private TextBox tb_AssignedFilterName;
         private Button btn_SaveFilters;
-        private Label label14;
+        private Label lb_filter2name;
         private TabPage tp_Sla;
         private Button btn_slaRaport_Load;
         private DataGridView dgv_SlaRaport;
@@ -2660,6 +2696,10 @@ namespace GUI
         private FolderBrowserDialog pn_FolderSearch;
         private FolderBrowserDialog fb_logSearch;
         private Button bt_OtworzLog;
+        private TextBox tb_filter1name;
+        private TextBox tb_filter2name;
+        private ComboBox cbFilter1name;
+        private ComboBox cbFilter2name;
     }
 }
 

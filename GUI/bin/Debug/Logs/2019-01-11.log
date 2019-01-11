@@ -1,0 +1,64 @@
+piątek, 11 stycznia 2019 07:42:42
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-11 07:42:42] 
+
+piątek, 11 stycznia 2019 07:42:47
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-11 07:42:47] 
+
+piątek, 11 stycznia 2019 07:42:47
+
+Modyfikacja treeItempiątek, 11 stycznia 2019 07:42:47
+
+Status Auto: False 
+
+piątek, 11 stycznia 2019 07:42:47
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-11 07:42:47] 
+
+piątek, 11 stycznia 2019 07:42:49
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-11 07:42:49] 
+
+piątek, 11 stycznia 2019 07:42:49
+
+Modyfikacja treeItempiątek, 11 stycznia 2019 07:42:49
+
+Status Auto: False 
+
+piątek, 11 stycznia 2019 07:42:57
+
+addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> ZCC-17838 Truepiątek, 11 stycznia 2019 07:42:59
+
+addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> CRM-74872 Truepiątek, 11 stycznia 2019 07:58:35
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-11 07:58:35] 
+
+piątek, 11 stycznia 2019 07:58:38
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-11 07:58:38] 
+
+piątek, 11 stycznia 2019 07:58:38
+
+Modyfikacja treeItempiątek, 11 stycznia 2019 07:58:38
+
+Status Auto: False 
+
+piątek, 11 stycznia 2019 07:58:44
+
+addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> ZCC-17839 Truepiątek, 11 stycznia 2019 08:00:27
+
+Zgłoszenie CRM-74873 dodano automatycznie o godzinie 2019-01-11 08:00:27!
+piątek, 11 stycznia 2019 08:08:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5304
+
+--- Main exception: Source ---
+mscorlib
+

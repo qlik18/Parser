@@ -1,0 +1,733 @@
+wtorek, 8 stycznia 2019 07:53:17
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 07:53:17 
+
+wtorek, 8 stycznia 2019 07:56:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 07:56:30 
+
+wtorek, 8 stycznia 2019 07:59:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 07:59:37 
+
+wtorek, 8 stycznia 2019 07:59:38
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'issueTab' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w GUI.MainForm.DisableIssuesButtons() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4110
+   w GUI.MainForm.ZapiszZgloszenia(List`1 doZapisu, TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7033
+   w GUI.MainForm.<newIssueAutoAddToBPMZapiszZgloszenia>b__213_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6986
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 08:02:04
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-08 08:02:04] 
+
+wtorek, 8 stycznia 2019 08:02:09
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-08 08:02:09] 
+
+wtorek, 8 stycznia 2019 08:02:09
+
+Modyfikacja treeItemwtorek, 8 stycznia 2019 08:02:09
+
+Status Auto: False 
+
+wtorek, 8 stycznia 2019 08:02:14
+
+addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> CRM-74837 Truewtorek, 8 stycznia 2019 08:02:47
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:02:47 
+
+wtorek, 8 stycznia 2019 08:02:49
+
+Zgłoszenie CRM-74837 dodano automatycznie o godzinie 2019-01-08 08:02:49!
+wtorek, 8 stycznia 2019 08:02:51
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3730
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__212_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6961
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 08:05:53
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:05:53 
+
+wtorek, 8 stycznia 2019 08:09:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:09:01 
+
+wtorek, 8 stycznia 2019 08:12:07
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:12:07 
+
+wtorek, 8 stycznia 2019 08:14:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:14:55 
+
+wtorek, 8 stycznia 2019 08:17:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:17:41 
+
+wtorek, 8 stycznia 2019 08:20:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:20:31 
+
+wtorek, 8 stycznia 2019 08:23:17
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:23:17 
+
+wtorek, 8 stycznia 2019 08:26:02
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:26:02 
+
+wtorek, 8 stycznia 2019 08:28:54
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:28:54 
+
+wtorek, 8 stycznia 2019 08:31:39
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:31:39 
+
+wtorek, 8 stycznia 2019 08:34:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:34:30 
+
+wtorek, 8 stycznia 2019 08:37:20
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:37:20 
+
+wtorek, 8 stycznia 2019 08:37:41
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 547
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 451
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 458
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 458
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 411
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 08:40:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:40:10 
+
+wtorek, 8 stycznia 2019 08:40:23
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 547
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 451
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 458
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 458
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 411
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 08:42:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:42:56 
+
+wtorek, 8 stycznia 2019 08:45:45
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:45:45 
+
+wtorek, 8 stycznia 2019 08:45:49
+
+Zgłoszenie INFOLINIA-6443 dodano automatycznie o godzinie 2019-01-08 08:45:49!
+wtorek, 8 stycznia 2019 08:48:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:48:30 
+
+wtorek, 8 stycznia 2019 08:51:19
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:51:19 
+
+wtorek, 8 stycznia 2019 08:54:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:54:04 
+
+wtorek, 8 stycznia 2019 08:56:54
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:56:54 
+
+wtorek, 8 stycznia 2019 08:59:39
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 08:59:39 
+
+wtorek, 8 stycznia 2019 09:02:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:02:28 
+
+wtorek, 8 stycznia 2019 09:05:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:05:14 
+
+wtorek, 8 stycznia 2019 09:08:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:08:04 
+
+wtorek, 8 stycznia 2019 09:10:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:10:49 
+
+wtorek, 8 stycznia 2019 09:10:52
+
+Zgłoszenie CRM-74839 dodano automatycznie o godzinie 2019-01-08 09:10:52!
+wtorek, 8 stycznia 2019 09:13:39
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:13:39 
+
+wtorek, 8 stycznia 2019 09:14:02
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3730
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__212_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6961
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 09:16:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:16:28 
+
+wtorek, 8 stycznia 2019 09:19:18
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:19:18 
+
+wtorek, 8 stycznia 2019 09:22:03
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:22:03 
+
+wtorek, 8 stycznia 2019 09:24:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:24:52 
+
+wtorek, 8 stycznia 2019 09:27:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:27:41 
+
+wtorek, 8 stycznia 2019 09:30:27
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:30:27 
+
+wtorek, 8 stycznia 2019 09:30:27
+
+Zgłoszenie KKK-3844 dodano automatycznie o godzinie 2019-01-08 09:30:27!
+wtorek, 8 stycznia 2019 09:33:12
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:33:12 
+
+wtorek, 8 stycznia 2019 09:36:00
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:36:00 
+
+wtorek, 8 stycznia 2019 09:38:45
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:38:45 
+
+wtorek, 8 stycznia 2019 09:41:31
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:41:31 
+
+wtorek, 8 stycznia 2019 09:44:16
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:44:16 
+
+wtorek, 8 stycznia 2019 09:47:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:47:01 
+
+wtorek, 8 stycznia 2019 09:47:02
+
+Zgłoszenie WIND-7960 dodano automatycznie o godzinie 2019-01-08 09:47:02!
+wtorek, 8 stycznia 2019 09:49:48
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:49:48 
+
+wtorek, 8 stycznia 2019 09:52:34
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:52:34 
+
+wtorek, 8 stycznia 2019 09:54:33
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3730
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__212_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6961
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 8 stycznia 2019 09:55:22
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:55:22 
+
+wtorek, 8 stycznia 2019 09:58:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 09:58:10 
+
+wtorek, 8 stycznia 2019 10:01:24
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:01:24 
+
+wtorek, 8 stycznia 2019 10:04:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:04:14 
+
+wtorek, 8 stycznia 2019 10:07:00
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:07:00 
+
+wtorek, 8 stycznia 2019 10:09:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:09:46 
+
+wtorek, 8 stycznia 2019 10:12:31
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:12:31 
+
+wtorek, 8 stycznia 2019 10:15:22
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:15:22 
+
+wtorek, 8 stycznia 2019 10:15:24
+
+Zgłoszenie CRM-74840 dodano automatycznie o godzinie 2019-01-08 10:15:24!
+wtorek, 8 stycznia 2019 10:18:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:18:10 
+
+wtorek, 8 stycznia 2019 10:20:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:20:58 
+
+wtorek, 8 stycznia 2019 10:23:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:23:43 
+
+wtorek, 8 stycznia 2019 10:26:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:26:35 
+
+wtorek, 8 stycznia 2019 10:29:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:29:25 
+
+wtorek, 8 stycznia 2019 10:32:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:32:10 
+
+wtorek, 8 stycznia 2019 10:35:01
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:35:01 
+
+wtorek, 8 stycznia 2019 10:37:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:37:46 
+
+wtorek, 8 stycznia 2019 10:40:32
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:40:32 
+
+wtorek, 8 stycznia 2019 10:43:18
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:43:18 
+
+wtorek, 8 stycznia 2019 10:46:07
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:46:06 
+
+wtorek, 8 stycznia 2019 10:48:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:48:55 
+
+wtorek, 8 stycznia 2019 10:51:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:51:43 
+
+wtorek, 8 stycznia 2019 10:54:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:54:35 
+
+wtorek, 8 stycznia 2019 10:57:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 10:57:21 
+
+wtorek, 8 stycznia 2019 11:00:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:00:10 
+
+wtorek, 8 stycznia 2019 11:02:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:02:55 
+
+wtorek, 8 stycznia 2019 11:05:44
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:05:44 
+
+wtorek, 8 stycznia 2019 11:08:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:08:30 
+
+wtorek, 8 stycznia 2019 11:11:19
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:11:19 
+
+wtorek, 8 stycznia 2019 11:14:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:14:04 
+
+wtorek, 8 stycznia 2019 11:14:06
+
+Zgłoszenie CRM-74841 dodano automatycznie o godzinie 2019-01-08 11:14:06!
+wtorek, 8 stycznia 2019 11:16:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:16:56 
+
+wtorek, 8 stycznia 2019 11:19:48
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:19:48 
+
+wtorek, 8 stycznia 2019 11:22:34
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:22:34 
+
+wtorek, 8 stycznia 2019 11:25:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:25:21 
+
+wtorek, 8 stycznia 2019 11:28:10
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:28:10 
+
+wtorek, 8 stycznia 2019 11:30:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:30:56 
+
+wtorek, 8 stycznia 2019 11:30:59
+
+Zgłoszenie CRM-74842 dodano automatycznie o godzinie 2019-01-08 11:30:59!
+wtorek, 8 stycznia 2019 11:33:55
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:33:55 
+
+wtorek, 8 stycznia 2019 11:36:41
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:36:41 
+
+wtorek, 8 stycznia 2019 11:39:34
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:39:34 
+
+wtorek, 8 stycznia 2019 11:42:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:42:25 
+
+wtorek, 8 stycznia 2019 11:45:11
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:45:11 
+
+wtorek, 8 stycznia 2019 11:47:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:47:58 
+
+wtorek, 8 stycznia 2019 11:50:48
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:50:48 
+
+wtorek, 8 stycznia 2019 11:53:37
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:53:37 
+
+wtorek, 8 stycznia 2019 11:53:39
+
+Zgłoszenie CRM-74843 dodano automatycznie o godzinie 2019-01-08 11:53:39!
+wtorek, 8 stycznia 2019 11:56:23
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:56:23 
+
+wtorek, 8 stycznia 2019 11:59:13
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 11:59:13 
+
+wtorek, 8 stycznia 2019 12:01:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:01:58 
+
+wtorek, 8 stycznia 2019 12:04:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:04:50 
+
+wtorek, 8 stycznia 2019 12:07:35
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:07:35 
+
+wtorek, 8 stycznia 2019 12:10:25
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:10:25 
+
+wtorek, 8 stycznia 2019 12:13:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:13:14 
+
+wtorek, 8 stycznia 2019 12:16:04
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:16:04 
+
+wtorek, 8 stycznia 2019 12:18:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:18:50 
+
+wtorek, 8 stycznia 2019 12:21:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:21:36 
+
+wtorek, 8 stycznia 2019 12:24:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:24:30 
+
+wtorek, 8 stycznia 2019 12:27:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:27:21 
+
+wtorek, 8 stycznia 2019 12:30:07
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:30:07 
+
+wtorek, 8 stycznia 2019 12:30:09
+
+Zgłoszenie INFOLINIA-6444 dodano automatycznie o godzinie 2019-01-08 12:30:09!
+wtorek, 8 stycznia 2019 12:32:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:32:52 
+
+wtorek, 8 stycznia 2019 12:35:44
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:35:44 
+
+wtorek, 8 stycznia 2019 12:38:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:38:30 
+
+wtorek, 8 stycznia 2019 12:41:16
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:41:16 
+
+wtorek, 8 stycznia 2019 12:44:02
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:44:02 
+
+wtorek, 8 stycznia 2019 12:46:57
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:46:57 
+
+wtorek, 8 stycznia 2019 12:49:42
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:49:42 
+
+wtorek, 8 stycznia 2019 12:52:29
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:52:29 
+
+wtorek, 8 stycznia 2019 12:52:31
+
+Zgłoszenie WIND-7961 dodano automatycznie o godzinie 2019-01-08 12:52:31!
+wtorek, 8 stycznia 2019 12:55:15
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:55:15 
+
+wtorek, 8 stycznia 2019 12:58:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 12:58:06 
+
+wtorek, 8 stycznia 2019 13:00:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:00:52 
+
+wtorek, 8 stycznia 2019 13:03:44
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:03:44 
+
+wtorek, 8 stycznia 2019 13:06:38
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:06:38 
+
+wtorek, 8 stycznia 2019 13:09:29
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:09:29 
+
+wtorek, 8 stycznia 2019 13:12:14
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:12:14 
+
+wtorek, 8 stycznia 2019 13:15:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:15:06 
+
+wtorek, 8 stycznia 2019 13:17:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:17:52 
+
+wtorek, 8 stycznia 2019 13:20:45
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:20:45 
+
+wtorek, 8 stycznia 2019 13:23:30
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:23:30 
+
+wtorek, 8 stycznia 2019 13:26:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:26:21 
+
+wtorek, 8 stycznia 2019 13:29:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:29:06 
+
+wtorek, 8 stycznia 2019 13:31:56
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:31:56 
+
+wtorek, 8 stycznia 2019 13:32:00
+
+Zgłoszenie INFOLINIA-6445 dodano automatycznie o godzinie 2019-01-08 13:32:00!
+wtorek, 8 stycznia 2019 13:34:50
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:34:50 
+
+wtorek, 8 stycznia 2019 13:37:43
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:37:43 
+
+wtorek, 8 stycznia 2019 13:37:45
+
+Zgłoszenie ZU-119 dodano automatycznie o godzinie 2019-01-08 13:37:45!
+wtorek, 8 stycznia 2019 13:40:29
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:40:29 
+
+wtorek, 8 stycznia 2019 13:43:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:43:21 
+
+wtorek, 8 stycznia 2019 13:46:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:46:06 
+
+wtorek, 8 stycznia 2019 13:49:02
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 13:49:02 
+
+wtorek, 8 stycznia 2019 14:27:40
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:27:40 
+
+wtorek, 8 stycznia 2019 14:27:42
+
+Zgłoszenie CRM-74844 dodano automatycznie o godzinie 2019-01-08 14:27:42!
+wtorek, 8 stycznia 2019 14:30:57
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:30:57 
+
+wtorek, 8 stycznia 2019 14:33:51
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:33:51 
+
+wtorek, 8 stycznia 2019 14:37:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:37:06 
+
+wtorek, 8 stycznia 2019 14:40:16
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:40:16 
+
+wtorek, 8 stycznia 2019 14:43:31
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:43:31 
+
+wtorek, 8 stycznia 2019 14:46:46
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:46:46 
+
+wtorek, 8 stycznia 2019 14:49:54
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:49:54 
+
+wtorek, 8 stycznia 2019 14:53:06
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:53:06 
+
+wtorek, 8 stycznia 2019 14:56:21
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:56:21 
+
+wtorek, 8 stycznia 2019 14:59:36
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 14:59:36 
+
+wtorek, 8 stycznia 2019 15:02:52
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 15:02:52 
+
+wtorek, 8 stycznia 2019 15:05:58
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 15:05:58 
+
+wtorek, 8 stycznia 2019 15:09:12
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 15:09:12 
+
+wtorek, 8 stycznia 2019 15:12:28
+
+Automatyczne sprawdzanie zgłoszeń zakończono o: 2019-01-08 15:12:28 
+

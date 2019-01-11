@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0kcBGIJk9CcaiQ50vKpzvEx66Bz/kxGS+ChMcQ6odJo=</dsig:DigestValue>
+        <dsig:DigestValue>SH62QrQJqRRQHYfV5DFlRFzIUk2MQYweQsTK9NbDeBM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,19 +74,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vxN7AOXkiG4gFxvWBhY+NszcqZtBZPJUemQybwV8ZuY=</dsig:DigestValue>
+        <dsig:DigestValue>J6XEf0ZmNZgpLmW42DPIOJVPazR8QV7aTO0ftv8UOtY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2707456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2715648">
       <assemblyIdentity name="GUI" version="3.0.20.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZTtpjKeYWdKCJIKQnaxnirh1ibCoTXeMrzkKmBDN+U8=</dsig:DigestValue>
+        <dsig:DigestValue>AlTSuDKOwgMwdvt8mfK35ynj8Sqx6TgK591AdJWWG48=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zZvNDglR1Zc5hCdGfO0iBS9eYpvxa32NVXgh44X0x/4=</dsig:DigestValue>
+        <dsig:DigestValue>TDu2BUcUPzIWbQ/BK4O1qxyCnmVz6zuQmXkzA67baaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SkdIH8Ap+cywh6JoxnFheqAIISqdDo+m20i1Ak2TuLk=</dsig:DigestValue>
+        <dsig:DigestValue>gJpDIzYdh3UHF/rDb798/3nEOMuM3KSG0wdPqA3M7Qw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -230,7 +230,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gzjSkO3u0faEljiUm23NYwDlD3Cbb5P3q7oBI03NQt4=</dsig:DigestValue>
+        <dsig:DigestValue>kRjhZr6jcBcl4TNhiuz39PguycPQIKIhnXrWMyirFE8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -252,13 +252,13 @@
       <dsig:DigestValue>fY/IgGDQPKHrv88y8ta3/odCRgjRlq7RP6jjeCY7jIw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GUI.exe.config" size="16086">
+  <file name="GUI.exe.config" size="16346">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>BMoMX86mn+1t8k9ExQ/j0SKlkZ+xc2dXBHumZopn5iQ=</dsig:DigestValue>
+      <dsig:DigestValue>SwSJG1ThcF+k5jqSs7y7DeUCcAuYrhe6h8Q+S9jciFo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="HeliosDevelopers.xml" size="1467" writeableType="applicationData">
