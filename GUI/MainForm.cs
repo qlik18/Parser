@@ -3509,6 +3509,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     
                     jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
 
+                    if (!jComment.GetIssue(item.Key.Idnumber.ToString()).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+                    {
+
+                        Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", item.Key.Idnumber.ToString().ToString()));
+                        return;
+                    }
 
                     jComment.GetIssue(item.Key.Idnumber.ToString()).AddComment(
                                         Properties.Settings.Default.KomentarzDoJira
@@ -3544,7 +3550,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 Jira jComment;
                 jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);
 
+                if(!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+                {
 
+                    Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
+                    return;
+                }
                 jComment.GetIssue(jiraKey).AddComment(
                                     Properties.Settings.Default.KomentarzDoJira
                                     );
@@ -3572,6 +3583,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 Jira jComment;
                 jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
 
+                if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+                {
+
+                    Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
+                    return;
+                }
 
                 jComment.GetIssue(jiraKey).AddComment(
                                     Properties.Settings.Default.KomentarzDoJira
