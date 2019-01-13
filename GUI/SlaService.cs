@@ -63,8 +63,10 @@ namespace GUI
                             }
 
                             numerki = "issue in (" + numerki.Remove(numerki.Length - 1) + ")";
-                            zgloszeniaWjira = jira.GetIssuesFromJql(numerki, lista.Count());
-
+                            //zgloszeniaWjira = jira.GetIssuesFromJql(numerki, lista.Count());
+                            zgloszeniaWjira = jira.GetIssuesFromFilter(tb_AssignedFilterName.Text)
+                            .Union (jira.GetIssuesFromFilter(tb_UnassignedFilterName.Text));
+                            //zgloszeniaWjira = jira.GetIssuesFromFilter(tb_filter2name.Text);
                             dgv_SlaRaport.Columns["dgvAktualnyStan"].Visible = true;
                             dgv_SlaRaport.Columns["dgvAktualniePrzydzielony"].Visible = true;
                             dgv_SlaRaport.Columns["dgvAktualniePrzydzielony"].Visible = true;
@@ -371,6 +373,9 @@ namespace GUI
         {
             try
             {
+                treeView4.Nodes.Clear();
+                issues["treeView4"].Clear();
+                selectIssueList.Clear();
 
                 //string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
                 foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
@@ -403,6 +408,8 @@ namespace GUI
                 Issue tmpIssue; //= jira.GetIssue(tmpRow.Cells[1].Value.ToString());  //dgvJiraNr
                 if (isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualnyStan"].Value))
                 {
+                    if (isNullObjectOrEmptyString(tmpRow.Cells[1].Value))
+                        return;
                     tmpIssue = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
                     //tmpIssue = jira.GetIssue(tmpRow.Cells[1].Value.ToString());
                     //DataGridViewRow tmpRow = dgv_SlaRaport.Rows[0];
@@ -414,7 +421,7 @@ namespace GUI
                     tmpRow.DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
                     tmpRow.Tag = (Color)tmpRow.DefaultCellStyle.BackColor;
 
-                    tmpRow.Cells["dgvAktualniePrzydzielony"].Value = (tmpRow.Cells[1].Value.ToString() != tmpIssue.Key.Value ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
+                    tmpRow.Cells["dgvAktualniePrzydzielony"].Value = (!tmpRow.Cells[1].Value.ToString().Equals(tmpIssue.Key.Value) ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
 
                     //foreach (var customFild in tmpIssue.CustomFields)
                     //{
@@ -517,6 +524,8 @@ namespace GUI
         private void slaAutoAssigneTakenIssue(object sender, RunWorkerCompletedEventArgs e)
         {
             DataGridViewRow tmpRow = e.Result as DataGridViewRow;
+            if (isNullObjectOrEmptyString(tmpRow))
+                return;
 
             string issueNumber = tmpRow.Cells["dgvJiraNr"].Value == null ? string.Empty : tmpRow.Cells["dgvJiraNr"].Value.ToString();
             try

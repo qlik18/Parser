@@ -92,7 +92,9 @@ namespace GUI
         // Lista zgłoszeń w Multi
         private Dictionary<BillingIssueDto, IssueState> multiIssues = new Dictionary<BillingIssueDto, IssueState>();
         // Wybrane zgłoszenie z drzewka
-        private BillingIssueDto selectIssue = null;
+        private BillingIssueDto selectIssue = null;        
+        // Wybrane zgłoszenie z drzewka
+        private Dictionary<string,BillingIssueDto> selectIssueList = new Dictionary<string, BillingIssueDto>();
         // Czy wysłać maila gdy pojawią się nowe zgłoszenia
         private bool emailNotification = false;
         // Czy aktualnie trwa sprawdzanie ilości zgłoszeń
@@ -3465,12 +3467,6 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     {
                         if (dr == DialogResult.OK && nb == NoticeButtons.OK_CANCEL)
                         {
-                            //bool addCommentBillennium = false;
-                            //if (Properties.Settings.Default.hasloBillennium != "" && tryLogginToJira("billennium", Properties.Settings.Default.hasloBillennium)
-                            //   )
-                            //{
-                            //    addCommentBillennium = true;
-                            //}
 
                             addCommentJira(tmp);
 
@@ -3549,13 +3545,10 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);
 
 
-                //jComment.GetIssue(jiraKey).AddComment(
                 jComment.GetIssue(jiraKey).AddComment(
                                     Properties.Settings.Default.KomentarzDoJira
                                     );
-
-                //MessageBox.Show("Dodano zgłoszenie test" + item.Key.Idnumber.ToString());
-
+                
             }
             catch
             {
@@ -3580,12 +3573,10 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
 
 
-                //jComment.GetIssue(jiraKey).AddComment(
                 jComment.GetIssue(jiraKey).AddComment(
                                     Properties.Settings.Default.KomentarzDoJira
                                     );
 
-                //MessageBox.Show("Dodano zgłoszenie test" + item.Key.Idnumber.ToString());
 
             }
             catch
@@ -3754,7 +3745,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                         wfs.Visible = false;
                         wfs.callback = new WFSform.calbackDelegate(ReturnIssue);
-                        //doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
+                        if (auto)
+                            doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
                         //addCommentJira(tmp.Key.Idnumber.ToString());
                         wfs.ShowDialog();
 
@@ -6039,8 +6031,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
             List<Entities.BillingIssueDtoHelios> IssueHelios;
 
-            treeView4.Nodes.Clear();
-            issues[treeViewName].Clear();
+            //treeView4.Nodes.Clear();
+            //issues[treeViewName].Clear();
 
 
             //List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
@@ -6095,6 +6087,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     return false;
             }).FirstOrDefault();
 
+            selectIssueList.Add(issueNumber, tmp.Key);
             selectIssue = tmp.Key;
         }
 
@@ -6133,7 +6126,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                         KeyValuePair<int, string> s = new KeyValuePair<int, string>();
                         //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
-                        tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
+                        tagList.Add(selectIssueList[issueNumber]);   //1. BillingIssueDto            selectIssue
                         tagList.Add(item);          //2. KeyValuePair<int, string>  item
                         tagList.Add(s);             //3. KeyValuePair<int, string>  s
 
@@ -6178,7 +6171,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 tagList.Clear();
 
                                 //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
-                                tagList.Add(selectIssue);   //1. BillingIssueDto            selectIssue
+                                tagList.Add(selectIssueList[item.Value]);   //1. BillingIssueDto            selectIssue
                                 tagList.Add(item);          //2. KeyValuePair<int, string>  item
                                 tagList.Add(st);             //3. KeyValuePair<int, string>  s
 
@@ -7375,12 +7368,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                     {
                         if (dr == DialogResult.OK && (nb == NoticeButtons.OK_CANCEL || auto))
                         {
-                            //bool addCommentBillennium = false;
-                            //if (Properties.Settings.Default.hasloBillennium != "" && tryLogginToJira("billennium", Properties.Settings.Default.hasloBillennium)
-                            //   )
-                            //{
-                            //    addCommentBillennium = true;
-                            //}
+
 
                             addCommentJira(doZapisu);
 
