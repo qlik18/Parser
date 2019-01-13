@@ -3499,112 +3499,78 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             foreach (KeyValuePair<BillingIssueDto, IssueState> item in tmp)
             {
 
-                try
-                {
 
+                czyPoprawneHaslo = addCommentJira(item.Key.Idnumber.ToString());
 
-                    //komentarz przyjęcia z konta Billennium
-                    Jira jComment;
-                    JiraRestClientSettings jrcs = new JiraRestClientSettings();
-                    
-                    jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
-
-                    if (!jComment.GetIssue(item.Key.Idnumber.ToString()).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
-                    {
-
-                        Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", item.Key.Idnumber.ToString().ToString()));
-                        return;
-                    }
-
-                    jComment.GetIssue(item.Key.Idnumber.ToString()).AddComment(
-                                        Properties.Settings.Default.KomentarzDoJira
-                                        );
-
-
-                    //MessageBox.Show("Dodano zgłoszenie test" + item.Key.Idnumber.ToString());
-
-                }
-                catch (Exception ex)
-                {
-                    string s = Properties.Settings.Default.hasloBillennium;
-                    jira.GetIssue(item.Key.Idnumber.ToString()).AddComment(
-                    Properties.Settings.Default.KomentarzDoJira
-                    );
-                    czyPoprawneHaslo = false;
-
-                }
-                Logger.Instance.LogInformation(string.Format("addCommentJira List<KeyValuePair<BillingIssueDto, IssueState>> {0} {1}", item.Key.Idnumber.ToString(), czyPoprawneHaslo.ToString()));
             }
 
-            if(!czyPoprawneHaslo)
+            if (!czyPoprawneHaslo)
                     MessageBox.Show("Komentarz dodany z imiennego konta. Sprawdź hasło do konta bilennium.");
 
         }
-        private void addCommentJira(string jiraKey)
-        {
+        private bool addCommentJira(string jiraKey)
+        {                //komentarz przyjęcia z konta Billennium
+            Jira jComment;
+            bool czyPoprawneHaslo = true;
             try
             {
 
-
-                //komentarz przyjęcia z konta Billennium
-                Jira jComment;
-                jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);
-
-                if(!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
-                {
-
-                    Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
-                    return;
-                }
-                jComment.GetIssue(jiraKey).AddComment(
-                                    Properties.Settings.Default.KomentarzDoJira
-                                    );
-                
+                jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);  
             }
             catch
             {
-                jira.GetIssue(jiraKey).AddComment(
-                Properties.Settings.Default.KomentarzDoJira
-                );
+                czyPoprawneHaslo = false;
+                jComment = jira;
+                //.GetIssue(jiraKey).AddComment(
+                //Properties.Settings.Default.KomentarzDoJira
+                //);
             }
+
+            if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+            {
+                Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
+                return czyPoprawneHaslo;
+            }
+
+            jComment.GetIssue(jiraKey).AddComment(
+                                Properties.Settings.Default.KomentarzDoJira
+                                );
 
             Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0}", jiraKey.ToString()));
 
+            return czyPoprawneHaslo;
         }
 
         private void addCommentJira(object sender, DoWorkEventArgs e)
         {
             string jiraKey = e.Argument.ToString();
-            try
-            {
 
-
-                //komentarz przyjęcia z konta Billennium
-                Jira jComment;
-                jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
-
-                if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
-                {
-
-                    Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
-                    return;
-                }
-
-                jComment.GetIssue(jiraKey).AddComment(
-                                    Properties.Settings.Default.KomentarzDoJira
-                                    );
-
-
-            }
-            catch
-            {
-                jira.GetIssue(jiraKey).AddComment(
-                Properties.Settings.Default.KomentarzDoJira
-                );
-            }
-
-
+            addCommentJira(jiraKey);
             Logger.Instance.LogInformation(string.Format("addCommentJira object sender, DoWorkEventArgs e {0}", jiraKey.ToString()));
+
+                //    //komentarz przyjęcia z konta Billennium
+                //    Jira jComment;
+                //    jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);
+
+                //    if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+                //    {
+
+                //        Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
+                //        return;
+                //    }
+
+                //    jComment.GetIssue(jiraKey).AddComment(
+                //                        Properties.Settings.Default.KomentarzDoJira
+                //                        );
+
+
+                //}
+                //catch
+                //{
+                //    jira.GetIssue(jiraKey).AddComment(
+                //    Properties.Settings.Default.KomentarzDoJira
+                //    );
+            
         }
 
         /// <summary>
