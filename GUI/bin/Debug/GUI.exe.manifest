@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2716160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2716672">
       <assemblyIdentity name="GUI" version="3.0.20.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6AqIlaXOv73Xpyvx/wkYlS5O3iDITMsAr8KVRCvKMNc=</dsig:DigestValue>
+        <dsig:DigestValue>4DcTozcqqn3ysdH3B1paGuJISb75wJh/Z14D3+gYi2s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gJpDIzYdh3UHF/rDb798/3nEOMuM3KSG0wdPqA3M7Qw=</dsig:DigestValue>
+        <dsig:DigestValue>vgEo5GTarC8iQL1lYzTF2Tl1JVzNAw5dQqiD6bcHboQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -252,13 +252,13 @@
       <dsig:DigestValue>fY/IgGDQPKHrv88y8ta3/odCRgjRlq7RP6jjeCY7jIw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GUI.exe.config" size="16346">
+  <file name="GUI.exe.config" size="16344">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>SwSJG1ThcF+k5jqSs7y7DeUCcAuYrhe6h8Q+S9jciFo=</dsig:DigestValue>
+      <dsig:DigestValue>rBd2ID3zq/psil2eO3hx6qAJj5JD83tvtGw4lTymoFc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="HeliosDevelopers.xml" size="1467" writeableType="applicationData">

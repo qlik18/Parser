@@ -290,7 +290,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAfgBGwH4ARsBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAARABHAEQARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2309,7 +2309,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_filter2name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>303, 469</value>
   </data>
   <data name="tp_filter2name.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2444,7 +2444,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_Billennium.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>303, 469</value>
   </data>
   <data name="tp_Billennium.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2492,7 +2492,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_tmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>303, 469</value>
   </data>
   <data name="tp_tmp.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

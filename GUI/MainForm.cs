@@ -113,6 +113,8 @@ namespace GUI
         private bool __quickStep = false;
         // Czy quickSptep
         private bool WorkingSla = false;
+        // Czy Pierwsze logowanie
+        private bool firstLogin = true;
         #endregion
 
         #region STAŁE
@@ -226,8 +228,8 @@ namespace GUI
 
             currentTreeTabIndex = 0;
 
-
-            Login formLogin = new Login(gujaczWFS, ref helLIU, ref jiraUser);
+            Login formLogin = new Login(gujaczWFS, ref helLIU, ref jiraUser, firstLogin);
+            firstLogin = false;
 
             notifyTimeoutTextBox.Text = "300";// Properties.Settings.Default.IssuesCheckTimeout.ToString();
             tb_SoundNotificationPath.Text = Properties.Settings.Default.dzwiekSciezka;
@@ -351,6 +353,9 @@ namespace GUI
 
             jira = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password);
             jIssue = new JiraIssues("http://jira", jiraUser.Login, jiraUser.Password);
+
+            jira.MaxIssuesPerRequest = 200;
+
             dgv_SlaRaport.Columns.Add("dgvIssueId", "IssueId");
             dgv_SlaRaport.Columns.Add("dgvJiraNr", "Numer Jira");
             dgv_SlaRaport.Columns.Add("dgvAkcjaBPM", "Ostatnia akcja w BPM");
@@ -3514,8 +3519,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             bool czyPoprawneHaslo = true;
             try
             {
-
-                jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);  
+                jComment = Jira.CreateRestClient("http://jira", "billennium", Properties.Settings.Default.hasloBillennium);  
             }
             catch
             {
@@ -3526,7 +3530,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 //);
             }
 
-            if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+            if (jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
             {
                 Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
                 return czyPoprawneHaslo;
@@ -5528,7 +5532,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// <param name="e"></param>
         private void zalogujSięToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login formLogin = new Login(gujaczWFS, ref helLIU, ref jiraUser);
+            Login formLogin = new Login(gujaczWFS, ref helLIU, ref jiraUser, firstLogin);
             if (zaloguj(formLogin) && !isReadedComponents)
             {
                 doByWorker(new DoWorkEventHandler(doGetComponents), null, new RunWorkerCompletedEventHandler(doGetComponentsCompleted));
@@ -6070,7 +6074,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     return false;
             }).FirstOrDefault();
 
-            selectIssueList.Add(issueNumber, tmp.Key);
+            if(!selectIssueList.Any(x => x.Key == issueNumber))
+                selectIssueList.Add(issueNumber, tmp.Key);
             selectIssue = tmp.Key;
         }
 
@@ -6135,7 +6140,14 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             m1.Tag = tagList;
                             m1.Click += new EventHandler(btn_tmpQuickStep_Click);
                         }
-
+                        else if (item.Value.ToString().Equals("Diagnoza zgłoszenia")
+    )
+                        {
+                            if (!isNullObjectOrEmptyString(ubj))
+                                tagList[2] = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
+                            m1.Tag = tagList;
+                            m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+                        }
                         else
                         {
                             m1.Tag = tagList;
@@ -6154,7 +6166,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 tagList.Clear();
 
                                 //BillingIssueDto, KeyValuePair<int, string>> tagTmp = new KeyValuePair<BillingIssueDto, KeyValuePair<int, string>>(, s);
-                                tagList.Add(selectIssueList[item.Value]);   //1. BillingIssueDto            selectIssue
+                                tagList.Add(selectIssueList[issueNumber]);   //1. BillingIssueDto            selectIssue
                                 tagList.Add(item);          //2. KeyValuePair<int, string>  item
                                 tagList.Add(st);             //3. KeyValuePair<int, string>  s
 
@@ -7090,7 +7102,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         private void tm_autoFrsh_Tick(object sender, EventArgs e)
         {
-            tm_autoFrsh.Interval = 300000 / 2;
+            tm_autoFrsh.Interval = 300000;
             //if (!WorkingSla)
             //{
             //    treeView1.Nodes.Clear();

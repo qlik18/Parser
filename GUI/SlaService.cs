@@ -22,6 +22,7 @@ namespace GUI
             try
             {
                 bool doSynchro = tryLogginToJira(jiraUser.Login, jiraUser.Password);
+                jira.MaxIssuesPerRequest = 200;
 
                 pb_SetVisibilityPanel(true);
                 toolStripStatusLabel6.Text = "Trwa odświeżanie raportu SLA...";
@@ -63,6 +64,7 @@ namespace GUI
                             }
 
                             numerki = "issue in (" + numerki.Remove(numerki.Length - 1) + ")";
+
                             //zgloszeniaWjira = jira.GetIssuesFromJql(numerki, lista.Count());
                             zgloszeniaWjira = jira.GetIssuesFromFilter(tb_AssignedFilterName.Text)
                             .Union (jira.GetIssuesFromFilter(tb_UnassignedFilterName.Text));
@@ -685,7 +687,8 @@ namespace GUI
 
 
                 selectIssue = tmp.Key;
-
+                if (!selectIssueList.Any(x => x.Key == issueNumber))
+                    selectIssueList.Add(issueNumber, tmp.Key);
                 //Issue jiraIssue = jira.GetIssue(issueNumber);
                 //BillingIssueDtoHelios issueDtoHelio = issue[0];
                 ////jiraIssue.Add(jira.GetIssue(issueNumber));

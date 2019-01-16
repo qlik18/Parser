@@ -1,0 +1,211 @@
+środa, 16 stycznia 2019 07:47:08
+
+addCommentJira string jiraKey WIND-7997środa, 16 stycznia 2019 07:47:08
+
+addCommentJira object sender, DoWorkEventArgs e WIND-7997środa, 16 stycznia 2019 07:47:33
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 16 stycznia 2019 07:47:35
+
+addCommentJira string jiraKey ZCC-17863środa, 16 stycznia 2019 07:47:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17863środa, 16 stycznia 2019 07:47:35
+
+addCommentJira string jiraKey CRM-74919środa, 16 stycznia 2019 07:47:35
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74919środa, 16 stycznia 2019 07:47:36
+
+addCommentJira string jiraKey ZCC-17862środa, 16 stycznia 2019 07:47:36
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17862środa, 16 stycznia 2019 07:52:02
+
+addCommentJira string jiraKey WIND-7997środa, 16 stycznia 2019 07:52:02
+
+addCommentJira object sender, DoWorkEventArgs e WIND-7997środa, 16 stycznia 2019 07:52:26
+
+addCommentJira string jiraKey CRM-74919środa, 16 stycznia 2019 07:52:26
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74919środa, 16 stycznia 2019 07:52:26
+
+addCommentJira string jiraKey ZCC-17862środa, 16 stycznia 2019 07:52:26
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17862środa, 16 stycznia 2019 07:52:28
+
+addCommentJira string jiraKey ZCC-17863środa, 16 stycznia 2019 07:52:28
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17863środa, 16 stycznia 2019 07:53:44
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-16 07:53:44] 
+
+środa, 16 stycznia 2019 07:53:44
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-16 07:53:44] 
+
+środa, 16 stycznia 2019 07:53:51
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-16 07:53:51] 
+
+środa, 16 stycznia 2019 07:53:53
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-16 07:53:53] 
+
+środa, 16 stycznia 2019 07:53:53
+
+Modyfikacja treeItemśroda, 16 stycznia 2019 07:53:53
+
+Modyfikacja treeItemśroda, 16 stycznia 2019 07:53:54
+
+Status Auto: False 
+
+środa, 16 stycznia 2019 07:53:54
+
+Status Auto: False 
+
+środa, 16 stycznia 2019 07:53:54
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-16 07:53:54] 
+
+środa, 16 stycznia 2019 07:53:54
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-16 07:53:54] 
+
+środa, 16 stycznia 2019 07:53:56
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-16 07:53:56] 
+
+środa, 16 stycznia 2019 07:53:56
+
+Modyfikacja treeItemśroda, 16 stycznia 2019 07:53:56
+
+Status Auto: False 
+
+środa, 16 stycznia 2019 07:53:59
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-16 07:53:59] 
+
+środa, 16 stycznia 2019 07:53:59
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 16 stycznia 2019 07:53:59
+
+Modyfikacja treeItemśroda, 16 stycznia 2019 07:53:59
+
+Status Auto: False 
+
+środa, 16 stycznia 2019 07:54:08
+
+addCommentJira string jiraKey ZCC-17862środa, 16 stycznia 2019 07:54:11
+
+addCommentJira string jiraKey WIND-7997środa, 16 stycznia 2019 07:54:13
+
+addCommentJira string jiraKey ZCC-17863środa, 16 stycznia 2019 07:54:15
+
+addCommentJira string jiraKey CRM-74919środa, 16 stycznia 2019 08:06:55
+
+Zgłoszenie CRM-74920 dodano automatycznie o godzinie 2019-01-16 08:06:55!
+środa, 16 stycznia 2019 08:06:58
+
+addCommentJira string jiraKey CRM-74920środa, 16 stycznia 2019 08:06:58
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74920środa, 16 stycznia 2019 08:07:00
+
+Zgłoszenie ZCC-17864 dodano automatycznie o godzinie 2019-01-16 08:07:00!
+środa, 16 stycznia 2019 08:07:21
+
+addCommentJira string jiraKey ZCC-17864środa, 16 stycznia 2019 08:07:21
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17864środa, 16 stycznia 2019 08:21:49
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripControlHost.OnBoundsChanged()
+   w System.Windows.Forms.ToolStripItem.SetBounds(Rectangle bounds)
+   w System.Windows.Forms.ToolStripItem.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.Layout.TableLayout.SetElementBounds(ContainerInfo containerInfo, RectangleF displayRectF)
+   w System.Windows.Forms.Layout.TableLayout.LayoutCore(IArrangedElement container, LayoutEventArgs args)
+   w System.Windows.Forms.Layout.LayoutEngine.Layout(Object container, LayoutEventArgs layoutEventArgs)
+   w System.Windows.Forms.Control.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.ToolStrip.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.StatusStrip.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripItem.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.set_Text(String value)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 27
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 16 stycznia 2019 08:35:18
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripControlHost.OnBoundsChanged()
+   w System.Windows.Forms.ToolStripItem.SetBounds(Rectangle bounds)
+   w System.Windows.Forms.ToolStripItem.System.Windows.Forms.Layout.IArrangedElement.SetBounds(Rectangle bounds, BoundsSpecified specified)
+   w System.Windows.Forms.Layout.TableLayout.SetElementBounds(ContainerInfo containerInfo, RectangleF displayRectF)
+   w System.Windows.Forms.Layout.TableLayout.LayoutCore(IArrangedElement container, LayoutEventArgs args)
+   w System.Windows.Forms.Layout.LayoutEngine.Layout(Object container, LayoutEventArgs layoutEventArgs)
+   w System.Windows.Forms.Control.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.ToolStrip.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.StatusStrip.OnLayout(LayoutEventArgs levent)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripItem.OnTextChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.set_Text(String value)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 16 stycznia 2019 08:44:59
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+

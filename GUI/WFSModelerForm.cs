@@ -221,7 +221,6 @@ namespace GUI
             }
         }
 
-        
         public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
@@ -407,7 +406,7 @@ namespace GUI
             GenerateForm();
         }
 
-        [STAThreadAttribute]
+        
         private void GenerateForm(bool visible = true)
         {
             GenerateForm(null, 0);
@@ -422,7 +421,7 @@ namespace GUI
         /// </summary>
         /// <param name="group"></param>
         /// <param name="ParamGroupId"></param>
-        [STAThreadAttribute]
+        
         private void GenerateForm(GroupBox group, int ParamGroupId)
         {
             //if(group== null) group= new GroupBox();

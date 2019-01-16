@@ -1,0 +1,2437 @@
+poniedziałek, 14 stycznia 2019 08:20:10
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.Login.<invokeLogin>b__22_0() w C:\CP\ParserGit\JiraParser\GUI\LoginForm.cs:wiersz 102
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 14 stycznia 2019 08:20:55
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.Login.<invokeLogin>b__22_0() w C:\CP\ParserGit\JiraParser\GUI\LoginForm.cs:wiersz 102
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 14 stycznia 2019 08:22:44
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.Login.<invokeLogin>b__22_0() w C:\CP\ParserGit\JiraParser\GUI\LoginForm.cs:wiersz 102
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 14 stycznia 2019 08:26:38
+
+Zgłoszenie ZCC-17846 dodano automatycznie o godzinie 2019-01-14 08:26:38!
+poniedziałek, 14 stycznia 2019 08:27:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 08:29:29
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 08:29:31
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 08:38:56
+
+Zgłoszenie INFOLINIA-6451 dodano automatycznie o godzinie 2019-01-14 08:38:56!
+poniedziałek, 14 stycznia 2019 08:43:07
+
+Zgłoszenie CRM-74890 dodano automatycznie o godzinie 2019-01-14 08:43:07!
+poniedziałek, 14 stycznia 2019 08:43:09
+
+addCommentJira string jiraKey CRM-74890 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 08:43:09
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74890poniedziałek, 14 stycznia 2019 08:49:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 08:51:48
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 08:54:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 08:56:51
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 08:59:13
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:01:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:08:37
+
+Zgłoszenie CRM-74891 dodano automatycznie o godzinie 2019-01-14 09:08:37!
+poniedziałek, 14 stycznia 2019 09:08:39
+
+addCommentJira string jiraKey CRM-74891 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 09:08:39
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74891poniedziałek, 14 stycznia 2019 09:31:07
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:31:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:33:47
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:36:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:38:49
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:38:50
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:30
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:31
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:32
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:33
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:34
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:34
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:34
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:34
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass151_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5211
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 09:40:46
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5284
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:40:50
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5284
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:40:53
+
+Zgłoszenie WIND-7985 dodano automatycznie o godzinie 2019-01-14 09:40:53!
+poniedziałek, 14 stycznia 2019 09:40:56
+
+addCommentJira string jiraKey WIND-7985 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 09:40:56
+
+addCommentJira object sender, DoWorkEventArgs e WIND-7985poniedziałek, 14 stycznia 2019 09:41:01
+
+Zgłoszenie WIND-7985 dodano automatycznie o godzinie 2019-01-14 09:41:01!
+poniedziałek, 14 stycznia 2019 09:41:23
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:41:25
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:43:26
+
+Zgłoszenie CRM-74893 dodano automatycznie o godzinie 2019-01-14 09:43:26!
+poniedziałek, 14 stycznia 2019 09:43:27
+
+addCommentJira string jiraKey CRM-74893 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 09:43:27
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74893poniedziałek, 14 stycznia 2019 09:43:30
+
+Zgłoszenie CRM-74892 dodano automatycznie o godzinie 2019-01-14 09:43:30!
+poniedziałek, 14 stycznia 2019 09:43:40
+
+addCommentJira string jiraKey CRM-74892 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 09:43:40
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74892poniedziałek, 14 stycznia 2019 09:43:44
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:43:45
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:43:45
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:46:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:46:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:46:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:48:49
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:48:49
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:48:49
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:51:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:51:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:53:47
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:53:47
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:53:47
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:56:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:56:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 09:56:09
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:01:13
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:01:13
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:06:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:09:24
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3735
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__217_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7175
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 10:09:25
+
+addCommentJira string jiraKey WIND-7985 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 10:09:26
+
+addCommentJira object sender, DoWorkEventArgs e WIND-7985poniedziałek, 14 stycznia 2019 10:11:17
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:11:17
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:11:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:13:41
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:13:42
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:13:42
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5284
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:20:55
+
+Zgłoszenie CRM-74896 dodano automatycznie o godzinie 2019-01-14 10:20:55!
+poniedziałek, 14 stycznia 2019 10:20:56
+
+addCommentJira string jiraKey CRM-74896 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 14 stycznia 2019 10:20:56
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74896poniedziałek, 14 stycznia 2019 10:31:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5285
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:31:08
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5285
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:32:57
+
+Zgłoszenie CRM-74897 dodano automatycznie o godzinie 2019-01-14 10:32:57!
+poniedziałek, 14 stycznia 2019 10:36:23
+
+addCommentJira string jiraKey CRM-74897poniedziałek, 14 stycznia 2019 10:36:23
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74897poniedziałek, 14 stycznia 2019 10:36:45
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:38:37
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:38:39
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:40:57
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:40:58
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:43:24
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:43:24
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:45:57
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:45:57
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:45:57
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:48:25
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:48:26
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:48:27
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:50:54
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:50:54
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5284
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:50:54
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 10:53:23
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 11:28:20
+
+Zgłoszenie CRM-74898 dodano automatycznie o godzinie 2019-01-14 11:28:20!
+poniedziałek, 14 stycznia 2019 11:28:22
+
+addCommentJira string jiraKey CRM-74898poniedziałek, 14 stycznia 2019 11:28:22
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74898poniedziałek, 14 stycznia 2019 11:43:07
+
+Zgłoszenie ZCC-17849 dodano automatycznie o godzinie 2019-01-14 11:43:07!
+poniedziałek, 14 stycznia 2019 11:43:09
+
+addCommentJira string jiraKey ZCC-17849poniedziałek, 14 stycznia 2019 11:43:09
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17849poniedziałek, 14 stycznia 2019 12:03:08
+
+Zgłoszenie WIND-7986 dodano automatycznie o godzinie 2019-01-14 12:03:08!
+poniedziałek, 14 stycznia 2019 12:03:13
+
+addCommentJira string jiraKey WIND-7986poniedziałek, 14 stycznia 2019 12:03:13
+
+addCommentJira object sender, DoWorkEventArgs e WIND-7986poniedziałek, 14 stycznia 2019 12:10:59
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:13:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:16:01
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:18:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:28:11
+
+Zgłoszenie ZCC-17848 dodano automatycznie o godzinie 2019-01-14 12:28:11!
+poniedziałek, 14 stycznia 2019 12:28:14
+
+addCommentJira string jiraKey ZCC-17848poniedziałek, 14 stycznia 2019 12:28:14
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17848poniedziałek, 14 stycznia 2019 12:33:10
+
+Zgłoszenie CRM-74899 dodano automatycznie o godzinie 2019-01-14 12:33:10!
+poniedziałek, 14 stycznia 2019 12:33:15
+
+addCommentJira string jiraKey CRM-74899poniedziałek, 14 stycznia 2019 12:33:15
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74899poniedziałek, 14 stycznia 2019 12:35:57
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:38:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:38:22
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:40:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:43:11
+
+Zgłoszenie CRM-74900 dodano automatycznie o godzinie 2019-01-14 12:43:11!
+poniedziałek, 14 stycznia 2019 12:43:15
+
+addCommentJira string jiraKey CRM-74900poniedziałek, 14 stycznia 2019 12:43:15
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74900poniedziałek, 14 stycznia 2019 12:43:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:43:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:49:13
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 12:51:45
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:51:45
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 12:54:12
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:54:14
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:56:48
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:56:49
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:56:50
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:59:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 12:59:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:01:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:01:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:06:51
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:11:55
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:11:55
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:16:25
+
+Zgłoszenie INFOLINIA-6455 dodano automatycznie o godzinie 2019-01-14 13:16:25!
+poniedziałek, 14 stycznia 2019 13:16:28
+
+addCommentJira string jiraKey INFOLINIA-6455poniedziałek, 14 stycznia 2019 13:16:28
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6455poniedziałek, 14 stycznia 2019 13:16:50
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:16:50
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:21:51
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:21:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:21:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:26:50
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:31:39
+
+Zgłoszenie INFOLINIA-6456 dodano automatycznie o godzinie 2019-01-14 13:31:39!
+poniedziałek, 14 stycznia 2019 13:31:46
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:31:46
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr)
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:31:50
+
+addCommentJira string jiraKey INFOLINIA-6456poniedziałek, 14 stycznia 2019 13:31:50
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6456poniedziałek, 14 stycznia 2019 13:41:19
+
+Zgłoszenie CRM-74901 dodano automatycznie o godzinie 2019-01-14 13:41:19!
+poniedziałek, 14 stycznia 2019 13:41:22
+
+addCommentJira string jiraKey CRM-74901poniedziałek, 14 stycznia 2019 13:41:22
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74901poniedziałek, 14 stycznia 2019 13:41:26
+
+Zgłoszenie CRM-74902 dodano automatycznie o godzinie 2019-01-14 13:41:26!
+poniedziałek, 14 stycznia 2019 13:41:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:41:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:41:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:41:53
+
+addCommentJira string jiraKey CRM-74902poniedziałek, 14 stycznia 2019 13:41:53
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74902poniedziałek, 14 stycznia 2019 13:41:53
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:46:06
+
+Zgłoszenie KKK-3861 dodano automatycznie o godzinie 2019-01-14 13:46:06!
+poniedziałek, 14 stycznia 2019 13:46:09
+
+addCommentJira string jiraKey KKK-3861poniedziałek, 14 stycznia 2019 13:46:09
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3861poniedziałek, 14 stycznia 2019 13:46:32
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:46:34
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:46:34
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:46:34
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 13:51:16
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 13:51:17
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 13:51:19
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 13:51:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 14:18:45
+
+Zgłoszenie CRM-74903 dodano automatycznie o godzinie 2019-01-14 14:18:45!
+poniedziałek, 14 stycznia 2019 14:18:48
+
+addCommentJira string jiraKey CRM-74903poniedziałek, 14 stycznia 2019 14:18:48
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74903poniedziałek, 14 stycznia 2019 14:18:49
+
+Zgłoszenie KKK-3863 dodano automatycznie o godzinie 2019-01-14 14:18:49!
+poniedziałek, 14 stycznia 2019 14:19:11
+
+addCommentJira string jiraKey KKK-3863poniedziałek, 14 stycznia 2019 14:19:11
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3863poniedziałek, 14 stycznia 2019 14:33:49
+
+Zgłoszenie ZCC-17852 dodano automatycznie o godzinie 2019-01-14 14:33:49!
+poniedziałek, 14 stycznia 2019 14:34:16
+
+addCommentJira string jiraKey ZCC-17852poniedziałek, 14 stycznia 2019 14:34:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17852poniedziałek, 14 stycznia 2019 15:09:04
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 15:14:03
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 15:18:38
+
+Zgłoszenie ZCC-17853 dodano automatycznie o godzinie 2019-01-14 15:18:38!
+poniedziałek, 14 stycznia 2019 15:18:41
+
+addCommentJira string jiraKey ZCC-17853poniedziałek, 14 stycznia 2019 15:18:41
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17853poniedziałek, 14 stycznia 2019 15:19:05
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 15:23:41
+
+Zgłoszenie KKK-3864 dodano automatycznie o godzinie 2019-01-14 15:23:41!
+poniedziałek, 14 stycznia 2019 15:23:44
+
+addCommentJira string jiraKey KKK-3864poniedziałek, 14 stycznia 2019 15:23:44
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3864poniedziałek, 14 stycznia 2019 15:24:15
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 550
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 454
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 461
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 413
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 309
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 14 stycznia 2019 15:43:38
+
+Zgłoszenie CRM-74904 dodano automatycznie o godzinie 2019-01-14 15:43:38!
+poniedziałek, 14 stycznia 2019 15:43:41
+
+addCommentJira string jiraKey CRM-74904poniedziałek, 14 stycznia 2019 15:43:41
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74904poniedziałek, 14 stycznia 2019 15:58:40
+
+Zgłoszenie CRM-74905 dodano automatycznie o godzinie 2019-01-14 15:58:40!
+poniedziałek, 14 stycznia 2019 15:58:42
+
+addCommentJira string jiraKey CRM-74905poniedziałek, 14 stycznia 2019 15:58:43
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74905poniedziałek, 14 stycznia 2019 15:58:58
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 16:18:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 16:18:52
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 16:23:46
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5280
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 14 stycznia 2019 18:19:28
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-14 18:19:28] 
+
+poniedziałek, 14 stycznia 2019 18:19:30
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-14 18:19:30] 
+
+poniedziałek, 14 stycznia 2019 18:19:30
+
+Modyfikacja treeItemponiedziałek, 14 stycznia 2019 18:19:30
+
+Status Auto: False 
+
+poniedziałek, 14 stycznia 2019 18:19:54
+
+addCommentJira string jiraKey WIND-7987
