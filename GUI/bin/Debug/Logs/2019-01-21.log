@@ -1,0 +1,1962 @@
+poniedziałek, 21 stycznia 2019 03:48:41
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 03:48:41] 
+
+poniedziałek, 21 stycznia 2019 03:48:56
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 03:48:56] 
+
+poniedziałek, 21 stycznia 2019 03:48:56
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 03:48:56
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 03:49:00
+
+--- Main exception: Message ---
+Response Content: <html>
+
+<head>
+    <title>Unauthorized (401)</title>
+    
+
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">
+    (function() {
+        var contextPath = '';
+        var eventBuffer = [];
+
+        function printDeprecatedMsg() {
+            if (console && console.warn) {
+                console.warn('DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.');
+            }
+        }
+
+        function sendEvent(analytics, postfix) {
+            analytics.send({
+                name: 'js.globals.contextPath.' + postfix
+            });
+        }
+
+        function sendDeprecatedEvent(postfix) {
+            try {
+                var analytics = require('jira/analytics');
+                if (eventBuffer.length) {
+                    eventBuffer.forEach(function(value) {
+                        sendEvent(analytics, value);
+                    });
+                    eventBuffer = [];
+                }
+
+                if (postfix) {
+                    sendEvent(analytics, postfix);
+                }
+            } catch(ex) {
+                eventBuffer.push(postfix);
+                setTimeout(sendDeprecatedEvent, 1000);
+            }
+        }
+
+        Object.defineProperty(window, 'contextPath', {
+            get: function() {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('get');
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('set');
+                contextPath = value;
+            }
+        });
+    })();
+
+</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"jira.onboarding.cyoa\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"com.atlassian.feedback.feedback-button-move-to-header-enable\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"jira.priorities.per.project.jsd\":true,\"jira.instrumentation.laas\":false,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"com.atlassian.jira.issuetable.draggable\":true,\"jira.create.linked.issue\":true,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\":false,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"jira.jql.suggestrecentfields\":false,\"com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\":true,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"jira.jql.smartautoselectfirst\":false,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.priorities.per.project\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true,\"jira.renderer.consider.variable.format\":true}}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jcore-docs-076/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:web-item-response-renderer.web-item-actions-data-provider"]="[]";
+WRM._unparsedData["jira.webresources:dateFormatProvider.allFormats"]="{\"dateFormats\":{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"p.n.e.\",\"n.e.\"],\"months\":[\"stycznia\",\"lutego\",\"marca\",\"kwietnia\",\"maja\",\"czerwca\",\"lipca\",\"sierpnia\",\"wrze\u015bnia\",\"pa\u017adziernika\",\"listopada\",\"grudnia\"],\"monthsShort\":[\"sty\",\"lut\",\"mar\",\"kwi\",\"maj\",\"cze\",\"lip\",\"sie\",\"wrz\",\"pa\u017a\",\"lis\",\"gru\"],\"weekdaysShort\":[\"N\",\"Pn\",\"Wt\",\"\u015ar\",\"Cz\",\"Pt\",\"So\"],\"weekdays\":[\"niedziela\",\"poniedzia\u0142ek\",\"wtorek\",\"\u015broda\",\"czwartek\",\"pi\u0105tek\",\"sobota\"]},\"lookAndFeelFormats\":{\"relativize\":\"false\",\"time\":\"H:mm\",\"day\":\"EEEE H:mm\",\"dmy\":\"dd/MM/yyyy\",\"complete\":\"dd/MM/yyyy H:mm\"}}";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData"]="{\"anonymous\":true}";
+WRM._unparsedData["jira.webresources:avatar-picker.data"]="{}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup"]="{\"signupDescription\":\"Si\u0119gnij po aktualizacje, inspiracje i sprawdzone rozwi\u0105zania od zespo\u0142u Jira.\",\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\",\"signupTitle\":\"Zarejestruj si\u0119!\",\"signupId\":\"newsletter-signup-tip\",\"showNewsletterTip\":false}";
+WRM._unparsedData["com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData"]="{\"instanceCreatedDate\":\"2010-04-14\"}";
+WRM._unparsedData["com.atlassian.jira.ext.calendar:tipDataProvider.tip"]="{\"suppressTip\":false}";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:directIdeaIntegration.idea-editor-data-provider"]="{\"available\":false,\"enabled\":false,\"isExternalIdeaEnabled\":false,\"url\":\"https://localhost:63349\",\"app\":\"JIRA\",\"platformId\":\"jira\",\"version\":\"7.6.8\",\"pluginVersion\":\"5.4.45\",\"running\":false,\"canonicalBaseUrl\":\"https://jira.polsatc\",\"scriptRoots\":[],\"hasEditPermissions\":false}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.help-data"]="{\"showHelp\":true,\"editorDocumentationUrl\":[\"https://docs.atlassian.com/jira/jcore-docs-076/Visual+editing\"],\"editorDocumentationTitle\":[\"Show me documentation for the visual editor\"]}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.thumbnails-allowed"]="true";
+WRM._unparsedData["jira.webresources:user-message-flags.adminLockout"]="{}";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="/s/7c74042ca47c78458ae7f9e42bba0ff3-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/css/_super/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/ebed76df7d53e58f9d5cd82a45608778-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/8c389073a5a2d57a2e093a8c092a98f6/_/download/contextbatch/css/atl.general,jira.global,jira.general,-_super/batch.css?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true" data-wrm-key="atl.general,jira.global,jira.general,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/1b4503c04f45d68ae09fb22125331a69-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/6.1.0/_/download/batch/com.atlassian.auiplugin:aui-labels/com.atlassian.auiplugin:aui-labels.css" data-wrm-key="com.atlassian.auiplugin:aui-labels" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/ab25e850bee0b576efb371fb5834864a-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="/s/0368fee22604c6fa58f1f621abee6adc-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/js/_super/batch.js?locale=pl-PL" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/s/d06273b15348a260bd68d06279384765-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/8c389073a5a2d57a2e093a8c092a98f6/_/download/contextbatch/js/atl.general,jira.global,jira.general,-_super/batch.js?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true&amp;locale=pl-PL" data-wrm-key="atl.general,jira.global,jira.general,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/s/56c3f6248103cf6e5ac498c8fd378431-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/9296915968fd19e3630cf5546b9a3e64/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=pl-PL" data-wrm-key="atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<link type="text/css" rel="stylesheet" href="/s/64be28066bd471ecf1b867daad15cd89-CDN/7rs6c2/76010/beaf2afaa02719a29c4bcdd5a3976a69/a4036ea15c0638daa9b746ec42519472/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css" data-wrm-key="jira.global.look-and-feel,-_super" data-wrm-batch-type="context" media="all">
+
+<script type="text/javascript" src="/rest/api/1.0/shortcuts/76010/fe9a1c0b746c1ed769d9288435ba3992/shortcuts.js"></script>
+
+
+    <meta name="application-name" content="JIRA" data-name="jira" data-version="7.6.8">
+</head>
+<body id="jira" class="aui-layout aui-style-default page-type-message"  data-version="7.6.8" >
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                    <header class="aui-page-header"><div class="aui-page-header-inner">
+                            <div class="aui-page-header-main">
+                                    <h1>Unauthorized (401)</h1>
+                                </div><!-- .aui-page-header-main -->
+                        </div><!-- .aui-page-header-inner --></header><!-- .aui-page-header -->
+                    <div class="aui-message aui-message-warning warning">
+                            <p>Wystąpił błąd <code>&quot;401 - Unauthorized&quot;</code> podczas wczytywania tej strony.</p>
+                            <p>Basic Authentication Failure - Reason : AUTHENTICATED_FAILED</p>
+                            <p><a href="/secure/MyJiraHome.jspa">Idź do strony głównej Jira</a></p>
+                        </div>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+</body>
+</html>
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetCustomFields(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 375
+   w Atlassian.Jira.Remote.JiraRestClient.GetSerializerSettings() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 77
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequestAsync(Method method, String resource, Object requestBody, CancellationToken token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 157
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest(Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 103
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssuesFromJqlSearch(String token, String jqlSearch, Int32 maxResults, Int32 startAt) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 756
+   w Atlassian.Jira.Jira.<>c__DisplayClass8.<GetIssuesFromJql>b__7(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 328
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuesFromJql(String jql, Nullable`1 maxIssues, Int32 startAt) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 334
+   w Atlassian.Jira.Linq.JiraQueryProvider.Execute(Expression expression, Boolean isEnumerable) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Linq\JiraQueryProvider.cs:wiersz 47
+   w Atlassian.Jira.Linq.JiraQueryProvider.Execute[T](Expression expression) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Linq\JiraQueryProvider.cs:wiersz 32
+   w GUI.MainForm.addCommentJira(String jiraKey) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3550
+   w GUI.MainForm.addCommentJira(List`1 tmp) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3525
+   w GUI.MainForm.<>c__DisplayClass114_0.<ZapiszZgloszenia>b__1() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3493
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 21 stycznia 2019 07:58:24
+
+--- Main exception: Message ---
+Nie można odczytać danych z połączenia transportowego: Istniejące połączenie zostało gwałtownie zamknięte przez zdalnego hosta.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 43
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 07:58:31
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: key
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   w System.Collections.Generic.Dictionary`2.Remove(TKey key)
+   w GUI.MainForm.ReturnIssue(BillingIssueDtoHelios zgloszenie, TreeView tr, Boolean newIssue) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5274
+   w GUI.WFSform.addButton_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\WFSform.cs:wiersz 584
+   w System.Windows.Forms.Control.OnClick(EventArgs e)
+   w System.Windows.Forms.Button.OnClick(EventArgs e)
+   w System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   w System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   w System.Windows.Forms.Button.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3758
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__221_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7241
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:36
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 07:58:37
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 555
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 21 stycznia 2019 08:00:26
+
+Zgłoszenie WIND-8020 dodano automatycznie o godzinie 2019-01-21 08:00:26!
+poniedziałek, 21 stycznia 2019 08:05:08
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:10:06
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:15:07
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:20:08
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:28:24
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:33:04
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:38:06
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:42:51
+
+Zgłoszenie CRM-74980 dodano automatycznie o godzinie 2019-01-21 08:42:51!
+poniedziałek, 21 stycznia 2019 08:42:53
+
+addCommentJira string jiraKey CRM-74980poniedziałek, 21 stycznia 2019 08:42:53
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74980poniedziałek, 21 stycznia 2019 08:42:56
+
+Zgłoszenie ZCC-17884 dodano automatycznie o godzinie 2019-01-21 08:42:56!
+poniedziałek, 21 stycznia 2019 08:43:07
+
+addCommentJira string jiraKey ZCC-17884poniedziałek, 21 stycznia 2019 08:43:07
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17884poniedziałek, 21 stycznia 2019 08:43:07
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:48:32
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:53:28
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:53:31
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 08:58:38
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 08:58:38
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:03:39
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:03:40
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:08:18
+
+Zgłoszenie ZCC-17885 dodano automatycznie o godzinie 2019-01-21 09:08:18!
+poniedziałek, 21 stycznia 2019 09:08:23
+
+addCommentJira string jiraKey ZCC-17885poniedziałek, 21 stycznia 2019 09:08:23
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17885poniedziałek, 21 stycznia 2019 09:08:24
+
+Zgłoszenie WIND-8021 dodano automatycznie o godzinie 2019-01-21 09:08:24!
+poniedziałek, 21 stycznia 2019 09:08:26
+
+addCommentJira string jiraKey WIND-8021poniedziałek, 21 stycznia 2019 09:08:26
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8021poniedziałek, 21 stycznia 2019 09:08:28
+
+Zgłoszenie ZCC-17886 dodano automatycznie o godzinie 2019-01-21 09:08:28!
+poniedziałek, 21 stycznia 2019 09:08:29
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:08:32
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:08:34
+
+addCommentJira string jiraKey ZCC-17886poniedziałek, 21 stycznia 2019 09:08:34
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17886poniedziałek, 21 stycznia 2019 09:13:39
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:13:41
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:18:41
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:23:20
+
+Zgłoszenie CRM-74981 dodano automatycznie o godzinie 2019-01-21 09:23:20!
+poniedziałek, 21 stycznia 2019 09:23:22
+
+addCommentJira string jiraKey CRM-74981poniedziałek, 21 stycznia 2019 09:23:22
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74981poniedziałek, 21 stycznia 2019 09:23:30
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.Control.PerformLayout()
+   w System.Windows.Forms.Control.ResumeLayout(Boolean performLayout)
+   w System.Windows.Forms.ToolStripItemCollection.Clear()
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 583
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:23:38
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:28:43
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:28:43
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:43:49
+
+Zgłoszenie CRM-74982 dodano automatycznie o godzinie 2019-01-21 09:43:49!
+poniedziałek, 21 stycznia 2019 09:43:52
+
+addCommentJira string jiraKey CRM-74982poniedziałek, 21 stycznia 2019 09:43:52
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74982poniedziałek, 21 stycznia 2019 09:43:54
+
+Zgłoszenie WIND-8022 dodano automatycznie o godzinie 2019-01-21 09:43:54!
+poniedziałek, 21 stycznia 2019 09:43:58
+
+Zgłoszenie KKK-3835 dodano automatycznie o godzinie 2019-01-21 09:43:58!
+poniedziałek, 21 stycznia 2019 09:44:18
+
+addCommentJira string jiraKey WIND-8022poniedziałek, 21 stycznia 2019 09:44:18
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8022poniedziałek, 21 stycznia 2019 09:44:19
+
+addCommentJira string jiraKey KKK-3835poniedziałek, 21 stycznia 2019 09:44:19
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3835poniedziałek, 21 stycznia 2019 09:44:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:44:20
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:49:01
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:49:01
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 09:54:35
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:54:36
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 549
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 453
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 460
+   w GUI.WFSModelerForm.GenerateForm(Boolean visible) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 412
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:59:07
+
+Zgłoszenie CRM-74983 dodano automatycznie o godzinie 2019-01-21 09:59:07!
+poniedziałek, 21 stycznia 2019 09:59:09
+
+addCommentJira string jiraKey CRM-74983poniedziałek, 21 stycznia 2019 09:59:10
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74983poniedziałek, 21 stycznia 2019 09:59:15
+
+Zgłoszenie CRM-74984 dodano automatycznie o godzinie 2019-01-21 09:59:15!
+poniedziałek, 21 stycznia 2019 09:59:30
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 09:59:32
+
+addCommentJira string jiraKey CRM-74984poniedziałek, 21 stycznia 2019 09:59:32
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74984poniedziałek, 21 stycznia 2019 10:04:27
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:09:32
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:14:32
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:19:27
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:24:04
+
+Zgłoszenie KKK-3885 dodano automatycznie o godzinie 2019-01-21 10:24:04!
+poniedziałek, 21 stycznia 2019 10:24:06
+
+addCommentJira string jiraKey KKK-3885poniedziałek, 21 stycznia 2019 10:24:06
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3885poniedziałek, 21 stycznia 2019 10:24:26
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:29:25
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 10:34:18
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 11:14:05
+
+Zgłoszenie ZCC-17880 dodano automatycznie o godzinie 2019-01-21 11:14:05!
+poniedziałek, 21 stycznia 2019 11:14:07
+
+addCommentJira string jiraKey ZCC-17880poniedziałek, 21 stycznia 2019 11:14:07
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17880poniedziałek, 21 stycznia 2019 11:24:04
+
+Zgłoszenie ZCC-17887 dodano automatycznie o godzinie 2019-01-21 11:24:04!
+poniedziałek, 21 stycznia 2019 11:24:06
+
+addCommentJira string jiraKey ZCC-17887poniedziałek, 21 stycznia 2019 11:24:06
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17887poniedziałek, 21 stycznia 2019 11:39:32
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.Control.PerformLayout()
+   w System.Windows.Forms.Control.ResumeLayout(Boolean performLayout)
+   w System.Windows.Forms.ToolStripItemCollection.Clear()
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 583
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 11:44:03
+
+Zgłoszenie CRM-74985 dodano automatycznie o godzinie 2019-01-21 11:44:03!
+poniedziałek, 21 stycznia 2019 11:44:05
+
+addCommentJira string jiraKey CRM-74985poniedziałek, 21 stycznia 2019 11:44:05
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74985poniedziałek, 21 stycznia 2019 11:44:18
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 11:49:30
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 11:54:36
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 12:09:38
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:09:38
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:14:03
+
+Zgłoszenie INFOLINIA-6465 dodano automatycznie o godzinie 2019-01-21 12:14:03!
+poniedziałek, 21 stycznia 2019 12:14:06
+
+addCommentJira string jiraKey INFOLINIA-6465poniedziałek, 21 stycznia 2019 12:14:06
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6465poniedziałek, 21 stycznia 2019 12:14:08
+
+Zgłoszenie WIND-8023 dodano automatycznie o godzinie 2019-01-21 12:14:08!
+poniedziałek, 21 stycznia 2019 12:14:29
+
+addCommentJira string jiraKey WIND-8023poniedziałek, 21 stycznia 2019 12:14:29
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8023poniedziałek, 21 stycznia 2019 12:14:30
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:14:30
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:19:04
+
+Zgłoszenie ZCC-17889 dodano automatycznie o godzinie 2019-01-21 12:19:04!
+poniedziałek, 21 stycznia 2019 12:19:10
+
+addCommentJira string jiraKey ZCC-17889poniedziałek, 21 stycznia 2019 12:19:11
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17889poniedziałek, 21 stycznia 2019 12:19:36
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:19:36
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:24:02
+
+Zgłoszenie ZCC-17890 dodano automatycznie o godzinie 2019-01-21 12:24:02!
+poniedziałek, 21 stycznia 2019 12:24:05
+
+addCommentJira string jiraKey ZCC-17890poniedziałek, 21 stycznia 2019 12:24:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17890poniedziałek, 21 stycznia 2019 12:24:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:24:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:29:18
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 12:29:18
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStripItem.InvalidateItemLayout(String affectedProperty, Boolean invalidatePainting)
+   w System.Windows.Forms.ToolStripDropDownItem.OnRightToLeftChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.OnOwnerChanged(EventArgs e)
+   w System.Windows.Forms.ToolStripItem.SetOwner(ToolStrip newOwner)
+   w System.Windows.Forms.ToolStripItemCollection.SetOwner(ToolStripItem item)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 12:34:25
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:34:25
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:39:33
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:39:33
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:44:15
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:44:15
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:49:32
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:49:32
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 12:54:43
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 12:58:37
+
+Zgłoszenie KKK-3886 dodano automatycznie o godzinie 2019-01-21 12:58:37!
+poniedziałek, 21 stycznia 2019 12:58:39
+
+addCommentJira string jiraKey KKK-3886poniedziałek, 21 stycznia 2019 12:58:39
+
+addCommentJira object sender, DoWorkEventArgs e KKK-3886poniedziałek, 21 stycznia 2019 12:59:31
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.Control.PerformLayout()
+   w System.Windows.Forms.Control.ResumeLayout(Boolean performLayout)
+   w System.Windows.Forms.ToolStripItemCollection.Clear()
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 583
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 13:19:01
+
+Zgłoszenie CRM-74986 dodano automatycznie o godzinie 2019-01-21 13:19:01!
+poniedziałek, 21 stycznia 2019 13:19:05
+
+addCommentJira string jiraKey CRM-74986poniedziałek, 21 stycznia 2019 13:19:05
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74986poniedziałek, 21 stycznia 2019 13:19:06
+
+Zgłoszenie ZCC-17892 dodano automatycznie o godzinie 2019-01-21 13:19:06!
+poniedziałek, 21 stycznia 2019 13:19:27
+
+addCommentJira string jiraKey ZCC-17892poniedziałek, 21 stycznia 2019 13:19:27
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17892poniedziałek, 21 stycznia 2019 13:44:03
+
+Zgłoszenie ZCC-17893 dodano automatycznie o godzinie 2019-01-21 13:44:03!
+poniedziałek, 21 stycznia 2019 13:44:05
+
+addCommentJira string jiraKey ZCC-17893poniedziałek, 21 stycznia 2019 13:44:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17893poniedziałek, 21 stycznia 2019 13:44:08
+
+Zgłoszenie ZCC-17894 dodano automatycznie o godzinie 2019-01-21 13:44:08!
+poniedziałek, 21 stycznia 2019 13:44:12
+
+Zgłoszenie ZCC-17895 dodano automatycznie o godzinie 2019-01-21 13:44:12!
+poniedziałek, 21 stycznia 2019 13:44:25
+
+addCommentJira string jiraKey ZCC-17894poniedziałek, 21 stycznia 2019 13:44:25
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17894poniedziałek, 21 stycznia 2019 13:44:28
+
+addCommentJira string jiraKey ZCC-17895poniedziałek, 21 stycznia 2019 13:44:28
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17895poniedziałek, 21 stycznia 2019 13:53:23
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+
+poniedziałek, 21 stycznia 2019 14:13:41
+
+Zgłoszenie ZCC-17896 dodano automatycznie o godzinie 2019-01-21 14:13:41!
+poniedziałek, 21 stycznia 2019 14:13:46
+
+addCommentJira string jiraKey ZCC-17896poniedziałek, 21 stycznia 2019 14:13:46
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-17896poniedziałek, 21 stycznia 2019 14:49:40
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu 'cms_IssuePopup' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStrip.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.ToolStripDropDown.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   w System.Windows.Forms.Control.set_Size(Size value)
+   w System.Windows.Forms.ToolStripDropDown.AdjustSize()
+   w System.Windows.Forms.ToolStripDropDownMenu.OnLayout(LayoutEventArgs e)
+   w System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   w System.Windows.Forms.ToolStrip.DoLayoutIfHandleCreated(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStrip.OnItemAdded(ToolStripItemEventArgs e)
+   w System.Windows.Forms.ToolStripItemCollection.Add(ToolStripItem value)
+   w GUI.MainForm.getActionToIssue(List`1 issue, String issueNumber, String treeViewName, UserBpmJira ubj) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6171
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 589
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 15:06:54
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: value
+
+--- Main exception: StackTrace ---
+   w System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   w System.String.Contains(String value)
+   w GUI.MainForm.checkBillUser(String loginJira, LoginParamType paramType) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6029
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 571
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 15:23:40
+
+Zgłoszenie CRM-74989 dodano automatycznie o godzinie 2019-01-21 15:23:40!
+poniedziałek, 21 stycznia 2019 15:23:43
+
+addCommentJira string jiraKey CRM-74989poniedziałek, 21 stycznia 2019 15:23:43
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74989poniedziałek, 21 stycznia 2019 15:23:46
+
+Zgłoszenie CRM-74988 dodano automatycznie o godzinie 2019-01-21 15:23:46!
+poniedziałek, 21 stycznia 2019 15:24:03
+
+addCommentJira string jiraKey CRM-74988poniedziałek, 21 stycznia 2019 15:24:04
+
+addCommentJira object sender, DoWorkEventArgs e CRM-74988poniedziałek, 21 stycznia 2019 15:34:02
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6107
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 588
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 15:34:02
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w GUI.MainForm.GetActionForIssues(TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5310
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 21 stycznia 2019 17:26:29
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 17:26:29] 
+
+poniedziałek, 21 stycznia 2019 17:26:29
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 17:26:29] 
+
+poniedziałek, 21 stycznia 2019 17:26:34
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 17:26:34] 
+
+poniedziałek, 21 stycznia 2019 17:26:34
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 17:26:34
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 17:26:34
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 17:26:34] 
+
+poniedziałek, 21 stycznia 2019 17:26:37
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 17:26:37] 
+
+poniedziałek, 21 stycznia 2019 17:26:37
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 17:26:37
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 17:26:37
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 17:26:37] 
+
+poniedziałek, 21 stycznia 2019 17:26:39
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 17:26:39] 
+
+poniedziałek, 21 stycznia 2019 17:26:39
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 17:26:39
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 17:26:39
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-21 17:26:39] 
+
+poniedziałek, 21 stycznia 2019 17:26:41
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 17:26:41] 
+
+poniedziałek, 21 stycznia 2019 17:26:42
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5241
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 17:26:42
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 17:26:42
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 17:26:44
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-21 17:26:44] 
+
+poniedziałek, 21 stycznia 2019 17:26:44
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5241
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 21 stycznia 2019 17:26:44
+
+Modyfikacja treeItemponiedziałek, 21 stycznia 2019 17:26:44
+
+Status Auto: False 
+
+poniedziałek, 21 stycznia 2019 17:27:09
+
+addCommentJira string jiraKey ZCC-17899poniedziałek, 21 stycznia 2019 17:27:12
+
+addCommentJira string jiraKey ZCC-17898poniedziałek, 21 stycznia 2019 17:27:13
+
+addCommentJira string jiraKey CRM-74991poniedziałek, 21 stycznia 2019 17:27:15
+
+addCommentJira string jiraKey CRM-74993poniedziałek, 21 stycznia 2019 17:27:16
+
+addCommentJira string jiraKey CRM-74990poniedziałek, 21 stycznia 2019 20:47:29
+
+--- Main exception: Message ---
+Przekroczono limit czasu nieaktywności (00:10:00).
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+

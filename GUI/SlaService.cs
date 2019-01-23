@@ -29,6 +29,25 @@ namespace GUI
 
                 List<List<string>> lista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
 
+                List<string> numerki = new List<string>();
+                zgloszeniaWjira = null;
+
+                for (int i = 0; i < lista.Count(); i++)
+                {
+                    numerki.Add(lista[i][1].ToString());
+                    //numerki += dgv_SlaRaport.Rows[i].Cells[1].Value.ToString() +"," ; 
+                }
+                string numerkiJQL = fnGetStringFromList(numerki,',');
+                numerkiJQL = "issue in (" + numerkiJQL + ")";
+
+                this.Invoke((MethodInvoker)delegate
+                {
+                    if (cb_SLA_JiraSynchro.Checked && doSynchro)
+                    {
+                        zgloszeniaWjira = jira.GetIssuesFromJql(numerkiJQL, 200);// lista.Count());
+                    }
+                });
+
                 this.Invoke((MethodInvoker)delegate
                 {
                     if (lista.Count > 0)
@@ -48,26 +67,18 @@ namespace GUI
                         }
 
                         ///Synchro z JIRY
-                        IEnumerable<Issue> zgloszeniaWjira = null;
                         if (cb_SLA_JiraSynchro.Checked && doSynchro)
                         {
                             //Jira jiraSlaSynch;
                             //jiraSlaSynch = Jira.CreateRestClient("http://jira", jiraUser.Login, jiraUser.Password);
-                            string numerki = "";
 
-                            for (int i = 0; i < lista.Count(); i++)
-                            {
-                                numerki += (lista[i][1].ToString() == null ||
-                                            lista[i][1].ToString() == ""
-                                            ? "" : lista[i][1].ToString() + ",");
-                                //numerki += dgv_SlaRaport.Rows[i].Cells[1].Value.ToString() +"," ; 
-                            }
 
-                            numerki = "issue in (" + numerki.Remove(numerki.Length - 1) + ")";
 
-                            //zgloszeniaWjira = jira.GetIssuesFromJql(numerki, lista.Count());
-                            zgloszeniaWjira = jira.GetIssuesFromFilter(tb_AssignedFilterName.Text)
-                            .Union (jira.GetIssuesFromFilter(tb_UnassignedFilterName.Text));
+
+
+                            //zgloszeniaWjira = jira.GetIssuesFromJql(numerkiJQL, 200);// lista.Count());
+                            //zgloszeniaWjira = jira.GetIssuesFromFilter(tb_AssignedFilterName.Text)
+                            //.Union (jira.GetIssuesFromFilter(tb_UnassignedFilterName.Text));
                             //zgloszeniaWjira = jira.GetIssuesFromFilter(tb_filter2name.Text);
                             dgv_SlaRaport.Columns["dgvAktualnyStan"].Visible = true;
                             dgv_SlaRaport.Columns["dgvAktualniePrzydzielony"].Visible = true;
@@ -382,7 +393,6 @@ namespace GUI
                 //string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
                 foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
                 {
-
                     doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
                 }
 
@@ -412,7 +422,13 @@ namespace GUI
                 {
                     if (isNullObjectOrEmptyString(tmpRow.Cells[1].Value))
                         return;
-                    tmpIssue = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
+
+                    tmpIssue = zgloszeniaWjira.FirstOrDefault(x => x.Key == tmpRow.Cells[1].ToString());
+                    if(isNullObjectOrEmptyString(tmpIssue))
+                    {
+                        tmpIssue = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
+                    }
+
                     //tmpIssue = jira.GetIssue(tmpRow.Cells[1].Value.ToString());
                     //DataGridViewRow tmpRow = dgv_SlaRaport.Rows[0];
 
@@ -535,7 +551,16 @@ namespace GUI
                 if (!isNullObjectOrEmptyString(issueNumber))
                 {
                     //Issue itmp = jira.RestClient..GetIssue(issueNumber);
-                    Issue itmp = jira.RestClient.GetIssueAsync(issueNumber, CancellationToken.None).Result;
+                    //Issue itmp = jira.RestClient.GetIssueAsync(issueNumber, CancellationToken.None).Result;
+                    Issue itmp = zgloszeniaWjira.FirstOrDefault(x => x.Key == tmpRow.Cells[1].ToString());
+
+                    if (isNullObjectOrEmptyString(itmp))
+                    {
+                        itmp = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
+                    }
+
+                    if (isNullObjectOrEmptyString(itmp))
+                        return;
 
                     string _bpmAssigne = isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value) ? string.Empty : tmpRow.Cells["dgvOdpowiedzialny"].Value.ToString();
                     string _bpmLastAction = isNullObjectOrEmptyString(tmpRow.Cells["dgvAkcjaBPM"].Value) ? string.Empty : tmpRow.Cells["dgvAkcjaBPM"].Value.ToString();
@@ -545,7 +570,6 @@ namespace GUI
 
                     if (
                         //iJira.Key == issueNumber &&
-                        itmp != null &&
                         _bpmAssigne.Contains(string.Empty) &&
                         checkBillUser(itmp.Assignee, LoginParamType.Login) &&
                         _bpmLastAction.Contains("Utworzenie zgłoszenia"))
@@ -572,6 +596,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
+                ExceptionManager.LogError(ex, Logger.Instance, false);
 
             }
         }
@@ -744,6 +769,18 @@ namespace GUI
 
                 }
             }
+        }
+
+        private string fnGetStringFromList(List<string> list, char pos)
+        {
+            string returnValue = string.Empty;
+
+            foreach (string item in list)
+            {
+                returnValue += item + pos;
+            }
+            
+            return returnValue.Remove(returnValue.Length - 1); ;
         }
 
     }

@@ -87,8 +87,8 @@ C:\CP\ParserGit\JiraParser\DataLayer\bin\Debug\Microsoft.Practices.Unity.xml
 C:\CP\ParserGit\JiraParser\DataLayer\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\CP\ParserGit\JiraParser\DataLayer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\CP\ParserGit\JiraParser\DataLayer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.dll
-C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.pdb
 C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
 C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
 C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.dll
+C:\CP\ParserGit\JiraParser\DataLayer\obj\Debug\DataLayer.pdb

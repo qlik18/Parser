@@ -130,6 +130,7 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bt_AutoAssigne = new System.Windows.Forms.Button();
             this.btn_NewIssue = new System.Windows.Forms.Button();
             this.btn_WyszukajWWFS = new System.Windows.Forms.Button();
             this.issueTab = new System.Windows.Forms.TabControl();
@@ -157,7 +158,6 @@ namespace GUI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tc = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bt_AutoAssigne = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_DodajNotatke = new System.Windows.Forms.Button();
             this.btn_Procesy = new System.Windows.Forms.Button();
@@ -436,6 +436,7 @@ namespace GUI
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer1.Panel1.Controls.Add(this.bt_AutoAssigne);
             this.splitContainer1.Panel1.Controls.Add(this.btn_NewIssue);
             this.splitContainer1.Panel1.Controls.Add(this.btn_WyszukajWWFS);
             this.splitContainer1.Panel1.Controls.Add(this.issueTab);
@@ -450,6 +451,14 @@ namespace GUI
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.tc);
             resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
+            // 
+            // bt_AutoAssigne
+            // 
+            resources.ApplyResources(this.bt_AutoAssigne, "bt_AutoAssigne");
+            this.bt_AutoAssigne.BackColor = System.Drawing.Color.Orange;
+            this.bt_AutoAssigne.Name = "bt_AutoAssigne";
+            this.bt_AutoAssigne.UseVisualStyleBackColor = false;
+            this.bt_AutoAssigne.Click += new System.EventHandler(this.bt_autoAssigne_Click);
             // 
             // btn_NewIssue
             // 
@@ -720,7 +729,6 @@ namespace GUI
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.bt_AutoAssigne);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.btn_DodajNotatke);
             this.tabPage1.Controls.Add(this.btn_Procesy);
@@ -728,13 +736,6 @@ namespace GUI
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // bt_AutoAssigne
-            // 
-            resources.ApplyResources(this.bt_AutoAssigne, "bt_AutoAssigne");
-            this.bt_AutoAssigne.Name = "bt_AutoAssigne";
-            this.bt_AutoAssigne.UseVisualStyleBackColor = true;
-            this.bt_AutoAssigne.Click += new System.EventHandler(this.bt_autoAssigne_Click);
             // 
             // button1
             // 
@@ -911,7 +912,7 @@ namespace GUI
             resources.ApplyResources(this.btn_SaveFilters, "btn_SaveFilters");
             this.btn_SaveFilters.Name = "btn_SaveFilters";
             this.btn_SaveFilters.UseVisualStyleBackColor = true;
-            this.btn_SaveFilters.Click += new System.EventHandler(this.btn_SaveFilters_Click);
+            this.btn_SaveFilters.Click += new System.EventHandler(this.btn_SaveFilters_ClickCB);
             // 
             // lb_filter2name
             // 

@@ -1,0 +1,65 @@
+wtorek, 22 stycznia 2019 04:18:31
+
+--- Main exception: Message ---
+Usługa HPWEBService zerwała połączenie. Spróbj odświeżyć aplikację za chwilę.
+
+--- Main exception: StackTrace ---
+   w DataLayer.Implementation.GatewayDaoWFS.notifyWebService() w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 250
+   w LogicLayer.Implementation.ParserEngineWFS.notifyWebService() w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 232
+   w GUI.MainForm.messageToWebService_Tick(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5490
+   w System.Windows.Forms.Timer.OnTick(EventArgs e)
+   w System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.SafeNativeMethods.MessageBox(HandleRef hWnd, String text, String caption, Int32 type)
+   w System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   w System.Windows.Forms.MessageBox.Show(String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon)
+   w Utility.ExceptionManager.LogError(Exception ex, Logger logger, Boolean showMessageBox) w C:\CP\ParserGit\JiraParser\Utility\ExceptionManager.cs:wiersz 44
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 154
+   w LogicLayer.Implementation.ParserEngineWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 193
+   w GUI.MainForm.t_EmailNotification_Tick(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6472
+   w System.Windows.Forms.Timer.OnTick(EventArgs e)
+   w System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.m1_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3855
+
+--- Main exception: Source ---
+DataLayer
+
+wtorek, 22 stycznia 2019 04:22:38
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-22 04:22:38] 
+
+wtorek, 22 stycznia 2019 04:22:47
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-22 04:22:47] 
+
+wtorek, 22 stycznia 2019 04:22:47
+
+Modyfikacja treeItemwtorek, 22 stycznia 2019 04:22:48
+
+Status Auto: False 
+
+wtorek, 22 stycznia 2019 04:22:48
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-01-22 04:22:48] 
+
+wtorek, 22 stycznia 2019 04:22:50
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-01-22 04:22:50] 
+
+wtorek, 22 stycznia 2019 04:22:50
+
+Modyfikacja treeItemwtorek, 22 stycznia 2019 04:22:50
+
+Status Auto: False 
+
+wtorek, 22 stycznia 2019 04:22:58
+
+addCommentJira string jiraKey WIND-8025wtorek, 22 stycznia 2019 04:23:00
+
+addCommentJira string jiraKey WIND-8024

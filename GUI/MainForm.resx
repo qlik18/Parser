@@ -128,6 +128,37 @@
   <data name="splitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="bt_AutoAssigne.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="bt_AutoAssigne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_AutoAssigne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 508</value>
+  </data>
+  <data name="bt_AutoAssigne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 53</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bt_AutoAssigne.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="bt_AutoAssigne.Text" xml:space="preserve">
+    <value>automatyczne sprawdzanie</value>
+  </data>
+  <data name="&gt;&gt;bt_AutoAssigne.Name" xml:space="preserve">
+    <value>bt_AutoAssigne</value>
+  </data>
+  <data name="&gt;&gt;bt_AutoAssigne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_AutoAssigne.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;bt_AutoAssigne.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_NewIssue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
@@ -135,17 +166,19 @@
     <value>NoControl</value>
   </data>
   <data name="btn_NewIssue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 508</value>
+    <value>238, 542</value>
   </data>
   <data name="btn_NewIssue.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_NewIssue.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="btn_NewIssue.Text" xml:space="preserve">
     <value>Utwórz</value>
+  </data>
+  <data name="btn_NewIssue.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;btn_NewIssue.Name" xml:space="preserve">
     <value>btn_NewIssue</value>
@@ -157,7 +190,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;btn_NewIssue.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btn_WyszukajWWFS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -187,7 +220,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;btn_WyszukajWWFS.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="issueTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -290,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAARABHAEQARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAUgBHAFIARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2285,7 +2318,7 @@
     <value>3</value>
   </data>
   <data name="treeView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 423</value>
+    <value>333, 423</value>
   </data>
   <data name="treeView2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2309,7 +2342,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_filter2name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 469</value>
+    <value>323, 469</value>
   </data>
   <data name="tp_filter2name.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2423,7 +2456,7 @@
     <value>3</value>
   </data>
   <data name="treeView3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 421</value>
+    <value>333, 421</value>
   </data>
   <data name="treeView3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2444,7 +2477,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_Billennium.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 469</value>
+    <value>323, 469</value>
   </data>
   <data name="tp_Billennium.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2492,7 +2525,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_tmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 469</value>
+    <value>323, 469</value>
   </data>
   <data name="tp_tmp.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2537,7 +2570,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;issueTab.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="numerZgl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2561,7 +2594,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;numerZgl.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2594,7 +2627,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btn_WyszukajWJira.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2624,7 +2657,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;btn_WyszukajWJira.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2648,7 +2681,7 @@
     <value>splitContainer1.Panel1</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="splitContainer1.Panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -2670,36 +2703,6 @@
   </data>
   <data name="tc.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>FlatButtons</value>
-  </data>
-  <data name="bt_AutoAssigne.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="bt_AutoAssigne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_AutoAssigne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 499</value>
-  </data>
-  <data name="bt_AutoAssigne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 35</value>
-  </data>
-  <data name="bt_AutoAssigne.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="bt_AutoAssigne.Text" xml:space="preserve">
-    <value>automatyczne sprawdzanie</value>
-  </data>
-  <data name="&gt;&gt;bt_AutoAssigne.Name" xml:space="preserve">
-    <value>bt_AutoAssigne</value>
-  </data>
-  <data name="&gt;&gt;bt_AutoAssigne.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_AutoAssigne.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;bt_AutoAssigne.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2733,7 +2736,7 @@ komentarz</value>
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btn_DodajNotatke.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2763,7 +2766,7 @@ komentarz</value>
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_DodajNotatke.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="btn_Procesy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -2793,7 +2796,7 @@ komentarz</value>
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;btn_Procesy.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="richTextBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -2820,7 +2823,7 @@ komentarz</value>
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>

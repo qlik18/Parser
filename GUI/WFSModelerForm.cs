@@ -220,7 +220,7 @@ namespace GUI
                 MessageBox.Show(ex.Message,"Błąd wczytania danych z BPM");
             }
         }
-
+        
         public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
@@ -238,7 +238,8 @@ namespace GUI
             if (quickStep)
             {
                 _quickStep = quickStep;
-                _selectOption = (KeyValuePair<int, string>)selectOption;
+                if(eventMoveId != 610)
+                    _selectOption = (KeyValuePair<int, string>)selectOption;
                 this.Visible = false;
             }
 
@@ -305,7 +306,8 @@ namespace GUI
                     GenerateForm(false);
                 else
                 {
-                    GenerateForm(false);
+                    //GenerateForm(false);
+                    GenerateForm(null, 0);
                     this.Visible = false;
 
 
@@ -357,6 +359,31 @@ namespace GUI
                             }
                             //item.param.DBValue = _selectOption.Key;
                             item.param.Value = "quickStep test";
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == (int)EventParamNames.Osoba_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                //((SimpleData)item.source).ID = _selectOption.Key;
+                                ((TextBox)item.source).Text = (selectOption as string[])[0];
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == (int)EventParamNames.Mail_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                ((TextBox)item.source).Text = (selectOption as string[])[1];
+                            }
 
                             //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
                             //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
@@ -1599,7 +1626,7 @@ namespace GUI
                 AddLabel(ep, group);
         }
         #endregion
-
+        [STAThreadAttribute]
         private void btn_Save_Click(object sender, EventArgs e)
         {
             bool isValidate = true;
