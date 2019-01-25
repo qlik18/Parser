@@ -92,5 +92,8 @@
     <Setting Name="filter2name" Type="System.String" Scope="User">
       <Value Profile="(Default)">Filtr II</Value>
     </Setting>
+    <Setting Name="autoInterval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

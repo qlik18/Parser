@@ -161,6 +161,7 @@ namespace GUI
         #endregion
 
         #region METODY FORMATKI
+        
         public MainForm()
         {
             InitializeComponent();
@@ -252,7 +253,7 @@ namespace GUI
 
             filterNameUpdate("filter1name");
             filterNameUpdate("filter2name");
-
+            tb_InterwalAutomatu.Text = Properties.Settings.Default["autoInterval"].ToString();
             //tp_filter2name.Text = lb_filter2name.Text;
 
             if (Properties.Settings.Default.czyPowiadomienie)
@@ -5293,6 +5294,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// Pobiera akcje z BPM jakie na każdej ze spraw może wykonać użytkownik
         /// </summary>
         /// <param name="tr">drzewko zgłoszeń</param>
+        /// 
+        //[STAThread]
         private void GetActionForIssues(TreeView tr)
         {
             int UserId = gujaczWFS.getUser().Id;
@@ -5306,12 +5309,27 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
 
                     issueMove[tr.Name].Clear();
-
-                    foreach (KeyValuePair<BillingIssueDto, IssueState> item in issues[tr.Name])
+                    if (issues[tr.Name].Count > 0)
                     {
-                        Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
-                        //Dictionary<int, string> moves = gujaczWFS.GetActionForIssueWorkaround(item.Key.issueWFS.WFSIssueId, UserId);
-                        issueMove[tr.Name].Add(item.Key.Idnumber, moves);
+                        try
+                        {
+                            if (issues[tr.Name].Count == 0)
+                                return;
+                            foreach (KeyValuePair<BillingIssueDto, IssueState> item in issues[tr.Name])
+                            {
+                                Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
+                                //Dictionary<int, string> moves = gujaczWFS.GetActionForIssueWorkaround(item.Key.issueWFS.WFSIssueId, UserId);
+                                if (!issueMove[tr.Name].ContainsKey(item.Key.Idnumber))
+                                    issueMove[tr.Name].Add(item.Key.Idnumber, moves);
+                                else
+                                    ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
+
+                            }
+                        }
+                        catch(Exception ex)
+                        {
+
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -6075,7 +6093,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             return returnValue;
         }
 
-
+        //[STAThreadAttribute]
         private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue, string treeViewName = "treeView4")
         {
             Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
@@ -6148,10 +6166,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             ToolStripMenuItem m1 = new ToolStripMenuItem();
             ToolStripMenuItem m2 = new ToolStripMenuItem();
 
+            ContextMenuStrip cms_IssuePopupQuick = new ContextMenuStrip();
+
             if (issueMove[treeViewName] != null && issueMove[treeViewName].ContainsKey(issueNumber) && selectIssue != null)
             {
 
-                cms_IssuePopup.Items.Clear();
+                cms_IssuePopupQuick.Items.Clear();
 
                 Dictionary<int, string> actions = new Dictionary<int, string>();
                 bool success = issueMove[treeViewName].TryGetValue(issueNumber, out actions);
@@ -6167,8 +6187,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     m1.Tag = issueNumber.ToString();
                     m1.Enabled = false;
 
-
-                    cms_IssuePopup.Items.Add(m1);
+                    cms_IssuePopupQuick.Items.Add(m1);
 
                     foreach (KeyValuePair<int, string> item in actionsList)
                     {
@@ -6188,27 +6207,29 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         if(item.Key == 610 
                             && !isNullObjectOrEmptyString(zgloszeniaWjira))
                         {
-                            
-                            string reporter = zgloszeniaWjira.FirstOrDefault(x => x.Key == issueNumber).Reporter;
-                            if (!isNullObjectOrEmptyString(reporter))
+                            if (zgloszeniaWjira.Any(x => x.Key.Value == issueNumber))
                             {
-                                string[] param;
-
-                                Entities.JiraUser ju = JiraUsers.FirstOrDefault(y => y.Login == reporter);
-
-                                if (isNullObjectOrEmptyString(ju))
+                                string reporter = zgloszeniaWjira.FirstOrDefault(x => x.Key.Value == issueNumber).Reporter.ToString();
+                                if (!isNullObjectOrEmptyString(reporter))
                                 {
-                                    var v = jira.GetUserAsync(reporter).Result;
-                                    param = new string[] { v.DisplayName.ToString(), v.Email };
-                                }
-                                else
-                                {
-                                    param = new string[] { ju.FirstName.ToString() + " " + ju.LastName.ToString(), ju.Email };
-                                }
+                                    string[] param;
 
-                                tagList.Add(param);
-                                m1.Tag = tagList;
-                                m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+                                    Entities.JiraUser ju = JiraUsers.FirstOrDefault(y => y.Login == reporter);
+
+                                    if (isNullObjectOrEmptyString(ju))
+                                    {
+                                        var v = jira.GetUserAsync(reporter).Result;
+                                        param = new string[] { v.DisplayName.ToString(), v.Email };
+                                    }
+                                    else
+                                    {
+                                        param = new string[] { ju.FirstName.ToString() + " " + ju.LastName.ToString(), ju.Email };
+                                    }
+
+                                    tagList.Add(param);
+                                    m1.Tag = tagList;
+                                    m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+                                }
                             }
                         }
                         else if (       item.Value.ToString().Equals("Weryfikacja zgłoszenia")
@@ -6265,7 +6286,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             }
 
                         }
-                        cms_IssuePopup.Items.Add(m1);
+                        cms_IssuePopupQuick.Items.Add(m1);
                     }
 
                     if (actions.Count == 0)
@@ -6274,13 +6295,13 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         {
                             m1 = new ToolStripMenuItem("Ponowne otwarcie zgłoszenia");
                             m1.Click += new EventHandler(uzupełnijDaneToolStripMenuItem4_Click);
-                            cms_IssuePopup.Items.Add(m1);
+                            cms_IssuePopupQuick.Items.Add(m1);
                         }
                         else
                         {
                             m1 = new ToolStripMenuItem("Uzupełnij dane");
                             m1.Click += new EventHandler(uzupełnijDaneToolStripMenuItem4_Click);
-                            cms_IssuePopup.Items.Add(m1);
+                            cms_IssuePopupQuick.Items.Add(m1);
                         }
                     }
                     else if (selectIssue.issueWFS.WFSState.Equals("Diagnoza zgłoszenia"))
@@ -6306,7 +6327,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 }
             }
             else
-                cms_IssuePopup.Show(Cursor.Position);
+                cms_IssuePopupQuick.Show(Cursor.Position);
         }
 
         /// <summary>
@@ -6394,6 +6415,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        //[STAThreadAttribute]
         private void btn_tmpQuickStep_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem tmp = (ToolStripMenuItem)sender; //losowy komponet do przechowywania Tag
@@ -6432,7 +6454,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                ExceptionManager.LogWarning(ex.Message, Logger.Instance);
+            }
         }
         /// <summary>
         /// Callback z WFSModelerForm
@@ -7176,16 +7200,45 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         private void bt_autoAssigne_Click(object sender, EventArgs e)
         {
-            tm_autoFrsh.Enabled = true;
-            tm_autoFrsh.Interval = 20000;
+            int interval = 0;
+            if (!tm_autoFrsh.Enabled)
+            {
+                tm_autoFrsh.Enabled = true;
+                if (int.TryParse(tb_InterwalAutomatu.Text, out interval)) {
+                    tm_autoFrsh.Interval = interval * 60000;
+                }
+                else
+                {
+                    MessageBox.Show("błędna wartość dla interwału - musi być wartość w MINUTACH");
+                    return;
+                }
+                toolStripProgressBar3.Visible = true;
+                toolStripStatusLabel8.Visible = true;
 
-            toolStripProgressBar3.Visible = true;
-            toolStripStatusLabel8.Visible = true;
+                tm_autoFrsh_Tick(this, null);
+                //bt_AutoAssigne.Enabled = false;
+                bt_AutoAssigne.BackColor = Color.OrangeRed;
+            }
+            else if (tm_autoFrsh.Enabled)
+            {
+                tm_autoFrsh.Enabled = false;
+                
+                toolStripProgressBar3.Visible = false;
+                toolStripStatusLabel8.Visible = false;
 
-            tm_autoFrsh_Tick(this, null);
-            bt_AutoAssigne.Enabled = false;
+                //tm_autoFrsh_Tick(this, null);
+                //bt_AutoAssigne.Enabled = false;
+                bt_AutoAssigne.BackColor = Color.DarkSeaGreen;
+            }
+
+            if(interval > 0
+                && Properties.Settings.Default["autoInterval"] != interval.ToString())
+            {
+                Properties.Settings.Default["autoInterval"] = interval.ToString();
+                Properties.Settings.Default.Save();
+            }
         }
-
+        
         private void doSavingCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             //MessageBox.Show("Zgłoszenie zostało poprawnie zapisane pod numerem: " + Convert.ToString(e.Result));
@@ -7204,7 +7257,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         private void tm_autoFrsh_Tick(object sender, EventArgs e)
         {
-            tm_autoFrsh.Interval = 300000;
+            //tm_autoFrsh.Interval = int.Parse(tb_InterwalAutomatu.Text)*600000;
             //if (!WorkingSla)
             //{
             //    treeView1.Nodes.Clear();

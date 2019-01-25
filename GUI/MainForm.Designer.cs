@@ -165,9 +165,9 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
-            this.cbFilter2name = new System.Windows.Forms.ComboBox();
-            this.cbFilter1name = new System.Windows.Forms.ComboBox();
+            this.tb_InterwalAutomatu = new System.Windows.Forms.TextBox();
             this.bt_OtworzLog = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.bt_LogSearchRun = new System.Windows.Forms.Button();
             this.bt_LogSearchPatch = new System.Windows.Forms.Button();
@@ -179,7 +179,9 @@ namespace GUI
             this.mtb_BillenniumPass = new System.Windows.Forms.MaskedTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbFilter2name = new System.Windows.Forms.ComboBox();
             this.tb_filter2name = new System.Windows.Forms.TextBox();
+            this.cbFilter1name = new System.Windows.Forms.ComboBox();
             this.tb_filter1name = new System.Windows.Forms.TextBox();
             this.btn_SaveFilters = new System.Windows.Forms.Button();
             this.lb_filter2name = new System.Windows.Forms.Label();
@@ -783,9 +785,9 @@ namespace GUI
             // 
             // tp_Settings
             // 
-            this.tp_Settings.Controls.Add(this.cbFilter2name);
-            this.tp_Settings.Controls.Add(this.cbFilter1name);
+            this.tp_Settings.Controls.Add(this.tb_InterwalAutomatu);
             this.tp_Settings.Controls.Add(this.bt_OtworzLog);
+            this.tp_Settings.Controls.Add(this.label13);
             this.tp_Settings.Controls.Add(this.groupBox4);
             this.tp_Settings.Controls.Add(this.groupBox3);
             this.tp_Settings.Controls.Add(this.groupBox2);
@@ -795,17 +797,10 @@ namespace GUI
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
             // 
-            // cbFilter2name
+            // tb_InterwalAutomatu
             // 
-            this.cbFilter2name.FormattingEnabled = true;
-            resources.ApplyResources(this.cbFilter2name, "cbFilter2name");
-            this.cbFilter2name.Name = "cbFilter2name";
-            // 
-            // cbFilter1name
-            // 
-            this.cbFilter1name.FormattingEnabled = true;
-            resources.ApplyResources(this.cbFilter1name, "cbFilter1name");
-            this.cbFilter1name.Name = "cbFilter1name";
+            resources.ApplyResources(this.tb_InterwalAutomatu, "tb_InterwalAutomatu");
+            this.tb_InterwalAutomatu.Name = "tb_InterwalAutomatu";
             // 
             // bt_OtworzLog
             // 
@@ -813,6 +808,11 @@ namespace GUI
             this.bt_OtworzLog.Name = "bt_OtworzLog";
             this.bt_OtworzLog.UseVisualStyleBackColor = true;
             this.bt_OtworzLog.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_OtworzLog_Click);
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
             // 
             // groupBox4
             // 
@@ -884,7 +884,9 @@ namespace GUI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cbFilter2name);
             this.groupBox2.Controls.Add(this.tb_filter2name);
+            this.groupBox2.Controls.Add(this.cbFilter1name);
             this.groupBox2.Controls.Add(this.tb_filter1name);
             this.groupBox2.Controls.Add(this.btn_SaveFilters);
             this.groupBox2.Controls.Add(this.lb_filter2name);
@@ -895,11 +897,23 @@ namespace GUI
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // cbFilter2name
+            // 
+            this.cbFilter2name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter2name, "cbFilter2name");
+            this.cbFilter2name.Name = "cbFilter2name";
+            // 
             // tb_filter2name
             // 
             resources.ApplyResources(this.tb_filter2name, "tb_filter2name");
             this.tb_filter2name.Name = "tb_filter2name";
             this.tb_filter2name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_filter1name_KeyDown);
+            // 
+            // cbFilter1name
+            // 
+            this.cbFilter1name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter1name, "cbFilter1name");
+            this.cbFilter1name.Name = "cbFilter1name";
             // 
             // tb_filter1name
             // 
@@ -2701,6 +2715,8 @@ namespace GUI
         private TextBox tb_filter2name;
         private ComboBox cbFilter1name;
         private ComboBox cbFilter2name;
+        private TextBox tb_InterwalAutomatu;
+        private Label label13;
     }
 }
 

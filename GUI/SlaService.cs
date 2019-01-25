@@ -336,7 +336,7 @@ namespace GUI
 
         }
 
-        [STAThreadAttribute]
+
         private void btn_slaRaport_Load_Click(object sender, EventArgs e)
         {
             try
@@ -539,6 +539,7 @@ namespace GUI
             return true;
         }
 
+        [STAThread]
         private void slaAutoAssigneTakenIssue(object sender, RunWorkerCompletedEventArgs e)
         {
             DataGridViewRow tmpRow = e.Result as DataGridViewRow;
@@ -580,14 +581,24 @@ namespace GUI
                         MouseEventArgs mea = new MouseEventArgs(MouseButtons.Right, 1, 0, 0, 0);
                         DataGridViewCellMouseEventArgs em = new DataGridViewCellMouseEventArgs(1, tmpRow.Index, 0, 0, mea);
 
-                        cms_IssuePopup.Items.Clear();
+                        //cms_IssuePopup.Items.Clear();
 
                         this.Tag = (bool)true;
 
                         List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
                         addIssueToTreeNode(issueNumber, issue);
-                        getActionToIssue(issue, issueNumber, "treeView4", getUserBpmJira(itmp.Assignee));
+                        //getActionToIssue(issue, issueNumber, "treeView4", getUserBpmJira(itmp.Assignee));
+                        UserBpmJira ubj = getUserBpmJira(itmp.Assignee);
+                        if (true)
+                        {
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(614);
 
+                                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Rozpoczęcie diagnozy", selectIssueList[issueNumber], gujaczWFS, 614, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName));
+
+                            });
+                        }
 
                         tmpRow.Selected = false;
                         this.Tag = null;
@@ -662,6 +673,9 @@ namespace GUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+
+        //[STAThread]
         private void dgv_SlaRaport_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)

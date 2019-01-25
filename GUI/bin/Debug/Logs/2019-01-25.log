@@ -1,0 +1,503 @@
+piątek, 25 stycznia 2019 11:50:10
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:10
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:11
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:15
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17835 - 310817piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8044 - 311937piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3893 - 311897piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75035 - 312039piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75029 - 312007piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74840 - 310587piątek, 25 stycznia 2019 11:50:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17835 - 310817piątek, 25 stycznia 2019 11:50:17
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8044 - 311937piątek, 25 stycznia 2019 11:50:17
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3893 - 311897piątek, 25 stycznia 2019 11:50:17
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75035 - 312039piątek, 25 stycznia 2019 11:50:17
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75029 - 312007piątek, 25 stycznia 2019 11:50:17
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74840 - 310587piątek, 25 stycznia 2019 11:50:21
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:22
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17925 - 308726piątek, 25 stycznia 2019 11:50:22
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17924 - 312008piątek, 25 stycznia 2019 11:50:22
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17923 - 311997piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17919 - 311950piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17917 - 311882piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17916 - 311881piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17599 - 304127piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17245 - 309054piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8049 - 307124piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8021 - 311620piątek, 25 stycznia 2019 11:50:23
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-7763 - 305145piątek, 25 stycznia 2019 11:50:24
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-7744 - 305144piątek, 25 stycznia 2019 11:50:24
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:24
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3886 - 311674piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:25
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:26
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:26
+
+--- Main exception: Message ---
+Wartość '33' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass154_0.<pb_UpdateProgressBar>b__0()
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 25 stycznia 2019 11:50:26
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17835 - 310817piątek, 25 stycznia 2019 11:50:26
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8044 - 311937piątek, 25 stycznia 2019 11:50:26
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3893 - 311897piątek, 25 stycznia 2019 11:50:26
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75035 - 312039piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75029 - 312007piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74840 - 310587piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17835 - 310817piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8044 - 311937piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3893 - 311897piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75035 - 312039piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75029 - 312007piątek, 25 stycznia 2019 11:50:27
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74840 - 310587piątek, 25 stycznia 2019 11:50:46
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17925 - 308726piątek, 25 stycznia 2019 11:50:46
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17924 - 312008piątek, 25 stycznia 2019 11:50:46
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17923 - 311997piątek, 25 stycznia 2019 11:51:12
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17835 - 310817piątek, 25 stycznia 2019 11:51:12
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8044 - 311937piątek, 25 stycznia 2019 11:51:12
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3893 - 311897piątek, 25 stycznia 2019 11:51:12
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75035 - 312039piątek, 25 stycznia 2019 11:51:13
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75029 - 312007piątek, 25 stycznia 2019 11:51:13
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74840 - 310587piątek, 25 stycznia 2019 11:51:14
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17925 - 308726piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17924 - 312008piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17923 - 311997piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17919 - 311950piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17917 - 311882piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17916 - 311881piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17599 - 304127piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: ZCC-17245 - 309054piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8049 - 307124piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-8021 - 311620piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-7763 - 305145piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: WIND-7744 - 305144piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: KKK-3886 - 311674piątek, 25 stycznia 2019 11:51:15
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: INFOLINIA-6464 - 311556piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: INFOLINIA-6405 - 307919piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: INFOLINIA-6247 - 309066piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: INFOLINIA-6066 - 294312piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: INFOLINIA-5940 - 284024piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75038 - 312048piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75033 - 312033piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-75024 - 311949piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74952 - 311459piątek, 25 stycznia 2019 11:51:16
+
+Próbwa wpisania zdublowanej wartości GetActionForIssues: CRM-74929 - 311356

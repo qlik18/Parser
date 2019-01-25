@@ -323,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAUgBHAFIARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAYABHAGAARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2903,47 +2903,26 @@ komentarz</value>
   <data name="&gt;&gt;tp_Raporty.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="cbFilter2name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 265</value>
+  <data name="tb_InterwalAutomatu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 448</value>
   </data>
-  <data name="cbFilter2name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 21</value>
+  <data name="tb_InterwalAutomatu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
   </data>
-  <data name="cbFilter2name.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;cbFilter2name.Name" xml:space="preserve">
-    <value>cbFilter2name</value>
-  </data>
-  <data name="&gt;&gt;cbFilter2name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbFilter2name.Parent" xml:space="preserve">
-    <value>tp_Settings</value>
-  </data>
-  <data name="&gt;&gt;cbFilter2name.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbFilter1name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 238</value>
-  </data>
-  <data name="cbFilter1name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 21</value>
-  </data>
-  <data name="cbFilter1name.TabIndex" type="System.Int32, mscorlib">
+  <data name="tb_InterwalAutomatu.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;cbFilter1name.Name" xml:space="preserve">
-    <value>cbFilter1name</value>
+  <data name="&gt;&gt;tb_InterwalAutomatu.Name" xml:space="preserve">
+    <value>tb_InterwalAutomatu</value>
   </data>
-  <data name="&gt;&gt;cbFilter1name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tb_InterwalAutomatu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cbFilter1name.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tb_InterwalAutomatu.Parent" xml:space="preserve">
     <value>tp_Settings</value>
   </data>
-  <data name="&gt;&gt;cbFilter1name.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;tb_InterwalAutomatu.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bt_OtworzLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 493</value>
@@ -2968,6 +2947,36 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;bt_OtworzLog.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 451</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 13</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Interwał automatycznego sprawdzania (min):</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tp_Settings</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="bt_LogSearchRun.Location" type="System.Drawing.Point, System.Drawing">
@@ -3208,7 +3217,7 @@ Aktualny log (RPM)</value>
     <value>4</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 332</value>
+    <value>8, 332</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>437, 100</value>
@@ -3230,6 +3239,27 @@ Aktualny log (RPM)</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="cbFilter2name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 57</value>
+  </data>
+  <data name="cbFilter2name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 21</value>
+  </data>
+  <data name="cbFilter2name.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Name" xml:space="preserve">
+    <value>cbFilter2name</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;cbFilter2name.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tb_filter2name.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 57</value>
@@ -3253,7 +3283,28 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_filter2name.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="cbFilter1name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 32</value>
+  </data>
+  <data name="cbFilter1name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 21</value>
+  </data>
+  <data name="cbFilter1name.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Name" xml:space="preserve">
+    <value>cbFilter1name</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;cbFilter1name.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tb_filter1name.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 32</value>
@@ -3277,7 +3328,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_filter1name.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btn_SaveFilters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3304,7 +3355,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btn_SaveFilters.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lb_filter2name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3334,7 +3385,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lb_filter2name.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lb_filter1name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3364,7 +3415,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lb_filter1name.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="tb_UnassignedFilterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 57</value>
@@ -3374,6 +3425,9 @@ Aktualny log (RPM)</value>
   </data>
   <data name="tb_UnassignedFilterName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="tb_UnassignedFilterName.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;tb_UnassignedFilterName.Name" xml:space="preserve">
     <value>tb_UnassignedFilterName</value>
@@ -3385,7 +3439,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_UnassignedFilterName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="tb_AssignedFilterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 31</value>
@@ -3395,6 +3449,9 @@ Aktualny log (RPM)</value>
   </data>
   <data name="tb_AssignedFilterName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="tb_AssignedFilterName.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;tb_AssignedFilterName.Name" xml:space="preserve">
     <value>tb_AssignedFilterName</value>
@@ -3406,7 +3463,7 @@ Aktualny log (RPM)</value>
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;tb_AssignedFilterName.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 207</value>

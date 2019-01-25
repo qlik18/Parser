@@ -220,7 +220,8 @@ namespace GUI
                 MessageBox.Show(ex.Message,"Błąd wczytania danych z BPM");
             }
         }
-        
+
+
         public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
@@ -303,22 +304,18 @@ namespace GUI
 
                 //}
                 if (!_quickStep)
+                {
                     GenerateForm(false);
+                }
                 else
                 {
                     //GenerateForm(false);
                     GenerateForm(null, 0);
                     this.Visible = false;
 
-
-
-                    //Logging.Logger.Instance.LogWarning(string.Format("Dodanie parametrów dla issueId: {0}", issue.issueWFS.WFSIssueId));
-
                     foreach (var item in sources)
                     {
-
-
-
+                        
                         if (item.param.EventParamId == 2852)
                         {
                             item.param.DBValue = _selectOption.Key;
@@ -403,7 +400,7 @@ namespace GUI
             catch (Exception ex)
             {
                 Logging.Logger.Instance.LogException(ex);
-                MessageBox.Show(ex.Message, "Błąd wczytania danych z BPM");
+                //MessageBox.Show(ex.Message, "Błąd wczytania danych z BPM");
             }
         }
 
@@ -448,9 +445,10 @@ namespace GUI
         /// </summary>
         /// <param name="group"></param>
         /// <param name="ParamGroupId"></param>
-        
+        [STAThreadAttribute]
         private void GenerateForm(GroupBox group, int ParamGroupId)
         {
+           
             //if(group== null) group= new GroupBox();
             foreach (Entities.EventParamModeler item in list.Where(x => x.ParamGroupId == ParamGroupId))
             {
@@ -487,6 +485,9 @@ namespace GUI
                     GenerateForm(group, item.EventParamId);
                 }
             }
+                
+            
+
         }
 
         private void GetDataFromProcedure(Entities.EventParamModeler item, GroupBox group)
@@ -562,7 +563,7 @@ namespace GUI
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             //TODO: dodać obsługę tego comboBoxa         
         }
-        [STAThreadAttribute]
+        //[STAThreadAttribute]
         private void AddComboBox(Entities.EventParamModeler ep, GroupBox group)
         {
             this.SuspendLayout();
@@ -1626,7 +1627,7 @@ namespace GUI
                 AddLabel(ep, group);
         }
         #endregion
-        [STAThreadAttribute]
+        //[STAThreadAttribute]
         private void btn_Save_Click(object sender, EventArgs e)
         {
             bool isValidate = true;
