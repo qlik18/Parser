@@ -323,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAYABHAGAARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAbgBHAG4ARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2180,7 +2180,7 @@
     <value>3</value>
   </data>
   <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 421</value>
+    <value>313, 422</value>
   </data>
   <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2318,7 +2318,7 @@
     <value>3</value>
   </data>
   <data name="treeView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 423</value>
+    <value>333, 422</value>
   </data>
   <data name="treeView2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2342,7 +2342,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_filter2name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>323, 468</value>
   </data>
   <data name="tp_filter2name.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2456,7 +2456,7 @@
     <value>3</value>
   </data>
   <data name="treeView3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 421</value>
+    <value>333, 420</value>
   </data>
   <data name="treeView3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2477,7 +2477,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_Billennium.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>323, 468</value>
   </data>
   <data name="tp_Billennium.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2525,7 +2525,7 @@
     <value>4, 25</value>
   </data>
   <data name="tp_tmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 469</value>
+    <value>323, 468</value>
   </data>
   <data name="tp_tmp.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2606,7 +2606,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 518</value>
+    <value>7, 520</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 13</value>
@@ -2636,7 +2636,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_WyszukajWJira.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 508</value>
+    <value>108, 510</value>
   </data>
   <data name="btn_WyszukajWJira.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -2663,7 +2663,7 @@
     <value>Bottom, Left</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 716</value>
+    <value>3, 718</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -2711,7 +2711,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 498</value>
+    <value>243, 499</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 38</value>
@@ -2745,7 +2745,7 @@ komentarz</value>
     <value>NoControl</value>
   </data>
   <data name="btn_DodajNotatke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 499</value>
+    <value>6, 500</value>
   </data>
   <data name="btn_DodajNotatke.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 35</value>
@@ -2775,7 +2775,7 @@ komentarz</value>
     <value>NoControl</value>
   </data>
   <data name="btn_Procesy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>837, 499</value>
+    <value>837, 500</value>
   </data>
   <data name="btn_Procesy.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 35</value>
@@ -2805,7 +2805,7 @@ komentarz</value>
     <value>6, 0</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>992, 477</value>
+    <value>992, 478</value>
   </data>
   <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2832,7 +2832,7 @@ komentarz</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 539</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2862,7 +2862,7 @@ komentarz</value>
     <value>0, 0</value>
   </data>
   <data name="tab_Raporty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tab_Raporty.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2883,7 +2883,7 @@ komentarz</value>
     <value>4, 25</value>
   </data>
   <data name="tp_Raporty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_Raporty.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -3769,7 +3769,7 @@ Aktualny log (RPM)</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_Settings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_Settings.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4093,7 +4093,7 @@ Aktualny log (RPM)</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_billing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_billing.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4465,7 +4465,7 @@ Aktualny log (RPM)</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tp_crm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_crm.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4702,7 +4702,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_zcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_zcc.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4810,7 +4810,7 @@ Aktualny log (RPM)</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabSlowniki.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tabSlowniki.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4909,7 +4909,7 @@ Aktualny log (RPM)</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -5098,7 +5098,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_diagnoza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_diagnoza.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5117,6 +5117,141 @@ Aktualny log (RPM)</value>
   </data>
   <data name="&gt;&gt;tp_diagnoza.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="cb_dgv_Wypalony.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cb_dgv_Wypalony.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cb_dgv_Wypalony.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 2</value>
+  </data>
+  <data name="cb_dgv_Wypalony.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 17</value>
+  </data>
+  <data name="cb_dgv_Wypalony.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cb_dgv_Wypalony.Text" xml:space="preserve">
+    <value>Wypalony Czas</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Wypalony.Name" xml:space="preserve">
+    <value>cb_dgv_Wypalony</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Wypalony.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Wypalony.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Wypalony.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cb_dgv_Pauza.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cb_dgv_Pauza.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cb_dgv_Pauza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 2</value>
+  </data>
+  <data name="cb_dgv_Pauza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="cb_dgv_Pauza.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cb_dgv_Pauza.Text" xml:space="preserve">
+    <value>Pauza</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Pauza.Name" xml:space="preserve">
+    <value>cb_dgv_Pauza</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Pauza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Pauza.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_Pauza.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 3</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Widoczność kolumn:</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cb_dgv_IssueId.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cb_dgv_IssueId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 1</value>
+  </data>
+  <data name="cb_dgv_IssueId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="cb_dgv_IssueId.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cb_dgv_IssueId.Text" xml:space="preserve">
+    <value>IssueId</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_IssueId.Name" xml:space="preserve">
+    <value>cb_dgv_IssueId</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_IssueId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_IssueId.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cb_dgv_IssueId.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>712, 2</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 22</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>tp_Sla</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tb_sla_ileWstrzymane.Location" type="System.Drawing.Point, System.Drawing">
     <value>259, 2</value>
@@ -5221,10 +5356,10 @@ Aktualny log (RPM)</value>
     <value>3</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>447, 2</value>
+    <value>409, 2</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 22</value>
+    <value>297, 22</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -5239,25 +5374,25 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cb_SLAWstrzymane.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cb_SLAWstrzymane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 7</value>
+    <value>174, 4</value>
   </data>
   <data name="cb_SLAWstrzymane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="cb_SLAWstrzymane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 20</value>
+    <value>91, 20</value>
   </data>
   <data name="cb_SLAWstrzymane.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="cb_SLAWstrzymane.Text" xml:space="preserve">
-    <value>Tylko wstrzymane</value>
+    <value>Wstrzymane</value>
   </data>
   <data name="&gt;&gt;cb_SLAWstrzymane.Name" xml:space="preserve">
     <value>cb_SLAWstrzymane</value>
@@ -5269,13 +5404,13 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;cb_SLAWstrzymane.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="bt_SLA_synchronizacja.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bt_SLA_synchronizacja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1012, 5</value>
+    <value>976, 505</value>
   </data>
   <data name="bt_SLA_synchronizacja.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -5299,7 +5434,7 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;bt_SLA_synchronizacja.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cb_SLA_JiraSynchro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5308,7 +5443,7 @@ Aktualny log (RPM)</value>
     <value>NoControl</value>
   </data>
   <data name="cb_SLA_JiraSynchro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 7</value>
+    <value>270, 6</value>
   </data>
   <data name="cb_SLA_JiraSynchro.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 17</value>
@@ -5329,7 +5464,7 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;cb_SLA_JiraSynchro.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="cb_SLApauza.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5338,16 +5473,16 @@ Aktualny log (RPM)</value>
     <value>NoControl</value>
   </data>
   <data name="cb_SLApauza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 9</value>
+    <value>84, 6</value>
   </data>
   <data name="cb_SLApauza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 17</value>
+    <value>85, 17</value>
   </data>
   <data name="cb_SLApauza.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="cb_SLApauza.Text" xml:space="preserve">
-    <value>Tylko w realizacji</value>
+    <value>W Realizacji</value>
   </data>
   <data name="&gt;&gt;cb_SLApauza.Name" xml:space="preserve">
     <value>cb_SLApauza</value>
@@ -5359,7 +5494,7 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;cb_SLApauza.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btn_slaRaport_Load.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5386,7 +5521,7 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;btn_slaRaport_Load.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="dgv_SlaRaport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -5395,7 +5530,7 @@ Aktualny log (RPM)</value>
     <value>3, 28</value>
   </data>
   <data name="dgv_SlaRaport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1150, 471</value>
+    <value>1231, 471</value>
   </data>
   <data name="dgv_SlaRaport.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5410,13 +5545,13 @@ Aktualny log (RPM)</value>
     <value>tp_Sla</value>
   </data>
   <data name="&gt;&gt;dgv_SlaRaport.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="tp_Sla.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
   <data name="tp_Sla.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 539</value>
   </data>
   <data name="tp_Sla.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -5623,7 +5758,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_Multi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_Multi.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -5917,7 +6052,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_Workload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_Workload.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -6454,7 +6589,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_awaria_nowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_awaria_nowa.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -6502,7 +6637,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_awarie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_awarie.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -6664,7 +6799,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_awaria_lista.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_awaria_lista.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -7015,7 +7150,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -7333,7 +7468,7 @@ Aktualny log (RPM)</value>
     <value>4, 25</value>
   </data>
   <data name="tp_DayReport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 539</value>
+    <value>1176, 538</value>
   </data>
   <data name="tp_DayReport.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -7363,7 +7498,7 @@ Aktualny log (RPM)</value>
     <value>0, 0</value>
   </data>
   <data name="tc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1103, 568</value>
+    <value>1184, 568</value>
   </data>
   <data name="tc.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7399,7 +7534,7 @@ Aktualny log (RPM)</value>
     <value>100</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 568</value>
+    <value>1524, 568</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>337</value>
@@ -7536,8 +7671,14 @@ Aktualny log (RPM)</value>
   <data name="toolStripProgressBar3.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="tslb_WorkloadStatus.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tslb_WorkloadStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 19</value>
+  </data>
   <data name="toolStripStatusLabel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1046, 19</value>
+    <value>1229, 19</value>
   </data>
   <data name="toolStripStatusLabel6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
@@ -7563,17 +7704,14 @@ Aktualny log (RPM)</value>
   <data name="issuesCheckoutStatus.Text" xml:space="preserve">
     <value>Sprawdzanie: stop</value>
   </data>
-  <data name="tslb_WorkloadStatus.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="tslb_WorkloadStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 19</value>
+  <data name="issuesCheckoutStatus.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 568</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 24</value>
+    <value>1524, 24</value>
   </data>
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9191,7 +9329,7 @@ Aktualny log (RPM)</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 592</value>
+    <value>1524, 592</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10841,6 +10979,12 @@ Aktualny log (RPM)</value>
   <data name="&gt;&gt;toolStripProgressBar3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;tslb_WorkloadStatus.Name" xml:space="preserve">
+    <value>tslb_WorkloadStatus</value>
+  </data>
+  <data name="&gt;&gt;tslb_WorkloadStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripStatusLabel7.Name" xml:space="preserve">
     <value>toolStripStatusLabel7</value>
   </data>
@@ -10863,12 +11007,6 @@ Aktualny log (RPM)</value>
     <value>issuesCheckoutStatus</value>
   </data>
   <data name="&gt;&gt;issuesCheckoutStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tslb_WorkloadStatus.Name" xml:space="preserve">
-    <value>tslb_WorkloadStatus</value>
-  </data>
-  <data name="&gt;&gt;tslb_WorkloadStatus.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;timer2.Name" xml:space="preserve">

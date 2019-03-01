@@ -1,0 +1,618 @@
+poniedziałek, 11 lutego 2019 09:02:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:02:22
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:08:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:08:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:14:17
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:14:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:20:15
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:20:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:26:28
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:26:31
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:32:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:32:21
+
+--- Main exception: Message ---
+Wystąpił przynajmniej jeden błąd.
+
+--- Inner exception 1: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Inner exception 1: StackTrace ---
+   w Atlassian.Jira.Issue.Initialize(RemoteIssue remoteIssue) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 57
+   w Atlassian.Jira.Remote.JiraRestClient.<GetIssueAsync>b__3(Task`1 task) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 184
+   w System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   w System.Threading.Tasks.Task.Execute()
+
+--- Inner exception 1: Source ---
+Atlassian.Jira
+
+--- Main exception: StackTrace ---
+   w System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 704
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:34:05
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:34:05
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:38:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:38:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:44:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:44:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:50:22
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:50:23
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:56:24
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 09:56:27
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:02:18
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:08:15
+
+Zgłoszenie ZCC-18037 dodano automatycznie o godzinie 2019-02-11 10:08:15!
+poniedziałek, 11 lutego 2019 10:08:26
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:08:28
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:14:28
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 592
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:14:29
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 10:38:29
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3777
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__224_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7319
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 11 lutego 2019 10:38:33
+
+addCommentJira string jiraKey ZCC-18037poniedziałek, 11 lutego 2019 10:38:33
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18037poniedziałek, 11 lutego 2019 10:55:10
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__104_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2669
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 11 lutego 2019 10:55:45
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4379
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 11 lutego 2019 11:00:07
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__104_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2669
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 11 lutego 2019 11:01:44
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4379
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 11 lutego 2019 11:02:06
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 11:02:07
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:08
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:09
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:16
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 11:02:17
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:19
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 11 lutego 2019 11:02:19
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:20
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 694
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 11 lutego 2019 11:02:21
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6142
+   w GUI.MainForm.slaAutoAssigneTakenIssue(Object sender, RunWorkerCompletedEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+

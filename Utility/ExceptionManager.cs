@@ -45,7 +45,7 @@ namespace Utility
         }
         public static void LogWarning(string message, Logger logger)
         {
-            logger.LogWarning(message);
+            logger.LogWarning(string.Concat(message, "\n\n"));
         }
     }
 }

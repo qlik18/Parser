@@ -249,6 +249,11 @@ namespace GUI
             this.dgv_Diagnoza = new System.Windows.Forms.DataGridView();
             this.btn_DiagnozaWczytaj = new System.Windows.Forms.Button();
             this.tp_Sla = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cb_dgv_Wypalony = new System.Windows.Forms.CheckBox();
+            this.cb_dgv_Pauza = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cb_dgv_IssueId = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tb_sla_ileWstrzymane = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -356,11 +361,11 @@ namespace GUI
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar3 = new System.Windows.Forms.ToolStripProgressBar();
+            this.tslb_WorkloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
             this.issuesCheckoutStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tslb_WorkloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.messageToWebService = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -404,6 +409,7 @@ namespace GUI
             this.tp_diagnoza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Diagnoza)).BeginInit();
             this.tp_Sla.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SlaRaport)).BeginInit();
             this.tp_Multi.SuspendLayout();
@@ -1474,6 +1480,7 @@ namespace GUI
             // 
             // tp_Sla
             // 
+            this.tp_Sla.Controls.Add(this.panel5);
             this.tp_Sla.Controls.Add(this.panel4);
             this.tp_Sla.Controls.Add(this.cb_SLAWstrzymane);
             this.tp_Sla.Controls.Add(this.bt_SLA_synchronizacja);
@@ -1484,6 +1491,43 @@ namespace GUI
             resources.ApplyResources(this.tp_Sla, "tp_Sla");
             this.tp_Sla.Name = "tp_Sla";
             this.tp_Sla.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cb_dgv_Wypalony);
+            this.panel5.Controls.Add(this.cb_dgv_Pauza);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.cb_dgv_IssueId);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // cb_dgv_Wypalony
+            // 
+            resources.ApplyResources(this.cb_dgv_Wypalony, "cb_dgv_Wypalony");
+            this.cb_dgv_Wypalony.Name = "cb_dgv_Wypalony";
+            this.cb_dgv_Wypalony.UseVisualStyleBackColor = true;
+            this.cb_dgv_Wypalony.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
+            // 
+            // cb_dgv_Pauza
+            // 
+            resources.ApplyResources(this.cb_dgv_Pauza, "cb_dgv_Pauza");
+            this.cb_dgv_Pauza.Name = "cb_dgv_Pauza";
+            this.cb_dgv_Pauza.UseVisualStyleBackColor = true;
+            this.cb_dgv_Pauza.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // cb_dgv_IssueId
+            // 
+            resources.ApplyResources(this.cb_dgv_IssueId, "cb_dgv_IssueId");
+            this.cb_dgv_IssueId.Checked = true;
+            this.cb_dgv_IssueId.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_dgv_IssueId.Name = "cb_dgv_IssueId";
+            this.cb_dgv_IssueId.UseVisualStyleBackColor = true;
+            this.cb_dgv_IssueId.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
             // 
             // panel4
             // 
@@ -1578,6 +1622,7 @@ namespace GUI
             this.dgv_SlaRaport.Name = "dgv_SlaRaport";
             this.dgv_SlaRaport.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaportCellContentClick);
             this.dgv_SlaRaport.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaport_CellEnter);
+            this.dgv_SlaRaport.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_SlaRaport_CellFormatting);
             this.dgv_SlaRaport.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaport_CellLeave);
             this.dgv_SlaRaport.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_SlaRaport_CellMouseClick);
             // 
@@ -2191,11 +2236,11 @@ namespace GUI
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel8,
             this.toolStripProgressBar3,
+            this.tslb_WorkloadStatus,
             this.toolStripStatusLabel7,
             this.toolStripStatusLabel6,
             this.toolStripProgressBar2,
-            this.issuesCheckoutStatus,
-            this.tslb_WorkloadStatus});
+            this.issuesCheckoutStatus});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
@@ -2267,6 +2312,11 @@ namespace GUI
             this.toolStripProgressBar3.Name = "toolStripProgressBar3";
             resources.ApplyResources(this.toolStripProgressBar3, "toolStripProgressBar3");
             // 
+            // tslb_WorkloadStatus
+            // 
+            resources.ApplyResources(this.tslb_WorkloadStatus, "tslb_WorkloadStatus");
+            this.tslb_WorkloadStatus.Name = "tslb_WorkloadStatus";
+            // 
             // toolStripStatusLabel7
             // 
             this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
@@ -2290,11 +2340,6 @@ namespace GUI
             // 
             this.issuesCheckoutStatus.Name = "issuesCheckoutStatus";
             resources.ApplyResources(this.issuesCheckoutStatus, "issuesCheckoutStatus");
-            // 
-            // tslb_WorkloadStatus
-            // 
-            resources.ApplyResources(this.tslb_WorkloadStatus, "tslb_WorkloadStatus");
-            this.tslb_WorkloadStatus.Name = "tslb_WorkloadStatus";
             // 
             // timer2
             // 
@@ -2421,6 +2466,8 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Diagnoza)).EndInit();
             this.tp_Sla.ResumeLayout(false);
             this.tp_Sla.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SlaRaport)).EndInit();
@@ -2582,7 +2629,6 @@ namespace GUI
         private GroupBox gBox_WorkloadCurrent;
         private Label lb_WorkloadLoggedTime;
         private Label lb_workloadTitle;
-        private ToolStripStatusLabel toolStripStatusLabel7;
         private ToolStripStatusLabel tslb_WorkloadStatus;
         private System.Windows.Forms.Timer tm_AutoAssigne;
         private StatusStripButton ssb_WorkloadButton;
@@ -2717,6 +2763,12 @@ namespace GUI
         private ComboBox cbFilter2name;
         private TextBox tb_InterwalAutomatu;
         private Label label13;
+        private Panel panel5;
+        private CheckBox cb_dgv_Wypalony;
+        private CheckBox cb_dgv_Pauza;
+        private CheckBox cb_dgv_IssueId;
+        private Label label14;
+        private ToolStripStatusLabel toolStripStatusLabel7;
     }
 }
 

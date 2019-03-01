@@ -1,0 +1,6 @@
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\bin\Release\CPJiraParserNotes.dll
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\bin\Release\CPJiraParserNotes.pdb
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\obj\Release\CPJiraParserNotes.csprojAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\obj\Release\CPJiraParserNotes.csproj.CoreCompileInputs.cache
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\obj\Release\CPJiraParserNotes.dll
+C:\CP\ParserGit\JiraParser\CPHeliosParserNotes\obj\Release\CPJiraParserNotes.pdb

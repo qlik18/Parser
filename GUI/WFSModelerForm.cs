@@ -1373,8 +1373,9 @@ namespace GUI
             }
             if (ileCyfr > 0)
             {
-                var v = new MainForm();
-                v.SearchJiraIssueAsync(nrProblemu, sJiraIssue);
+                //Jira j = new Jira("http://jira", GUI. . .Login, jiraUser.Password);
+                
+                new MainForm().SearchJiraIssueAsync(nrProblemu,out sJiraIssue);
 
                 if (sJiraIssue != null && sJiraIssue.Count() > 0)
                 {
@@ -1642,7 +1643,7 @@ namespace GUI
                     item.param.DBValue = tmp.Value;
                     item.param.Value = tmp.Text;
 
-                    System.Diagnostics.Debug.WriteLine("");
+                    System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1}", tmp.Value, tmp.Text));
                 }
                 else if (item.type == typeof(RichTextBox))
                 {

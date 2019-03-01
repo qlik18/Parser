@@ -1,0 +1,36 @@
+piątek, 22 lutego 2019 20:47:21
+
+--- Main exception: Message ---
+Wystąpił przynajmniej jeden błąd.
+
+--- Inner exception 1: Message ---
+Wystąpił przynajmniej jeden błąd.
+
+--- Inner exception 1: StackTrace ---
+   w System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   w Atlassian.Jira.Remote.JiraRestClient.<ExecuteRequestAsync>b__0[T](Task`1 responseTask) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 132
+   w System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   w System.Threading.Tasks.Task.Execute()
+
+--- Inner exception 1: Source ---
+mscorlib
+
+--- Inner exception 2: Message ---
+Nie można połączyć się z serwerem zdalnym
+
+--- Inner exception 2: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.GetValidJsonFromResponse(IRestResponse response) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 689
+   w System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   w System.Threading.Tasks.Task.Execute()
+
+--- Inner exception 2: Source ---
+Atlassian.Jira
+
+--- Main exception: StackTrace ---
+   w System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   w Logic.Implementation.JiraIssues.ChangeDataModel(IEnumerable`1 issues, List`1& newModel, List`1& jiraUsers) w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 161
+   w GUI.MainForm.<GetAllIssuesFromJira>b__155_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4878
+
+--- Main exception: Source ---
+mscorlib
+
