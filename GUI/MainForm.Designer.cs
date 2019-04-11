@@ -347,6 +347,8 @@ namespace GUI
             this.dtp_dayReportDateFrom = new System.Windows.Forms.DateTimePicker();
             this.rtb_dayReportMessage = new System.Windows.Forms.RichTextBox();
             this.bt_dayReportGenerate = new System.Windows.Forms.Button();
+            this.tp_PI = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.tab_Awarie = new System.Windows.Forms.TabControl();
             this.cms_IssuePopup = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -381,6 +383,7 @@ namespace GUI
             this.tm_autoFrsh = new System.Windows.Forms.Timer(this.components);
             this.pn_FolderSearch = new System.Windows.Forms.FolderBrowserDialog();
             this.fb_logSearch = new System.Windows.Forms.FolderBrowserDialog();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -429,6 +432,7 @@ namespace GUI
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_DayReport.SuspendLayout();
+            this.tp_PI.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -731,6 +735,7 @@ namespace GUI
             this.tc.Controls.Add(this.tp_awaria_lista);
             this.tc.Controls.Add(this.tabPage2);
             this.tc.Controls.Add(this.tp_DayReport);
+            this.tc.Controls.Add(this.tp_PI);
             this.tc.Name = "tc";
             this.tc.SelectedIndex = 0;
             // 
@@ -2211,6 +2216,21 @@ namespace GUI
             this.bt_dayReportGenerate.UseVisualStyleBackColor = true;
             this.bt_dayReportGenerate.Click += new System.EventHandler(this.bt_dayReportGenerate_Click);
             // 
+            // tp_PI
+            // 
+            this.tp_PI.Controls.Add(this.textBox5);
+            this.tp_PI.Controls.Add(this.button4);
+            resources.ApplyResources(this.tp_PI, "tp_PI");
+            this.tp_PI.Name = "tp_PI";
+            this.tp_PI.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // tab_Awarie
             // 
             resources.ApplyResources(this.tab_Awarie, "tab_Awarie");
@@ -2413,6 +2433,11 @@ namespace GUI
             this.tm_autoFrsh.Interval = 10;
             this.tm_autoFrsh.Tick += new System.EventHandler(this.tm_autoFrsh_Tick);
             // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -2497,6 +2522,8 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tp_DayReport.ResumeLayout(false);
             this.tp_DayReport.PerformLayout();
+            this.tp_PI.ResumeLayout(false);
+            this.tp_PI.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
@@ -2769,6 +2796,9 @@ namespace GUI
         private CheckBox cb_dgv_IssueId;
         private Label label14;
         private ToolStripStatusLabel toolStripStatusLabel7;
+        private TabPage tp_PI;
+        private Button button4;
+        private TextBox textBox5;
     }
 }
 

@@ -29,6 +29,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Data.SqlClient;
 using LogicLayer;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 using Net.Sgoliver.NRtfTree.Core;
 using Net.Sgoliver.NRtfTree.Util;
@@ -2624,17 +2625,72 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void SendEmail(RichTextBox messageOut)
         {
-            try
-            {
+            //try
+            //{
 
                 
-                Logic.Implementation.ExchangeClient exClient = new Logic.Implementation.ExchangeClient(gujaczWFS.getUser());
-                exClient.SendEMail("Raport Test", "prekawek@billennium.com", messageOut);
-            }
-            catch (Exception ex)
+            //    Logic.Implementation.ExchangeClient exClient = new Logic.Implementation.ExchangeClient(gujaczWFS.getUser());
+            //    exClient.SendEMail("Raport Test", "prekawek@billennium.com", messageOut);
+            //}
+            //catch (Exception ex)
+            //{
+            //    NoticeForm.ShowNotice(ex.Message);
+            //}
+
+
+            try
             {
-                NoticeForm.ShowNotice(ex.Message);
+            Outlook.Application oApp = new Outlook.Application();
+            Outlook._MailItem oMailItem = (Outlook._MailItem)oApp.CreateItem(Outlook.OlItemType.olMailItem);
+
+                List<string> lstAllRecipients = new List<string>();
+    
+                //Below is hardcoded - can be replaced with db data
+                lstAllRecipients.Add("spolanowski@cyfrowypolsat.pl");
+                lstAllRecipients.Add("mprokopowicz@firma.cyfrowypolsat.pl");
+                lstAllRecipients.Add("rczyz@plus.pl");
+                lstAllRecipients.Add("g.kowalczewski@plus.pl");
+                lstAllRecipients.Add("michal.jakobiak@plus.pl");
+                lstAllRecipients.Add("tomasz.biegala@plus.pl");
+                lstAllRecipients.Add("production@plus.pl");
+                lstAllRecipients.Add("INCIDENTMANAGER@plus.pl");
+
+                //Outlook.Application outlookApp = new Outlook.Application();
+                //Outlook._MailItem oMailItem = (Outlook._MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
+                Outlook.Inspector oInspector = oMailItem.GetInspector;
+                // Thread.Sleep(10000);
+
+                // Recipient
+                Outlook.Recipients oRecips = (Outlook.Recipients)oMailItem.Recipients;
+                foreach (String recipient in lstAllRecipients)
+                {
+                    Outlook.Recipient oRecip = (Outlook.Recipient)oRecips.Add(recipient);
+                    oRecip.Resolve();
+                }
+
+                //Add CC
+                Outlook.Recipient oCCRecip = oRecips.Add("cp-monitoring@billennium.com");
+                oCCRecip.Type = (int)Outlook.OlMailRecipientType.olCC;
+                oCCRecip.Resolve();
+
+                //Add Subject
+                oMailItem.Subject = "Raport dot. dostępności środowiska";
+
+                // body, bcc etc...
+
+                //Display the mailbox
+            
+            oMailItem.BodyFormat = Outlook.OlBodyFormat.olFormatRichText;
+            byte[] myNewRtfBytes = Encoding.UTF8.GetBytes(messageOut.Rtf);   //This line cost me way too many hours of lost sleep!!!
+            oMailItem.RTFBody = myNewRtfBytes;
+            oMailItem.Display(false);
+
             }
+            catch (Exception objEx)
+            {
+                Debug.Write(objEx.ToString());
+            }
+
         }
 
         /// <summary>
@@ -2925,13 +2981,22 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void btn_HistoriaSzukaj_Click2(object sender, EventArgs e)
         {
+            Issue i = jira.GetIssue(textBox2.Text);
+
             List<List<string>> results = gujaczWFS.ExecuteStoredProcedure("BillingDTH_IssueHistory2", new string[] { textBox2.Text }, DatabaseName.SupportCP);
 
             if (results.Count == 0)
             {
                 NoticeForm.ShowNotice("Brak akcji na zgłoszeniu.", "Info");
             }
-
+            foreach (var item in i.GetChangeLogs())
+            {
+                foreach (var item2 in item.Items)
+                {
+                    Debug.Print(item2.FieldName.ToString());
+                }
+            }
+            
 
             Historia_dgv.Visible = true;
 
@@ -5358,17 +5423,24 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         {
                             if (issues[tr.Name].Count == 0)
                                 return;
+                            Dictionary<string, Dictionary<int, string>> outMap;
                             foreach (KeyValuePair<BillingIssueDto, IssueState> item in issues[tr.Name])
                             {
+
                                 //Dictionary<int, string> moves = gujaczWFS.GetActionForIssueWorkaround(item.Key.issueWFS.WFSIssueId, UserId);
-                                if (!issueMove[tr.Name].ContainsKey(item.Key.Idnumber))
+                                //if (!issueMove[tr.Name].ContainsKey(item.Key.Idnumber))
+                                if (issueMove.TryGetValue(tr.Name,out outMap))
                                 {
-                                    Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
-                                    issueMove[tr.Name].Add(item.Key.Idnumber, moves);
-                                    //break;
+                                    if (!outMap.ContainsKey(item.Key.Idnumber))
+                                    {
+                                        Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
+                                        issueMove[tr.Name].Add(item.Key.Idnumber, moves);
+                                    }
+                                    else
+                                    {
+                                        Debug.Print(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()));
+                                    }//break;
                                 }
-                                else
-                                    Debug.Print(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()));
                                     //ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
 
                             }
@@ -6143,8 +6215,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         //[STAThreadAttribute]
         private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue, string treeViewName = "treeView4")
         {
-            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
-            List<Entities.BillingIssueDtoHelios> IssueHelios;
+            //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
 
             //treeView4.Nodes.Clear();
             //issues[treeViewName].Clear();
@@ -6166,11 +6237,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 wfsList[treeViewName] = new List<BillingIssueDtoHelios>();
             }
 
+            //////zasilenie do forech
+            //wfsList[treeViewName].AddRange(gujaczWFS.compareBillingWithWFS(issue));
 
-            wfsList[treeViewName] = gujaczWFS.compareBillingWithWFS(issue);
 
-
-            foreach (BillingIssueDtoHelios item in wfsList[treeViewName])
+            //foreach (BillingIssueDtoHelios item in wfsList[treeViewName])
+            foreach (BillingIssueDtoHelios item in gujaczWFS.compareBillingWithWFS(issue))
             {
                 BillingIssueDtoHelios updatedIssue = gujaczWFS.UpdateIssue(item);
                 IssueState state = (updatedIssue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
@@ -6178,7 +6250,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 
 
                 BillingIssueDtoHelios tmp2 = gujaczWFS.UpdateJiraInfo(updatedIssue);
-                issues[treeViewName].Add(tmp2, state);
+                //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.Idnumber == tmp2.Idnumber).Key.Idnumber.ToString()))
+                IssueState issS ;
+                if (!issues[treeViewName].TryGetValue(tmp2, out issS))
+                    issues[treeViewName].Add(tmp2, state);
+                else
+                    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.Idnumber));
             }
 
             for (int i = 0; i < wfsList[treeViewName].Count; i++)
@@ -7609,11 +7686,13 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
         private void bt_dayReportGenerate_Click(object sender, EventArgs e)
         {
             generateServiceReport(rtb_dayReportMessage);
+            bt_dayReportSend.Enabled = true;
         }
 
         private void bt_dayReportSend_Click(object sender, EventArgs e)
         {
             SendEmail(rtb_dayReportMessage);
+
         }
 
         private void bt_LogSearchPatch_Click(object sender, EventArgs e)
@@ -7808,6 +7887,68 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                     break;
             }
 
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+           var issue =  jira.GetIssuesFromFilter("PI");
+            textBox5.Clear();
+            foreach (var item in issue)
+            {
+                textBox5.AppendText(item.Key.Value);
+                Debug.Write(item.Key);
+                //item.
+                foreach (var logs in item.GetChangeLogs())
+                {
+                    if (logs.CreatedDate < DateTime.Parse("2019-03-01"))
+                        break;
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.Author.DisplayName);
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.CreatedDate.ToString());
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.Id);
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText("----");
+
+                    Debug.Write(logs.Author);
+                    Debug.Write(logs.CreatedDate);
+                    Debug.Write(logs.Id);
+                    Debug.Write("----");
+                    foreach (var componet in logs.Items)
+                    {
+                        if (componet.FieldName == "status"
+                            || componet.FieldName == "assigne"
+                            || componet.FieldName == "Grupa wsparcia"
+                            //|| componet.FieldName == "assigne"
+                            )
+                        {
+
+                            textBox5.AppendText(componet.FieldName);
+                            textBox5.AppendText("\n");
+                            if (!isNullObjectOrEmptyString(componet.FromValue))
+                                textBox5.AppendText(componet.FromValue.ToString());
+                            else
+                                textBox5.AppendText("FromValue null");
+                            textBox5.AppendText("\n");
+                            if (!isNullObjectOrEmptyString(componet.ToValue))
+                                textBox5.AppendText(componet.ToValue.ToString());
+                            else
+                                textBox5.AppendText("ToValue null");
+                            textBox5.AppendText("\n");
+                            textBox5.AppendText("******");
+
+                            Debug.Write(componet.FieldName);
+                            Debug.Write(componet.FromValue);
+                            Debug.Write(componet.ToValue);
+                            Debug.Write("******");
+                        }
+                    }
+                    Debug.Write("----");
+
+
+                }
+            }
         }
     }
 }

@@ -411,21 +411,32 @@ namespace GUI
         {
             try
             {
-
                 treeView4.Nodes.Clear();
                 issues["treeView4"].Clear();
                 selectIssueList.Clear();
 
+                if(wfsList.ContainsKey("treeView4"))
+                {
+                    wfsList["treeView4"].Clear();
+                }
 
 
                 //string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
-                foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
+                    foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
                 {
                     if (isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value))
                     {
                         doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
                     }
                     else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value))
+                    {
+                        doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
+
+                    }
+                    else if (!isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value)
+                            && (item.Cells["dgvAktualnyStan"].Value.ToString() == "Odrzucone" ||
+                                item.Cells["dgvAktualnyStan"].Value.ToString() == "Odrzucony" ||
+                                item.Cells["dgvAktualnyStan"].Value.ToString() == "Zadanie do wycofania"))
                     {
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
@@ -575,31 +586,16 @@ namespace GUI
             return true;
         }
 
-        [STAThread]
-        private void slaAutoAssigneTakenIssue(object sender, DoWorkEventArgs e)
+        void slaAutoStep(DataGridViewRow tmpRow, string issueNumber)
         {
-            string issueNumber = null;
-            DataGridViewRow tmpRow = e.Argument as DataGridViewRow;
-            if (isNullObjectOrEmptyString(tmpRow))
-                return;
-
-            issueNumber = tmpRow.Cells["dgvJiraNr"].Value == null ? string.Empty : tmpRow.Cells["dgvJiraNr"].Value.ToString();
             try
             {
                 if (!isNullObjectOrEmptyString(issueNumber))
                 {
                     List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
                     addIssueToTreeNode(issueNumber, issue);
-
-                    //Issue itmp = jira.RestClient..GetIssue(issueNumber);
-                    //Issue itmp = jira.RestClient.GetIssueAsync(issueNumber, CancellationToken.None).Result;
+                    
                     Issue itmp = zgloszeniaWjira.FirstOrDefault(x => x.Key == issueNumber);
-
-                    //foreach (var item in zgloszeniaWjira)
-                    //{
-                    //    if(item.Key == )
-                    //}
-
 
                     if (isNullObjectOrEmptyString(itmp))
                     {
@@ -607,28 +603,22 @@ namespace GUI
                     }
 
                     if (isNullObjectOrEmptyString(itmp)
-                        || !isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value)
+                        //|| !isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value)
                         || isNullObjectOrEmptyString(tmpRow.Cells["dgvAkcjaBPM"].Value)
                        )
                     {
                         return;
                     }
 
-                    //string _bpmAssigne = tmpRow.Cells["dgvOdpowiedzialny"].Value.ToString();
                     string _bpmLastAction = tmpRow.Cells["dgvAkcjaBPM"].Value.ToString();
 
-
-                    //Issue itmp = IssueJira.FirstOrDefault(x => x.Key == issueNumber);
-
+                    
                     if (
-                        //iJira.Key == issueNumber &&
-                        //_bpmAssigne.Contains(string.Empty) &&
                         checkBillUser(itmp.Assignee, LoginParamType.Login) &&
-                        _bpmLastAction.Contains("Utworzenie zgłoszenia"))
+                        _bpmLastAction.Contains("Utworzenie zgłoszenia") &&
+                         isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value))
                     {
-
-                        //getActionToIssue(issue, issueNumber, "treeView4", getUserBpmJira(itmp.Assignee));
-
+                        
                         BillingIssueDto bid;
 
                         if (!selectIssueList.TryGetValue(issueNumber, out bid))
@@ -639,12 +629,6 @@ namespace GUI
 
 
                         tmpRow.Selected = true;
-                        //dgv_SlaRaport.Rows[i].Selected = true;
-
-                        //MouseEventArgs mea = new MouseEventArgs(MouseButtons.Right, 1, 0, 0, 0);
-                        //DataGridViewCellMouseEventArgs em = new DataGridViewCellMouseEventArgs(1, tmpRow.Index, 0, 0, mea);
-
-                        //cms_IssuePopup.Items.Clear();
 
                         this.Tag = (bool)true;
 
@@ -663,6 +647,43 @@ namespace GUI
 
                         tmpRow.Selected = false;
                         this.Tag = null;
+                    }
+
+                    else if (_bpmLastAction.Equals("Rozpoczęcie diagnozy")
+                            && (itmp.Status.Name == "Odrzucone" ||
+                                itmp.Status.Name == "Odrzucony" ||
+                                itmp.Status.Name == "Zadanie do wycofania"))
+                    {
+                        BillingIssueDto bid;
+
+                        if (!selectIssueList.TryGetValue(issueNumber, out bid))
+                        {
+                            ExceptionManager.LogWarning(string.Format("selectIssueList nie zawiera {0}", issueNumber), Logger.Instance);
+                            return;
+                        }
+
+
+                        tmpRow.Selected = true;
+
+                        this.Tag = (bool)true;
+
+
+                        UserBpmJira ubj = getUserBpmJira(itmp.Assignee);
+                        if (true)
+                        {
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(617);
+
+                                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia", bid, gujaczWFS, 617, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, new KeyValuePair<int, string>(401,"Zgłoszenie odrzucone"));
+
+                            });
+                        }
+
+                        tmpRow.Selected = false;
+                        this.Tag = null;
+
+                        
                     }
                 }
             }
@@ -674,6 +695,21 @@ namespace GUI
         }
 
         [STAThread]
+        private void slaAutoAssigneTakenIssue(object sender, DoWorkEventArgs e)
+        {
+            string issueNumber = null;
+            DataGridViewRow tmpRow = e.Argument as DataGridViewRow;
+            if (isNullObjectOrEmptyString(tmpRow))
+                return;
+
+            issueNumber = tmpRow.Cells["dgvJiraNr"].Value == null ? string.Empty : tmpRow.Cells["dgvJiraNr"].Value.ToString();
+
+            slaAutoStep(tmpRow, issueNumber);
+
+
+        }
+
+        [STAThread]
         private void slaAutoAssigneTakenIssue(object sender, RunWorkerCompletedEventArgs e)
         { 
             string issueNumber = null;
@@ -682,93 +718,10 @@ namespace GUI
                 return;
 
             issueNumber = tmpRow.Cells["dgvJiraNr"].Value == null ? string.Empty : tmpRow.Cells["dgvJiraNr"].Value.ToString();
-            try
-            {
-                if (!isNullObjectOrEmptyString(issueNumber))
-                {
-                    List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                    addIssueToTreeNode(issueNumber, issue);
 
-                    //Issue itmp = jira.RestClient..GetIssue(issueNumber);
-                    //Issue itmp = jira.RestClient.GetIssueAsync(issueNumber, CancellationToken.None).Result;
-                    Issue itmp = zgloszeniaWjira.FirstOrDefault(x => x.Key == issueNumber);
-
-                    //foreach (var item in zgloszeniaWjira)
-                    //{
-                    //    if(item.Key == )
-                    //}
+            slaAutoStep(tmpRow, issueNumber);
 
 
-                    if (isNullObjectOrEmptyString(itmp))
-                    {
-                        itmp = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
-                    }
-
-                    if (isNullObjectOrEmptyString(itmp)
-                        || !isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value)
-                        || isNullObjectOrEmptyString(tmpRow.Cells["dgvAkcjaBPM"].Value)
-                       )
-                    {
-                        return;
-                    }
-
-                    //string _bpmAssigne = tmpRow.Cells["dgvOdpowiedzialny"].Value.ToString();
-                    string _bpmLastAction = tmpRow.Cells["dgvAkcjaBPM"].Value.ToString();
-
-
-                    //Issue itmp = IssueJira.FirstOrDefault(x => x.Key == issueNumber);
-
-                    if (
-                        //iJira.Key == issueNumber &&
-                        //_bpmAssigne.Contains(string.Empty) &&
-                        checkBillUser(itmp.Assignee, LoginParamType.Login) &&
-                        _bpmLastAction.Contains("Utworzenie zgłoszenia"))
-                    {
-
-                        //getActionToIssue(issue, issueNumber, "treeView4", getUserBpmJira(itmp.Assignee));
-
-                        BillingIssueDto bid;
-
-                        if (!selectIssueList.TryGetValue(issueNumber, out bid))
-                        {
-                            ExceptionManager.LogWarning(string.Format("selectIssueList nie zawiera {0}", issueNumber), Logger.Instance);
-                            return;
-                        }
-
-
-                        tmpRow.Selected = true;
-                        //dgv_SlaRaport.Rows[i].Selected = true;
-
-                        //MouseEventArgs mea = new MouseEventArgs(MouseButtons.Right, 1, 0, 0, 0);
-                        //DataGridViewCellMouseEventArgs em = new DataGridViewCellMouseEventArgs(1, tmpRow.Index, 0, 0, mea);
-
-                        //cms_IssuePopup.Items.Clear();
-
-                        this.Tag = (bool)true;
-
-  
-                        UserBpmJira ubj = getUserBpmJira(itmp.Assignee);
-                        if (true)
-                        {
-                            this.Invoke((MethodInvoker)delegate
-                            {
-                                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(614);
-
-                                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Rozpoczęcie diagnozy", bid, gujaczWFS, 614, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName));
-
-                            });
-                        }
-
-                        tmpRow.Selected = false;
-                        this.Tag = null;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, false);
-
-            }
         }
 
         private void dgv_SlaRaportCellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -837,7 +790,7 @@ namespace GUI
         //[STAThread]
         private void dgv_SlaRaport_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right && e.RowIndex>-1)
             {
                 issues["treeView4"].Clear();
                 for (int i = 0; i < dgv_SlaRaport.RowCount - 1; i++)

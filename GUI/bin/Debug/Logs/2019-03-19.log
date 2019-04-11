@@ -1,0 +1,374 @@
+wtorek, 19 marca 2019 07:51:19
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:19] 
+
+wtorek, 19 marca 2019 07:51:19
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:19] 
+
+wtorek, 19 marca 2019 07:51:33
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:33] 
+
+wtorek, 19 marca 2019 07:51:33
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:33
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:51:33
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:33] 
+
+wtorek, 19 marca 2019 07:51:36
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:36] 
+
+wtorek, 19 marca 2019 07:51:36
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:36
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:51:36
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:36] 
+
+wtorek, 19 marca 2019 07:51:40
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:40] 
+
+wtorek, 19 marca 2019 07:51:40
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:40
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:51:40
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:40] 
+
+wtorek, 19 marca 2019 07:51:43
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:43] 
+
+wtorek, 19 marca 2019 07:51:43
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass159_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5341
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 19 marca 2019 07:51:43
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:43
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:51:43
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-03-19 07:51:43] 
+
+wtorek, 19 marca 2019 07:51:46
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:46] 
+
+wtorek, 19 marca 2019 07:51:46
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass159_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5341
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 19 marca 2019 07:51:46
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:46
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:51:48
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-03-19 07:51:48] 
+
+wtorek, 19 marca 2019 07:51:48
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass159_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5341
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 19 marca 2019 07:51:48
+
+Modyfikacja treeItemwtorek, 19 marca 2019 07:51:48
+
+Status Auto: False 
+
+wtorek, 19 marca 2019 07:52:16
+
+addCommentJira string jiraKey ZCC-18364wtorek, 19 marca 2019 07:52:17
+
+addCommentJira string jiraKey ZCC-18365wtorek, 19 marca 2019 07:52:19
+
+addCommentJira string jiraKey KKK-4112wtorek, 19 marca 2019 07:52:19
+
+addCommentJira string jiraKey WIND-8206wtorek, 19 marca 2019 07:52:22
+
+addCommentJira string jiraKey WIND-8205wtorek, 19 marca 2019 07:52:24
+
+addCommentJira string jiraKey KKK-4113wtorek, 19 marca 2019 08:06:42
+
+--- Main exception: Message ---
+Zmodyfikowano kolekcję. Nie można wykonać operacji wyliczania.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   w System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6267
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 595
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 19 marca 2019 08:30:29
+
+Zgłoszenie ZCC-18366 dodano automatycznie o godzinie 2019-03-19 08:30:29!
+wtorek, 19 marca 2019 08:30:29
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 08:30:35
+
+Zgłoszenie ZCC-18367 dodano automatycznie o godzinie 2019-03-19 08:30:35!
+wtorek, 19 marca 2019 08:30:35
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 08:30:36
+
+addCommentJira string jiraKey ZCC-18366wtorek, 19 marca 2019 08:30:36
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18366wtorek, 19 marca 2019 08:30:38
+
+addCommentJira string jiraKey ZCC-18367wtorek, 19 marca 2019 08:30:38
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18367wtorek, 19 marca 2019 09:47:27
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__105_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2725
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 19 marca 2019 09:48:04
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4466
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 19 marca 2019 09:52:28
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__105_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2725
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 19 marca 2019 09:54:05
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4466
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 19 marca 2019 12:15:41
+
+Zgłoszenie ZCC-18371 dodano automatycznie o godzinie 2019-03-19 12:15:41!
+wtorek, 19 marca 2019 12:15:41
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:15:47
+
+Zgłoszenie ZCC-18369 dodano automatycznie o godzinie 2019-03-19 12:15:47!
+wtorek, 19 marca 2019 12:15:48
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:15:54
+
+addCommentJira string jiraKey ZCC-18371wtorek, 19 marca 2019 12:15:54
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18371wtorek, 19 marca 2019 12:15:56
+
+addCommentJira string jiraKey ZCC-18369wtorek, 19 marca 2019 12:15:56
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18369wtorek, 19 marca 2019 12:16:01
+
+Zgłoszenie ZCC-18370 dodano automatycznie o godzinie 2019-03-19 12:16:01!
+wtorek, 19 marca 2019 12:16:01
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:16:04
+
+addCommentJira string jiraKey ZCC-18370wtorek, 19 marca 2019 12:16:04
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18370wtorek, 19 marca 2019 12:45:29
+
+Zgłoszenie ZCC-18372 dodano automatycznie o godzinie 2019-03-19 12:45:29!
+wtorek, 19 marca 2019 12:45:29
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:45:39
+
+addCommentJira string jiraKey ZCC-18372wtorek, 19 marca 2019 12:45:39
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18372wtorek, 19 marca 2019 12:51:27
+
+Zgłoszenie CRM-75540 dodano automatycznie o godzinie 2019-03-19 12:51:27!
+wtorek, 19 marca 2019 12:51:27
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:51:36
+
+addCommentJira string jiraKey CRM-75540wtorek, 19 marca 2019 12:51:36
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75540wtorek, 19 marca 2019 12:57:24
+
+Zgłoszenie INFOLINIA-6582 dodano automatycznie o godzinie 2019-03-19 12:57:24!
+wtorek, 19 marca 2019 12:57:24
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 12:57:34
+
+addCommentJira string jiraKey INFOLINIA-6582wtorek, 19 marca 2019 12:57:34
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6582wtorek, 19 marca 2019 13:03:27
+
+Zgłoszenie INFOLINIA-6583 dodano automatycznie o godzinie 2019-03-19 13:03:27!
+wtorek, 19 marca 2019 13:03:27
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 13:03:38
+
+addCommentJira string jiraKey INFOLINIA-6583wtorek, 19 marca 2019 13:03:38
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6583wtorek, 19 marca 2019 13:09:28
+
+Zgłoszenie INFOLINIA-6584 dodano automatycznie o godzinie 2019-03-19 13:09:28!
+wtorek, 19 marca 2019 13:09:29
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 13:09:39
+
+addCommentJira string jiraKey INFOLINIA-6584wtorek, 19 marca 2019 13:09:39
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6584wtorek, 19 marca 2019 13:39:28
+
+Zgłoszenie CRM-75541 dodano automatycznie o godzinie 2019-03-19 13:39:28!
+wtorek, 19 marca 2019 13:39:28
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 13:39:35
+
+Zgłoszenie INFOLINIA-6585 dodano automatycznie o godzinie 2019-03-19 13:39:35!
+wtorek, 19 marca 2019 13:39:36
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 13:39:42
+
+addCommentJira string jiraKey CRM-75541wtorek, 19 marca 2019 13:39:42
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75541wtorek, 19 marca 2019 13:39:44
+
+addCommentJira string jiraKey INFOLINIA-6585wtorek, 19 marca 2019 13:39:44
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6585wtorek, 19 marca 2019 13:57:33
+
+Zgłoszenie ZCC-18373 dodano automatycznie o godzinie 2019-03-19 13:57:33!
+wtorek, 19 marca 2019 13:57:33
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 13:57:47
+
+addCommentJira string jiraKey ZCC-18373wtorek, 19 marca 2019 13:57:47
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18373wtorek, 19 marca 2019 14:09:29
+
+Zgłoszenie INFOLINIA-6587 dodano automatycznie o godzinie 2019-03-19 14:09:29!
+wtorek, 19 marca 2019 14:09:29
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 14:09:48
+
+addCommentJira string jiraKey INFOLINIA-6587wtorek, 19 marca 2019 14:09:48
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6587wtorek, 19 marca 2019 14:15:31
+
+Zgłoszenie CRM-75542 dodano automatycznie o godzinie 2019-03-19 14:15:31!
+wtorek, 19 marca 2019 14:15:31
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 14:15:45
+
+addCommentJira string jiraKey CRM-75542wtorek, 19 marca 2019 14:15:45
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75542wtorek, 19 marca 2019 14:45:33
+
+Zgłoszenie INFOLINIA-6588 dodano automatycznie o godzinie 2019-03-19 14:45:33!
+wtorek, 19 marca 2019 14:45:33
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 14:45:48
+
+addCommentJira string jiraKey INFOLINIA-6588wtorek, 19 marca 2019 14:45:48
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6588wtorek, 19 marca 2019 15:09:27
+
+Zgłoszenie KKK-4115 dodano automatycznie o godzinie 2019-03-19 15:09:27!
+wtorek, 19 marca 2019 15:09:27
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 marca 2019 15:09:42
+
+addCommentJira string jiraKey KKK-4115wtorek, 19 marca 2019 15:09:42
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4115
