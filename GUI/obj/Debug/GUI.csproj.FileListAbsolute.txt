@@ -962,7 +962,6 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\VSLangProj80.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.MSXML.dll
@@ -1048,7 +1047,6 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\pl\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\pl\Microsoft.VisualStudio.Data.Core.resources.dll
-C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.ResolveComReference.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.AutoCompleteForm.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.EditNote.resources
@@ -1071,3 +1069,8 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe.manifest
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.application
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.pdb
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.compiled
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CopyComplete
