@@ -105,24 +105,13 @@ C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Atlassian.Jira.pdb
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Atlassian.Jira.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Newtonsoft.Json.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\RestSharp.xml
-<<<<<<< HEAD
-=======
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\SautinSoft.HtmlToRtf.xml
->>>>>>> poprawaassigne
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.Unity.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-<<<<<<< HEAD
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.dll
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.pdb
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csprojAssemblyReference.cache
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CopyComplete
-=======
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csprojAssemblyReference.cache
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CopyComplete
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.dll
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.pdb
->>>>>>> poprawaassigne
