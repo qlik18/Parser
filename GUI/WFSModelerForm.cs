@@ -62,7 +62,7 @@ namespace GUI
 
 
 
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
+        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -221,6 +221,7 @@ namespace GUI
             }
         }
 
+
         public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
@@ -238,7 +239,8 @@ namespace GUI
             if (quickStep)
             {
                 _quickStep = quickStep;
-                _selectOption = (KeyValuePair<int, string>)selectOption;
+                if(eventMoveId != 610)
+                    _selectOption = (KeyValuePair<int, string>)selectOption;
                 this.Visible = false;
             }
 
@@ -302,21 +304,18 @@ namespace GUI
 
                 //}
                 if (!_quickStep)
-                    GenerateForm(false);
-                else
                 {
                     GenerateForm(false);
+                }
+                else
+                {
+                    //GenerateForm(false);
+                    GenerateForm(null, 0);
                     this.Visible = false;
-
-
-
-                    //Logging.Logger.Instance.LogWarning(string.Format("Dodanie parametrów dla issueId: {0}", issue.issueWFS.WFSIssueId));
 
                     foreach (var item in sources)
                     {
-
-
-
+                        
                         if (item.param.EventParamId == 2852)
                         {
                             item.param.DBValue = _selectOption.Key;
@@ -363,6 +362,31 @@ namespace GUI
                             //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
                             break;
                         }
+                        else if (item.param.EventParamId == (int)EventParamNames.Osoba_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                //((SimpleData)item.source).ID = _selectOption.Key;
+                                ((TextBox)item.source).Text = (selectOption as string[])[0];
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == (int)EventParamNames.Mail_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                ((TextBox)item.source).Text = (selectOption as string[])[1];
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
                     }
 
                     btn_Save_Click(this, null);
@@ -376,12 +400,12 @@ namespace GUI
             catch (Exception ex)
             {
                 Logging.Logger.Instance.LogException(ex);
-                MessageBox.Show(ex.Message, "Błąd wczytania danych z BPM");
+                //MessageBox.Show(ex.Message, "Błąd wczytania danych z BPM");
             }
         }
 
         [Obsolete("Aktualnie multi nie jest w użyciu")]
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
+        public WFSModelerForm(List<EventParamModeler> eventParamForFormByEventMove, List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -406,6 +430,7 @@ namespace GUI
             GenerateForm();
         }
 
+        
         private void GenerateForm(bool visible = true)
         {
             GenerateForm(null, 0);
@@ -420,8 +445,10 @@ namespace GUI
         /// </summary>
         /// <param name="group"></param>
         /// <param name="ParamGroupId"></param>
+        [STAThreadAttribute]
         private void GenerateForm(GroupBox group, int ParamGroupId)
         {
+           
             //if(group== null) group= new GroupBox();
             foreach (Entities.EventParamModeler item in list.Where(x => x.ParamGroupId == ParamGroupId))
             {
@@ -458,6 +485,9 @@ namespace GUI
                     GenerateForm(group, item.EventParamId);
                 }
             }
+                
+            
+
         }
 
         private void GetDataFromProcedure(Entities.EventParamModeler item, GroupBox group)
@@ -533,7 +563,7 @@ namespace GUI
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             //TODO: dodać obsługę tego comboBoxa         
         }
-
+        //[STAThreadAttribute]
         private void AddComboBox(Entities.EventParamModeler ep, GroupBox group)
         {
             this.SuspendLayout();
@@ -546,9 +576,22 @@ namespace GUI
             // comboBox1.TabStop = false;
             comboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            ///Obsługa deweloperów jako lisa piśmienna
+            //comboBox1.DropDownStyle = ( ep.BoundEventParamId == 2800 ||
+            //                            ep.BoundEventParamId == 2814 ||
+            //                            ep.BoundEventParamId == 3317 ) 
+            //                            ? ComboBoxStyle.DropDown//List
+            //                            : ComboBoxStyle.DropDownList;
 
+            if (ep.EventParamId == 2800 ||
+                ep.EventParamId == 2814 ||
+                ep.EventParamId == 3317)
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            else
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            
             int MapId = 0;
 
             string issueState = gujaczWFS.ExecuteStoredProcedure("spGetIssueState", new string[] { issue.issueWFS.WFSIssueId.ToString() }, DatabaseName.SupportCP)[0][1];
@@ -1343,8 +1386,9 @@ namespace GUI
             }
             if (ileCyfr > 0)
             {
-                var v = new MainForm();
-                v.SearchJiraIssueAsync(nrProblemu, sJiraIssue);
+                //Jira j = new Jira("http://jira", GUI. . .Login, jiraUser.Password);
+                
+                new MainForm().SearchJiraIssueAsync(nrProblemu,out sJiraIssue);
 
                 if (sJiraIssue != null && sJiraIssue.Count() > 0)
                 {
@@ -1597,7 +1641,7 @@ namespace GUI
                 AddLabel(ep, group);
         }
         #endregion
-
+        //[STAThreadAttribute]
         private void btn_Save_Click(object sender, EventArgs e)
         {
             bool isValidate = true;
@@ -1612,7 +1656,7 @@ namespace GUI
                     item.param.DBValue = tmp.Value;
                     item.param.Value = tmp.Text;
 
-                    System.Diagnostics.Debug.WriteLine("");
+                    System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1}", tmp.Value, tmp.Text));
                 }
                 else if (item.type == typeof(RichTextBox))
                 {
@@ -1749,7 +1793,8 @@ namespace GUI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    Logging.Logger.Instance.LogWarning(ex.Message);
+                    //MessageBox.Show(ex.Message);
                     //new Utility.MyCustomException(ex.Message, ex);
                 }
             else

@@ -141,7 +141,7 @@ namespace Logic.Implementation
                         lastname = userSave.LastName;
                         email = userSave.Email;
 
-                        System.Diagnostics.Debug.WriteLine(string.Format("Pobrałem użytkownika z listy {0} - {1}", firstname + ' ', lastname));
+                        //System.Diagnostics.Debug.WriteLine(string.Format("Pobrałem użytkownika z listy {0} - {1}", firstname + ' ', lastname));
 
                         break;
                     }
@@ -157,7 +157,7 @@ namespace Logic.Implementation
                         if (taskUser != null)
                         {
 
-                            System.Diagnostics.Debug.WriteLine(string.Format("Uzytkownik {0}", taskUser.Result.DisplayName));
+                            //System.Diagnostics.Debug.WriteLine(string.Format("Uzytkownik {0}", taskUser.Result.DisplayName));
                             firstname = taskUser.Result.DisplayName.Split(' ').First();
                             lastname = (taskUser.Result.DisplayName.Contains(' ') ? taskUser.Result.DisplayName.Substring(firstname.Length + 1).Split(' ').First() : " ");
                             email = taskUser.Result.Email.ToString();
@@ -169,7 +169,7 @@ namespace Logic.Implementation
                             user.Reporter = taskUser.Result.DisplayName;
                             user.Login = iss.Reporter;
 
-                            System.Diagnostics.Debug.WriteLine(string.Format("Dodałem użytkownika do listy {0} - {1}", firstname + ' ', lastname));
+                            //System.Diagnostics.Debug.WriteLine(string.Format("Dodałem użytkownika do listy {0} - {1}", firstname + ' ', lastname));
 
                             newjiraUsers.Add(user);
                         }
@@ -189,7 +189,7 @@ namespace Logic.Implementation
                 }
 
 
-                System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1} - {2}", iss.Key, iss.JiraIdentifier, firstname + ' ' + lastname));
+                //System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1} - {2}", iss.Key, iss.JiraIdentifier, firstname + ' ' + lastname));
 
                 List<string> kontrakt = new List<string>();
                 List<string> konto = new List<string>();

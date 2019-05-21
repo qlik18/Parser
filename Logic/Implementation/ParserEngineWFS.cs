@@ -141,6 +141,34 @@ namespace LogicLayer.Implementation
         }
 
         /// <summary>
+        /// Sprawdzenie czy zgłoszenia zostały już wprowadzone do BPM.
+        /// </summary>
+        /// <param name="issues">Lista zgłoszeń</param>
+        /// <returns></returns>
+        //public BillingIssueDtoHelios GetIssueFromBPM(string issuesNumber)
+        //{
+
+
+        //    Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckIssuesPresenceOnBpm(issues);
+        //    //Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckBillingIssuesPresenceOnWFS(issuesNumber.ToArray());
+
+        //    for (int i = 0; i < issues.Count; i++)
+        //    {
+        //        BillingIssueDtoHelios id = issues[i];
+        //        id.issueWFS = new BillingDTHIssueWFS();
+        //        id.isInWFS = list.Any(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier));
+        //        if (id.isInWFS)
+        //        {
+        //            KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
+        //            id.issueWFS.WFSIssueId = para.Key.Key;
+        //            id.issueWFS.WFSState = para.Key.Value;
+        //        }
+        //        else id.issueWFS.WFSIssueId = 0;
+        //    }
+        //    return issues;
+        //}
+
+        /// <summary>
         /// Sprawdzenie czy zgłoszenie zostało już wprowadzone do WFS
         /// </summary>
         /// <param name="issue"></param>

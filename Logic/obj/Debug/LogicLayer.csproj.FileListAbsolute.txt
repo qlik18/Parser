@@ -78,7 +78,6 @@ C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\bin\Debug\Microso
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\obj\Debug\Logic.dll
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logic\obj\Debug\Logic.pdb
-C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Logic.dll.config
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Logic.dll
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Logic.pdb
@@ -108,5 +107,8 @@ C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.Unity.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\CP\ParserGit\JiraParser\Logic\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csprojAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\CP\ParserGit\JiraParser\Logic\obj\Debug\LogicLayer.csproj.CopyComplete
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.dll
 C:\CP\ParserGit\JiraParser\Logic\obj\Debug\Logic.pdb

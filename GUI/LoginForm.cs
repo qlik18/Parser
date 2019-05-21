@@ -33,7 +33,8 @@ namespace GUI
         private Panel panel1;
         private CheckBox checkBox1;
         private Entities.HeliosLoggedInUser helU;
-        
+        private bool firstLogin;
+
 
         private Login()
         {
@@ -54,13 +55,16 @@ namespace GUI
             else
             {
                 InitializeComponent();
+                //if(firstLogin)
+                //    invokeLogin();
             }
         }
-        public Login(IParserEngineWFS wfs, ref Entities.HeliosLoggedInUser helU, ref Entities.JiraLoggedUser jiraU):this()
+        public Login(IParserEngineWFS wfs, ref Entities.HeliosLoggedInUser helU, ref Entities.JiraLoggedUser jiraU, bool firstLogin):this()
         {
             this.helU = helU;
             this.wfs = wfs;
             this.jiraU = jiraU;
+            this.firstLogin = firstLogin;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -83,21 +87,29 @@ namespace GUI
             //progressBar1.Visible = true;
             //progressBar1.Show();
             //label3.Show();
-                WaitingForm.InvokeWithWaitingForm("Logowanie...", (Action)delegate()
-                {
-                    try
-                    {
-                        loginSuccess = wfs.loginToWFSWithUserInfo(login, haslo);
-                    }
-                    catch (Exception ex)
-                    {
-                        ExceptionManager.LogError(ex, Logger.Instance, true);
-                        loginSuccess = false;
-                    }
-                });
-            
+            //if(!firstLogin)
+                invokeLogin();
+
+
             wfs = null;
             this.Close();
+        }
+
+        private void invokeLogin()
+        {
+            WaitingForm.InvokeWithWaitingForm("Logowanie...", (Action)delegate ()
+            {
+                try
+                {
+                    loginSuccess = wfs.loginToWFSWithUserInfo(login, haslo);
+                }
+                catch (Exception ex)
+                {
+                    ExceptionManager.LogError(ex, Logger.Instance, true);
+                    loginSuccess = false;
+                }
+            });
+
         }
 
         private void button2_Click(object sender, EventArgs e)

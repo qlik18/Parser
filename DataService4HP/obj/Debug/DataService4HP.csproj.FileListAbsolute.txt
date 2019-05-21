@@ -35,6 +35,8 @@ C:\CP\ParserGit\JiraParser\DataService4HP\bin\DataService4HP.dll
 C:\CP\ParserGit\JiraParser\DataService4HP\bin\DataService4HP.pdb
 C:\CP\ParserGit\JiraParser\DataService4HP\bin\Entities.dll
 C:\CP\ParserGit\JiraParser\DataService4HP\bin\Entities.pdb
-C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.csprojResolveAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.csprojAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.csproj.CoreCompileInputs.cache
+C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.csproj.CopyComplete
 C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.dll
 C:\CP\ParserGit\JiraParser\DataService4HP\obj\Debug\DataService4HP.pdb

@@ -1,0 +1,153 @@
+wtorek, 14 maja 2019 07:45:19
+
+--- Main exception: Message ---
+Przekroczono limit czasu nieaktywności (00:10:00).
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 14 maja 2019 07:56:18
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5484
+
+--- Main exception: Source ---
+GUI
+
+wtorek, 14 maja 2019 08:02:17
+
+Zgłoszenie CRM-75853 dodano automatycznie o godzinie 2019-05-14 08:02:17!
+wtorek, 14 maja 2019 08:02:17
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:02:26
+
+addCommentJira string jiraKey CRM-75853wtorek, 14 maja 2019 08:02:26
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75853wtorek, 14 maja 2019 08:02:28
+
+Zgłoszenie KKK-4235 dodano automatycznie o godzinie 2019-05-14 08:02:28!
+wtorek, 14 maja 2019 08:02:28
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:02:44
+
+Zgłoszenie ZCC-18740 dodano automatycznie o godzinie 2019-05-14 08:02:44!
+wtorek, 14 maja 2019 08:02:44
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:03:35
+
+addCommentJira string jiraKey KKK-4235wtorek, 14 maja 2019 08:03:35
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4235wtorek, 14 maja 2019 08:03:36
+
+addCommentJira string jiraKey ZCC-18740wtorek, 14 maja 2019 08:03:36
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18740wtorek, 14 maja 2019 08:03:37
+
+Zgłoszenie ZCC-18741 dodano automatycznie o godzinie 2019-05-14 08:03:37!
+wtorek, 14 maja 2019 08:03:37
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:03:40
+
+addCommentJira string jiraKey ZCC-18741wtorek, 14 maja 2019 08:03:40
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18741wtorek, 14 maja 2019 08:03:40
+
+Zgłoszenie ZCC-18742 dodano automatycznie o godzinie 2019-05-14 08:03:40!
+wtorek, 14 maja 2019 08:03:41
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:03:43
+
+addCommentJira string jiraKey ZCC-18742wtorek, 14 maja 2019 08:03:43
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18742wtorek, 14 maja 2019 08:13:05
+
+Zgłoszenie ZCC-18743 dodano automatycznie o godzinie 2019-05-14 08:13:05!
+wtorek, 14 maja 2019 08:13:05
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:14:23
+
+addCommentJira string jiraKey ZCC-18743wtorek, 14 maja 2019 08:14:23
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18743wtorek, 14 maja 2019 08:19:05
+
+Zgłoszenie KKK-4236 dodano automatycznie o godzinie 2019-05-14 08:19:05!
+wtorek, 14 maja 2019 08:19:06
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:19:13
+
+addCommentJira string jiraKey KKK-4236wtorek, 14 maja 2019 08:19:13
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4236wtorek, 14 maja 2019 08:25:05
+
+Zgłoszenie KKK-4237 dodano automatycznie o godzinie 2019-05-14 08:25:05!
+wtorek, 14 maja 2019 08:25:05
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:25:14
+
+addCommentJira string jiraKey KKK-4237wtorek, 14 maja 2019 08:25:14
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4237wtorek, 14 maja 2019 08:49:07
+
+Zgłoszenie CRM-75854 dodano automatycznie o godzinie 2019-05-14 08:49:07!
+wtorek, 14 maja 2019 08:49:07
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 08:49:15
+
+addCommentJira string jiraKey CRM-75854wtorek, 14 maja 2019 08:49:15
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75854wtorek, 14 maja 2019 09:01:09
+
+Zgłoszenie CRM-75855 dodano automatycznie o godzinie 2019-05-14 09:01:09!
+wtorek, 14 maja 2019 09:01:09
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 09:01:18
+
+addCommentJira string jiraKey CRM-75855wtorek, 14 maja 2019 09:01:18
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75855wtorek, 14 maja 2019 10:49:06
+
+Zgłoszenie ZCC-18744 dodano automatycznie o godzinie 2019-05-14 10:49:06!
+wtorek, 14 maja 2019 10:49:06
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 10:49:16
+
+addCommentJira string jiraKey ZCC-18744wtorek, 14 maja 2019 10:49:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18744wtorek, 14 maja 2019 11:13:06
+
+Zgłoszenie CRM-75856 dodano automatycznie o godzinie 2019-05-14 11:13:06!
+wtorek, 14 maja 2019 11:13:06
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 11:13:14
+
+addCommentJira string jiraKey CRM-75856wtorek, 14 maja 2019 11:13:14
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75856wtorek, 14 maja 2019 11:25:11
+
+Zgłoszenie CRM-75857 dodano automatycznie o godzinie 2019-05-14 11:25:11!
+wtorek, 14 maja 2019 11:25:11
+
+Modyfikacja treeItem checkAsAssignewtorek, 14 maja 2019 11:25:20
+
+addCommentJira string jiraKey CRM-75857wtorek, 14 maja 2019 11:25:20
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75857

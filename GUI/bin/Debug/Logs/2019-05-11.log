@@ -1,0 +1,4071 @@
+sobota, 11 maja 2019 08:21:35
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:21:35] 
+
+sobota, 11 maja 2019 08:21:50
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:21:50] 
+
+sobota, 11 maja 2019 08:21:50
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:21:50
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:21:54
+
+addCommentJira string jiraKey WIND-8316sobota, 11 maja 2019 08:24:26
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:24:33
+
+addCommentJira string jiraKey ZCC-18725sobota, 11 maja 2019 08:24:33
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18725sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:37
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:38
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:24:39
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:00
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:02
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: key
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   w System.Collections.Generic.Dictionary`2.Remove(TKey key)
+   w GUI.MainForm.ReturnIssue(BillingIssueDtoHelios zgloszenie, TreeView tr, Boolean newIssue) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5394
+   w GUI.WFSform.addButton_Click(Object sender, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\WFSform.cs:wiersz 584
+   w System.Windows.Forms.Control.OnClick(EventArgs e)
+   w System.Windows.Forms.Button.OnClick(EventArgs e)
+   w System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   w System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   w System.Windows.Forms.Control.WndProc(Message& m)
+   w System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   w System.Windows.Forms.Button.WndProc(Message& m)
+   w System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   w System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   w System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3877
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__229_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7498
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 08:30:03
+
+addCommentJira string jiraKey ZCC-18726sobota, 11 maja 2019 08:30:03
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18726sobota, 11 maja 2019 08:30:19
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:25
+
+addCommentJira string jiraKey ZCC-18725 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:30:25
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18725sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:28
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:30:31
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:33
+
+addCommentJira string jiraKey ZCC-18726 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:30:33
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18726sobota, 11 maja 2019 08:30:36
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:38
+
+addCommentJira string jiraKey ZCC-18727sobota, 11 maja 2019 08:30:38
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18727sobota, 11 maja 2019 08:30:39
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:42
+
+addCommentJira string jiraKey ZCC-18728sobota, 11 maja 2019 08:30:42
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18728sobota, 11 maja 2019 08:30:43
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:46
+
+addCommentJira string jiraKey ZCC-18729sobota, 11 maja 2019 08:30:46
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18729sobota, 11 maja 2019 08:30:47
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 08:30:50
+
+addCommentJira string jiraKey ZCC-18730sobota, 11 maja 2019 08:30:50
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18730sobota, 11 maja 2019 08:31:28
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:28] 
+
+sobota, 11 maja 2019 08:31:40
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:40] 
+
+sobota, 11 maja 2019 08:31:40
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:40
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:40
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:40] 
+
+sobota, 11 maja 2019 08:31:42
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:42] 
+
+sobota, 11 maja 2019 08:31:42
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:42
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:42
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:42] 
+
+sobota, 11 maja 2019 08:31:45
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:45] 
+
+sobota, 11 maja 2019 08:31:45
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:45
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:45
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:45] 
+
+sobota, 11 maja 2019 08:31:47
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:47] 
+
+sobota, 11 maja 2019 08:31:47
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:47
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:47
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:47] 
+
+sobota, 11 maja 2019 08:31:50
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:50] 
+
+sobota, 11 maja 2019 08:31:50
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:50
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:50
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 08:31:50] 
+
+sobota, 11 maja 2019 08:31:52
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 08:31:52] 
+
+sobota, 11 maja 2019 08:31:52
+
+Modyfikacja treeItemsobota, 11 maja 2019 08:31:52
+
+Status Auto: False 
+
+sobota, 11 maja 2019 08:31:58
+
+addCommentJira string jiraKey ZCC-18730 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:32:00
+
+addCommentJira string jiraKey ZCC-18729 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:32:01
+
+addCommentJira string jiraKey ZCC-18728 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:32:03
+
+addCommentJira string jiraKey ZCC-18727 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:32:04
+
+addCommentJira string jiraKey ZCC-18726 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:32:06
+
+addCommentJira string jiraKey ZCC-18725 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 08:36:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:29
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:30
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:36:31
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:56
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:56:57
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 668
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:59:47
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:59:48
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:59:50
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:59:52
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 08:59:55
+
+--- Main exception: Message ---
+Określone rzutowanie jest nieprawidłowe.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+GUI
+
+sobota, 11 maja 2019 09:25:07
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.9061253. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 09:25:07
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 11:16:51
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:16:58
+
+addCommentJira string jiraKey INFOLINIA-6686sobota, 11 maja 2019 11:16:58
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6686sobota, 11 maja 2019 11:17:27
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:17:30
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:17:48
+
+addCommentJira string jiraKey WIND-8317sobota, 11 maja 2019 11:17:48
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8317sobota, 11 maja 2019 11:17:48
+
+addCommentJira string jiraKey INFOLINIA-6687sobota, 11 maja 2019 11:17:48
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6687sobota, 11 maja 2019 11:18:52
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:18:52] 
+
+sobota, 11 maja 2019 11:18:57
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:18:57] 
+
+sobota, 11 maja 2019 11:18:57
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:18:57
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:18:57
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:18:57] 
+
+sobota, 11 maja 2019 11:19:10
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:19:10] 
+
+sobota, 11 maja 2019 11:19:10
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:19:10
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:19:10
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:19:10] 
+
+sobota, 11 maja 2019 11:19:24
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:19:24] 
+
+sobota, 11 maja 2019 11:19:24
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:19:24
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:20:54
+
+addCommentJira string jiraKey WIND-8317 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:20:56
+
+addCommentJira string jiraKey INFOLINIA-6687 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:20:57
+
+addCommentJira string jiraKey INFOLINIA-6686 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:22:29
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:22:36
+
+addCommentJira string jiraKey CRM-75846sobota, 11 maja 2019 11:22:36
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75846sobota, 11 maja 2019 11:32:34
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:32:38
+
+addCommentJira string jiraKey CRM-75846 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:32:38
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75846sobota, 11 maja 2019 11:34:39
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:34:41
+
+addCommentJira string jiraKey CRM-75847sobota, 11 maja 2019 11:34:41
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75847sobota, 11 maja 2019 11:34:43
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 11:34:47
+
+addCommentJira string jiraKey CRM-75848sobota, 11 maja 2019 11:34:47
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75848sobota, 11 maja 2019 11:36:15
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:36:15] 
+
+sobota, 11 maja 2019 11:36:19
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:36:19] 
+
+sobota, 11 maja 2019 11:36:19
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:36:19
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:36:19
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:36:19] 
+
+sobota, 11 maja 2019 11:36:22
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:36:22] 
+
+sobota, 11 maja 2019 11:36:22
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:36:22
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:36:22
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 11:36:22] 
+
+sobota, 11 maja 2019 11:36:24
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 11:36:24] 
+
+sobota, 11 maja 2019 11:36:24
+
+Modyfikacja treeItemsobota, 11 maja 2019 11:36:24
+
+Status Auto: False 
+
+sobota, 11 maja 2019 11:36:28
+
+addCommentJira string jiraKey CRM-75848 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:36:29
+
+addCommentJira string jiraKey CRM-75847 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:36:31
+
+addCommentJira string jiraKey CRM-75846 NIE DODANO KOMENTARZA BO ISTNIEJE WPISsobota, 11 maja 2019 11:48:33
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:18
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:00:23.1503322. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:00:23.9508812. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6306
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6313
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:19
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:41
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:41
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:41
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:41
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:45
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:02:00. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Nie powiodło się przesłanie komunikatu w ciągu przydzielonego limitu czasu 00:02:00. Nie było wystarczająco dużo miejsca w oknie transmisji niezawodnego kanału. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 12:01:47
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6315
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 690
+
+--- Main exception: Source ---
+mscorlib
+
+sobota, 11 maja 2019 13:27:23
+
+Modyfikacja treeItem checkAsAssignesobota, 11 maja 2019 13:27:33
+
+addCommentJira string jiraKey WIND-8318sobota, 11 maja 2019 13:27:33
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8318sobota, 11 maja 2019 13:29:24
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-11 13:29:24] 
+
+sobota, 11 maja 2019 13:29:38
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-11 13:29:38] 
+
+sobota, 11 maja 2019 13:29:38
+
+Modyfikacja treeItemsobota, 11 maja 2019 13:29:38
+
+Status Auto: False 
+
+sobota, 11 maja 2019 13:45:06
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
