@@ -119,7 +119,7 @@ namespace DataLayer.Implementation
             }
 
             ResultValue<Dictionary<KeyValuePair<int, string>, string>> result = manager.HPService.CheckIssuesPresenceOnBpm(loggedUser, list.ToArray());
-                        
+
             return result.GetResult();
         }
 

@@ -1,0 +1,44 @@
+poniedziałek, 6 maja 2019 13:49:19
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6285
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 627
+
+--- Main exception: Source ---
+mscorlib
+
+poniedziałek, 6 maja 2019 14:30:52
+
+Zgłoszenie CRM-75822 dodano automatycznie o godzinie 2019-05-06 14:30:52!
+poniedziałek, 6 maja 2019 14:30:52
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 6 maja 2019 14:31:10
+
+addCommentJira string jiraKey CRM-75822poniedziałek, 6 maja 2019 14:31:10
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75822poniedziałek, 6 maja 2019 15:00:53
+
+Zgłoszenie ZCC-18701 dodano automatycznie o godzinie 2019-05-06 15:00:53!
+poniedziałek, 6 maja 2019 15:00:54
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 6 maja 2019 15:01:16
+
+addCommentJira string jiraKey ZCC-18701poniedziałek, 6 maja 2019 15:01:17
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18701poniedziałek, 6 maja 2019 15:44:36
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.addIssueToTreeNode(String issueNumber, List`1 issue, String treeViewName)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber)
+
+--- Main exception: Source ---
+mscorlib
+

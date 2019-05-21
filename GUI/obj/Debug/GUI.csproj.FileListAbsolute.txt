@@ -970,6 +970,8 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.WFSform.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.WFSModelerForm.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.MainForm.af-ZA.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.compiled
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\af-ZA\GUI.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.TrustInfo.xml

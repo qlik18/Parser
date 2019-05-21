@@ -262,15 +262,6 @@ namespace GUI.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.23.10")]
-        public string AppVersion {
-            get {
-                return ((string)(this["AppVersion"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Filtr I")]
@@ -304,6 +295,15 @@ namespace GUI.Properties {
             }
             set {
                 this["autoInterval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.31.5")]
+        public string AppVersion {
+            get {
+                return ((string)(this["AppVersion"]));
             }
         }
     }

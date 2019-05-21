@@ -62,7 +62,7 @@ namespace GUI
 
 
 
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
+        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -405,7 +405,7 @@ namespace GUI
         }
 
         [Obsolete("Aktualnie multi nie jest w użyciu")]
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
+        public WFSModelerForm(List<EventParamModeler> eventParamForFormByEventMove, List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -576,9 +576,22 @@ namespace GUI
             // comboBox1.TabStop = false;
             comboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            ///Obsługa deweloperów jako lisa piśmienna
+            //comboBox1.DropDownStyle = ( ep.BoundEventParamId == 2800 ||
+            //                            ep.BoundEventParamId == 2814 ||
+            //                            ep.BoundEventParamId == 3317 ) 
+            //                            ? ComboBoxStyle.DropDown//List
+            //                            : ComboBoxStyle.DropDownList;
 
+            if (ep.EventParamId == 2800 ||
+                ep.EventParamId == 2814 ||
+                ep.EventParamId == 3317)
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            else
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            
             int MapId = 0;
 
             string issueState = gujaczWFS.ExecuteStoredProcedure("spGetIssueState", new string[] { issue.issueWFS.WFSIssueId.ToString() }, DatabaseName.SupportCP)[0][1];
@@ -1780,7 +1793,8 @@ namespace GUI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    Logging.Logger.Instance.LogWarning(ex.Message);
+                    //MessageBox.Show(ex.Message);
                     //new Utility.MyCustomException(ex.Message, ex);
                 }
             else

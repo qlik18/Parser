@@ -323,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAfABHAHwARwBMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAUABHQFAAR0BMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -7185,6 +7185,9 @@ Aktualny log (RPM)</value>
   <data name="button2.Text" xml:space="preserve">
     <value>button2</value>
   </data>
+  <data name="button2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
   </data>
@@ -7491,6 +7494,105 @@ Aktualny log (RPM)</value>
   <data name="&gt;&gt;tp_DayReport.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 14</value>
+  </data>
+  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>tp_PI</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="system.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="system.HeaderText" xml:space="preserve">
+    <value>system</value>
+  </data>
+  <metadata name="sumasys.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sumasys.HeaderText" xml:space="preserve">
+    <value>sumasys</value>
+  </data>
+  <metadata name="sredniomiesiecznie.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sredniomiesiecznie.HeaderText" xml:space="preserve">
+    <value>sredniomiesiecznie</value>
+  </data>
+  <metadata name="sumaproblem.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sumaproblem.HeaderText" xml:space="preserve">
+    <value>sumaproblem</value>
+  </data>
+  <metadata name="sredniaproblem.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="sredniaproblem.HeaderText" xml:space="preserve">
+    <value>sredniaproblem</value>
+  </data>
+  <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 43</value>
+  </data>
+  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>558, 150</value>
+  </data>
+  <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Name" xml:space="preserve">
+    <value>dataGridView2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
+    <value>tp_PI</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 8</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button8.Text" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>tp_PI</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 37</value>
   </data>
@@ -7498,7 +7600,7 @@ Aktualny log (RPM)</value>
     <value>True</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>894, 421</value>
+    <value>300, 421</value>
   </data>
   <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7513,7 +7615,7 @@ Aktualny log (RPM)</value>
     <value>tp_PI</value>
   </data>
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 8</value>
@@ -7537,7 +7639,7 @@ Aktualny log (RPM)</value>
     <value>tp_PI</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="tp_PI.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -9394,6 +9496,9 @@ Aktualny log (RPM)</value>
   <metadata name="fb_logSearch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>464, 60</value>
   </metadata>
+  <metadata name="spelling1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>420, 99</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -10988,6 +11093,36 @@ Aktualny log (RPM)</value>
   <data name="&gt;&gt;DataModyfikacji.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;system.Name" xml:space="preserve">
+    <value>system</value>
+  </data>
+  <data name="&gt;&gt;system.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sumasys.Name" xml:space="preserve">
+    <value>sumasys</value>
+  </data>
+  <data name="&gt;&gt;sumasys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sredniomiesiecznie.Name" xml:space="preserve">
+    <value>sredniomiesiecznie</value>
+  </data>
+  <data name="&gt;&gt;sredniomiesiecznie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sumaproblem.Name" xml:space="preserve">
+    <value>sumaproblem</value>
+  </data>
+  <data name="&gt;&gt;sumaproblem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sredniaproblem.Name" xml:space="preserve">
+    <value>sredniaproblem</value>
+  </data>
+  <data name="&gt;&gt;sredniaproblem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
     <value>toolStripStatusLabel1</value>
   </data>
@@ -11161,6 +11296,12 @@ Aktualny log (RPM)</value>
   </data>
   <data name="&gt;&gt;fb_logSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spelling1.Name" xml:space="preserve">
+    <value>spelling1</value>
+  </data>
+  <data name="&gt;&gt;spelling1.Type" xml:space="preserve">
+    <value>NetSpell.SpellChecker.Spelling, NetSpell.SpellChecker, Version=2.1.7.41329, Culture=neutral, PublicKeyToken=318b389f0db66e46</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

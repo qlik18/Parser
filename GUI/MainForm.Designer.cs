@@ -348,6 +348,15 @@ namespace GUI
             this.rtb_dayReportMessage = new System.Windows.Forms.RichTextBox();
             this.bt_dayReportGenerate = new System.Windows.Forms.Button();
             this.tp_PI = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.system = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumasys = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sredniomiesiecznie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumaproblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sredniaproblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.tab_Awarie = new System.Windows.Forms.TabControl();
             this.cms_IssuePopup = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -383,7 +392,7 @@ namespace GUI
             this.tm_autoFrsh = new System.Windows.Forms.Timer(this.components);
             this.pn_FolderSearch = new System.Windows.Forms.FolderBrowserDialog();
             this.fb_logSearch = new System.Windows.Forms.FolderBrowserDialog();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.spelling1 = new NetSpell.SpellChecker.Spelling(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -433,6 +442,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_DayReport.SuspendLayout();
             this.tp_PI.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -2218,11 +2228,70 @@ namespace GUI
             // 
             // tp_PI
             // 
+            this.tp_PI.Controls.Add(this.button9);
+            this.tp_PI.Controls.Add(this.dataGridView2);
+            this.tp_PI.Controls.Add(this.button8);
             this.tp_PI.Controls.Add(this.textBox5);
             this.tp_PI.Controls.Add(this.button4);
             resources.ApplyResources(this.tp_PI, "tp_PI");
             this.tp_PI.Name = "tp_PI";
             this.tp_PI.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.system,
+            this.sumasys,
+            this.sredniomiesiecznie,
+            this.sumaproblem,
+            this.sredniaproblem});
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
+            this.dataGridView2.Name = "dataGridView2";
+            // 
+            // system
+            // 
+            resources.ApplyResources(this.system, "system");
+            this.system.Name = "system";
+            // 
+            // sumasys
+            // 
+            resources.ApplyResources(this.sumasys, "sumasys");
+            this.sumasys.Name = "sumasys";
+            // 
+            // sredniomiesiecznie
+            // 
+            resources.ApplyResources(this.sredniomiesiecznie, "sredniomiesiecznie");
+            this.sredniomiesiecznie.Name = "sredniomiesiecznie";
+            // 
+            // sumaproblem
+            // 
+            resources.ApplyResources(this.sumaproblem, "sumaproblem");
+            this.sumaproblem.Name = "sumaproblem";
+            // 
+            // sredniaproblem
+            // 
+            resources.ApplyResources(this.sredniaproblem, "sredniaproblem");
+            this.sredniaproblem.Name = "sredniaproblem";
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
             // 
             // button4
             // 
@@ -2433,10 +2502,9 @@ namespace GUI
             this.tm_autoFrsh.Interval = 10;
             this.tm_autoFrsh.Tick += new System.EventHandler(this.tm_autoFrsh_Tick);
             // 
-            // textBox5
+            // spelling1
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            this.spelling1.Dictionary = null;
             // 
             // MainForm
             // 
@@ -2524,6 +2592,7 @@ namespace GUI
             this.tp_DayReport.PerformLayout();
             this.tp_PI.ResumeLayout(false);
             this.tp_PI.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
@@ -2799,6 +2868,15 @@ namespace GUI
         private TabPage tp_PI;
         private Button button4;
         private TextBox textBox5;
+        private Button button8;
+        private DataGridView dataGridView2;
+        private DataGridViewTextBoxColumn system;
+        private DataGridViewTextBoxColumn sumasys;
+        private DataGridViewTextBoxColumn sredniomiesiecznie;
+        private DataGridViewTextBoxColumn sumaproblem;
+        private DataGridViewTextBoxColumn sredniaproblem;
+        private Button button9;
+        private NetSpell.SpellChecker.Spelling spelling1;
     }
 }
 

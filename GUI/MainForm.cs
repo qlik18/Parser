@@ -211,6 +211,7 @@ namespace GUI
             tab_Raporty.Controls.Add(tp_billing);
 
 
+
             tc_awarie.Controls.Add(tp_awaria_nowa);
             tc_awarie.Controls.Add(tp_awaria_lista);
 
@@ -379,6 +380,9 @@ namespace GUI
             dgv_SlaRaport.Columns.Add("dgvAktualniePrzydzielony", "Przydzielony");
             dgv_SlaRaport.Columns.Add("dgvAktualnyPriorytet", "Act. Priorytet");
             dgv_SlaRaport.Columns.Add("dgvOstatniaAkcja", "ost. Aktualizacja");
+
+            ///
+            dgv_SlaRaport.Columns.Add("dgvOnCall", "Czy OnCall?");
 
             this.Invoke((MethodInvoker)delegate
             {
@@ -895,38 +899,38 @@ namespace GUI
         /// <param name="e"></param>
         private void btn_EventMove(object sender, EventArgs e)
         {
-            string p = sender.ToString();
-            int eventMoveId = int.Parse((sender as Button).Tag.ToString());
+            //string p = sender.ToString();
+            //int eventMoveId = int.Parse((sender as Button).Tag.ToString());
 
-            TreeView tr;
-            switch (issueTab.SelectedIndex)
-            {
-                case 0: tr = treeView1; break;
-                case 1: tr = treeView2; break;
-                default: tr = treeView2; break;
-            }
+            //TreeView tr;
+            //switch (issueTab.SelectedIndex)
+            //{
+            //    case 0: tr = treeView1; break;
+            //    case 1: tr = treeView2; break;
+            //    default: tr = treeView2; break;
+            //}
 
-            //Pobranie Rozmieszczenia parametrów zdarzenia
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+            ////Pobranie Rozmieszczenia parametrów zdarzenia
+            //List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
 
-            List<BillingIssueDto> issues = new List<BillingIssueDto>();
-            foreach (var item in multiIssues)
-            {
-                issues.Add(item.Key);
-            }
+            //List<BillingIssueDto> issues = new List<BillingIssueDto>();
+            //foreach (var item in multiIssues)
+            //{
+            //    issues.Add(item.Key);
+            //}
 
-            //wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
-            wmf = new WFSModelerForm(null, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
+            ////wmf = new WFSModelerForm(PolsatUsers, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
+            //wmf = new WFSModelerForm(null, eventParamForFormByEventMove, (sender as Button).Name, issues, gujaczWFS, eventMoveId, new WFSModelerForm.callbackMultiDelegate(ModelerFormActionFinish), tr);
 
-            try
-            {
-                if (!wmf.IsDisposed)
-                    wmf.Show();
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogWarning("Błąd powiadomienia", Logger.Instance);
-            }
+            //try
+            //{
+            //    if (!wmf.IsDisposed)
+            //        wmf.Show();
+            //}
+            //catch (Exception ex)
+            //{
+            //    ExceptionManager.LogWarning("Błąd powiadomienia", Logger.Instance);
+            //}
         }
 
         /// <summary>
@@ -2981,7 +2985,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void btn_HistoriaSzukaj_Click2(object sender, EventArgs e)
         {
-            Issue i = jira.GetIssue(textBox2.Text);
+            //Issue i = jira.GetIssue(textBox2.Text);
 
             List<List<string>> results = gujaczWFS.ExecuteStoredProcedure("BillingDTH_IssueHistory2", new string[] { textBox2.Text }, DatabaseName.SupportCP);
 
@@ -2989,13 +2993,13 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             {
                 NoticeForm.ShowNotice("Brak akcji na zgłoszeniu.", "Info");
             }
-            foreach (var item in i.GetChangeLogs())
-            {
-                foreach (var item2 in item.Items)
-                {
-                    Debug.Print(item2.FieldName.ToString());
-                }
-            }
+            //foreach (var item in i.GetChangeLogs())
+            //{
+            //    foreach (var item2 in item.Items)
+            //    {
+            //        Debug.Print(item2.FieldName.ToString());
+            //    }
+            //}
             
 
             Historia_dgv.Visible = true;
@@ -3423,7 +3427,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             catch (Exception ex)
             {
 
-                throw;
+                //throw;
             }
         }
 
@@ -3626,7 +3630,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             Issue issueTmp = jComment.GetIssue(jiraKey);
 
-            if (issueTmp.GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
+            if (issueTmp.GetComments().Any(x => x.Body == Properties.Settings.Default.KomentarzDoJira))
             {
                 Logger.Instance.LogInformation(string.Format("addCommentJira string jiraKey {0} NIE DODANO KOMENTARZA BO ISTNIEJE WPIS", jiraKey.ToString()));
                 return czyPoprawneHaslo;
@@ -3751,31 +3755,31 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 }
                 );
 
-                if (!wfsList.ContainsKey(treeView3.Name))
+                if (!wfsList.ContainsKey(tr.Name))
                 {
-                    wfsList[treeView3.Name] = new List<BillingIssueDtoHelios>();
+                    wfsList[tr.Name] = new List<BillingIssueDtoHelios>();
                 }
 
-                wfsList[treeView3.Name] = gujaczWFS.compareBillingWithWFS(issue);
+                wfsList[tr.Name] = gujaczWFS.compareBillingWithWFS(issue);
 
 
-                foreach (BillingIssueDtoHelios item in wfsList[treeView3.Name])
+                foreach (BillingIssueDtoHelios item in wfsList[tr.Name])
                 {
                     BillingIssueDtoHelios updatedIssue = gujaczWFS.UpdateIssue(item);
                     IssueState state = (updatedIssue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
 
                     BillingIssueDtoHelios tmp = gujaczWFS.UpdateJiraInfo(updatedIssue);
-                    issues[treeView3.Name].Add(tmp, state);
+                    issues[tr.Name].Add(tmp, state);
                 }
 
                 for (int i = 0; i < wfsList[treeView3.Name].Count; i++)
                 {
-                    wfsList[treeView3.Name][i] = gujaczWFS.UpdateJiraInfo(wfsList[treeView3.Name][i]);
+                    wfsList[tr.Name][i] = gujaczWFS.UpdateJiraInfo(wfsList[tr.Name][i]);
 
                 }
 
-                GetActionForIssues(treeView3);
-                AddToTree(treeView3);
+                GetActionForIssues(tr);
+                AddToTree(tr);
 
                 this.Invoke((MethodInvoker)delegate
                 {
@@ -5407,41 +5411,45 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void GetActionForIssues(TreeView tr)
         {
             int UserId = gujaczWFS.getUser().Id;
-            if (UserId != 0)
+            if (UserId != 0)// && !tr.Name.Contains("treeView4"))
             {
                 try
                 {
+                    if (issues[tr.Name].Count == 0)
+                        return;
+
+                    Dictionary<BillingIssueDto, IssueState> tempIssuesTree = issues[tr.Name];
+
                     if (!issueMove.ContainsKey(tr.Name))
                     {
                         issueMove[tr.Name] = new Dictionary<string, Dictionary<int, string>>();
                     }
 
-                    issueMove[tr.Name].Clear();
                     if (issues[tr.Name].Count > 0)
                     {
                         try
                         {
-                            if (issues[tr.Name].Count == 0)
-                                return;
+
                             Dictionary<string, Dictionary<int, string>> outMap;
-                            foreach (KeyValuePair<BillingIssueDto, IssueState> item in issues[tr.Name])
+                            foreach (KeyValuePair<BillingIssueDto, IssueState> item in tempIssuesTree)
                             {
 
-                                //Dictionary<int, string> moves = gujaczWFS.GetActionForIssueWorkaround(item.Key.issueWFS.WFSIssueId, UserId);
-                                //if (!issueMove[tr.Name].ContainsKey(item.Key.Idnumber))
                                 if (issueMove.TryGetValue(tr.Name,out outMap))
                                 {
+                                    Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
                                     if (!outMap.ContainsKey(item.Key.Idnumber))
                                     {
-                                        Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
                                         issueMove[tr.Name].Add(item.Key.Idnumber, moves);
                                     }
                                     else
                                     {
-                                        Debug.Print(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()));
-                                    }//break;
+                                        issueMove[tr.Name].Remove(item.Key.Idnumber);
+                                        issueMove[tr.Name].Add(item.Key.Idnumber, moves);
+                                        Debug.Print(string.Format("GetActionForIssues remove/add : {0} - {1} - {2}", tr.Name, item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()));
+                                        break;
+                                    }//
                                 }
-                                    //ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
+                                //ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
 
                             }
                         }
@@ -5454,7 +5462,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 catch (Exception ex)
                 {
                     ExceptionManager.LogError(ex, Logger.Instance, false);
-                    issueMove[tr.Name].Clear();
+                    //issueMove[tr.Name].Clear();
                 }
             }
         }
@@ -5473,7 +5481,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
                     else
                     {
-                        issueMove[trName].Remove(issue.Idnumber);
+                        if(isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
+                            issueMove[trName].Remove(issue.Idnumber);
                     }
 
                     Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(issue.issueWFS.WFSIssueId, UserId);
@@ -6215,14 +6224,6 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         //[STAThreadAttribute]
         private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue, string treeViewName = "treeView4")
         {
-            //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
-
-            //treeView4.Nodes.Clear();
-            //issues[treeViewName].Clear();
-
-
-            //List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-
             issue.Add(new BillingIssueDtoHelios()
             {
                 issueHelios = new IssueHelios()
@@ -6269,6 +6270,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             //jIssues.ChangeDataModel(issues[treeViewName], out IssueHelios, ref JiraUsers);
 
             object treeByName = Controls.Find(treeViewName, true)[0];
+
+
             GetActionForIssues((TreeView)treeByName);
             AddToTree((TreeView)treeByName);
 
@@ -6285,6 +6288,77 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             selectIssue = tmp.Key;
         }
 
+        private BillingIssueDtoHelios getBillingIssueDtoHeliosFromIssueNumber(string issueNumber)
+        {
+            if (isNullObjectOrEmptyString(issueNumber))
+                return null;
+
+            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+
+            issue.Add(new BillingIssueDtoHelios()
+            {
+                issueHelios = new IssueHelios()
+                {
+                    number = issueNumber
+                }
+            }
+            );
+
+            return gujaczWFS.compareBillingWithWFS(issue).FirstOrDefault();
+        }
+
+        private void addIssueToTreeNodeForAutoStep(string issueNumber,int issueId)
+        {
+
+            ////  gujaczWFS.
+            BillingIssueDtoHelios issue = getBillingIssueDtoHeliosFromIssueNumber(issueNumber);
+
+            BillingIssueDtoHelios updatedIssue = gujaczWFS.UpdateIssue(issue);
+            IssueState state = (updatedIssue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
+                       
+            BillingIssueDtoHelios tmp2 = gujaczWFS.UpdateJiraInfo(updatedIssue);
+
+            KeyValuePair<BillingIssueDto, IssueState> tmp = new KeyValuePair<BillingIssueDto, IssueState>(tmp2, state);
+            //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.Idnumber == tmp2.Idnumber).Key.Idnumber.ToString()))
+            //IssueState issS;
+            //if (!issues[treeViewName].TryGetValue(tmp2, out issS))
+            //    issues[treeViewName].Add(tmp2, state);
+            //else
+            //    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.Idnumber));
+
+
+            //for (int i = 0; i < wfsList[treeViewName].Count; i++)
+            //{
+
+            //    wfsList[treeViewName][i] = gujaczWFS.UpdateJiraInfo(wfsList[treeViewName][i]);
+
+            //}
+
+
+            //jIssues.ChangeDataModel(issues[treeViewName], out IssueHelios, ref JiraUsers);
+
+            //object treeByName = Controls.Find(treeViewName, true)[0];
+
+            //    Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(issue.issueWFS.WFSIssueId, gujaczWFS.getUser().Id);
+            /*
+             * zastąpione
+             * GetActionForIssues((TreeView)treeByName);
+            */
+            // AddToTree((TreeView)treeByName);
+
+            //            KeyValuePair<BillingIssueDto, IssueState> tmp = new KeyValuePair<BillingIssueDto, IssueState>(tmp2, state);
+            //= issues[treeViewName].Where(x =>
+            //{
+            //    if (x.Key.Idnumber == issueNumber)
+            //        return true;
+            //    else
+            //        return false;
+            //}).FirstOrDefault();
+
+            if (!selectIssueList.Any(x => x.Key == issueNumber))
+                selectIssueList.Add(issueNumber, tmp.Key);
+            selectIssue = tmp.Key;
+        }
 
 
         private void getActionToIssue(List<BillingIssueDtoHelios> issue, string issueNumber, string treeViewName = "treeView4", UserBpmJira ubj = null)
@@ -7949,6 +8023,36 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
                 }
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Clear();
+            jira.MaxIssuesPerRequest = 5000;
+            var jirki = jira.GetIssuesFromJql("project  in ('KPP','KPWA','KSMS','SCP','SCPS','KB','MIXP','KMNP','EMC','MFLN','KISIS','KIVR','KZU','PLK.Sugestie') and type  in ('Zlecenie operatorskie') and created  >= '2018-04-01'  and created  < '2019-04-01'", 5000);
+
+            var jirkiP = jira.GetIssuesFromJql("project  in ('KPP','KPWA','KSMS','SCP','SCPS','KB','MIXP','KMNP','EMC','MFLN','KISIS','KIVR','KZU','PLK.Sugestie') and type  in ('Problem') and created  >= '2018-04-01' and created  < '2019-04-01'  ", 5000); //and 'Środowisko Problemu'  = PRD
+
+            var systemss = jirki.Select(x => x.Project).Distinct().Union(jirkiP.Select(x => x.Project).Distinct());
+
+
+            foreach (var item in systemss)
+            {
+
+                int suma = jirki.Where(x => x.Project == item).Count();
+                int srednia = suma / 6;
+
+                int sumap = jirkiP.Where(x => x.Project == item).Count();
+                int sredniap = sumap / 6;
+
+                dataGridView2.Rows.Add(item, suma, srednia, sumap, sredniap);
+            }
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var v = jira;
         }
     }
 }
