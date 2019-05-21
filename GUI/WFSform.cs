@@ -320,7 +320,7 @@ namespace GUI
             }
             if (auto && !cb_CzyOncall.Checked)
             {
-
+                
                 Logging.Logger.Instance.LogInformation(string.Format("Zgłoszenie {0} dodano automatycznie o godzinie {1}!\n", zgloszenie.Idnumber, DateTime.Now));
                 addButton_Click(this, null);
             }
@@ -538,7 +538,7 @@ namespace GUI
 
                 
 
-                List<List<string>> zgloszenie = gujacz2.ExecuteStoredProcedure("[spCheckJiraId]", new string[] { issue.issueWFS.JiraId.ToString() }, DatabaseName.SupportCP); 
+                List<List<string>> zgloszenie = gujacz2.ExecuteStoredProcedure("[spCheckJiraId]", new string[] { issue.issueWFS.JiraId.ToString() }, DatabaseName.SupportCP);
                 /* stara obsługa
                 if(issue.issueWFS.System.Text != "Problem")
                     zgloszenie = gujacz2.ExecuteStoredProcedure("[spCheckJiraId]", new string[] { issue.issueWFS.JiraId.ToString() }, DatabaseName.SupportCP);
@@ -551,13 +551,14 @@ namespace GUI
                     NoticeForm nf = new NoticeForm(("Numer zgłoszenia " + issue.issueWFS.NumerZgloszenia + " istnieje już zapisany pod nr sprawy: " + zgloszenie[0][1].ToString()), NoticeButtons.OK, new string[] { "OK" });
 
                     nf.ShowDialog();
-                    
+
                     this.Close();
-                    
+
 
                 }
 
-                else {
+                else
+                {
 
                     if (_newIssue)
                     {
@@ -583,8 +584,10 @@ namespace GUI
                         callback(issue, _tr, _newIssue);
                         this.Close();
                     }
-                    else // jeśli nie dodawane masowo tylko pojedyńczo to zapisz obiekt
+                    else
+                    { // jeśli nie dodawane masowo tylko pojedyńczo to zapisz obiekt
                         doByWorker(new DoWorkEventHandler(doWorkSaveToWFS), issue, new RunWorkerCompletedEventHandler(doSavingCompleted));
+                    }
                 }
                     
             }

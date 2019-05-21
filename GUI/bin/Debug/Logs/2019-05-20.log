@@ -1,0 +1,945 @@
+poniedziałek, 20 maja 2019 07:54:32
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 07:55:01
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 07:55:23
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 07:55:24
+
+addCommentJira string jiraKey KKK-4253poniedziałek, 20 maja 2019 07:55:24
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4253poniedziałek, 20 maja 2019 07:55:27
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 07:55:27
+
+addCommentJira string jiraKey ZCC-18768poniedziałek, 20 maja 2019 07:55:27
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18768poniedziałek, 20 maja 2019 07:55:30
+
+addCommentJira string jiraKey KKK-4252poniedziałek, 20 maja 2019 07:55:30
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4252poniedziałek, 20 maja 2019 07:55:41
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-20 07:55:41] 
+
+poniedziałek, 20 maja 2019 07:55:47
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-20 07:55:47] 
+
+poniedziałek, 20 maja 2019 07:55:47
+
+Modyfikacja treeItemponiedziałek, 20 maja 2019 07:55:47
+
+Status Auto: False 
+
+poniedziałek, 20 maja 2019 07:56:11
+
+addCommentJira string jiraKey KKK-4252 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 20 maja 2019 07:56:18
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-20 07:56:18] 
+
+poniedziałek, 20 maja 2019 07:56:20
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-20 07:56:20] 
+
+poniedziałek, 20 maja 2019 07:56:20
+
+Modyfikacja treeItemponiedziałek, 20 maja 2019 07:56:20
+
+Status Auto: False 
+
+poniedziałek, 20 maja 2019 07:56:20
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-05-20 07:56:20] 
+
+poniedziałek, 20 maja 2019 07:56:23
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-05-20 07:56:23] 
+
+poniedziałek, 20 maja 2019 07:56:23
+
+Modyfikacja treeItemponiedziałek, 20 maja 2019 07:56:23
+
+Status Auto: False 
+
+poniedziałek, 20 maja 2019 07:56:26
+
+addCommentJira string jiraKey ZCC-18768 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 20 maja 2019 07:56:28
+
+addCommentJira string jiraKey KKK-4253 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 20 maja 2019 08:00:16
+
+Zgłoszenie CRM-75889 dodano automatycznie o godzinie 2019-05-20 08:00:16!
+poniedziałek, 20 maja 2019 08:00:16
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 08:00:23
+
+addCommentJira string jiraKey CRM-75889poniedziałek, 20 maja 2019 08:00:23
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75889poniedziałek, 20 maja 2019 08:00:36
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:05:26
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+poniedziałek, 20 maja 2019 08:06:40
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:12:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:18:19
+
+Zgłoszenie KKK-4254 dodano automatycznie o godzinie 2019-05-20 08:18:19!
+poniedziałek, 20 maja 2019 08:18:19
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 08:18:27
+
+addCommentJira string jiraKey KKK-4254poniedziałek, 20 maja 2019 08:18:27
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4254poniedziałek, 20 maja 2019 08:18:44
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:24:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:30:14
+
+Zgłoszenie KKK-4256 dodano automatycznie o godzinie 2019-05-20 08:30:14!
+poniedziałek, 20 maja 2019 08:30:14
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 08:30:22
+
+addCommentJira string jiraKey KKK-4256poniedziałek, 20 maja 2019 08:30:22
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4256poniedziałek, 20 maja 2019 08:30:34
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:36:38
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 20 maja 2019 08:42:10
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+poniedziałek, 20 maja 2019 09:00:17
+
+Zgłoszenie CRM-75890 dodano automatycznie o godzinie 2019-05-20 09:00:17!
+poniedziałek, 20 maja 2019 09:00:17
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 09:00:25
+
+addCommentJira string jiraKey CRM-75890poniedziałek, 20 maja 2019 09:00:25
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75890poniedziałek, 20 maja 2019 09:05:19
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 20 maja 2019 09:06:02
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 20 maja 2019 09:06:42
+
+Zgłoszenie CRM-75890 dodano automatycznie o godzinie 2019-05-20 09:06:42!
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:47
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:48
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:06:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 667
+
+--- Main exception: Source ---
+System.Core
+
+poniedziałek, 20 maja 2019 09:07:14
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 09:07:14
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3877
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__230_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7519
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 20 maja 2019 09:12:17
+
+Zgłoszenie CRM-75891 dodano automatycznie o godzinie 2019-05-20 09:12:17!
+poniedziałek, 20 maja 2019 09:12:17
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 09:12:24
+
+addCommentJira string jiraKey CRM-75891poniedziałek, 20 maja 2019 09:12:24
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75891poniedziałek, 20 maja 2019 11:54:44
+
+Zgłoszenie ZCC-18771 dodano automatycznie o godzinie 2019-05-20 11:54:44!
+poniedziałek, 20 maja 2019 11:54:44
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 11:54:50
+
+addCommentJira string jiraKey ZCC-18771poniedziałek, 20 maja 2019 11:54:50
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18771poniedziałek, 20 maja 2019 11:54:56
+
+Zgłoszenie ZCC-18772 dodano automatycznie o godzinie 2019-05-20 11:54:56!
+poniedziałek, 20 maja 2019 11:54:56
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 11:55:29
+
+addCommentJira string jiraKey ZCC-18772poniedziałek, 20 maja 2019 11:55:29
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18772poniedziałek, 20 maja 2019 11:55:31
+
+Zgłoszenie ZCC-18773 dodano automatycznie o godzinie 2019-05-20 11:55:31!
+poniedziałek, 20 maja 2019 11:55:32
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 11:55:35
+
+addCommentJira string jiraKey ZCC-18773poniedziałek, 20 maja 2019 11:55:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18773poniedziałek, 20 maja 2019 14:00:44
+
+Zgłoszenie ZCC-18769 dodano automatycznie o godzinie 2019-05-20 14:00:44!
+poniedziałek, 20 maja 2019 14:00:44
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 14:00:53
+
+addCommentJira string jiraKey ZCC-18769poniedziałek, 20 maja 2019 14:00:53
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18769poniedziałek, 20 maja 2019 14:30:44
+
+Zgłoszenie ZCC-18739 dodano automatycznie o godzinie 2019-05-20 14:30:44!
+poniedziałek, 20 maja 2019 14:30:44
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 14:30:53
+
+addCommentJira string jiraKey ZCC-18739poniedziałek, 20 maja 2019 14:30:53
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18739poniedziałek, 20 maja 2019 15:33:01
+
+Zgłoszenie LIDKA-136 dodano automatycznie o godzinie 2019-05-20 15:33:01!
+poniedziałek, 20 maja 2019 15:33:02
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 20 maja 2019 15:33:08
+
+addCommentJira string jiraKey LIDKA-136poniedziałek, 20 maja 2019 15:33:08
+
+addCommentJira object sender, DoWorkEventArgs e LIDKA-136

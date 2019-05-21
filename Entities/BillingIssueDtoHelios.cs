@@ -19,6 +19,6 @@ namespace Entities
             }
         }
         public IssueHelios issueHelios { get; set; }
-        public Note note { get; set; }     
+        public Note note { get; set; }
     }
 }

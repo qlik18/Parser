@@ -119,6 +119,7 @@
     <Compile Include="HeliosLoggedInUser.cs" />
     <Compile Include="IssueDtoHelios.cs" />
     <Compile Include="IssueDtoJira.cs" />
+    <Compile Include="IssueFinalParameters.cs" />
     <Compile Include="IssueHeader.cs" />
     <Compile Include="IssueCriteria.cs" />
     <Compile Include="IssueJira.cs" />

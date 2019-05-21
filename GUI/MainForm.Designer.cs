@@ -4,7 +4,6 @@ using Entities;
 using System.Collections.Generic;
 using System.Threading;
 using Utility;
-using Microsoft.Reporting.WinForms;
 
 namespace GUI
 {
@@ -131,16 +130,17 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bt_AutoAssigne = new System.Windows.Forms.Button();
             this.btn_NewIssue = new System.Windows.Forms.Button();
             this.btn_WyszukajWWFS = new System.Windows.Forms.Button();
             this.issueTab = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tp_filter1name = new System.Windows.Forms.TabPage();
             this.btn_NieprzydzieloneZapiszDoWFS = new System.Windows.Forms.Button();
             this.btn_NieprzydzieloneUzupelnijDane = new System.Windows.Forms.Button();
             this.btn_NieprzydzieloneOdswiez = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tp_filter2name = new System.Windows.Forms.TabPage();
             this.btn_MojeZapiszDoWFS = new System.Windows.Forms.Button();
             this.btn_MojeUzupelnijDane = new System.Windows.Forms.Button();
             this.btn_MojeOdswiez = new System.Windows.Forms.Button();
@@ -158,7 +158,6 @@ namespace GUI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tc = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.bt_AutoAssigne = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_DodajNotatke = new System.Windows.Forms.Button();
             this.btn_Procesy = new System.Windows.Forms.Button();
@@ -166,6 +165,13 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
+            this.tb_InterwalAutomatu = new System.Windows.Forms.TextBox();
+            this.bt_OtworzLog = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.bt_LogSearchRun = new System.Windows.Forms.Button();
+            this.bt_LogSearchPatch = new System.Windows.Forms.Button();
+            this.tb_LogSearchPath = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cb_KontoBillennium = new System.Windows.Forms.CheckBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -173,9 +179,13 @@ namespace GUI
             this.mtb_BillenniumPass = new System.Windows.Forms.MaskedTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbFilter2name = new System.Windows.Forms.ComboBox();
+            this.tb_filter2name = new System.Windows.Forms.TextBox();
+            this.cbFilter1name = new System.Windows.Forms.ComboBox();
+            this.tb_filter1name = new System.Windows.Forms.TextBox();
             this.btn_SaveFilters = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lb_filter2name = new System.Windows.Forms.Label();
+            this.lb_filter1name = new System.Windows.Forms.Label();
             this.tb_UnassignedFilterName = new System.Windows.Forms.TextBox();
             this.tb_AssignedFilterName = new System.Windows.Forms.TextBox();
             this.cbox_RefreshBoth = new System.Windows.Forms.CheckBox();
@@ -188,27 +198,6 @@ namespace GUI
             this.cb_SoundNotification = new System.Windows.Forms.CheckBox();
             this.ckb_isNotifyEnabled = new System.Windows.Forms.CheckBox();
             this.cb_EmailNotification = new System.Windows.Forms.CheckBox();
-            this.tp_Uzytkownicy = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tbx_userEmail = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tbx_userFirstname = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.tbx_userSurname = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.tbx_userPhone = new System.Windows.Forms.TextBox();
-            this.btn_UzytkownicyZapisz = new System.Windows.Forms.Button();
-            this.lv_Users = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tb_surnameSearch = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tb_emailSearch = new System.Windows.Forms.TextBox();
             this.tp_billing = new System.Windows.Forms.TabPage();
             this.btn_BillingZapiszDoXls = new System.Windows.Forms.Button();
             this.zglDgv = new System.Windows.Forms.DataGridView();
@@ -260,6 +249,11 @@ namespace GUI
             this.dgv_Diagnoza = new System.Windows.Forms.DataGridView();
             this.btn_DiagnozaWczytaj = new System.Windows.Forms.Button();
             this.tp_Sla = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cb_dgv_Wypalony = new System.Windows.Forms.CheckBox();
+            this.cb_dgv_Pauza = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cb_dgv_IssueId = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tb_sla_ileWstrzymane = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -269,7 +263,6 @@ namespace GUI
             this.bt_SLA_synchronizacja = new System.Windows.Forms.Button();
             this.cb_SLA_JiraSynchro = new System.Windows.Forms.CheckBox();
             this.cb_SLApauza = new System.Windows.Forms.CheckBox();
-            this.lb_SlaRaport = new System.Windows.Forms.Label();
             this.btn_slaRaport_Load = new System.Windows.Forms.Button();
             this.dgv_SlaRaport = new System.Windows.Forms.DataGridView();
             this.tp_Multi = new System.Windows.Forms.TabPage();
@@ -292,9 +285,6 @@ namespace GUI
             this.lb_WorkloadTotalTime = new System.Windows.Forms.Label();
             this.lb_WorkloadLoggedTime = new System.Windows.Forms.Label();
             this.lb_workloadTitle = new System.Windows.Forms.Label();
-            this.tp_Podsumowanie = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tp_awaria_nowa = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_awaria_niezakonczona = new System.Windows.Forms.CheckBox();
@@ -357,6 +347,17 @@ namespace GUI
             this.dtp_dayReportDateFrom = new System.Windows.Forms.DateTimePicker();
             this.rtb_dayReportMessage = new System.Windows.Forms.RichTextBox();
             this.bt_dayReportGenerate = new System.Windows.Forms.Button();
+            this.tp_PI = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.system = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumasys = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sredniomiesiecznie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumaproblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sredniaproblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.tab_Awarie = new System.Windows.Forms.TabControl();
             this.cms_IssuePopup = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -371,11 +372,11 @@ namespace GUI
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar3 = new System.Windows.Forms.ToolStripProgressBar();
+            this.tslb_WorkloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
             this.issuesCheckoutStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tslb_WorkloadStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.messageToWebService = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -389,25 +390,26 @@ namespace GUI
             this.t_EmailNotification = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tm_autoFrsh = new System.Windows.Forms.Timer(this.components);
+            this.pn_FolderSearch = new System.Windows.Forms.FolderBrowserDialog();
+            this.fb_logSearch = new System.Windows.Forms.FolderBrowserDialog();
+            this.spelling1 = new NetSpell.SpellChecker.Spelling(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.issueTab.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage11.SuspendLayout();
+            this.tp_filter1name.SuspendLayout();
+            this.tp_filter2name.SuspendLayout();
             this.tp_Billennium.SuspendLayout();
             this.tp_tmp.SuspendLayout();
             this.tc.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tp_Raporty.SuspendLayout();
             this.tp_Settings.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tp_Uzytkownicy.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.tp_billing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zglDgv)).BeginInit();
             this.tp_crm.SuspendLayout();
@@ -419,6 +421,7 @@ namespace GUI
             this.tp_diagnoza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Diagnoza)).BeginInit();
             this.tp_Sla.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SlaRaport)).BeginInit();
             this.tp_Multi.SuspendLayout();
@@ -426,7 +429,6 @@ namespace GUI
             this.tp_Workload.SuspendLayout();
             this.gBox_WorkloadRaports.SuspendLayout();
             this.gBox_WorkloadCurrent.SuspendLayout();
-            this.tp_Podsumowanie.SuspendLayout();
             this.tp_awaria_nowa.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gb_awaria_bloker.SuspendLayout();
@@ -439,6 +441,8 @@ namespace GUI
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_DayReport.SuspendLayout();
+            this.tp_PI.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -454,6 +458,7 @@ namespace GUI
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer1.Panel1.Controls.Add(this.bt_AutoAssigne);
             this.splitContainer1.Panel1.Controls.Add(this.btn_NewIssue);
             this.splitContainer1.Panel1.Controls.Add(this.btn_WyszukajWWFS);
             this.splitContainer1.Panel1.Controls.Add(this.issueTab);
@@ -468,6 +473,14 @@ namespace GUI
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.tc);
             resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
+            // 
+            // bt_AutoAssigne
+            // 
+            resources.ApplyResources(this.bt_AutoAssigne, "bt_AutoAssigne");
+            this.bt_AutoAssigne.BackColor = System.Drawing.Color.Orange;
+            this.bt_AutoAssigne.Name = "bt_AutoAssigne";
+            this.bt_AutoAssigne.UseVisualStyleBackColor = false;
+            this.bt_AutoAssigne.Click += new System.EventHandler(this.bt_autoAssigne_Click);
             // 
             // btn_NewIssue
             // 
@@ -486,23 +499,23 @@ namespace GUI
             // issueTab
             // 
             resources.ApplyResources(this.issueTab, "issueTab");
-            this.issueTab.Controls.Add(this.tabPage3);
-            this.issueTab.Controls.Add(this.tabPage11);
+            this.issueTab.Controls.Add(this.tp_filter1name);
+            this.issueTab.Controls.Add(this.tp_filter2name);
             this.issueTab.Controls.Add(this.tp_Billennium);
             this.issueTab.Controls.Add(this.tp_tmp);
             this.issueTab.Name = "issueTab";
             this.issueTab.SelectedIndex = 0;
             this.issueTab.SelectedIndexChanged += new System.EventHandler(this.issueTab_SelectedIndexChanged);
             // 
-            // tabPage3
+            // tp_filter1name
             // 
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneZapiszDoWFS);
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneUzupelnijDane);
-            this.tabPage3.Controls.Add(this.btn_NieprzydzieloneOdswiez);
-            this.tabPage3.Controls.Add(this.treeView1);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneZapiszDoWFS);
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneUzupelnijDane);
+            this.tp_filter1name.Controls.Add(this.btn_NieprzydzieloneOdswiez);
+            this.tp_filter1name.Controls.Add(this.treeView1);
+            resources.ApplyResources(this.tp_filter1name, "tp_filter1name");
+            this.tp_filter1name.Name = "tp_filter1name";
+            this.tp_filter1name.UseVisualStyleBackColor = true;
             // 
             // btn_NieprzydzieloneZapiszDoWFS
             // 
@@ -594,15 +607,15 @@ namespace GUI
             this.imageList1.Images.SetKeyName(51, "PNMinor.png");
             this.imageList1.Images.SetKeyName(52, "PNTrivial.png");
             // 
-            // tabPage11
+            // tp_filter2name
             // 
-            this.tabPage11.Controls.Add(this.btn_MojeZapiszDoWFS);
-            this.tabPage11.Controls.Add(this.btn_MojeUzupelnijDane);
-            this.tabPage11.Controls.Add(this.btn_MojeOdswiez);
-            this.tabPage11.Controls.Add(this.treeView2);
-            resources.ApplyResources(this.tabPage11, "tabPage11");
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
+            this.tp_filter2name.Controls.Add(this.btn_MojeZapiszDoWFS);
+            this.tp_filter2name.Controls.Add(this.btn_MojeUzupelnijDane);
+            this.tp_filter2name.Controls.Add(this.btn_MojeOdswiez);
+            this.tp_filter2name.Controls.Add(this.treeView2);
+            resources.ApplyResources(this.tp_filter2name, "tp_filter2name");
+            this.tp_filter2name.Name = "tp_filter2name";
+            this.tp_filter2name.UseVisualStyleBackColor = true;
             // 
             // btn_MojeZapiszDoWFS
             // 
@@ -718,7 +731,6 @@ namespace GUI
             this.tc.Controls.Add(this.tabPage1);
             this.tc.Controls.Add(this.tp_Raporty);
             this.tc.Controls.Add(this.tp_Settings);
-            this.tc.Controls.Add(this.tp_Uzytkownicy);
             this.tc.Controls.Add(this.tp_billing);
             this.tc.Controls.Add(this.tp_crm);
             this.tc.Controls.Add(this.tp_zcc);
@@ -728,20 +740,18 @@ namespace GUI
             this.tc.Controls.Add(this.tp_Sla);
             this.tc.Controls.Add(this.tp_Multi);
             this.tc.Controls.Add(this.tp_Workload);
-            this.tc.Controls.Add(this.tp_Podsumowanie);
             this.tc.Controls.Add(this.tp_awaria_nowa);
             this.tc.Controls.Add(this.tp_awarie);
             this.tc.Controls.Add(this.tp_awaria_lista);
             this.tc.Controls.Add(this.tabPage2);
             this.tc.Controls.Add(this.tp_DayReport);
+            this.tc.Controls.Add(this.tp_PI);
             this.tc.Name = "tc";
             this.tc.SelectedIndex = 0;
-            this.tc.SelectedIndexChanged += new System.EventHandler(this.searchTab_SelectedIndexChanged);
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.bt_AutoAssigne);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.btn_DodajNotatke);
             this.tabPage1.Controls.Add(this.btn_Procesy);
@@ -749,13 +759,6 @@ namespace GUI
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // bt_AutoAssigne
-            // 
-            resources.ApplyResources(this.bt_AutoAssigne, "bt_AutoAssigne");
-            this.bt_AutoAssigne.Name = "bt_AutoAssigne";
-            this.bt_AutoAssigne.UseVisualStyleBackColor = true;
-            this.bt_AutoAssigne.Click += new System.EventHandler(this.bt_autoAssigne_Click);
             // 
             // button1
             // 
@@ -803,6 +806,10 @@ namespace GUI
             // 
             // tp_Settings
             // 
+            this.tp_Settings.Controls.Add(this.tb_InterwalAutomatu);
+            this.tp_Settings.Controls.Add(this.bt_OtworzLog);
+            this.tp_Settings.Controls.Add(this.label13);
+            this.tp_Settings.Controls.Add(this.groupBox4);
             this.tp_Settings.Controls.Add(this.groupBox3);
             this.tp_Settings.Controls.Add(this.groupBox2);
             this.tp_Settings.Controls.Add(this.cbox_RefreshBoth);
@@ -810,6 +817,51 @@ namespace GUI
             resources.ApplyResources(this.tp_Settings, "tp_Settings");
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
+            // 
+            // tb_InterwalAutomatu
+            // 
+            resources.ApplyResources(this.tb_InterwalAutomatu, "tb_InterwalAutomatu");
+            this.tb_InterwalAutomatu.Name = "tb_InterwalAutomatu";
+            // 
+            // bt_OtworzLog
+            // 
+            resources.ApplyResources(this.bt_OtworzLog, "bt_OtworzLog");
+            this.bt_OtworzLog.Name = "bt_OtworzLog";
+            this.bt_OtworzLog.UseVisualStyleBackColor = true;
+            this.bt_OtworzLog.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_OtworzLog_Click);
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.bt_LogSearchRun);
+            this.groupBox4.Controls.Add(this.bt_LogSearchPatch);
+            this.groupBox4.Controls.Add(this.tb_LogSearchPath);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // bt_LogSearchRun
+            // 
+            resources.ApplyResources(this.bt_LogSearchRun, "bt_LogSearchRun");
+            this.bt_LogSearchRun.Name = "bt_LogSearchRun";
+            this.bt_LogSearchRun.UseVisualStyleBackColor = true;
+            this.bt_LogSearchRun.Click += new System.EventHandler(this.bt_LogSearchRun_Click);
+            // 
+            // bt_LogSearchPatch
+            // 
+            resources.ApplyResources(this.bt_LogSearchPatch, "bt_LogSearchPatch");
+            this.bt_LogSearchPatch.Name = "bt_LogSearchPatch";
+            this.bt_LogSearchPatch.UseVisualStyleBackColor = true;
+            this.bt_LogSearchPatch.Click += new System.EventHandler(this.bt_LogSearchPatch_Click);
+            // 
+            // tb_LogSearchPath
+            // 
+            resources.ApplyResources(this.tb_LogSearchPath, "tb_LogSearchPath");
+            this.tb_LogSearchPath.Name = "tb_LogSearchPath";
             // 
             // groupBox3
             // 
@@ -853,31 +905,61 @@ namespace GUI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cbFilter2name);
+            this.groupBox2.Controls.Add(this.tb_filter2name);
+            this.groupBox2.Controls.Add(this.cbFilter1name);
+            this.groupBox2.Controls.Add(this.tb_filter1name);
             this.groupBox2.Controls.Add(this.btn_SaveFilters);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.lb_filter2name);
+            this.groupBox2.Controls.Add(this.lb_filter1name);
             this.groupBox2.Controls.Add(this.tb_UnassignedFilterName);
             this.groupBox2.Controls.Add(this.tb_AssignedFilterName);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // cbFilter2name
+            // 
+            this.cbFilter2name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter2name, "cbFilter2name");
+            this.cbFilter2name.Name = "cbFilter2name";
+            // 
+            // tb_filter2name
+            // 
+            resources.ApplyResources(this.tb_filter2name, "tb_filter2name");
+            this.tb_filter2name.Name = "tb_filter2name";
+            this.tb_filter2name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_filter1name_KeyDown);
+            // 
+            // cbFilter1name
+            // 
+            this.cbFilter1name.FormattingEnabled = true;
+            resources.ApplyResources(this.cbFilter1name, "cbFilter1name");
+            this.cbFilter1name.Name = "cbFilter1name";
+            // 
+            // tb_filter1name
+            // 
+            resources.ApplyResources(this.tb_filter1name, "tb_filter1name");
+            this.tb_filter1name.Name = "tb_filter1name";
+            this.tb_filter1name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_filter1name_KeyDown);
+            // 
             // btn_SaveFilters
             // 
             resources.ApplyResources(this.btn_SaveFilters, "btn_SaveFilters");
             this.btn_SaveFilters.Name = "btn_SaveFilters";
             this.btn_SaveFilters.UseVisualStyleBackColor = true;
-            this.btn_SaveFilters.Click += new System.EventHandler(this.btn_SaveFilters_Click);
+            this.btn_SaveFilters.Click += new System.EventHandler(this.btn_SaveFilters_ClickCB);
             // 
-            // label14
+            // lb_filter2name
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
+            resources.ApplyResources(this.lb_filter2name, "lb_filter2name");
+            this.lb_filter2name.Name = "lb_filter2name";
+            this.lb_filter2name.DoubleClick += new System.EventHandler(this.lb_filter1name_Click);
             // 
-            // label13
+            // lb_filter1name
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
+            resources.ApplyResources(this.lb_filter1name, "lb_filter1name");
+            this.lb_filter1name.Name = "lb_filter1name";
+            this.lb_filter1name.DoubleClick += new System.EventHandler(this.lb_filter1name_Click);
             // 
             // tb_UnassignedFilterName
             // 
@@ -960,139 +1042,6 @@ namespace GUI
             this.cb_EmailNotification.Name = "cb_EmailNotification";
             this.cb_EmailNotification.UseVisualStyleBackColor = true;
             this.cb_EmailNotification.CheckedChanged += new System.EventHandler(this.cb_EmailNotification_CheckedChanged);
-            // 
-            // tp_Uzytkownicy
-            // 
-            this.tp_Uzytkownicy.Controls.Add(this.flowLayoutPanel2);
-            this.tp_Uzytkownicy.Controls.Add(this.lv_Users);
-            this.tp_Uzytkownicy.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.tp_Uzytkownicy, "tp_Uzytkownicy");
-            this.tp_Uzytkownicy.Name = "tp_Uzytkownicy";
-            this.tp_Uzytkownicy.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel2
-            // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Controls.Add(this.label17);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userEmail);
-            this.flowLayoutPanel2.Controls.Add(this.label18);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userFirstname);
-            this.flowLayoutPanel2.Controls.Add(this.label19);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userSurname);
-            this.flowLayoutPanel2.Controls.Add(this.label20);
-            this.flowLayoutPanel2.Controls.Add(this.tbx_userPhone);
-            this.flowLayoutPanel2.Controls.Add(this.btn_UzytkownicyZapisz);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // tbx_userEmail
-            // 
-            resources.ApplyResources(this.tbx_userEmail, "tbx_userEmail");
-            this.tbx_userEmail.Name = "tbx_userEmail";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // tbx_userFirstname
-            // 
-            resources.ApplyResources(this.tbx_userFirstname, "tbx_userFirstname");
-            this.tbx_userFirstname.Name = "tbx_userFirstname";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            // 
-            // tbx_userSurname
-            // 
-            resources.ApplyResources(this.tbx_userSurname, "tbx_userSurname");
-            this.tbx_userSurname.Name = "tbx_userSurname";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
-            // tbx_userPhone
-            // 
-            resources.ApplyResources(this.tbx_userPhone, "tbx_userPhone");
-            this.tbx_userPhone.Name = "tbx_userPhone";
-            // 
-            // btn_UzytkownicyZapisz
-            // 
-            resources.ApplyResources(this.btn_UzytkownicyZapisz, "btn_UzytkownicyZapisz");
-            this.btn_UzytkownicyZapisz.Name = "btn_UzytkownicyZapisz";
-            this.btn_UzytkownicyZapisz.UseVisualStyleBackColor = true;
-            this.btn_UzytkownicyZapisz.Click += new System.EventHandler(this.btn_saveUser_Click);
-            // 
-            // lv_Users
-            // 
-            resources.ApplyResources(this.lv_Users, "lv_Users");
-            this.lv_Users.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lv_Users.FullRowSelect = true;
-            this.lv_Users.GridLines = true;
-            this.lv_Users.MultiSelect = false;
-            this.lv_Users.Name = "lv_Users";
-            this.lv_Users.UseCompatibleStateImageBehavior = false;
-            this.lv_Users.View = System.Windows.Forms.View.Details;
-            this.lv_Users.SelectedIndexChanged += new System.EventHandler(this.lv_Users_SelectedIndexChanged);
-            // 
-            // columnHeader4
-            // 
-            resources.ApplyResources(this.columnHeader4, "columnHeader4");
-            // 
-            // columnHeader1
-            // 
-            resources.ApplyResources(this.columnHeader1, "columnHeader1");
-            // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
-            // columnHeader3
-            // 
-            resources.ApplyResources(this.columnHeader3, "columnHeader3");
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label15);
-            this.flowLayoutPanel1.Controls.Add(this.tb_surnameSearch);
-            this.flowLayoutPanel1.Controls.Add(this.label16);
-            this.flowLayoutPanel1.Controls.Add(this.tb_emailSearch);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // tb_surnameSearch
-            // 
-            resources.ApplyResources(this.tb_surnameSearch, "tb_surnameSearch");
-            this.tb_surnameSearch.Name = "tb_surnameSearch";
-            this.tb_surnameSearch.TextChanged += new System.EventHandler(this.tb_SearchChanged);
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            // 
-            // tb_emailSearch
-            // 
-            resources.ApplyResources(this.tb_emailSearch, "tb_emailSearch");
-            this.tb_emailSearch.Name = "tb_emailSearch";
-            this.tb_emailSearch.TextChanged += new System.EventHandler(this.tb_SearchChanged);
             // 
             // tp_billing
             // 
@@ -1546,17 +1495,54 @@ namespace GUI
             // 
             // tp_Sla
             // 
+            this.tp_Sla.Controls.Add(this.panel5);
             this.tp_Sla.Controls.Add(this.panel4);
             this.tp_Sla.Controls.Add(this.cb_SLAWstrzymane);
             this.tp_Sla.Controls.Add(this.bt_SLA_synchronizacja);
             this.tp_Sla.Controls.Add(this.cb_SLA_JiraSynchro);
             this.tp_Sla.Controls.Add(this.cb_SLApauza);
-            this.tp_Sla.Controls.Add(this.lb_SlaRaport);
             this.tp_Sla.Controls.Add(this.btn_slaRaport_Load);
             this.tp_Sla.Controls.Add(this.dgv_SlaRaport);
             resources.ApplyResources(this.tp_Sla, "tp_Sla");
             this.tp_Sla.Name = "tp_Sla";
             this.tp_Sla.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cb_dgv_Wypalony);
+            this.panel5.Controls.Add(this.cb_dgv_Pauza);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.cb_dgv_IssueId);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // cb_dgv_Wypalony
+            // 
+            resources.ApplyResources(this.cb_dgv_Wypalony, "cb_dgv_Wypalony");
+            this.cb_dgv_Wypalony.Name = "cb_dgv_Wypalony";
+            this.cb_dgv_Wypalony.UseVisualStyleBackColor = true;
+            this.cb_dgv_Wypalony.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
+            // 
+            // cb_dgv_Pauza
+            // 
+            resources.ApplyResources(this.cb_dgv_Pauza, "cb_dgv_Pauza");
+            this.cb_dgv_Pauza.Name = "cb_dgv_Pauza";
+            this.cb_dgv_Pauza.UseVisualStyleBackColor = true;
+            this.cb_dgv_Pauza.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // cb_dgv_IssueId
+            // 
+            resources.ApplyResources(this.cb_dgv_IssueId, "cb_dgv_IssueId");
+            this.cb_dgv_IssueId.Checked = true;
+            this.cb_dgv_IssueId.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_dgv_IssueId.Name = "cb_dgv_IssueId";
+            this.cb_dgv_IssueId.UseVisualStyleBackColor = true;
+            this.cb_dgv_IssueId.CheckedChanged += new System.EventHandler(this.cb_dgv_optionChange);
             // 
             // panel4
             // 
@@ -1615,14 +1601,11 @@ namespace GUI
             // cb_SLApauza
             // 
             resources.ApplyResources(this.cb_SLApauza, "cb_SLApauza");
+            this.cb_SLApauza.Checked = true;
+            this.cb_SLApauza.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_SLApauza.Name = "cb_SLApauza";
             this.cb_SLApauza.UseVisualStyleBackColor = true;
             this.cb_SLApauza.CheckedChanged += new System.EventHandler(this.cb_SLApauza_CheckedChanged);
-            // 
-            // lb_SlaRaport
-            // 
-            resources.ApplyResources(this.lb_SlaRaport, "lb_SlaRaport");
-            this.lb_SlaRaport.Name = "lb_SlaRaport";
             // 
             // btn_slaRaport_Load
             // 
@@ -1654,6 +1637,7 @@ namespace GUI
             this.dgv_SlaRaport.Name = "dgv_SlaRaport";
             this.dgv_SlaRaport.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaportCellContentClick);
             this.dgv_SlaRaport.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaport_CellEnter);
+            this.dgv_SlaRaport.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_SlaRaport_CellFormatting);
             this.dgv_SlaRaport.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SlaRaport_CellLeave);
             this.dgv_SlaRaport.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_SlaRaport_CellMouseClick);
             // 
@@ -1796,29 +1780,6 @@ namespace GUI
             // 
             resources.ApplyResources(this.lb_workloadTitle, "lb_workloadTitle");
             this.lb_workloadTitle.Name = "lb_workloadTitle";
-            // 
-            // tp_Podsumowanie
-            // 
-            this.tp_Podsumowanie.Controls.Add(this.button4);
-            this.tp_Podsumowanie.Controls.Add(this.reportViewer2);
-            resources.ApplyResources(this.tp_Podsumowanie, "tp_Podsumowanie");
-            this.tp_Podsumowanie.Name = "tp_Podsumowanie";
-            this.tp_Podsumowanie.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // reportViewer2
-            // 
-            resources.ApplyResources(this.reportViewer2, "reportViewer2");
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
-            this.reportViewer2.ServerReport.ReportPath = "/Support/CP/RaportDzienny";
-            this.reportViewer2.ServerReport.ReportServerUrl = new System.Uri("http://10.255.250.9/ReportServer_SQL2012/", System.UriKind.Absolute);
             // 
             // tp_awaria_nowa
             // 
@@ -2265,6 +2226,80 @@ namespace GUI
             this.bt_dayReportGenerate.UseVisualStyleBackColor = true;
             this.bt_dayReportGenerate.Click += new System.EventHandler(this.bt_dayReportGenerate_Click);
             // 
+            // tp_PI
+            // 
+            this.tp_PI.Controls.Add(this.button9);
+            this.tp_PI.Controls.Add(this.dataGridView2);
+            this.tp_PI.Controls.Add(this.button8);
+            this.tp_PI.Controls.Add(this.textBox5);
+            this.tp_PI.Controls.Add(this.button4);
+            resources.ApplyResources(this.tp_PI, "tp_PI");
+            this.tp_PI.Name = "tp_PI";
+            this.tp_PI.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.system,
+            this.sumasys,
+            this.sredniomiesiecznie,
+            this.sumaproblem,
+            this.sredniaproblem});
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
+            this.dataGridView2.Name = "dataGridView2";
+            // 
+            // system
+            // 
+            resources.ApplyResources(this.system, "system");
+            this.system.Name = "system";
+            // 
+            // sumasys
+            // 
+            resources.ApplyResources(this.sumasys, "sumasys");
+            this.sumasys.Name = "sumasys";
+            // 
+            // sredniomiesiecznie
+            // 
+            resources.ApplyResources(this.sredniomiesiecznie, "sredniomiesiecznie");
+            this.sredniomiesiecznie.Name = "sredniomiesiecznie";
+            // 
+            // sumaproblem
+            // 
+            resources.ApplyResources(this.sumaproblem, "sumaproblem");
+            this.sumaproblem.Name = "sumaproblem";
+            // 
+            // sredniaproblem
+            // 
+            resources.ApplyResources(this.sredniaproblem, "sredniaproblem");
+            this.sredniaproblem.Name = "sredniaproblem";
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // tab_Awarie
             // 
             resources.ApplyResources(this.tab_Awarie, "tab_Awarie");
@@ -2290,11 +2325,11 @@ namespace GUI
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel8,
             this.toolStripProgressBar3,
+            this.tslb_WorkloadStatus,
             this.toolStripStatusLabel7,
             this.toolStripStatusLabel6,
             this.toolStripProgressBar2,
-            this.issuesCheckoutStatus,
-            this.tslb_WorkloadStatus});
+            this.issuesCheckoutStatus});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
@@ -2367,6 +2402,11 @@ namespace GUI
             resources.ApplyResources(this.toolStripProgressBar3, "toolStripProgressBar3");
             this.toolStripProgressBar3.MouseHover += new System.EventHandler(this.toolStripProgressBar3_MouseHover);
             // 
+            // tslb_WorkloadStatus
+            // 
+            resources.ApplyResources(this.tslb_WorkloadStatus, "tslb_WorkloadStatus");
+            this.tslb_WorkloadStatus.Name = "tslb_WorkloadStatus";
+            // 
             // toolStripStatusLabel7
             // 
             this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
@@ -2390,11 +2430,6 @@ namespace GUI
             // 
             this.issuesCheckoutStatus.Name = "issuesCheckoutStatus";
             resources.ApplyResources(this.issuesCheckoutStatus, "issuesCheckoutStatus");
-            // 
-            // tslb_WorkloadStatus
-            // 
-            resources.ApplyResources(this.tslb_WorkloadStatus, "tslb_WorkloadStatus");
-            this.tslb_WorkloadStatus.Name = "tslb_WorkloadStatus";
             // 
             // timer2
             // 
@@ -2468,6 +2503,10 @@ namespace GUI
             this.tm_autoFrsh.Interval = 10;
             this.tm_autoFrsh.Tick += new System.EventHandler(this.tm_autoFrsh_Tick);
             // 
+            // spelling1
+            // 
+            this.spelling1.Dictionary = null;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -2487,8 +2526,8 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.issueTab.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage11.ResumeLayout(false);
+            this.tp_filter1name.ResumeLayout(false);
+            this.tp_filter2name.ResumeLayout(false);
             this.tp_Billennium.ResumeLayout(false);
             this.tp_tmp.ResumeLayout(false);
             this.tc.ResumeLayout(false);
@@ -2496,17 +2535,14 @@ namespace GUI
             this.tp_Raporty.ResumeLayout(false);
             this.tp_Settings.ResumeLayout(false);
             this.tp_Settings.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tp_Uzytkownicy.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.tp_billing.ResumeLayout(false);
             this.tp_billing.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zglDgv)).EndInit();
@@ -2524,6 +2560,8 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Diagnoza)).EndInit();
             this.tp_Sla.ResumeLayout(false);
             this.tp_Sla.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SlaRaport)).EndInit();
@@ -2535,8 +2573,6 @@ namespace GUI
             this.gBox_WorkloadRaports.PerformLayout();
             this.gBox_WorkloadCurrent.ResumeLayout(false);
             this.gBox_WorkloadCurrent.PerformLayout();
-            this.tp_Podsumowanie.ResumeLayout(false);
-            this.tp_Podsumowanie.PerformLayout();
             this.tp_awaria_nowa.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -2555,6 +2591,9 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tp_DayReport.ResumeLayout(false);
             this.tp_DayReport.PerformLayout();
+            this.tp_PI.ResumeLayout(false);
+            this.tp_PI.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
@@ -2595,37 +2634,16 @@ namespace GUI
         private TabPage tabPage1;
         private Button btn_DodajNotatke;
         private Button btn_Procesy;
-        private RichTextBox richTextBox1;
-        private TabPage tp_Uzytkownicy;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Label label17;
-        private TextBox tbx_userEmail;
-        private Label label18;
-        private TextBox tbx_userFirstname;
-        private Label label19;
-        private TextBox tbx_userSurname;
-        private Label label20;
-        private TextBox tbx_userPhone;
-        private Button btn_UzytkownicyZapisz;
-        private ListView lv_Users;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Label label15;
-        private TextBox tb_surnameSearch;
-        private Label label16;
-        private TextBox tb_emailSearch;
+        private System.Windows.Forms.RichTextBox richTextBox1;
         private TabPage tp_billing;
-        private RichTextBox richTextBoxStats;
+        private System.Windows.Forms.RichTextBox richTextBoxStats;
         private Button btn_BillingZgloszeniaZDzisiaj;
         private TabControl issueTab;
-        private TabPage tabPage3;
+        private TabPage tp_filter1name;
         private Button btn_NieprzydzieloneUzupelnijDane;
         private Button btn_NieprzydzieloneOdswiez;
         private TreeView treeView1;
-        private TabPage tabPage11;
+        private TabPage tp_filter2name;
         private Button btn_MojeUzupelnijDane;
         private Button btn_MojeOdswiez;
         private TreeView treeView2;
@@ -2654,7 +2672,7 @@ namespace GUI
         private Button btn_HistoriaSzukaj;
         private TextBox textBox2;
         private TabPage tp_crm;
-        private RichTextBox crm_rtb;
+        private System.Windows.Forms.RichTextBox crm_rtb;
         private Button btn_CRMRaport18;
         private TextBox tb_CRMRapGodzinaDo;
         private TextBox tb_CRMRapGodzinaOd;
@@ -2693,7 +2711,7 @@ namespace GUI
         private DateTimePicker dtp_ZCCDataDo;
         private DateTimePicker dtp_ZCCDataOd;
         private Button btn_ZccLoadNotes;
-        private RichTextBox zcc_rtb;
+        private System.Windows.Forms.RichTextBox zcc_rtb;
         private Label label6;
         private Label label5;
         private Button btn_ZCCRaport;
@@ -2708,7 +2726,6 @@ namespace GUI
         private GroupBox gBox_WorkloadCurrent;
         private Label lb_WorkloadLoggedTime;
         private Label lb_workloadTitle;
-        private ToolStripStatusLabel toolStripStatusLabel7;
         private ToolStripStatusLabel tslb_WorkloadStatus;
         private System.Windows.Forms.Timer tm_AutoAssigne;
         private StatusStripButton ssb_WorkloadButton;
@@ -2732,21 +2749,19 @@ namespace GUI
         private ColumnHeader columnHeader7;
         private CheckBox cbox_RefreshBoth;
         private GroupBox groupBox2;
-        private Label label13;
+        private Label lb_filter1name;
         private TextBox tb_UnassignedFilterName;
         private TextBox tb_AssignedFilterName;
         private Button btn_SaveFilters;
-        private Label label14;
+        private Label lb_filter2name;
         private TabPage tp_Sla;
         private Button btn_slaRaport_Load;
         private DataGridView dgv_SlaRaport;
         private System.Windows.Forms.Timer t_EmailNotification;
-        private Label lb_SlaRaport;
         private Button tbn_CRMpodsumowanieWyslij;
         private CheckBox cb_SLApauza;
         private Button button1;
         private CheckBox cb_SLA_JiraSynchro;
-        private TabPage tp_Podsumowanie;
         private TabPage tp_tmp;
         private TreeView treeView4;
         private GroupBox groupBox3;
@@ -2789,8 +2804,6 @@ namespace GUI
         private DateTimePicker dtp_LA_startDate;
         private Button bt_LA_szukaj;
         private DataGridView dgv_Awarie;
-        private ReportViewer reportViewer2;
-        private Button button4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer tm_autoFrsh;
         private TabPage tabPage2;
@@ -2832,8 +2845,39 @@ namespace GUI
         private Label label31;
         private DateTimePicker dtp_dayReportDateTo;
         private DateTimePicker dtp_dayReportDateFrom;
-        private RichTextBox rtb_dayReportMessage;
+        private System.Windows.Forms.RichTextBox rtb_dayReportMessage;
         private Button bt_dayReportGenerate;
+        private GroupBox groupBox4;
+        private Button bt_LogSearchRun;
+        private Button bt_LogSearchPatch;
+        private TextBox tb_LogSearchPath;
+        private FolderBrowserDialog pn_FolderSearch;
+        private FolderBrowserDialog fb_logSearch;
+        private Button bt_OtworzLog;
+        private TextBox tb_filter1name;
+        private TextBox tb_filter2name;
+        private ComboBox cbFilter1name;
+        private ComboBox cbFilter2name;
+        private TextBox tb_InterwalAutomatu;
+        private Label label13;
+        private Panel panel5;
+        private CheckBox cb_dgv_Wypalony;
+        private CheckBox cb_dgv_Pauza;
+        private CheckBox cb_dgv_IssueId;
+        private Label label14;
+        private ToolStripStatusLabel toolStripStatusLabel7;
+        private TabPage tp_PI;
+        private Button button4;
+        private TextBox textBox5;
+        private Button button8;
+        private DataGridView dataGridView2;
+        private DataGridViewTextBoxColumn system;
+        private DataGridViewTextBoxColumn sumasys;
+        private DataGridViewTextBoxColumn sredniomiesiecznie;
+        private DataGridViewTextBoxColumn sumaproblem;
+        private DataGridViewTextBoxColumn sredniaproblem;
+        private Button button9;
+        private NetSpell.SpellChecker.Spelling spelling1;
     }
 }
 

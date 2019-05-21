@@ -551,76 +551,6 @@
             Number of total items available on the server.
             </summary>
         </member>
-        <member name="T:Atlassian.Jira.ProjectComponentCreationInfo">
-            <summary>
-            Class that encapsulates the necessary information to create a new project component.
-            </summary>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentCreationInfo.#ctor(System.String)">
-            <summary>
-            Creates a new instance of ProjectComponentCreationInfo.
-            </summary>
-            <param name="name">The name of the project component.</param>
-        </member>
-        <member name="P:Atlassian.Jira.ProjectComponentCreationInfo.Name">
-            <summary>
-            Name of the project component.
-            </summary>
-        </member>
-        <member name="P:Atlassian.Jira.ProjectComponentCreationInfo.Description">
-            <summary>
-            Description of the project component.
-            </summary>
-        </member>
-        <member name="T:Atlassian.Jira.ProjectComponentsEditableResource">
-            Class that encapsulates operations on the remote components collection of a project.
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.#ctor(Atlassian.Jira.Jira,Atlassian.Jira.Project)">
-            <summary>
-            Creates a new instance of the ProjectComponentsEditableResource.
-            </summary>
-            <param name="jira">Instance of the Jira client.</param>
-            <param name="project">The project on which to target the operations.</param>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.Get">
-            <summary>
-            Gets the components for the current project.
-            </summary>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.GetAsync(System.Threading.CancellationToken)">
-            <summary>
-            Gets the components for the current project.
-            </summary>
-            <param name="token">Cancellation token for this operation.</param>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.Add(Atlassian.Jira.ProjectComponentCreationInfo)">
-            <summary>
-            Creates and adds a new component the current project.
-            </summary>
-            <param name="projectComponent">Information of the new component.</param>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.AddAsync(Atlassian.Jira.ProjectComponentCreationInfo,System.Threading.CancellationToken)">
-            <summary>
-            Creates and adds a new component to a project.
-            </summary>
-            <param name="projectComponent">Information of the new component.</param>
-            <param name="token">Cancellation token for this operation.</param>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.Delete(System.String,System.String)">
-            <summary>
-            Deletes a component from a project.
-            </summary>
-            <param name="componentName">Name of the component to remove.</param>
-            <param name="moveIssuesTo">The component to set on issues where the deleted component is the component, If null then the component is removed.</param>
-        </member>
-        <member name="M:Atlassian.Jira.ProjectComponentsEditableResource.DeleteAsync(System.String,System.String,System.Threading.CancellationToken)">
-            <summary>
-            Deletes a component from a project.
-            </summary>
-            <param name="componentName">Name of the component to remove.</param>
-            <param name="moveIssuesTo">The component to set on issues where the deleted component is the component, If null then the component is removed.</param>
-            <param name="token">Cancellation token for this operation.</param>
-        </member>
         <member name="T:Atlassian.Jira.ProjectVersionCreationInfo">
             <summary>
             Class that encapsulates the necessary information to create a new project version.
@@ -1303,11 +1233,6 @@
             Gets an object to interact with the versions of this project.
             </summary>
         </member>
-        <member name="P:Atlassian.Jira.Project.Components">
-            <summary>
-            Gets an object to interact with the components of this project.
-            </summary>
-        </member>
         <member name="T:Atlassian.Jira.ProjectComponent">
             <summary>
             A component associated with a project
@@ -1395,7 +1320,7 @@
             <param name="additionalUpdates">Additional updates to perform when transitioning the issue.</param>
             <param name="token">Cancellation token for this operation.</param>
         </member>
-        <member name="M:Atlassian.Jira.Issue.GetSubTasks(System.Nullable{System.Int32},System.Int32)">
+        <member name="M:Atlassian.Jira.Issue.GetSubTaks(System.Nullable{System.Int32},System.Int32)">
             <summary>
             Returns the issues that are marked as sub tasks of this issue.
             </summary>

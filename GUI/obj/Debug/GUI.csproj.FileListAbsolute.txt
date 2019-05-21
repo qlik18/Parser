@@ -929,6 +929,7 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Logic.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.Unity.dll
+<<<<<<< HEAD
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.ReportViewer.Design.DLL
@@ -969,6 +970,15 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Build.Utilities.Core.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Build.Framework.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\VSLangProj2.dll
+=======
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\NetSpell.SpellChecker.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Newtonsoft.Json.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\nrtftree-library.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\RestSharp.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\SautinSoft.HtmlToRtf.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Utility.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\RtfPipe.dll
+>>>>>>> poprawaassigne
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\DataLayer.pdb
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\DataLayer.dll.config
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Entities.pdb
@@ -982,6 +992,7 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.Unity.xml
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+<<<<<<< HEAD
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Newtonsoft.Json.xml
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\RestSharp.xml
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
@@ -1047,6 +1058,13 @@ C:\CP\ParserGit\JiraParser\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\pl\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\bin\Debug\pl\Microsoft.VisualStudio.Data.Core.resources.dll
+=======
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\NetSpell.SpellChecker.xml
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Newtonsoft.Json.xml
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\RestSharp.xml
+C:\CP\ParserGit\JiraParser\GUI\bin\Debug\SautinSoft.HtmlToRtf.xml
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+>>>>>>> poprawaassigne
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.ResolveComReference.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.AutoCompleteForm.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.EditNote.resources
@@ -1062,11 +1080,19 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.WFSform.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.WFSModelerForm.resources
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.MainForm.af-ZA.resources
+<<<<<<< HEAD
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+=======
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.cache
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.compiled
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+>>>>>>> poprawaassigne
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\af-ZA\GUI.resources.dll
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.TrustInfo.xml
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe.manifest
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.application
+<<<<<<< HEAD
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.pdb
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
@@ -1074,3 +1100,8 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\RdlCompile.compiled
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CopyComplete
+=======
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe
+C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.pdb
+>>>>>>> poprawaassigne

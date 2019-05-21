@@ -62,7 +62,7 @@ namespace GUI
 
 
 
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
+        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -220,10 +220,192 @@ namespace GUI
                 MessageBox.Show(ex.Message,"Błąd wczytania danych z BPM");
             }
         }
-       
+
+
+        public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
+        {
+            this._tr = tr;
+            this.PolsatUsers = PolsatUsers;
+            this.eventName = name.Split('(').First(); ;
+            this.callback = callback;
+            this.eventMoveId = eventMoveId;
+            this.gujaczWFS = gujaczWFS;
+            this.issue = issue;
+            InitializeComponent();
+            this.list = list;
+            List<Entities.EventParam> boundEventParams;
+            KeyValuePair<int, string> _selectOption = new KeyValuePair<int, string>();
+
+            if (quickStep)
+            {
+                _quickStep = quickStep;
+                if(eventMoveId != 610)
+                    _selectOption = (KeyValuePair<int, string>)selectOption;
+                this.Visible = false;
+            }
+
+            EventParam kom = new EventParam();
+            try
+            {
+                if (eventMoveId == 617)
+                {
+
+                    boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
+
+                    //boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.EventParamId == 2852).Select(x => x.EventParamId).ToArray<int>());
+
+                    //kom.DBExtValue = null;
+                    //kom.DBValue = _selectOption.Key;
+                    //kom.EventParamId = 2852;
+                    //kom.Value = _selectOption.Value;
+
+                    //boundEventParams.Add(kom);
+
+
+                    //boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.EventParamId == 2853).Select(x => x.EventParamId).ToArray<int>());
+
+                    //kom.DBExtValue = null;
+                    //kom.DBValue = null;
+                    //kom.EventParamId = 2853;
+                    //kom.Value = "QuickStep";
+
+                    //boundEventParams.Add(kom);
+                }
+                else
+                {
+                    boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
+
+                }
+                //if (eventMoveId != 618)
+                //{
+                foreach (Entities.EventParam item in boundEventParams)
+                {
+                    list.First(x => x.BoundEventParamId == item.EventParamId).BoundEventParam = item;
+                    //list.Last(x => x.BoundEventParamId == item.EventParamId).BoundEventParam = item;
+                }
+                //}
+
+                this.Text = name + " zgłoszenie: " + issue.issueWFS.NumerZgloszenia;
+
+
+                //if (eventMoveId == 616)
+                //{
+                //    if (issue.issueWFS.Rodzaj.Value == 888 && issue.issueWFS.Typ.Value != 1036)
+                //    {
+                //        // Twórz process manager panel
+                //    }
+                //}
+                //if (eventMoveId == 608)
+                //{
+
+                //}
+                //if (eventMoveId == 609)
+                //{
+
+                //}
+                if (!_quickStep)
+                {
+                    GenerateForm(false);
+                }
+                else
+                {
+                    //GenerateForm(false);
+                    GenerateForm(null, 0);
+                    this.Visible = false;
+
+                    foreach (var item in sources)
+                    {
+                        
+                        if (item.param.EventParamId == 2852)
+                        {
+                            item.param.DBValue = _selectOption.Key;
+                            item.param.Value = _selectOption.Value;
+
+                            if (item.type == typeof(ComboBox))
+                            {
+                                ((ComboBox)item.source).Text = _selectOption.Value;
+                                ((ComboBox)item.source).SelectedValue = _selectOption.Key;
+
+                                ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(_selectOption.Value);
+
+                                //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                break;
+                            }
+                        }
+                        if (item.param.EventParamId == 2830 && _selectOption.Value != null)
+                        {
+
+                            if (item.type == typeof(SimpleData))
+                            {
+                                ((SimpleData)item.source).ID = _selectOption.Key;
+                                ((SimpleData)item.source).Value = _selectOption.Value;
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == 2853)
+                        {
+                            if (item.type == typeof(RichTextBox))
+                            {
+                                ((RichTextBox)item.source).Text = "quickStep test";
+                            }
+                            //item.param.DBValue = _selectOption.Key;
+                            item.param.Value = "quickStep test";
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == (int)EventParamNames.Osoba_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                //((SimpleData)item.source).ID = _selectOption.Key;
+                                ((TextBox)item.source).Text = (selectOption as string[])[0];
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                        else if (item.param.EventParamId == (int)EventParamNames.Mail_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
+                        {
+                            if (item.type == typeof(TextBox))
+                            {
+                                ((TextBox)item.source).Text = (selectOption as string[])[1];
+                            }
+
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
+                    }
+
+                    btn_Save_Click(this, null);
+                }
+                if (quickStep)
+                {
+                    _quickStep = false;
+                    this.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Logging.Logger.Instance.LogException(ex);
+                //MessageBox.Show(ex.Message, "Błąd wczytania danych z BPM");
+            }
+        }
 
         [Obsolete("Aktualnie multi nie jest w użyciu")]
-        public WFSModelerForm(List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
+        public WFSModelerForm(List<EventParamModeler> eventParamForFormByEventMove, List<HeliosUser> PolsatUsers, List<Entities.EventParamModeler> list, string name, List<Entities.BillingIssueDto> issues, IParserEngineWFS gujaczWFS, int eventMoveId, callbackMultiDelegate callback, TreeView tr)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -248,6 +430,7 @@ namespace GUI
             GenerateForm();
         }
 
+        
         private void GenerateForm(bool visible = true)
         {
             GenerateForm(null, 0);
@@ -262,8 +445,10 @@ namespace GUI
         /// </summary>
         /// <param name="group"></param>
         /// <param name="ParamGroupId"></param>
+        [STAThreadAttribute]
         private void GenerateForm(GroupBox group, int ParamGroupId)
         {
+           
             //if(group== null) group= new GroupBox();
             foreach (Entities.EventParamModeler item in list.Where(x => x.ParamGroupId == ParamGroupId))
             {
@@ -300,6 +485,9 @@ namespace GUI
                     GenerateForm(group, item.EventParamId);
                 }
             }
+                
+            
+
         }
 
         private void GetDataFromProcedure(Entities.EventParamModeler item, GroupBox group)
@@ -375,7 +563,7 @@ namespace GUI
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             //TODO: dodać obsługę tego comboBoxa         
         }
-
+        //[STAThreadAttribute]
         private void AddComboBox(Entities.EventParamModeler ep, GroupBox group)
         {
             this.SuspendLayout();
@@ -388,9 +576,22 @@ namespace GUI
             // comboBox1.TabStop = false;
             comboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            ///Obsługa deweloperów jako lisa piśmienna
+            //comboBox1.DropDownStyle = ( ep.BoundEventParamId == 2800 ||
+            //                            ep.BoundEventParamId == 2814 ||
+            //                            ep.BoundEventParamId == 3317 ) 
+            //                            ? ComboBoxStyle.DropDown//List
+            //                            : ComboBoxStyle.DropDownList;
 
+            if (ep.EventParamId == 2800 ||
+                ep.EventParamId == 2814 ||
+                ep.EventParamId == 3317)
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            else
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
+            
             int MapId = 0;
 
             string issueState = gujaczWFS.ExecuteStoredProcedure("spGetIssueState", new string[] { issue.issueWFS.WFSIssueId.ToString() }, DatabaseName.SupportCP)[0][1];
@@ -1185,8 +1386,9 @@ namespace GUI
             }
             if (ileCyfr > 0)
             {
-                var v = new MainForm();
-                v.SearchJiraIssueAsync(nrProblemu, sJiraIssue);
+                //Jira j = new Jira("http://jira", GUI. . .Login, jiraUser.Password);
+                
+                new MainForm().SearchJiraIssueAsync(nrProblemu,out sJiraIssue);
 
                 if (sJiraIssue != null && sJiraIssue.Count() > 0)
                 {
@@ -1439,7 +1641,7 @@ namespace GUI
                 AddLabel(ep, group);
         }
         #endregion
-
+        //[STAThreadAttribute]
         private void btn_Save_Click(object sender, EventArgs e)
         {
             bool isValidate = true;
@@ -1454,7 +1656,7 @@ namespace GUI
                     item.param.DBValue = tmp.Value;
                     item.param.Value = tmp.Text;
 
-                    System.Diagnostics.Debug.WriteLine("");
+                    System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1}", tmp.Value, tmp.Text));
                 }
                 else if (item.type == typeof(RichTextBox))
                 {
@@ -1591,7 +1793,8 @@ namespace GUI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    Logging.Logger.Instance.LogWarning(ex.Message);
+                    //MessageBox.Show(ex.Message);
                     //new Utility.MyCustomException(ex.Message, ex);
                 }
             else

@@ -141,6 +141,34 @@ namespace LogicLayer.Implementation
         }
 
         /// <summary>
+        /// Sprawdzenie czy zgłoszenia zostały już wprowadzone do BPM.
+        /// </summary>
+        /// <param name="issues">Lista zgłoszeń</param>
+        /// <returns></returns>
+        //public BillingIssueDtoHelios GetIssueFromBPM(string issuesNumber)
+        //{
+
+
+        //    Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckIssuesPresenceOnBpm(issues);
+        //    //Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckBillingIssuesPresenceOnWFS(issuesNumber.ToArray());
+
+        //    for (int i = 0; i < issues.Count; i++)
+        //    {
+        //        BillingIssueDtoHelios id = issues[i];
+        //        id.issueWFS = new BillingDTHIssueWFS();
+        //        id.isInWFS = list.Any(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier));
+        //        if (id.isInWFS)
+        //        {
+        //            KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
+        //            id.issueWFS.WFSIssueId = para.Key.Key;
+        //            id.issueWFS.WFSState = para.Key.Value;
+        //        }
+        //        else id.issueWFS.WFSIssueId = 0;
+        //    }
+        //    return issues;
+        //}
+
+        /// <summary>
         /// Sprawdzenie czy zgłoszenie zostało już wprowadzone do WFS
         /// </summary>
         /// <param name="issue"></param>
@@ -283,7 +311,7 @@ namespace LogicLayer.Implementation
                 issue.issueHelios.lastName = item[5];
                 issue.issueHelios.content = item[6];
                 issue.issueHelios.title = item[7];
-                
+
                 if (string.IsNullOrEmpty(item[8]))
                     issue.issueHelios.severity = "4";
                 else
@@ -294,6 +322,41 @@ namespace LogicLayer.Implementation
 
             return issues;
         }
+
+        /// <summary>
+        /// Pobiera szczegóły zgłoszenia z BPM (z pominięciem Jira).
+        /// Używane do zgłoszeń wewnętrznych
+        /// </summary>
+        /// <param name="issueId">id Issue</param>
+        /// <returns>BillingIssueDtoHelios</returns>
+        public BillingIssueDtoHelios GetIssue(int issueId)
+        {
+            List<List<string>> result = this.ExecuteStoredProcedure("CP_Get_Issue_Param", new string[] { issueId.ToString() }, DatabaseName.SupportCP);
+
+            List<string> row = result[0];
+
+
+            BillingIssueDtoHelios issue = new BillingIssueDtoHelios();
+
+            issue.issueWFS = new BillingDTHIssueWFS();
+            issue.issueHelios = new IssueHelios();
+            issue.issueHelios.number = row[1];
+            issue.issueWFS.WFSIssueId = Convert.ToInt32(row[0]);
+            issue.issueHelios.date = row[2];
+            issue.issueHelios.updated = row[2];
+            issue.issueHelios.email = row[3];
+            issue.issueHelios.firstName = row[4];
+            issue.issueHelios.lastName = row[5];
+            issue.issueHelios.content = row[6];
+            issue.issueHelios.title = row[7];
+            issue.issueHelios.severity = row[8];
+
+            //issue.issueHelios. = row[8];
+
+
+            return issue;
+        }
+
 
         /// <summary>
         /// Aktualizuje dane dotyczące zgłoszenia (pobiera z issueHelios, przypisuje do issueWFS)
@@ -463,6 +526,49 @@ namespace LogicLayer.Implementation
             return result;
         }
 
+        //public BillingIssueDtoHelios GetBilingIssueDetails(BillingIssueDtoHelios issue, Atlassian.Jira.Issue issueJira)
+        //{
+        //    //issue.issueWFS.DataWystapieniaBledu = issue.issueHelios.oryginalneId == issue.issueHelios.number ? issue.issueHelios.date : issue.issueHelios.updated;
+        //    //issue.issueWFS.Email = issue.issueHelios.email;
+        //    //issue.issueWFS.Imie = issue.issueHelios.firstName;
+        //    //issue.issueWFS.Nazwisko = issue.issueHelios.lastName;
+        //    //issue.issueWFS.TrescZgloszenia = issue.issueHelios.content;
+        //    //issue.issueWFS.TytulZgloszenia = issue.issueHelios.title;
+        //    //issue.issueWFS.NumerZgloszenia = issue.issueWFS.WFSIssueId.ToString();
+        //    //issue.issueWFS.IdKontraktu = issue.issueHelios.idKontraktu;
+        //    //issue.issueWFS.IdZamowienia = issue.issueHelios.idZamowienia;
+        //    //issue.issueWFS.Priorytet = issue.issueHelios.severity;
+
+        //    BillingIssueDtoHelios result = issue;
+
+        //    result.issueHelios.date = result.issueHelios.updated = issue.issueWFS.DataWystapieniaBledu;
+        //    result.issueHelios.email = issue.issueWFS.Email;
+        //    result.issueHelios.firstName = issue.issueWFS.Imie;
+        //    result.issueHelios.lastName = issue.issueWFS.Nazwisko;
+        //    result.issueHelios.content = issue.issueWFS.TrescZgloszenia;
+        //    result.issueHelios.title = issue.issueWFS.TytulZgloszenia;
+        //    result.issueHelios.severity = issue.issueWFS.Priorytet;
+        //    result.issueHelios.rodzaj_zgloszenia = issue.issueWFS.System != null ? issue.issueWFS.System.Text : "";
+        //    result.issueHelios.rodzaj_bledu = issue.issueWFS.Rodzaj != null ? issue.issueWFS.Rodzaj.Text : "";
+        //    result.issueHelios.srodowiskoProblemu = issue.issueWFS.SrodowiskoProblemu != null ? issue.issueWFS.SrodowiskoProblemu : "";
+
+        //    if (issueJira != null)
+        //    {
+        //        //result.issueHelios.date = result.issueHelios.updated = issue.issueWFS.DataWystapieniaBledu;
+        //        //result.issueHelios.email = issue.issueWFS.Email;
+        //        result.issueHelios.firstName = issueJira.Assignee.Split(' ').First();
+        //        result.issueHelios.lastName = issueJira.Assignee.Split(' ').Last();
+        //        //result.issueHelios.content = issue.issueWFS.TrescZgloszenia;
+        //        //result.issueHelios.title = issue.issueWFS.TytulZgloszenia;
+        //        result.issueHelios.severity = issueJira.Priority.Name;
+        //        //result.issueHelios.rodzaj_zgloszenia = issue.issueWFS.System != null ? issue.issueWFS.System.Text : "";
+        //        //result.issueHelios.rodzaj_bledu = issue.issueWFS.Rodzaj != null ? issue.issueWFS.Rodzaj.Text : "";
+        //        //result.issueHelios.srodowiskoProblemu = issue.issueWFS.SrodowiskoProblemu != null ? issue.issueWFS.SrodowiskoProblemu : "";
+        //    }
+
+
+        //    return result;
+        //}
 
         #region ProcessManager Engine
         /// <summary>

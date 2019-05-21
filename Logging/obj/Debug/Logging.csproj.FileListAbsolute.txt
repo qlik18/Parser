@@ -17,3 +17,9 @@ C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\bin\Debug\Loggi
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.dll
 C:\CP\BillGIT\CustomItems\Billennium.WFS.CPHeliosParser2\Logging\obj\Debug\Logging.pdb
+C:\CP\ParserGit\JiraParser\Logging\bin\Debug\Logging.dll
+C:\CP\ParserGit\JiraParser\Logging\bin\Debug\Logging.pdb
+C:\CP\ParserGit\JiraParser\Logging\obj\Debug\Logging.csprojAssemblyReference.cache
+C:\CP\ParserGit\JiraParser\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
+C:\CP\ParserGit\JiraParser\Logging\obj\Debug\Logging.dll
+C:\CP\ParserGit\JiraParser\Logging\obj\Debug\Logging.pdb
