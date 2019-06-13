@@ -1,0 +1,593 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Lista zg³oszeñ</title>
+
+
+<link rel="Top" href="http://helios.polsat.net.pl/">
+
+  
+
+
+  
+
+
+  
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" title="Moje zg³oszenia"
+          href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;e
+          assigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=krussa%40cyfrowypolsat.pl&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=krussa%40cyfrowypolsat.pl">
+
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="(Default query)"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=%28Default%20query%29">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="92110"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=92110">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="95698"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=95698">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="bledy nowe"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=bledy%20nowe">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="CO ma Jawad"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Jawad">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="CO ma Krzysiek"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Krzysiek">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="CO ma Micha³"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Micha%C5%82">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="CO ma Seba"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Seba">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="cp-serwis"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cp-serwis">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="cp-serwis"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cp%E2%80%91serwis">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="crm-prod"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=crm-prod">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="cti-prod"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cti-prod">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Konsultanci i Biznes"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Konsultanci%20i%20Biznes">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Micha³ ZAK"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Micha%C5%82%20ZAK">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Moje zg³oszenia"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Moje%20zg%C5%82oszenia">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Moje zg³oszenie (poprawione)"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Moje%20zg%C5%82oszenie%20%28poprawione%29">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Na developerach ALL"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20ALL">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Na developerach Inne Sekcje"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20Inne%20Sekcje">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Na developerach SWOK"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20SWOK">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Na weryfikacji biznesowej"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20weryfikacji%20biznesowej">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Na weryfikacji biznesowej ALL"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20weryfikacji%20biznesowej%20ALL">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Rozwi¹zane przez CP-serwis do 18:00"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Rozwi%C4%85zane%20przez%20CP-serwis%20do%2018%3A00">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Rozwi¹zane przez SWOK do 18:00"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Rozwi%C4%85zane%20przez%20SWOK%20do%2018%3A00">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Utworzone do 18:00"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Utworzone%20do%2018%3A00">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Wszystko"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Wszystko">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="ZAK Adam"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Adam">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="ZAK Micha³"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Micha%C5%82">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="ZAK Seba"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Seba">
+    <link rel="Zapamiêtane&nbsp;wyszukiwania" 
+          title="Zakonczone"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Zakonczone">
+
+    
+
+    <script type="text/javascript">
+  <!--
+  
+  function initHelp() {}
+  // -->
+  </script>
+
+    <link href="skins/standard/global.css" rel="stylesheet" type="text/css">
+    <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+
+
+        <link href="skins/standard/buglist.css" rel="stylesheet" type="text/css">
+          <link href="skins/custom/buglist.css" rel="stylesheet" type="text/css">
+
+    
+       <link rel="alternate" 
+             type="application/atom+xml" title="Atom feed" 
+             href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;title=Lista zg³oszeñ&amp;ctype=atom" />
+
+  </head>
+
+
+
+  <body 
+
+onload=""
+        class="helios-polsat-net-pl">
+
+
+<div id="kontener">
+
+    <div id="banner">
+    <div class="intro"></div>
+      <p id="banner-name">
+      </p>
+    <div class="outro"></div>
+<table width="100%" cellpadding="0" cellspacing="0"> <tr> <td align="right" valign="bottom"> <div class="menu">
+<ul> 
+<li><a href="projekty.cgi"><strong>Projekty</strong><!--[if IE 7]><!--></a><!--<![endif]-->
+
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+	<li><a href="query.cgi" title="Przeszukaj projekty">Przeszukaj</a></li>
+	<li><a href="enter_bug.cgi?classification=Projekty&format=proj" title="WprowadŸ nowe zadanie">WprowadŸ nowy</a></li>
+<li><a href="buglist.cgi?query_format=advanced&classification=Projekty&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">Otwarte projekty<!--[if IE 7]><!--></a><!--<![endif]-->
+
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+</li>
+
+
+<li><a href="zadania.cgi"><strong>Zadania</strong><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+	<li><a href="query.cgi" title="Przeszukaj zadania">Przeszukaj</a></li>
+	<li><a href="enter_bug.cgi?classification=Zadania&format=zad" title="WprowadŸ nowe zadanie">WprowadŸ nowe</a></li>
+
+<li><a href="buglist.cgi?query_format=advanced&classification=Zadania&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">Otwarte zadania<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li><a href="bledy.cgi"><strong>B³êdy/Interw.</strong><!--[if IE 7]><!--></a><!--<![endif]-->
+
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+	<li><a href="query.cgi" title="Przeszukaj b³êdy">Przeszukaj</a></li>
+	<li><a href="enter_bug.cgi" title="WprowadŸ nowy b³¹d">WprowadŸ nowy b³¹d</a></li>
+	<li><a href="enter_bug.cgi?format=dfk" title="WprowadŸ now¹ interwencjê (DFK)">WprowadŸ now¹ interwencjê (DFK)</a></li>
+	<li><a href="enter_bug.cgi?format=dok" title="WprowadŸ now¹ interwencjê (DOK)">WprowadŸ now¹ interwencjê (DOK)</a></li>
+	<li><a href="enter_bug.cgi?format=dd" title="WprowadŸ now¹ interwencjê (DD)">WprowadŸ now¹ interwencjê (DD)</a></li>
+	<li><a href="enter_bug.cgi?format=noc" title="WprowadŸ now¹ interwencjê (MVNO)">WprowadŸ now¹ interwencjê (MVNO)</a></li>
+	</ul>
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+<li><a href=""><strong>Administracja</strong><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+
+<!-- --> <li><a href="relogin.cgi" title="Wyloguj siê">Wyloguj siê</a></li> 
+            <!--  -->
+<!-- --> <li><a href="userprefs.cgi" title="Edycja ustawieñ">Edycja ustawieñ</a></li> <!--    -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+
+</li>
+</ul>
+</div>
+ </td> </tr> </table> 
+
+    </div>
+
+<div id="header">
+    <h1>Lista zg³oszeñ</h1>
+
+
+</div>
+
+<div align="center">
+    <b>Mon Jan 30 2012 15:36:04</b><br>
+
+
+
+</div>
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="bz_buglist" cellspacing="0" cellpadding="4" width="100%">
+    <colgroup>
+      <col class="bz_id_column">
+      <col class="bz_opendate_column">
+      <col class="bz_changeddate_column">
+      <col class="bz_bug_severity_column">
+      <col class="bz_assigned_to_realname_column">
+      <col class="bz_reporter_realname_column">
+      <col class="bz_bug_status_column">
+      <col class="bz_component_column">
+      <col class="bz_short_short_desc_column">
+    </colgroup>
+
+    <tr align="left">
+      <th colspan="1" class="first-child">
+          <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.bug_id&amp;query_based_on=">ID</a>
+      </th>
+
+<th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.creation_ts,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Utworzono</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.delta_ts,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Zmieniono</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.bug_severity,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Waga</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=assigned_to_realname,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Przypisane do</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=reporter_realname,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Zg³aszaj¹cy</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.bug_status,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Status</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=map_components.name,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Komp</a>
+  </th><th colspan="1">
+        
+      <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.short_desc,bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;query_based_on=">Podsumowanie</a>
+  </th>
+
+
+    </tr>
+
+  <tr class="bz_normalny             bz_P3             bz_REOPENED                          bz_secure             bz_secure_mode_implied             bz_row_odd             ">
+             
+
+    <td class="first-child">
+      <a href="show_bug.cgi?id=86021">86021</a>
+      <span style="display: none">[SEC]</span>
+    </td>
+
+    <td style="white-space: nowrap">2011-02-21
+    </td>
+    <td style="white-space: nowrap">12:39:12
+    </td>
+    <td style="white-space: nowrap">norma
+    </td>
+    <td style="white-space: nowrap">Konrad Russa
+    </td>
+    <td style="white-space: nowrap">Tomasz Zawistowski
+    </td>
+    <td style="white-space: nowrap">OTWA
+    </td>
+    <td style="white-space: nowrap">Obs³uga
+    </td>
+    <td >Alerty -DOK
+    </td>
+
+  </tr>
+
+  
+
+
+  
+
+  <tr class="bz_normalny             bz_P3             bz_NEW                          bz_secure             bz_secure_mode_implied             bz_row_even             ">
+             
+
+    <td class="first-child">
+      <a href="show_bug.cgi?id=129207">129207</a>
+      <span style="display: none">[SEC]</span>
+    </td>
+
+    <td style="white-space: nowrap">11:16:26
+    </td>
+    <td style="white-space: nowrap">11:25:07
+    </td>
+    <td style="white-space: nowrap">norma
+    </td>
+    <td style="white-space: nowrap">Konrad Russa
+    </td>
+    <td style="white-space: nowrap">£ukasz Malaszkie...
+    </td>
+    <td style="white-space: nowrap">NOWY
+    </td>
+    <td style="white-space: nowrap">Obs³uga
+    </td>
+    <td >Za³¹czniki przy sprawie
+    </td>
+
+  </tr>
+
+  
+
+
+  
+
+  <tr class="bz_normalny             bz_P3             bz_NEW                          bz_secure             bz_secure_mode_implied             bz_row_odd             ">
+             
+
+    <td class="first-child">
+      <a href="show_bug.cgi?id=129253">129253</a>
+      <span style="display: none">[SEC]</span>
+    </td>
+
+    <td style="white-space: nowrap">14:10:13
+    </td>
+    <td style="white-space: nowrap">14:11:21
+    </td>
+    <td style="white-space: nowrap">norma
+    </td>
+    <td style="white-space: nowrap">Konrad Russa
+    </td>
+    <td style="white-space: nowrap">Robert Sybilski
+    </td>
+    <td style="white-space: nowrap">NOWY
+    </td>
+    <td style="white-space: nowrap">Obs³uga
+    </td>
+    <td >Przekazanie sprawy na automat
+    </td>
+
+  </tr>
+
+  
+    </table>
+
+
+
+
+
+  Znaleziono 3 zg³oszenia.
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<table>
+  <tr>
+      <td valign="middle">
+        <form method="post" action="show_bug.cgi">
+            <input type="hidden" name="id" value="86021">
+            <input type="hidden" name="id" value="129207">
+            <input type="hidden" name="id" value="129253">
+          <input type="hidden" name="format" value="multiple">
+          <input class="btn" type="submit" value="D³ugi format">
+        </form>
+        <form method="post" action="show_bug.cgi">
+            <input type="hidden" name="ctype" value="xml">
+            <input type="hidden" name="id" value="86021">
+            <input type="hidden" name="id" value="129207">
+            <input type="hidden" name="id" value="129253">
+            <input type="hidden" name="excludefield" value="attachmentdata">
+            <input class="btn" type="submit" value="XML">
+        </form>
+
+      </td>
+      
+      <td>&nbsp;</td>
+      
+      <td valign="middle">
+        <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;ctype=csv">CSV</a> |
+        <a href="colchange.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;query_based_on=">Zmieñ&nbsp;kolumny</a> |
+
+          <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id&amp;tweak=1"
+            >Zmieñ&nbsp;kilka&nbsp;zg³oszeñ&nbsp;jednoczeœnie</a>
+          |
+
+
+        
+      </td>
+    
+    <td valign="middle">
+      <a href="query.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl">Edytuj&nbsp;zapytanie</a>
+    </td>
+      
+      <td>&nbsp;</td>
+      
+      <td valign="middle">
+        <form method="get" action="buglist.cgi">
+          <input class="btn" type="submit" value="Zapamiêtaj zapytanie"> jako 
+          <input type="hidden" name="newquery" 
+                 value="bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=krussa%40cyfrowypolsat.pl&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;field-1-0-0=bug_status&amp;field-1-1-0=assigned_to&amp;field-1-1-1=reporter&amp;field0-0-0=bug_status&amp;field0-0-1=reporter&amp;query_format=advanced&amp;remaction=&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-1-1=anyexact&amp;type0-0-0=notequals&amp;type0-0-1=equals&amp;value-1-0-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED&amp;value-1-1-0=krussa%40cyfrowypolsat.pl&amp;value-1-1-1=krussa%40cyfrowypolsat.pl&amp;value0-0-0=UNCONFIRMED&amp;value0-0-1=krussa%40cyfrowypolsat.pl&amp;order=bugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.creation_ts%2Cbugs.bug_status%2Cbugs.priority%2Cmap_assigned_to.login_name%2Cbugs.bug_id">
+          <input type="hidden" name="cmdtype" value="doit">
+          <input type="hidden" name="remtype" value="asnamed">
+          <input type="text" name="newqueryname" size="20"
+                 value=""> 
+        </form> 
+      </td>  
+  </tr>
+
+</table>
+
+
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<div id="useful-links">
+  <div id="links-actions">
+    <div class="label">Akcje:</div>
+    <div class="links">
+        <a href="./">Pocz¹tek</a> |
+        <a href="query.cgi">Szukaj</a> |
+              
+           
+ 
+            
+            | <a href="relogin.cgi">Wyloguj&nbsp;siê</a>&nbsp;krussa&#64;cyfrowypolsat.pl
+
+<br /><form action="buglist.cgi" method="get"
+              onsubmit="if (this.quicksearch.value == '')
+                        { alert('Proszê wprowadziæ najpierw zapytanie.');
+                          return false; } return true;">
+            <input class="txt" type="text" name="quicksearch">
+            <input class="btn" type="submit" value="ZnajdŸ">
+        </form>
+    </div>
+  </div>
+      
+     
+ 
+ 
+ 
+
+
+        
+        
+            
+         
+        
+        
+       
+        
+        
+        
+ 
+ 
+    
+    
+
+    
+<br>
+    
+  <div id="links-saved">
+    <div class="label">
+          Zapisane&nbsp;Zapytania:
+    </div>
+    <div class="links">
+          <a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=krussa%40cyfrowypolsat.pl&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=krussa%40cyfrowypolsat.pl">Moje&nbsp;zg³oszenia</a>
+ | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=92110">92110</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=95698">95698</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=bledy%20nowe">bledy&nbsp;nowe</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Jawad">CO&nbsp;ma&nbsp;Jawad</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Krzysiek">CO&nbsp;ma&nbsp;Krzysiek</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Micha%C5%82">CO&nbsp;ma&nbsp;Micha³</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=CO%20ma%20Seba">CO&nbsp;ma&nbsp;Seba</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cp-serwis">cp&#8209;serwis</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cp%E2%80%91serwis">cp-serwis</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=crm-prod">crm&#8209;prod</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=cti-prod">cti&#8209;prod</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Konsultanci%20i%20Biznes">Konsultanci&nbsp;i&nbsp;Biznes</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Micha%C5%82%20ZAK">Micha³&nbsp;ZAK</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Moje%20zg%C5%82oszenia">Moje&nbsp;zg³oszenia</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Moje%20zg%C5%82oszenie%20%28poprawione%29">Moje&nbsp;zg³oszenie&nbsp;(poprawione)</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20ALL">Na&nbsp;developerach&nbsp;ALL</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20Inne%20Sekcje">Na&nbsp;developerach&nbsp;Inne&nbsp;Sekcje</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20developerach%20SWOK">Na&nbsp;developerach&nbsp;SWOK</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20weryfikacji%20biznesowej">Na&nbsp;weryfikacji&nbsp;biznesowej</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Na%20weryfikacji%20biznesowej%20ALL">Na&nbsp;weryfikacji&nbsp;biznesowej&nbsp;ALL</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Rozwi%C4%85zane%20przez%20CP-serwis%20do%2018%3A00">Rozwi¹zane&nbsp;przez&nbsp;CP&#8209;serwis&nbsp;do&nbsp;18:00</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Rozwi%C4%85zane%20przez%20SWOK%20do%2018%3A00">Rozwi¹zane&nbsp;przez&nbsp;SWOK&nbsp;do&nbsp;18:00</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Utworzone%20do%2018%3A00">Utworzone&nbsp;do&nbsp;18:00</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Wszystko">Wszystko</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Adam">ZAK&nbsp;Adam</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Micha%C5%82">ZAK&nbsp;Micha³</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=ZAK%20Seba">ZAK&nbsp;Seba</a> | 
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Zakonczone">Zakonczone</a>
+    </div>
+  </div>
+
+  
+
+<div id="links-special">
+    <div class="label">&nbsp;</div>
+    <div class="links">
+      <form action="buglist.cgi" method="get">
+        <input type="hidden" name="cmdtype" value="doit">
+        <input type="hidden" name="remtype" value="asnamed">
+        <input type="hidden" name="add_bugids" value="1">
+        <input class="btn" type="submit" value="Dodaj"> Zg³oszenia
+        <input type="text" name="bug_ids" size="8" maxlength="80"> do
+        nowego zapytania:
+        <input type="text" name="newqueryname" size="20" maxlength="64">
+      </form>
+    </div>
+  </div>
+
+  
+</div>
+
+  <div class="outro"></div>
+
+</div>
+
+ </div>
+
+</body>
+</html>
+--------- =_aaaaaaaaaa0--
+WARNING: YOUR BROWSER DOESN'T SUPPORT THIS SERVER-PUSH TECHNOLOGY.

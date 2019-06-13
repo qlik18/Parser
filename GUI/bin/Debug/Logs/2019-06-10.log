@@ -1,0 +1,138 @@
+poniedziałek, 10 czerwca 2019 11:44:56
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 11:44:59
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 11:45:03
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 11:45:07
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 12:02:11
+
+Zgłoszenie ZCC-18910 dodano automatycznie o godzinie 2019-06-10 12:02:11!
+poniedziałek, 10 czerwca 2019 12:02:11
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 12:02:17
+
+addCommentJira string jiraKey ZCC-18910poniedziałek, 10 czerwca 2019 12:02:17
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18910poniedziałek, 10 czerwca 2019 12:08:57
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 12:38:10
+
+Zgłoszenie KKK-4306 dodano automatycznie o godzinie 2019-06-10 12:38:10!
+poniedziałek, 10 czerwca 2019 12:38:10
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 12:38:12
+
+addCommentJira string jiraKey KKK-4306 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 10 czerwca 2019 12:38:12
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4306poniedziałek, 10 czerwca 2019 12:56:11
+
+Zgłoszenie KKK-4308 dodano automatycznie o godzinie 2019-06-10 12:56:11!
+poniedziałek, 10 czerwca 2019 12:56:11
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 12:56:16
+
+Zgłoszenie KKK-4307 dodano automatycznie o godzinie 2019-06-10 12:56:16!
+poniedziałek, 10 czerwca 2019 12:56:16
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 12:56:18
+
+addCommentJira string jiraKey KKK-4308poniedziałek, 10 czerwca 2019 12:56:18
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4308poniedziałek, 10 czerwca 2019 12:56:51
+
+addCommentJira string jiraKey KKK-4307poniedziałek, 10 czerwca 2019 12:56:51
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4307poniedziałek, 10 czerwca 2019 13:43:10
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 10 czerwca 2019 13:43:52
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 10 czerwca 2019 13:48:10
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 10 czerwca 2019 13:50:58
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 13:51:02
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 13:56:10
+
+Zgłoszenie WIND-8382 dodano automatycznie o godzinie 2019-06-10 13:56:10!
+poniedziałek, 10 czerwca 2019 13:56:10
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 13:56:17
+
+addCommentJira string jiraKey WIND-8382poniedziałek, 10 czerwca 2019 13:56:17
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8382poniedziałek, 10 czerwca 2019 14:08:53
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 14:38:13
+
+Zgłoszenie KKK-4310 dodano automatycznie o godzinie 2019-06-10 14:38:13!
+poniedziałek, 10 czerwca 2019 14:38:13
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 14:38:19
+
+addCommentJira string jiraKey KKK-4310poniedziałek, 10 czerwca 2019 14:38:19
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4310poniedziałek, 10 czerwca 2019 15:27:01
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 10 czerwca 2019 15:30:35
+
+Zgłoszenie INFOLINIA-6719 dodano automatycznie o godzinie 2019-06-10 15:30:35!
+poniedziałek, 10 czerwca 2019 15:30:36
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 10 czerwca 2019 15:30:42
+
+addCommentJira string jiraKey INFOLINIA-6719poniedziałek, 10 czerwca 2019 15:30:42
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6719poniedziałek, 10 czerwca 2019 15:46:52
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+

@@ -349,6 +349,14 @@ namespace GUI
             this.bt_dayReportGenerate = new System.Windows.Forms.Button();
             this.tp_PI = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrPi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.INS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PREPROD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iloscInstalacji = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.system = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sumasys = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -442,6 +450,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_DayReport.SuspendLayout();
             this.tp_PI.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -2229,6 +2238,7 @@ namespace GUI
             // tp_PI
             // 
             this.tp_PI.Controls.Add(this.button9);
+            this.tp_PI.Controls.Add(this.dataGridView3);
             this.tp_PI.Controls.Add(this.dataGridView2);
             this.tp_PI.Controls.Add(this.button8);
             this.tp_PI.Controls.Add(this.textBox5);
@@ -2243,6 +2253,56 @@ namespace GUI
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.nrPi,
+            this.INS,
+            this.UAT,
+            this.PREPROD,
+            this.PROD,
+            this.iloscInstalacji});
+            resources.ApplyResources(this.dataGridView3, "dataGridView3");
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // nrPi
+            // 
+            resources.ApplyResources(this.nrPi, "nrPi");
+            this.nrPi.Name = "nrPi";
+            // 
+            // INS
+            // 
+            resources.ApplyResources(this.INS, "INS");
+            this.INS.Name = "INS";
+            // 
+            // UAT
+            // 
+            resources.ApplyResources(this.UAT, "UAT");
+            this.UAT.Name = "UAT";
+            // 
+            // PREPROD
+            // 
+            resources.ApplyResources(this.PREPROD, "PREPROD");
+            this.PREPROD.Name = "PREPROD";
+            // 
+            // PROD
+            // 
+            resources.ApplyResources(this.PROD, "PROD");
+            this.PROD.Name = "PROD";
+            // 
+            // iloscInstalacji
+            // 
+            resources.ApplyResources(this.iloscInstalacji, "iloscInstalacji");
+            this.iloscInstalacji.Name = "iloscInstalacji";
             // 
             // dataGridView2
             // 
@@ -2592,6 +2652,7 @@ namespace GUI
             this.tp_DayReport.PerformLayout();
             this.tp_PI.ResumeLayout(false);
             this.tp_PI.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -2877,6 +2938,14 @@ namespace GUI
         private DataGridViewTextBoxColumn sredniaproblem;
         private Button button9;
         private NetSpell.SpellChecker.Spelling spelling1;
+        private DataGridView dataGridView3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn nrPi;
+        private DataGridViewTextBoxColumn INS;
+        private DataGridViewTextBoxColumn UAT;
+        private DataGridViewTextBoxColumn PREPROD;
+        private DataGridViewTextBoxColumn PROD;
+        private DataGridViewTextBoxColumn iloscInstalacji;
     }
 }
 

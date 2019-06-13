@@ -234,14 +234,14 @@ namespace GUI
                         tb_sla_ileRealizacja.Text = lista.Count(x => x[5] == "0").ToString();
 
                         lista.RemoveAll(x => x[8] == string.Empty);
-                        //if (cb_SLApauza.Checked)
-                        //{
-                        //    lista.RemoveAll(x => x[5] == "1");
-                        //}
-                        //if (cb_SLAWstrzymane.Checked)
-                        //{
-                        //    lista.RemoveAll(x => x[5] == "0");
-                        //}
+                        if (cb_SLApauza.Checked)
+                        {
+                            lista.RemoveAll(x => x[5] == "1");
+                        }
+                        if (cb_SLAWstrzymane.Checked)
+                        {
+                            lista.RemoveAll(x => x[5] == "0");
+                        }
 
                         ///Synchro z JIRY
                         if (cb_SLA_JiraSynchro.Checked && doSynchro)
@@ -271,18 +271,18 @@ namespace GUI
                         {
                             dgv_SlaRaport.Rows.Insert(0, new DataGridViewRow());
 
-                            if (cb_SLApauza.Checked && row[5] == "0")
-                            {
-                                dgv_SlaRaport.Rows[0].Visible = true;
-                            }
-                            else if (cb_SLAWstrzymane.Checked && row[5] == "1")
-                            {
-                                dgv_SlaRaport.Rows[0].Visible = true;
-                            }
-                            else
-                            {
-                                dgv_SlaRaport.Rows[0].Visible = false;
-                            }
+                            //if (cb_SLApauza.Checked && row[5] == "0")
+                            //{
+                            //    dgv_SlaRaport.Rows[0].Visible = true;
+                            //}
+                            //else if (cb_SLAWstrzymane.Checked && row[5] == "1")
+                            //{
+                            //    dgv_SlaRaport.Rows[0].Visible = true;
+                            //}
+                            //else
+                            //{
+                            //    dgv_SlaRaport.Rows[0].Visible = false;
+                            //}
 
                             dgv_SlaRaport.Rows[0].Cells["dgvIssueId"].Value = row[0];  //dgvIssueId
                             dgv_SlaRaport.Rows[0].Cells["dgvJiraNr"].Value = row[1];  //dgvJiraNr
@@ -348,8 +348,8 @@ namespace GUI
                             }
                             /// czyoncall GetBillingBoundEventParamForIssue
                             /// 
-                            var vOncall = gujaczWFS.GetBillingBoundEventParamForIssue(Int32.Parse(row[0]), new int[] {  6816, 6817 });
-                            dgv_SlaRaport["dgvOnCall", 0].Value = vOncall.OrderBy(x => x.EventParamId).FirstOrDefault().Value;
+                            var vOncall = gujaczWFS.GetBillingBoundEventParamForIssue(Int32.Parse(row[0]), new int[] {  6816, 6817});
+                            dgv_SlaRaport["dgvOnCall", 0].Value = vOncall.OrderByDescending(x => x.EventParamId).FirstOrDefault().Value;
 
 
                             int totalTime, timeLeft;
@@ -372,7 +372,7 @@ namespace GUI
                                     dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 198, 239, 206);
 
 
-                                if (vOncall.OrderBy(x => x.EventParamId).FirstOrDefault().Value == "True")
+                                if (vOncall.OrderByDescending(x => x.EventParamId).FirstOrDefault().Value == "True")
                                 {
                                     dgv_SlaRaport.Rows[0].DefaultCellStyle.BackColor = Color.Black;
                                     dgv_SlaRaport.Rows[0].DefaultCellStyle.ForeColor = Color.DarkRed;
@@ -387,7 +387,10 @@ namespace GUI
 
                             }
 
-                            updateTreeNodeForSLA(dgv_SlaRaport.Rows[0]);
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                updateTreeNodeForSLA(dgv_SlaRaport.Rows[0]);
+                            });
 
                         }
                         dgv_SlaRaport.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
@@ -520,10 +523,10 @@ namespace GUI
 
         int _count;
 
-
+        //[MTAThread]
+        [STAThread]
         private void slaUpdateRowInfo(object sender, DoWorkEventArgs e)//(DataGridViewRow row)
-        {
-
+        { 
             DataGridViewRow tmpRow = e.Argument as DataGridViewRow;
 
             //Thread thrJ = new Thread((ThreadStart)delegate
@@ -541,10 +544,12 @@ namespace GUI
                     tmpIssue = zgloszeniaWjira.FirstOrDefault(x => x.Key == tmpRow.Cells[1].ToString());
                     if(isNullObjectOrEmptyString(tmpIssue))
                     {
+                        Issue tmpIssueVar = null;
                         this.Invoke((MethodInvoker)delegate
                         {
-                            tmpIssue = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
+                            tmpIssueVar = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
                         });
+                        tmpIssue = tmpIssueVar;
                     }
 
                     //tmpIssue = jira.GetIssue(tmpRow.Cells[1].Value.ToString());
@@ -582,7 +587,9 @@ namespace GUI
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                ExceptionManager.LogError(ex, Logger.Instance, false);
+            }
 
             if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualnyStan"].Value))
                 dgv_SlaRaport["dgvAktualnyStan", tmpRow.Index].Value = tmpRow.Cells["dgvAktualnyStan"].Value.ToString();// tmpIssue.Status.Name;
@@ -936,57 +943,59 @@ namespace GUI
         }
 
 
-        
+        [STAThread]
         private void cb_SLApauza_CheckedChanged(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
-            {
-                if(row.Index < dgv_SlaRaport.RowCount-1)
-                 row.Visible = false;
-                //else
-                //    MessageBox.Show("Test");
-            }
+            //foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
+            //{
+            //    if(row.Index < dgv_SlaRaport.RowCount-1)
+            //     row.Visible = false;
+            //    //else
+            //    //    MessageBox.Show("Test");
+            //}
                 CheckBox tmp = (CheckBox)sender;
             try
             {
                 if (tmp.Name.Equals("cb_SLApauza") && tmp.Checked)
                 {
                     cb_SLAWstrzymane.CheckState = CheckState.Unchecked;
-                    foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
-                    {
+                    //foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
+                    //{
 
-                        if (row.Cells["dgvPauza"].ToString().Contains("0"))
-                        {
-                            row.Visible = true;
-                        }
-                        //else
-                        //{
-                        //    row.Visible = false;
-                        //}
+                    //    if (row.Cells["dgvPauza"].ToString().Contains("0"))
+                    //    {
+                    //        row.Visible = true;
+                    //    }
+                    //    //else
+                    //    //{
+                    //    //    row.Visible = false;
+                    //    //}
                         
-                    }
+                    //}
 
                 }
                 else if (tmp.Name.Equals("cb_SLAWstrzymane") && tmp.Checked)
                 {
                     cb_SLApauza.CheckState = CheckState.Unchecked;
 
-                    foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
-                    {
-                        if (row.Cells["dgvPauza"].ToString().Contains("1"))
-                        {
-                            row.Visible = true;
-                        }
-                        //else
-                        //{
-                        //    row.Visible = false;
-                        //}
-                    }
+                    //foreach (DataGridViewRow row in dgv_SlaRaport.Rows)
+                    //{
+                    //    if (row.Cells["dgvPauza"].ToString().Contains("1"))
+                    //    {
+                    //        row.Visible = true;
+                    //    }
+                    //    //else
+                    //    //{
+                    //    //    row.Visible = false;
+                    //    //}
+                    //}
                 }
             }
             catch (Exception ex)
             { }
-            dgv_SlaRaport.Refresh();
+            //dgv_SlaRaport.Refresh();
+
+            doByWorker(new DoWorkEventHandler(btn_slaRaport_Load_Click), null, new RunWorkerCompletedEventHandler(SlaReportCompleted));
             //if (!WorkingSla)
             //    btn_slaRaport_Load_Click(this, null);
         }
@@ -1157,22 +1166,31 @@ namespace GUI
             {
                 if (item.Text.Split(' ')[0].Contains(nrJira))
                 {
-                    item.Text += string.Concat(" [", pozostalyCzas, ']');
-                    returnValue = true;
+                    if (!item.Text.Contains("]"))
+                    {
+                        item.Text += string.Concat(" [", pozostalyCzas, ']');
+                        returnValue = true;
+                    }
+
                     break;
                 }
             }
 
-            foreach (TreeNode item in treeView2.Nodes)
+            if (!returnValue)
             {
-                if (item.Text.Split(' ')[0].Contains(nrJira))
+                foreach (TreeNode item in treeView2.Nodes)
                 {
-                    item.Text += string.Concat(" [", pozostalyCzas, ']');
-                    returnValue = true;
+                    if (item.Text.Split(' ')[0].Contains(nrJira))
+                    {
+                        if (!item.Text.Contains("]"))
+                        {
+                            item.Text += string.Concat(" [", pozostalyCzas, ']');
+                            returnValue = true;
+                        }
+                    }
                     break;
                 }
             }
-
             nrJira = null;
             return returnValue;
         }

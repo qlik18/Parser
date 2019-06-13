@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rTZtrZC9ca1IUgB+6zX7sLBKpxLRKWGmpa5GcoTzaU0=</dsig:DigestValue>
+        <dsig:DigestValue>OQDWq0v0Xu6ixSw2LVOtkF/FS7Yoec7j+9tW7VNFbGI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zC95DxS16okGc+JmBlvFeIXt8FtrE0Vu9cUHWnGz7w0=</dsig:DigestValue>
+        <dsig:DigestValue>McNX72Sx1XSwP8cIK1e7d7elS4A93tAljZXa4mi1Hcc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7AmjO/VbjIHi7Qa6EzPaOKzN4sRqqi+fUDtdBLZiR2c=</dsig:DigestValue>
+        <dsig:DigestValue>S24UP5L496nsEHChDC3aW7NFb96B69DFxMgIcn7D6l0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -258,7 +258,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2vZtw829OcxoRTrMS/oftBjO6BmtRD4uz5XhdBvToKQ=</dsig:DigestValue>
+      <dsig:DigestValue>COjTzLfTsgPYVuPmwGWgJ7+0Sz4Rdnjidkn+PNE3ZQ0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="HeliosDevelopers.xml" size="1467" writeableType="applicationData">

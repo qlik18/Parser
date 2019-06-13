@@ -1,0 +1,43 @@
+poniedziałek, 3 czerwca 2019 09:43:45
+
+Zgłoszenie CRM-75998 dodano automatycznie o godzinie 2019-06-03 09:43:45!
+poniedziałek, 3 czerwca 2019 09:43:45
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 3 czerwca 2019 09:43:52
+
+addCommentJira string jiraKey CRM-75998poniedziałek, 3 czerwca 2019 09:43:52
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75998poniedziałek, 3 czerwca 2019 12:13:43
+
+Zgłoszenie CRM-76000 dodano automatycznie o godzinie 2019-06-03 12:13:43!
+poniedziałek, 3 czerwca 2019 12:13:43
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 3 czerwca 2019 12:13:52
+
+addCommentJira string jiraKey CRM-76000poniedziałek, 3 czerwca 2019 12:13:52
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76000poniedziałek, 3 czerwca 2019 12:56:53
+
+Dany klucz nie był obecny w słowniku.poniedziałek, 3 czerwca 2019 13:01:46
+
+Zgłoszenie CRM-76002 dodano automatycznie o godzinie 2019-06-03 13:01:46!
+poniedziałek, 3 czerwca 2019 13:01:47
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 3 czerwca 2019 13:01:53
+
+addCommentJira string jiraKey CRM-76002poniedziałek, 3 czerwca 2019 13:01:53
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76002poniedziałek, 3 czerwca 2019 13:50:12
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 746
+
+--- Main exception: Source ---
+GUI
+
+poniedziałek, 3 czerwca 2019 15:56:05
+
+Dany klucz nie był obecny w słowniku.

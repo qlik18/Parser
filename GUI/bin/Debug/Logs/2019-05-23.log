@@ -1,0 +1,191 @@
+czwartek, 23 maja 2019 11:16:42
+
+Dany klucz nie był obecny w słowniku.czwartek, 23 maja 2019 11:30:19
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:36:19
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:41:55
+
+Zgłoszenie CRM-75922 dodano automatycznie o godzinie 2019-05-23 11:41:55!
+czwartek, 23 maja 2019 11:41:55
+
+Modyfikacja treeItem checkAsAssigneczwartek, 23 maja 2019 11:42:18
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:46:44
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:52:24
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:58:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 11:58:54
+
+Dany klucz nie był obecny w słowniku.czwartek, 23 maja 2019 12:04:29
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:05:01
+
+Dany klucz nie był obecny w słowniku.czwartek, 23 maja 2019 12:10:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:16:28
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:22:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:27:35
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+czwartek, 23 maja 2019 12:28:30
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:34:26
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:40:26
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:46:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:48:41
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 23 maja 2019 12:54:46
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 743
+
+--- Main exception: Source ---
+GUI
+

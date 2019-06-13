@@ -1,0 +1,91 @@
+sobota, 1 czerwca 2019 11:21:50
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-01 11:21:50] 
+
+sobota, 1 czerwca 2019 11:21:50
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-01 11:21:50] 
+
+sobota, 1 czerwca 2019 11:21:56
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-01 11:21:56] 
+
+sobota, 1 czerwca 2019 11:21:56
+
+Modyfikacja treeItemsobota, 1 czerwca 2019 11:21:56
+
+Status Auto: False 
+
+sobota, 1 czerwca 2019 11:21:56
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-01 11:21:56] 
+
+sobota, 1 czerwca 2019 11:21:58
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-01 11:21:58] 
+
+sobota, 1 czerwca 2019 11:21:58
+
+Modyfikacja treeItemsobota, 1 czerwca 2019 11:21:58
+
+Status Auto: False 
+
+sobota, 1 czerwca 2019 11:22:01
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-01 11:22:01] 
+
+sobota, 1 czerwca 2019 11:22:01
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass161_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5354
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+sobota, 1 czerwca 2019 11:22:01
+
+Modyfikacja treeItemsobota, 1 czerwca 2019 11:22:01
+
+Status Auto: False 
+
+sobota, 1 czerwca 2019 11:22:01
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-01 11:22:01] 
+
+sobota, 1 czerwca 2019 11:22:03
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-01 11:22:03] 
+
+sobota, 1 czerwca 2019 11:22:03
+
+--- Main exception: Message ---
+Wartość '4' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass161_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5354
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+sobota, 1 czerwca 2019 11:22:03
+
+Modyfikacja treeItemsobota, 1 czerwca 2019 11:22:03
+
+Status Auto: False 
+
+sobota, 1 czerwca 2019 11:22:09
+
+addCommentJira string jiraKey ZCC-18877sobota, 1 czerwca 2019 11:22:12
+
+addCommentJira string jiraKey ZCC-18876sobota, 1 czerwca 2019 11:22:14
+
+addCommentJira string jiraKey WIND-8360sobota, 1 czerwca 2019 11:23:44
+
+addCommentJira string jiraKey ZCC-18875 NIE DODANO KOMENTARZA BO ISTNIEJE WPIS

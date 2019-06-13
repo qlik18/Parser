@@ -1,0 +1,109 @@
+środa, 22 maja 2019 09:37:35
+
+Zgłoszenie KKK-4261 dodano automatycznie o godzinie 2019-05-22 09:37:35!
+środa, 22 maja 2019 09:37:35
+
+Modyfikacja treeItem checkAsAssigneśroda, 22 maja 2019 09:37:44
+
+addCommentJira string jiraKey KKK-4261środa, 22 maja 2019 09:37:44
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4261środa, 22 maja 2019 09:44:27
+
+Dany klucz nie był obecny w słowniku.środa, 22 maja 2019 10:14:19
+
+Dany klucz nie był obecny w słowniku.środa, 22 maja 2019 10:30:38
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 22 maja 2019 10:55:22
+
+Zgłoszenie CRM-75911 dodano automatycznie o godzinie 2019-05-22 10:55:22!
+środa, 22 maja 2019 10:55:23
+
+Modyfikacja treeItem checkAsAssigneśroda, 22 maja 2019 10:55:29
+
+addCommentJira string jiraKey CRM-75911środa, 22 maja 2019 10:55:29
+
+addCommentJira object sender, DoWorkEventArgs e CRM-75911środa, 22 maja 2019 13:44:27
+
+Zgłoszenie WIND-8337 dodano automatycznie o godzinie 2019-05-22 13:44:27!
+środa, 22 maja 2019 13:44:27
+
+Modyfikacja treeItem checkAsAssigneśroda, 22 maja 2019 13:44:32
+
+Zgłoszenie WIND-8338 dodano automatycznie o godzinie 2019-05-22 13:44:32!
+środa, 22 maja 2019 13:44:32
+
+Modyfikacja treeItem checkAsAssigneśroda, 22 maja 2019 13:44:34
+
+addCommentJira string jiraKey WIND-8337środa, 22 maja 2019 13:44:34
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8337środa, 22 maja 2019 13:45:08
+
+addCommentJira string jiraKey WIND-8338środa, 22 maja 2019 13:45:08
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8338środa, 22 maja 2019 14:03:11
+
+Dany klucz nie był obecny w słowniku.środa, 22 maja 2019 14:03:15
+
+Dany klucz nie był obecny w słowniku.środa, 22 maja 2019 14:26:28
+
+Zgłoszenie ZCC-18798 dodano automatycznie o godzinie 2019-05-22 14:26:28!
+środa, 22 maja 2019 14:26:28
+
+Modyfikacja treeItem checkAsAssigneśroda, 22 maja 2019 14:26:34
+
+addCommentJira string jiraKey ZCC-18798środa, 22 maja 2019 14:26:34
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18798środa, 22 maja 2019 15:28:58
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5489
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 22 maja 2019 15:29:25
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5489
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 22 maja 2019 15:31:15
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName)
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 22 maja 2019 15:32:05
+
+--- Main exception: Message ---
+Element o tym samym kluczu został już dodany.
+
+--- Main exception: StackTrace ---
+   w System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   w System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName)
+
+--- Main exception: Source ---
+mscorlib
+

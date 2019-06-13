@@ -10,6 +10,7 @@ using LogicLayer.Interface;
 using Entities;
 using Entities.Enums;
 using Atlassian.Jira;
+using System.Diagnostics;
 
 namespace GUI
 {
@@ -282,6 +283,7 @@ namespace GUI
                 {
                     list.First(x => x.BoundEventParamId == item.EventParamId).BoundEventParam = item;
                     //list.Last(x => x.BoundEventParamId == item.EventParamId).BoundEventParam = item;
+                    Debug.WriteLine(string.Format("{0} - {1} - {2}", item.EventParamId, item.Value, item.DBValue));
                 }
                 //}
 

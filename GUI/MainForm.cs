@@ -5481,7 +5481,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
                     else
                     {
-                        if(isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
+                        if(!isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
                             issueMove[trName].Remove(issue.Idnumber);
                     }
 
@@ -6683,66 +6683,74 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// <param name="tr"></param>
         private void ModelerForm_sla_ActionFinish(string issueid, string eventName, TreeView tr)
         {
-            if (!issueMove.ContainsKey(tr.Name))
+            try
             {
-                issueMove[tr.Name] = new Dictionary<string, Dictionary<int, string>>();
-            }
-
-            if (wmf != null)
-                wmf.Close();
-            GetActionForIssues(tr);
-            cms_IssuePopup.Items.Clear();
-            var tmp2 = issueMove[tr.Name][issueid].ToList();
-            //if (tmp2.First().Value.Count!=0)
-            foreach (var item in tmp2)
-            {
-                //cms_IssuePopup.Items.Add(item.Value + " (" + item.Key.ToString() + ")");
-                ToolStripMenuItem m1 = new ToolStripMenuItem(item.Value + " (" + item.Key.ToString() + ")");
-                m1.Click += new EventHandler(m1_Click);
-                m1.Tag = item.Key.ToString();
-                cms_IssuePopup.Items.Add(m1);
-            }
-            if (tr.SelectedNode != null)
-            {
-                tr.SelectedNode.Text = tr.SelectedNode.Text.Split(' ').First() + ' ' + eventName;
-            }
-
-            //zmiana opisu w ostanim kroku
-            //dgv_SlaRaport.CurrentRow.Cells["dgvAkcjaBPM"].Value = eventName;
-            //dgv_SlaRaport.CurrentRow.Cells["dgvOdpowiedzialny"].Value = toolStripDropDownButton1.Text;
-            //var v = this.Tag.GetType();
-            //autoCheck = //(bool)(this.Tag) == null ? false : true;
-            //bool autoCheck = true;
-            //if (autoCheck)
-            //{
-            //    //if ((bool)this.Tag == true)
-            //    {
-            foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
-            {
-                if (item.Cells["dgvJiraNr"].Value == issueid)
+                if (!issueMove.ContainsKey(tr.Name))
                 {
-                    
-                    UserBpmJira ubj;
-                    item.Cells["dgvAkcjaBPM"].Value = eventName;
-                    
-
-                    if (item.Cells["dgvAktualniePrzydzielony"].Value != null 
-                        && getUserBpmJira(item.Cells["dgvAktualniePrzydzielony"].Value.ToString(), out ubj, LoginParamType.Login))
-                    {
-                        item.Cells["dgvOdpowiedzialny"].Value = ubj.UserJira.FullName;
-
-                    }
-                    else
-                    {
-                        item.Cells["dgvOdpowiedzialny"].Value = gujaczWFS.getUser().FullName;
-                    }
-                    break;
+                    issueMove[tr.Name] = new Dictionary<string, Dictionary<int, string>>();
                 }
-            }
-            //    }
-            //}
-            //CurrentRow.Cells["dgvAkcjaBPM"].Value = eventName;
 
+                if (wmf != null)
+                    wmf.Close();
+                GetActionForIssues(tr);
+                cms_IssuePopup.Items.Clear();
+                if (!issueMove[tr.Name].ContainsKey(issueid))
+                    throw new Exception(string.Format("issueMove[{0}] nie zawiera IssueId={1}", tr.Name, issueid));
+                var tmp2 = issueMove[tr.Name][issueid].ToList();
+                //if (tmp2.First().Value.Count!=0)
+                foreach (var item in tmp2)
+                {
+                    //cms_IssuePopup.Items.Add(item.Value + " (" + item.Key.ToString() + ")");
+                    ToolStripMenuItem m1 = new ToolStripMenuItem(item.Value + " (" + item.Key.ToString() + ")");
+                    m1.Click += new EventHandler(m1_Click);
+                    m1.Tag = item.Key.ToString();
+                    cms_IssuePopup.Items.Add(m1);
+                }
+                if (tr.SelectedNode != null)
+                {
+                    tr.SelectedNode.Text = tr.SelectedNode.Text.Split(' ').First() + ' ' + eventName;
+                }
+
+                //zmiana opisu w ostanim kroku
+                //dgv_SlaRaport.CurrentRow.Cells["dgvAkcjaBPM"].Value = eventName;
+                //dgv_SlaRaport.CurrentRow.Cells["dgvOdpowiedzialny"].Value = toolStripDropDownButton1.Text;
+                //var v = this.Tag.GetType();
+                //autoCheck = //(bool)(this.Tag) == null ? false : true;
+                //bool autoCheck = true;
+                //if (autoCheck)
+                //{
+                //    //if ((bool)this.Tag == true)
+                //    {
+                foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
+                {
+                    if (item.Cells["dgvJiraNr"].Value == issueid)
+                    {
+
+                        UserBpmJira ubj;
+                        item.Cells["dgvAkcjaBPM"].Value = eventName;
+
+
+                        if (item.Cells["dgvAktualniePrzydzielony"].Value != null
+                            && getUserBpmJira(item.Cells["dgvAktualniePrzydzielony"].Value.ToString(), out ubj, LoginParamType.Login))
+                        {
+                            item.Cells["dgvOdpowiedzialny"].Value = ubj.UserJira.FullName;
+
+                        }
+                        else
+                        {
+                            item.Cells["dgvOdpowiedzialny"].Value = gujaczWFS.getUser().FullName;
+                        }
+                        break;
+                    }
+                }
+                //    }
+                //}
+                //CurrentRow.Cells["dgvAkcjaBPM"].Value = eventName;
+            }
+            catch(Exception ex)
+            {
+                ExceptionManager.LogError(ex, Logger.Instance, false);
+            }
         }
          
 
@@ -6926,6 +6934,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             try
             {
                 Jira jbill;
+
                 jbill = Jira.CreateRestClient(adress, Login, Password);
 
                 jbill.GetIssuePriorities();
@@ -6943,89 +6952,6 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void button3_Click(object sender, EventArgs e)
         {
 
-            webBrowser1.DocumentText = @"<!DOCTYPE html>
-<html>
-<head>
-<style>
-table { 
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: black;
-}
-</style>
-</head>
-<body><p>
-	<strong>Witam, </strong>
-</p>
-<p>
-	<strong>&nbsp;</strong>
-</p>
-<p>
-	<strong>W dniach 28.02.2017 18:00 - 01.03.2017 18:00 wystąpiły następujące problemy z dostępnością wspieranych środowisk:</strong>
-</p>
-<p>&nbsp;</p>
-<table width=""945"" border = ""1"" border-color = ""black"">
-	<tbody>
-		<tr>
-			<td width=""113"">
-				<p>Nr awarii</p>
-			</td>
-			<td width=""86"">
-				<p>Data początkowa</p>
-			</td>
-			<td width=""87"">
-				<p>Data zakończenia</p>
-			</td>
-			<td width=""66"">
-				<p>Czas awarii (minuty)</p>
-			</td>
-			<td width=""593"">
-				<p>Uwagi</p>
-			</td>
-		</tr>
-		<tr>
-			<td width=""113"">
-				<p>
-					<a href=""https://jira/browse/WIND-6012"">WIND-6012</a>
-				</p>
-			</td>
-			<td width=""86"">
-				<p>2017-03-01 01:45</p>
-			</td>
-			<td width=""87"">
-				<p>2017-03-01 02:03</p>
-			</td>
-			<td width=""66"">
-				<p>18</p>
-			</td>
-			<td width=""593"">
-				<p>Problem z zasilaniem WIND na kroku: spWindykacjaDTHImportFormyWlasnosciSprzetu</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>
-	<strong>Dane o zgłoszeniach od dnia 18:00 28.02.2017 do dnia 18:00 01.03.2017</strong>
-</p>
-<p>Liczba obsłużonych zgłoszeń Jira: 85<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba nowych zgłoszeń Jira: 46<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba ponownie otwartych zgłoszeń: 11<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń z poprzednich dni: 28</p>
-<p>
-	<strong>OBSZAR CRM: </strong>
-</p>
-<p>Liczba nowych zgłoszeń Jira: 19<br />
-Liczba ponownie otwartych zgłoszeń: 4<br />
-Liczba zgłoszeń z poprzednich dni: 13<br />
-Liczba zgłoszeń zamkniętych: 30<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń rozwiązanych samodzielnie: 18<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń przekazanych do III linii: 0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń przekazanych do innej II linii: 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń odrzuconych: 8<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń zamkniętych jako duplikat: 0<br />
-Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń w konsultacji biznesowej: 0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Liczba zgłoszeń w konsultacji deweloperskiej: 1</p>
-<p>&nbsp;</p>
-</body>
-</html>
-
-            ";
         }
 
         private void bt_awaria_zapisz_Click(object sender, EventArgs e)
@@ -7309,6 +7235,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
                             if (item2.Author == login)
                             {
+                                var user = jira.GetUserAsync(item2.Author).Result;
                                 //Worklog wl2 = new Worklog(item2.TimeSpent, (DateTime)item2.StartDate, "P.K.");
                                 //item.AddWorklog(wl2);
 
@@ -7336,8 +7263,7 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
                                 }
 
                                 ileHsuma += ileH;
-
-                                dataGridView1.Rows.Add(item2.Author, item.Key.Value, item2.TimeSpent, ((double)ileH) / 60, ileH, item2.StartDate.Value.ToShortDateString(), item2.Comment.Replace("\n", " "), ((double)ileHsuma) / 60, czyDS, item2.CreateDate.ToString(), item2.UpdateDate.ToString());
+                                dataGridView1.Rows.Add(user.DisplayName, item.Key.Value, item2.TimeSpent, ((double)ileH) / 60, ileH, item2.StartDate.Value.ToShortDateString(), item2.Comment.Replace("\n", " "), ((double)ileHsuma) / 60, czyDS, item2.CreateDate.ToString(), item2.UpdateDate.ToString());
                             }
                         }
                     }
@@ -8052,7 +7978,96 @@ Liczba zgłoszeń w konsultacji: 1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
         private void button9_Click(object sender, EventArgs e)
         {
-            var v = jira;
+            var issue = jira.GetIssuesFromFilter("PI");
+            textBox5.Clear();
+            foreach (var item in issue)
+            {
+                textBox5.AppendText(item.Key.Value);
+                Debug.Write(item.Key);
+                //item.
+                foreach (var logs in item.GetChangeLogs())
+                {
+                    if (logs.CreatedDate < DateTime.Parse("2019-05-01")
+                        || logs.CreatedDate > DateTime.Parse("2019-06-01"))
+                        break;
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.Author.DisplayName);
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.CreatedDate.ToString());
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText(logs.Id);
+                    textBox5.AppendText("\n");
+                    textBox5.AppendText("----");
+
+                    Debug.Write(logs.Author);
+                    Debug.Write(logs.CreatedDate);
+                    Debug.Write(logs.Id);
+                    Debug.Write("----");
+
+                    string ins = "";
+                    string uat = "";
+                    string preprod = "";
+                    string prod = "";
+
+                    int ilosinstalacji = 0;
+
+                    foreach (var componet in logs.Items)
+                    {
+                        if (componet.FieldName == "status"
+                            || componet.FieldName == "assigne"
+                            || componet.FieldName == "Grupa wsparcia"
+                            || componet.FieldName.Contains("Wykonawca")
+                            //|| componet.FieldName == "assigne"
+                            )
+                        {
+
+                            if (componet.FieldName.Contains("Wykonawca")
+                               //|| componet.FieldName == "assigne"
+                               )
+                            {
+                                if (componet.FieldName.Contains("Wykonawca ins"))
+                                    ins = componet.ToValue;
+                                if (componet.FieldName.Contains("Wykonawca UAT"))
+                                    uat = componet.ToValue;
+                                if (componet.FieldName.Contains("Wykonawca PRE-PROD"))
+                                    preprod = componet.ToValue;
+                                if (componet.FieldName.Contains("Wykonawca PROD"))
+                                    prod = componet.ToValue;
+                                ilosinstalacji++;
+                            }
+
+                            //    textBox5.AppendText(componet.FieldName);
+                            //textBox5.AppendText("\n");
+                            //if (!isNullObjectOrEmptyString(componet.FromValue))
+                            //    textBox5.AppendText(componet.FromValue.ToString());
+                            //else
+                            //    textBox5.AppendText("FromValue null");
+                            //textBox5.AppendText("\n");
+                            //if (!isNullObjectOrEmptyString(componet.ToValue))
+                            //    textBox5.AppendText(componet.ToValue.ToString());
+                            //else
+                            //    textBox5.AppendText("ToValue null");
+                            //textBox5.AppendText("\n");
+                            //textBox5.AppendText("******");
+
+                            //Debug.Write(componet.FieldName);
+                            //Debug.Write(componet.FromValue);
+                            //Debug.Write(componet.ToValue);
+                            //Debug.Write("******");
+
+                            
+                        }
+                    }
+                    Debug.Write("----");
+
+                    dataGridView3.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
+                }
+            }
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
