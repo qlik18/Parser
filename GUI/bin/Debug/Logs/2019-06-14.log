@@ -1,0 +1,608 @@
+piątek, 14 czerwca 2019 08:34:30
+
+Zgłoszenie CRM-76078 dodano automatycznie o godzinie 2019-06-14 08:34:30!
+piątek, 14 czerwca 2019 08:34:30
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 08:34:37
+
+addCommentJira string jiraKey CRM-76078piątek, 14 czerwca 2019 08:34:37
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76078piątek, 14 czerwca 2019 08:34:59
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18940
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:35:02
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18942
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:35:05
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18943
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:35:09
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18944
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:35:12
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18945
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:35:16
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18946
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:40:14
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+piątek, 14 czerwca 2019 08:40:44
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 14 czerwca 2019 08:40:48
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76079
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 08:41:14
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+piątek, 14 czerwca 2019 09:08:52
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 14 czerwca 2019 09:09:32
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 14 czerwca 2019 09:52:03
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 09:58:05
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:03:30
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:09:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:15:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:21:31
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:27:33
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:33:34
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:39:30
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:45:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:51:43
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:57:17
+
+Zgłoszenie KKK-4323 dodano automatycznie o godzinie 2019-06-14 10:57:17!
+piątek, 14 czerwca 2019 10:57:17
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 10:57:21
+
+addCommentJira string jiraKey KKK-4323piątek, 14 czerwca 2019 10:57:21
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4323piątek, 14 czerwca 2019 10:57:45
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 10:57:51
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:03:36
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:03:41
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:09:30
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:09:38
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:15:28
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:15:36
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:21:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:21:41
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:27:36
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:27:40
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:27:46
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=KKK-4323
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:33:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:33:32
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:39:35
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:39:42
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 11:43:53
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+piątek, 14 czerwca 2019 11:51:18
+
+Zgłoszenie KKK-4321 dodano automatycznie o godzinie 2019-06-14 11:51:18!
+piątek, 14 czerwca 2019 11:51:18
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 11:51:28
+
+addCommentJira string jiraKey KKK-4321piątek, 14 czerwca 2019 11:51:28
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4321piątek, 14 czerwca 2019 12:15:15
+
+Zgłoszenie ZCC-18947 dodano automatycznie o godzinie 2019-06-14 12:15:15!
+piątek, 14 czerwca 2019 12:15:16
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 12:15:28
+
+addCommentJira string jiraKey ZCC-18947piątek, 14 czerwca 2019 12:15:28
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18947piątek, 14 czerwca 2019 13:27:41
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18947
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 13:57:17
+
+Zgłoszenie ZCC-18948 dodano automatycznie o godzinie 2019-06-14 13:57:17!
+piątek, 14 czerwca 2019 13:57:17
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 13:57:23
+
+addCommentJira string jiraKey ZCC-18948piątek, 14 czerwca 2019 13:57:23
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18948piątek, 14 czerwca 2019 14:09:17
+
+Zgłoszenie WIND-8388 dodano automatycznie o godzinie 2019-06-14 14:09:17!
+piątek, 14 czerwca 2019 14:09:17
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 14:09:24
+
+addCommentJira string jiraKey WIND-8388piątek, 14 czerwca 2019 14:09:24
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8388piątek, 14 czerwca 2019 14:15:40
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=WIND-8388
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 14:27:35
+
+Zgłoszenie ZCC-18949 dodano automatycznie o godzinie 2019-06-14 14:27:35!
+piątek, 14 czerwca 2019 14:27:35
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 14:27:38
+
+addCommentJira string jiraKey ZCC-18949piątek, 14 czerwca 2019 14:27:38
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18949piątek, 14 czerwca 2019 14:39:16
+
+Zgłoszenie CRM-76081 dodano automatycznie o godzinie 2019-06-14 14:39:16!
+piątek, 14 czerwca 2019 14:39:16
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 14:39:24
+
+addCommentJira string jiraKey CRM-76081piątek, 14 czerwca 2019 14:39:24
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76081piątek, 14 czerwca 2019 14:51:17
+
+Zgłoszenie CRM-76082 dodano automatycznie o godzinie 2019-06-14 14:51:17!
+piątek, 14 czerwca 2019 14:51:17
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 14:51:23
+
+addCommentJira string jiraKey CRM-76082piątek, 14 czerwca 2019 14:51:23
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76082piątek, 14 czerwca 2019 15:10:05
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76082
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 14 czerwca 2019 15:45:15
+
+Zgłoszenie ZCC-18950 dodano automatycznie o godzinie 2019-06-14 15:45:15!
+piątek, 14 czerwca 2019 15:45:16
+
+Modyfikacja treeItem checkAsAssignepiątek, 14 czerwca 2019 15:45:47
+
+addCommentJira string jiraKey ZCC-18950piątek, 14 czerwca 2019 15:45:47
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18950piątek, 14 czerwca 2019 15:51:53
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 548
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 14 czerwca 2019 15:52:01
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 680
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 14 czerwca 2019 15:55:21
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+

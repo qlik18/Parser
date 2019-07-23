@@ -1,0 +1,1682 @@
+środa, 26 czerwca 2019 07:49:10
+
+Modyfikacja treeItem checkAsAssigneśroda, 26 czerwca 2019 07:49:24
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 07:49:25
+
+addCommentJira string jiraKey INFOLINIA-6740środa, 26 czerwca 2019 07:49:25
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6740środa, 26 czerwca 2019 07:52:38
+
+Modyfikacja treeItem checkAsAssigneśroda, 26 czerwca 2019 07:52:40
+
+addCommentJira string jiraKey INFOLINIA-6741środa, 26 czerwca 2019 07:52:40
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6741środa, 26 czerwca 2019 07:52:44
+
+Modyfikacja treeItem checkAsAssigneśroda, 26 czerwca 2019 07:52:46
+
+addCommentJira string jiraKey ZCC-19005środa, 26 czerwca 2019 07:52:46
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19005środa, 26 czerwca 2019 07:52:51
+
+Modyfikacja treeItem checkAsAssigneśroda, 26 czerwca 2019 07:52:55
+
+addCommentJira string jiraKey CRM-76128środa, 26 czerwca 2019 07:52:55
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76128środa, 26 czerwca 2019 07:53:02
+
+Modyfikacja treeItem checkAsAssigneśroda, 26 czerwca 2019 07:53:05
+
+addCommentJira string jiraKey ZCC-19006środa, 26 czerwca 2019 07:53:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19006środa, 26 czerwca 2019 07:53:29
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-26 07:53:29] 
+
+środa, 26 czerwca 2019 07:53:29
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-26 07:53:29] 
+
+środa, 26 czerwca 2019 07:53:36
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-26 07:53:36] 
+
+środa, 26 czerwca 2019 07:53:36
+
+Modyfikacja treeItemśroda, 26 czerwca 2019 07:53:36
+
+Status Auto: False 
+
+środa, 26 czerwca 2019 07:53:36
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-26 07:53:36] 
+
+środa, 26 czerwca 2019 07:53:38
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-26 07:53:38] 
+
+środa, 26 czerwca 2019 07:53:38
+
+Modyfikacja treeItemśroda, 26 czerwca 2019 07:53:38
+
+Status Auto: False 
+
+środa, 26 czerwca 2019 07:53:38
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-26 07:53:38] 
+
+środa, 26 czerwca 2019 07:53:41
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-26 07:53:41] 
+
+środa, 26 czerwca 2019 07:53:41
+
+Modyfikacja treeItemśroda, 26 czerwca 2019 07:53:41
+
+Status Auto: False 
+
+środa, 26 czerwca 2019 07:53:41
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-06-26 07:53:41] 
+
+środa, 26 czerwca 2019 07:53:43
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-26 07:53:43] 
+
+środa, 26 czerwca 2019 07:53:43
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass161_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5354
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 07:53:43
+
+Modyfikacja treeItemśroda, 26 czerwca 2019 07:53:43
+
+Status Auto: False 
+
+środa, 26 czerwca 2019 07:53:46
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-06-26 07:53:46] 
+
+środa, 26 czerwca 2019 07:53:46
+
+--- Main exception: Message ---
+Wartość '5' nie jest prawidłową wartością dla 'Value'. Wartość 'Value' powinna znajdować się w zakresie od 'minimum' do 'maximum'.
+Nazwa parametru: Value
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ProgressBar.set_Value(Int32 value)
+   w GUI.MainForm.<>c__DisplayClass161_0.<pb_UpdateProgressBar>b__0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5354
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 07:53:46
+
+Modyfikacja treeItemśroda, 26 czerwca 2019 07:53:46
+
+Status Auto: False 
+
+środa, 26 czerwca 2019 07:53:53
+
+addCommentJira string jiraKey ZCC-19005 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 26 czerwca 2019 07:53:54
+
+addCommentJira string jiraKey ZCC-19006 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 26 czerwca 2019 07:53:54
+
+addCommentJira string jiraKey INFOLINIA-6741 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 26 czerwca 2019 07:53:55
+
+addCommentJira string jiraKey CRM-76128 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 26 czerwca 2019 07:53:55
+
+addCommentJira string jiraKey INFOLINIA-6740 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 26 czerwca 2019 07:55:00
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 07:55:04
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76128
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 07:55:07
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6740
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 07:55:10
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6741
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 08:00:57
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 08:07:01
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 08:12:58
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19005
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 08:13:00
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19006
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 08:28:44
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 26 czerwca 2019 08:55:07
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76130
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 09:00:58
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 09:12:52
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 09:44:05
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 09:49:55
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 09:56:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:01:49
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:07:24
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:17:04
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:18:50
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:24:36
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:34
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:35
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:28:35
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 10:30:54
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 10:31:45
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 26 czerwca 2019 10:50:42
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 10:56:52
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 11:01:51
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 11:07:24
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 26 czerwca 2019 11:24:54
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 11:24:54
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 12:52:21
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:34
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:36
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:38
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:41
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:48
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 12:52:50
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Issue.GetChangeLogs() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Issue.cs:wiersz 696
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 785
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 26 czerwca 2019 13:47:51
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'supportbpm.billennium.pl'
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 228
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 14:18:02
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 558
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 26 czerwca 2019 14:41:15
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:15
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:16
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:16
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:16
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:21
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:22
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:23
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:44
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:44
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:51
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:51
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:52
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:52
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:41:53
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:19
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:19
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:19
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:20
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:20
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:22
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:23
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:24
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:34
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:34
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:35
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:35
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:37
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:38
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:43:38
+
+--- Main exception: Message ---
+Co najmniej jeden obiekt musi implementować element IComparable.
+
+--- Main exception: StackTrace ---
+   w System.Collections.Comparer.Compare(Object a, Object b)
+   w System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   w System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   w System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   w System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   w System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 134
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 26 czerwca 2019 14:47:55
+
+--- Main exception: Message ---
+Sekwencja nie zawiera elementów.
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 142
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 14:48:17
+
+--- Main exception: Message ---
+Sekwencja nie zawiera elementów.
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 142
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 14:49:20
+
+--- Main exception: Message ---
+Sekwencja nie zawiera elementów.
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 142
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 14:49:35
+
+--- Main exception: Message ---
+Sekwencja nie zawiera elementów.
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 142
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+System.Core
+
+środa, 26 czerwca 2019 14:50:06
+
+--- Main exception: Message ---
+Sekwencja nie zawiera elementów.
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 142
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6307
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6314
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 697
+
+--- Main exception: Source ---
+System.Core
+

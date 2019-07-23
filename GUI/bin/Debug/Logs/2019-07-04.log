@@ -1,0 +1,450 @@
+czwartek, 4 lipca 2019 08:52:36
+
+Zgłoszenie KKK-4343 dodano automatycznie o godzinie 2019-07-04 08:52:36!
+czwartek, 4 lipca 2019 08:52:36
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 08:52:43
+
+addCommentJira string jiraKey KKK-4343czwartek, 4 lipca 2019 08:52:43
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4343czwartek, 4 lipca 2019 08:58:37
+
+Zgłoszenie ZCC-19032 dodano automatycznie o godzinie 2019-07-04 08:58:37!
+czwartek, 4 lipca 2019 08:58:37
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 08:58:43
+
+addCommentJira string jiraKey ZCC-19032czwartek, 4 lipca 2019 08:58:43
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19032czwartek, 4 lipca 2019 09:04:38
+
+Zgłoszenie ZCC-19033 dodano automatycznie o godzinie 2019-07-04 09:04:38!
+czwartek, 4 lipca 2019 09:04:39
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 09:04:45
+
+addCommentJira string jiraKey ZCC-19033czwartek, 4 lipca 2019 09:04:45
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19033czwartek, 4 lipca 2019 09:07:33
+
+Zgłoszenie CRM-76243 dodano automatycznie o godzinie 2019-07-04 09:07:33!
+czwartek, 4 lipca 2019 09:07:33
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 09:07:39
+
+addCommentJira string jiraKey CRM-76243czwartek, 4 lipca 2019 09:07:39
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76243czwartek, 4 lipca 2019 09:43:35
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19033
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 09:55:17
+
+Zgłoszenie ZCC-19034 dodano automatycznie o godzinie 2019-07-04 09:55:17!
+czwartek, 4 lipca 2019 09:55:17
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 09:55:25
+
+addCommentJira string jiraKey ZCC-19034czwartek, 4 lipca 2019 09:55:25
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19034czwartek, 4 lipca 2019 10:07:30
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+
+czwartek, 4 lipca 2019 11:00:20
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 4 lipca 2019 11:01:06
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 544
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:01:49
+
+--- Main exception: Message ---
+Wartość nie może być zerowa.
+Nazwa parametru: source
+
+--- Main exception: StackTrace ---
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 674
+
+--- Main exception: Source ---
+System.Core
+
+czwartek, 4 lipca 2019 11:31:16
+
+Zgłoszenie ZCC-19035 dodano automatycznie o godzinie 2019-07-04 11:31:16!
+czwartek, 4 lipca 2019 11:31:17
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 11:31:23
+
+addCommentJira string jiraKey ZCC-19035czwartek, 4 lipca 2019 11:31:23
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19035czwartek, 4 lipca 2019 11:37:30
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19035
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:19:22
+
+Zgłoszenie CRM-76245 dodano automatycznie o godzinie 2019-07-04 12:19:22!
+czwartek, 4 lipca 2019 12:19:22
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 12:19:30
+
+addCommentJira string jiraKey CRM-76245czwartek, 4 lipca 2019 12:19:30
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76245czwartek, 4 lipca 2019 12:31:19
+
+Zgłoszenie CRM-76251 dodano automatycznie o godzinie 2019-07-04 12:31:19!
+czwartek, 4 lipca 2019 12:31:20
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 12:31:26
+
+addCommentJira string jiraKey CRM-76251czwartek, 4 lipca 2019 12:31:26
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76251czwartek, 4 lipca 2019 12:37:48
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76251
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:43:45
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76250
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:43:48
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76249
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:43:53
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76248
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:43:58
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76245
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:44:02
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76246
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 12:44:06
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76247
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+czwartek, 4 lipca 2019 14:07:21
+
+Zgłoszenie KKK-4345 dodano automatycznie o godzinie 2019-07-04 14:07:21!
+czwartek, 4 lipca 2019 14:07:21
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 14:07:26
+
+Zgłoszenie KKK-4346 dodano automatycznie o godzinie 2019-07-04 14:07:26!
+czwartek, 4 lipca 2019 14:07:26
+
+Modyfikacja treeItem checkAsAssigneczwartek, 4 lipca 2019 14:07:28
+
+addCommentJira string jiraKey KKK-4345czwartek, 4 lipca 2019 14:07:28
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4345czwartek, 4 lipca 2019 14:07:33
+
+addCommentJira string jiraKey KKK-4346czwartek, 4 lipca 2019 14:07:33
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4346czwartek, 4 lipca 2019 14:54:18
+
+--- Main exception: Message ---
+Response Content: <html>
+
+<head>
+    <title>Unauthorized (401)</title>
+    
+
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">
+    (function() {
+        var contextPath = '';
+        var eventBuffer = [];
+
+        function printDeprecatedMsg() {
+            if (console && console.warn) {
+                console.warn('DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.');
+            }
+        }
+
+        function sendEvent(analytics, postfix) {
+            analytics.send({
+                name: 'js.globals.contextPath.' + postfix
+            });
+        }
+
+        function sendDeprecatedEvent(postfix) {
+            try {
+                var analytics = require('jira/analytics');
+                if (eventBuffer.length) {
+                    eventBuffer.forEach(function(value) {
+                        sendEvent(analytics, value);
+                    });
+                    eventBuffer = [];
+                }
+
+                if (postfix) {
+                    sendEvent(analytics, postfix);
+                }
+            } catch(ex) {
+                eventBuffer.push(postfix);
+                setTimeout(sendDeprecatedEvent, 1000);
+            }
+        }
+
+        Object.defineProperty(window, 'contextPath', {
+            get: function() {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('get');
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('set');
+                contextPath = value;
+            }
+        });
+    })();
+
+</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"jira.onboarding.cyoa\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"com.atlassian.feedback.feedback-button-move-to-header-enable\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"jira.priorities.per.project.jsd\":true,\"jira.instrumentation.laas\":false,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"com.atlassian.jira.issuetable.draggable\":true,\"jira.create.linked.issue\":true,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\":false,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"jira.jql.suggestrecentfields\":false,\"com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\":true,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"jira.jql.smartautoselectfirst\":false,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.priorities.per.project\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true,\"jira.renderer.consider.variable.format\":true}}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jcore-docs-076/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:web-item-response-renderer.web-item-actions-data-provider"]="[]";
+WRM._unparsedData["jira.webresources:dateFormatProvider.allFormats"]="{\"dateFormats\":{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"p.n.e.\",\"n.e.\"],\"months\":[\"stycznia\",\"lutego\",\"marca\",\"kwietnia\",\"maja\",\"czerwca\",\"lipca\",\"sierpnia\",\"wrze\u015bnia\",\"pa\u017adziernika\",\"listopada\",\"grudnia\"],\"monthsShort\":[\"sty\",\"lut\",\"mar\",\"kwi\",\"maj\",\"cze\",\"lip\",\"sie\",\"wrz\",\"pa\u017a\",\"lis\",\"gru\"],\"weekdaysShort\":[\"N\",\"Pn\",\"Wt\",\"\u015ar\",\"Cz\",\"Pt\",\"So\"],\"weekdays\":[\"niedziela\",\"poniedzia\u0142ek\",\"wtorek\",\"\u015broda\",\"czwartek\",\"pi\u0105tek\",\"sobota\"]},\"lookAndFeelFormats\":{\"relativize\":\"false\",\"time\":\"H:mm\",\"day\":\"EEEE H:mm\",\"dmy\":\"dd/MM/yyyy\",\"complete\":\"dd/MM/yyyy H:mm\"}}";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData"]="{\"anonymous\":true}";
+WRM._unparsedData["jira.webresources:avatar-picker.data"]="{}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup"]="{\"signupDescription\":\"Si\u0119gnij po aktualizacje, inspiracje i sprawdzone rozwi\u0105zania od zespo\u0142u Jira.\",\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\",\"signupTitle\":\"Zarejestruj si\u0119!\",\"signupId\":\"newsletter-signup-tip\",\"showNewsletterTip\":false}";
+WRM._unparsedData["com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData"]="{\"instanceCreatedDate\":\"2010-04-14\"}";
+WRM._unparsedData["com.atlassian.jira.ext.calendar:tipDataProvider.tip"]="{\"suppressTip\":false}";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:directIdeaIntegration.idea-editor-data-provider"]="{\"available\":false,\"enabled\":false,\"isExternalIdeaEnabled\":false,\"url\":\"https://localhost:63349\",\"app\":\"JIRA\",\"platformId\":\"jira\",\"version\":\"7.6.8\",\"pluginVersion\":\"5.4.45\",\"running\":false,\"canonicalBaseUrl\":\"https://jira.polsatc\",\"scriptRoots\":[],\"hasEditPermissions\":false}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.help-data"]="{\"showHelp\":true,\"editorDocumentationUrl\":[\"https://docs.atlassian.com/jira/jcore-docs-076/Visual+editing\"],\"editorDocumentationTitle\":[\"Show me documentation for the visual editor\"]}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.thumbnails-allowed"]="true";
+WRM._unparsedData["jira.webresources:user-message-flags.adminLockout"]="{}";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="/s/7c74042ca47c78458ae7f9e42bba0ff3-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/css/_super/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/ebed76df7d53e58f9d5cd82a45608778-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/cbea12d2aa65e25320ba90dba7e41ba7/_/download/contextbatch/css/atl.general,jira.global,jira.general,-_super/batch.css?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true" data-wrm-key="atl.general,jira.global,jira.general,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/1b4503c04f45d68ae09fb22125331a69-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/6.1.0/_/download/batch/com.atlassian.auiplugin:aui-labels/com.atlassian.auiplugin:aui-labels.css" data-wrm-key="com.atlassian.auiplugin:aui-labels" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/ab25e850bee0b576efb371fb5834864a-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="/s/f188442eb180e4066475ee26acab179a-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/js/_super/batch.js?locale=pl-PL" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/s/9439a79eaf00a99b7184ac11b531770f-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/cbea12d2aa65e25320ba90dba7e41ba7/_/download/contextbatch/js/atl.general,jira.global,jira.general,-_super/batch.js?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true&amp;locale=pl-PL" data-wrm-key="atl.general,jira.global,jira.general,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/s/56c3f6248103cf6e5ac498c8fd378431-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/9296915968fd19e3630cf5546b9a3e64/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=pl-PL" data-wrm-key="atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<link type="text/css" rel="stylesheet" href="/s/64be28066bd471ecf1b867daad15cd89-CDN/-kwg2xm/76010/beaf2afaa02719a29c4bcdd5a3976a69/a4036ea15c0638daa9b746ec42519472/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css" data-wrm-key="jira.global.look-and-feel,-_super" data-wrm-batch-type="context" media="all">
+
+<script type="text/javascript" src="/rest/api/1.0/shortcuts/76010/b76d3f40a00760a9f4fdf4b35d155e1f/shortcuts.js"></script>
+
+
+    <meta name="application-name" content="JIRA" data-name="jira" data-version="7.6.8">
+</head>
+<body id="jira" class="aui-layout aui-style-default page-type-message"  data-version="7.6.8" >
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                    <header class="aui-page-header"><div class="aui-page-header-inner">
+                            <div class="aui-page-header-main">
+                                    <h1>Unauthorized (401)</h1>
+                                </div><!-- .aui-page-header-main -->
+                        </div><!-- .aui-page-header-inner --></header><!-- .aui-page-header -->
+                    <div class="aui-message aui-message-warning warning">
+                            <p>Wystąpił błąd <code>&quot;401 - Unauthorized&quot;</code> podczas wczytywania tej strony.</p>
+                            <p>Basic Authentication Failure - Reason : AUTHENTICATED_FAILED</p>
+                            <p><a href="/secure/MyJiraHome.jspa">Idź do strony głównej Jira</a></p>
+                        </div>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+</body>
+</html>
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+czwartek, 4 lipca 2019 14:55:04
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+

@@ -1,0 +1,682 @@
+piątek, 21 czerwca 2019 07:50:49
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 21 czerwca 2019 07:50:51
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 21 czerwca 2019 08:01:02
+
+Zgłoszenie ZCC-18968 dodano automatycznie o godzinie 2019-06-21 08:01:02!
+piątek, 21 czerwca 2019 08:01:02
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 08:01:09
+
+addCommentJira string jiraKey ZCC-18968piątek, 21 czerwca 2019 08:01:09
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18968piątek, 21 czerwca 2019 08:01:26
+
+Zgłoszenie ZCC-18969 dodano automatycznie o godzinie 2019-06-21 08:01:26!
+piątek, 21 czerwca 2019 08:01:26
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 08:01:32
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76085
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 08:01:34
+
+Zgłoszenie ZCC-18970 dodano automatycznie o godzinie 2019-06-21 08:01:34!
+piątek, 21 czerwca 2019 08:01:34
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 08:01:35
+
+addCommentJira string jiraKey ZCC-18969piątek, 21 czerwca 2019 08:01:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18969piątek, 21 czerwca 2019 08:01:36
+
+addCommentJira string jiraKey ZCC-18970piątek, 21 czerwca 2019 08:01:36
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18970piątek, 21 czerwca 2019 08:43:04
+
+Zgłoszenie CRM-76106 dodano automatycznie o godzinie 2019-06-21 08:43:04!
+piątek, 21 czerwca 2019 08:43:04
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 08:43:09
+
+addCommentJira string jiraKey CRM-76106piątek, 21 czerwca 2019 08:43:09
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76106piątek, 21 czerwca 2019 08:49:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 09:07:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 09:13:03
+
+Zgłoszenie CRM-76109 dodano automatycznie o godzinie 2019-06-21 09:13:03!
+piątek, 21 czerwca 2019 09:13:03
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 09:13:09
+
+addCommentJira string jiraKey CRM-76109piątek, 21 czerwca 2019 09:13:09
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76109piątek, 21 czerwca 2019 09:13:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 09:19:27
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76109
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 09:37:23
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 09:43:24
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 09:49:25
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 09:55:31
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:01:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:07:23
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:13:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 10:13:20
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:32:32
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:38:01
+
+Zgłoszenie ZCC-18971 dodano automatycznie o godzinie 2019-06-21 10:38:01!
+piątek, 21 czerwca 2019 10:38:01
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 10:38:07
+
+addCommentJira string jiraKey ZCC-18971piątek, 21 czerwca 2019 10:38:07
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18971piątek, 21 czerwca 2019 10:38:11
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.set_Maximum(Int32 value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 10:38:20
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 10:56:00
+
+Zgłoszenie ZCC-18972 dodano automatycznie o godzinie 2019-06-21 10:56:00!
+piątek, 21 czerwca 2019 10:56:00
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 10:56:10
+
+addCommentJira string jiraKey ZCC-18972piątek, 21 czerwca 2019 10:56:10
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18972piątek, 21 czerwca 2019 11:01:59
+
+Zgłoszenie INFOLINIA-6733 dodano automatycznie o godzinie 2019-06-21 11:01:59!
+piątek, 21 czerwca 2019 11:02:00
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 11:02:08
+
+Zgłoszenie ZCC-18973 dodano automatycznie o godzinie 2019-06-21 11:02:08!
+piątek, 21 czerwca 2019 11:02:08
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 11:02:09
+
+addCommentJira string jiraKey INFOLINIA-6733piątek, 21 czerwca 2019 11:02:09
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6733piątek, 21 czerwca 2019 11:02:21
+
+addCommentJira string jiraKey ZCC-18973piątek, 21 czerwca 2019 11:02:21
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18973piątek, 21 czerwca 2019 11:26:26
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6733
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 11:31:59
+
+Zgłoszenie ZCC-18974 dodano automatycznie o godzinie 2019-06-21 11:31:59!
+piątek, 21 czerwca 2019 11:31:59
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 11:32:07
+
+addCommentJira string jiraKey ZCC-18974piątek, 21 czerwca 2019 11:32:07
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18974piątek, 21 czerwca 2019 11:32:12
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 11:38:12
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 11:44:16
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 11:50:12
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 12:14:24
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6735
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:25:57
+
+Zgłoszenie ZCC-18976 dodano automatycznie o godzinie 2019-06-21 12:25:57!
+piątek, 21 czerwca 2019 12:25:58
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 12:26:05
+
+addCommentJira string jiraKey ZCC-18976piątek, 21 czerwca 2019 12:26:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18976piątek, 21 czerwca 2019 12:38:27
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18971
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:38:30
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18974
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:38:33
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18972
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:38:35
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18976
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:38:38
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18975
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 12:38:41
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=KKK-4330
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 13:07:57
+
+Zgłoszenie CRM-76110 dodano automatycznie o godzinie 2019-06-21 13:07:57!
+piątek, 21 czerwca 2019 13:07:57
+
+Modyfikacja treeItem checkAsAssignepiątek, 21 czerwca 2019 13:08:04
+
+addCommentJira string jiraKey CRM-76110piątek, 21 czerwca 2019 13:08:04
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76110piątek, 21 czerwca 2019 13:38:05
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 14:38:06
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 21 czerwca 2019 15:38:09
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 15:44:06
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+piątek, 21 czerwca 2019 15:49:15
+
+--- Main exception: Message ---
+Failed to parse response as JSON. Content: [Fiddler] The connection to 'jira' failed. <br />Error: TimedOut (0x274c). <br />System.Net.Sockets.SocketException Pr&#243;ba połączenia nie powiodła się, ponieważ połączona strona nie odpowiedziała poprawnie po ustalonym okresie czasu lub utworzone połączenie nie powiodło się, ponieważ połączony host nie odpowiedział 192.168.82.81:80
+
+--- Inner exception 1: Message ---
+Unexpected character encountered while parsing value: F. Path '', line 1, position 1.
+
+--- Inner exception 1: StackTrace ---
+   w Newtonsoft.Json.JsonTextReader.ParseValue()
+   w Newtonsoft.Json.JsonTextReader.Read()
+   w Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader)
+   w Newtonsoft.Json.Linq.JArray.Load(JsonReader reader)
+   w Newtonsoft.Json.Linq.JToken.ReadFrom(JsonReader reader)
+   w Newtonsoft.Json.Linq.JToken.Parse(String json)
+   w Atlassian.Jira.Remote.JiraRestClient.GetValidJsonFromResponse(IRestResponse response) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 715
+
+--- Inner exception 1: Source ---
+Newtonsoft.Json
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+piątek, 21 czerwca 2019 15:50:02
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Inner exception 1: Message ---
+Unexpected character encountered while parsing value: F. Path '', line 1, position 1.
+
+--- Inner exception 1: StackTrace ---
+   w Newtonsoft.Json.JsonTextReader.ParseValue()
+   w Newtonsoft.Json.JsonTextReader.Read()
+   w Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader)
+   w Newtonsoft.Json.Linq.JArray.Load(JsonReader reader)
+   w Newtonsoft.Json.Linq.JToken.ReadFrom(JsonReader reader)
+   w Newtonsoft.Json.Linq.JToken.Parse(String json)
+   w Atlassian.Jira.Remote.JiraRestClient.GetValidJsonFromResponse(IRestResponse response) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 715
+
+--- Inner exception 1: Source ---
+Newtonsoft.Json
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+

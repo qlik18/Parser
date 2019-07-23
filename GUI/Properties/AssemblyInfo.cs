@@ -34,3 +34,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("3.0.20.1")]
 [assembly: AssemblyFileVersion("2.0.0.4")]
+[assembly: InternalsVisibleTo("GUI.Tests")]
+[assembly: InternalsVisibleTo("GUI.Explorables")]
+

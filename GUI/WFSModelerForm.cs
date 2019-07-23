@@ -1803,6 +1803,25 @@ namespace GUI
                 MessageBox.Show("Nie wszystkie wymagane pola zostały uzupełnione");
         }
 
+        private bool addNotExistsJiraUser(string user)
+        {
+            //Obsługa "Imię Nazwisko"
+            string[] userParam = user.Trim().Split(' ');
+
+            List<List<string>> userList =  gujaczWFS.ExecuteStoredProcedure("BillingDTH_GetCPDevelopers", null, DatabaseName.SupportADDONS);
+
+            foreach (var item in userList)
+            {
+                if(item[0] == userParam[0]
+                    && item[1] == userParam[1])
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private void tbKategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox kat = (ComboBox)sender;

@@ -1,0 +1,364 @@
+środa, 19 czerwca 2019 08:03:17
+
+Zgłoszenie CRM-76097 dodano automatycznie o godzinie 2019-06-19 08:03:17!
+środa, 19 czerwca 2019 08:03:17
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 08:03:23
+
+addCommentJira string jiraKey CRM-76097środa, 19 czerwca 2019 08:03:23
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76097środa, 19 czerwca 2019 08:03:48
+
+Zgłoszenie CRM-76098 dodano automatycznie o godzinie 2019-06-19 08:03:48!
+środa, 19 czerwca 2019 08:03:48
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 08:03:55
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18958
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 08:03:58
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18957
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 08:04:00
+
+addCommentJira string jiraKey CRM-76098środa, 19 czerwca 2019 08:04:00
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76098środa, 19 czerwca 2019 08:20:59
+
+Zgłoszenie CRM-76099 dodano automatycznie o godzinie 2019-06-19 08:20:59!
+środa, 19 czerwca 2019 08:20:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 08:21:05
+
+addCommentJira string jiraKey CRM-76099środa, 19 czerwca 2019 08:21:05
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76099środa, 19 czerwca 2019 08:38:59
+
+Zgłoszenie LIDKA-140 dodano automatycznie o godzinie 2019-06-19 08:38:59!
+środa, 19 czerwca 2019 08:38:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 08:39:04
+
+Zgłoszenie KKK-4327 dodano automatycznie o godzinie 2019-06-19 08:39:04!
+środa, 19 czerwca 2019 08:39:04
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 08:39:06
+
+addCommentJira string jiraKey LIDKA-140środa, 19 czerwca 2019 08:39:06
+
+addCommentJira object sender, DoWorkEventArgs e LIDKA-140środa, 19 czerwca 2019 08:39:13
+
+addCommentJira string jiraKey KKK-4327środa, 19 czerwca 2019 08:39:13
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4327środa, 19 czerwca 2019 08:45:23
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=KKK-4327
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 08:57:20
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=LIDKA-140
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 09:03:00
+
+Zgłoszenie KKK-4328 dodano automatycznie o godzinie 2019-06-19 09:03:00!
+środa, 19 czerwca 2019 09:03:00
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 09:03:12
+
+addCommentJira string jiraKey KKK-4328środa, 19 czerwca 2019 09:03:12
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4328środa, 19 czerwca 2019 11:21:10
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 12:09:17
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6729
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 12:32:59
+
+Zgłoszenie ZCC-18960 dodano automatycznie o godzinie 2019-06-19 12:32:59!
+środa, 19 czerwca 2019 12:32:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 12:33:05
+
+addCommentJira string jiraKey ZCC-18960środa, 19 czerwca 2019 12:33:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18960środa, 19 czerwca 2019 12:39:15
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18960
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 12:57:38
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76099
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 12:58:04
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76098
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 13:26:59
+
+Zgłoszenie CRM-76101 dodano automatycznie o godzinie 2019-06-19 13:26:59!
+środa, 19 czerwca 2019 13:26:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 13:27:05
+
+addCommentJira string jiraKey CRM-76101środa, 19 czerwca 2019 13:27:05
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76101środa, 19 czerwca 2019 13:33:01
+
+Zgłoszenie ZCC-18961 dodano automatycznie o godzinie 2019-06-19 13:33:01!
+środa, 19 czerwca 2019 13:33:01
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 13:33:12
+
+addCommentJira string jiraKey ZCC-18961środa, 19 czerwca 2019 13:33:12
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18961środa, 19 czerwca 2019 14:09:18
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18961
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 14:26:58
+
+Zgłoszenie ZCC-18962 dodano automatycznie o godzinie 2019-06-19 14:26:58!
+środa, 19 czerwca 2019 14:26:58
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 14:27:03
+
+Zgłoszenie ZCC-18963 dodano automatycznie o godzinie 2019-06-19 14:27:03!
+środa, 19 czerwca 2019 14:27:03
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 14:27:05
+
+addCommentJira string jiraKey ZCC-18962środa, 19 czerwca 2019 14:27:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18962środa, 19 czerwca 2019 14:27:16
+
+addCommentJira string jiraKey ZCC-18963środa, 19 czerwca 2019 14:27:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18963środa, 19 czerwca 2019 14:32:59
+
+Zgłoszenie ZCC-18964 dodano automatycznie o godzinie 2019-06-19 14:32:59!
+środa, 19 czerwca 2019 14:32:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 14:33:05
+
+addCommentJira string jiraKey ZCC-18964środa, 19 czerwca 2019 14:33:05
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18964środa, 19 czerwca 2019 14:33:29
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18963
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 14:39:21
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-18964
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6699
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 14:45:12
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 14:51:11
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 14:57:10
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 15:03:12
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 15:03:13
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 750
+
+--- Main exception: Source ---
+GUI
+
+środa, 19 czerwca 2019 15:38:57
+
+Zgłoszenie ZCC-18965 dodano automatycznie o godzinie 2019-06-19 15:38:57!
+środa, 19 czerwca 2019 15:38:57
+
+Modyfikacja treeItem checkAsAssigneśroda, 19 czerwca 2019 15:39:03
+
+addCommentJira string jiraKey ZCC-18965środa, 19 czerwca 2019 15:39:03
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-18965środa, 19 czerwca 2019 19:37:02
+
+--- Main exception: Message ---
+Przekroczono limit czasu nieaktywności (00:10:00).
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.CommunicationObject.ThrowPending()
+   w System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 19 czerwca 2019 19:37:03
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 19 czerwca 2019 19:37:24
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
