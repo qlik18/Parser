@@ -6448,7 +6448,10 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             if(!isNullObjectOrEmptyString(ubj))
                                 tagList[2] = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
                             m1.Tag = tagList;
-                            m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+
+                             m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+
+
                         }
                         else if (item.Value.ToString().Equals("Diagnoza zgłoszenia")
     )
@@ -6456,6 +6459,22 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             if (!isNullObjectOrEmptyString(ubj))
                                 tagList[2] = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
                             m1.Tag = tagList;
+                            m1.Click += new EventHandler(btn_tmpQuickStep_Click);
+                        }
+
+                        else if (item.Key == 612)
+                        {
+                            if (!isNullObjectOrEmptyString(ubj))
+                                tagList[2] = new KeyValuePair<int, string>(ubj.UserBpm.Id, ubj.UserBpm.FullName);
+                            m1.Tag = tagList;
+
+                            /*****/
+                            m2 = new ToolStripMenuItem("Realizuj i zamknij po weryfikacji");
+
+
+                            m2.Click += new EventHandler(btn_issueStep_RealizujIZamknij_Click);
+                            m1.DropDownItems.Add(m2);
+                            /*****/
                             m1.Click += new EventHandler(btn_tmpQuickStep_Click);
                         }
                         else
@@ -8069,8 +8088,125 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
 
         }
+        private void issueStep_PrzyjecieDoRealizacji(object sender)
+        {
+            const int eventMoveId = 612;
+
+            //Pobranie Rozmieszczenia parametrów zdarzenia
+            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+        }
+        private void issueStep_WeryfikacjaRealizacji(object sender, string issueId)
+        {
+            const int eventMoveId = 616;
+
+            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+            addIssueToTreeNode(issueId, issue);
+
+            //Pobranie Rozmieszczenia parametrów zdarzenia
+            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+            
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, null);
+
+        }
+        private void issueStep_ZamknieciePoRealizacji(object sender, string issueId)
+        {
+            const int eventMoveId = 618; 
+
+            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+            addIssueToTreeNode(issueId, issue);
+
+            //Pobranie Rozmieszczenia parametrów zdarzenia
+            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, null);
+
+        }
+
+        private void btn_issueStep_RealizujIZamknij_Click(object sender, EventArgs e)
+        {
+            const int eventMoveId = 612;
+            //List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+            //addIssueToTreeNode(issueId, issue);
+
+
+            ToolStripMenuItem tmp = (ToolStripMenuItem)sender; //losowy komponet do przechowywania Tag
+
+           // BillingIssueDto selectIssue = null;
+            KeyValuePair<int, string> item = new KeyValuePair<int, string>();
+            KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>();
+
+            List<object> tagTmp = new List<object>();
+
+            if (tmp.Tag != null && tmp.Tag.GetType() == typeof(List<object>))
+            {
+                tagTmp = (List<object>)tmp.Tag;
+
+                selectIssue = (BillingIssueDto)tagTmp[0];
+                item = (KeyValuePair<int, string>)tagTmp[1];
+                selectOption = (KeyValuePair<int, string>)tagTmp[2];
+            }
+
+            if (tmp.Tag != null && tmp.Tag.GetType() == typeof(IssueFinalParameters))
+            {
+                IssueFinalParameters par = ((IssueFinalParameters)tmp.Tag);
+                // tagTmp = (List<object>)tmp.Tag;
+                selectIssue = par.issueNumber;
+                item = par.item;
+                selectOption = par.selectOption;
+            }
+            try
+            {
+                //1. BillingIssueDto            selectIssue
+                //2. Dictionary<int, string>    item
+                //3. KeyValuePair<int, string>  s
+
+                this.Invoke((MethodInvoker)delegate
+                {
+
+
+
+                    if (item.Key == 610)
+                    {
+
+                        string[] paramString = (string[])tagTmp[3];
+
+                        new WFSModelerForm(gujaczWFS.GetEventParamForFormByEventMove(item.Key), item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, paramString);
+
+
+
+                    }
+                    else
+                    {
+                        List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+
+                        WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Przyjęcie do realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, false, selectOption);
+
+                        wmfw.ShowDialog();
+                    }
+
+
+                });
+
+
+                this.Invoke((MethodInvoker)delegate
+                {
+                    issueStep_WeryfikacjaRealizacji(this, selectIssue.Idnumber);
+                });
+
+                this.Invoke((MethodInvoker)delegate
+                {
+                    issueStep_ZamknieciePoRealizacji(this, selectIssue.Idnumber);
+                });
+
+            }
+            catch (Exception ex)
+            {
+                ExceptionManager.LogWarning(ex.Message, Logger.Instance);
+            }
+        }
     }
 }
+
 
 
 /*

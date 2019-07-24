@@ -237,10 +237,10 @@ namespace GUI
             List<Entities.EventParam> boundEventParams;
             KeyValuePair<int, string> _selectOption = new KeyValuePair<int, string>();
 
+            _quickStep = quickStep;
             if (quickStep)
             {
-                _quickStep = quickStep;
-                if(eventMoveId != 610)
+                if(eventMoveId != 610 && selectOption != null)
                     _selectOption = (KeyValuePair<int, string>)selectOption;
                 this.Visible = false;
             }

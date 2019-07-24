@@ -1,0 +1,321 @@
+środa, 24 lipca 2019 07:54:53
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 07:55:00
+
+addCommentJira string jiraKey ZCC-19141środa, 24 lipca 2019 07:55:00
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19141środa, 24 lipca 2019 07:57:11
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 07:57:12
+
+addCommentJira string jiraKey ZCC-19142 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 24 lipca 2019 07:57:12
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19142środa, 24 lipca 2019 07:57:15
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 07:57:16
+
+addCommentJira string jiraKey CRM-76411 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 24 lipca 2019 07:57:16
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76411środa, 24 lipca 2019 07:57:18
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 07:57:20
+
+addCommentJira string jiraKey ZCC-19144 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 24 lipca 2019 07:57:20
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19144środa, 24 lipca 2019 07:57:27
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-07-24 07:57:27] 
+
+środa, 24 lipca 2019 07:57:31
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-07-24 07:57:31] 
+
+środa, 24 lipca 2019 07:57:31
+
+Modyfikacja treeItemśroda, 24 lipca 2019 07:57:31
+
+Status Auto: False 
+
+środa, 24 lipca 2019 07:57:31
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-07-24 07:57:31] 
+
+środa, 24 lipca 2019 07:57:33
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-07-24 07:57:33] 
+
+środa, 24 lipca 2019 07:57:33
+
+Modyfikacja treeItemśroda, 24 lipca 2019 07:57:33
+
+Status Auto: False 
+
+środa, 24 lipca 2019 08:01:09
+
+Zgłoszenie ZCC-19145 dodano automatycznie o godzinie 2019-07-24 08:01:09!
+środa, 24 lipca 2019 08:01:09
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:01:15
+
+Zgłoszenie CRM-76411 dodano automatycznie o godzinie 2019-07-24 08:01:15!
+środa, 24 lipca 2019 08:01:15
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:01:16
+
+addCommentJira string jiraKey ZCC-19145środa, 24 lipca 2019 08:01:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19145środa, 24 lipca 2019 08:01:28
+
+addCommentJira string jiraKey CRM-76411 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 24 lipca 2019 08:01:29
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76411środa, 24 lipca 2019 08:01:34
+
+Zgłoszenie ZCC-19144 dodano automatycznie o godzinie 2019-07-24 08:01:34!
+środa, 24 lipca 2019 08:01:34
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:01:35
+
+addCommentJira string jiraKey ZCC-19144 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 24 lipca 2019 08:01:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19144środa, 24 lipca 2019 08:06:39
+
+Zgłoszenie CRM-76412 dodano automatycznie o godzinie 2019-07-24 08:06:39!
+środa, 24 lipca 2019 08:06:40
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:07:00
+
+addCommentJira string jiraKey CRM-76412środa, 24 lipca 2019 08:07:00
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76412środa, 24 lipca 2019 08:13:13
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76412
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:13:16
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19141
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:14:03
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 24 lipca 2019 08:18:27
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.<>c__DisplayClass166_0.<GetActionForIssue>b__0(KeyValuePair`2 x) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5484
+   w System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   w GUI.MainForm.GetActionForIssue(BillingIssueDto issue, String trName) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5484
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:18:52
+
+Zgłoszenie CRM-76414 dodano automatycznie o godzinie 2019-07-24 08:18:52!
+środa, 24 lipca 2019 08:18:53
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:18:59
+
+Zgłoszenie CRM-76415 dodano automatycznie o godzinie 2019-07-24 08:18:59!
+środa, 24 lipca 2019 08:18:59
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:19:00
+
+addCommentJira string jiraKey CRM-76414środa, 24 lipca 2019 08:19:00
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76414środa, 24 lipca 2019 08:19:19
+
+addCommentJira string jiraKey CRM-76415środa, 24 lipca 2019 08:19:19
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76415środa, 24 lipca 2019 08:19:22
+
+Zgłoszenie CRM-76416 dodano automatycznie o godzinie 2019-07-24 08:19:22!
+środa, 24 lipca 2019 08:19:22
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:19:24
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19145
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:19:26
+
+addCommentJira string jiraKey CRM-76416środa, 24 lipca 2019 08:19:26
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76416środa, 24 lipca 2019 08:19:28
+
+Zgłoszenie CRM-76417 dodano automatycznie o godzinie 2019-07-24 08:19:28!
+środa, 24 lipca 2019 08:19:28
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:19:31
+
+Zgłoszenie CRM-76418 dodano automatycznie o godzinie 2019-07-24 08:19:31!
+środa, 24 lipca 2019 08:19:31
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:19:34
+
+Zgłoszenie WIND-8456 dodano automatycznie o godzinie 2019-07-24 08:19:34!
+środa, 24 lipca 2019 08:19:34
+
+addCommentJira string jiraKey CRM-76418środa, 24 lipca 2019 08:19:34
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76418środa, 24 lipca 2019 08:19:34
+
+addCommentJira string jiraKey CRM-76417środa, 24 lipca 2019 08:19:34
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 08:19:34
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76417środa, 24 lipca 2019 08:19:37
+
+addCommentJira string jiraKey WIND-8456środa, 24 lipca 2019 08:19:37
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8456środa, 24 lipca 2019 08:24:54
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=WIND-8456
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:25
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76418
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:28
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76416
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:31
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76414
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:34
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76413
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:37
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76417
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:25:39
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76415
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 08:30:15
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 24 lipca 2019 10:08:07
+
+Zgłoszenie CRM-76419 dodano automatycznie o godzinie 2019-07-24 10:08:07!
+środa, 24 lipca 2019 10:08:07
+
+Modyfikacja treeItem checkAsAssigneśroda, 24 lipca 2019 10:08:15
+
+addCommentJira string jiraKey CRM-76419środa, 24 lipca 2019 10:08:15
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76419środa, 24 lipca 2019 10:26:32
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 565
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 24 lipca 2019 10:32:59
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76419
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6718
+
+--- Main exception: Source ---
+GUI
+
+środa, 24 lipca 2019 11:05:19
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
