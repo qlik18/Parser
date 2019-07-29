@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="GUI.exe" version="3.0.30.6" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="GUI.exe" version="3.0.30.7" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Image\1387442465_63467.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2758656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2776576">
       <assemblyIdentity name="GUI" version="3.0.20.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6GWYrYrP8I/EwKuOQDv4qVsr6nz0ZiKt8aPueVzfbb0=</dsig:DigestValue>
+        <dsig:DigestValue>OFSFr2hXvjTuDJKwPJGFRdJRz1XsC1oJpRU34tZQ7Vc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -252,13 +252,13 @@
       <dsig:DigestValue>fY/IgGDQPKHrv88y8ta3/odCRgjRlq7RP6jjeCY7jIw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GUI.exe.config" size="16446">
+  <file name="GUI.exe.config" size="16447">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eE+r+jIu38XqXJzC5ej8UgOw/8IkQSeFCVAoU3gwaC0=</dsig:DigestValue>
+      <dsig:DigestValue>s8zA9jE9PP8/jtNxLfgKOq2gsTV0qHAxd5WBCu2foeg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="HeliosDevelopers.xml" size="1467" writeableType="applicationData">

@@ -33,8 +33,12 @@ namespace GUI
         private Panel panel1;
         private CheckBox checkBox1;
         private Entities.HeliosLoggedInUser helU;
+        private Label label3;
+        private MaskedTextBox maskedTextBox2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
         private bool firstLogin;
-
+        MainForm fm = new MainForm();
 
         private Login()
         {
@@ -88,16 +92,16 @@ namespace GUI
             //progressBar1.Show();
             //label3.Show();
             //if(!firstLogin)
-                invokeLogin();
+                invokeLogin((this.Tag.ToString()));
 
 
             wfs = null;
             this.Close();
         }
 
-        private void invokeLogin()
+        private void invokeLogin(string message = "Logowanie...")
         {
-            WaitingForm.InvokeWithWaitingForm("Logowanie...", (Action)delegate ()
+            WaitingForm.InvokeWithWaitingForm(message, (Action)delegate ()
             {
                 try
                 {
@@ -138,6 +142,12 @@ namespace GUI
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -216,6 +226,7 @@ namespace GUI
             this.maskedTextBox3.TabIndex = 5;
             this.maskedTextBox3.UseSystemPasswordChar = true;
             this.maskedTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
+            this.maskedTextBox3.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox3_Validating);
             // 
             // label5
             // 
@@ -248,16 +259,61 @@ namespace GUI
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(110, 126);
+            this.checkBox1.Location = new System.Drawing.Point(110, 197);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(103, 17);
+            this.checkBox1.Size = new System.Drawing.Size(131, 17);
             this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Zapamiętaj mnie";
+            this.checkBox1.Text = "Zapamiętaj ustawienia";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(-1, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 16);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Hasło Billennium";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(110, 126);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(209, 20);
+            this.maskedTextBox2.TabIndex = 14;
+            this.maskedTextBox2.UseSystemPasswordChar = true;
+            this.maskedTextBox2.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox2_Validating);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.ok;
+            this.pictureBox1.Location = new System.Drawing.Point(325, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GUI.Properties.Resources.ok;
+            this.pictureBox2.Location = new System.Drawing.Point(325, 127);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // Login
             // 
-            this.ClientSize = new System.Drawing.Size(331, 203);
+            this.ClientSize = new System.Drawing.Size(350, 218);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
@@ -274,7 +330,10 @@ namespace GUI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Logowanie";
+            this.Tag = "Logowanie....";
             this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,8 +352,7 @@ namespace GUI
             //textBox1.Text = "";
             //textBox2.Text = "";
             //maskedTextBox1.Text = "";
-            //maskedTextBox2.Text = "";
-
+            //maskedTextBox2.Text = "";            
             //Properties.Settings.Default.Project = cb_Projekt.SelectedIndex;
             if (Properties.Settings.Default.loginWFS != null)
             {
@@ -314,8 +372,32 @@ namespace GUI
             if (Properties.Settings.Default.hasloJira != null)
             {
                 maskedTextBox3.Text = Properties.Settings.Default.hasloJira;
+
+                if (textBox1.Text != string.Empty && fm.tryLogginToJira(textBox1.Text, maskedTextBox3.Text))
+                {
+                    pictureBox1.Visible = true;
+                }
                 checkBox1.Checked = true;
             }
+
+            if (Properties.Settings.Default.hasloBillennium != null)
+            {
+                maskedTextBox2.Text = Properties.Settings.Default.hasloBillennium;
+
+                if(fm.tryLogginToJira("billennium", maskedTextBox2.Text))
+                {
+                    pictureBox2.Visible = true;
+                }
+
+                checkBox1.Checked = true;
+            }
+
+            if(pictureBox2.Visible && pictureBox1.Visible)
+            {
+                this.Tag = "Logowanie zapisanymi danymi użytkownika";
+                button1_Click(this,null);
+            }
+
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -337,6 +419,32 @@ namespace GUI
         {
             
 
+        }
+ 
+        private void maskedTextBox3_Validating(object sender, CancelEventArgs e)
+        {
+            if (textBox1.Text != string.Empty && fm.tryLogginToJira(textBox1.Text, maskedTextBox3.Text))
+            {
+                pictureBox1.Visible = true;
+            }
+            else
+            {
+                pictureBox1.Visible = false;
+
+            }
+        }
+
+        private void maskedTextBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (fm.tryLogginToJira("billennium", maskedTextBox2.Text))
+            {
+                pictureBox2.Visible = true;
+            }
+            else
+            {
+                pictureBox2.Visible = false;
+                
+            }
         }
     }
 }

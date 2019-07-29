@@ -37,7 +37,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <DisallowUrlActivation>true</DisallowUrlActivation>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>3.0.30.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
@@ -414,6 +414,7 @@
     <None Include="Resources\stop4.png" />
     <None Include="Resources\startIcon.ico" />
     <None Include="Resources\startIcon2.ico" />
+    <None Include="Resources\ok.jpg" />
     <Content Include="Sounds\BikeHorn.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

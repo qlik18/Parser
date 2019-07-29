@@ -6945,9 +6945,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 cb_KontoBillennium.Checked = false;
                 cb_KontoBillennium.Text = "Błędne hasło lub brak połączenia JIRA!";
             }
+
+            Properties.Settings.Default.hasloBillennium = mtb_BillenniumPass.Text;
+            Properties.Settings.Default.Save();
         }
 
-        private bool tryLogginToJira(string Login, string Password, string adress = "http://jira")
+        public bool tryLogginToJira(string Login, string Password, string adress = "http://jira")
         {
 
             try

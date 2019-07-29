@@ -300,7 +300,7 @@ namespace GUI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.31.5")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.31.11")]
         public string AppVersion {
             get {
                 return ((string)(this["AppVersion"]));
