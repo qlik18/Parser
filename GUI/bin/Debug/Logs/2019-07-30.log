@@ -1,0 +1,706 @@
+wtorek, 30 lipca 2019 08:53:06
+
+Zgłoszenie CRM-76455 dodano automatycznie o godzinie 2019-07-30 08:53:06!
+wtorek, 30 lipca 2019 08:53:06
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:12
+
+Zgłoszenie CRM-76456 dodano automatycznie o godzinie 2019-07-30 08:53:12!
+wtorek, 30 lipca 2019 08:53:12
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:13
+
+addCommentJira string jiraKey CRM-76455wtorek, 30 lipca 2019 08:53:13
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76455wtorek, 30 lipca 2019 08:53:17
+
+addCommentJira string jiraKey CRM-76456wtorek, 30 lipca 2019 08:53:17
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76456wtorek, 30 lipca 2019 08:53:33
+
+Zgłoszenie CRM-76457 dodano automatycznie o godzinie 2019-07-30 08:53:33!
+wtorek, 30 lipca 2019 08:53:33
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:36
+
+addCommentJira string jiraKey CRM-76457wtorek, 30 lipca 2019 08:53:36
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76457wtorek, 30 lipca 2019 08:53:41
+
+Zgłoszenie CRM-76458 dodano automatycznie o godzinie 2019-07-30 08:53:41!
+wtorek, 30 lipca 2019 08:53:42
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:44
+
+addCommentJira string jiraKey CRM-76458wtorek, 30 lipca 2019 08:53:44
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76458wtorek, 30 lipca 2019 08:53:49
+
+Zgłoszenie CRM-76459 dodano automatycznie o godzinie 2019-07-30 08:53:49!
+wtorek, 30 lipca 2019 08:53:50
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:52
+
+addCommentJira string jiraKey CRM-76459wtorek, 30 lipca 2019 08:53:52
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76459wtorek, 30 lipca 2019 08:53:54
+
+Zgłoszenie CRM-76460 dodano automatycznie o godzinie 2019-07-30 08:53:54!
+wtorek, 30 lipca 2019 08:53:54
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:58
+
+Zgłoszenie CRM-76461 dodano automatycznie o godzinie 2019-07-30 08:53:58!
+wtorek, 30 lipca 2019 08:53:59
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 08:53:59
+
+addCommentJira string jiraKey CRM-76460wtorek, 30 lipca 2019 08:53:59
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76460wtorek, 30 lipca 2019 08:54:01
+
+addCommentJira string jiraKey CRM-76461wtorek, 30 lipca 2019 08:54:01
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76461wtorek, 30 lipca 2019 09:06:23
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.7248254. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:08:27
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.9375103. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:15:45
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.9401627. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:17:56
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.5016263. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:19:59
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:59.9481386. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:37:33
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:58.8082906. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:37:33
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 389
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6336
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 709
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:37:33
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6327
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6334
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 709
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:37:33
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.getBillingIssueDtoHeliosFromIssueNumber(String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6327
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6334
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 709
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:37:33
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 86
+   w LogicLayer.Implementation.ParserEngineWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 209
+   w GUI.MainForm.GetActionForIssue(Int32 WFSIssueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5507
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:52:55
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6336
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 709
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:52:55
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetBillingBoundEventParamForIssue(User user, Int32 issueId, Int32[] eventParamId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventParamId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 226
+   w LogicLayer.Implementation.ParserEngineWFS.GetBillingBoundEventParamForIssue(Int32 issueId, Int32[] eventsParamId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 243
+   w LogicLayer.Implementation.ParserEngineWFS.UpdateIssue(BillingIssueDtoHelios issue) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 391
+   w GUI.MainForm.addIssueToTreeNodeForAutoStep(String issueNumber, Int32 issueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6336
+   w GUI.MainForm.slaAutoStep(DataGridViewRow tmpRow, String issueNumber) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 709
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:52:55
+
+--- Main exception: Message ---
+Obiektu komunikacyjnego System.ServiceModel.Channels.ReliableRequestSessionChannel nie można używać do komunikacji, ponieważ jest w stanie Faulted.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   w System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   w System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.SendRequest(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 86
+   w LogicLayer.Implementation.ParserEngineWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 209
+   w GUI.MainForm.GetActionForIssue(Int32 WFSIssueId) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 5507
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 09:52:57
+
+--- Main exception: Message ---
+Kanał żądania przekroczył limit czasu, próbując wysłać po 00:01:58.9757007. Zwiększ wartość limitu czasu podawaną do wywołania elementu Request lub zwiększ wartość właściwości SendTimeout w powiązaniu. Czas przeznaczony na tę operację może być częścią większego limitu czasu.
+
+--- Inner exception 1: Message ---
+Operacja żądania nie zakończyła się w ciągu przydzielonego limitu czasu 00:02:00. Czas przydzielony na tę operację mógł być częścią dłuższego limitu czasu.
+
+--- Inner exception 1: StackTrace ---
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+--- Inner exception 1: Source ---
+System.ServiceModel
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 30 lipca 2019 10:21:27
+
+Nieprawidłowy format ciągu wejściowego.wtorek, 30 lipca 2019 10:32:13
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 30 lipca 2019 10:37:09
+
+Zgłoszenie ZCC-19172 dodano automatycznie o godzinie 2019-07-30 10:37:09!
+wtorek, 30 lipca 2019 10:37:09
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 10:37:25
+
+Zgłoszenie CRM-76464 dodano automatycznie o godzinie 2019-07-30 10:37:25!
+wtorek, 30 lipca 2019 10:37:26
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 10:37:29
+
+addCommentJira string jiraKey ZCC-19172wtorek, 30 lipca 2019 10:37:29
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19172wtorek, 30 lipca 2019 10:37:35
+
+addCommentJira string jiraKey CRM-76464wtorek, 30 lipca 2019 10:37:35
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76464wtorek, 30 lipca 2019 10:37:56
+
+Nieprawidłowy format ciągu wejściowego.wtorek, 30 lipca 2019 10:37:57
+
+Nieprawidłowy format ciągu wejściowego.wtorek, 30 lipca 2019 10:38:04
+
+Nieprawidłowy format ciągu wejściowego.wtorek, 30 lipca 2019 10:42:40
+
+Nieprawidłowy format ciągu wejściowego.wtorek, 30 lipca 2019 10:50:03
+
+Zgłoszenie INFOLINIA-6790 dodano automatycznie o godzinie 2019-07-30 10:50:03!
+wtorek, 30 lipca 2019 10:50:03
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 10:50:08
+
+addCommentJira string jiraKey INFOLINIA-6790wtorek, 30 lipca 2019 10:50:08
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6790wtorek, 30 lipca 2019 12:31:04
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 12:31:31
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 12:36:04
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 12:37:31
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 12:38:47
+
+--- Main exception: Message ---
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   w System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   w GUI.MainForm.slaReportLoad(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 228
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 30 lipca 2019 12:55:50
+
+Zgłoszenie INFOLINIA-6791 dodano automatycznie o godzinie 2019-07-30 12:55:50!
+wtorek, 30 lipca 2019 12:55:50
+
+Modyfikacja treeItem checkAsAssignewtorek, 30 lipca 2019 12:55:56
+
+addCommentJira string jiraKey INFOLINIA-6791wtorek, 30 lipca 2019 12:55:56
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6791wtorek, 30 lipca 2019 13:51:52
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 13:57:08
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+wtorek, 30 lipca 2019 14:13:27
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__107_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+

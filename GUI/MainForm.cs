@@ -5481,7 +5481,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
                     else
                     {
-                        if(!isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
+                        if (!isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
                             issueMove[trName].Remove(issue.Idnumber);
                     }
 
@@ -5494,6 +5494,26 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     issueMove[trName].Clear();
                 }
             }
+        }
+
+        private Dictionary<int, string> GetActionForIssue(int WFSIssueId)
+        {
+            Dictionary<int, string> returnValue = null;
+            int UserId = gujaczWFS.getUser().Id;
+            if (UserId != 0)
+            {
+                try
+                {
+                    returnValue = gujaczWFS.GetActionForIssue(WFSIssueId, UserId);
+                }
+                catch (Exception ex)
+                {
+                    ExceptionManager.LogError(ex, Logger.Instance, true);
+
+                }
+                
+            }
+            return returnValue;
         }
 
         /// <summary>
@@ -6221,7 +6241,14 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             return returnValue;
         }
 
-        //[STAThreadAttribute]
+        //[STAThreadAttribute]     
+        /// <summary>
+        /// Pobiera dodaje zgłoszenie z BPM do wskazanego treeView
+        /// </summary>
+        /// <param name="issueNumber">Numer Jira {JIRA-000}</param>
+        /// <param name="issue">List<BillingIssueDtoHelios></param>
+        /// <param name="treeViewName">Wskazane treeView do dodania zgłoszenia</param>
+        /// <returns></returns>
         private void addIssueToTreeNode(string issueNumber, List<BillingIssueDtoHelios> issue, string treeViewName = "treeView4")
         {
             issue.Add(new BillingIssueDtoHelios()
@@ -8124,6 +8151,21 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, null);
 
         }
+        private void issueStep_OdrzucenieZgloszenia(object sender, string issueId)
+        {
+            const int eventMoveId = 617;
+
+            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+            addIssueToTreeNode(issueId, issue);
+
+            //Pobranie Rozmieszczenia parametrów zdarzenia
+            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+
+            KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(401, "Zgłoszenie odrzucone");
+
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Odrzucenie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+
+        }
 
         private void btn_issueStep_RealizujIZamknij_Click(object sender, EventArgs e)
         {
@@ -8206,6 +8248,58 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             {
                 ExceptionManager.LogWarning(ex.Message, Logger.Instance);
             }
+        }
+
+        private void rb_devCp_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            if (rb.Name == rb_devCp_add.Name && rb.Checked)
+            {
+                bt_devCP.Text = "Dodaj Dewelopera";
+                return;
+            }
+
+            if (rb.Name == rb_devCp_del.Name && rb.Checked)
+            {
+                bt_devCP.Text = "Dezaktywuj Dewelopera";
+                return;
+            }
+        }
+
+        private void bt_devCP_Click(object sender, EventArgs e)
+        {
+            if(isNullObjectOrEmptyString(tb_devCp_name.Text) || isNullObjectOrEmptyString(tb_devCp_surname.Text))
+            {
+                MessageBox.Show("Imię i nazwisko musi być uzupełnione!!!", "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!rb_devCp_add.Checked && !rb_devCp_del.Checked)
+            {
+                MessageBox.Show("Wybierz operację!!!", "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //else if()
+            else if(rb_devCp_add.Checked)
+            {
+
+                var v = gujaczWFS.ExecuteStoredProcedure("[CP_dodaj_dewelopera]", new string[] 
+                                                                                { tb_devCp_name.Text.ToString().Trim(), tb_devCp_surname.Text.ToString().Trim() }
+                                                                                , DatabaseName.SupportCP);
+                MessageBox.Show(v[0][0], "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (rb_devCp_del.Checked)
+            {
+
+                var v = gujaczWFS.ExecuteStoredProcedure("[CP_dezaktywuj_dewelopera]", new string[]
+                                                                                { tb_devCp_name.Text.ToString(), tb_devCp_surname.Text.ToString() }
+                                                                               , DatabaseName.SupportCP);
+                MessageBox.Show(v[0][0], "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            bt_devCP.Text = "Wybierz operację";
+            rb_devCp_add.Checked = false;
+            rb_devCp_del.Checked = false;
+            tb_devCp_name.Text = string.Empty;
+            tb_devCp_surname.Text = string.Empty;
         }
     }
 }

@@ -491,6 +491,13 @@ namespace GUI
                 //string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
                 foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
                 {
+                    if (isNullObjectOrEmptyString(item.Cells[0].Value))
+                        return;
+                    int issueNumber = Convert.ToInt32(item.Cells[0].Value.ToString());
+                    string jiraNumber = item.Cells[1].Value.ToString();
+                    var v = GetActionForIssue(issueNumber);
+                    Issue issue = zgloszeniaWjira.FirstOrDefault(x => x.Key == jiraNumber);
+
                     if (isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value))
                     {
                         doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
@@ -500,14 +507,21 @@ namespace GUI
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
                     }
-                    else if (!isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value)
+                    else if (!isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value)
+                              && (!isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Odrzucone")
+                              && !isNullObjectOrEmptyString(v.FirstOrDefault(x => x.Key == 617).Value))
+                    {
+                        issueStep_OdrzucenieZgloszenia(this, jiraNumber.ToString());
+                        //issueStep_OdrzucenieZgloszenia(this, issueNumber.ToString());
+                    }
+                    /*else if (!isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value)
                             && (item.Cells["dgvAktualnyStan"].Value.ToString() == "Odrzucone" ||
                                 item.Cells["dgvAktualnyStan"].Value.ToString() == "Odrzucony" ||
                                 item.Cells["dgvAktualnyStan"].Value.ToString() == "Zadanie do wycofania"))
                     {
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
-                    }
+                    }*/
                     else 
                     {
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
@@ -1025,8 +1039,6 @@ namespace GUI
 
                 string issueNumber = dgv_SlaRaport.Rows[e.RowIndex].Cells["dgvJiraNr"].Value.ToString();
                 cms_IssuePopup.Items.Clear();
-
-
 
 
                 List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();

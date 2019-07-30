@@ -323,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAVgBHQFYAR0BMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAagBHQGoAR0BMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -2903,6 +2903,237 @@ komentarz</value>
   <data name="&gt;&gt;tp_Raporty.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="rb_devCp_del.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rb_devCp_del.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="rb_devCp_del.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
+  </data>
+  <data name="rb_devCp_del.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rb_devCp_del.Text" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_del.Name" xml:space="preserve">
+    <value>rb_devCp_del</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_del.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_del.Parent" xml:space="preserve">
+    <value>gb_DevCp_option</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_del.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rb_devCp_add.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rb_devCp_add.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="rb_devCp_add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="rb_devCp_add.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rb_devCp_add.Text" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_add.Name" xml:space="preserve">
+    <value>rb_devCp_add</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_add.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_add.Parent" xml:space="preserve">
+    <value>gb_DevCp_option</value>
+  </data>
+  <data name="&gt;&gt;rb_devCp_add.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gb_DevCp_option.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 19</value>
+  </data>
+  <data name="gb_DevCp_option.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 67</value>
+  </data>
+  <data name="gb_DevCp_option.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gb_DevCp_option.Text" xml:space="preserve">
+    <value>Operacja</value>
+  </data>
+  <data name="&gt;&gt;gb_DevCp_option.Name" xml:space="preserve">
+    <value>gb_DevCp_option</value>
+  </data>
+  <data name="&gt;&gt;gb_DevCp_option.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gb_DevCp_option.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;gb_DevCp_option.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Nazwisko:</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Imię:</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bt_devCP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_devCP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 92</value>
+  </data>
+  <data name="bt_devCP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 46</value>
+  </data>
+  <data name="bt_devCP.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="bt_devCP.Text" xml:space="preserve">
+    <value>Wybierz operację</value>
+  </data>
+  <data name="&gt;&gt;bt_devCP.Name" xml:space="preserve">
+    <value>bt_devCP</value>
+  </data>
+  <data name="&gt;&gt;bt_devCP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_devCP.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;bt_devCP.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tb_devCp_surname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 57</value>
+  </data>
+  <data name="tb_devCp_surname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="tb_devCp_surname.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_surname.Name" xml:space="preserve">
+    <value>tb_devCp_surname</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_surname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_surname.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_surname.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tb_devCp_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 27</value>
+  </data>
+  <data name="tb_devCp_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="tb_devCp_name.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_name.Name" xml:space="preserve">
+    <value>tb_devCp_name</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_name.Parent" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;tb_devCp_name.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gb_Deweloper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 6</value>
+  </data>
+  <data name="gb_Deweloper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 151</value>
+  </data>
+  <data name="gb_Deweloper.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="gb_Deweloper.Text" xml:space="preserve">
+    <value>Dodawanie/dezaktywacja dewelopera CP</value>
+  </data>
+  <data name="&gt;&gt;gb_Deweloper.Name" xml:space="preserve">
+    <value>gb_Deweloper</value>
+  </data>
+  <data name="&gt;&gt;gb_Deweloper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gb_Deweloper.Parent" xml:space="preserve">
+    <value>tp_Settings</value>
+  </data>
+  <data name="&gt;&gt;gb_Deweloper.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tb_InterwalAutomatu.Location" type="System.Drawing.Point, System.Drawing">
     <value>237, 448</value>
   </data>
@@ -2922,7 +3153,7 @@ komentarz</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;tb_InterwalAutomatu.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="bt_OtworzLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 493</value>
@@ -2947,7 +3178,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;bt_OtworzLog.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2977,7 +3208,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="bt_LogSearchRun.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 65</value>
@@ -3049,7 +3280,7 @@ Aktualny log (RPM)</value>
     <value>2</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 11</value>
+    <value>451, 168</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>366, 170</value>
@@ -3073,7 +3304,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="cb_KontoBillennium.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3238,7 +3469,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="cbFilter2name.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 57</value>
@@ -3487,7 +3718,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="cbox_RefreshBoth.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3517,7 +3748,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;cbox_RefreshBoth.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3760,7 +3991,7 @@ Aktualny log (RPM)</value>
     <value>tp_Settings</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="tp_Settings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>

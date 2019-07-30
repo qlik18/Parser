@@ -165,6 +165,15 @@ namespace GUI
             this.tp_Raporty = new System.Windows.Forms.TabPage();
             this.tab_Raporty = new System.Windows.Forms.TabControl();
             this.tp_Settings = new System.Windows.Forms.TabPage();
+            this.gb_Deweloper = new System.Windows.Forms.GroupBox();
+            this.gb_DevCp_option = new System.Windows.Forms.GroupBox();
+            this.rb_devCp_del = new System.Windows.Forms.RadioButton();
+            this.rb_devCp_add = new System.Windows.Forms.RadioButton();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.bt_devCP = new System.Windows.Forms.Button();
+            this.tb_devCp_surname = new System.Windows.Forms.TextBox();
+            this.tb_devCp_name = new System.Windows.Forms.TextBox();
             this.tb_InterwalAutomatu = new System.Windows.Forms.TextBox();
             this.bt_OtworzLog = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -414,6 +423,8 @@ namespace GUI
             this.tabPage1.SuspendLayout();
             this.tp_Raporty.SuspendLayout();
             this.tp_Settings.SuspendLayout();
+            this.gb_Deweloper.SuspendLayout();
+            this.gb_DevCp_option.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -815,6 +826,7 @@ namespace GUI
             // 
             // tp_Settings
             // 
+            this.tp_Settings.Controls.Add(this.gb_Deweloper);
             this.tp_Settings.Controls.Add(this.tb_InterwalAutomatu);
             this.tp_Settings.Controls.Add(this.bt_OtworzLog);
             this.tp_Settings.Controls.Add(this.label13);
@@ -826,6 +838,69 @@ namespace GUI
             resources.ApplyResources(this.tp_Settings, "tp_Settings");
             this.tp_Settings.Name = "tp_Settings";
             this.tp_Settings.UseVisualStyleBackColor = true;
+            // 
+            // gb_Deweloper
+            // 
+            this.gb_Deweloper.Controls.Add(this.gb_DevCp_option);
+            this.gb_Deweloper.Controls.Add(this.label16);
+            this.gb_Deweloper.Controls.Add(this.label15);
+            this.gb_Deweloper.Controls.Add(this.bt_devCP);
+            this.gb_Deweloper.Controls.Add(this.tb_devCp_surname);
+            this.gb_Deweloper.Controls.Add(this.tb_devCp_name);
+            resources.ApplyResources(this.gb_Deweloper, "gb_Deweloper");
+            this.gb_Deweloper.Name = "gb_Deweloper";
+            this.gb_Deweloper.TabStop = false;
+            // 
+            // gb_DevCp_option
+            // 
+            this.gb_DevCp_option.Controls.Add(this.rb_devCp_del);
+            this.gb_DevCp_option.Controls.Add(this.rb_devCp_add);
+            resources.ApplyResources(this.gb_DevCp_option, "gb_DevCp_option");
+            this.gb_DevCp_option.Name = "gb_DevCp_option";
+            this.gb_DevCp_option.TabStop = false;
+            // 
+            // rb_devCp_del
+            // 
+            resources.ApplyResources(this.rb_devCp_del, "rb_devCp_del");
+            this.rb_devCp_del.Name = "rb_devCp_del";
+            this.rb_devCp_del.TabStop = true;
+            this.rb_devCp_del.UseVisualStyleBackColor = true;
+            this.rb_devCp_del.CheckedChanged += new System.EventHandler(this.rb_devCp_CheckedChanged);
+            // 
+            // rb_devCp_add
+            // 
+            resources.ApplyResources(this.rb_devCp_add, "rb_devCp_add");
+            this.rb_devCp_add.Name = "rb_devCp_add";
+            this.rb_devCp_add.TabStop = true;
+            this.rb_devCp_add.UseVisualStyleBackColor = true;
+            this.rb_devCp_add.CheckedChanged += new System.EventHandler(this.rb_devCp_CheckedChanged);
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // bt_devCP
+            // 
+            resources.ApplyResources(this.bt_devCP, "bt_devCP");
+            this.bt_devCP.Name = "bt_devCP";
+            this.bt_devCP.UseVisualStyleBackColor = true;
+            this.bt_devCP.Click += new System.EventHandler(this.bt_devCP_Click);
+            // 
+            // tb_devCp_surname
+            // 
+            resources.ApplyResources(this.tb_devCp_surname, "tb_devCp_surname");
+            this.tb_devCp_surname.Name = "tb_devCp_surname";
+            // 
+            // tb_devCp_name
+            // 
+            resources.ApplyResources(this.tb_devCp_name, "tb_devCp_name");
+            this.tb_devCp_name.Name = "tb_devCp_name";
             // 
             // tb_InterwalAutomatu
             // 
@@ -2594,6 +2669,10 @@ namespace GUI
             this.tp_Raporty.ResumeLayout(false);
             this.tp_Settings.ResumeLayout(false);
             this.tp_Settings.PerformLayout();
+            this.gb_Deweloper.ResumeLayout(false);
+            this.gb_Deweloper.PerformLayout();
+            this.gb_DevCp_option.ResumeLayout(false);
+            this.gb_DevCp_option.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -2946,6 +3025,15 @@ namespace GUI
         private DataGridViewTextBoxColumn PREPROD;
         private DataGridViewTextBoxColumn PROD;
         private DataGridViewTextBoxColumn iloscInstalacji;
+        private GroupBox gb_Deweloper;
+        private GroupBox gb_DevCp_option;
+        private RadioButton rb_devCp_del;
+        private RadioButton rb_devCp_add;
+        private Label label16;
+        private Label label15;
+        private Button bt_devCP;
+        private TextBox tb_devCp_surname;
+        private TextBox tb_devCp_name;
     }
 }
 

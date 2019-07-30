@@ -248,10 +248,8 @@ namespace GUI
             EventParam kom = new EventParam();
             try
             {
-                if (eventMoveId == 617)
-                {
 
-                    boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
+                boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
 
                     //boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.EventParamId == 2852).Select(x => x.EventParamId).ToArray<int>());
 
@@ -271,12 +269,7 @@ namespace GUI
                     //kom.Value = "QuickStep";
 
                     //boundEventParams.Add(kom);
-                }
-                else
-                {
-                    boundEventParams = gujaczWFS.GetBoundEventParamForIssue(issue.issueWFS.WFSIssueId, list.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
 
-                }
                 //if (eventMoveId != 618)
                 //{
                 foreach (Entities.EventParam item in boundEventParams)
@@ -595,7 +588,6 @@ namespace GUI
             comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
             
             int MapId = 0;
-
             string issueState = gujaczWFS.ExecuteStoredProcedure("spGetIssueState", new string[] { issue.issueWFS.WFSIssueId.ToString() }, DatabaseName.SupportCP)[0][1];
 
 
@@ -1761,7 +1753,7 @@ namespace GUI
 
                         }
 
-                        gujaczWFS.DoActionInIssue(issue.issueWFS.WFSIssueId, eventMoveId, epList);
+                        gujaczWFS.DoActionInIssue(Convert.ToInt32(issue.issueWFS.WFSIssueId), eventMoveId, epList);
 
                         if (callback != null)
                         {
