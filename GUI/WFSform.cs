@@ -529,7 +529,7 @@ namespace GUI
                         Kategoria = new Entities.Component() { Text = ((BillingDthLBItem)tbKategoria.SelectedItem).Text, Value = ((BillingDthLBItem)tbKategoria.SelectedItem).Value },
                         Rodzaj = new Entities.Component() { Text = ((BillingDthLBItem)tbRodzaj.SelectedItem).Text, Value = ((BillingDthLBItem)tbRodzaj.SelectedItem).Value },
                         Typ = new Entities.Component() { Text = ((BillingDthLBItem)tbTyp.SelectedItem).Text, Value = ((BillingDthLBItem)tbTyp.SelectedItem).Value },
-                        TrescZgloszenia = tbTrescZgloszenia.Text,
+                        TrescZgloszenia = tbTrescZgloszenia.Text.PadLeft(10000),
                         Priorytet = ((BillingDthLBItem)tbPriorytet.SelectedItem).Value.ToString(),
                         JiraId = tbJiraId.Text,
                         CzyOnCall = (cb_CzyOncall.Checked == true ? "True" : "False"),

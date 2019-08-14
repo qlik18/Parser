@@ -37,7 +37,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <DisallowUrlActivation>true</DisallowUrlActivation>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>3.0.30.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
@@ -184,6 +184,9 @@
       <DependentUpon>AutoCompleteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BackgrounWorkerTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeveloperCpStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditNote.cs">

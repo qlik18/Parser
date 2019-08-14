@@ -497,6 +497,11 @@ namespace GUI
                     string jiraNumber = item.Cells[1].Value.ToString();
                     var v = GetActionForIssue(issueNumber);
                     Issue issue = zgloszeniaWjira.FirstOrDefault(x => x.Key == jiraNumber);
+                    if(isNullObjectOrEmptyString(issue))
+                    {
+                        issue = jira.GetIssue(jiraNumber);
+
+                    }
 
                     if (isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value))
                     {
@@ -507,12 +512,32 @@ namespace GUI
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
                     }
-                    else if (!isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value)
+
+                    if (!isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value)
                               && (!isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Odrzucone")
                               && !isNullObjectOrEmptyString(v.FirstOrDefault(x => x.Key == 617).Value))
                     {
                         issueStep_OdrzucenieZgloszenia(this, jiraNumber.ToString());
                         //issueStep_OdrzucenieZgloszenia(this, issueNumber.ToString());
+                    }
+                    else
+                    {
+                        bool issueMoveProject = false;
+                        IEnumerable<IssueChangeLog> cl = issue.GetChangeLogs();
+                        foreach (IssueChangeLog changeLog in cl)
+                        {
+                            IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "Key" && x.FromValue == jiraNumber);
+                            if (!isNullObjectOrEmptyString(param))
+                            {
+                                issueMoveProject = true;
+                            }
+                        }
+
+                        if(issueMoveProject)
+                        {
+                            issueStep_ZmianaKataloguJira(this, jiraNumber.ToString());
+                        }
+
                     }
                     /*else if (!isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value)
                             && (item.Cells["dgvAktualnyStan"].Value.ToString() == "Odrzucone" ||
@@ -522,10 +547,10 @@ namespace GUI
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
                     }*/
-                    else 
+                    /*else 
                     {
                         doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
-                    }
+                    }*/
                 }
 
             }

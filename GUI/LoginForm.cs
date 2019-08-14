@@ -85,6 +85,7 @@ namespace GUI
                 Properties.Settings.Default.hasloWFS = this.haslo;
                 Properties.Settings.Default.loginJira = this.jiraU.Login;
                 Properties.Settings.Default.hasloJira = this.jiraU.Password;
+                Properties.Settings.Default.hasloBillennium = this.maskedTextBox2.Text;
                 Properties.Settings.Default.Save();
             }
 

@@ -1,0 +1,770 @@
+środa, 14 sierpnia 2019 08:06:38
+
+Zgłoszenie CRM-76597 dodano automatycznie o godzinie 2019-08-14 08:06:38!
+środa, 14 sierpnia 2019 08:06:39
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 08:06:44
+
+addCommentJira string jiraKey CRM-76597środa, 14 sierpnia 2019 08:06:44
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76597środa, 14 sierpnia 2019 08:06:54
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76596
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 08:15:43
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 572
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 473
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 08:15:59
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 14 sierpnia 2019 08:17:40
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 08:18:39
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19245
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 08:18:43
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19247
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 08:18:46
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19246
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 08:32:27
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+środa, 14 sierpnia 2019 08:41:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:42:15
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:46:25
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:48:15
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:51:25
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:54:15
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 08:56:25
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 09:00:15
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 09:01:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 09:06:18
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 09:06:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 09:13:15
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-76598
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 09:13:22
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19249
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 09:59:53
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 10:00:40
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 10:04:53
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__109_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2729
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 10:06:40
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4479
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 14 sierpnia 2019 10:24:56
+
+Zgłoszenie INFOLINIA-6805 dodano automatycznie o godzinie 2019-08-14 10:24:56!
+środa, 14 sierpnia 2019 10:24:56
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:26:19
+
+addCommentJira string jiraKey INFOLINIA-6805środa, 14 sierpnia 2019 10:26:19
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6805środa, 14 sierpnia 2019 10:26:19
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:26:20
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 572
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 473
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:26:28
+
+Zgłoszenie INFOLINIA-6805 dodano automatycznie o godzinie 2019-08-14 10:26:28!
+środa, 14 sierpnia 2019 10:26:40
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:26:53
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3877
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__233_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7493
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:26:55
+
+addCommentJira string jiraKey INFOLINIA-6805 NIE DODANO KOMENTARZA BO ISTNIEJE WPISśroda, 14 sierpnia 2019 10:26:55
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6805środa, 14 sierpnia 2019 10:26:58
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:26:59
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 572
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 473
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:28:44
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:28:45
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 572
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 473
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 480
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:29:53
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:35:24
+
+Zgłoszenie ZCC-19250 dodano automatycznie o godzinie 2019-08-14 10:35:24!
+środa, 14 sierpnia 2019 10:35:24
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:35:30
+
+Zgłoszenie ZCC-19251 dodano automatycznie o godzinie 2019-08-14 10:35:30!
+środa, 14 sierpnia 2019 10:35:30
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:35:31
+
+addCommentJira string jiraKey ZCC-19250środa, 14 sierpnia 2019 10:35:31
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19250środa, 14 sierpnia 2019 10:35:38
+
+addCommentJira string jiraKey ZCC-19251środa, 14 sierpnia 2019 10:35:38
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19251środa, 14 sierpnia 2019 10:35:47
+
+Zgłoszenie ZCC-19252 dodano automatycznie o godzinie 2019-08-14 10:35:47!
+środa, 14 sierpnia 2019 10:35:48
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:42:12
+
+Zgłoszenie ZCC-19257 dodano automatycznie o godzinie 2019-08-14 10:42:12!
+środa, 14 sierpnia 2019 10:42:12
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:42:19
+
+Zgłoszenie ZCC-19258 dodano automatycznie o godzinie 2019-08-14 10:42:19!
+środa, 14 sierpnia 2019 10:42:19
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:42:20
+
+addCommentJira string jiraKey ZCC-19257środa, 14 sierpnia 2019 10:42:20
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19257środa, 14 sierpnia 2019 10:42:24
+
+Zgłoszenie ZCC-19259 dodano automatycznie o godzinie 2019-08-14 10:42:24!
+środa, 14 sierpnia 2019 10:42:25
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:42:28
+
+addCommentJira string jiraKey ZCC-19258środa, 14 sierpnia 2019 10:42:28
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19258środa, 14 sierpnia 2019 10:42:30
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 604
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 14 sierpnia 2019 10:42:49
+
+addCommentJira string jiraKey ZCC-19259środa, 14 sierpnia 2019 10:42:50
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19259środa, 14 sierpnia 2019 10:43:49
+
+Zgłoszenie ZCC-19260 dodano automatycznie o godzinie 2019-08-14 10:43:49!
+środa, 14 sierpnia 2019 10:43:49
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:43:53
+
+addCommentJira string jiraKey ZCC-19260środa, 14 sierpnia 2019 10:43:53
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19260środa, 14 sierpnia 2019 10:44:01
+
+Zgłoszenie ZCC-19261 dodano automatycznie o godzinie 2019-08-14 10:44:01!
+środa, 14 sierpnia 2019 10:44:01
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:44:04
+
+addCommentJira string jiraKey ZCC-19261środa, 14 sierpnia 2019 10:44:04
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19261środa, 14 sierpnia 2019 10:48:12
+
+Zgłoszenie ZCC-19264 dodano automatycznie o godzinie 2019-08-14 10:48:12!
+środa, 14 sierpnia 2019 10:48:12
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:48:20
+
+addCommentJira string jiraKey ZCC-19264środa, 14 sierpnia 2019 10:48:20
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19264środa, 14 sierpnia 2019 10:48:32
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19253
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:48:39
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19252
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:48:49
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19251
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:48:53
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19250
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:48:57
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19256
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:49:00
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19255
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:49:03
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=ZCC-19254
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+środa, 14 sierpnia 2019 10:54:01
+
+Zgłoszenie WIND-8503 dodano automatycznie o godzinie 2019-08-14 10:54:01!
+środa, 14 sierpnia 2019 10:54:01
+
+Modyfikacja treeItem checkAsAssigneśroda, 14 sierpnia 2019 10:54:09
+
+addCommentJira string jiraKey WIND-8503środa, 14 sierpnia 2019 10:54:09
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8503środa, 14 sierpnia 2019 11:05:20
+
+--- Main exception: Message ---
+Zdalny punkt końcowy nie rozpoznaje już tej sekwencji. Jest to prawdopodobnie spowodowane przerwaniem działania w zdalnym punkcie końcowym. The value of wsrm:Identifier is not a known Sequence identifier. Wystąpił błąd uwierzytelnionej sesji.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.ExecuteStoredProcedure(User user, String procedureName, String[] parameters, DatabaseName database)
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 138
+
+--- Main exception: Source ---
+mscorlib
+

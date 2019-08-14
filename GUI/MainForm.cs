@@ -8166,6 +8166,23 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Odrzucenie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
 
         }
+        private void issueStep_ZmianaKataloguJira(object sender, string issueId)
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                const int eventMoveId = 617;
+
+                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+                addIssueToTreeNode(issueId, issue);
+
+                //Pobranie Rozmieszczenia parametrów zdarzenia
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+
+                KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(673, "Zmiana katalogu w Jira");
+
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana Obszaru - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+            });
+        }
 
         private void btn_issueStep_RealizujIZamknij_Click(object sender, EventArgs e)
         {
@@ -8250,64 +8267,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
         }
 
-        private void rb_devCp_CheckedChanged(object sender, EventArgs e)
+        private void numerZgl_Validated(object sender, EventArgs e)
         {
-            RadioButton rb = (RadioButton)sender;
-            if (rb.Name == rb_devCp_add.Name && rb.Checked)
-            {
-                bt_devCP.Text = "Dodaj Dewelopera";
-                return;
-            }
-
-            if (rb.Name == rb_devCp_del.Name && rb.Checked)
-            {
-                bt_devCP.Text = "Dezaktywuj Dewelopera";
-                return;
-            }
-        }
-
-        private void bt_devCP_Click(object sender, EventArgs e)
-        {
-            if(isNullObjectOrEmptyString(tb_devCp_name.Text) || isNullObjectOrEmptyString(tb_devCp_surname.Text))
-            {
-                MessageBox.Show("Imię i nazwisko musi być uzupełnione!!!", "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!rb_devCp_add.Checked && !rb_devCp_del.Checked)
-            {
-                MessageBox.Show("Wybierz operację!!!", "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            //else if()
-            else if(rb_devCp_add.Checked)
-            {
-
-                var v = gujaczWFS.ExecuteStoredProcedure("[CP_dodaj_dewelopera]", new string[] 
-                                                                                { tb_devCp_name.Text.ToString().Trim(), tb_devCp_surname.Text.ToString().Trim() }
-                                                                                , DatabaseName.SupportCP);
-                MessageBox.Show(v[0][0], "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            else if (rb_devCp_del.Checked)
-            {
-
-                var v = gujaczWFS.ExecuteStoredProcedure("[CP_dezaktywuj_dewelopera]", new string[]
-                                                                                { tb_devCp_name.Text.ToString(), tb_devCp_surname.Text.ToString() }
-                                                                               , DatabaseName.SupportCP);
-                MessageBox.Show(v[0][0], "UWAGA GAMONIU!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-            bt_devCP.Text = "Wybierz operację";
-            rb_devCp_add.Checked = false;
-            rb_devCp_del.Checked = false;
-            tb_devCp_name.Text = string.Empty;
-            tb_devCp_surname.Text = string.Empty;
+            numerZgl.Text = numerZgl.Text.Trim();
         }
     }
 }
-
-
-
-/*
-                     dgv_SlaRaport.Columns["dgvIssueId"].Visible = cb_dgv_IssueId.Checked;
-                    dgv_SlaRaport.Columns["dgvPauza"].Visible = cb_dgv_Pauza.Checked;
-                    dgv_SlaRaport.Columns["dgvAktCzasRealizacji"].Visible = cb_dgv_Wypalony.Checked;
-     */

@@ -727,6 +727,7 @@ namespace GUI
             // 
             resources.ApplyResources(this.numerZgl, "numerZgl");
             this.numerZgl.Name = "numerZgl";
+            this.numerZgl.Validated += new System.EventHandler(this.numerZgl_Validated);
             // 
             // label1
             // 

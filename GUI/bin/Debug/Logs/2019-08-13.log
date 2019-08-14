@@ -1,0 +1,26 @@
+wtorek, 13 sierpnia 2019 15:36:42
+
+--- Main exception: Message ---
+Zdalny punkt końcowy nie rozpoznaje już tej sekwencji. Jest to prawdopodobnie spowodowane przerwaniem działania w zdalnym punkcie końcowym. The value of wsrm:Identifier is not a known Sequence identifier. Wystąpił błąd uwierzytelnionej sesji.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.GetActionForIssue(User user, Int32 issueId, Int32 userId)
+   w DataLayer.Implementation.GatewayDaoWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 86
+   w LogicLayer.Implementation.ParserEngineWFS.GetActionForIssue(Int32 issueId, Int32 userId) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 209
+   w GUI.MainForm.GetActionForIssue(Int32 WFSIssueId)
+
+--- Main exception: Source ---
+mscorlib
+

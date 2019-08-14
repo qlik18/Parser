@@ -704,3 +704,18 @@ Nie można rozpoznać nazwy zdalnej: 'jira'
 --- Main exception: Source ---
 Atlassian.Jira
 
+wtorek, 30 lipca 2019 15:33:37
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6790
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6745
+
+--- Main exception: Source ---
+GUI
+
+wtorek, 30 lipca 2019 15:34:23
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+

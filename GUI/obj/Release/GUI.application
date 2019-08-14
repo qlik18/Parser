@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="GUI.application" version="3.0.30.4" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <assemblyIdentity name="GUI.application" version="3.0.30.7" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="GUI" asmv2:product="GUI" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" disallowUrlActivation="true" mapFileExtensions="true" minimumRequiredVersion="3.0.30.1" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -8,13 +8,13 @@
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="GUI.exe.manifest" size="31186">
-      <assemblyIdentity name="GUI.exe" version="3.0.30.4" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" type="win32" />
+      <assemblyIdentity name="GUI.exe" version="3.0.30.7" publicKeyToken="0000000000000000" language="pl-PL" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FN4FHWRV6qcec0A52AM15LuMyh0Y1Z900RCGN3OibdU=</dsig:DigestValue>
+        <dsig:DigestValue>nZKZybWwz2i/kD0RduuQLxsd9JPRTiM/ibFA5JoDcfg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
