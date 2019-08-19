@@ -8,7 +8,7 @@ namespace Entities
 {
     public abstract class BillingIssueDto
     {
-        abstract public string Idnumber { get; set; }
+        abstract public string JiraKey { get; set; }
         public bool isInWFS { set; get; }
         public BillingDTHIssueWFS issueWFS { get; set; }
         public IssueType Type;

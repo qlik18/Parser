@@ -321,7 +321,7 @@ namespace GUI
             if (auto && !cb_CzyOncall.Checked)
             {
                 
-                Logging.Logger.Instance.LogInformation(string.Format("Zgłoszenie {0} dodano automatycznie o godzinie {1}!\n", zgloszenie.Idnumber, DateTime.Now));
+                Logging.Logger.Instance.LogInformation(string.Format("Zgłoszenie {0} dodano automatycznie o godzinie {1}!\n", zgloszenie.JiraKey, DateTime.Now));
                 addButton_Click(this, null);
             }
 

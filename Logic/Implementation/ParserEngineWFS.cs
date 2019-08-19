@@ -119,7 +119,7 @@ namespace LogicLayer.Implementation
         public List<BillingIssueDtoHelios> compareBillingWithWFS(List<BillingIssueDtoHelios> issues)
         {
             List<BillingIssueDtoHelios> returnList = new List<BillingIssueDtoHelios>();
-            List<string> issuesNumber = issues.Select(x => x.Idnumber).ToList<string>();
+            List<string> issuesNumber = issues.Select(x => x.JiraKey).ToList<string>();
 
             Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckIssuesPresenceOnBpm(issues);
             //Dictionary<KeyValuePair<int, string>, string> list = wfsDao.CheckBillingIssuesPresenceOnWFS(issuesNumber.ToArray());
@@ -128,10 +128,10 @@ namespace LogicLayer.Implementation
             {
                 BillingIssueDtoHelios id = issues[i];
                 id.issueWFS = new BillingDTHIssueWFS();
-                id.isInWFS = list.Any(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier));
+                id.isInWFS = list.Any(x => x.Value.Contains(id.JiraKey) || x.Value.Contains(id.issueHelios.jiraIdentifier));
                 if (id.isInWFS)
                 {
-                    KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
+                    KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.JiraKey) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
                     id.issueWFS.WFSIssueId = para.Key.Key;
                     id.issueWFS.WFSState = para.Key.Value;
                 }
@@ -156,10 +156,10 @@ namespace LogicLayer.Implementation
         //    {
         //        BillingIssueDtoHelios id = issues[i];
         //        id.issueWFS = new BillingDTHIssueWFS();
-        //        id.isInWFS = list.Any(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier));
+        //        id.isInWFS = list.Any(x => x.Value.Contains(id.JiraKey) || x.Value.Contains(id.issueHelios.jiraIdentifier));
         //        if (id.isInWFS)
         //        {
-        //            KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.Idnumber) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
+        //            KeyValuePair<KeyValuePair<int, string>, string> para = list.Where(x => x.Value.Contains(id.JiraKey) || x.Value.Contains(id.issueHelios.jiraIdentifier)).First();
         //            id.issueWFS.WFSIssueId = para.Key.Key;
         //            id.issueWFS.WFSState = para.Key.Value;
         //        }

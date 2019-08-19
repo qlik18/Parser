@@ -1,0 +1,31 @@
+sobota, 17 sierpnia 2019 14:37:30
+
+Automatyczny zapis nowego zgłoszenia Entities.BillingIssueDtoHelios [2019-08-17 14:37:30] 
+
+sobota, 17 sierpnia 2019 14:37:35
+
+Automatyczny zapis poprawny Entities.BillingIssueDtoHelios [2019-08-17 14:37:35] 
+
+sobota, 17 sierpnia 2019 14:37:35
+
+Modyfikacja treeItemsobota, 17 sierpnia 2019 14:37:35
+
+Status Auto: False 
+
+sobota, 17 sierpnia 2019 14:37:44
+
+addCommentJira string jiraKey WIND-8507sobota, 17 sierpnia 2019 14:47:51
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=WIND-8507
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6750
+
+--- Main exception: Source ---
+GUI
+
+sobota, 17 sierpnia 2019 15:42:58
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+

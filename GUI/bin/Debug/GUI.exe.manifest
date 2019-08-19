@@ -62,31 +62,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3N7mQUKE//+SEf6bBR56bdXg8ZOsuaXix88ppi8ZSC8=</dsig:DigestValue>
+        <dsig:DigestValue>bM4F6UG2dzJw6nGS/99ufqMYImz9HNF26AHY6FUOlBE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entities.dll" size="39424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entities.dll" size="40960">
       <assemblyIdentity name="Entities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>p1Avf/V/L9OfnwS3rTWW663iZCesDCBjn0LvI1S8hYk=</dsig:DigestValue>
+        <dsig:DigestValue>9irCIc6k/SXbSsrUdhRFj2rwOEFDEVhihmkW0ScYo/Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2789376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GUI.exe" size="2791936">
       <assemblyIdentity name="GUI" version="3.0.20.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jLBuYlxTvYd18QUpiMP38OO3QKnXp36LSWXH352MJNc=</dsig:DigestValue>
+        <dsig:DigestValue>Fb5GQtUtYwgPY1/UoK9NArMeyc1dXZg/RYLjrfSTMCI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uamvAJFNZoQ42Xs8U/m/NSZd8wfxI1RRIleyEObPJf4=</dsig:DigestValue>
+        <dsig:DigestValue>8aLZn8dMWgf362Bizyf8OKNdzLsIiDJAD0abmkAJ9Go=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -110,6 +110,8 @@ namespace GUI
         private List<List<string>> SLAlista = new List<List<string>>();
         // Lista Aktualnych czasów SLA
         private List<UserBpmJira> userBpmJira = new List<UserBpmJira>();
+        // Lista Aktualnych czasów SLA
+        private UserBpmJiraList userBpmJiraList = new UserBpmJiraList();
         // Czy quickSptep
         private bool __quickStep = false;
         // Czy quickSptep
@@ -348,9 +350,12 @@ namespace GUI
                                         , new UserJira((item[3].Contains(string.Empty) ? item[1] : item[3]), (item[4].Contains(string.Empty) ? item[2] : item[4]))
                                         );
                     userBpmJira.Add(ubj);
+
                 }
 
-                
+                userBpmJiraList = new UserBpmJiraList(userBpmJira);
+
+
 
             }
             else
@@ -486,7 +491,7 @@ namespace GUI
             {
                 Note note = generateNote();
                 gujaczNotatki.AddNoteToDB(note);
-                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == selectIssue.Idnumber).FirstOrDefault();
+                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == selectIssue.JiraKey).FirstOrDefault();
                 issues[tr.Name].Remove(tmp.Key);
                 if (tmp.Key is BillingIssueDtoHelios)
                     ((BillingIssueDtoHelios)tmp.Key).note = note;
@@ -501,7 +506,7 @@ namespace GUI
         private Note generateNote()
         {
             Note notatka = new Note();
-            notatka.issueNumber = selectIssue.Idnumber;
+            notatka.issueNumber = selectIssue.JiraKey;
             notatka.author = gujaczWFS.getUser().login;
             notatka.date = System.DateTime.Now.ToString();
             notatka.content = note_form.Notatka;
@@ -539,7 +544,7 @@ namespace GUI
             // Jeżeli zaznaczony węzeł nie jest zgłoszeniem
             //if (e.Node.Level == 0)
             //    return;
-            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
+            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
             if (tmp.Equals(default(KeyValuePair<IssueDto, IssueState>)))
                 Logger.Instance.LogWarning("Nie udało się załadować zgłoszenia z węzła " + e.Node.Text);
             else
@@ -747,7 +752,7 @@ namespace GUI
         private void btn_MultiUsun_Click(object sender, EventArgs e)
         {
             string selectedItem = lb_MultiList.SelectedItem.ToString();
-            BillingIssueDto tmp = multiIssues.Where(x => x.Key.Idnumber == lb_MultiList.SelectedItem.ToString()).FirstOrDefault().Key;
+            BillingIssueDto tmp = multiIssues.Where(x => x.Key.JiraKey == lb_MultiList.SelectedItem.ToString()).FirstOrDefault().Key;
 
             multiIssues.Remove(tmp);
             lb_MultiList.Items.Remove(selectedItem);
@@ -772,7 +777,7 @@ namespace GUI
                 default: tr = treeView2; break;
             }
 
-            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == issueNumber).FirstOrDefault();
+            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == issueNumber).FirstOrDefault();
             bool onList = false;
 
             if (tmp.Value != 0)
@@ -781,7 +786,7 @@ namespace GUI
                 {
                     foreach (KeyValuePair<BillingIssueDto, IssueState> kvp in multiIssues)
                     {
-                        if (tmp.Key.Idnumber == kvp.Key.Idnumber)
+                        if (tmp.Key.JiraKey == kvp.Key.JiraKey)
                         {
                             onList = true;
                             break;
@@ -791,7 +796,7 @@ namespace GUI
                     if (!onList)
                     {
                         Dictionary<int, string> actions = new Dictionary<int, string>();
-                        bool success = issueMove[tr.Name].TryGetValue(tmp.Key.Idnumber, out actions);
+                        bool success = issueMove[tr.Name].TryGetValue(tmp.Key.JiraKey, out actions);
                         bool sameEvents = true;
 
                         if (success && multiIssues.Count > 0)
@@ -822,21 +827,21 @@ namespace GUI
                         if (sameEvents)
                         {
                             multiIssues.Add(tmp.Key, tmp.Value);
-                            lb_MultiList.Items.Add(tmp.Key.Idnumber);
+                            lb_MultiList.Items.Add(tmp.Key.JiraKey);
 
-                            if (issueMove[tr.Name] != null && issueMove[tr.Name].ContainsKey(tmp.Key.Idnumber) && success && multiIssues.Count == 1)
+                            if (issueMove[tr.Name] != null && issueMove[tr.Name].ContainsKey(tmp.Key.JiraKey) && success && multiIssues.Count == 1)
                             {
                                 multi_ShowButtons(actions);
                             }
                         }
                         else
                         {
-                            NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.Idnumber + " posiada inny status niż wybrane wcześniej zgłoszenia!", "Błąd");
+                            NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.JiraKey + " posiada inny status niż wybrane wcześniej zgłoszenia!", "Błąd");
                         }
                     }
                     else
                     {
-                        NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.Idnumber + " znajduje się już na liście!", "Błąd");
+                        NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.JiraKey + " znajduje się już na liście!", "Błąd");
                     }
                 }
                 catch (NullReferenceException ex)
@@ -844,7 +849,7 @@ namespace GUI
                 }
             }
             else
-                NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.Idnumber + " nie znajduje się jeszcze w WFS!", "Błąd");
+                NoticeForm.ShowNotice("Zgłoszenie " + tmp.Key.JiraKey + " nie znajduje się jeszcze w WFS!", "Błąd");
         }
 
         /// <summary>
@@ -3280,7 +3285,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 lista.Sort((x, y) =>
                 {
-                    return x.Key.Idnumber.CompareTo(y.Key.Idnumber);
+                    return x.Key.JiraKey.CompareTo(y.Key.JiraKey);
                 });
 
                 foreach (KeyValuePair<BillingIssueDto, IssueState> item in lista)
@@ -3310,7 +3315,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     string slaValue = null;
                     foreach (var slaItem in SLAlista)
                     {
-                        if (item.Key.Idnumber == slaItem[1].ToString())
+                        if (item.Key.JiraKey == slaItem[1].ToString())
                         {
                             slaValue = string.Concat(" [", slaItem[8].ToString(), " min]");
                         }
@@ -3328,7 +3333,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     {
                         ImageIndex = index, //(int)item.Value,
                         SelectedImageIndex = index,
-                        Text = item.Key.Idnumber + ' ' + item.Key.issueWFS.WFSState + slaValue,
+                        Text = item.Key.JiraKey + ' ' + item.Key.issueWFS.WFSState + slaValue,
                         Name = "node_" + tempIndex,
                         ContextMenuStrip = cms_IssuePopup
                     };
@@ -3409,7 +3414,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         {
                             ImageIndex = index, //(int)item.Value,
                             SelectedImageIndex = index,
-                            Text = item.Key.Idnumber + ' ' + item.Key.issueWFS.WFSState,
+                            Text = item.Key.JiraKey + ' ' + item.Key.issueWFS.WFSState,
                             Name = "node_" + tempIndex,
                             ContextMenuStrip = cms_IssuePopup
                         };
@@ -3419,7 +3424,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 }
             }*/
 
-                    if (issue != null && item.Key.Idnumber.Equals(issue.Idnumber))
+                    if (issue != null && item.Key.JiraKey.Equals(issue.JiraKey))
                         tr.SelectedNode = node;
                 }
                 tr.ExpandAll();
@@ -3475,8 +3480,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             System.Diagnostics.Debug.WriteLine(string.Format("Zapisano zgłoszenie {0} - {1}", item.Key.ToString(), wfsIssueId.ToString()));
                             if (wfsIssueId == 0)
                             {
-                                sb.AppendLine(item.Key.Idnumber + ": nie zapisano");
-                                pb_UpdateProgressBar("Zablokowano zapis: " + item.Key.Idnumber);
+                                sb.AppendLine(item.Key.JiraKey + ": nie zapisano");
+                                pb_UpdateProgressBar("Zablokowano zapis: " + item.Key.JiraKey);
 
                                 toRemove.Add(item);
                             }
@@ -3484,8 +3489,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             {
 
                                 Logger.Instance.LogInformation(string.Format("Automatyczny zapis poprawny {0} [{1}] \n\n", item.Key, DateTime.Now));
-                                sb.AppendLine(item.Key.Idnumber + ": Dodane poprawnie");
-                                pb_UpdateProgressBar("Zapisano zgłoszenie: " + item.Key.Idnumber);
+                                sb.AppendLine(item.Key.JiraKey + ": Dodane poprawnie");
+                                pb_UpdateProgressBar("Zapisano zgłoszenie: " + item.Key.JiraKey);
                                 issues[tr.Name].Remove(item.Key);
                                 issues[tr.Name].Add(item.Key, IssueState.INWFS);
 
@@ -3495,12 +3500,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 for (int i = 0; i < itemsCount; i++)
                                 {
                                     TreeNode treeItem = tr.Nodes[i];
-                                    if (treeItem.Text.Split(' ').First() == item.Key.Idnumber)
+                                    if (treeItem.Text.Split(' ').First() == item.Key.JiraKey)
                                     {
 
                                         Logger.Instance.LogInformation(string.Format("Modyfikacja treeItem"));
 
-                                        KeyValuePair<BillingIssueDto, IssueState> iss = issues[tr.Name].Where(x => x.Key.Idnumber == item.Key.Idnumber).FirstOrDefault();
+                                        KeyValuePair<BillingIssueDto, IssueState> iss = issues[tr.Name].Where(x => x.Key.JiraKey == item.Key.JiraKey).FirstOrDefault();
                                         BillingIssueDtoHelios it = iss.Key as BillingIssueDtoHelios;
 
                                         int index = GetImageIndex(item.Key as BillingIssueDtoHelios, IssueState.INWFS);
@@ -3533,7 +3538,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         catch (Exception ex)
                         {
                             ExceptionManager.LogError(ex, Logger.Instance);
-                            sb.AppendLine(item.Key.Idnumber + ": " + ex.Message);
+                            sb.AppendLine(item.Key.JiraKey + ": " + ex.Message);
                         }
                     }
                     //                    NoticeForm.ShowNotice(sb.ToString()+sbDuble.ToString(), "Zapisano zgłoszenia");
@@ -3603,7 +3608,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             {
 
 
-                czyPoprawneHaslo = addCommentJira(item.Key.Idnumber.ToString());
+                czyPoprawneHaslo = addCommentJira(item.Key.JiraKey.ToString());
 
             }
 
@@ -3658,17 +3663,17 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             int index = GetImageIndex(tmp.Key as BillingIssueDtoHelios, destState);
 
-            TreeNode treeItem;// = tr.Nodes[tmp.Key.Idnumber];
+            TreeNode treeItem;// = tr.Nodes[tmp.Key.JiraKey];
             Logger.Instance.LogInformation(string.Format("Modyfikacja treeItem checkAsAssigne"));
 
             TreeNode[] treeNodes = tr.Nodes
                                     .Cast<TreeNode>()
-                                    .Where(r => r.Text.Trim() == tmp.Key.Idnumber)
+                                    .Where(r => r.Text.Trim() == tmp.Key.JiraKey)
                                     .ToArray();
 
             if (treeNodes.Count() > 0)
             {
-                treeItem = treeNodes.Single(x => x.Text.Contains(tmp.Key.Idnumber));
+                treeItem = treeNodes.Single(x => x.Text.Contains(tmp.Key.JiraKey));
                 tr.Invoke((MethodInvoker)delegate
                 {
                     treeItem.ImageIndex = index;
@@ -3677,7 +3682,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 });
             }
 
-            //TreeNode[] treeItemC2 = tr.Nodes.Find(tmp.Key.Idnumber, false);
+            //TreeNode[] treeItemC2 = tr.Nodes.Find(tmp.Key.JiraKey, false);
 
         }
 
@@ -3819,7 +3824,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         //{
         //    if (tr.SelectedNode != null)
         //    {
-        //        KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
+        //        KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
         //        //Czy element znajduje się w WFS??
         //        if (tmp.Key != null)
         //        {
@@ -3852,7 +3857,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 TreeNode trTmp = tr.Nodes[i];
 
 
-                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == trTmp.Text.Split(' ').First()).FirstOrDefault();
+                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == trTmp.Text.Split(' ').First()).FirstOrDefault();
                 //Czy element znajduje się w WFS??
                 if (tmp.Key != null)
                 {
@@ -3871,9 +3876,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         if (auto)
                         {
                             checkAsAssigne(tr, tmp, IssueState.INWFS);
-                            doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.Idnumber, null);
+                            doByWorker(new DoWorkEventHandler(addCommentJira), tmp.Key.JiraKey, null);
                         }
-                        //addCommentJira(tmp.Key.Idnumber.ToString());
+                        //addCommentJira(tmp.Key.JiraKey.ToString());
                         wfs.ShowDialog();
 
                     }
@@ -3886,7 +3891,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
             //if (tr.SelectedNode != null)
             //{
-            //    KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
+            //    KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == tr.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
             //    //Czy element znajduje się w WFS??
             //    if (tmp.Key != null)
             //    {
@@ -4108,7 +4113,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void btn_AddIssueToMulti_Click(object sender, EventArgs e)
         {
             return;
-            AddIssueToMultiList(selectIssue.Idnumber);
+            AddIssueToMultiList(selectIssue.JiraKey);
         }
 
         /// <summary>
@@ -4142,7 +4147,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 cms_IssuePopup.Items.Clear();
                 KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x =>
                 {
-                    if (x.Key.Idnumber == e.Node.Text.Split(' ').First())
+                    if (x.Key.JiraKey == e.Node.Text.Split(' ').First())
                         return true;
                     else
                         return false;
@@ -4551,7 +4556,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             IssueState state = (item.isInWFS) ? IssueState.INWFS : IssueState.NEW;
 
                             issues[tr.Name].Add(updatedIssue, state);
-                            pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.Idnumber);
+                            pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.JiraKey);
                         }
 
                         if (nieznalezione.Count > 0)
@@ -4692,7 +4697,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             IssueState state = (item.isInWFS) ? IssueState.INWFS : IssueState.NEW;
 
                             issues[tr.Name].Add(updatedIssue, state);
-                            pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.Idnumber);
+                            pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.JiraKey);
                         }
 
                         t_UpdateLiczbaZgloszen(issues["treeView1"].Count, issues["treeView2"].Count);
@@ -4819,7 +4824,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                             issues["treeView1"].Add(issue, state);
 
-                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
 
                         }
 
@@ -4831,7 +4836,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                             issues["treeView2"].Add(issue, state);
 
-                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
 
                         }
                         /*
@@ -4842,7 +4847,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                             issues["treeView4"].Add(issue, state);
 
-                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                            pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
                         }
                         */
                         t_UpdateLiczbaZgloszen(issues["treeView1"].Count, issues["treeView2"].Count);
@@ -4992,7 +4997,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                                 issues["treeView1"].Add(issue, state);
 
-                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
 
                             }
 
@@ -5004,7 +5009,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                                 issues["treeView2"].Add(issue, state);
 
-                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
 
                             }
                             /*
@@ -5015,7 +5020,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 IssueState state = (issue.isInWFS) ? IssueState.INWFS : IssueState.NEW;
                                 issues["treeView4"].Add(issue, state);
 
-                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.Idnumber));
+                                pb_UpdateProgressBar(string.Format("Analiza zgłoszenia: {0}", issue.JiraKey));
                             }
                             */
                             t_UpdateLiczbaZgloszen(issues["treeView1"].Count, issues["treeView2"].Count);
@@ -5081,7 +5086,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             if (!workload.IsLogging)
             {
-                lb_workloadTitle.Text = "Numer zgłoszenia: " + issue.Idnumber;
+                lb_workloadTitle.Text = "Numer zgłoszenia: " + issue.JiraKey;
                 workload.Issue = issue;
                 lb_WorkloadLoggedTime.Text = "Zalogowany czas: " + workload.LoggedTime.ToString("h'h 'm'm 's's'");
                 lb_WorkloadTotalTime.Text = "Całkowity czas: " + workload.TotalTime.ToString("h'h 'm'm 's's'");
@@ -5211,7 +5216,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     ssb_WorkloadButton.Image = global::GUI.Properties.Resources.start4;
                     ssb_WorkloadStopButton.Enabled = false;
                     lb_WorkloadLoggedTime.Text = "Zalogowany czas: " + workload.LastTime.ToString("h'h 'm'm 's's'");
-                    tslb_WorkloadStatus.Text = workload.Issue.Idnumber + ": " + workload.LastTime.ToString("h'h 'm'm 's's'");
+                    tslb_WorkloadStatus.Text = workload.Issue.JiraKey + ": " + workload.LastTime.ToString("h'h 'm'm 's's'");
 
                     ni_NewIssueAlert.Icon = global::GUI.Properties.Resources.parserIcon;
 
@@ -5267,7 +5272,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 ssb_WorkloadButton.Image = global::GUI.Properties.Resources.start4;
                 ssb_WorkloadStopButton.Enabled = false;
                 lb_WorkloadLoggedTime.Text = "Zalogowany czas: " + workload.LastTime.ToString("h'h 'm'm 's's'");
-                tslb_WorkloadStatus.Text = workload.Issue.Idnumber + ": " + workload.LastTime.ToString("h'h 'm'm 's's'");
+                tslb_WorkloadStatus.Text = workload.Issue.JiraKey + ": " + workload.LastTime.ToString("h'h 'm'm 's's'");
 
                 ni_NewIssueAlert.Icon = global::GUI.Properties.Resources.parserIcon;
 
@@ -5318,7 +5323,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             TimeSpan time = workload.LoggedTime + (DateTime.Now - workload.StartTime);
 
-            tslb_WorkloadStatus.Text = workload.Issue.Idnumber + ": " + time.ToString("h'h 'm'm 's's'");
+            tslb_WorkloadStatus.Text = workload.Issue.JiraKey + ": " + time.ToString("h'h 'm'm 's's'");
 
         }
         */
@@ -5390,7 +5395,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             if (!newIssue)
             {
-                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == zgloszenie.Idnumber).FirstOrDefault();
+                KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == zgloszenie.JiraKey).FirstOrDefault();
                 issues[tr.Name].Remove(tmp.Key);
                 issues[tr.Name].Add(zgloszenie, IssueState.READYTOSAVE);
                 AddToTree(tr, zgloszenie);
@@ -5437,19 +5442,19 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 if (issueMove.TryGetValue(tr.Name,out outMap))
                                 {
                                     Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(item.Key.issueWFS.WFSIssueId, UserId);
-                                    if (!outMap.ContainsKey(item.Key.Idnumber))
+                                    if (!outMap.ContainsKey(item.Key.JiraKey))
                                     {
-                                        issueMove[tr.Name].Add(item.Key.Idnumber, moves);
+                                        issueMove[tr.Name].Add(item.Key.JiraKey, moves);
                                     }
                                     else
                                     {
-                                        issueMove[tr.Name].Remove(item.Key.Idnumber);
-                                        issueMove[tr.Name].Add(item.Key.Idnumber, moves);
-                                        Debug.Print(string.Format("GetActionForIssues remove/add : {0} - {1} - {2}", tr.Name, item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()));
+                                        issueMove[tr.Name].Remove(item.Key.JiraKey);
+                                        issueMove[tr.Name].Add(item.Key.JiraKey, moves);
+                                        Debug.Print(string.Format("GetActionForIssues remove/add : {0} - {1} - {2}", tr.Name, item.Key.JiraKey, item.Key.issueWFS.WFSIssueId.ToString()));
                                         break;
                                     }//
                                 }
-                                //ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.Idnumber, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
+                                //ExceptionManager.LogWarning(string.Format("Próbwa wpisania zdublowanej wartości GetActionForIssues: {0} - {1}", item.Key.JiraKey, item.Key.issueWFS.WFSIssueId.ToString()), Logger.Instance);
 
                             }
                         }
@@ -5481,12 +5486,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
                     else
                     {
-                        if (!isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.Idnumber)))
-                            issueMove[trName].Remove(issue.Idnumber);
+                        if (!isNullObjectOrEmptyString(issueMove[trName].FirstOrDefault(x => x.Key == issue.JiraKey)))
+                            issueMove[trName].Remove(issue.JiraKey);
                     }
 
                     Dictionary<int, string> moves = gujaczWFS.GetActionForIssue(issue.issueWFS.WFSIssueId, UserId);
-                    issueMove[trName].Add(issue.Idnumber, moves);
+                    issueMove[trName].Add(issue.JiraKey, moves);
                 }
                 catch (Exception ex)
                 {
@@ -5523,7 +5528,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// <param name="tr"></param>
         private void AutoReturnIssue(BillingIssueDtoHelios zgloszenie, TreeView tr, bool isNew)
         {
-            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.Idnumber == zgloszenie.Idnumber).FirstOrDefault();
+            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[tr.Name].Where(x => x.Key.JiraKey == zgloszenie.JiraKey).FirstOrDefault();
             issues[tr.Name].Remove(tmp.Key);
             issues[tr.Name].Add(zgloszenie, IssueState.READYTOSAVE);
             //AddToTree(tr);
@@ -5769,7 +5774,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     foreach (TreeNode item in tr.Nodes)
                     {
                         string text = item.Text.Split(' ')[0];
-                        KeyValuePair<BillingIssueDto, IssueState> tmp = this.issues[tr.Name].Where(x => x.Key.Idnumber == item.Text.Split(' ').First()).FirstOrDefault();
+                        KeyValuePair<BillingIssueDto, IssueState> tmp = this.issues[tr.Name].Where(x => x.Key.JiraKey == item.Text.Split(' ').First()).FirstOrDefault();
                         if (!tmp.Equals(default(KeyValuePair<IssueDto, IssueState>)) && (tmp.Value == IssueState.INWFS || tmp.Value == IssueState.SELECTED))
                         {
                             BillingIssueDto iss = tmp.Key as BillingIssueDto;
@@ -5908,7 +5913,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     foreach (TreeNode item in tr.Nodes)
                     {
                         string text = item.Text.Split(' ')[0];
-                        KeyValuePair<BillingIssueDto, IssueState> tmp = this.issues[tr.Name].Where(x => x.Key.Idnumber == item.Text.Split(' ').First()).FirstOrDefault();
+                        KeyValuePair<BillingIssueDto, IssueState> tmp = this.issues[tr.Name].Where(x => x.Key.JiraKey == item.Text.Split(' ').First()).FirstOrDefault();
                         if (!tmp.Equals(default(KeyValuePair<IssueDto, IssueState>)) && (tmp.Value == IssueState.INWFS || tmp.Value == IssueState.SELECTED))
                         {
                             BillingIssueDto iss = tmp.Key as BillingIssueDto;
@@ -5952,7 +5957,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void button1_Click(object sender, EventArgs e)
         {
-            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[treeView1.Name].Where(x => x.Key.Idnumber == treeView1.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
+            KeyValuePair<BillingIssueDto, IssueState> tmp = issues[treeView1.Name].Where(x => x.Key.JiraKey == treeView1.SelectedNode.Text.Split(' ').First()).FirstOrDefault();
             if (tmp.Equals(default(KeyValuePair<IssueDto, IssueState>)))
                 return;
 
@@ -6046,7 +6051,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         IssueState state = (item.isInWFS) ? IssueState.INWFS : IssueState.NEW;
 
                         issues[tr.Name].Add(updatedIssue, state);
-                        pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.Idnumber);
+                        pb_UpdateProgressBar("Analiza zgłoszenia:" + updatedIssue.JiraKey);
                     }
 
                     t_UpdateLiczbaZgloszen(issues["treeView1"].Count, issues["treeView2"].Count);
@@ -6278,12 +6283,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 
 
                 BillingIssueDtoHelios tmp2 = gujaczWFS.UpdateJiraInfo(updatedIssue);
-                //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.Idnumber == tmp2.Idnumber).Key.Idnumber.ToString()))
+                //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.JiraKey == tmp2.JiraKey).Key.JiraKey.ToString()))
                 IssueState issS ;
                 if (!issues[treeViewName].TryGetValue(tmp2, out issS))
                     issues[treeViewName].Add(tmp2, state);
                 else
-                    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.Idnumber));
+                    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.JiraKey));
             }
 
             for (int i = 0; i < wfsList[treeViewName].Count; i++)
@@ -6304,7 +6309,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             KeyValuePair<BillingIssueDto, IssueState> tmp = issues[treeViewName].Where(x =>
             {
-                if (x.Key.Idnumber == issueNumber)
+                if (x.Key.JiraKey == issueNumber)
                     return true;
                 else
                     return false;
@@ -6346,12 +6351,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             BillingIssueDtoHelios tmp2 = gujaczWFS.UpdateJiraInfo(updatedIssue);
 
             KeyValuePair<BillingIssueDto, IssueState> tmp = new KeyValuePair<BillingIssueDto, IssueState>(tmp2, state);
-            //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.Idnumber == tmp2.Idnumber).Key.Idnumber.ToString()))
+            //if(isNullObjectOrEmptyString(issues[treeViewName].FirstOrDefault(x => x.Key.JiraKey == tmp2.JiraKey).Key.JiraKey.ToString()))
             //IssueState issS;
             //if (!issues[treeViewName].TryGetValue(tmp2, out issS))
             //    issues[treeViewName].Add(tmp2, state);
             //else
-            //    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.Idnumber));
+            //    Debug.WriteLine(string.Format("Istnieje obiekt dla {0} w issues[treeViewName] ", tmp2.JiraKey));
 
 
             //for (int i = 0; i < wfsList[treeViewName].Count; i++)
@@ -6376,7 +6381,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             //            KeyValuePair<BillingIssueDto, IssueState> tmp = new KeyValuePair<BillingIssueDto, IssueState>(tmp2, state);
             //= issues[treeViewName].Where(x =>
             //{
-            //    if (x.Key.Idnumber == issueNumber)
+            //    if (x.Key.JiraKey == issueNumber)
             //        return true;
             //    else
             //        return false;
@@ -6798,7 +6803,20 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 ExceptionManager.LogError(ex, Logger.Instance, false);
             }
         }
-         
+
+        private void ModelerForm_sla_ActionFinishAfterAutoStep(string jiraKey, string eventName, TreeView tr)
+        {
+            try
+            {
+                int issueid = getIssueIdForJiraKey(jiraKey);
+                setActualSLAforIssueId(issueid,true);
+
+            }
+            catch (Exception ex)
+            {
+                ExceptionManager.LogError(ex, Logger.Instance, false);
+            }
+        }
 
         #region Powiadomienia SLA
         private void t_EmailNotification_Tick(object sender, EventArgs e)
@@ -7591,15 +7609,15 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                             System.Diagnostics.Debug.WriteLine(string.Format("Zapisano zgłoszenie {0} - {1}", item.Key.ToString(), wfsIssueId.ToString()));
                             if (wfsIssueId == 0)
                             {
-                                sb.AppendLine(item.Key.Idnumber + ": nie zapisano");
-                                pb_UpdateProgressBar("Zablokowano zapis: " + item.Key.Idnumber);
+                                sb.AppendLine(item.Key.JiraKey + ": nie zapisano");
+                                pb_UpdateProgressBar("Zablokowano zapis: " + item.Key.JiraKey);
                             }
                             else
                             {
 
                                 Logger.Instance.LogInformation(string.Format("Automatyczny zapis poprawny {0} [{1}] \n\n", item.Key, DateTime.Now));
-                                sb.AppendLine(item.Key.Idnumber + ": Dodane poprawnie");
-                                pb_UpdateProgressBar("Zapisano zgłoszenie: " + item.Key.Idnumber);
+                                sb.AppendLine(item.Key.JiraKey + ": Dodane poprawnie");
+                                pb_UpdateProgressBar("Zapisano zgłoszenie: " + item.Key.JiraKey);
                                 issues[tr.Name].Remove(item.Key);
                                 issues[tr.Name].Add(item.Key, IssueState.INWFS);
 
@@ -7610,12 +7628,12 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 for (int i = 0; i < itemsCount; i++)
                                 {
                                     TreeNode treeItem = tr.Nodes[i];
-                                    if (treeItem.Text.Split(' ').First() == item.Key.Idnumber)
+                                    if (treeItem.Text.Split(' ').First() == item.Key.JiraKey)
                                     {
 
                                         Logger.Instance.LogInformation(string.Format("Modyfikacja treeItem"));
 
-                                        KeyValuePair<BillingIssueDto, IssueState> iss = issues[tr.Name].Where(x => x.Key.Idnumber == item.Key.Idnumber).FirstOrDefault();
+                                        KeyValuePair<BillingIssueDto, IssueState> iss = issues[tr.Name].Where(x => x.Key.JiraKey == item.Key.JiraKey).FirstOrDefault();
                                         BillingIssueDtoHelios it = iss.Key as BillingIssueDtoHelios;
 
                                         int index = GetImageIndex(item.Key as BillingIssueDtoHelios, IssueState.INWFS);
@@ -7648,7 +7666,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         catch (Exception ex)
                         {
                             ExceptionManager.LogError(ex, Logger.Instance);
-                            sb.AppendLine(item.Key.Idnumber + ": " + ex.Message);
+                            sb.AppendLine(item.Key.JiraKey + ": " + ex.Message);
                         }
                     }
                     //                    NoticeForm.ShowNotice(sb.ToString()+sbDuble.ToString(), "Zapisano zgłoszenia");
@@ -8118,13 +8136,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
 
         }
-        private void issueStep_PrzyjecieDoRealizacji(object sender)
-        {
-            const int eventMoveId = 612;
 
-            //Pobranie Rozmieszczenia parametrów zdarzenia
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-        }
         private void issueStep_WeryfikacjaRealizacji(object sender, string issueId)
         {
             const int eventMoveId = 616;
@@ -8135,7 +8147,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             //Pobranie Rozmieszczenia parametrów zdarzenia
             List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
             
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, null);
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
 
         }
         private void issueStep_ZamknieciePoRealizacji(object sender, string issueId)
@@ -8148,7 +8160,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             //Pobranie Rozmieszczenia parametrów zdarzenia
             List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
 
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, null);
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
 
         }
         private void issueStep_OdrzucenieZgloszenia(object sender, string issueId)
@@ -8163,7 +8175,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(401, "Zgłoszenie odrzucone");
 
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Odrzucenie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Odrzucenie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
 
         }
         private void issueStep_ZmianaKataloguJira(object sender, string issueId)
@@ -8180,10 +8192,28 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(673, "Zmiana katalogu w Jira");
 
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana Obszaru - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana Obszaru - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
             });
         }
 
+        private void issueStep_ZmianaWykonawcy(object sender, string issueId)
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                const int eventMoveId = 621;
+
+                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+                addIssueToTreeNode(issueId, issue);
+
+                //Pobranie Rozmieszczenia parametrów zdarzenia
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+
+                KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)sender;
+               
+
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana wykonawcy - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
+            });
+        }
         private void btn_issueStep_RealizujIZamknij_Click(object sender, EventArgs e)
         {
             const int eventMoveId = 612;
@@ -8224,40 +8254,28 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 this.Invoke((MethodInvoker)delegate
                 {
-
-
-
                     if (item.Key == 610)
                     {
-
                         string[] paramString = (string[])tagTmp[3];
-
                         new WFSModelerForm(gujaczWFS.GetEventParamForFormByEventMove(item.Key), item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, paramString);
-
-
-
                     }
                     else
                     {
                         List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-                        WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Przyjęcie do realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, false, selectOption);
-
+                        WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Przyjęcie do realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, false, selectOption);
                         wmfw.ShowDialog();
                     }
-
-
                 });
 
 
                 this.Invoke((MethodInvoker)delegate
                 {
-                    issueStep_WeryfikacjaRealizacji(this, selectIssue.Idnumber);
+                    issueStep_WeryfikacjaRealizacji(this, selectIssue.JiraKey);
                 });
 
                 this.Invoke((MethodInvoker)delegate
                 {
-                    issueStep_ZamknieciePoRealizacji(this, selectIssue.Idnumber);
+                    issueStep_ZamknieciePoRealizacji(this, selectIssue.JiraKey);
                 });
 
             }
@@ -8271,5 +8289,20 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             numerZgl.Text = numerZgl.Text.Trim();
         }
+
+        /// <summary>
+        /// Pobieranie IssueId z BPM dla JiraKey
+        /// </summary>
+        /// <param name="jiraKey"></param>
+        public int getIssueIdForJiraKey(string jiraKey)
+        {
+            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+            addIssueToTreeNode(jiraKey, issue);
+
+            Debug.Print("List<BillingIssueDtoHelios> issue.Count = " + issue.Count.ToString());
+
+            return Convert.ToInt32(issue.FirstOrDefault().issueWFS.WFSIssueId);
+        }
+
     }
 }

@@ -495,6 +495,8 @@ namespace GUI
                         return;
                     int issueNumber = Convert.ToInt32(item.Cells[0].Value.ToString());
                     string jiraNumber = item.Cells[1].Value.ToString();
+                    string userSLA = item.Cells[3].Value.ToString();
+                     
                     var v = GetActionForIssue(issueNumber);
                     Issue issue = zgloszeniaWjira.FirstOrDefault(x => x.Key == jiraNumber);
                     if(isNullObjectOrEmptyString(issue))
@@ -523,13 +525,28 @@ namespace GUI
                     else
                     {
                         bool issueMoveProject = false;
+                        bool issueChangeUserBill = false;
                         IEnumerable<IssueChangeLog> cl = issue.GetChangeLogs();
                         foreach (IssueChangeLog changeLog in cl)
                         {
+                            //zmiana katalogu
                             IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "Key" && x.FromValue == jiraNumber);
                             if (!isNullObjectOrEmptyString(param))
                             {
                                 issueMoveProject = true;
+                                break;
+                            }
+
+
+                            //user change
+                            //param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && x.FromValue == userSLA && userBpmJiraList.IsBillUser(x.ToId));
+                            param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(x.ToId));
+                            UserBpmJira ubj;
+                            if (!isNullObjectOrEmptyString(param) && userBpmJiraList.TryGetBillUser(issue.Assignee, out ubj) && userSLA != string.Empty && ubj.UserJira.FullName != userSLA)
+                            {
+
+                                issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
+                                break;
                             }
                         }
 
@@ -828,13 +845,18 @@ namespace GUI
                             {
                                 foreach (var item in issueHistory.Items)
                                 {
-                                    if(item.FieldName == "assigne"
-                                        && item.ToId == ubj.UserJira.login
+                                    if (
+                                        (
+                                            (item.FieldName == "assigne" && item.ToId == ubj.UserJira.login)
+                                            || 
+                                            ( issueHistory.Author.Username.ToString() == ubj.UserJira.login)
+                                        )
                                         && _bpmLastAction.Contains("Utworzenie zgłoszenia") 
                                         && isNullObjectOrEmptyString(tmpRow.Cells["dgvOdpowiedzialny"].Value)
                                     )
                                     {
                                         System.Diagnostics.Debug.Write("historia assigne");
+
                                         /*BillingIssueDto bid;
 
                                         if (!selectIssueList.TryGetValue(issueNumber, out bid))
@@ -1089,7 +1111,7 @@ namespace GUI
 
                 KeyValuePair<BillingIssueDto, IssueState> tmp = issues[treeViewName].Where(x =>
                 {
-                    if (x.Key.Idnumber == item.Idnumber)
+                    if (x.Key.JiraKey == item.JiraKey)
                         return true;
                     else
                         return false;
@@ -1105,7 +1127,7 @@ namespace GUI
 
                 //KeyValuePair<BillingIssueDto, IssueState> tmp = issues["treeView4"].Where(x =>
                 //{
-                //    if (x.Key.Idnumber == issueNumber)
+                //    if (x.Key.JiraKey == issueNumber)
                 //        return true;
                 //    else
                 //        return false;
@@ -1230,6 +1252,51 @@ namespace GUI
             }
             nrJira = null;
             return returnValue;
+        }
+
+        private List<string> getActualSLAforIssueId(int issueId)
+        {
+            return gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { issueId.ToString() }, DatabaseName.SupportCP)[0];
+        }
+
+        private void setActualSLAforIssueId(int issueId, bool isFastStep)
+        {
+            List<string> slaParam = getActualSLAforIssueId(issueId);
+            foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
+            {
+                if(item.Cells["dgvIssueId"].Value.ToString() == issueId.ToString())
+                {
+                    //IssueId, nrJira, Odpowiedzialny, TypZgloszenia, Priorytet, Pauza, AktCzasRealizacji, CzasRozwiazania, PozostaloMin, OstatniaAkcja
+
+                    /*
+                            dgvSlaTmp.Rows[0].Cells["dgvIssueId"].Value = row[0];  //dgvIssueId
+                            dgvSlaTmp.Rows[0].Cells["dgvJiraNr"].Value = row[1];  //dgvJiraNr
+                            dgvSlaTmp.Rows[0].Cells["dgvOdpowiedzialny"].Value = row[2];  //dgvOdpowiedzialny
+                            dgvSlaTmp.Rows[0].Cells["dgvTypZgloszenia"].Value = row[3];  //dgvTypZgloszenia
+                            dgvSlaTmp.Rows[0].Cells["dgvPriorytet"].Value = row[4];  //dgvPriorytet
+                            dgvSlaTmp.Rows[0].Cells["dgvPauza"].Value = row[5];  //dgvPauza
+                            dgvSlaTmp.Rows[0].Cells["dgvAktCzasRealizacji"].Value = row[6];  //dgvAktCzasRealizacji
+                            dgvSlaTmp.Rows[0].Cells["dgvCzasRozwiazania"].Value = row[7];  //dgvCzasRozwiazania 
+                            dgvSlaTmp.Rows[0].Cells["dgvPozostaloMin"].Value = row[8];  //dgvPozostaloMin  
+
+                            dgvSlaTmp.Rows[0].Cells["dgvAkcjaBPM"].Value = row[9];  //dgvOstatniaAkcja  
+                     */
+
+                    item.Cells["dgvOdpowiedzialny"].Value = slaParam[2];
+                    item.Cells["dgvTypZgloszenia"].Value = slaParam[3];
+                    item.Cells["dgvPriorytet"].Value = slaParam[4];
+
+                    item.Cells["dgvPauza"].Value = slaParam[5]; 
+                    item.Cells["dgvAktCzasRealizacji"].Value = slaParam[6];  
+                    item.Cells["dgvCzasRozwiazania"].Value = slaParam[7]; 
+
+                    item.Cells["dgvPozostaloMin"].Value = slaParam[8];
+                    item.Cells["dgvAkcjaBPM"].Value = string.Concat(slaParam[9], isFastStep?" (AutoStep)":"");
+
+                    break;
+                }
+            }
+
         }
 
     }

@@ -7,7 +7,7 @@ namespace Entities
 {
     public class BillingIssueDtoHelios : BillingIssueDto
     {
-        public override string Idnumber
+        public override string JiraKey
         {
             get
             {
@@ -18,6 +18,7 @@ namespace Entities
                 issueHelios.number = value;
             }
         }
+
         public IssueHelios issueHelios { get; set; }
         public Note note { get; set; }
     }

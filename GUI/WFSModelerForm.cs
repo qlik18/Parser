@@ -382,6 +382,24 @@ namespace GUI
                             //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
                             break;
                         }
+                        else if (item.param.EventParamId == (int)EventParamNames.OsOdpowiedzialna_ZM_WYKONAWCY && quickStep)
+                        {
+
+                            string tmpU = GetSwapPlacesName(_selectOption.Value);
+
+
+                            ((ComboBox)item.source).Text = tmpU;
+                            ((ComboBox)item.source).SelectedValue = _selectOption.Key;
+                            ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(tmpU);
+
+                            Debug.Print("((ComboBox)item.source).Text " + tmpU);
+                            Debug.Print("((ComboBox)item.source).SelectedValue "+ _selectOption.Key);
+                            Debug.Print("((ComboBox)item.source).SelectedItem "+ ((ComboBox)item.source).SelectedItem);
+                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                            break;
+                        }
                     }
 
                     btn_Save_Click(this, null);
@@ -1253,9 +1271,9 @@ namespace GUI
 
                 if (ep.BoundEventParam != null)
                 {
-                    if (issue.Idnumber != ep.BoundEventParam.Value)
+                    if (issue.JiraKey != ep.BoundEventParam.Value)
                     {
-                        number = issue.Idnumber;
+                        number = issue.JiraKey;
                     }
                     else
                     {
@@ -1729,7 +1747,7 @@ namespace GUI
                                 }
                             }
                             gujaczWFS.DoActionInIssue(iss.issueWFS.WFSIssueId, eventMoveId, epList);
-                            issuesId.Add(iss.Idnumber);
+                            issuesId.Add(iss.JiraKey);
 
                         }
 
@@ -1758,7 +1776,7 @@ namespace GUI
                         if (callback != null)
                         {
                             this.Close();
-                            callback(issue.Idnumber, eventName, _tr);
+                            callback(issue.JiraKey, eventName, _tr);
                         }
                     }
                     else
@@ -1779,7 +1797,7 @@ namespace GUI
                         if (callback != null)
                         {
                             this.Close();
-                            callback(issue.Idnumber, eventName, _tr);
+                            callback(issue.JiraKey, eventName, _tr);
                         }
                     }
                     //this.Close();
@@ -2173,6 +2191,12 @@ namespace GUI
             }
             senderComboBox.DropDownWidth = width;
         }
+        private string GetSwapPlacesName(string userFullName)
+        {
+            string[] stringTmp = userFullName.Split(' ');
+            return string.Concat(stringTmp[1], ' ', stringTmp[0]);
+        }
+
     }
 
 

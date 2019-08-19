@@ -95,7 +95,7 @@ namespace Logic.Implementation
                     {
                         writer.WriteStartElement("Issue");
                         writer.WriteElementString("ID", item.issueWFS.NumerZgloszenia);
-                        writer.WriteElementString("Numer", item.Idnumber.ToString());
+                        writer.WriteElementString("Numer", item.JiraKey.ToString());
                         writer.WriteEndElement();
                     }
 

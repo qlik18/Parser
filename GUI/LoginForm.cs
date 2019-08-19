@@ -156,7 +156,7 @@ namespace GUI
             this.button1.Location = new System.Drawing.Point(110, 157);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 34);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Zaloguj";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -206,7 +206,7 @@ namespace GUI
             this.button2.Location = new System.Drawing.Point(224, 157);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 34);
-            this.button2.TabIndex = 8;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Anuluj";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -216,7 +216,7 @@ namespace GUI
             this.textBox3.Location = new System.Drawing.Point(110, 46);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(209, 20);
-            this.textBox3.TabIndex = 13;
+            this.textBox3.TabIndex = 2;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // maskedTextBox3
@@ -224,7 +224,7 @@ namespace GUI
             this.maskedTextBox3.Location = new System.Drawing.Point(110, 100);
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(209, 20);
-            this.maskedTextBox3.TabIndex = 5;
+            this.maskedTextBox3.TabIndex = 4;
             this.maskedTextBox3.UseSystemPasswordChar = true;
             this.maskedTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
             this.maskedTextBox3.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox3_Validating);
@@ -263,7 +263,7 @@ namespace GUI
             this.checkBox1.Location = new System.Drawing.Point(110, 197);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(131, 17);
-            this.checkBox1.TabIndex = 6;
+            this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Zapamiętaj ustawienia";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -282,7 +282,7 @@ namespace GUI
             this.maskedTextBox2.Location = new System.Drawing.Point(110, 126);
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(209, 20);
-            this.maskedTextBox2.TabIndex = 14;
+            this.maskedTextBox2.TabIndex = 5;
             this.maskedTextBox2.UseSystemPasswordChar = true;
             this.maskedTextBox2.Validating += new System.ComponentModel.CancelEventHandler(this.maskedTextBox2_Validating);
             // 
@@ -330,8 +330,8 @@ namespace GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
-            this.Text = "Logowanie";
             this.Tag = "Logowanie....";
+            this.Text = "Logowanie";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

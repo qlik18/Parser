@@ -163,7 +163,7 @@ namespace Logic.Implementation
         public void StartLogging()
         {
             if (IsLogging)
-                throw new InvalidOperationException("Aktualnie trwa rozpoczęte logowanie czasu dla zgłoszenia " + issue.Idnumber + "!");
+                throw new InvalidOperationException("Aktualnie trwa rozpoczęte logowanie czasu dla zgłoszenia " + issue.JiraKey + "!");
             if (issue == null)
                 throw new ArgumentNullException("Nie wybrano zgłoszenia!");
 
