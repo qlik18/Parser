@@ -443,7 +443,6 @@ namespace GUI
             GenerateForm();
         }
 
-        
         private void GenerateForm(bool visible = true)
         {
             GenerateForm(null, 0);

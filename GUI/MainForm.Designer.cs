@@ -358,7 +358,7 @@ namespace GUI
             this.bt_dayReportGenerate = new System.Windows.Forms.Button();
             this.tp_PI = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgv_PI = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nrPi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.INS = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -461,7 +461,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_DayReport.SuspendLayout();
             this.tp_PI.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_PI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -1807,6 +1807,7 @@ namespace GUI
             this.columnHeader7});
             this.wl_PausedIssuesListView.GridLines = true;
             this.wl_PausedIssuesListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.wl_PausedIssuesListView.HideSelection = false;
             this.wl_PausedIssuesListView.Name = "wl_PausedIssuesListView";
             this.wl_PausedIssuesListView.UseCompatibleStateImageBehavior = false;
             this.wl_PausedIssuesListView.View = System.Windows.Forms.View.Details;
@@ -1829,6 +1830,7 @@ namespace GUI
             this.columnHeader6});
             this.wl_OpenIssuesListView.GridLines = true;
             this.wl_OpenIssuesListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.wl_OpenIssuesListView.HideSelection = false;
             this.wl_OpenIssuesListView.Name = "wl_OpenIssuesListView";
             this.wl_OpenIssuesListView.UseCompatibleStateImageBehavior = false;
             this.wl_OpenIssuesListView.View = System.Windows.Forms.View.Details;
@@ -2314,7 +2316,7 @@ namespace GUI
             // tp_PI
             // 
             this.tp_PI.Controls.Add(this.button9);
-            this.tp_PI.Controls.Add(this.dataGridView3);
+            this.tp_PI.Controls.Add(this.dgv_PI);
             this.tp_PI.Controls.Add(this.dataGridView2);
             this.tp_PI.Controls.Add(this.button8);
             this.tp_PI.Controls.Add(this.textBox5);
@@ -2330,10 +2332,10 @@ namespace GUI
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // dataGridView3
+            // dgv_PI
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_PI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_PI.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.nrPi,
             this.INS,
@@ -2341,9 +2343,9 @@ namespace GUI
             this.PREPROD,
             this.PROD,
             this.iloscInstalacji});
-            resources.ApplyResources(this.dataGridView3, "dataGridView3");
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            resources.ApplyResources(this.dgv_PI, "dgv_PI");
+            this.dgv_PI.Name = "dgv_PI";
+            this.dgv_PI.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -2732,7 +2734,7 @@ namespace GUI
             this.tp_DayReport.PerformLayout();
             this.tp_PI.ResumeLayout(false);
             this.tp_PI.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_PI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -3018,7 +3020,7 @@ namespace GUI
         private DataGridViewTextBoxColumn sredniaproblem;
         private Button button9;
         private NetSpell.SpellChecker.Spelling spelling1;
-        private DataGridView dataGridView3;
+        private DataGridView dgv_PI;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn nrPi;
         private DataGridViewTextBoxColumn INS;

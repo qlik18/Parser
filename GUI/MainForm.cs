@@ -4157,7 +4157,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 selectIssue = tmp.Key;
                 //string tmp = (sender as TreeNode).Text;
                 string number = e.Node.Text.Split(' ').First();
-                if (issueMove[tr.Name] != null && issueMove[tr.Name].ContainsKey(number))
+                if (issueMove[tr.Name] != null)// && issueMove[tr.Name].ContainsKey(number))
                 {
                     cms_IssuePopup.Items.Clear();
                     string key = e.Node.Text.Split(' ').First();
@@ -6669,6 +6669,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         /// <param name="sender"></param>
         /// <param name="e"></param>
         //[STAThreadAttribute]
+
+        [STAThread]
         private void btn_tmpQuickStep_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem tmp = (ToolStripMenuItem)sender; //losowy komponet do przechowywania Tag
@@ -6710,7 +6712,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                     string[] paramString = (string[])tagTmp[3];
 
-                    new WFSModelerForm(gujaczWFS.GetEventParamForFormByEventMove(item.Key), item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, paramString);
+                    new WFSModelerForm(gujaczWFS.GetEventParamForFormByEventMove(item.Key), item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, paramString);
 
                     
 
@@ -6718,7 +6720,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 else {
                     List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(item.Key);
 
-                    WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, selectOption);
+                    WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
                 }
             }
             catch (Exception ex)
@@ -7958,63 +7960,140 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-           var issue =  jira.GetIssuesFromFilter("PI");
+            var issues = jira.GetIssuesFromFilter("PI");
             textBox5.Clear();
-            foreach (var item in issue)
+            dgv_PI.Rows.Clear();
+            foreach (var item in issues)
             {
+                string ins = "";
+                string uat = "";
+                string preprod = "";
+                string prod = "";
+
+                int ilosinstalacji = 0;
+
                 textBox5.AppendText(item.Key.Value);
                 Debug.Write(item.Key);
                 //item.
-                foreach (var logs in item.GetChangeLogs())
-                {
-                    if (logs.CreatedDate < DateTime.Parse("2019-03-01"))
-                        break;
-                    textBox5.AppendText("\n");
-                    textBox5.AppendText(logs.Author.DisplayName);
-                    textBox5.AppendText("\n");
-                    textBox5.AppendText(logs.CreatedDate.ToString());
-                    textBox5.AppendText("\n");
-                    textBox5.AppendText(logs.Id);
-                    textBox5.AppendText("\n");
-                    textBox5.AppendText("----");
 
-                    Debug.Write(logs.Author);
-                    Debug.Write(logs.CreatedDate);
-                    Debug.Write(logs.Id);
-                    Debug.Write("----");
-                    foreach (var componet in logs.Items)
+                foreach (var com in item.GetComments())
+                {
+                    if (com.CreatedDate >= DateTime.Parse("2019-08-01")
+                       && userBpmJiraList.IsBillUser(com.Author)
+                       && com.Body.Contains("Jenkins, proszę o wdrożenie na"))
                     {
-                        if (componet.FieldName == "status"
-                            || componet.FieldName == "assigne"
-                            || componet.FieldName == "Grupa wsparcia"
-                            //|| componet.FieldName == "assigne"
-                            )
+
+                        ilosinstalacji++;
+                        string[] textParam = com.Body.Split(' ');
+                        if (textParam.Last().Contains("INS"))
+                        {
+                            ins = "X";
+                        }
+                        else if (textParam.Last().Contains("UAT"))
                         {
 
-                            textBox5.AppendText(componet.FieldName);
-                            textBox5.AppendText("\n");
-                            if (!isNullObjectOrEmptyString(componet.FromValue))
-                                textBox5.AppendText(componet.FromValue.ToString());
-                            else
-                                textBox5.AppendText("FromValue null");
-                            textBox5.AppendText("\n");
-                            if (!isNullObjectOrEmptyString(componet.ToValue))
-                                textBox5.AppendText(componet.ToValue.ToString());
-                            else
-                                textBox5.AppendText("ToValue null");
-                            textBox5.AppendText("\n");
-                            textBox5.AppendText("******");
-
-                            Debug.Write(componet.FieldName);
-                            Debug.Write(componet.FromValue);
-                            Debug.Write(componet.ToValue);
-                            Debug.Write("******");
+                            uat = "X";
                         }
-                    }
-                    Debug.Write("----");
+                        else if (textParam.Last().Contains("PRE-PROD"))
+                        {
+                            preprod = "X";
 
+                        }
+                        else if (textParam.Last().Contains("PRD"))
+                        {
+                            prod = "X";
+
+                        }
+
+
+
+                    }
+                }
+                foreach (var logs in item.GetChangeLogs())
+                {
+
+                    if (logs.CreatedDate >= DateTime.Parse("2019-08-01")
+                        && userBpmJiraList.IsBillUser(logs.Author.Username))
+                    {
+
+                        //textBox5.AppendText("\n");
+                        //textBox5.AppendText(logs.Author.DisplayName);
+                        //textBox5.AppendText("\n");
+                        //textBox5.AppendText(logs.CreatedDate.ToString());
+                        //textBox5.AppendText("\n");
+                        //textBox5.AppendText(logs.Id);
+                        //textBox5.AppendText("\n");
+                        //textBox5.AppendText("----");
+
+                        Debug.Write(logs.Author);
+                        Debug.Write(logs.CreatedDate);
+                        Debug.Write(logs.Id);
+                        Debug.Write("----");
+                        foreach (var componet in logs.Items)
+                        {
+                            if (componet.FieldName == "status"
+                                || componet.FieldName == "assigne"
+                                || componet.FieldName == "Grupa wsparcia"
+                                //|| componet.FieldName == "assigne"
+                                )
+                            {
+
+                                textBox5.AppendText(componet.FieldName);
+                                textBox5.AppendText("\n");
+                                if (!isNullObjectOrEmptyString(componet.FromValue))
+                                    textBox5.AppendText(componet.FromValue.ToString());
+                                else
+                                    textBox5.AppendText("FromValue null");
+                                textBox5.AppendText("\n");
+                                if (!isNullObjectOrEmptyString(componet.ToValue))
+                                    textBox5.AppendText(componet.ToValue.ToString());
+                                else
+                                    textBox5.AppendText("ToValue null");
+                                textBox5.AppendText("\n");
+                                textBox5.AppendText("******");
+
+                                Debug.Write(componet.FieldName);
+                                Debug.Write(componet.FromValue);
+                                Debug.Write(componet.ToValue);
+                                Debug.Write("******");
+                            }
+
+                            if (componet.FieldName.Contains("Wykonawca"))
+                            {
+                                ilosinstalacji++;
+                                string[] textParam = componet.FieldName.Split(' ');
+                                if (textParam[1].Contains("INS"))
+                                {
+                                    ins = "X";
+                                }
+                                else if (textParam[1].Contains("UAT"))
+                                {
+
+                                    uat = "X";
+                                }
+                                else if (textParam[1].Contains("PRE-PROD"))
+                                {
+                                    preprod = "X";
+
+                                }
+                                else if (textParam[1].Contains("PRD"))
+                                {
+                                    prod = "X";
+
+                                }
+                            }
+
+
+
+                        }
+                        Debug.Write("----");
+
+                    }
 
                 }
+                if (ilosinstalacji > 0)
+                    dgv_PI.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
+                
             }
         }
 
@@ -8127,7 +8206,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
                     Debug.Write("----");
 
-                    dataGridView3.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
+                    dgv_PI.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
                 }
             }
         }
@@ -8137,31 +8216,51 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         }
 
+        private void issueStep_RozpocznijDiagnoze(object sender, string issueId)
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                const int eventMoveId = 614;
+
+                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+                addIssueToTreeNode(issueId, issue);
+
+                //Pobranie Rozmieszczenia parametrów zdarzenia
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+                KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)sender;
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Rozpoczęcie diagnozy - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
+            });
+        }
+
         private void issueStep_WeryfikacjaRealizacji(object sender, string issueId)
         {
-            const int eventMoveId = 616;
+            this.Invoke((MethodInvoker)delegate
+            {
+                const int eventMoveId = 616;
 
-            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-            addIssueToTreeNode(issueId, issue);
+                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+                addIssueToTreeNode(issueId, issue);
 
-            //Pobranie Rozmieszczenia parametrów zdarzenia
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-            
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
+                //Pobranie Rozmieszczenia parametrów zdarzenia
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
 
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
+            });
         }
         private void issueStep_ZamknieciePoRealizacji(object sender, string issueId)
         {
-            const int eventMoveId = 618; 
+            this.Invoke((MethodInvoker)delegate
+            {
+                const int eventMoveId = 618;
 
-            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-            addIssueToTreeNode(issueId, issue);
+                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
+                addIssueToTreeNode(issueId, issue);
 
-            //Pobranie Rozmieszczenia parametrów zdarzenia
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
+                //Pobranie Rozmieszczenia parametrów zdarzenia
+                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
 
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
-
+                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
+            });
         }
         private void issueStep_OdrzucenieZgloszenia(object sender, string issueId)
         {
@@ -8300,8 +8399,23 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             addIssueToTreeNode(jiraKey, issue);
 
             Debug.Print("List<BillingIssueDtoHelios> issue.Count = " + issue.Count.ToString());
-
             return Convert.ToInt32(issue.FirstOrDefault().issueWFS.WFSIssueId);
+        }
+        /// <summary>
+        /// Metoda sprawdza występowanie textu w zadanych parametrach [string in (params)]
+        /// </summary>
+        /// <param name="text">string do sprawdzenia</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public bool isInCollection(string text, params string[] toCheck)
+        {
+            foreach (var item in toCheck)
+            {
+                if(item == text)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
     }

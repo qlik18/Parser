@@ -323,7 +323,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD6
-        sAEAAk1TRnQBSQFMAgEBNQEAAagBHQGoAR0BMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
+        sAEAAk1TRnQBSQFMAgEBNQEAAbABHQGwAR0BMAEAARgBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAHA
         AwABUAEBAgABAQEAASAGAAHwAQMRAMD//wD/AEIAwP//AP8AQgDA//8A/wBCAMD//wD/AEIAwP//AP8A
         QgAc/wH6AfsB/gH/AfsB+gH+Av8C/gH/Af4E/wL+Af8D/gX/Af0C/gH/AvkB/gH/Af4B/QH+Bf8C/gL/
         AfoB+wH+Af8C+QH+bf//AP8AQgBI/wP+Jf8D/gX/A/0B/wL9AfwF/wHLAb8BuwH/Ac4BwwG/Bf8D/AH/
@@ -7791,25 +7791,25 @@ Aktualny log (RPM)</value>
   <data name="iloscInstalacji.HeaderText" xml:space="preserve">
     <value>Ilość Instalacji</value>
   </data>
-  <data name="dataGridView3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dgv_PI.Location" type="System.Drawing.Point, System.Drawing">
     <value>327, 209</value>
   </data>
-  <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dgv_PI.Size" type="System.Drawing.Size, System.Drawing">
     <value>806, 150</value>
   </data>
-  <data name="dataGridView3.TabIndex" type="System.Int32, mscorlib">
+  <data name="dgv_PI.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;dataGridView3.Name" xml:space="preserve">
-    <value>dataGridView3</value>
+  <data name="&gt;&gt;dgv_PI.Name" xml:space="preserve">
+    <value>dgv_PI</value>
   </data>
-  <data name="&gt;&gt;dataGridView3.Type" xml:space="preserve">
+  <data name="&gt;&gt;dgv_PI.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dgv_PI.Parent" xml:space="preserve">
     <value>tp_PI</value>
   </data>
-  <data name="&gt;&gt;dataGridView3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dgv_PI.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="system.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

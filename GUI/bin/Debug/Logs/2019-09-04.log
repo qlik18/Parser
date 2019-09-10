@@ -1,0 +1,400 @@
+środa, 4 września 2019 08:50:20
+
+Zgłoszenie ZCC-19384 dodano automatycznie o godzinie 2019-09-04 08:50:20!
+środa, 4 września 2019 08:50:20
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 08:50:25
+
+addCommentJira string jiraKey ZCC-19384środa, 4 września 2019 08:50:25
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19384środa, 4 września 2019 09:20:22
+
+Zgłoszenie CRM-76769 dodano automatycznie o godzinie 2019-09-04 09:20:22!
+środa, 4 września 2019 09:20:23
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 09:20:28
+
+addCommentJira string jiraKey CRM-76769środa, 4 września 2019 09:20:28
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76769środa, 4 września 2019 09:26:52
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 09:27:35
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 09:53:08
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 10:50:25
+
+Zgłoszenie INFOLINIA-6850 dodano automatycznie o godzinie 2019-09-04 10:50:25!
+środa, 4 września 2019 10:50:25
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 10:50:30
+
+addCommentJira string jiraKey INFOLINIA-6850środa, 4 września 2019 10:50:30
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6850środa, 4 września 2019 11:08:33
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 11:20:12
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:21:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__112_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:26:12
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:26:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__112_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:31:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__112_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:32:12
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetPriorities(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 785
+   w Atlassian.Jira.Jira.<GetIssuePriorities>b__24(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 478
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssuePriorities() w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 482
+   w GUI.MainForm.LoginJira()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 11:36:26
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__112_0()
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+środa, 4 września 2019 12:15:42
+
+Zgłoszenie ZCC-19385 dodano automatycznie o godzinie 2019-09-04 12:15:42!
+środa, 4 września 2019 12:15:42
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 12:15:47
+
+addCommentJira string jiraKey ZCC-19385środa, 4 września 2019 12:15:47
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19385środa, 4 września 2019 12:21:51
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 12:45:43
+
+Zgłoszenie ZCC-19386 dodano automatycznie o godzinie 2019-09-04 12:45:43!
+środa, 4 września 2019 12:45:43
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 12:45:49
+
+addCommentJira string jiraKey ZCC-19386środa, 4 września 2019 12:45:49
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19386środa, 4 września 2019 12:51:51
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 12:57:41
+
+Zgłoszenie ZCC-19387 dodano automatycznie o godzinie 2019-09-04 12:57:41!
+środa, 4 września 2019 12:57:41
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 12:57:46
+
+addCommentJira string jiraKey ZCC-19387środa, 4 września 2019 12:57:46
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19387środa, 4 września 2019 13:51:50
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 14:15:41
+
+Zgłoszenie ZCC-19389 dodano automatycznie o godzinie 2019-09-04 14:15:41!
+środa, 4 września 2019 14:15:41
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 14:15:47
+
+addCommentJira string jiraKey ZCC-19389środa, 4 września 2019 14:15:47
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19389środa, 4 września 2019 14:15:52
+
+Zgłoszenie ZCC-19390 dodano automatycznie o godzinie 2019-09-04 14:15:52!
+środa, 4 września 2019 14:15:53
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 14:15:56
+
+addCommentJira string jiraKey ZCC-19390środa, 4 września 2019 14:15:56
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19390środa, 4 września 2019 14:21:44
+
+Zgłoszenie CRM-76771 dodano automatycznie o godzinie 2019-09-04 14:21:44!
+środa, 4 września 2019 14:21:44
+
+Modyfikacja treeItem checkAsAssigneśroda, 4 września 2019 14:21:50
+
+addCommentJira string jiraKey CRM-76771środa, 4 września 2019 14:21:50
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76771środa, 4 września 2019 14:21:50
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 14:21:52
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 14:33:52
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 4 września 2019 15:15:47
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId)
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption)
+
+--- Main exception: Source ---
+System.Windows.Forms
+

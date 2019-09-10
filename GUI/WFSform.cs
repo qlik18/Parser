@@ -87,7 +87,7 @@ namespace GUI
             uzupelnijFormularz((BillingIssueDtoHelios)zgloszenie, trans);
             gujacz2 = Utility.ServiceLocator.Instance.Retrieve<IParserEngineWFS>();
 
-            if (onCallZaznacz())
+            if (onCallZaznacz() && (zgloszenie.issueWFS.Priorytet == "Blokujący" || zgloszenie.issueWFS.Priorytet == "Krytyczny"))
             {
                 cb_CzyOncall.BackColor = Color.Tomato;
                 cb_CzyOncall.Checked = true;
@@ -346,7 +346,7 @@ namespace GUI
             uzupelnijFormularz((BillingIssueDtoHelios)zgloszenie, trans);
             gujacz2 = Utility.ServiceLocator.Instance.Retrieve<IParserEngineWFS>();
 
-            if (onCallZaznacz())
+            if (onCallZaznacz() && (zgloszenie.issueWFS.Priorytet == "Blokujący" || zgloszenie.issueWFS.Priorytet == "Krytyczny") )
             {
                 cb_CzyOncall.BackColor = Color.Tomato;
                 cb_CzyOncall.Checked = true;

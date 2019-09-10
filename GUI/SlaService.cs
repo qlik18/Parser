@@ -462,8 +462,6 @@ namespace GUI
         }
 
 
-
-
         private void slaReportLoadJiraInfo(object sender, RunWorkerCompletedEventArgs e)
         {
             const string treeViewName = "treeView4";
@@ -509,14 +507,18 @@ namespace GUI
                     {
                         doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
                     }
-                    else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value))
+                    else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value) 
+                            && userBpmJiraList.IsBillUser(issue.Assignee) )
                     {
-                        doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
+
+                        issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee), jiraNumber.ToString());
+                        //doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
 
                     }
 
                     if (!isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value)
-                              && (!isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Odrzucone")
+                              && ((!isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Odrzucone")
+                                 || (issue.Type.Name.Equals("Problem") && issue.Status.Name.Equals("Oczekuje na odrzucenie")) ) 
                               && !isNullObjectOrEmptyString(v.FirstOrDefault(x => x.Key == 617).Value))
                     {
                         issueStep_OdrzucenieZgloszenia(this, jiraNumber.ToString());
