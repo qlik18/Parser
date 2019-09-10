@@ -7970,6 +7970,11 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 string preprod = "";
                 string prod = "";
 
+                int i_ins       = 0;
+                int i_uat       = 0;
+                int i_preprod   = 0;
+                int i_prod      = 0;
+
                 int ilosinstalacji = 0;
 
                 textBox5.AppendText(item.Key.Value);
@@ -7988,21 +7993,23 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         if (textParam.Last().Contains("INS"))
                         {
                             ins = "X";
+                            i_ins++;
                         }
                         else if (textParam.Last().Contains("UAT"))
                         {
 
                             uat = "X";
+                            i_uat++;
                         }
                         else if (textParam.Last().Contains("PRE-PROD"))
                         {
                             preprod = "X";
-
+                            i_preprod++;
                         }
                         else if (textParam.Last().Contains("PRD"))
                         {
                             prod = "X";
-
+                            i_prod++;
                         }
 
 
@@ -8065,21 +8072,22 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                                 if (textParam[1].Contains("INS"))
                                 {
                                     ins = "X";
+                                    i_ins++;
                                 }
                                 else if (textParam[1].Contains("UAT"))
                                 {
-
                                     uat = "X";
+                                    i_uat++;
                                 }
                                 else if (textParam[1].Contains("PRE-PROD"))
                                 {
                                     preprod = "X";
-
+                                    i_preprod++;
                                 }
                                 else if (textParam[1].Contains("PRD"))
                                 {
                                     prod = "X";
-
+                                    i_prod++;
                                 }
                             }
 
@@ -8092,8 +8100,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 }
                 if (ilosinstalacji > 0)
-                    dgv_PI.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
-                
+                    dgv_PI.Rows.Add(item.Project, item.Key, i_ins, i_uat, i_preprod, i_prod, sumMetod(i_ins, i_uat, i_preprod, i_prod));
+                    //dgv_PI.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
+
             }
         }
 
@@ -8417,6 +8426,19 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
             return false;
         }
-
+        /// <summary>
+        /// Metoda sprawdza występowanie textu w zadanych parametrach [sum]
+        /// </summary>
+        /// <param name="text">string do sprawdzenia</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public int sumMetod(params int[] numbers)
+        {
+            int resSum = 0;
+            foreach (int item in numbers)
+            {
+                resSum += item;
+            }
+            return resSum;
+        }
     }
 }
