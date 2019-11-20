@@ -1,0 +1,148 @@
+wtorek, 19 listopada 2019 07:42:49
+
+Zgłoszenie KKK-4555 dodano automatycznie o godzinie 2019-11-19 07:42:49!
+wtorek, 19 listopada 2019 07:42:49
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 07:42:54
+
+Zgłoszenie WIND-8654 dodano automatycznie o godzinie 2019-11-19 07:42:54!
+wtorek, 19 listopada 2019 07:42:54
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 07:42:56
+
+addCommentJira string jiraKey KKK-4555wtorek, 19 listopada 2019 07:42:56
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4555wtorek, 19 listopada 2019 07:42:58
+
+Zgłoszenie ZCC-19750 dodano automatycznie o godzinie 2019-11-19 07:42:58!
+wtorek, 19 listopada 2019 07:42:58
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 07:42:59
+
+addCommentJira string jiraKey WIND-8654wtorek, 19 listopada 2019 07:42:59
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8654wtorek, 19 listopada 2019 07:43:01
+
+addCommentJira string jiraKey ZCC-19750wtorek, 19 listopada 2019 07:43:01
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19750wtorek, 19 listopada 2019 07:43:02
+
+Zgłoszenie ZCC-19751 dodano automatycznie o godzinie 2019-11-19 07:43:02!
+wtorek, 19 listopada 2019 07:43:02
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 07:43:04
+
+addCommentJira string jiraKey ZCC-19751wtorek, 19 listopada 2019 07:43:04
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19751wtorek, 19 listopada 2019 08:18:32
+
+Zgłoszenie CRM-77303 dodano automatycznie o godzinie 2019-11-19 08:18:32!
+wtorek, 19 listopada 2019 08:18:32
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 08:18:36
+
+Zgłoszenie WIND-8655 dodano automatycznie o godzinie 2019-11-19 08:18:36!
+wtorek, 19 listopada 2019 08:18:36
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 08:18:37
+
+addCommentJira string jiraKey CRM-77303wtorek, 19 listopada 2019 08:18:37
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77303wtorek, 19 listopada 2019 08:18:40
+
+addCommentJira string jiraKey WIND-8655wtorek, 19 listopada 2019 08:18:40
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8655wtorek, 19 listopada 2019 08:30:38
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 19 listopada 2019 09:24:30
+
+Zgłoszenie ZCC-19752 dodano automatycznie o godzinie 2019-11-19 09:24:30!
+wtorek, 19 listopada 2019 09:24:30
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 09:24:35
+
+addCommentJira string jiraKey ZCC-19752wtorek, 19 listopada 2019 09:24:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19752wtorek, 19 listopada 2019 10:06:28
+
+--- Main exception: Message ---
+Zdalny punkt końcowy nie rozpoznaje już tej sekwencji. Jest to prawdopodobnie spowodowane przerwaniem działania w zdalnym punkcie końcowym. The value of wsrm:Identifier is not a known Sequence identifier. Wystąpił błąd uwierzytelnionej sesji.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.GetAllIssuesFromJira(Object sener, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4813
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 19 listopada 2019 10:18:31
+
+Zgłoszenie CRM-77305 dodano automatycznie o godzinie 2019-11-19 10:18:31!
+wtorek, 19 listopada 2019 10:18:31
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 10:18:37
+
+addCommentJira string jiraKey CRM-77305wtorek, 19 listopada 2019 10:18:37
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77305wtorek, 19 listopada 2019 12:24:32
+
+Zgłoszenie KKK-4556 dodano automatycznie o godzinie 2019-11-19 12:24:32!
+wtorek, 19 listopada 2019 12:24:32
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 12:24:37
+
+addCommentJira string jiraKey KKK-4556wtorek, 19 listopada 2019 12:24:37
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4556wtorek, 19 listopada 2019 14:48:34
+
+Zgłoszenie ZCC-19754 dodano automatycznie o godzinie 2019-11-19 14:48:34!
+wtorek, 19 listopada 2019 14:48:34
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 14:48:42
+
+Zgłoszenie ZCC-19753 dodano automatycznie o godzinie 2019-11-19 14:48:42!
+wtorek, 19 listopada 2019 14:48:42
+
+Modyfikacja treeItem checkAsAssignewtorek, 19 listopada 2019 14:48:53
+
+addCommentJira string jiraKey ZCC-19754wtorek, 19 listopada 2019 14:48:53
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19754wtorek, 19 listopada 2019 14:48:57
+
+addCommentJira string jiraKey ZCC-19753wtorek, 19 listopada 2019 14:48:57
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19753

@@ -1,0 +1,322 @@
+wtorek, 12 listopada 2019 08:18:20
+
+--- Main exception: Message ---
+System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Cannot open database "Support_SSO" requested by the login. The login failed.
+Login failed for user 'support_bpm'.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Billennium.WFS.Providers.Authentication.Elements.BOMService.IBOMService.GetSsoUserId(String username, String password)
+   at Billennium.WFS.Providers.Authentication.Elements.Authenticator.GetSsoUserIdFromElements(String login, String password)
+   at Billennium.WFS.Providers.Authentication.Elements.Authenticator.GetUser(String login, String password)
+   at Billennium.WFS.Obj.Common.Authentication.GetUserMEF(String login, String pass, Boolean auto) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Obj.Common\Authentication.cs:line 177
+   at Billennium.WFS.Obj.Common.Authentication.AuthenticateUserMEF(String login, String pass, Dictionary`2& _groupsDictionary, Dictionary`2& _relationsDict, Boolean auto) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Obj.Common\Authentication.cs:line 81
+   at Billennium.WFS.Obj.Common.Authentication.AuthenticateUser(String login, String pass, Dictionary`2& _groupsDictionary, Dictionary`2& _relationsDict, Boolean auto) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Obj.Common\Authentication.cs:line 215
+   at Billennium.WFS.Obj.Common.SessionUser.LogInUser(String userName, String pass, Boolean onlyLoginUser) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Obj.Common\EntityExt\SessionUser.cs:line 390
+   at Billennium.WFS.Obj.Common.Login.Login.LoginUser(String userLogin, String password, Int32 maxLoginTries, Boolean isTimeLockEnabled) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Obj.Common\Login\Login.cs:line 17
+   at Billennium.WFS.Services.DataService.DataService.LogInMain2(String login, String pass, Boolean fromRepository) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Services.DataService\DataServiceLogIn.cs:line 512
+   at Billennium.WFS.Services.DataService.DataService.LogIn2(String login, String pass) in C:\TFS\WD\44\s\BPM\Billennium.WFS.Services.DataService\DataServiceLogIn.cs:line 160
+   --- End of inner exception stack trace ---
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.LogIn2(String login, String pass)
+   w DataLayer.Implementation.GatewayDaoWFS.loginToWFSWithUserInfo(String user, String password) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 263
+   w LogicLayer.Implementation.ParserEngineWFS.loginToWFSWithUserInfo(String username, String password) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 46
+   w GUI.Login.<invokeLogin>b__27_0() w C:\CP\ParserGit\JiraParser\GUI\LoginForm.cs:wiersz 109
+
+--- Main exception: Source ---
+mscorlib
+
+wtorek, 12 listopada 2019 08:23:27
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+wtorek, 12 listopada 2019 08:25:36
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+wtorek, 12 listopada 2019 08:25:37
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+wtorek, 12 listopada 2019 08:25:38
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+wtorek, 12 listopada 2019 08:25:39
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+wtorek, 12 listopada 2019 09:07:01
+
+Zgłoszenie ZCC-19701 dodano automatycznie o godzinie 2019-11-12 09:07:01!
+wtorek, 12 listopada 2019 09:07:01
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 09:07:08
+
+Zgłoszenie CRM-77261 dodano automatycznie o godzinie 2019-11-12 09:07:08!
+wtorek, 12 listopada 2019 09:07:08
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 09:07:09
+
+addCommentJira string jiraKey ZCC-19701wtorek, 12 listopada 2019 09:07:09
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19701wtorek, 12 listopada 2019 09:07:16
+
+Zgłoszenie KKK-4542 dodano automatycznie o godzinie 2019-11-12 09:07:16!
+wtorek, 12 listopada 2019 09:07:16
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 09:07:17
+
+addCommentJira string jiraKey CRM-77261wtorek, 12 listopada 2019 09:07:17
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77261wtorek, 12 listopada 2019 09:07:20
+
+addCommentJira string jiraKey KKK-4542wtorek, 12 listopada 2019 09:07:20
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4542wtorek, 12 listopada 2019 09:07:57
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-77259
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6764
+
+--- Main exception: Source ---
+GUI
+
+wtorek, 12 listopada 2019 09:08:12
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=CRM-77259
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6764
+
+--- Main exception: Source ---
+GUI
+
+wtorek, 12 listopada 2019 09:24:56
+
+Zgłoszenie ZCC-19702 dodano automatycznie o godzinie 2019-11-12 09:24:56!
+wtorek, 12 listopada 2019 09:24:56
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 09:25:01
+
+addCommentJira string jiraKey ZCC-19702wtorek, 12 listopada 2019 09:25:01
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19702wtorek, 12 listopada 2019 10:44:27
+
+Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.
+
+wtorek, 12 listopada 2019 10:48:52
+
+Zgłoszenie ZCC-19703 dodano automatycznie o godzinie 2019-11-12 10:48:51!
+wtorek, 12 listopada 2019 10:48:52
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 10:49:08
+
+Zgłoszenie ZCC-19704 dodano automatycznie o godzinie 2019-11-12 10:49:08!
+wtorek, 12 listopada 2019 10:49:08
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 10:49:09
+
+addCommentJira string jiraKey ZCC-19703wtorek, 12 listopada 2019 10:49:09
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19703wtorek, 12 listopada 2019 10:49:13
+
+Zgłoszenie ZCC-19705 dodano automatycznie o godzinie 2019-11-12 10:49:13!
+wtorek, 12 listopada 2019 10:49:14
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 10:49:16
+
+addCommentJira string jiraKey ZCC-19704wtorek, 12 listopada 2019 10:49:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19704wtorek, 12 listopada 2019 10:49:16
+
+addCommentJira string jiraKey ZCC-19705wtorek, 12 listopada 2019 10:49:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19705wtorek, 12 listopada 2019 11:24:52
+
+Zgłoszenie ZCC-19706 dodano automatycznie o godzinie 2019-11-12 11:24:52!
+wtorek, 12 listopada 2019 11:24:52
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 11:24:57
+
+addCommentJira string jiraKey ZCC-19706wtorek, 12 listopada 2019 11:24:57
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19706wtorek, 12 listopada 2019 11:30:51
+
+Zgłoszenie CRM-77263 dodano automatycznie o godzinie 2019-11-12 11:30:51!
+wtorek, 12 listopada 2019 11:30:51
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 11:30:56
+
+addCommentJira string jiraKey CRM-77263wtorek, 12 listopada 2019 11:30:56
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77263wtorek, 12 listopada 2019 12:18:52
+
+Zgłoszenie ZCC-19708 dodano automatycznie o godzinie 2019-11-12 12:18:52!
+wtorek, 12 listopada 2019 12:18:52
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 12:18:57
+
+addCommentJira string jiraKey ZCC-19708wtorek, 12 listopada 2019 12:18:57
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19708wtorek, 12 listopada 2019 12:54:50
+
+Zgłoszenie ZCC-19709 dodano automatycznie o godzinie 2019-11-12 12:54:50!
+wtorek, 12 listopada 2019 12:54:50
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 12:55:00
+
+addCommentJira string jiraKey ZCC-19709wtorek, 12 listopada 2019 12:55:00
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19709wtorek, 12 listopada 2019 13:36:57
+
+Zgłoszenie ZCC-19445 dodano automatycznie o godzinie 2019-11-12 13:36:57!
+wtorek, 12 listopada 2019 13:36:57
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 13:37:03
+
+addCommentJira string jiraKey ZCC-19445wtorek, 12 listopada 2019 13:37:03
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19445wtorek, 12 listopada 2019 13:48:53
+
+Zgłoszenie ZCC-19710 dodano automatycznie o godzinie 2019-11-12 13:48:53!
+wtorek, 12 listopada 2019 13:48:53
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 13:48:58
+
+addCommentJira string jiraKey ZCC-19710wtorek, 12 listopada 2019 13:48:58
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19710wtorek, 12 listopada 2019 14:06:54
+
+Zgłoszenie CRM-77264 dodano automatycznie o godzinie 2019-11-12 14:06:54!
+wtorek, 12 listopada 2019 14:06:55
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 14:06:59
+
+addCommentJira string jiraKey CRM-77264wtorek, 12 listopada 2019 14:06:59
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77264wtorek, 12 listopada 2019 15:06:51
+
+Zgłoszenie INFOLINIA-6925 dodano automatycznie o godzinie 2019-11-12 15:06:51!
+wtorek, 12 listopada 2019 15:06:51
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 15:06:57
+
+addCommentJira string jiraKey INFOLINIA-6925wtorek, 12 listopada 2019 15:06:57
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6925wtorek, 12 listopada 2019 15:22:38
+
+Zgłoszenie CRM-77265 dodano automatycznie o godzinie 2019-11-12 15:22:38!
+wtorek, 12 listopada 2019 15:22:38
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 15:22:44
+
+addCommentJira string jiraKey CRM-77265wtorek, 12 listopada 2019 15:22:44
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77265wtorek, 12 listopada 2019 15:52:36
+
+Zgłoszenie ZCC-19713 dodano automatycznie o godzinie 2019-11-12 15:52:36!
+wtorek, 12 listopada 2019 15:52:36
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 15:52:45
+
+addCommentJira string jiraKey ZCC-19713wtorek, 12 listopada 2019 15:52:45
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19713wtorek, 12 listopada 2019 15:58:39
+
+Zgłoszenie WIND-8644 dodano automatycznie o godzinie 2019-11-12 15:58:39!
+wtorek, 12 listopada 2019 15:58:39
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 15:58:48
+
+Zgłoszenie ZCC-19714 dodano automatycznie o godzinie 2019-11-12 15:58:48!
+wtorek, 12 listopada 2019 15:58:48
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 15:58:50
+
+addCommentJira string jiraKey WIND-8644wtorek, 12 listopada 2019 15:58:50
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8644wtorek, 12 listopada 2019 15:58:57
+
+addCommentJira string jiraKey ZCC-19714wtorek, 12 listopada 2019 15:58:57
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19714wtorek, 12 listopada 2019 17:58:10
+
+Zgłoszenie INFOLINIA-6926 dodano automatycznie o godzinie 2019-11-12 17:58:10!
+wtorek, 12 listopada 2019 17:58:10
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 17:58:15
+
+Zgłoszenie WIND-8646 dodano automatycznie o godzinie 2019-11-12 17:58:15!
+wtorek, 12 listopada 2019 17:58:16
+
+Modyfikacja treeItem checkAsAssignewtorek, 12 listopada 2019 17:58:18
+
+addCommentJira string jiraKey INFOLINIA-6926wtorek, 12 listopada 2019 17:58:18
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6926wtorek, 12 listopada 2019 17:58:22
+
+addCommentJira string jiraKey WIND-8646wtorek, 12 listopada 2019 17:58:22
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8646

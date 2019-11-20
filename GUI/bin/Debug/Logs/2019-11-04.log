@@ -1,0 +1,92 @@
+poniedziałek, 4 listopada 2019 09:39:18
+
+Zgłoszenie ZCC-19662 dodano automatycznie o godzinie 2019-11-04 09:39:18!
+poniedziałek, 4 listopada 2019 09:42:49
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 09:42:49
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3892
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__244_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7526
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+poniedziałek, 4 listopada 2019 09:42:51
+
+addCommentJira string jiraKey ZCC-19662 NIE DODANO KOMENTARZA BO ISTNIEJE WPISponiedziałek, 4 listopada 2019 09:42:51
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19662poniedziałek, 4 listopada 2019 09:51:18
+
+Zgłoszenie ZCC-19664 dodano automatycznie o godzinie 2019-11-04 09:51:18!
+poniedziałek, 4 listopada 2019 09:51:19
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 09:51:27
+
+addCommentJira string jiraKey ZCC-19664poniedziałek, 4 listopada 2019 09:51:27
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19664poniedziałek, 4 listopada 2019 11:09:18
+
+Zgłoszenie ZCC-19667 dodano automatycznie o godzinie 2019-11-04 11:09:18!
+poniedziałek, 4 listopada 2019 11:09:18
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 11:09:22
+
+addCommentJira string jiraKey ZCC-19667poniedziałek, 4 listopada 2019 11:09:22
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19667poniedziałek, 4 listopada 2019 11:56:17
+
+--- Main exception: Message ---
+Nie można rozpoznać nazwy zdalnej: 'jira'
+
+--- Main exception: StackTrace ---
+   w Atlassian.Jira.Remote.JiraRestClient.ExecuteRequest[T](Method method, String resource, Object requestBody) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 119
+   w Atlassian.Jira.Remote.JiraRestClient.GetIssueTypes(String token, String projectId) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Remote\JiraRestClient.cs:wiersz 822
+   w Atlassian.Jira.Jira.<>c__DisplayClass16.<GetIssueTypes>b__12(String token) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 414
+   w Atlassian.Jira.Jira.<>c__DisplayClass3c.<WithToken>b__3b(String t) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 658
+   w Atlassian.Jira.Jira.WithToken[TResult](Func`3 function) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 706
+   w Atlassian.Jira.Jira.GetIssueTypes(String projectKey) w c:\projects\atlassian-net-sdk\Atlassian.Jira\Jira.cs:wiersz 419
+   w Logic.Implementation.JiraIssues.GetJiraIssuesTypes() w C:\CP\ParserGit\JiraParser\Logic\Implementation\JiraIssues.cs:wiersz 68
+   w GUI.MainForm.<timer2_Tick>b__119_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 2744
+
+--- Main exception: Source ---
+Atlassian.Jira
+
+poniedziałek, 4 listopada 2019 15:03:06
+
+Zgłoszenie INFOLINIA-6922 dodano automatycznie o godzinie 2019-11-04 15:03:06!
+poniedziałek, 4 listopada 2019 15:03:06
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 15:03:12
+
+addCommentJira string jiraKey INFOLINIA-6922poniedziałek, 4 listopada 2019 15:03:12
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6922poniedziałek, 4 listopada 2019 15:03:14
+
+Zgłoszenie ZCC-19668 dodano automatycznie o godzinie 2019-11-04 15:03:14!
+poniedziałek, 4 listopada 2019 15:03:14
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 15:03:22
+
+addCommentJira string jiraKey ZCC-19668poniedziałek, 4 listopada 2019 15:03:22
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19668poniedziałek, 4 listopada 2019 15:39:09
+
+Zgłoszenie WIND-8635 dodano automatycznie o godzinie 2019-11-04 15:39:09!
+poniedziałek, 4 listopada 2019 15:39:09
+
+Modyfikacja treeItem checkAsAssigneponiedziałek, 4 listopada 2019 15:39:11
+
+addCommentJira string jiraKey WIND-8635poniedziałek, 4 listopada 2019 15:39:11
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8635

@@ -1,0 +1,142 @@
+piątek, 8 listopada 2019 08:03:21
+
+Zgłoszenie INFOLINIA-6924 dodano automatycznie o godzinie 2019-11-08 08:03:21!
+piątek, 8 listopada 2019 08:03:22
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 08:03:27
+
+addCommentJira string jiraKey INFOLINIA-6924piątek, 8 listopada 2019 08:03:27
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6924piątek, 8 listopada 2019 08:51:12
+
+Zgłoszenie ZCC-19692 dodano automatycznie o godzinie 2019-11-08 08:51:12!
+piątek, 8 listopada 2019 08:51:12
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 08:51:16
+
+addCommentJira string jiraKey ZCC-19692piątek, 8 listopada 2019 08:51:16
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19692piątek, 8 listopada 2019 08:51:20
+
+Zgłoszenie ZCC-19693 dodano automatycznie o godzinie 2019-11-08 08:51:20!
+piątek, 8 listopada 2019 08:51:20
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 08:51:22
+
+addCommentJira string jiraKey ZCC-19693piątek, 8 listopada 2019 08:51:22
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19693piątek, 8 listopada 2019 08:51:26
+
+Zgłoszenie ZCC-19694 dodano automatycznie o godzinie 2019-11-08 08:51:26!
+piątek, 8 listopada 2019 08:51:26
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 08:51:29
+
+addCommentJira string jiraKey ZCC-19694piątek, 8 listopada 2019 08:51:29
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19694piątek, 8 listopada 2019 08:51:31
+
+Zgłoszenie ZCC-19695 dodano automatycznie o godzinie 2019-11-08 08:51:31!
+piątek, 8 listopada 2019 08:51:31
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 08:51:36
+
+addCommentJira string jiraKey ZCC-19695piątek, 8 listopada 2019 08:51:36
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19695piątek, 8 listopada 2019 09:15:16
+
+Zgłoszenie KKK-4538 dodano automatycznie o godzinie 2019-11-08 09:15:16!
+piątek, 8 listopada 2019 09:15:16
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 09:15:20
+
+Zgłoszenie KKK-4539 dodano automatycznie o godzinie 2019-11-08 09:15:20!
+piątek, 8 listopada 2019 09:15:21
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 09:15:22
+
+addCommentJira string jiraKey KKK-4538piątek, 8 listopada 2019 09:15:22
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4538piątek, 8 listopada 2019 09:15:27
+
+addCommentJira string jiraKey KKK-4539piątek, 8 listopada 2019 09:15:27
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4539piątek, 8 listopada 2019 09:45:11
+
+Zgłoszenie KKK-4540 dodano automatycznie o godzinie 2019-11-08 09:45:11!
+piątek, 8 listopada 2019 09:45:12
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 09:45:16
+
+addCommentJira string jiraKey KKK-4540piątek, 8 listopada 2019 09:45:16
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4540piątek, 8 listopada 2019 12:09:06
+
+Zgłoszenie CRM-77257 dodano automatycznie o godzinie 2019-11-08 12:09:06!
+piątek, 8 listopada 2019 12:09:06
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 12:09:12
+
+addCommentJira string jiraKey CRM-77257piątek, 8 listopada 2019 12:09:12
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77257piątek, 8 listopada 2019 12:21:14
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 8 listopada 2019 14:47:52
+
+Zgłoszenie CRM-77258 dodano automatycznie o godzinie 2019-11-08 14:47:52!
+piątek, 8 listopada 2019 14:47:52
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 14:47:56
+
+addCommentJira string jiraKey CRM-77258piątek, 8 listopada 2019 14:47:56
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77258piątek, 8 listopada 2019 15:11:55
+
+--- Main exception: Message ---
+Błędne Hasło JIRA dla użytkownika prekawek
+
+--- Main exception: StackTrace ---
+
+
+--- Main exception: Source ---
+
+
+piątek, 8 listopada 2019 16:30:47
+
+Zgłoszenie ZCC-19700 dodano automatycznie o godzinie 2019-11-08 16:30:47!
+piątek, 8 listopada 2019 16:30:47
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 16:30:52
+
+addCommentJira string jiraKey ZCC-19700piątek, 8 listopada 2019 16:30:52
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19700piątek, 8 listopada 2019 16:42:51
+
+Zgłoszenie CRM-77259 dodano automatycznie o godzinie 2019-11-08 16:42:51!
+piątek, 8 listopada 2019 16:42:51
+
+Modyfikacja treeItem checkAsAssignepiątek, 8 listopada 2019 16:42:56
+
+addCommentJira string jiraKey CRM-77259piątek, 8 listopada 2019 16:42:56
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77259

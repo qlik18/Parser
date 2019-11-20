@@ -344,13 +344,23 @@ namespace GUI
                 List<List<string>> userLoginInfo = gujaczWFS.ExecuteStoredProcedure("getJiraAndBpmLogins", null, DatabaseName.SupportCP);
                 foreach (var item in userLoginInfo)
                 {
-
-                    UserBpmJira ubj = new UserBpmJira(
-                                        new UserBpm(Convert.ToInt32(item[0]), item[1], item[2])
-                                        , new UserJira((item[3].Contains(string.Empty) ? item[1] : item[3]), (item[4].Contains(string.Empty) ? item[2] : item[4]))
-                                        );
-                    userBpmJira.Add(ubj);
-
+                    if(!isNullObjectOrEmptyString(item[1]))
+                    {
+                        int _IdUserBPM = !isNullObjectOrEmptyString(item[0]) ? Convert.ToInt32(item[0]) : -1;
+                        UserBpmJira ubj = new UserBpmJira(
+                                            new UserBpm(_IdUserBPM, item[1], item[2])
+                                            , new UserJira((item[3].Contains(string.Empty) ? item[1] : item[3]), (item[4].Contains(string.Empty) ? item[2] : item[4]))
+                                            );
+                        userBpmJira.Add(ubj);
+                    }
+                    else
+                    {
+                        UserBpmJira ubj = new UserBpmJira(
+                                    null //new UserBpm(Convert.ToInt32(item[0]), item[1], item[2])
+                                    , new UserJira((item[3].Contains(string.Empty) ? item[1] : item[3]), (item[4].Contains(string.Empty) ? item[2] : item[4]))
+                                    );
+                        userBpmJira.Add(ubj);
+                    }
                 }
 
                 userBpmJiraList = new UserBpmJiraList(userBpmJira);
@@ -426,7 +436,8 @@ namespace GUI
             catch(Exception ex)
             { }
 
-
+                //
+            tb_LogSearchPath.Text = Properties.Settings.Default.logSearchFolder;
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -4468,7 +4479,9 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 issues[tr.Name] = new Dictionary<BillingIssueDto, IssueState>();
             }
             SearchJira(type, is_number, tr);
+
         }
+
 
         /// <summary>
         /// Zaloguj do Jira
@@ -7764,90 +7777,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         }
 
-        private void bt_LogSearchPatch_Click(object sender, EventArgs e)
-        {
-            fb_logSearch.ShowDialog();
-
-            tb_LogSearchPath.Text = fb_logSearch.SelectedPath;
-        }
-
-        private void bt_LogSearchRun_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!isNullObjectOrEmptyString(tb_LogSearchPath.Text))
-                {
-                    System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
-                    pProcess.StartInfo.FileName = tb_LogSearchPath.Text + @"\LogSearch.bat";
-                    //pProcess.StartInfo.Arguments = "olaa"; //argument
-                    pProcess.StartInfo.UseShellExecute = false;
-                    //pProcess.StartInfo.RedirectStandardOutput = true;
-                    pProcess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
-
-                    //pProcess.StartInfo.CreateNoWindow = true; //not diplay a windows
-                    pProcess.Start();
-                    //string output = pProcess.StandardOutput.ReadToEnd(); //The output result
-                    pProcess.WaitForExit();
-
-                }
-            }
-            catch(Exception ex)
-            {
-
-            }
-
-
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-             var url = "configuration.json";
-            startInfo.CreateNoWindow = false;
-            startInfo.UseShellExecute = false; // This must be false to use env variable
-            startInfo.FileName = tb_LogSearchPath.Text + @"\LogSearch.jar";
-            startInfo.WindowStyle = ProcessWindowStyle.Normal;
-
-            startInfo.Arguments =  url;
-
-            try
-            {
-                using (System.Diagnostics.Process exeProcess = System.Diagnostics.Process.Start(startInfo))
-                {
-                    exeProcess.WaitForExit();
-                }
-            }
-            catch
-            {
-                // Log error.
-            }
-
-            try
-            {
-                System.Diagnostics.Process process = new System.Diagnostics.Process();
-                process.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(@"C:\Program Files (x86)\Common Files\Oracle\Java\javapath");
-                process.StartInfo.FileName = (@"C:\Program Files (x86)\Common Files\Oracle\Java\javapath") + @"\Java.exe";
-                string aArgument = string.Format("{0} {1}", @"C:\CP\usefull\LogSearch\LogSearch.jar", @"C:\CP\usefull\LogSearch\configuration.json");
-                process.StartInfo.Arguments = string.Format(aArgument);
-                process.StartInfo.UseShellExecute = false;
-                process.Start();
-                process.WaitForExit();
-
-                int holdStatus = process.ExitCode;
-
-                if (holdStatus > 0)
-                {
-                    validJavaAppRun = false;
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-                Console.WriteLine("Exception Occurred :{0},{1}", ex.Message, ex.StackTrace.ToString());
-                MessageBox.Show("Exception Occurred : " + ex.Message + " " + ex.StackTrace.ToString());
-                validJavaAppRun = false;
-            }
-
-        }
-        Boolean validJavaAppRun = true;
+        
 
         private void bt_OtworzLog_Click(object sender, MouseEventArgs e)
         {
@@ -7960,7 +7890,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            var issues = jira.GetIssuesFromFilter("PI");
+            var issues = jira.GetIssuesFromFilter("PI",0,200);
             textBox5.Clear();
             dgv_PI.Rows.Clear();
             foreach (var item in issues)
@@ -7977,17 +7907,20 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 int ilosinstalacji = 0;
 
-                textBox5.AppendText(item.Key.Value);
+                textBox5.AppendText(item.Key.Value + "\n");
+                DateTime start = dateTimePicker3.Value.Date;
+                start = start.AddDays(-start.Day + 1);
                 Debug.Write(item.Key);
                 //item.
 
+
                 foreach (var com in item.GetComments())
                 {
-                    if (com.CreatedDate >= DateTime.Parse("2019-08-01")
+                    if (com.CreatedDate >= start
+                        && com.CreatedDate < start.AddMonths(1)
                        && userBpmJiraList.IsBillUser(com.Author)
                        && com.Body.Contains("Jenkins, proszę o wdrożenie na"))
                     {
-
                         ilosinstalacji++;
                         string[] textParam = com.Body.Split(' ');
                         if (textParam.Last().Contains("INS"))
@@ -8019,7 +7952,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 foreach (var logs in item.GetChangeLogs())
                 {
 
-                    if (logs.CreatedDate >= DateTime.Parse("2019-08-01")
+                    if (logs.CreatedDate >= start
+                        && logs.CreatedDate < start.AddMonths(1)
                         && userBpmJiraList.IsBillUser(logs.Author.Username))
                     {
 
@@ -8038,35 +7972,40 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         Debug.Write("----");
                         foreach (var componet in logs.Items)
                         {
-                            if (componet.FieldName == "status"
-                                || componet.FieldName == "assigne"
-                                || componet.FieldName == "Grupa wsparcia"
-                                //|| componet.FieldName == "assigne"
-                                )
+                            //if (componet.FieldName == "status"
+                            //    || componet.FieldName == "assigne"
+                            //    || componet.FieldName == "Grupa wsparcia"
+                            //    //|| componet.FieldName == "assigne"
+                            //    )
+                            //{
+
+                            //    textBox5.AppendText(componet.FieldName);
+                            //    textBox5.AppendText("\n");
+                            //    if (!isNullObjectOrEmptyString(componet.FromValue))
+                            //        textBox5.AppendText(componet.FromValue.ToString());
+                            //    else
+                            //        textBox5.AppendText("FromValue null");
+                            //    textBox5.AppendText("\n");
+                            //    if (!isNullObjectOrEmptyString(componet.ToValue))
+                            //        textBox5.AppendText(componet.ToValue.ToString());
+                            //    else
+                            //        textBox5.AppendText("ToValue null");
+                            //    textBox5.AppendText("\n");
+                            //    textBox5.AppendText("******");
+
+                            Debug.Write(componet.FieldName);
+                            Debug.Write(componet.FromValue);
+                            Debug.Write(componet.ToValue);
+                            Debug.Write("******");
+                            //}
+
+                            if (componet.FieldName.Contains("Wykonawca"))
                             {
-
-                                textBox5.AppendText(componet.FieldName);
-                                textBox5.AppendText("\n");
-                                if (!isNullObjectOrEmptyString(componet.FromValue))
-                                    textBox5.AppendText(componet.FromValue.ToString());
-                                else
-                                    textBox5.AppendText("FromValue null");
-                                textBox5.AppendText("\n");
-                                if (!isNullObjectOrEmptyString(componet.ToValue))
-                                    textBox5.AppendText(componet.ToValue.ToString());
-                                else
-                                    textBox5.AppendText("ToValue null");
-                                textBox5.AppendText("\n");
-                                textBox5.AppendText("******");
-
                                 Debug.Write(componet.FieldName);
                                 Debug.Write(componet.FromValue);
                                 Debug.Write(componet.ToValue);
                                 Debug.Write("******");
-                            }
 
-                            if (componet.FieldName.Contains("Wykonawca"))
-                            {
                                 ilosinstalacji++;
                                 string[] textParam = componet.FieldName.Split(' ');
                                 if (textParam[1].Contains("INS"))
@@ -8099,7 +8038,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     }
 
                 }
-                if (ilosinstalacji > 0)
+                if (sumMetod(i_ins, i_uat, i_preprod, i_prod) > 0)
                     dgv_PI.Rows.Add(item.Project, item.Key, i_ins, i_uat, i_preprod, i_prod, sumMetod(i_ins, i_uat, i_preprod, i_prod));
                     //dgv_PI.Rows.Add(item.Project, item.Key, ins, uat, preprod, prod, ilosinstalacji);
 
@@ -8225,174 +8164,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
         }
 
-        private void issueStep_RozpocznijDiagnoze(object sender, string issueId)
-        {
-            this.Invoke((MethodInvoker)delegate
-            {
-                const int eventMoveId = 614;
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueId, issue);
-
-                //Pobranie Rozmieszczenia parametrów zdarzenia
-                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-                KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)sender;
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Rozpoczęcie diagnozy - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
-            });
-        }
-
-        private void issueStep_WeryfikacjaRealizacji(object sender, string issueId)
-        {
-            this.Invoke((MethodInvoker)delegate
-            {
-                const int eventMoveId = 616;
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueId, issue);
-
-                //Pobranie Rozmieszczenia parametrów zdarzenia
-                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Weryfikacja Realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
-            });
-        }
-        private void issueStep_ZamknieciePoRealizacji(object sender, string issueId)
-        {
-            this.Invoke((MethodInvoker)delegate
-            {
-                const int eventMoveId = 618;
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueId, issue);
-
-                //Pobranie Rozmieszczenia parametrów zdarzenia
-                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zamknięcie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, null);
-            });
-        }
-        private void issueStep_OdrzucenieZgloszenia(object sender, string issueId)
-        {
-            const int eventMoveId = 617;
-
-            List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-            addIssueToTreeNode(issueId, issue);
-
-            //Pobranie Rozmieszczenia parametrów zdarzenia
-            List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-            KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(401, "Zgłoszenie odrzucone");
-
-            WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Odrzucenie zgłoszenia - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
-
-        }
-        private void issueStep_ZmianaKataloguJira(object sender, string issueId)
-        {
-            this.Invoke((MethodInvoker)delegate
-            {
-                const int eventMoveId = 617;
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueId, issue);
-
-                //Pobranie Rozmieszczenia parametrów zdarzenia
-                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-                KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>(673, "Zmiana katalogu w Jira");
-
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana Obszaru - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
-            });
-        }
-
-        private void issueStep_ZmianaWykonawcy(object sender, string issueId)
-        {
-            this.Invoke((MethodInvoker)delegate
-            {
-                const int eventMoveId = 621;
-
-                List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-                addIssueToTreeNode(issueId, issue);
-
-                //Pobranie Rozmieszczenia parametrów zdarzenia
-                List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-
-                KeyValuePair<int, string> selectOption = (KeyValuePair<int, string>)sender;
-               
-
-                WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Zmiana wykonawcy - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, true, selectOption);
-            });
-        }
-        private void btn_issueStep_RealizujIZamknij_Click(object sender, EventArgs e)
-        {
-            const int eventMoveId = 612;
-            //List<BillingIssueDtoHelios> issue = new List<BillingIssueDtoHelios>();
-            //addIssueToTreeNode(issueId, issue);
-
-
-            ToolStripMenuItem tmp = (ToolStripMenuItem)sender; //losowy komponet do przechowywania Tag
-
-           // BillingIssueDto selectIssue = null;
-            KeyValuePair<int, string> item = new KeyValuePair<int, string>();
-            KeyValuePair<int, string> selectOption = new KeyValuePair<int, string>();
-
-            List<object> tagTmp = new List<object>();
-
-            if (tmp.Tag != null && tmp.Tag.GetType() == typeof(List<object>))
-            {
-                tagTmp = (List<object>)tmp.Tag;
-
-                selectIssue = (BillingIssueDto)tagTmp[0];
-                item = (KeyValuePair<int, string>)tagTmp[1];
-                selectOption = (KeyValuePair<int, string>)tagTmp[2];
-            }
-
-            if (tmp.Tag != null && tmp.Tag.GetType() == typeof(IssueFinalParameters))
-            {
-                IssueFinalParameters par = ((IssueFinalParameters)tmp.Tag);
-                // tagTmp = (List<object>)tmp.Tag;
-                selectIssue = par.issueNumber;
-                item = par.item;
-                selectOption = par.selectOption;
-            }
-            try
-            {
-                //1. BillingIssueDto            selectIssue
-                //2. Dictionary<int, string>    item
-                //3. KeyValuePair<int, string>  s
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    if (item.Key == 610)
-                    {
-                        string[] paramString = (string[])tagTmp[3];
-                        new WFSModelerForm(gujaczWFS.GetEventParamForFormByEventMove(item.Key), item.Value, selectIssue, gujaczWFS, item.Key, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinish), treeView4, true, paramString);
-                    }
-                    else
-                    {
-                        List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(eventMoveId);
-                        WFSModelerForm wmfw = new WFSModelerForm(eventParamForFormByEventMove, "Przyjęcie do realizacji - fast", selectIssue, gujaczWFS, eventMoveId, new WFSModelerForm.calbackDelegate(ModelerForm_sla_ActionFinishAfterAutoStep), treeView4, false, selectOption);
-                        wmfw.ShowDialog();
-                    }
-                });
-
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    issueStep_WeryfikacjaRealizacji(this, selectIssue.JiraKey);
-                });
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    issueStep_ZamknieciePoRealizacji(this, selectIssue.JiraKey);
-                });
-
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogWarning(ex.Message, Logger.Instance);
-            }
-        }
-
+        
         private void numerZgl_Validated(object sender, EventArgs e)
         {
             numerZgl.Text = numerZgl.Text.Trim();
@@ -8439,6 +8211,106 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 resSum += item;
             }
             return resSum;
+        }
+
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            GetLastIssue();
+        }
+        private void GetLastIssue()
+        {
+            if (LoginJira())
+            {
+                Jira lastIssue = jira;
+                lastIssue.MaxIssuesPerRequest = 1;
+                var last_issue = lastIssue.GetIssuesFromJql("issuekey in issueHistory() order by lastViewed DESC").FirstOrDefault();
+
+
+                Search(last_issue.Key.Value, true, treeView3);
+                issueTab.SelectTab(2);
+            }
+        }
+
+        private void statusStripButton1_Click(object sender, EventArgs e)
+        {
+            if (!isNullObjectOrEmptyString(tb_LogSearchPath.Text))
+            {
+                doByWorker(new DoWorkEventHandler(runLogSearch), null, null);
+            }
+            else
+            {
+                bt_LogSearchPatch_Click(this, null);
+            }
+        }
+
+        private void bt_LogSearchPatch_Click(object sender, EventArgs e)
+        {
+            if (fb_logSearch.ShowDialog() == DialogResult.OK)
+            {
+
+                tb_LogSearchPath.Text = fb_logSearch.SelectedPath;
+                Properties.Settings.Default.logSearchFolder = tb_LogSearchPath.Text;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void runLogSearch(object sender, EventArgs e)
+        {
+
+            string jar = tb_LogSearchPath.Text + @"\LogSearch.jar";
+            string json = tb_LogSearchPath.Text + @"\configuration.json";
+
+            string argRuns = "-jar " + jar + " " + json;
+
+            var processInfo = new ProcessStartInfo("java.exe", argRuns)
+            {
+                CreateNoWindow = false,
+                UseShellExecute = true
+            };
+            System.Diagnostics.Process proc;
+
+            if ((proc = System.Diagnostics.Process.Start(processInfo)) == null)
+            {
+                throw new InvalidOperationException("??");
+            }
+
+            proc.WaitForExit();
+            int exitCode = proc.ExitCode;
+            proc.Close();
+
+        }
+
+        private void bt_LogSearchRun_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (!isNullObjectOrEmptyString(tb_LogSearchPath.Text))
+                {
+
+                    doByWorker(new DoWorkEventHandler(runLogSearch), null, null);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsmiChangePass_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

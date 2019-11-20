@@ -1,0 +1,163 @@
+wtorek, 1 października 2019 07:56:05
+
+Zgłoszenie CRM-76979 dodano automatycznie o godzinie 2019-10-01 07:56:05!
+wtorek, 1 października 2019 07:56:05
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:11
+
+Zgłoszenie CRM-76981 dodano automatycznie o godzinie 2019-10-01 07:56:11!
+wtorek, 1 października 2019 07:56:11
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:12
+
+addCommentJira string jiraKey CRM-76979wtorek, 1 października 2019 07:56:12
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76979wtorek, 1 października 2019 07:56:14
+
+addCommentJira string jiraKey CRM-76981wtorek, 1 października 2019 07:56:14
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76981wtorek, 1 października 2019 07:56:15
+
+Zgłoszenie CRM-76982 dodano automatycznie o godzinie 2019-10-01 07:56:15!
+wtorek, 1 października 2019 07:56:15
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:18
+
+addCommentJira string jiraKey CRM-76982wtorek, 1 października 2019 07:56:18
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76982wtorek, 1 października 2019 07:56:19
+
+Zgłoszenie WIND-8590 dodano automatycznie o godzinie 2019-10-01 07:56:19!
+wtorek, 1 października 2019 07:56:19
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:21
+
+addCommentJira string jiraKey WIND-8590wtorek, 1 października 2019 07:56:21
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8590wtorek, 1 października 2019 07:56:22
+
+Zgłoszenie ZCC-19514 dodano automatycznie o godzinie 2019-10-01 07:56:22!
+wtorek, 1 października 2019 07:56:23
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:25
+
+addCommentJira string jiraKey ZCC-19514wtorek, 1 października 2019 07:56:25
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19514wtorek, 1 października 2019 07:56:26
+
+Zgłoszenie CRM-76980 dodano automatycznie o godzinie 2019-10-01 07:56:26!
+wtorek, 1 października 2019 07:56:26
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:28
+
+addCommentJira string jiraKey CRM-76980wtorek, 1 października 2019 07:56:28
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76980wtorek, 1 października 2019 07:56:29
+
+Zgłoszenie CRM-76983 dodano automatycznie o godzinie 2019-10-01 07:56:29!
+wtorek, 1 października 2019 07:56:29
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:32
+
+addCommentJira string jiraKey CRM-76983wtorek, 1 października 2019 07:56:32
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76983wtorek, 1 października 2019 07:56:36
+
+Zgłoszenie CRM-76984 dodano automatycznie o godzinie 2019-10-01 07:56:36!
+wtorek, 1 października 2019 07:56:36
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:38
+
+addCommentJira string jiraKey CRM-76984wtorek, 1 października 2019 07:56:38
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76984wtorek, 1 października 2019 07:56:40
+
+Zgłoszenie CRM-76986 dodano automatycznie o godzinie 2019-10-01 07:56:40!
+wtorek, 1 października 2019 07:56:40
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 07:56:42
+
+addCommentJira string jiraKey CRM-76986wtorek, 1 października 2019 07:56:42
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76986wtorek, 1 października 2019 08:25:36
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 652
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 1 października 2019 09:19:03
+
+Zgłoszenie ZCC-19515 dodano automatycznie o godzinie 2019-10-01 09:19:03!
+wtorek, 1 października 2019 09:19:03
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 09:19:10
+
+addCommentJira string jiraKey ZCC-19515wtorek, 1 października 2019 09:19:10
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19515wtorek, 1 października 2019 11:31:05
+
+Zgłoszenie KKK-4492 dodano automatycznie o godzinie 2019-10-01 11:31:05!
+wtorek, 1 października 2019 11:31:05
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 11:31:12
+
+addCommentJira string jiraKey KKK-4492wtorek, 1 października 2019 11:31:12
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4492wtorek, 1 października 2019 11:54:35
+
+Zgłoszenie WIND-8591 dodano automatycznie o godzinie 2019-10-01 11:54:35!
+wtorek, 1 października 2019 11:54:35
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 11:54:53
+
+addCommentJira string jiraKey WIND-8591wtorek, 1 października 2019 11:54:53
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8591wtorek, 1 października 2019 12:42:37
+
+Zgłoszenie CRM-76987 dodano automatycznie o godzinie 2019-10-01 12:42:37!
+wtorek, 1 października 2019 12:42:37
+
+Modyfikacja treeItem checkAsAssignewtorek, 1 października 2019 12:42:43
+
+addCommentJira string jiraKey CRM-76987wtorek, 1 października 2019 12:42:43
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76987wtorek, 1 października 2019 12:54:56
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 652
+
+--- Main exception: Source ---
+System.Windows.Forms
+

@@ -545,3 +545,13 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Release\GUI.exe.manifest
 C:\CP\ParserGit\JiraParser\GUI\obj\Release\GUI.application
 C:\CP\ParserGit\JiraParser\GUI\obj\Release\GUI.exe
 C:\CP\ParserGit\JiraParser\GUI\obj\Release\GUI.pdb
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Microsoft.Practices.CompositeUI.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Microsoft.Practices.CompositeUI.WinForms.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.CompositeUI.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.GridView.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.RadChart.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.RadDock.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\Telerik.WinControls.UI.dll
+C:\CP\ParserGit\JiraParser\GUI\bin\Release\TelerikCommon.dll

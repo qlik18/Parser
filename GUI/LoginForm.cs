@@ -93,11 +93,19 @@ namespace GUI
             //progressBar1.Show();
             //label3.Show();
             //if(!firstLogin)
-                invokeLogin((this.Tag.ToString()));
 
+            invokeLogin((this.Tag.ToString()));
 
-            wfs = null;
-            this.Close();
+            if (wfs.getUser().Id == -1)
+            {
+                MessageBox.Show("Brak możliwości zalogowania do BPM \n" +
+                    "popraw dane lub sprawdź dostępność BPM.","PROBLEMY Z LOGOWANIEM",MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+            else
+            {
+                wfs = null;
+                this.Close();
+            }
         }
 
         private void invokeLogin(string message = "Logowanie...")
@@ -167,9 +175,9 @@ namespace GUI
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(27, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 16);
+            this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Login WFS:";
+            this.label1.Text = "Login BPM:";
             // 
             // textBox1
             // 
@@ -184,7 +192,7 @@ namespace GUI
             // maskedTextBox1
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(110, 72);
+            this.maskedTextBox1.Location = new System.Drawing.Point(110, 40);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(209, 22);
             this.maskedTextBox1.TabIndex = 3;
@@ -195,11 +203,11 @@ namespace GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(21, 72);
+            this.label2.Location = new System.Drawing.Point(21, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.Size = new System.Drawing.Size(82, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Hasło WFS:";
+            this.label2.Text = "Hasło BPM:";
             // 
             // button2
             // 
@@ -213,7 +221,7 @@ namespace GUI
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 46);
+            this.textBox3.Location = new System.Drawing.Point(110, 74);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(209, 20);
             this.textBox3.TabIndex = 2;
@@ -233,7 +241,7 @@ namespace GUI
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(35, 46);
+            this.label5.Location = new System.Drawing.Point(35, 74);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 16);
             this.label5.TabIndex = 1;
@@ -311,7 +319,7 @@ namespace GUI
             // 
             // Login
             // 
-            this.ClientSize = new System.Drawing.Size(350, 218);
+            this.ClientSize = new System.Drawing.Size(352, 218);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -394,7 +402,7 @@ namespace GUI
                 checkBox1.Checked = true;
             }
 
-            if(pictureBox2.Visible && pictureBox1.Visible)
+            if(pictureBox2.Visible && pictureBox1.Visible && firstLogin)
             {
                 this.Tag = "Logowanie zapisanymi danymi użytkownika";
                 button1_Click(this,null);

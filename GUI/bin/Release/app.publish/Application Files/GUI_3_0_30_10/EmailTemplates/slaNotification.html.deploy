@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+    <style>
+        .headertop1 {
+            width: 100%;
+        }
+
+        .headercontent {
+            color: #000000;
+            font-family: verdana;
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .breadcrumb td {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        body {
+            font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #4f6b72;
+            background: #E6EAE9;
+            text-align: center;
+        }
+
+        a {
+            color: red;
+        }
+
+        #mytable {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+            #mytable td {
+                text-align: center;
+            }
+
+        caption {
+            padding: 0 0 5px 0;
+            font: italic 16px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #4f6b72;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            border-top: 1px solid #C1DAD7;
+            text-align: center;
+            background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+        }
+
+        th {
+            font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #4f6b72;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            border-top: 1px solid #C1DAD7;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 6px 6px 6px 12px;
+            background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+        }
+
+            th.nobg {
+                border-top: 0;
+                border-left: 0;
+                border-right: 1px solid #C1DAD7;
+                background: none;
+            }
+
+        td, div.spec {
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            background: #fff;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+        }
+
+            td.alt {
+                background: #F5FAFA;
+                color: #797268;
+            }
+
+        th.spec {
+            border-left: 1px solid #C1DAD7;
+            border-top: 0;
+            background: #fff url(images/bullet1.gif) no-repeat;
+            font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        th.specalt {
+            border-left: 1px solid #C1DAD7;
+            border-top: 0;
+            background: #f5fafa url(images/bullet2.gif) no-repeat;
+            font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #797268;
+        }
+
+        .spacer {
+            height: 10px;
+            font-size: 1px;
+            line-height: 1px;
+        }
+
+        .formlabel {
+            font-family: tahoma;
+            font-size: 8pt;
+            padding: 0px 7px 0px 7px;
+            vertical-align: top;
+            color: #616a76;
+            font-weight: bold;
+        }
+
+        .descriptiontext {
+            color: #9ca3ad;
+            font-family: tahoma;
+            font-size: 8pt;
+            padding-top: 5px;
+            padding-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: left;margin:0 auto;">
+        <table class="headertop1" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="headercontent" ">
+                        <table class=" breadcrumb" cellspacing="0" cellpadding="0">
+            <tr><td>Powiadomienie z programu Parser.</td></tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+        <div class="spacer"></div>
+        {{CONTENT}}
+        <div class="spacer"></div>
+        <div class="descriptiontext spec">Wysłano dnia: {{DATE}} </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,413 @@
+piątek, 13 września 2019 07:35:57
+
+Zgłoszenie INFOLINIA-6860 dodano automatycznie o godzinie 2019-09-13 07:35:57!
+piątek, 13 września 2019 07:35:57
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 07:36:05
+
+Zgłoszenie KKK-4455 dodano automatycznie o godzinie 2019-09-13 07:36:05!
+piątek, 13 września 2019 07:36:05
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 07:36:06
+
+addCommentJira string jiraKey INFOLINIA-6860piątek, 13 września 2019 07:36:06
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6860piątek, 13 września 2019 07:36:10
+
+addCommentJira string jiraKey KKK-4455piątek, 13 września 2019 07:36:10
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4455piątek, 13 września 2019 07:47:42
+
+Zgłoszenie CRM-76852 dodano automatycznie o godzinie 2019-09-13 07:47:42!
+piątek, 13 września 2019 07:47:42
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 07:47:47
+
+Zgłoszenie CRM-76853 dodano automatycznie o godzinie 2019-09-13 07:47:47!
+piątek, 13 września 2019 07:47:48
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 07:47:49
+
+addCommentJira string jiraKey CRM-76852piątek, 13 września 2019 07:47:49
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76852piątek, 13 września 2019 07:47:51
+
+Zgłoszenie INFOLINIA-6862 dodano automatycznie o godzinie 2019-09-13 07:47:51!
+piątek, 13 września 2019 07:47:51
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 07:47:52
+
+addCommentJira string jiraKey CRM-76853piątek, 13 września 2019 07:47:52
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76853piątek, 13 września 2019 07:47:53
+
+addCommentJira string jiraKey INFOLINIA-6862piątek, 13 września 2019 07:47:53
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6862piątek, 13 września 2019 08:23:44
+
+Zgłoszenie ZCC-19446 dodano automatycznie o godzinie 2019-09-13 08:23:44!
+piątek, 13 września 2019 08:23:44
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 08:23:51
+
+addCommentJira string jiraKey ZCC-19446piątek, 13 września 2019 08:23:51
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19446piątek, 13 września 2019 08:47:43
+
+Zgłoszenie WIND-8559 dodano automatycznie o godzinie 2019-09-13 08:47:43!
+piątek, 13 września 2019 08:47:43
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 08:47:51
+
+addCommentJira string jiraKey WIND-8559piątek, 13 września 2019 08:47:51
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8559piątek, 13 września 2019 08:47:53
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 629
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 08:53:45
+
+Zgłoszenie ZCC-19427 dodano automatycznie o godzinie 2019-09-13 08:53:45!
+piątek, 13 września 2019 08:53:45
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 08:53:54
+
+addCommentJira string jiraKey ZCC-19427piątek, 13 września 2019 08:53:54
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19427piątek, 13 września 2019 08:59:55
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:05:52
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:11:48
+
+Zgłoszenie CRM-76855 dodano automatycznie o godzinie 2019-09-13 09:11:48!
+piątek, 13 września 2019 09:11:48
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 09:11:54
+
+addCommentJira string jiraKey CRM-76855piątek, 13 września 2019 09:11:54
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76855piątek, 13 września 2019 09:11:57
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:17:53
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:23:54
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:30:10
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:36:34
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:41:54
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:43:47
+
+--- Main exception: Message ---
+Bieżący wątek musi być ustawiony na tryb jednowątkowego apartamentu, aby można było wykonywać wywołania OLE. Upewnij się, że w funkcji Main jest zaznaczony element STAThreadAttribute.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.ComboBox.set_AutoCompleteMode(AutoCompleteMode value)
+   w GUI.WFSModelerForm.AddComboBox(EventParamModeler ep, GroupBox group) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 589
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 490
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm.GenerateForm(GroupBox group, Int32 ParamGroupId) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 497
+   w GUI.WFSModelerForm..ctor(List`1 list, String name, BillingIssueDto issue, IParserEngineWFS gujaczWFS, Int32 eventMoveId, calbackDelegate callback, TreeView tr, Boolean quickStep, Object selectOption) w C:\CP\ParserGit\JiraParser\GUI\WFSModelerForm.cs:wiersz 308
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 09:52:59
+
+Zgłoszenie KKK-4456 dodano automatycznie o godzinie 2019-09-13 09:52:59!
+piątek, 13 września 2019 09:52:59
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 09:53:07
+
+addCommentJira string jiraKey KKK-4456piątek, 13 września 2019 09:53:07
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4456piątek, 13 września 2019 10:04:38
+
+Zgłoszenie INFOLINIA-6864 dodano automatycznie o godzinie 2019-09-13 10:04:38!
+piątek, 13 września 2019 10:04:39
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 10:04:45
+
+addCommentJira string jiraKey INFOLINIA-6864piątek, 13 września 2019 10:04:45
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6864piątek, 13 września 2019 11:34:37
+
+Zgłoszenie ZCC-19447 dodano automatycznie o godzinie 2019-09-13 11:34:37!
+piątek, 13 września 2019 11:34:37
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 11:34:40
+
+addCommentJira string jiraKey ZCC-19447piątek, 13 września 2019 11:34:40
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19447piątek, 13 września 2019 12:34:36
+
+Zgłoszenie CRM-76857 dodano automatycznie o godzinie 2019-09-13 12:34:36!
+piątek, 13 września 2019 12:34:37
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 12:34:44
+
+addCommentJira string jiraKey CRM-76857piątek, 13 września 2019 12:34:44
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76857piątek, 13 września 2019 12:58:37
+
+Zgłoszenie KKK-4457 dodano automatycznie o godzinie 2019-09-13 12:58:37!
+piątek, 13 września 2019 12:58:38
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 12:58:45
+
+addCommentJira string jiraKey KKK-4457piątek, 13 września 2019 12:58:45
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4457piątek, 13 września 2019 13:02:48
+
+--- Main exception: Message ---
+issueMove[treeView4] nie zawiera IssueId=INFOLINIA-6859
+
+--- Main exception: StackTrace ---
+   w GUI.MainForm.ModelerForm_sla_ActionFinish(String issueid, String eventName, TreeView tr) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 6752
+
+--- Main exception: Source ---
+GUI
+
+piątek, 13 września 2019 14:22:38
+
+Zgłoszenie CRM-76860 dodano automatycznie o godzinie 2019-09-13 14:22:38!
+piątek, 13 września 2019 14:22:38
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 14:22:45
+
+addCommentJira string jiraKey CRM-76860piątek, 13 września 2019 14:22:45
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76860piątek, 13 września 2019 14:28:40
+
+Zgłoszenie ZCC-19448 dodano automatycznie o godzinie 2019-09-13 14:28:40!
+piątek, 13 września 2019 14:28:40
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 14:28:51
+
+addCommentJira string jiraKey ZCC-19448piątek, 13 września 2019 14:28:51
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19448piątek, 13 września 2019 14:34:37
+
+Zgłoszenie INFOLINIA-6867 dodano automatycznie o godzinie 2019-09-13 14:34:37!
+piątek, 13 września 2019 14:52:37
+
+Zgłoszenie ZCC-19449 dodano automatycznie o godzinie 2019-09-13 14:52:37!
+piątek, 13 września 2019 14:52:37
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 14:52:43
+
+Zgłoszenie CRM-76861 dodano automatycznie o godzinie 2019-09-13 14:52:43!
+piątek, 13 września 2019 14:52:44
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 14:52:45
+
+addCommentJira string jiraKey ZCC-19449piątek, 13 września 2019 14:52:45
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19449piątek, 13 września 2019 14:52:50
+
+addCommentJira string jiraKey CRM-76861piątek, 13 września 2019 14:52:50
+
+addCommentJira object sender, DoWorkEventArgs e CRM-76861piątek, 13 września 2019 14:52:50
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 629
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 14:59:41
+
+Modyfikacja treeItem checkAsAssignepiątek, 13 września 2019 14:59:41
+
+--- Main exception: Message ---
+Nie można uzyskać dostępu do usuniętego obiektu.
+Nazwa obiektu: 'WFSform'.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.CreateHandle()
+   w System.Windows.Forms.Form.CreateHandle()
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   w System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   w GUI.MainForm.UzupelnijDane(TreeView tr, Boolean auto) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 3882
+   w GUI.MainForm.<newIssueAutoAddToBPMUzupelnijDane>b__244_0() w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 7513
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+piątek, 13 września 2019 14:59:43
+
+addCommentJira string jiraKey INFOLINIA-6867 NIE DODANO KOMENTARZA BO ISTNIEJE WPISpiątek, 13 września 2019 14:59:43
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6867piątek, 13 września 2019 15:04:50
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 629
+
+--- Main exception: Source ---
+System.Windows.Forms
+

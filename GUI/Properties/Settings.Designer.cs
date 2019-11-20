@@ -300,10 +300,22 @@ namespace GUI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.31.11")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Parser 3.0.32.10")]
         public string AppVersion {
             get {
                 return ((string)(this["AppVersion"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string logSearchFolder {
+            get {
+                return ((string)(this["logSearchFolder"]));
+            }
+            set {
+                this["logSearchFolder"] = value;
             }
         }
     }

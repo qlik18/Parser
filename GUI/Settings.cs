@@ -7,7 +7,8 @@
     //  The SettingsLoaded event is raised after the setting values are loaded.
     //  The SettingsSaving event is raised before the setting values are saved.
     internal sealed partial class Settings {
-        
+        internal string logSearchPath;
+
         public Settings() {
             // // To add event handlers for saving and changing settings, uncomment the lines below:
             //

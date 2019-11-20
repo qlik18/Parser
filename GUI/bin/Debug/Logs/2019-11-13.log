@@ -1,0 +1,151 @@
+środa, 13 listopada 2019 09:06:45
+
+--- Main exception: Message ---
+Zdalny punkt końcowy nie rozpoznaje już tej sekwencji. Jest to prawdopodobnie spowodowane przerwaniem działania w zdalnym punkcie końcowym. The value of wsrm:Identifier is not a known Sequence identifier. Wystąpił błąd uwierzytelnionej sesji.
+
+--- Main exception: StackTrace ---
+
+Server stack trace: 
+   w System.ServiceModel.Channels.ReliableRequestSessionChannel.SyncRequest.WaitForReply(TimeSpan timeout)
+   w System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   w System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   w System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   w System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   w System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   w DataLayer.HPDataService.IDataService4HP.CheckIssuesPresenceOnBpm(User user, BillingDTHIssueWFS[] issues)
+   w DataLayer.Implementation.GatewayDaoWFS.CheckIssuesPresenceOnBpm(List`1 issues) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 121
+   w LogicLayer.Implementation.ParserEngineWFS.compareBillingWithWFS(List`1 issues) w C:\CP\ParserGit\JiraParser\Logic\Implementation\ParserEngineWFS.cs:wiersz 124
+   w GUI.MainForm.GetAllIssuesFromJira(Object sener, EventArgs e) w C:\CP\ParserGit\JiraParser\GUI\MainForm.cs:wiersz 4812
+
+--- Main exception: Source ---
+mscorlib
+
+środa, 13 listopada 2019 09:24:34
+
+Zgłoszenie ZCC-19716 dodano automatycznie o godzinie 2019-11-13 09:24:34!
+środa, 13 listopada 2019 09:24:34
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 09:24:40
+
+addCommentJira string jiraKey ZCC-19716środa, 13 listopada 2019 09:24:40
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19716środa, 13 listopada 2019 09:24:43
+
+Zgłoszenie ZCC-19717 dodano automatycznie o godzinie 2019-11-13 09:24:43!
+środa, 13 listopada 2019 09:24:43
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 09:24:46
+
+addCommentJira string jiraKey ZCC-19717środa, 13 listopada 2019 09:24:46
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19717środa, 13 listopada 2019 10:54:34
+
+Zgłoszenie CRM-77269 dodano automatycznie o godzinie 2019-11-13 10:54:34!
+środa, 13 listopada 2019 10:54:35
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 10:54:40
+
+addCommentJira string jiraKey CRM-77269środa, 13 listopada 2019 10:54:40
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77269środa, 13 listopada 2019 11:12:47
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 13 listopada 2019 11:54:44
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.ScrollBar.UpdateScrollInfo()
+   w System.Windows.Forms.ScrollBar.OnEnabledChanged(EventArgs e)
+   w System.Windows.Forms.Control.set_Enabled(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 13 listopada 2019 12:06:32
+
+Zgłoszenie CRM-77270 dodano automatycznie o godzinie 2019-11-13 12:06:32!
+środa, 13 listopada 2019 12:06:32
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 12:06:37
+
+addCommentJira string jiraKey CRM-77270środa, 13 listopada 2019 12:06:37
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77270środa, 13 listopada 2019 12:12:43
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 13 listopada 2019 12:18:31
+
+Zgłoszenie CRM-77271 dodano automatycznie o godzinie 2019-11-13 12:18:31!
+środa, 13 listopada 2019 12:18:31
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 12:18:36
+
+addCommentJira string jiraKey CRM-77271środa, 13 listopada 2019 12:18:36
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77271środa, 13 listopada 2019 12:18:36
+
+Zgłoszenie CRM-77272 dodano automatycznie o godzinie 2019-11-13 12:18:36!
+środa, 13 listopada 2019 12:18:37
+
+Modyfikacja treeItem checkAsAssigneśroda, 13 listopada 2019 12:18:39
+
+addCommentJira string jiraKey CRM-77272środa, 13 listopada 2019 12:18:39
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77272

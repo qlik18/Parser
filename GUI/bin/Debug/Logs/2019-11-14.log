@@ -1,0 +1,113 @@
+czwartek, 14 listopada 2019 09:27:20
+
+Zgłoszenie INFOLINIA-6927 dodano automatycznie o godzinie 2019-11-14 09:27:20!
+czwartek, 14 listopada 2019 09:27:21
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 09:27:28
+
+addCommentJira string jiraKey INFOLINIA-6927czwartek, 14 listopada 2019 09:27:28
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6927czwartek, 14 listopada 2019 09:57:17
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+czwartek, 14 listopada 2019 10:45:12
+
+Zgłoszenie INFOLINIA-6928 dodano automatycznie o godzinie 2019-11-14 10:45:12!
+czwartek, 14 listopada 2019 10:45:13
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 10:45:18
+
+addCommentJira string jiraKey INFOLINIA-6928czwartek, 14 listopada 2019 10:45:18
+
+addCommentJira object sender, DoWorkEventArgs e INFOLINIA-6928czwartek, 14 listopada 2019 11:27:13
+
+Zgłoszenie ZCC-19730 dodano automatycznie o godzinie 2019-11-14 11:27:13!
+czwartek, 14 listopada 2019 11:27:13
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:27:18
+
+Zgłoszenie ZCC-19731 dodano automatycznie o godzinie 2019-11-14 11:27:18!
+czwartek, 14 listopada 2019 11:27:18
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:27:19
+
+addCommentJira string jiraKey ZCC-19730czwartek, 14 listopada 2019 11:27:19
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19730czwartek, 14 listopada 2019 11:27:22
+
+Zgłoszenie ZCC-19732 dodano automatycznie o godzinie 2019-11-14 11:27:22!
+czwartek, 14 listopada 2019 11:27:22
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:27:24
+
+addCommentJira string jiraKey ZCC-19731czwartek, 14 listopada 2019 11:27:24
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19731czwartek, 14 listopada 2019 11:27:26
+
+Zgłoszenie ZCC-19733 dodano automatycznie o godzinie 2019-11-14 11:27:26!
+czwartek, 14 listopada 2019 11:27:26
+
+addCommentJira string jiraKey ZCC-19732czwartek, 14 listopada 2019 11:27:26
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:27:26
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19732czwartek, 14 listopada 2019 11:27:28
+
+addCommentJira string jiraKey ZCC-19733czwartek, 14 listopada 2019 11:27:28
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19733czwartek, 14 listopada 2019 11:27:29
+
+Zgłoszenie ZCC-19734 dodano automatycznie o godzinie 2019-11-14 11:27:29!
+czwartek, 14 listopada 2019 11:27:30
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:27:33
+
+addCommentJira string jiraKey ZCC-19734czwartek, 14 listopada 2019 11:27:33
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19734czwartek, 14 listopada 2019 11:33:11
+
+Zgłoszenie ZCC-19735 dodano automatycznie o godzinie 2019-11-14 11:33:11!
+czwartek, 14 listopada 2019 11:33:11
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 11:33:17
+
+addCommentJira string jiraKey ZCC-19735czwartek, 14 listopada 2019 11:33:17
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19735czwartek, 14 listopada 2019 12:03:12
+
+Zgłoszenie CRM-77279 dodano automatycznie o godzinie 2019-11-14 12:03:12!
+czwartek, 14 listopada 2019 12:03:13
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 12:03:17
+
+addCommentJira string jiraKey CRM-77279czwartek, 14 listopada 2019 12:03:17
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77279czwartek, 14 listopada 2019 13:51:09
+
+Zgłoszenie CRM-77281 dodano automatycznie o godzinie 2019-11-14 13:51:09!
+czwartek, 14 listopada 2019 13:51:09
+
+Modyfikacja treeItem checkAsAssigneczwartek, 14 listopada 2019 13:51:14
+
+addCommentJira string jiraKey CRM-77281czwartek, 14 listopada 2019 13:51:14
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77281

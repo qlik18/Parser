@@ -507,14 +507,14 @@ namespace GUI
                     {
                         doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
                     }
-                    else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value) 
-                            && userBpmJiraList.IsBillUser(issue.Assignee) )
-                    {
+                    //else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value) 
+                    //        && userBpmJiraList.IsBillUser(issue.Assignee) )
+                    //{
 
-                        issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee), jiraNumber.ToString());
-                        //doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
-
-                    }
+                    //    issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee), jiraNumber.ToString());
+                    //    //doByWorker(new DoWorkEventHandler(slaAutoAssigneTakenIssue), item, null);
+                    //    System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, issue.Assignee));
+                    //}
 
                     if (!isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value)
                               && ((!isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Odrzucone")
@@ -529,11 +529,10 @@ namespace GUI
                         bool issueMoveProject = false;
                         bool issueChangeUserBill = false;
                         IEnumerable<IssueChangeLog> cl = issue.GetChangeLogs();
-                        foreach (IssueChangeLog changeLog in cl)
+                        foreach (IssueChangeLog changeLog in cl.OrderByDescending(x => x.CreatedDate))
                         {
                             //zmiana katalogu
-                            IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "Key" && x.FromValue == jiraNumber);
-                            if (!isNullObjectOrEmptyString(param))
+                            if (!isNullObjectOrEmptyString(changeLog.Items.FirstOrDefault(x => x.FieldName == "Key" && x.FromValue == jiraNumber)))
                             {
                                 issueMoveProject = true;
                                 break;
@@ -541,14 +540,46 @@ namespace GUI
 
 
                             //user change
-                            //param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && x.FromValue == userSLA && userBpmJiraList.IsBillUser(x.ToId));
-                            param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(x.ToId));
-                            UserBpmJira ubj;
-                            if (!isNullObjectOrEmptyString(param) && userBpmJiraList.TryGetBillUser(issue.Assignee, out ubj) && userSLA != string.Empty && ubj.UserJira.FullName != userSLA)
+                            //param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && x.FromValue == userSLA && userBpmJiraList.IsBillUser(x.ToId));                            
+                            if (userBpmJiraList.IsBillUser(changeLog.Author.Username))
                             {
+                                UserBpmJira ubj;
+                                IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(changeLog.Author.Username) && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"));
 
-                                issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
-                                break;
+                                if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value.ToString().Trim())
+                                        && userBpmJiraList.IsBillUser(changeLog.Author.Username))
+                                {
+                                    if (!isNullObjectOrEmptyString(userBpmJiraList.IsBillUser(changeLog.Author.Username))
+                                        && !isNullObjectOrEmptyString(param))
+                                    //if (!isNullObjectOrEmptyString(changeLog.Items.FirstOrDefault(x => x.FieldName == "status"
+                                    //                                 && x.ToValue == "W trakcie realizacji"
+                                    //                                 && userBpmJiraList.IsBillUser(changeLog.Author.Username))))
+                                    {
+                                        if (param.ToId == issue.Assignee)
+                                        {
+                                            issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee)
+                                                                        , jiraNumber.ToString());
+                                            System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(issue.Assignee)));
+                                        }
+                                        else //if ()
+                                        {
+                                            issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(changeLog.Author.Username)
+                                                                        , jiraNumber.ToString());
+                                            System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(changeLog.Author.Username)));
+                                        }
+                                    }
+                                }
+                                else if (!isNullObjectOrEmptyString(param)
+                                    && userBpmJiraList.TryGetBillUser(issue.Assignee, out ubj)
+                                    && userSLA != string.Empty
+                                    && ubj.UserJira.FullName != userSLA
+                                    && ubj.UserBpm.Id != -1
+                                    ) //pominięcie loginu technicznego
+                                {
+
+                                    issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
+                                    break;
+                                }
                             }
                         }
 

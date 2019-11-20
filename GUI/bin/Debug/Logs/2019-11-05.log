@@ -1,0 +1,111 @@
+wtorek, 5 listopada 2019 10:22:44
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 5 listopada 2019 10:40:31
+
+Zgłoszenie ZCC-19674 dodano automatycznie o godzinie 2019-11-05 10:40:31!
+wtorek, 5 listopada 2019 10:40:31
+
+Modyfikacja treeItem checkAsAssignewtorek, 5 listopada 2019 10:40:35
+
+addCommentJira string jiraKey ZCC-19674wtorek, 5 listopada 2019 10:40:35
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19674wtorek, 5 listopada 2019 10:40:39
+
+Zgłoszenie KKK-4534 dodano automatycznie o godzinie 2019-11-05 10:40:39!
+wtorek, 5 listopada 2019 10:40:39
+
+Modyfikacja treeItem checkAsAssignewtorek, 5 listopada 2019 10:40:41
+
+addCommentJira string jiraKey KKK-4534wtorek, 5 listopada 2019 10:40:41
+
+addCommentJira object sender, DoWorkEventArgs e KKK-4534wtorek, 5 listopada 2019 11:52:34
+
+Zgłoszenie ZCC-19676 dodano automatycznie o godzinie 2019-11-05 11:52:34!
+wtorek, 5 listopada 2019 11:52:34
+
+Modyfikacja treeItem checkAsAssignewtorek, 5 listopada 2019 11:52:47
+
+addCommentJira string jiraKey ZCC-19676wtorek, 5 listopada 2019 11:52:47
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19676wtorek, 5 listopada 2019 12:04:46
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 647
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+wtorek, 5 listopada 2019 12:40:32
+
+Zgłoszenie CRM-77244 dodano automatycznie o godzinie 2019-11-05 12:40:32!
+wtorek, 5 listopada 2019 12:40:32
+
+Modyfikacja treeItem checkAsAssignewtorek, 5 listopada 2019 12:40:35
+
+addCommentJira string jiraKey CRM-77244wtorek, 5 listopada 2019 12:40:35
+
+addCommentJira object sender, DoWorkEventArgs e CRM-77244wtorek, 5 listopada 2019 14:10:51
+
+Zgłoszenie ZCC-19678 dodano automatycznie o godzinie 2019-11-05 14:10:51!
+wtorek, 5 listopada 2019 14:10:51
+
+Modyfikacja treeItem checkAsAssignewtorek, 5 listopada 2019 14:11:09
+
+addCommentJira string jiraKey ZCC-19678wtorek, 5 listopada 2019 14:11:09
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19678wtorek, 5 listopada 2019 14:52:52
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 647
+
+--- Main exception: Source ---
+System.Windows.Forms
+

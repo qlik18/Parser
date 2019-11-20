@@ -1,0 +1,262 @@
+środa, 20 listopada 2019 08:36:10
+
+Zgłoszenie WIND-8658 dodano automatycznie o godzinie 2019-11-20 08:36:10!
+środa, 20 listopada 2019 08:36:11
+
+Modyfikacja treeItem checkAsAssigneśroda, 20 listopada 2019 08:36:19
+
+Zgłoszenie ZCC-19755 dodano automatycznie o godzinie 2019-11-20 08:36:19!
+środa, 20 listopada 2019 08:36:19
+
+Modyfikacja treeItem checkAsAssigneśroda, 20 listopada 2019 08:36:20
+
+addCommentJira string jiraKey WIND-8658środa, 20 listopada 2019 08:36:20
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8658środa, 20 listopada 2019 08:36:23
+
+Zgłoszenie ZCC-19756 dodano automatycznie o godzinie 2019-11-20 08:36:23!
+środa, 20 listopada 2019 08:36:23
+
+Modyfikacja treeItem checkAsAssigneśroda, 20 listopada 2019 08:36:24
+
+addCommentJira string jiraKey ZCC-19755środa, 20 listopada 2019 08:36:24
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19755środa, 20 listopada 2019 08:36:26
+
+addCommentJira string jiraKey ZCC-19756środa, 20 listopada 2019 08:36:26
+
+addCommentJira object sender, DoWorkEventArgs e ZCC-19756środa, 20 listopada 2019 08:42:11
+
+Zgłoszenie WIND-8659 dodano automatycznie o godzinie 2019-11-20 08:42:11!
+środa, 20 listopada 2019 08:42:11
+
+Modyfikacja treeItem checkAsAssigneśroda, 20 listopada 2019 08:42:20
+
+addCommentJira string jiraKey WIND-8659środa, 20 listopada 2019 08:42:20
+
+addCommentJira object sender, DoWorkEventArgs e WIND-8659środa, 20 listopada 2019 08:42:23
+
+--- Main exception: Message ---
+Nieprawidłowa operacja między wątkami: do formantu '' uzyskiwany jest dostęp z wątku innego niż wątek, w którym został utworzony.
+
+--- Main exception: StackTrace ---
+   w System.Windows.Forms.Control.get_Handle()
+   w System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   w System.Windows.Forms.DataGridView.LayoutScrollBars()
+   w System.Windows.Forms.DataGridView.ComputeLayout()
+   w System.Windows.Forms.DataGridView.PerformLayoutPrivate(Boolean useRowShortcut, Boolean computeVisibleRows, Boolean invalidInAdjustFillingColumns, Boolean repositionEditingControl)
+   w System.Windows.Forms.DataGridView.OnColumnWidthChanged(DataGridViewColumnEventArgs e)
+   w System.Windows.Forms.DataGridViewBand.set_ThicknessInternal(Int32 value)
+   w System.Windows.Forms.DataGridView.AutoResizeColumnInternal(Int32 columnIndex, DataGridViewAutoSizeColumnCriteriaInternal autoSizeColumnCriteriaInternal, Boolean fixedHeight)
+   w System.Windows.Forms.DataGridView.OnCellCommonChange(Int32 columnIndex, Int32 rowIndex)
+   w System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   w System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   w GUI.MainForm.slaUpdateRowInfo(Object sender, DoWorkEventArgs e) w C:\CP\ParserGit\JiraParser\GUI\SlaService.cs:wiersz 654
+
+--- Main exception: Source ---
+System.Windows.Forms
+
+środa, 20 listopada 2019 08:59:27
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:29
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:30
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:31
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:31
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:32
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:34
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:34
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:35
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:36
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:36
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:37
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:37
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:37
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:55
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:56
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
+środa, 20 listopada 2019 08:59:57
+
+--- Main exception: Message ---
+Nie jesteś zalogowany lub brak uprawnień
+
+--- Main exception: StackTrace ---
+   w Entities.ResultValue`1.GetResult() w C:\CP\ParserGit\JiraParser\Entities\ResultValue.cs:wiersz 52
+   w DataLayer.Implementation.GatewayDaoWFS.ExecuteStoredProcedure(String procedureName, String[] parameters, DatabaseName database) w C:\CP\ParserGit\JiraParser\DataLayer\Implementation\GatewayDaoWFS.cs:wiersz 142
+
+--- Main exception: Source ---
+Entities
+
