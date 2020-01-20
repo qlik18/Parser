@@ -223,7 +223,7 @@ namespace GUI
         }
 
 
-        public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null)
+        public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null, UserBpmJiraList user = null)
         {
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
@@ -240,8 +240,9 @@ namespace GUI
             _quickStep = quickStep;
             if (quickStep)
             {
-                if(eventMoveId != 610 && selectOption != null)
+                if(eventMoveId != 610 && selectOption != null && selectOption is KeyValuePair<int, string>)
                     _selectOption = (KeyValuePair<int, string>)selectOption;
+
                 this.Visible = false;
             }
 
@@ -300,7 +301,8 @@ namespace GUI
                 //}
                 if (!_quickStep)
                 {
-                    GenerateForm(false);
+                    //this.Visible = true;
+                    GenerateForm(_quickStep);
                 }
                 else
                 {
@@ -310,95 +312,236 @@ namespace GUI
 
                     foreach (var item in sources)
                     {
-                        
-                        if (item.param.EventParamId == 2852)
+
+                        if (selectOption is Issue)
                         {
-                            item.param.DBValue = _selectOption.Key;
-                            item.param.Value = _selectOption.Value;
-
-                            if (item.type == typeof(ComboBox))
+                            object source;
+                            Issue _issue = selectOption as Issue;
+                            if (item.type == typeof(TextBox))
                             {
-                                ((ComboBox)item.source).Text = _selectOption.Value;
-                                ((ComboBox)item.source).SelectedValue = _selectOption.Key;
+                                source = (item.source as TextBox);
+                                //NrJira
+                                if (isObjectInCollection(item.param.EventParamId,
+                                                                    (int)EventParamNames.NrJira_AKTUALIZACJA1,
+                                                                    (int)EventParamNames.NrJira_AKTUALIZACJA2,
+                                                                    (int)EventParamNames.NrJira_AKTUALIZACJA3,
+                                                                    (int)EventParamNames.NrJira_AKTUALIZACJA4
+                                                                    ))
+                                {
+                                    (item.source as TextBox).Text = _issue.Key.Value;
+                                    item.param.Value = _issue.Key.Value;
+                                }
+                            }
+                            else if (item.type == typeof(ComboBox))
+                            {
+                                source = (item.source as ComboBox);
+                                //OBSZAR
+                                if (isObjectInCollection(item.param.EventParamId,
+                                    (int)EventParamNames.Obszar_AKTUALIZACJA1,
+                                    (int)EventParamNames.Obszar_AKTUALIZACJA2,
+                                    (int)EventParamNames.Obszar_AKTUALIZACJA3,
+                                    (int)EventParamNames.Obszar_AKTUALIZACJA4
+                                    ))
+                                {
+                                    for (int i = 0; i < (item.source as ComboBox).Items.Count; i++)
+                                    {
+                                        if (0 == string.Compare((item.source as ComboBox).Items[i].ToString(), _issue.Project, true, System.Globalization.CultureInfo.CurrentCulture))
+                                        {
+                                            (item.source as ComboBox).SelectedIndex = i;
+                                            break;
+                                        }
+                                    }
+                                    //break;
+                                }
 
-                                ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(_selectOption.Value);
+                                if (isObjectInCollection(item.param.EventParamId,
+                                    (int)EventParamNames.OsOdpowiedzialna_AKTUALIZACJA1,
+                                    (int)EventParamNames.OsOdpowiedzialna_AKTUALIZACJA2,
+                                    (int)EventParamNames.OsOdpowiedzialna_AKTUALIZACJA3,
+                                    (int)EventParamNames.OsOdpowiedzialna_AKTUALIZACJA4
+                                    ))
+                                {
+                                    for (int i = 0; i < (item.source as ComboBox).Items.Count; i++)
+                                    {
+                                        if (0 == string.Compare((item.source as ComboBox).Items[i].ToString(), user.GetBillUser(_issue.Assignee).Value, true, System.Globalization.CultureInfo.CurrentCulture))
+                                        {
+                                            (item.source as ComboBox).SelectedIndex = i;
+                                            break;
+                                        }
+                                    }
+                                    //break;
+                                }
+
+                                //RODZAJ BŁĘDU
+                                if (isObjectInCollection(item.param.EventParamId,
+                                    (int)EventParamNames.RodzBledu_AKTUALIZACJA1,
+                                    (int)EventParamNames.RodzBledu_AKTUALIZACJA2,
+                                    (int)EventParamNames.RodzBledu_AKTUALIZACJA3,
+                                    (int)EventParamNames.RodzBledu_AKTUALIZACJA4
+                                    ))
+                                {
+                                    CustomFieldValue cf = null;
+                                    if (cf == null && _issue.Type.Name == "Incydent") cf = _issue.CustomFields["Rodzaj błędu"];
+                                    if (cf == null && _issue.Type.Name == "Zlecenie operatorskie") cf = _issue.CustomFields["Typ błędu"];
+                                    if (cf == null && _issue.Type.Name == "Problem") cf = _issue.CustomFields["Typ błędu"];
+                                    if (cf == null) continue;
+                                    
+                                    for (int i = 0; i < (item.source as ComboBox).Items.Count; i++)
+                                    {
+                                        if (string.Equals(cf.Values[0].ToString(), (item.source as ComboBox).Items[i].ToString(), StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            (item.source as ComboBox).SelectedIndex = i;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                //Priorytet
+                                if (isObjectInCollection(item.param.EventParamId,
+                                    (int)EventParamNames.Priorytet_AKTUALIZACJA1,
+                                    (int)EventParamNames.Priorytet_AKTUALIZACJA2,
+                                    (int)EventParamNames.Priorytet_AKTUALIZACJA3,
+                                    (int)EventParamNames.Priorytet_AKTUALIZACJA4
+                                    ))
+                                {
+
+                                    for (int i = 0; i < (item.source as ComboBox).Items.Count; i++)
+                                    {
+                                        //if (string.Equals((item.source as ComboBox).Items[3].ToString(), _issue.Priority.Name, StringComparison.InvariantCultureIgnoreCase))
+                                        //                                        if (0 == string.Compare((item.source as ComboBox).Items[3].ToString(), _issue.Priority.Name, true, System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag("En-en")))
+                                        //if(_issue.Priority.Name.Equals((item.source as ComboBox).Items[3].ToString(),StringComparison.InvariantCulture))
+                                      
+
+                                        if (string.Equals(RemoveDiacritics(_issue.Priority.Name), (item.source as ComboBox).Items[i].ToString(),StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            (item.source as ComboBox).SelectedIndex = i;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            else if (item.type == typeof(RichTextBox))
+                            {
+                                source = (item.source as RichTextBox);
+                            }
+                            else if (item.type == typeof(CheckBox))
+                            {
+                                source = (item.source as CheckBox);
+                            }
+                            else if (item.type == typeof(Label))
+                            {
+                                source = (item.source as Label);
+                            }
+                            else if (item.type == typeof(ComboBox))
+                            {
+                                source = (item.source as ComboBox);
+                            }
+                            else
+                            { break; }
+
+                            //break;
+                        }
+                        else
+                        {
+                            if (item.param.EventParamId ==  (int)EventParamNames.NrJira_PONOWNE_OTWARCIE_ZGŁOSZENIA
+                                && selectOption != null)
+                            {
+                                if (item.type == typeof(TextBox))
+                                {
+                                    //((SimpleData)item.source).ID = _selectOption.Key;
+                                    ((TextBox)item.source).Text = selectOption.ToString();
+                                }
+                            }
+
+                            if (item.param.EventParamId == 2852)
+                            {
+                                item.param.DBValue = _selectOption.Key;
+                                item.param.Value = _selectOption.Value;
+
+                                if (item.type == typeof(ComboBox))
+                                {
+                                    ((ComboBox)item.source).Text = _selectOption.Value;
+                                    ((ComboBox)item.source).SelectedValue = _selectOption.Key;
+
+                                    ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(_selectOption.Value);
+
+                                    //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                    //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                    //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                    break;
+                                }
+                            }
+                            if (item.param.EventParamId == 2830 && _selectOption.Value != null)
+                            {
+
+                                if (item.type == typeof(SimpleData))
+                                {
+                                    ((SimpleData)item.source).ID = _selectOption.Key;
+                                    ((SimpleData)item.source).Value = _selectOption.Value;
+                                }
 
                                 //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
                                 //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
                                 //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
                                 break;
                             }
-                        }
-                        if (item.param.EventParamId == 2830 && _selectOption.Value != null)
-                        {
-
-                            if (item.type == typeof(SimpleData))
+                            else if (item.param.EventParamId == 2853)
                             {
-                                ((SimpleData)item.source).ID = _selectOption.Key;
-                                ((SimpleData)item.source).Value = _selectOption.Value;
-                            }
+                                if (item.type == typeof(RichTextBox))
+                                {
+                                    ((RichTextBox)item.source).Text = "quickStep test";
+                                }
+                                //item.param.DBValue = _selectOption.Key;
+                                item.param.Value = "quickStep test";
 
-                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
-                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
-                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
-                            break;
-                        }
-                        else if (item.param.EventParamId == 2853)
-                        {
-                            if (item.type == typeof(RichTextBox))
+                                //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                break;
+                            }
+                            else if (item.param.EventParamId == (int)EventParamNames.Osoba_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
                             {
-                                ((RichTextBox)item.source).Text = "quickStep test";
-                            }
-                            //item.param.DBValue = _selectOption.Key;
-                            item.param.Value = "quickStep test";
+                                if (item.type == typeof(TextBox))
+                                {
+                                    //((SimpleData)item.source).ID = _selectOption.Key;
+                                    ((TextBox)item.source).Text = (selectOption as string[])[0];
+                                }
 
-                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
-                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
-                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
-                            break;
-                        }
-                        else if (item.param.EventParamId == (int)EventParamNames.Osoba_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
-                        {
-                            if (item.type == typeof(TextBox))
+                                //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                break;
+                            }
+                            else if (item.param.EventParamId == (int)EventParamNames.Mail_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
                             {
-                                //((SimpleData)item.source).ID = _selectOption.Key;
-                                ((TextBox)item.source).Text = (selectOption as string[])[0];
-                            }
+                                if (item.type == typeof(TextBox))
+                                {
+                                    ((TextBox)item.source).Text = (selectOption as string[])[1];
+                                }
 
-                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
-                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
-                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
-                            break;
-                        }
-                        else if (item.param.EventParamId == (int)EventParamNames.Mail_PRZRKAZANIE_DO_KONS_BIZ && quickStep)
-                        {
-                            if (item.type == typeof(TextBox))
+                                //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                break;
+                            }
+                            else if (item.param.EventParamId == (int)EventParamNames.OsOdpowiedzialna_ZM_WYKONAWCY && quickStep)
                             {
-                                ((TextBox)item.source).Text = (selectOption as string[])[1];
+
+                                string tmpU = GetSwapPlacesName(_selectOption.Value);
+
+
+                                ((ComboBox)item.source).Text = tmpU;
+                                ((ComboBox)item.source).SelectedValue = _selectOption.Key;
+                                ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(tmpU);
+
+                                Debug.Print("((ComboBox)item.source).Text " + tmpU);
+                                Debug.Print("((ComboBox)item.source).SelectedValue " + _selectOption.Key);
+                                Debug.Print("((ComboBox)item.source).SelectedItem " + ((ComboBox)item.source).SelectedItem);
+                                //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
+                                //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
+                                //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
+                                break;
                             }
-
-                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
-                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
-                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
-                            break;
-                        }
-                        else if (item.param.EventParamId == (int)EventParamNames.OsOdpowiedzialna_ZM_WYKONAWCY && quickStep)
-                        {
-
-                            string tmpU = GetSwapPlacesName(_selectOption.Value);
-
-
-                            ((ComboBox)item.source).Text = tmpU;
-                            ((ComboBox)item.source).SelectedValue = _selectOption.Key;
-                            ((ComboBox)item.source).SelectedItem = ((ComboBox)item.source).Items.IndexOf(tmpU);
-
-                            Debug.Print("((ComboBox)item.source).Text " + tmpU);
-                            Debug.Print("((ComboBox)item.source).SelectedValue "+ _selectOption.Key);
-                            Debug.Print("((ComboBox)item.source).SelectedItem "+ ((ComboBox)item.source).SelectedItem);
-                            //Logging.Logger.Instance.LogInformation(string.Format("EventParamId == {0}", item.param.EventParamId));
-                            //Logging.Logger.Instance.LogInformation(string.Format("DBValue == {0}", _selectOption.Key));
-                            //Logging.Logger.Instance.LogInformation(string.Format("Value == {0}", _selectOption.Value));
-                            break;
                         }
                     }
 
@@ -589,40 +732,26 @@ namespace GUI
             comboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
             comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
             ///Obsługa deweloperów jako lisa piśmienna
-            //comboBox1.DropDownStyle = ( ep.BoundEventParamId == 2800 ||
-            //                            ep.BoundEventParamId == 2814 ||
-            //                            ep.BoundEventParamId == 3317 ) 
-            //                            ? ComboBoxStyle.DropDown//List
-            //                            : ComboBoxStyle.DropDownList;
-
-            if (ep.EventParamId == 2800 ||
-                ep.EventParamId == 2814 ||
-                ep.EventParamId == 3317)
+            if(isObjectInCollection(ep.EventParamId
+                                                ,(int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV
+                                                ,(int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV_CP
+                                                ,(int)EventParamNames.Developer_PRZRKAZANIE_DO_KONS_DEV))
                 comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
             else
                 comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-
+            
             comboBox1.DropDown += new EventHandler(AdjustWidthComboBox_DropDown);
             
             int MapId = 0;
             string issueState = gujaczWFS.ExecuteStoredProcedure("spGetIssueState", new string[] { issue.issueWFS.WFSIssueId.ToString() }, DatabaseName.SupportCP)[0][1];
 
 
-            /*
-            combo[0] Obszar
-            combo[1] Typ   
-            combo[2] Gruba b
-            combo[3] Typ b
 
-                    Developer_PRZRKAZANIE_DO_DEV = 2800,
-        Developer_PRZRKAZANIE_DO_DEV_CP = 3317,
-        Developer_PRZRKAZANIE_DO_KONS_DEV = 3317,
-            */
-            
             //Deweloper CP
-            if (ep.EventParamId == (int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV 
-                || ep.EventParamId == (int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV_CP
-                || ep.EventParamId == (int)EventParamNames.Developer_PRZRKAZANIE_DO_KONS_DEV)
+            if (isObjectInCollection(ep.EventParamId
+                                                , (int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV
+                                                , (int)EventParamNames.Developer_PRZRKAZANIE_DO_DEV_CP
+                                                , (int)EventParamNames.Developer_PRZRKAZANIE_DO_KONS_DEV))
             {
                 //BillingDTH_GetCPDevelopers
                 List<List<string>> list;
@@ -1397,7 +1526,7 @@ namespace GUI
             }
             if (ileCyfr > 0)
             {
-                //Jira j = new Jira("http://jira", GUI. . .Login, jiraUser.Password);
+                //Jira j = new Jira("https://jira", GUI. . .Login, jiraUser.Password);
                 
                 new MainForm().SearchJiraIssueAsync(nrProblemu,out sJiraIssue);
 
@@ -2196,6 +2325,78 @@ namespace GUI
             return string.Concat(stringTmp[1], ' ', stringTmp[0]);
         }
 
+        /// <summary>
+        /// Metoda sprawdza występowanie textu w zadanych parametrach [string in (params)]
+        /// </summary>
+        /// <param name="param">obiekt do sprawdzenia</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public bool isObjectInCollection(int param, params int[] toCheck)
+        {
+            foreach (var item in toCheck)
+            {
+                if (item == param)
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+        /// <summary>
+        /// Metoda sprawdza występowanie textu w zadanych parametrach [string in (params)]
+        /// </summary>
+        /// <param name="param">obiekt do sprawdzenia</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public bool isObjectInCollection(string param, params string[] toCheck)
+        {
+            foreach (var item in toCheck)
+            {
+                if (item == param)
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+        /// <summary>
+        /// Metoda sprawdza występowanie textu w zadanych parametrach [string in (params)]
+        /// </summary>
+        /// <param name="param">obiekt do sprawdzenia</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public bool isObjectInCollection(object param, params object[] toCheck)
+        {
+            foreach (var item in toCheck)
+            {
+                if (item == param)
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+        /// <summary>
+        /// Metoda zwraca string bez znaków regionalnych
+        /// </summary>
+        /// <param name="text">string do sprawdzenai</param>
+        /// <param name="toCheck">lista parametrów</param>
+        public string RemoveDiacritics(string text)
+        {
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != System.Globalization.UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
     }
 
 
@@ -2219,5 +2420,7 @@ namespace GUI
 
         public Entities.EventParam boundParam;
     }
+
+
 
 }

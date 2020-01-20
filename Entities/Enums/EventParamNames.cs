@@ -74,7 +74,13 @@ namespace Entities.Enums
         Osoba_PRZRKAZANIE_DO_KONS_BIZ = 2809,
         Mail_PRZRKAZANIE_DO_KONS_BIZ = 2810,
 
-
+        NrJira_AKTUALIZACJA1 = 3736,
+        NrJira_AKTUALIZACJA2 = 3745,
+        NrJira_AKTUALIZACJA3 = 3754,
+        NrJira_AKTUALIZACJA4 = 3763,
+        NrJira_PONOWNE_OTWARCIE_ZGŁOSZENIA = 3767,
+        NrJira_ROZPOCZĘCIE_DIAGNOZY = 2831,
+        NrJira_UTWORZENIE_ZGŁOSZENIA = 3705,
 
         /*NEW = 0,
         INWFS = 1,

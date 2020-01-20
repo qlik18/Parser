@@ -10,6 +10,7 @@ namespace Entities.Enums
         NEW = 0, 
         INWFS = 1, 
         READYTOSAVE = 2, 
-        SELECTED = 3
+        SELECTED = 3,
+        CLOSED = 4
     }
 }

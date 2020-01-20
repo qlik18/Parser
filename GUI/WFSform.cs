@@ -87,7 +87,7 @@ namespace GUI
             uzupelnijFormularz((BillingIssueDtoHelios)zgloszenie, trans);
             gujacz2 = Utility.ServiceLocator.Instance.Retrieve<IParserEngineWFS>();
 
-            if (onCallZaznacz() && (zgloszenie.issueWFS.Priorytet == "Blokujący" || zgloszenie.issueWFS.Priorytet == "Krytyczny"))
+            if (onCallZaznacz() && (zgloszenie.issueWFS.Priorytet == "1" || zgloszenie.issueWFS.Priorytet == "2"))
             {
                 cb_CzyOncall.BackColor = Color.Tomato;
                 cb_CzyOncall.Checked = true;

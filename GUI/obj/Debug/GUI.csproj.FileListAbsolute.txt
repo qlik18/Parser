@@ -980,13 +980,3 @@ C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.application
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.exe
 C:\CP\ParserGit\JiraParser\GUI\obj\Debug\GUI.pdb
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.CompositeUI.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.CompositeUI.WinForms.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.CompositeUI.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.GridView.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.RadChart.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.RadDock.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\Telerik.WinControls.UI.dll
-C:\CP\ParserGit\JiraParser\GUI\bin\Debug\TelerikCommon.dll

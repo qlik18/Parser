@@ -37,8 +37,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <DisallowUrlActivation>true</DisallowUrlActivation>
-    <ApplicationRevision>11</ApplicationRevision>
-    <ApplicationVersion>3.0.30.%2a</ApplicationVersion>
+    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationVersion>3.0.32.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -123,15 +123,6 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Outlook.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Microsoft.Practices.CompositeUI, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.CompositeUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -182,27 +173,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.WinControls, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.CompositeUI, Version=2012.1.321.20, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.CompositeUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.GridView, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.GridView.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadChart, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.RadChart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.RadDock, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.RadDock.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.WinControls.UI, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\Telerik.WinControls.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="TelerikCommon, Version=2012.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\packages\TelerikWinCompositeUI.2012.1.321.20\lib\TelerikCommon.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>

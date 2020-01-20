@@ -17,175 +17,6 @@ namespace GUI
 {
     public partial class MainForm
     {
-        private void slaReportLoad2(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                bool doSynchro = tryLogginToJira(jiraUser.Login, jiraUser.Password);
-                jira.MaxIssuesPerRequest = 200;
-
-                pb_SetVisibilityPanel(true);
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    toolStripStatusLabel6.Text = "Trwa odświeżanie raportu SLA...";
-                });
-
-
-                List<List<string>> lista = gujaczWFS.ExecuteStoredProcedure("cp_sla_raport_v2", new string[] { }, DatabaseName.SupportCP);
-
-                List<string> numerki = new List<string>();
-                zgloszeniaWjira = null;
-
-                for (int i = 0; i < lista.Count(); i++)
-                {
-                    numerki.Add(lista[i][1].ToString());
-                }
-                string numerkiJQL = fnGetStringFromList(numerki,',');
-                numerkiJQL = "issue in (" + numerkiJQL + ")";
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                    {
-                        zgloszeniaWjira = jira.GetIssuesFromJql(numerkiJQL, 200);// lista.Count());
-                    }
-                });
-
-                this.Invoke((MethodInvoker)delegate
-                {
-                    if (lista.Count > 0)
-                    {
-                        Issue tmpIssue2 = null;
-                        tb_sla_ileWstrzymane.Text = lista.Count(x => x[5] == "1").ToString();
-                        tb_sla_ileRealizacja.Text = lista.Count(x => x[5] == "0").ToString();
-
-                        lista.RemoveAll(x => x[8] == string.Empty);
-                        if (cb_SLApauza.Checked)
-                        {
-                            lista.RemoveAll(x => x[5] == "1");
-                        }
-                        if (cb_SLAWstrzymane.Checked)
-                        {
-                            lista.RemoveAll(x => x[5] == "0");
-                        }
-
-                        ///Synchro z JIRY
-                        if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                        {
-
-                            dgvSlaTmp.Columns["dgvAktualniePrzydzielony"].Visible = true;
-                            dgvSlaTmp.Columns["dgvAktualniePrzydzielony"].Visible = true;
-                            dgvSlaTmp.Columns["dgvAktualnyPriorytet"].Visible = true;
-                            dgvSlaTmp.Columns["dgvOstatniaAkcja"].Visible = true;
-                        }
-                        else
-                        {
-                            dgvSlaTmp.Columns["dgvAktualnyStan"].Visible = false;
-                            dgvSlaTmp.Columns["dgvAktualniePrzydzielony"].Visible = false;
-                            dgvSlaTmp.Columns["dgvAktualniePrzydzielony"].Visible = false;
-                            dgvSlaTmp.Columns["dgvAktualnyPriorytet"].Visible = false;
-                            dgvSlaTmp.Columns["dgvOstatniaAkcja"].Visible = false;
-                        }
-                        ///
-
-                        //dgvSlaTmp.Columns.Clear();
-                        dgvSlaTmp.Rows.Clear();
-
-                        List<string> wartosciUpdatowane = new List<string>();
-
-                        lista = lista.OrderByDescending(x => Int32.Parse(x[8])).ToList();
-                        foreach (var row in lista)
-                        {
-                            dgvSlaTmp.Rows.Insert(0, new DataGridViewRow());
-                            dgvSlaTmp.Rows[0].Cells["dgvIssueId"].Value = row[0];  //dgvIssueId
-                            dgvSlaTmp.Rows[0].Cells["dgvJiraNr"].Value = row[1];  //dgvJiraNr
-                            dgvSlaTmp.Rows[0].Cells["dgvOdpowiedzialny"].Value = row[2];  //dgvOdpowiedzialny
-                            dgvSlaTmp.Rows[0].Cells["dgvTypZgloszenia"].Value = row[3];  //dgvTypZgloszenia
-                            dgvSlaTmp.Rows[0].Cells["dgvPriorytet"].Value = row[4];  //dgvPriorytet
-                            dgvSlaTmp.Rows[0].Cells["dgvPauza"].Value = row[5];  //dgvPauza
-                            dgvSlaTmp.Rows[0].Cells["dgvAktCzasRealizacji"].Value = row[6];  //dgvAktCzasRealizacji
-                            dgvSlaTmp.Rows[0].Cells["dgvCzasRozwiazania"].Value = row[7];  //dgvCzasRozwiazania 
-                            dgvSlaTmp.Rows[0].Cells["dgvPozostaloMin"].Value = row[8];  //dgvPozostaloMin  
-
-                            dgvSlaTmp.Rows[0].Cells["dgvAkcjaBPM"].Value = row[9];  //dgvOstatniaAkcja  
-
-                            DataGridViewRow _row = dgvSlaTmp.Rows[0];
-                            if (cb_SLA_JiraSynchro.Checked && doSynchro)
-                            {
-                                try
-                                {
-                                    if (!isNullObjectOrEmptyString(zgloszeniaWjira.FirstOrDefault(x => x.Key.Value == row[1])))
-                                    {
-                                        string _jiraStatusName = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Status.Name).First().ToString();
-                                        string _jiraKeyValue = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Key.Value).First().ToString();
-                                        string _jiraAssige = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Assignee).First().ToString();
-                                        string _jiraPriority = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Priority.Name).First().ToString();
-                                        string _jiraUpdated = zgloszeniaWjira.Where(x => x.Key.Value == row[1]).Select(y => y.Updated).First().ToString();
-
-                                        dgvSlaTmp["dgvAktualnyStan", 0].Value = _jiraStatusName;
-                                        dgvSlaTmp["dgvAktualniePrzydzielony", 0].Value = (dgvSlaTmp["dgvJiraNr", 0].Value.ToString() != _jiraKeyValue ? string.Format("{0} -> {1}", _jiraKeyValue, _jiraAssige) : _jiraAssige);
-                                        dgvSlaTmp["dgvAktualniePrzydzielony", 0].Tag = _jiraKeyValue;
-                                        dgvSlaTmp["dgvAktualnyPriorytet", 0].Value = _jiraPriority;
-                                        dgvSlaTmp["dgvOstatniaAkcja", 0].Value = _jiraUpdated;
-                                    }
-                                }
-                                catch
-                                {
-                                    //doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), _row, null);
-                                }
-                                
-
-
-                            }
-
-
-                            int totalTime, timeLeft;
-                            string bpmPriority, jiraPriority;
-
-                            if (row[7] != string.Empty && row[8] != string.Empty)
-                            {
-                                totalTime = Int32.Parse(row[7]);
-                                timeLeft = Int32.Parse(row[8]);
-
-                                if (timeLeft <= totalTime / 4)
-                                    dgvSlaTmp.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 98, 118);
-                                else if (timeLeft <= totalTime / 2)
-                                    dgvSlaTmp.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 222, 89);
-                                //else if (!isNullObjectOrEmptyString(tmpIssue)
-                                //        && row[1] != tmpIssue.Key.Value)
-                                //    dgvSlaTmp.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
-                                else
-                                    dgvSlaTmp.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 198, 239, 206);
-
-                                dgvSlaTmp.Rows[0].Tag = dgvSlaTmp.Rows[0].DefaultCellStyle.BackColor;
-
-
-                            }
-
-                        }
-                        dgvSlaTmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-
-
-                        dgv_SlaRaport = dgvSlaTmp;
-                        dgv_SlaRaport.ReadOnly = true;
-
-                        toolStripStatusLabel6.Text = string.Empty;
-                        pb_SetVisibilityPanel(false);
-                    }
-
-                });
-
-            }
-            catch (Exception ex)
-            {
-                ExceptionManager.LogError(ex, Logger.Instance, true);
-                NoticeForm.ShowNotice(ex.Message);
-            }
-            WorkingSla = false;
-
-        }
-
         private void slaReportLoad(object sender, DoWorkEventArgs e)
         {
             try
@@ -237,6 +68,7 @@ namespace GUI
                         if (cb_SLApauza.Checked)
                         {
                             lista.RemoveAll(x => x[5] == "1");
+                                            //&& (zgloszeniaWjira.FirstOrDefault(y => y.Key == x[1]) != null ? !userBpmJiraList.IsBillUser(zgloszeniaWjira.FirstOrDefault(y => y.Key == x[1]).Assignee) : true ) );
                         }
                         if (cb_SLAWstrzymane.Checked)
                         {
@@ -386,11 +218,12 @@ namespace GUI
 
 
                             }
-
-                            this.Invoke((MethodInvoker)delegate
-                            {
-                                updateTreeNodeForSLA(dgv_SlaRaport.Rows[0]);
-                            });
+                            ////
+                            ///
+                            //this.Invoke((MethodInvoker)delegate
+                            //{
+                            //    updateTreeNodeForSLA(dgv_SlaRaport.Rows[0]);
+                            //});
 
                         }
                         dgv_SlaRaport.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
@@ -497,15 +330,25 @@ namespace GUI
                      
                     var v = GetActionForIssue(issueNumber);
                     Issue issue = zgloszeniaWjira.FirstOrDefault(x => x.Key == jiraNumber);
-                    if(isNullObjectOrEmptyString(issue))
+                    /*
+                    List<EventParamModeler> eventParamForFormByEventMove = gujaczWFS.GetEventParamForFormByEventMove(1000000745);
+                    List<EventParam> currParam = gujaczWFS.GetBoundEventParamForIssue(issueNumber, eventParamForFormByEventMove.Where(x => x.BoundEventParamId > 0).Select(x => x.BoundEventParamId).ToArray<int>());
+                    */
+                    
+                    if (isNullObjectOrEmptyString(issue))
                     {
                         issue = jira.GetIssue(jiraNumber);
 
                     }
-
                     if (isNullObjectOrEmptyString(item.Cells["dgvAktualnyStan"].Value))
                     {
-                        doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            slaUpdateRowInfo(item);
+                            slaAutoAssigneTakenIssue(item);
+                        });
+
+                        //doByWorker(new DoWorkEventHandler(slaUpdateRowInfo), item, new RunWorkerCompletedEventHandler(slaAutoAssigneTakenIssue));
                     }
                     //else if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value) 
                     //        && userBpmJiraList.IsBillUser(issue.Assignee) )
@@ -526,6 +369,8 @@ namespace GUI
                     }
                     else
                     {
+                      //  issueStep_Aktualizacja(null, jiraNumber.ToString(),issue);
+
                         bool issueMoveProject = false;
                         bool issueChangeUserBill = false;
                         IEnumerable<IssueChangeLog> cl = issue.GetChangeLogs();
@@ -538,6 +383,7 @@ namespace GUI
                                 break;
                             }
 
+                            var action = gujaczWFS.GetActionForIssue(issueNumber, gujaczWFS.getUser().Id);
 
                             //user change
                             //param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && x.FromValue == userSLA && userBpmJiraList.IsBillUser(x.ToId));                            
@@ -545,6 +391,7 @@ namespace GUI
                             {
                                 UserBpmJira ubj;
                                 IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(changeLog.Author.Username) && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"));
+                                IssueChangeLogItem status = changeLog.Items.FirstOrDefault(x => x.FieldName == "status" && x.FieldType == "jira");// && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"));
 
                                 if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value.ToString().Trim())
                                         && userBpmJiraList.IsBillUser(changeLog.Author.Username))
@@ -555,17 +402,21 @@ namespace GUI
                                     //                                 && x.ToValue == "W trakcie realizacji"
                                     //                                 && userBpmJiraList.IsBillUser(changeLog.Author.Username))))
                                     {
-                                        if (param.ToId == issue.Assignee)
+
+                                        if (!isNullObjectOrEmptyString(action.FirstOrDefault(x => x.Value == "Rozpoczęcie diagnozy")))
                                         {
-                                            issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee)
+                                            if (param.ToId == issue.Assignee)
+                                            {
+                                                issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(issue.Assignee)
                                                                         , jiraNumber.ToString());
-                                            System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(issue.Assignee)));
-                                        }
-                                        else //if ()
-                                        {
-                                            issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(changeLog.Author.Username)
-                                                                        , jiraNumber.ToString());
-                                            System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(changeLog.Author.Username)));
+                                                System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(issue.Assignee)));
+                                            }
+                                            else //if ()
+                                            {
+                                                issueStep_RozpocznijDiagnoze(userBpmJiraList.GetBillUser(changeLog.Author.Username)
+                                                                            , jiraNumber.ToString());
+                                                System.Diagnostics.Debug.WriteLine(string.Format("issueStep_RozpocznijDiagnoze {0} -> {1} ", jiraNumber, userBpmJiraList.GetBillUser(changeLog.Author.Username)));
+                                            }
                                         }
                                     }
                                 }
@@ -577,15 +428,54 @@ namespace GUI
                                     ) //pominięcie loginu technicznego
                                 {
 
-                                    issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
-                                    break;
+
+                                    if (!issueMoveProject && !isNullObjectOrEmptyString(action.FirstOrDefault(x => x.Value == "Zmiana wykonawcy")))
+                                    {
+                                        issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
+                                        break;
+                                    }
                                 }
+                                if (!isNullObjectOrEmptyString(status))
+                                {
+                                    if ((status.ToValue == "Zakończone" && issue.Type.Name == "Incydent" && !isNullObjectOrEmptyString(issue.Resolution) && issue.Resolution.Name == "Zakończone")
+                                        || (status.ToValue == "W trakcie testów" && issue.Type.Name == "Zlecenie operatorskie" && !userBpmJiraList.IsBillUser(issue.Assignee))
+                                        || (status.ToValue == "Weryfikacja naprawy" && issue.Type.Name == "Problem" && !userBpmJiraList.IsBillUser(issue.Assignee))
+                                        )
+                                    {
+                                        if (
+                                                
+                                                userBpmJiraList.TryGetBillUser(gujaczWFS.getUser().login, out ubj)
+                                                && ubj.UserJira.login != changeLog.Author.Username
+                                                && userSLA != string.Empty
+                                                && ubj.UserJira.FullName != userSLA
+                                                && ubj.UserBpm.Id != -1
+                                                && !isNullObjectOrEmptyString(action.FirstOrDefault(x => x.Value == "Zmiana wykonawcy"))
+                                            ) //pominięcie loginu technicznego
+                                        {
+                                            
+                                            issueStep_ZmianaWykonawcy(userBpmJiraList.GetBillUser(ubj.UserJira.login), jiraNumber.ToString());
+
+                                        }
+                                        issueStep_RealizujIZamknij(userBpmJiraList.GetBillUser(changeLog.Author.Username)
+                                                                        , jiraNumber.ToString());
+                                    }
+                                }
+                                
                             }
                         }
 
                         if(issueMoveProject)
                         {
-                            issueStep_ZmianaKataloguJira(this, jiraNumber.ToString());
+
+                            Dictionary<int, string> kat = gujaczWFS.getBillingComponents(0);
+                            if (kat.ContainsValue(issue.Project))
+                            {
+                                issueStep_Aktualizacja(this, jiraNumber.ToString(), issue);
+                            }
+                            else
+                            {
+                                issueStep_ZmianaKataloguJira(this, jiraNumber.ToString());
+                            }
                         }
 
                     }
@@ -611,6 +501,66 @@ namespace GUI
         }
 
         int _count;
+
+        private void slaUpdateRowInfo(DataGridViewRow tmpRow)//(DataGridViewRow row)
+        {
+            //Thread thrJ = new Thread((ThreadStart)delegate
+            //{
+            try
+            {
+                //dgv_SlaRaport["dgvJiraNr", i].
+
+                Issue tmpIssue; //= jira.GetIssue(tmpRow.Cells[1].Value.ToString());  //dgvJiraNr
+                if (isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualnyStan"].Value))
+                {
+                    if (isNullObjectOrEmptyString(tmpRow.Cells[1].Value))
+                        return;
+
+                    tmpIssue = zgloszeniaWjira.FirstOrDefault(x => x.Key == tmpRow.Cells[1].ToString());
+                    if (isNullObjectOrEmptyString(tmpIssue))
+                    {
+                        Issue tmpIssueVar = null;
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            tmpIssueVar = jira.RestClient.GetIssueAsync(tmpRow.Cells[1].Value.ToString(), CancellationToken.None).Result;
+                        });
+                        tmpIssue = tmpIssueVar;
+                    }
+
+
+                    tmpRow.Cells["dgvAktualnyStan"].Value = tmpIssue.Status.Name;
+                    tmpRow.Cells["dgvAktualnyPriorytet"].Value = tmpIssue.Priority.Name;
+                    tmpRow.Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated;
+
+                    tmpRow.DefaultCellStyle.BackColor = Color.FromArgb(192, 192, 192);
+                    tmpRow.Tag = (Color)tmpRow.DefaultCellStyle.BackColor;
+
+                    tmpRow.Cells["dgvAktualniePrzydzielony"].Value = (!tmpRow.Cells[1].Value.ToString().Equals(tmpIssue.Key.Value) ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
+
+                    tmpRow.Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated.Value.ToLocalTime().ToString();//dgvOstatniaAkcja
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionManager.LogError(ex, Logger.Instance, false);
+            }
+
+            if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualnyStan"].Value))
+                dgv_SlaRaport["dgvAktualnyStan", tmpRow.Index].Value = tmpRow.Cells["dgvAktualnyStan"].Value.ToString();// tmpIssue.Status.Name;
+
+            if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualniePrzydzielony"].Value))
+                dgv_SlaRaport["dgvAktualniePrzydzielony", tmpRow.Index].Value = tmpRow.Cells["dgvAktualniePrzydzielony"].Value.ToString();//(tmpRow.Cells[1].Value.ToString() != tmpIssue.Key.Value ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
+
+            if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualniePrzydzielony"].Tag))
+                dgv_SlaRaport["dgvAktualniePrzydzielony", tmpRow.Index].Tag = tmpRow.Cells["dgvAktualniePrzydzielony"].Tag.ToString();// tmpIssue.Key.Value.ToString();
+
+            if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvAktualnyPriorytet"].Value))
+                dgv_SlaRaport["dgvAktualnyPriorytet", tmpRow.Index].Value = tmpRow.Cells["dgvAktualnyPriorytet"].Value.ToString();// tmpIssue.Priority.Name;
+
+            if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvOstatniaAkcja"].Value))
+                dgv_SlaRaport["dgvOstatniaAkcja", tmpRow.Index].Value = tmpRow.Cells["dgvOstatniaAkcja"].Value.ToString();// tmpIssue.Updated;
+
+        }
 
         //[MTAThread]
         [STAThread]
@@ -641,8 +591,6 @@ namespace GUI
                         tmpIssue = tmpIssueVar;
                     }
 
-                    //tmpIssue = jira.GetIssue(tmpRow.Cells[1].Value.ToString());
-                    //DataGridViewRow tmpRow = dgv_SlaRaport.Rows[0];
 
                     tmpRow.Cells["dgvAktualnyStan"].Value = tmpIssue.Status.Name;
                     tmpRow.Cells["dgvAktualnyPriorytet"].Value = tmpIssue.Priority.Name;
@@ -652,25 +600,6 @@ namespace GUI
                     tmpRow.Tag = (Color)tmpRow.DefaultCellStyle.BackColor;
 
                     tmpRow.Cells["dgvAktualniePrzydzielony"].Value = (!tmpRow.Cells[1].Value.ToString().Equals(tmpIssue.Key.Value) ? string.Format("{0} -> {1}", tmpIssue.Key, tmpIssue.Assignee) : tmpIssue.Assignee);
-
-                    //foreach (var customFild in tmpIssue.CustomFields)
-                    //{
-                    //    if (customFild.Id == "customfield_20350")
-                    //    {
-                    //        foreach (var opcje in customFild.Values)
-                    //        {
-                    //            string str = " (" + opcje + ")";
-                    //            dgv_SlaRaport.Rows[0].Cells["dgvAktualnyPriorytet"].Value += str;
-                    //            /**/
-                    //            List<List<string>> cf_opcje = gujaczWFS.ExecuteStoredProcedure("sp_aktualizujOpcje", new string[] { row[0], opcje }, DatabaseName.SupportCP);
-                    //            if (cf_opcje[0][0] == "UPDATE")
-                    //            {
-                    //                wartosciUpdatowane.Add("Aktualizowano " + row[1] + " (" + row[0] + ") na wartość: " + opcje);
-                    //            }
-                    //            break;
-                    //        }
-                    //    }
-                    //}
 
                     tmpRow.Cells["dgvOstatniaAkcja"].Value = tmpIssue.Updated.Value.ToLocalTime().ToString();//dgvOstatniaAkcja
                 }
@@ -695,11 +624,6 @@ namespace GUI
             if (!isNullObjectOrEmptyString(tmpRow.Cells["dgvOstatniaAkcja"].Value))
                 dgv_SlaRaport["dgvOstatniaAkcja", tmpRow.Index].Value = tmpRow.Cells["dgvOstatniaAkcja"].Value.ToString();// tmpIssue.Updated;
 
-            //zgloszeniaWjira.
-            //});
-
-            //thrJ.IsBackground = true;
-            //thrJ.Start();
             e.Result = tmpRow;
         }
 
@@ -999,6 +923,19 @@ namespace GUI
 
         }
 
+        private void slaAutoAssigneTakenIssue(DataGridViewRow tmpRow)
+        {
+            string issueNumber = null;
+            if (isNullObjectOrEmptyString(tmpRow))
+                return;
+
+            issueNumber = tmpRow.Cells["dgvJiraNr"].Value == null ? string.Empty : tmpRow.Cells["dgvJiraNr"].Value.ToString();
+
+            slaAutoStep(tmpRow, issueNumber);
+
+
+        }
+
         private void dgv_SlaRaportCellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -1169,7 +1106,7 @@ namespace GUI
 
                 ////selectIssue = tmp.Key;
 
-                //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "http://jira");
+                //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
 
                 //jIssues.ChangeDataModel(jiraIssue, out issueDtoHelio, ref JiraUsers);
 
@@ -1227,12 +1164,130 @@ namespace GUI
                     dgv_SlaRaport[1, e.RowIndex].ToolTipText = i.Summary;
 
                 }
+                else if (dgv_SlaRaport.Columns[e.ColumnIndex].Name == "dgvPozostaloMin" && e.RowIndex > -1) // pozostałe sla
+                {
+                    int minute = Convert.ToInt32(dgv_SlaRaport["dgvPozostaloMin", e.RowIndex].Value);
+                    if (minute > 0)
+                    {
+                        DateTime ees = estimateEndSla(DateTime.Now, minute);
+                        dgv_SlaRaport["dgvPozostaloMin", e.RowIndex].ToolTipText = string.Format("{0}h {1}min\n{2}", minute / 60, minute % 60,ees.ToString());
+                    }
+                }
             }
             catch(Exception ex)
             {
 
             }
             
+        }
+
+        TimeSpan time_16 = TimeSpan.Parse("16:00:00");
+        TimeSpan time_08 = TimeSpan.Parse("08:00:00");
+
+        private DateTime estimateEndSla(DateTime dt, int minute)
+        {
+            bool calculate = true;
+            DateTime date = dt;
+            while (calculate)
+            {
+                int addDays = minute / 480;//ile dni dodatkowo
+                int addMin = minute % 480;//ile min dodatkowo
+
+                date = date.AddDays(addDays).AddMinutes(addMin);
+
+                switch (date.DayOfWeek)
+                {
+                    case DayOfWeek.Sunday:
+                        date = date.AddDays(1);
+                        break;
+                    case DayOfWeek.Saturday:
+                        date = date.AddDays(2);
+                        break;
+                    default:
+                        break;
+                }
+
+                if (date.Hour >= 16)
+                {
+                    minute = (int)(date.TimeOfDay - time_16).TotalMinutes;
+                    date = date.AddDays(1);
+                    DateTime tmpDateTime = new DateTime(
+                                                          date.Year
+                                                        , date.Month
+                                                        , date.Day
+                                                        , 8
+                                                        , 0
+                                                        , 0);
+
+
+
+                    date = tmpDateTime;
+                }
+                else if (date.Hour <= 8)
+                {
+                    minute = (int)(time_08 - date.TimeOfDay).TotalMinutes;
+                    DateTime tmpDateTime = new DateTime(
+                                                          date.Year
+                                                        , date.Month
+                                                        , date.Day
+                                                        , 8
+                                                        , 0
+                                                        , 0);
+
+                    date = tmpDateTime;
+                    date = date.AddMinutes(minute);
+                }
+                else
+                    calculate = false;
+                if (minute < 1) break;
+
+            }
+            //int weeks =
+             int weeks = (int)(date - dt).TotalDays/5;
+
+            date = date.AddDays(weeks * 2);
+
+            switch (date.DayOfWeek)
+            {
+                case DayOfWeek.Sunday:
+                    date = date.AddDays(1);
+                    break;
+                case DayOfWeek.Monday:
+                    break;
+                case DayOfWeek.Tuesday:
+                    break;
+                case DayOfWeek.Wednesday:
+                    break;
+                case DayOfWeek.Thursday:
+                    break;
+                case DayOfWeek.Friday:
+                    break;
+                case DayOfWeek.Saturday:
+                    date = date.AddDays(2);
+                    break;
+                default:
+                    break;
+            }
+
+            return date;
+        }
+
+        private DateTime estimateEndSla2(DateTime dt, int minute)
+        {
+            int addDays = minute / 480;//ile dni dodatkowo
+            int addMin = minute % 480;//ile dni dodatkowo
+
+            DateTime date = dt.AddMinutes(addMin);
+            if(date.Hour >= 16 )
+            {
+                addDays += 1;
+                addMin += (int)(date.TimeOfDay - time_16).TotalMinutes;
+            }
+
+
+            
+
+            return dt.AddMinutes(addMin).AddDays(addDays);
         }
 
         private string fnGetStringFromList(List<string> list, char pos)
@@ -1249,35 +1304,38 @@ namespace GUI
 
         private bool updateTreeNodeForSLA(DataGridViewRow row)
         {
-            string nrJira = row.Cells["dgvJiraNr"].Value.ToString();
+           string nrJira = row.Cells["dgvJiraNr"].Value.ToString();
             string status = row.Cells["dgvAkcjaBPM"].Value.ToString();
             string pozostalyCzas = row.Cells["dgvPozostaloMin"].Value.ToString();
             bool returnValue = false;
 
             foreach (TreeNode item in treeView1.Nodes)
             {
-                if (item.Text.Split(' ')[0].Contains(nrJira))
+                if (item.Text.Split(' ')[0] == nrJira)
                 {
                     if (!item.Text.Contains("]"))
                     {
                         item.Text += string.Concat(" [", pozostalyCzas, ']');
-                        returnValue = true;
+                        return true;
                     }
 
                     break;
                 }
             }
 
+
+
             if (!returnValue)
             {
                 foreach (TreeNode item in treeView2.Nodes)
                 {
-                    if (item.Text.Split(' ')[0].Contains(nrJira))
+                    string s = item.Text.Split(' ')[0];
+                    if (item.Text.Split(' ')[0] == nrJira)
                     {
                         if (!item.Text.Contains("]"))
                         {
                             item.Text += string.Concat(" [", pozostalyCzas, ']');
-                            returnValue = true;
+                            return true;
                         }
                     }
                     break;
@@ -1297,7 +1355,7 @@ namespace GUI
             List<string> slaParam = getActualSLAforIssueId(issueId);
             foreach (DataGridViewRow item in dgv_SlaRaport.Rows)
             {
-                if(item.Cells["dgvIssueId"].Value.ToString() == issueId.ToString())
+                if(!isNullObjectOrEmptyString(item.Cells["dgvIssueId"].Value) && item.Cells["dgvIssueId"].Value.ToString() == issueId.ToString())
                 {
                     //IssueId, nrJira, Odpowiedzialny, TypZgloszenia, Priorytet, Pauza, AktCzasRealizacji, CzasRozwiazania, PozostaloMin, OstatniaAkcja
 

@@ -33,7 +33,7 @@ namespace Logic.Implementation
         {
             try
             {
-                jira = Jira.CreateRestClient("http://jira", login, password);
+                jira = Jira.CreateRestClient("https://jira", login, password);
                 //new Jira(uri, login, password);
             }
             catch (Exception)
