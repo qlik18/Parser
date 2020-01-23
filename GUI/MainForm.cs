@@ -173,9 +173,10 @@ namespace GUI
             tp_tmp.Size = new System.Drawing.Size(0, 1);
             //tp_tmp.ImeMode = ImeMode. TabSizeMode.Fixed;
             tp_tmp.Text = "";
-            InitializeTempDirectory();
+            //InitializeTempDirectory();
 
-            Logger.Instance = new Logger(ConfigurationManager.AppSettings["DirectoryLogs"].ToString(), null);
+            //Logger.Instance = new Logger(ConfigurationManager.AppSettings["DirectoryLogs"].ToString(), null);
+            Logger.Instance = new Logger(InitializeTempDirectory(), null);
             //exManager = new ExceptionManager();
             //exManager.log = new ExceptionManager.Loguj(log);
             //Login formLogin = new Login();
@@ -235,7 +236,8 @@ namespace GUI
                     text.AppendLine("   (po najechaju kursorem nad pozostały czas SLA)");
                     text.AppendLine("5.Flaga OnCall automatycznie oznaczana jest tylko w godzinach nocnych oraz dla zgłoszeń Krytycznych i Blokujacych");
                     text.AppendLine("6.Usunięcie nieużywanych funkcjonalności");
-                    text.AppendLine("6.Inne mniejsze lub takie o których nie pamiętam :) ");
+                    text.AppendLine("7.Zmiana protokołu jira");
+                    text.AppendLine("8.Inne mniejsze lub takie o których nie pamiętam :) ");
 
                     MessageBox.Show(text.ToString(),string.Format("Nowości w Parserze {0}", System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString(4)) ,MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -399,8 +401,8 @@ namespace GUI
             }
 
 
-            jira = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
-            jIssue = new JiraIssues("https://jira", jiraUser.Login, jiraUser.Password);
+            jira = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
+            jIssue = new JiraIssues("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
 
             jira.MaxIssuesPerRequest = 200;
 
@@ -478,27 +480,30 @@ namespace GUI
             gujaczWFS.LogOutFromHPService();
         }
 
-        private void InitializeTempDirectory()
+        private string InitializeTempDirectory()
         {
             var localAppDataDir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            var localTempDir = Path.Combine(localAppDataDir, @"Parser\Temp");
+            var localTempDir = Path.Combine(localAppDataDir, @"Parser\Log");
 
 
             try
             {
-                if (Directory.Exists(localTempDir))
-                    Directory.Delete(localTempDir, true);
+                if (!Directory.Exists(localTempDir))
+                    //Directory.Delete(localTempDir, true);
 
-                Directory.CreateDirectory(localTempDir);
+                    Directory.CreateDirectory(localTempDir);
 
                 Environment.SetEnvironmentVariable("TMP", localTempDir);
                 Environment.SetEnvironmentVariable("TEMP", localTempDir);
+
+                return localTempDir;
             }
             catch (Exception ex)
             {
                 //NOTE: wystapi tylko jeśli
                 // - inny proces Infolinii jest uruchomiony
                 // - inny porces grzebie nie po swoim tempie
+                return string.Empty;
             }
 
         }
@@ -595,7 +600,7 @@ namespace GUI
                 List<List<string>> priorytet = gujaczWFS.ExecuteStoredProcedure("Billing_GetListOfPriorities", new string[] { }, DatabaseName.SupportADDONS);
 
                 sb.AppendLine("IssueId BPM: " + it.issueWFS.WFSIssueId.ToString());
-                sb.AppendLine("Numer zgłoszenia: " + it.issueHelios.number + " (https://jira/browse/" + it.issueHelios.number + " )");
+                sb.AppendLine("Numer zgłoszenia: " + it.issueHelios.number + " (https://jira.polsatc/browse/" + it.issueHelios.number + " )");
                 sb.AppendLine("Oryginalne ID: " + ((it.issueHelios.oryginalneId != null) ? it.issueHelios.oryginalneId : ""));
                 sb.AppendLine("Status: " + it.issueHelios.status);
                 sb.AppendLine("Tytuł: " + it.issueWFS.TytulZgloszenia);
@@ -640,7 +645,7 @@ namespace GUI
                 sb.AppendLine("IdKontraktu: " + ((it.issueWFS.IdKontraktu != null) ? it.issueWFS.IdKontraktu : ""));
                 sb.AppendLine("IdKonta: " + ((it.issueHelios.idKonta != null) ? it.issueHelios.idKonta : ""));
                 sb.AppendLine("IdZamówienia: " + ((it.issueHelios.idZamowienia != null) ? it.issueHelios.idZamowienia : ""));
-                /*sb.AppendLine("Link: " + "https://jira/browse/" + it.issueHelios.number);*/
+                /*sb.AppendLine("Link: " + "https://jira.polsatc/browse/" + it.issueHelios.number);*/
 
                 sb.AppendLine("\n\nTreść: " + it.issueWFS.TrescZgloszenia);
 
@@ -2273,7 +2278,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 foreach (string s in newIssues)
                 {
-                    string link = (new HtmlHyperlink("https://jira/browse/" + s)).ToString();
+                    string link = (new HtmlHyperlink("https://jira.polsatc/browse/" + s)).ToString();
                     table.AddRow(new string[] { link });
                 }
 
@@ -2384,7 +2389,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         {
                             this.issuesCheckoutStatus.Text = "Sprawdzanie: running";
                         });
-                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
 
                         if (jIssues.GetJiraIssuesTypes() == null)
                         {
@@ -2696,7 +2701,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 {
 
                     numerZgl.Text = Historia_dgv.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                    System.Diagnostics.Process.Start("https://jira/browse/" + numerZgl.Text);
+                    System.Diagnostics.Process.Start("https://jira.polsatc/browse/" + numerZgl.Text);
                 }
                 else if (e.ColumnIndex == 0)
                 {
@@ -3286,7 +3291,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             bool czyPoprawneHaslo = true;
             try
             {
-                jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);  
+                jComment = Jira.CreateRestClient("https://jira.polsatc", "billennium", Properties.Settings.Default.hasloBillennium);  
             }
             catch
             {
@@ -3362,7 +3367,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                 //    //komentarz przyjęcia z konta Billennium
                 //    Jira jComment;
-                //    jComment = Jira.CreateRestClient("https://jira", "billennium", Properties.Settings.Default.hasloBillennium);
+                //    jComment = Jira.CreateRestClient("https://jira.polsatc", "billennium", Properties.Settings.Default.hasloBillennium);
 
                 //    if (!jComment.GetIssue(jiraKey).GetComments().Any(x => x.Body == Properties.Settings.Default.hasloBillennium))
                 //    {
@@ -4162,8 +4167,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         {
             try
             {
-                jira = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password );
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password); // https://jira01-t2 https://jira
+                jira = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password );
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password); // https://jira.polsatc01-t2 https://jira.polsatc
                 //var typy = jira.GetIssueTypes();
                 var priorities = jira.GetIssuePriorities();
 
@@ -4194,8 +4199,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             if (LoginJira())
             {
                 List<string> nieznalezione = new List<string>();
-                //jira = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password);
+                //jira = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
                 DisableIssuesButtons();
                 pb_SetVisibilityPanel(true);
                 Thread thr = new Thread((ThreadStart)delegate ()
@@ -4209,7 +4214,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         pb_UpdateProgressBar("Wczytywanie danych z Heliosa");
                         List<BillingIssueDtoHelios> issue;
 
-                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
                         List<string> types = jIssues.GetJiraIssuesTypes();
                         List<string> stat = jIssues.GetJiraIssuesStatuses();
                         List<string> pro = jIssues.GetJiraProjects();
@@ -4281,15 +4286,15 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             sJira = null;
             if (LoginJira())
             {
-                jira = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password);
+                jira = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
                 //Thread thr = new Thread((ThreadStart)delegate ()
                 //{
                 //    try
                 //    {
 
 
-                Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(Properties.Settings.Default.loginJira, Properties.Settings.Default.hasloJira, "https://jira");
+                Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(Properties.Settings.Default.loginJira, Properties.Settings.Default.hasloJira, "https://jira.polsatc");
                 IEnumerable<Issue> sJiraIssue = jIssues.GetIssuesByNumberAsync(numerZgl);
 
                 sJira = sJiraIssue;
@@ -4320,8 +4325,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             if (LoginJira())
             {
-                jira = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password); // https://jira  https://jira01-t2
+                jira = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password); // https://jira.polsatc  https://jira.polsatc01-t2
                 DisableIssuesButtons();
                 pb_SetVisibilityPanel(true);
                 Thread thr = new Thread((ThreadStart)delegate ()
@@ -4343,7 +4348,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         }
                         else
                         {
-                            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
                             List<string> types = jIssues.GetJiraIssuesTypes();
                             List<string> stat = jIssues.GetJiraIssuesStatuses();
                             List<string> pro = jIssues.GetJiraProjects();
@@ -4423,7 +4428,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             if (LoginJira())
             {
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password);
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
                 //DisableIssuesButtons();
                 pb_SetVisibilityPanel(true);
                 //Thread thr = new Thread((ThreadStart)delegate ()
@@ -4445,7 +4450,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
 
 
-                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                        Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
                         //List<string> types = jIssues.GetJiraIssuesTypes();
                         //List<string> stat = jIssues.GetJiraIssuesStatuses();
                         //List<string> pro = jIssues.GetJiraProjects();
@@ -4604,7 +4609,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
             if (LoginJira())
             {
-                //new Jira("https://jira", jiraUser.Login, jiraUser.Password);
+                //new Jira("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
                 DisableIssuesButtons();
                 pb_SetVisibilityPanel(true);
                 Thread thr = new Thread((ThreadStart)delegate ()
@@ -4626,7 +4631,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
 
 
-                            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
                             //List<string> types = jIssues.GetJiraIssuesTypes();
                             //List<string> stat = jIssues.GetJiraIssuesStatuses();
                             //List<string> pro = jIssues.GetJiraProjects();
@@ -5696,7 +5701,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                         continue;
 
                     zcc_rtb.AppendText("\n");
-                    zcc_rtb.AppendText("https://jira/browse/" + item.issueNumber + "\n");
+                    zcc_rtb.AppendText("https://jira.polsatc/browse/" + item.issueNumber + "\n");
                     zcc_rtb.AppendText(item.content + "\n");
                 }
             }
@@ -5858,7 +5863,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             string assignedFilterName = tb_AssignedFilterName.Text;
             string unassignedFilterName = tb_UnassignedFilterName.Text;
 
-            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
             List<string> usersFilters = jIssues.GetFiltersAsync();
             if (!string.IsNullOrEmpty(assignedFilterName))
             {
@@ -5893,7 +5898,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             string filterI = cbFilter1name.SelectedItem.ToString();// tb_AssignedFilterName.Text;
             string filterII = cbFilter2name.SelectedItem.ToString();// tb_UnassignedFilterName.Text;
 
-            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+            Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
             List<string> usersFilters = jIssues.GetFiltersAsync();
 
             if (!string.IsNullOrEmpty(filterII))
@@ -6600,6 +6605,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                         if (lista.Count > 0)
                         {
+                            string recipants = string.Empty; 
                             HtmlTable table = new HtmlTable();
                             table.AddColumn("Zgłoszenie");
                             table.AddColumn("Osoba odpowiedzialna");
@@ -6608,18 +6614,19 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
 
                             foreach (var s in lista)
                             {
-                                if (s[8] != string.Empty && Int32.Parse(s[8]) < 60)
+                                if (s[8] != string.Empty && Int32.Parse(s[8]) < 120)
                                 {
-                                    HtmlHyperlink link = new HtmlHyperlink(string.Format("https://jira/browse/{0}", s[1]), s[1]);
+                                    HtmlHyperlink link = new HtmlHyperlink(string.Format("https://jira.polsatc/browse/{0}", s[1]), s[1]);
                                     table.AddRow(new string[] { link.ToString(), s[2], s[8] });
+                                    recipants += userBpmJiraList.UserBpmJira.FirstOrDefault(x => x.UserBpm.FullName == s[2]).UserBpm.Email + ";";
                                 }
                             }
                             if (table.Rows.Count() > 0)
                             {
                                 HtmlContent content = new HtmlContent(new HtmlHeader("Zgłoszenia z pozostałym czasem na realizację poniżej jednej godziny:"), table);
                                 ExchangeClient exClient = new ExchangeClient(gujaczWFS.getUser());
-                                string recipants = ConfigurationManager.AppSettings["SlaRecipants"];
-                                exClient.SendEMail("Kończy się czas na realizację zgłoszeń!", content, recipants);
+                                string cc = ConfigurationManager.AppSettings["SlaRecipants"];
+                                exClient.SendEMail("Kończy się czas na realizację zgłoszeń!", content.ToString(), recipants, cc);
 
                                 gujaczWFS.ExecuteStoredProcedure("sp_UpdateLastEmailSend", new string[] { }, DatabaseName.SupportCP);
 
@@ -6656,7 +6663,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                     //{
                     //    if (s[8] != string.Empty && Int32.Parse(s[8]) < 60)
                     //    {
-                    //        HtmlHyperlink link = new HtmlHyperlink(string.Format("https://jira/browse/{0}", s[1]), s[1]);
+                    //        HtmlHyperlink link = new HtmlHyperlink(string.Format("https://jira.polsatc/browse/{0}", s[1]), s[1]);
                     //        table.AddRow(new string[] { link.ToString(), s[8] });
                     //    }
                     //}
@@ -6688,7 +6695,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void button1_Click_3(object sender, EventArgs e)
         {
             Jira jiraSlaSynch;
-            jiraSlaSynch = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
+            jiraSlaSynch = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
 
             int i = 0;
             for (int j = 0; i < 3000; j++)
@@ -6759,7 +6766,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             Properties.Settings.Default.Save();
         }
 
-        public bool tryLogginToJira(string Login, string Password, string adress = "https://jira")
+        public bool tryLogginToJira(string Login, string Password, string adress = "https://jira.polsatc")
         {
 
             try
@@ -6773,6 +6780,8 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
             }
             catch (Exception ex)
             {
+                ExceptionManager.LogWarning(string.Format("Dane do logowania user: {0} adress: {1}", Login, adress), Logger.Instance);
+                ExceptionManager.LogError( ex, Logger.Instance, true);
                 return false;
             }
 
@@ -6978,7 +6987,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
                 textBox3.Text = "";
 
             Jira j;
-            j = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
+            j = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
             j.MaxIssuesPerRequest = 20000;
 
             List<string> logins = new List<string>();
@@ -7501,7 +7510,7 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void button7_Click(object sender, EventArgs e)
         {
             //Jira j;
-            //j = Jira.CreateRestClient("https://jira", jiraUser.Login, jiraUser.Password);
+            //j = Jira.CreateRestClient("https://jira.polsatc", jiraUser.Login, jiraUser.Password);
 
 
             //IEnumerable<Issue> IssueList;
@@ -8139,6 +8148,11 @@ Szczeg\u243\'f3\u322\'3fy do zg\u322\'3fosze\u324\'3f w realizacji:}");
         private void toolStripStatusLabel8_Click(object sender, EventArgs e)
         {
             tm_autoFrsh_Tick("now", null);
+        }
+
+        private void bt_OtworzLog_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

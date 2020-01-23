@@ -140,8 +140,8 @@ namespace GUI
                     Kategoryzacji
                 */
                 List<List<string>> MapObszar = gujacz2.ExecuteStoredProcedure("spMapujWartosc", new string[] { issue.issueHelios.projekt, "Obsługa kodu projektu jako nazwy" }, DatabaseName.SupportCP);
+                 
                 
-
                 for (int index = 0; index < tbKategoria.Items.Count; index++)
                 {
                     if (tbKategoria.Items[index].ToString() == issue.issueHelios.projekt)
@@ -318,7 +318,7 @@ namespace GUI
                         tbPriorytet.SelectedIndex = i;
                 }
             }
-            if (auto && !cb_CzyOncall.Checked)
+            if (auto)// && !cb_CzyOncall.Checked)
             {
                 
                 Logging.Logger.Instance.LogInformation(string.Format("Zgłoszenie {0} dodano automatycznie o godzinie {1}!\n", zgloszenie.JiraKey, DateTime.Now));

@@ -491,7 +491,7 @@
                                           <ActionInfo>
                                             <Actions>
                                               <Action>
-                                                <Hyperlink>="https://jira/browse/"+Fields!Numer_zgłoszenia.Value</Hyperlink>
+                                                <Hyperlink>="https://jira.polsatc/browse/"+Fields!Numer_zgłoszenia.Value</Hyperlink>
                                               </Action>
                                             </Actions>
                                           </ActionInfo>
@@ -890,7 +890,7 @@
                                           <ActionInfo>
                                             <Actions>
                                               <Action>
-                                                <Hyperlink>="https://jira/browse/"+Fields!Numer_zgłoszenia.Value</Hyperlink>
+                                                <Hyperlink>="https://jira.polsatc/browse/"+Fields!Numer_zgłoszenia.Value</Hyperlink>
                                               </Action>
                                             </Actions>
                                           </ActionInfo>
@@ -1112,7 +1112,7 @@
                                               <ActionInfo>
                                                 <Actions>
                                                   <Action>
-                                                    <Hyperlink>="https://jira/browse/"+Fields!NumerZgloszenia.Value</Hyperlink>
+                                                    <Hyperlink>="https://jira.polsatc/browse/"+Fields!NumerZgloszenia.Value</Hyperlink>
                                                   </Action>
                                                 </Actions>
                                               </ActionInfo>
@@ -1416,7 +1416,7 @@
                                           <ActionInfo>
                                             <Actions>
                                               <Action>
-                                                <Hyperlink>="https://jira/browse/" + Fields!Numer_zgłoszenia.Value</Hyperlink>
+                                                <Hyperlink>="https://jira.polsatc/browse/" + Fields!Numer_zgłoszenia.Value</Hyperlink>
                                               </Action>
                                             </Actions>
                                           </ActionInfo>

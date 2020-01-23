@@ -839,6 +839,7 @@ namespace GUI
             resources.ApplyResources(this.bt_OtworzLog, "bt_OtworzLog");
             this.bt_OtworzLog.Name = "bt_OtworzLog";
             this.bt_OtworzLog.UseVisualStyleBackColor = true;
+            this.bt_OtworzLog.Click += new System.EventHandler(this.bt_OtworzLog_Click);
             this.bt_OtworzLog.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_OtworzLog_Click);
             // 
             // label13

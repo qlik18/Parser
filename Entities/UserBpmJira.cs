@@ -25,7 +25,6 @@ namespace Entities
             this.UserJira = userJira;
         }
 
-
     }
 
     public class UserBpmJiraList
@@ -94,6 +93,8 @@ namespace Entities
             ubj = ubjtmp;
             return res;
         }
+
+
     }
 
 }

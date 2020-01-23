@@ -224,7 +224,7 @@ namespace GUI
 
 
         public WFSModelerForm(List<Entities.EventParamModeler> list, string name, Entities.BillingIssueDto issue, IParserEngineWFS gujaczWFS, int eventMoveId, calbackDelegate callback, TreeView tr, bool quickStep = false, object selectOption = null, UserBpmJiraList user = null)
-        {
+        {  
             this._tr = tr;
             this.PolsatUsers = PolsatUsers;
             this.eventName = name.Split('(').First(); ;
@@ -345,10 +345,18 @@ namespace GUI
                                 {
                                     for (int i = 0; i < (item.source as ComboBox).Items.Count; i++)
                                     {
-                                        if (0 == string.Compare((item.source as ComboBox).Items[i].ToString(), _issue.Project, true, System.Globalization.CultureInfo.CurrentCulture))
+                                        
+                                        string MapObszar = gujaczWFS.ExecuteStoredProcedure("spMapujWartosc", new string[] { _issue.Project, "Obsługa kodu projektu jako nazwy" }, DatabaseName.SupportCP)[0][0];
+                                        if(isObjectInCollection((item.source as ComboBox).Items[i].ToString(), _issue.Project, MapObszar))
+                                        //if (0 == string.Compare((item.source as ComboBox).Items[i].ToString(), _issue.Project, true, System.Globalization.CultureInfo.CurrentCulture))
                                         {
-                                            (item.source as ComboBox).SelectedIndex = i;
+                                            
+                                               (item.source as ComboBox).SelectedIndex = i;
                                             break;
+                                        }
+                                        else
+                                        {
+
                                         }
                                     }
                                     //break;
@@ -1526,7 +1534,7 @@ namespace GUI
             }
             if (ileCyfr > 0)
             {
-                //Jira j = new Jira("https://jira", GUI. . .Login, jiraUser.Password);
+                //Jira j = new Jira("https://jira.polsatc", GUI. . .Login, jiraUser.Password);
                 
                 new MainForm().SearchJiraIssueAsync(nrProblemu,out sJiraIssue);
 

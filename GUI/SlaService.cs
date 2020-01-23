@@ -390,17 +390,23 @@ namespace GUI
                             if (userBpmJiraList.IsBillUser(changeLog.Author.Username))
                             {
                                 UserBpmJira ubj;
-                                IssueChangeLogItem param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(changeLog.Author.Username) && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"));
+                                IssueChangeLogItem param = changeLog.Items.FirstOrDefault(
+                                    x => x.FieldName == "assignee" &&
+                                        (userBpmJiraList.IsBillUser(changeLog.Author.Username) && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"))
+                                            ||
+                                        (userBpmJiraList.IsBillUser(issue.Assignee) && (userBpmJiraList.IsBillUser(x.ToId) && x.FromId == "billennium"))
+
+                                );
+                                                                    
                                 IssueChangeLogItem status = changeLog.Items.FirstOrDefault(x => x.FieldName == "status" && x.FieldType == "jira");// && (userBpmJiraList.IsBillUser(x.ToId) || x.FromId == "billennium"));
 
+                                //param = changeLog.Items.FirstOrDefault(x => x.FieldName == "assignee" && userBpmJiraList.IsBillUser(issue.Assignee) && (userBpmJiraList.IsBillUser(x.ToId) && x.FromId == "billennium"));
                                 if (isNullObjectOrEmptyString(item.Cells["dgvOdpowiedzialny"].Value.ToString().Trim())
                                         && userBpmJiraList.IsBillUser(changeLog.Author.Username))
                                 {
                                     if (!isNullObjectOrEmptyString(userBpmJiraList.IsBillUser(changeLog.Author.Username))
                                         && !isNullObjectOrEmptyString(param))
-                                    //if (!isNullObjectOrEmptyString(changeLog.Items.FirstOrDefault(x => x.FieldName == "status"
-                                    //                                 && x.ToValue == "W trakcie realizacji"
-                                    //                                 && userBpmJiraList.IsBillUser(changeLog.Author.Username))))
+
                                     {
 
                                         if (!isNullObjectOrEmptyString(action.FirstOrDefault(x => x.Value == "Rozpoczęcie diagnozy")))
@@ -467,8 +473,17 @@ namespace GUI
                         if(issueMoveProject)
                         {
 
+
+
                             Dictionary<int, string> kat = gujaczWFS.getBillingComponents(0);
-                            if (kat.ContainsValue(issue.Project))
+                            IEnumerable<Project> jiraPorojects =  jira.GetProjects();
+
+                            //foreach (var itemcf in issue.CustomFields)
+                            //{
+                            //    System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1} - {2}", itemcf.Id, itemcf.Values[0], itemcf.Name));
+                            //}
+
+                            if (kat.ContainsValue(jiraPorojects.FirstOrDefault(x=> x.Key == issue.Project).Name))
                             {
                                 issueStep_Aktualizacja(this, jiraNumber.ToString(), issue);
                             }
@@ -476,6 +491,9 @@ namespace GUI
                             {
                                 issueStep_ZmianaKataloguJira(this, jiraNumber.ToString());
                             }
+          
+
+
                         }
 
                     }
@@ -944,7 +962,7 @@ namespace GUI
                 {
 
                     numerZgl.Text = dgv_SlaRaport.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                    System.Diagnostics.Process.Start("https://jira/browse/" + numerZgl.Text);
+                    System.Diagnostics.Process.Start("https://jira.polsatc/browse/" + numerZgl.Text);
                 }
                 else if (e.ColumnIndex == 0)
                 {
@@ -1106,7 +1124,7 @@ namespace GUI
 
                 ////selectIssue = tmp.Key;
 
-                //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira");
+                //Logic.Implementation.JiraIssues jIssues = new Logic.Implementation.JiraIssues(this.jiraUser.Login, this.jiraUser.Password, "https://jira.polsatc");
 
                 //jIssues.ChangeDataModel(jiraIssue, out issueDtoHelio, ref JiraUsers);
 

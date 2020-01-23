@@ -29,7 +29,7 @@ namespace Logic.Implementation
             this.user = user;
         }
 
-        public void SendEMail(string subject, string body, string address = "")
+        public void SendEMail(string subject, string body, string address = "", string cc = "")
         {
             try
             {
@@ -48,15 +48,18 @@ namespace Logic.Implementation
                     else
                         recipants.Add(user.login + "@billennium.pl");
 
-                    foreach (var item in recipants)
+                    foreach (var item in recipants.Distinct())
                     {
-                        mail.To.Add(item);
+                        if (item != string.Empty)
+                            mail.To.Add(item);
+                    }
+                    if (cc != "") {
+                        mail.CC.Add(cc);
                     }
                     mail.Subject = subject;
                     mail.Body = b;
                     mail.IsBodyHtml = true;
                     // Can set to false, if you are sending pure text.
-
 
                     SmtpClient client = new SmtpClient()
                     {
@@ -76,7 +79,7 @@ namespace Logic.Implementation
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message,"Błąd wysyłania maila");
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Błąd wysyłania maila");
                 //throw new Exception(ex.Message, ex.InnerException);
             }
         }

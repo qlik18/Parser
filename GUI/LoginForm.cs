@@ -94,6 +94,7 @@ namespace GUI
             //label3.Show();
             //if(!firstLogin)
 
+        
             invokeLogin((this.Tag.ToString()));
 
             if (wfs.getUser().Id == -1)

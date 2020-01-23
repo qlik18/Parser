@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
 
+
 namespace Entities
 {
     public class UserBpm
@@ -15,6 +16,8 @@ namespace Entities
 
         [DataMember]
         public String FullName { set; get; }
+        [DataMember]
+        public String Email { get { return login + "@billennium.com"; } }
 
         public UserBpm(String login, String FullName)
         {
